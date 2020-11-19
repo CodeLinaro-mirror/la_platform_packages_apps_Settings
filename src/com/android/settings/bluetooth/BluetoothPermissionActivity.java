@@ -37,6 +37,8 @@ import com.android.internal.app.AlertActivity;
 import com.android.internal.app.AlertController;
 import com.android.settings.R;
 
+import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
+
 /**
  * BluetoothPermissionActivity shows a dialog for accepting incoming
  * profile connection request from untrusted devices.
