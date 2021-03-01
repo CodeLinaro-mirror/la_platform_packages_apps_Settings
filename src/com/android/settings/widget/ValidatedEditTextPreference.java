@@ -25,7 +25,7 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
+import android.graphics.Color;
 import androidx.annotation.VisibleForTesting;
 import androidx.appcompat.app.AlertDialog;
 import androidx.preference.PreferenceViewHolder;
@@ -71,6 +71,7 @@ public class ValidatedEditTextPreference extends CustomEditTextPreferenceCompat 
             editText.setSelection(editText.getText().length());
         }
         if (mValidator != null && editText != null) {
+            editText.setTextColor(Color.BLACK);
             editText.removeTextChangedListener(mTextWatcher);
             if (mIsPassword) {
                 editText.setInputType(
