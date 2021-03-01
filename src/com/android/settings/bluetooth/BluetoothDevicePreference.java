@@ -20,6 +20,7 @@ import static android.os.UserManager.DISALLOW_CONFIG_BLUETOOTH;
 
 import android.app.settings.SettingsEnums;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.res.Resources;
@@ -52,8 +53,7 @@ import java.lang.annotation.RetentionPolicy;
  * BluetoothDevicePreference is the preference type used to display each remote
  * Bluetooth device in the Bluetooth Settings screen.
  */
-public final class BluetoothDevicePreference extends GearPreference implements
-        CachedBluetoothDevice.Callback {
+public final class BluetoothDevicePreference extends GearPreference {
     private static final String TAG = "BluetoothDevicePref";
 
     private static int sDimAlpha = Integer.MIN_VALUE;
@@ -77,10 +77,21 @@ public final class BluetoothDevicePreference extends GearPreference implements
     private AlertDialog mDisconnectDialog;
     private String contentDescription = null;
     private boolean mHideSecondTarget = false;
+    private boolean mIsCallbackRemoved = false;
     @VisibleForTesting
     boolean mNeedNotifyHierarchyChanged = false;
     /* Talk-back descriptions for various BT icons */
     Resources mResources;
+    private final boolean mHideSummary;
+    final BluetoothDevicePreferenceCallback mCallback;
+
+    private class BluetoothDevicePreferenceCallback implements CachedBluetoothDevice.Callback {
+
+        @Override
+        public void onDeviceAttributesChanged() {
+            onPreferenceAttributesChanged();
+        }
+    }
 
     public BluetoothDevicePreference(Context context, CachedBluetoothDevice cachedDevice,
             boolean showDeviceWithoutNames, @SortType int type) {
@@ -96,11 +107,34 @@ public final class BluetoothDevicePreference extends GearPreference implements
         }
 
         mCachedDevice = cachedDevice;
-        mCachedDevice.registerCallback(this);
+        mCallback = new BluetoothDevicePreferenceCallback();
+        mCachedDevice.registerCallback(mCallback);
         mCurrentTime = System.currentTimeMillis();
         mType = type;
 
-        onDeviceAttributesChanged();
+        mHideSummary = false;
+        onPreferenceAttributesChanged();
+    }
+
+    public BluetoothDevicePreference(Context context, CachedBluetoothDevice cachedDevice,
+            boolean showDeviceWithoutNames, @SortType int type, boolean hideSummary) {
+        super(context, null);
+        mResources = getContext().getResources();
+        mUserManager = context.getSystemService(UserManager.class);
+        mShowDevicesWithoutNames = showDeviceWithoutNames;
+        if (sDimAlpha == Integer.MIN_VALUE) {
+            TypedValue outValue = new TypedValue();
+            context.getTheme().resolveAttribute(android.R.attr.disabledAlpha, outValue, true);
+            sDimAlpha = (int) (outValue.getFloat() * 255);
+        }
+
+        mCachedDevice = cachedDevice;
+        mCallback = new BluetoothDevicePreferenceCallback();
+        mCachedDevice.registerCallback(mCallback);
+        mCurrentTime = System.currentTimeMillis();
+        mType = type;
+        mHideSummary = hideSummary;
+        onPreferenceAttributesChanged();
     }
 
     public void setNeedNotifyHierarchyChanged(boolean needNotifyHierarchyChanged) {
@@ -127,10 +161,32 @@ public final class BluetoothDevicePreference extends GearPreference implements
     @Override
     protected void onPrepareForRemoval() {
         super.onPrepareForRemoval();
-        mCachedDevice.unregisterCallback(this);
+        if (!mIsCallbackRemoved) {
+            mCachedDevice.unregisterCallback(mCallback);
+            mIsCallbackRemoved = true;
+        }
         if (mDisconnectDialog != null) {
             mDisconnectDialog.dismiss();
             mDisconnectDialog = null;
+        }
+    }
+
+    @Override
+    public void onAttached() {
+        super.onAttached();
+        if (mIsCallbackRemoved) {
+            mCachedDevice.registerCallback(mCallback);
+            mIsCallbackRemoved = false;
+        }
+        onPreferenceAttributesChanged();
+    }
+
+    @Override
+    public void onDetached() {
+        super.onDetached();
+        if (!mIsCallbackRemoved) {
+            mCachedDevice.unregisterCallback(mCallback);
+            mIsCallbackRemoved = true;
         }
     }
 
@@ -142,15 +198,25 @@ public final class BluetoothDevicePreference extends GearPreference implements
         mHideSecondTarget = hideSecondTarget;
     }
 
-    public void onDeviceAttributesChanged() {
+    private void onPreferenceAttributesChanged() {
         /*
          * The preference framework takes care of making sure the value has
          * changed before proceeding. It will also call notifyChanged() if
          * any preference info has changed from the previous value.
          */
-        setTitle(mCachedDevice.getName());
+        BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
+        if (adapter != null &&
+                mCachedDevice.getAddress().equals(adapter.getAddress())) {
+            //for ba related things, using the same preference
+            //for showing the local device
+            setTitle(adapter.getName()+"(self)");
+        } else {
+            setTitle(mCachedDevice.getName());
+        }
         // Null check is done at the framework
-        setSummary(mCachedDevice.getConnectionSummary());
+        if (!mHideSummary) {
+            setSummary(mCachedDevice.getConnectionSummary());
+        }
 
         final Pair<Drawable, String> pair =
                 BluetoothUtils.getBtRainbowDrawableWithDescription(getContext(), mCachedDevice);
@@ -160,7 +226,11 @@ public final class BluetoothDevicePreference extends GearPreference implements
         }
 
         // Used to gray out the item
-        setEnabled(!mCachedDevice.isBusy());
+        if (mHideSummary) {
+            setEnabled(true);
+        } else {
+            setEnabled(!mCachedDevice.isBusy());
+        }
 
         // Device is only visible in the UI if it has a valid name besides MAC address or when user
         // allows showing devices without user-friendly name in developer settings
