@@ -32,6 +32,8 @@
         android:layout_gravity="center_vertical"
         android:focusable="true"
         android:focusableInTouchMode="true"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/darker_gray"
         android:inputType="numberDecimal" />
 
     <Spinner
@@ -39,6 +41,7 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
+        android:backgroundTint="@android:color/black"
         android:entries="@array/bytes_picker_sizes" />
 
 </LinearLayout>
