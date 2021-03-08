@@ -30,6 +30,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.inputmethod.EditorInfo;
+import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.NumberPicker;
 import android.widget.Spinner;
@@ -305,6 +306,12 @@ public class BillingCycleSettings extends DataUsageBaseFragment implements
             bytesPicker.setText(bytesText);
             bytesPicker.setSelection(0, bytesText.length());
 
+            final Context context = getActivity();
+            ArrayAdapter<String> spinnerAdapter = new ArrayAdapter<String>(context,
+                    R.layout.data_usage_spinner_item,
+                    context.getResources().getStringArray(R.array.bytes_picker_sizes));
+            spinnerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+            type.setAdapter(spinnerAdapter);
             type.setSelection(unitInGigaBytes ? 1 : 0);
         }
 
