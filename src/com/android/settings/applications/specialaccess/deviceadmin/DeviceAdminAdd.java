@@ -102,7 +102,7 @@ public class DeviceAdminAdd extends Activity {
     DevicePolicyManager mDPM;
     AppOpsManager mAppOps;
     DeviceAdminInfo mDeviceAdmin;
-    String mAddMsgText;
+    CharSequence mAddMsgText;
     String mProfileOwnerName;
 
     ImageView mAdminIcon;
@@ -274,11 +274,7 @@ public class DeviceAdminAdd extends Activity {
             }
         }
 
-        final CharSequence addMsgCharSequence = getIntent().getCharSequenceExtra(
-                DevicePolicyManager.EXTRA_ADD_EXPLANATION);
-        if (addMsgCharSequence != null) {
-            mAddMsgText = addMsgCharSequence.toString();
-        }
+        mAddMsgText = getIntent().getCharSequenceExtra(DevicePolicyManager.EXTRA_ADD_EXPLANATION);
 
         if (mAddingProfileOwner) {
             // If we're trying to add a profile owner and user setup hasn't completed yet, no
@@ -632,7 +628,7 @@ public class DeviceAdminAdd extends Activity {
         } catch (Resources.NotFoundException e) {
             mAdminDescription.setVisibility(View.GONE);
         }
-        if (!TextUtils.isEmpty(mAddMsgText)) {
+        if (mAddMsgText != null) {
             mAddMsg.setText(mAddMsgText);
             mAddMsg.setVisibility(View.VISIBLE);
         } else {

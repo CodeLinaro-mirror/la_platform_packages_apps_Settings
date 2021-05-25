@@ -16,8 +16,6 @@
 
 package com.android.settings.bluetooth;
 
-import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
-
 import android.bluetooth.BluetoothDevice;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -32,10 +30,11 @@ import android.widget.TextView;
 
 import androidx.preference.Preference;
 
-import com.android.internal.annotations.VisibleForTesting;
 import com.android.internal.app.AlertActivity;
 import com.android.internal.app.AlertController;
 import com.android.settings.R;
+
+import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
 
 /**
  * BluetoothPermissionActivity shows a dialog for accepting incoming
@@ -52,6 +51,8 @@ public class BluetoothPermissionActivity extends AlertActivity implements
     private TextView messageView;
     private Button mOkButton;
     private BluetoothDevice mDevice;
+    private String mReturnPackage = null;
+    private String mReturnClass = null;
 
     private int mRequestType = 0;
     private BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -88,6 +89,8 @@ public class BluetoothPermissionActivity extends AlertActivity implements
         }
 
         mDevice = i.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+        mReturnPackage = i.getStringExtra(BluetoothDevice.EXTRA_PACKAGE_NAME);
+        mReturnClass = i.getStringExtra(BluetoothDevice.EXTRA_CLASS_NAME);
         mRequestType = i.getIntExtra(BluetoothDevice.EXTRA_ACCESS_REQUEST_TYPE,
                                      BluetoothDevice.REQUEST_TYPE_PHONEBOOK_ACCESS);
 
@@ -199,14 +202,14 @@ public class BluetoothPermissionActivity extends AlertActivity implements
         sendReplyIntentToReceiver(false, true);
     }
 
-    @VisibleForTesting
-    void sendReplyIntentToReceiver(final boolean allowed, final boolean always) {
+    private void sendReplyIntentToReceiver(final boolean allowed, final boolean always) {
         Intent intent = new Intent(BluetoothDevice.ACTION_CONNECTION_ACCESS_REPLY);
 
-        if (DEBUG) {
-            Log.i(TAG, "sendReplyIntentToReceiver() Request type: " + mRequestType
-                    + " mReturnPackage");
+        if (mReturnPackage != null && mReturnClass != null) {
+            intent.setClassName(mReturnPackage, mReturnClass);
         }
+        if (DEBUG) Log.i(TAG, "sendReplyIntentToReceiver() Request type: " + mRequestType +
+                " mReturnPackage" + mReturnPackage + " mReturnClass" + mReturnClass);
 
         intent.putExtra(BluetoothDevice.EXTRA_CONNECTION_ACCESS_RESULT,
                         allowed ? BluetoothDevice.CONNECTION_ACCESS_YES
