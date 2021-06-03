@@ -134,9 +134,14 @@ public class BluetoothPermissionActivity extends AlertActivity implements
             p.mView = createSapDialogView();
             break;
         }
-        p.mPositiveButtonText = getString(R.string.allow);
+        p.mPositiveButtonText = getString(
+                requestType == BluetoothDevice.REQUEST_TYPE_PROFILE_CONNECTION
+                        ? R.string.bluetooth_connect_access_dialog_positive : R.string.allow);
         p.mPositiveButtonListener = this;
-        p.mNegativeButtonText = getString(R.string.request_manage_bluetooth_permission_dont_allow);
+        p.mNegativeButtonText = getString(
+                requestType == BluetoothDevice.REQUEST_TYPE_PROFILE_CONNECTION
+                        ? R.string.bluetooth_connect_access_dialog_negative
+                        : R.string.request_manage_bluetooth_permission_dont_allow);
         p.mNegativeButtonListener = this;
         mOkButton = mAlert.getButton(DialogInterface.BUTTON_POSITIVE);
         setupAlert();
