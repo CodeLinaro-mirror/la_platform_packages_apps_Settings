@@ -34,7 +34,9 @@ public class WifiSliceItem {
     private final int mSecurity;
     private final int mConnectedState;
     private final int mLevel;
+    private final boolean mShouldShowXLevelIcon;
     private final boolean mShouldEditBeforeConnect;
+    private final boolean mHasInternetAccess;
     private final String mSummary;
 
     // These values must be kept within [WifiEntry.WIFI_LEVEL_MIN, WifiEntry.WIFI_LEVEL_MAX]
@@ -53,7 +55,9 @@ public class WifiSliceItem {
         mSecurity = wifiEntry.getSecurity();
         mConnectedState = wifiEntry.getConnectedState();
         mLevel = wifiEntry.getLevel();
+        mShouldShowXLevelIcon = wifiEntry.shouldShowXLevelIcon();
         mShouldEditBeforeConnect = wifiEntry.shouldEditBeforeConnect();
+        mHasInternetAccess = wifiEntry.hasInternetAccess();
         mSummary = wifiEntry.getSummary(false /* concise */);
     }
 
@@ -71,6 +75,9 @@ public class WifiSliceItem {
             return false;
         }
         if (getLevel() != otherItem.getLevel()) {
+            return false;
+        }
+        if (shouldShowXLevelIcon() != otherItem.shouldShowXLevelIcon()) {
             return false;
         }
         if (!TextUtils.equals(getSummary(), otherItem.getSummary())) {
@@ -97,6 +104,20 @@ public class WifiSliceItem {
 
     public int getLevel() {
         return mLevel;
+    }
+
+    /**
+     * Returns whether the level icon for this network should show an X or not.
+     */
+    public boolean shouldShowXLevelIcon() {
+        return mShouldShowXLevelIcon;
+    }
+
+    /**
+     * Returns true when the Wi-Fi network has Internet access.
+     */
+    public boolean hasInternetAccess() {
+        return mHasInternetAccess;
     }
 
     /**

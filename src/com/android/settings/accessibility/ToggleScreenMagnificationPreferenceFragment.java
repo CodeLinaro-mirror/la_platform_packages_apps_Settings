@@ -44,7 +44,11 @@ import androidx.preference.PreferenceCategory;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.DialogCreatable;
 import com.android.settings.R;
+import com.android.settings.accessibility.AccessibilityEditDialogUtils.DialogType;
 import com.android.settings.accessibility.AccessibilityUtil.UserShortcutType;
+import com.android.settings.utils.LocaleUtils;
+
+import com.google.android.setupcompat.util.WizardManagerHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -127,9 +131,11 @@ public class ToggleScreenMagnificationPreferenceFragment extends
             case DialogEnums.MAGNIFICATION_EDIT_SHORTCUT:
                 final CharSequence dialogTitle = getPrefContext().getString(
                         R.string.accessibility_shortcut_title, mPackageName);
-                dialog = AccessibilityEditDialogUtils.showMagnificationEditShortcutDialog(
-                                getPrefContext(), dialogTitle,
-                                this::callOnAlertDialogCheckboxClicked);
+                final int dialogType = WizardManagerHelper.isAnySetupWizard(getIntent())
+                        ? DialogType.EDIT_SHORTCUT_MAGNIFICATION_SUW
+                        : DialogType.EDIT_SHORTCUT_MAGNIFICATION;
+                dialog = AccessibilityEditDialogUtils.showEditShortcutDialog(getPrefContext(),
+                        dialogType, dialogTitle, this::callOnAlertDialogCheckboxClicked);
                 setupMagnificationEditShortcutDialog(dialog);
                 return dialog;
             default:
@@ -139,7 +145,6 @@ public class ToggleScreenMagnificationPreferenceFragment extends
 
     @Override
     protected void initSettingsPreference() {
-
         // If the device doesn't support magnification area, it should hide the settings preference.
         if (!getContext().getResources().getBoolean(
                 com.android.internal.R.bool.config_magnification_area)) {
@@ -278,10 +283,9 @@ public class ToggleScreenMagnificationPreferenceFragment extends
         if (list.isEmpty()) {
             list.add(softwareTitle);
         }
-        final String joinStrings = TextUtils.join(/* delimiter= */", ", list);
 
         return CaseMap.toTitle().wholeString().noLowercase().apply(Locale.getDefault(), /* iter= */
-                null, joinStrings);
+                null, LocaleUtils.getConcatenatedString(list));
     }
 
     @Override
@@ -294,6 +298,11 @@ public class ToggleScreenMagnificationPreferenceFragment extends
         mShortcutPreference.setChecked(value != UserShortcutType.EMPTY);
         mShortcutPreference.setSummary(
                 getShortcutTypeSummary(getPrefContext()));
+    }
+
+    @Override
+    public int getHelpResource() {
+        return R.string.help_url_magnification;
     }
 
     @Override

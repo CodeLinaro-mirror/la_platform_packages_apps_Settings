@@ -15,17 +15,17 @@
  */
 package com.android.settings.display;
 
-import static com.android.settings.display.SmartAutoRotateController.hasSufficientPermission;
 import static com.android.settings.display.SmartAutoRotateController.isRotationResolverServiceAvailable;
 
 import android.app.settings.SettingsEnums;
-import android.hardware.SensorPrivacyManager;
+import android.content.Context;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 
 import com.android.internal.view.RotationPolicy;
@@ -48,9 +48,8 @@ public class SmartAutoRotatePreferenceFragment extends DashboardFragment {
     private static final String TAG = "SmartAutoRotatePreferenceFragment";
 
     private RotationPolicy.RotationPolicyListener mRotationPolicyListener;
-    private SensorPrivacyManager mPrivacyManager;
     private AutoRotateSwitchBarController mSwitchBarController;
-    private static final String FACE_SWITCH_PREFERENCE_ID = "face_based_rotate";
+    @VisibleForTesting static final String AUTO_ROTATE_SWITCH_PREFERENCE_ID = "auto_rotate_switch";
 
     @Override
     protected int getPreferenceScreenResId() {
@@ -58,17 +57,17 @@ public class SmartAutoRotatePreferenceFragment extends DashboardFragment {
     }
 
     @Override
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        use(SmartAutoRotateController.class).init(getLifecycle());
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
         final View view = super.onCreateView(inflater, container, savedInstanceState);
         final SettingsActivity activity = (SettingsActivity) getActivity();
-        final SettingsMainSwitchBar switchBar = activity.getSwitchBar();
-        switchBar.setTitle(
-                getContext().getString(R.string.auto_rotate_settings_primary_switch_title));
-        switchBar.show();
-        mSwitchBarController = new AutoRotateSwitchBarController(activity, switchBar,
-                getSettingsLifecycle());
-        mPrivacyManager = SensorPrivacyManager.getInstance(activity);
+        createHeader(activity);
         final Preference footerPreference = findPreference(FooterPreference.KEY_FOOTER);
         if (footerPreference != null) {
             footerPreference.setTitle(Html.fromHtml(getString(R.string.smart_rotate_text_headline),
@@ -78,6 +77,19 @@ public class SmartAutoRotatePreferenceFragment extends DashboardFragment {
         return view;
     }
 
+    @VisibleForTesting
+    void createHeader(SettingsActivity activity) {
+        if (isRotationResolverServiceAvailable(activity)) {
+            final SettingsMainSwitchBar switchBar = activity.getSwitchBar();
+            switchBar.setTitle(
+                    getContext().getString(R.string.auto_rotate_settings_primary_switch_title));
+            switchBar.show();
+            mSwitchBarController = new AutoRotateSwitchBarController(activity, switchBar,
+                    getSettingsLifecycle());
+            findPreference(AUTO_ROTATE_SWITCH_PREFERENCE_ID).setVisible(false);
+        }
+    }
+
     @Override
     public void onResume() {
         super.onResume();
@@ -85,13 +97,8 @@ public class SmartAutoRotatePreferenceFragment extends DashboardFragment {
             mRotationPolicyListener = new RotationPolicy.RotationPolicyListener() {
                 @Override
                 public void onChange() {
-                    mSwitchBarController.onChange();
-                    final boolean isLocked = RotationPolicy.isRotationLocked(getContext());
-                    final boolean isCameraLocked = mPrivacyManager.isSensorPrivacyEnabled(
-                            SensorPrivacyManager.Sensors.CAMERA);
-                    final Preference preference = findPreference(FACE_SWITCH_PREFERENCE_ID);
-                    if (preference != null && hasSufficientPermission(getContext())) {
-                        preference.setEnabled(!isLocked && !isCameraLocked);
+                    if (mSwitchBarController != null) {
+                        mSwitchBarController.onChange();
                     }
                 }
             };

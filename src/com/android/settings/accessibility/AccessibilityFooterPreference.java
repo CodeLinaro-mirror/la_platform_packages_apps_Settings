@@ -17,25 +17,19 @@
 package com.android.settings.accessibility;
 
 import android.content.Context;
-import android.text.TextUtils;
 import android.text.method.LinkMovementMethod;
 import android.util.AttributeSet;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.preference.PreferenceViewHolder;
 
-import com.android.settingslib.R;
 import com.android.settingslib.widget.FooterPreference;
 
 /**
- * A custom preference acting as footer of a page. It has a field for icon and text. It is added
- * to screen as the last preference and groups of icon and text content in accessibility-focusable
- * {@link android.view.accessibility.AccessibilityNodeInfo} for TalkBack to use.
+ * A custom preference acting as footer of a page. Disables the movement method by default.
  */
 public final class AccessibilityFooterPreference extends FooterPreference {
 
-    private CharSequence mIconContentDescription;
     private boolean mLinkEnabled;
 
     public AccessibilityFooterPreference(Context context, AttributeSet attrs) {
@@ -61,33 +55,6 @@ public final class AccessibilityFooterPreference extends FooterPreference {
         } else {
             title.setMovementMethod(/* movement= */ null);
         }
-
-        final LinearLayout infoFrame = holder.itemView.findViewById(R.id.icon_frame);
-        if (!TextUtils.isEmpty(mIconContentDescription)) {
-            // Groups related content.
-            infoFrame.setContentDescription(mIconContentDescription);
-            title.setFocusable(false);
-        } else {
-            infoFrame.setContentDescription(null);
-            title.setFocusable(true);
-        }
-    }
-
-    /**
-     * Sets the content description of the icon.
-     */
-    public void setIconContentDescription(CharSequence iconContentDescription) {
-        if (!TextUtils.equals(iconContentDescription, mIconContentDescription)) {
-            mIconContentDescription = iconContentDescription;
-            notifyChanged();
-        }
-    }
-
-    /**
-     * Gets the content description of the icon.
-     */
-    public CharSequence getIconContentDescription() {
-        return mIconContentDescription;
     }
 
     /**

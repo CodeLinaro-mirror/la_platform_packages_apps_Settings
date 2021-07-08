@@ -20,17 +20,23 @@ import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Matchers.anyInt;
+import static org.mockito.Matchers.anyLong;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.ContentValues;
 import android.content.pm.PackageManager;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
+import android.os.Bundle;
 import android.text.format.DateUtils;
+import android.util.Pair;
 
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -40,8 +46,10 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.testutils.FakeFeatureFactory;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;
@@ -75,14 +83,22 @@ public final class BatteryChartPreferenceControllerTest {
     @Mock private PowerGaugePreference mPowerGaugePreference;
     @Mock private ExpandDividerPreference mExpandDividerPreference;
     @Mock private BatteryUtils mBatteryUtils;
+    @Mock private Configuration mConfiguration;
+    @Mock private Resources mResources;
 
     private Context mContext;
+    private FakeFeatureFactory mFeatureFactory;
     private BatteryDiffEntry mBatteryDiffEntry;
+    private MetricsFeatureProvider mMetricsFeatureProvider;
     private BatteryChartPreferenceController mBatteryChartPreferenceController;
 
     @Before
     public void setUp() {
         MockitoAnnotations.initMocks(this);
+        Locale.setDefault(new Locale("en_US"));
+        org.robolectric.shadows.ShadowSettings.set24HourTimeFormat(false);
+        mFeatureFactory = FakeFeatureFactory.setupForTest();
+        mMetricsFeatureProvider = mFeatureFactory.metricsFeatureProvider;
         mContext = spy(RuntimeEnvironment.application);
         mBatteryChartPreferenceController = createController();
         mBatteryChartPreferenceController.mPrefContext = mContext;
@@ -101,6 +117,37 @@ public final class BatteryChartPreferenceControllerTest {
             new BatteryEntry.NameAndIcon("fakeName", /*icon=*/ null, /*iconId=*/ 1));
         mBatteryChartPreferenceController.setBatteryHistoryMap(
             createBatteryHistoryMap());
+    }
+
+    @Ignore
+    @Test
+    public void testOnResume_uiModeIsChanged_clearBatteryDiffEntryCache() {
+        doReturn(mResources).when(mContext).getResources();
+        doReturn(mConfiguration).when(mResources).getConfiguration();
+        mConfiguration.uiMode = Configuration.UI_MODE_NIGHT_UNDEFINED;
+        // Ensures the testing environment is correct.
+        assertThat(BatteryDiffEntry.sResourceCache).hasSize(1);
+        mBatteryChartPreferenceController.onResume();
+        // Changes the uiMode in the configuration.
+        mConfiguration.uiMode = Configuration.UI_MODE_NIGHT_YES;
+
+        mBatteryChartPreferenceController.onResume();
+        assertThat(BatteryDiffEntry.sResourceCache).isEmpty();
+    }
+
+    @Ignore
+    @Test
+    public void testOnResume_uiModeIsNotChanged_notClearBatteryDiffEntryCache() {
+        doReturn(mResources).when(mContext).getResources();
+        doReturn(mConfiguration).when(mResources).getConfiguration();
+        mConfiguration.uiMode = Configuration.UI_MODE_NIGHT_UNDEFINED;
+        // Ensures the testing environment is correct.
+        assertThat(BatteryDiffEntry.sResourceCache).hasSize(1);
+
+        mBatteryChartPreferenceController.onResume();
+        assertThat(BatteryDiffEntry.sResourceCache).isNotEmpty();
+        verify(mMetricsFeatureProvider)
+                .action(mContext, SettingsEnums.OPEN_BATTERY_USAGE);
     }
 
     @Test
@@ -264,6 +311,7 @@ public final class BatteryChartPreferenceControllerTest {
         doReturn(appLabel).when(mBatteryDiffEntry).getAppLabel();
         doReturn(PREF_KEY).when(mBatteryHistEntry).getKey();
         doReturn(null).when(mAppListGroup).findPreference(PREF_KEY);
+        doReturn(false).when(mBatteryDiffEntry).validForRestriction();
 
         mBatteryChartPreferenceController.addPreferenceToScreen(
             Arrays.asList(mBatteryDiffEntry));
@@ -281,6 +329,7 @@ public final class BatteryChartPreferenceControllerTest {
         assertThat(pref.getOrder()).isEqualTo(1);
         assertThat(pref.getBatteryDiffEntry()).isSameInstanceAs(mBatteryDiffEntry);
         assertThat(pref.isSingleLineTitle()).isTrue();
+        assertThat(pref.isEnabled()).isFalse();
     }
 
     @Test
@@ -299,30 +348,51 @@ public final class BatteryChartPreferenceControllerTest {
     }
 
     @Test
-    public void testHandlePreferenceTreeClick_notPowerGaugePreference_returnFalse() {
+    public void testHandlePreferenceTreeiClick_notPowerGaugePreference_returnFalse() {
         assertThat(mBatteryChartPreferenceController.handlePreferenceTreeClick(mAppListGroup))
             .isFalse();
+
+        verify(mMetricsFeatureProvider, never())
+            .action(mContext, SettingsEnums.ACTION_BATTERY_USAGE_APP_ITEM);
+        verify(mMetricsFeatureProvider, never())
+            .action(mContext, SettingsEnums.ACTION_BATTERY_USAGE_SYSTEM_ITEM);
     }
 
     @Test
-    public void testHandlePreferenceTreeClick_validPackageName_returnTrue() {
+    public void testHandlePreferenceTreeClick_forAppEntry_returnTrue() {
         doReturn(false).when(mBatteryHistEntry).isAppEntry();
         doReturn(mBatteryDiffEntry).when(mPowerGaugePreference).getBatteryDiffEntry();
 
         assertThat(mBatteryChartPreferenceController.handlePreferenceTreeClick(
             mPowerGaugePreference)).isTrue();
+        verify(mMetricsFeatureProvider)
+            .action(
+                mContext,
+                SettingsEnums.ACTION_BATTERY_USAGE_SYSTEM_ITEM,
+                (Pair<Integer, Object>[]) new Pair[] {
+                    new Pair(ConvertUtils.METRIC_KEY_PACKAGE, null),
+                    new Pair(ConvertUtils.METRIC_KEY_BATTERY_LEVEL, 0),
+                    new Pair(ConvertUtils.METRIC_KEY_BATTERY_USAGE, null)
+                });
     }
 
     @Test
-    public void testHandlePreferenceTreeClick_appEntryWithInvalidPackage_returnFalse() {
+    public void testHandlePreferenceTreeClick_forSystemEntry_returnTrue() {
         mBatteryChartPreferenceController.mBatteryUtils = mBatteryUtils;
         doReturn(true).when(mBatteryHistEntry).isAppEntry();
-        doReturn(BatteryUtils.UID_NULL).when(mBatteryUtils)
-            .getPackageUid(mBatteryHistEntry.mPackageName);
         doReturn(mBatteryDiffEntry).when(mPowerGaugePreference).getBatteryDiffEntry();
 
         assertThat(mBatteryChartPreferenceController.handlePreferenceTreeClick(
-            mPowerGaugePreference)).isFalse();
+            mPowerGaugePreference)).isTrue();
+        verify(mMetricsFeatureProvider)
+            .action(
+                mContext,
+                SettingsEnums.ACTION_BATTERY_USAGE_APP_ITEM,
+                (Pair<Integer, Object>[]) new Pair[] {
+                    new Pair(ConvertUtils.METRIC_KEY_PACKAGE, null),
+                    new Pair(ConvertUtils.METRIC_KEY_BATTERY_LEVEL, 0),
+                    new Pair(ConvertUtils.METRIC_KEY_BATTERY_USAGE, null)
+                });
     }
 
     @Test
@@ -442,6 +512,11 @@ public final class BatteryChartPreferenceControllerTest {
         verify(mAppListGroup).addPreference(captor.capture());
         // Verifies the added preference.
         assertThat(captor.getValue().getKey()).isEqualTo(PREF_KEY);
+        verify(mMetricsFeatureProvider)
+            .action(
+                mContext,
+                SettingsEnums.ACTION_BATTERY_USAGE_EXPAND_ITEM,
+                true /*isExpanded*/);
     }
 
     @Test
@@ -457,6 +532,28 @@ public final class BatteryChartPreferenceControllerTest {
         verify(mAppListGroup).findPreference(PREF_KEY);
         verify(mAppListGroup).removePreference(mPowerGaugePreference);
         assertThat(mBatteryChartPreferenceController.mPreferenceCache).hasSize(1);
+        verify(mMetricsFeatureProvider)
+            .action(
+                mContext,
+                SettingsEnums.ACTION_BATTERY_USAGE_EXPAND_ITEM,
+                false /*isExpanded*/);
+    }
+
+    @Test
+    public void testOnSelect_selectSpecificTimeSlot_logMetric() {
+        mBatteryChartPreferenceController.onSelect(1 /*slot index*/);
+
+        verify(mMetricsFeatureProvider)
+            .action(mContext, SettingsEnums.ACTION_BATTERY_USAGE_TIME_SLOT);
+    }
+
+    @Test
+    public void testOnSelect_selectAll_logMetric() {
+        mBatteryChartPreferenceController.onSelect(
+            BatteryChartView.SELECTED_INDEX_ALL /*slot index*/);
+
+        verify(mMetricsFeatureProvider)
+            .action(mContext, SettingsEnums.ACTION_BATTERY_USAGE_SHOW_ALL);
     }
 
     @Test
@@ -477,13 +574,13 @@ public final class BatteryChartPreferenceControllerTest {
         verify(mBatteryChartPreferenceController.mAppListPrefGroup)
             .setTitle(captor.capture());
         assertThat(captor.getValue())
-            .isEqualTo("App usage for 4 pm-7 am");
+            .isEqualTo("App usage for 4 pm - 7 am");
         // Verifies the title in the expandable divider.
         captor = ArgumentCaptor.forClass(String.class);
         verify(mBatteryChartPreferenceController.mExpandDividerPreference)
             .setTitle(captor.capture());
         assertThat(captor.getValue())
-            .isEqualTo("System usage for 4 pm-7 am");
+            .isEqualTo("System usage for 4 pm - 7 am");
     }
 
     @Test
@@ -522,7 +619,7 @@ public final class BatteryChartPreferenceControllerTest {
         mBatteryChartPreferenceController.setTimestampLabel();
 
         verify(mBatteryChartPreferenceController.mBatteryChartView, never())
-            .setTimestamps(any());
+            .setLatestTimestamp(anyLong());
     }
 
     @Test
@@ -531,19 +628,11 @@ public final class BatteryChartPreferenceControllerTest {
         mBatteryChartPreferenceController.mBatteryChartView =
             spy(new BatteryChartView(mContext));
         setUpBatteryHistoryKeys();
-        // Generates the expected result.
-        final String[] expectedResults = new String[4];
-        final long timeSlotOffset = DateUtils.HOUR_IN_MILLIS * 8;
-        for (int index = 0; index < expectedResults.length; index++) {
-            expectedResults[index] =
-                ConvertUtils.utcToLocalTimeHour(
-                    1619247636826L - (3 - index) * timeSlotOffset);
-        }
 
         mBatteryChartPreferenceController.setTimestampLabel();
 
         verify(mBatteryChartPreferenceController.mBatteryChartView)
-            .setTimestamps(expectedResults);
+            .setLatestTimestamp(1619247636826L);
     }
 
     @Test
@@ -556,7 +645,52 @@ public final class BatteryChartPreferenceControllerTest {
         mBatteryChartPreferenceController.setTimestampLabel();
 
         verify(mBatteryChartPreferenceController.mBatteryChartView)
-            .setTimestamps(any());
+            .setLatestTimestamp(anyLong());
+    }
+
+    @Test
+    public void testOnSaveInstanceState_restoreSelectedIndexAndExpandState() {
+        final int expectedIndex = 1;
+        final boolean isExpanded = true;
+        final Bundle bundle = new Bundle();
+        mBatteryChartPreferenceController.mTrapezoidIndex = expectedIndex;
+        mBatteryChartPreferenceController.mIsExpanded = isExpanded;
+        mBatteryChartPreferenceController.onSaveInstanceState(bundle);
+        // Replaces the original controller with other values.
+        mBatteryChartPreferenceController.mTrapezoidIndex = -1;
+        mBatteryChartPreferenceController.mIsExpanded = false;
+
+        mBatteryChartPreferenceController.onCreate(bundle);
+        mBatteryChartPreferenceController.setBatteryHistoryMap(
+             createBatteryHistoryMap());
+
+        assertThat(mBatteryChartPreferenceController.mTrapezoidIndex)
+            .isEqualTo(expectedIndex);
+        assertThat(mBatteryChartPreferenceController.mIsExpanded).isTrue();
+    }
+
+    @Test
+    public void testIsValidToShowSummary_returnExpectedResult() {
+        assertThat(mBatteryChartPreferenceController
+                .isValidToShowSummary("com.google.android.apps.scone"))
+            .isTrue();
+
+        // Verifies the item which is defined in the array list.
+        assertThat(mBatteryChartPreferenceController
+                .isValidToShowSummary("com.google.android.googlequicksearchbox"))
+            .isFalse();
+    }
+
+    @Test
+    public void testIsValidToShowEntry_returnExpectedResult() {
+        assertThat(mBatteryChartPreferenceController
+                .isValidToShowEntry("com.google.android.apps.scone"))
+            .isTrue();
+
+        // Verifies the items which are defined in the array list.
+        assertThat(mBatteryChartPreferenceController
+                .isValidToShowEntry("com.google.android.gms.persistent"))
+            .isFalse();
     }
 
     private static Map<Long, Map<String, BatteryHistEntry>> createBatteryHistoryMap() {
@@ -582,7 +716,7 @@ public final class BatteryChartPreferenceControllerTest {
     private void setUpBatteryHistoryKeys() {
         mBatteryChartPreferenceController.mBatteryHistoryKeys =
             new long[] {1619196786769L, 0L, 1619247636826L};
-        ConvertUtils.utcToLocalTimeHour(/*timestamp=*/ 0);
+        ConvertUtils.utcToLocalTimeHour(/*timestamp=*/ 0, /*is24HourFormat=*/ false);
         // Simulates the locale in GMT.
         ConvertUtils.sSimpleDateFormatForHour
              .setTimeZone(TimeZone.getTimeZone("GMT"));

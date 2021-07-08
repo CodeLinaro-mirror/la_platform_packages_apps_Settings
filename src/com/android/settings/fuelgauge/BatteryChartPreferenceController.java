@@ -16,13 +16,19 @@
 
 package com.android.settings.fuelgauge;
 
+import android.app.settings.SettingsEnums;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
+import android.os.AsyncTask;
+import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.text.TextUtils;
+import android.text.format.DateFormat;
 import android.text.format.DateUtils;
 import android.util.Log;
+import android.util.Pair;
 
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
@@ -33,16 +39,20 @@ import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.core.InstrumentedPreferenceFragment;
 import com.android.settings.core.PreferenceControllerMixin;
+import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
+import com.android.settingslib.core.lifecycle.events.OnCreate;
 import com.android.settingslib.core.lifecycle.events.OnDestroy;
-import com.android.settingslib.core.lifecycle.events.OnPause;
+import com.android.settingslib.core.lifecycle.events.OnResume;
+import com.android.settingslib.core.lifecycle.events.OnSaveInstanceState;
 import com.android.settingslib.utils.StringUtil;
+import com.android.settingslib.widget.FooterPreference;
 
-import java.time.Clock;
-import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
@@ -50,15 +60,24 @@ import java.util.Map;
 
 /** Controls the update for chart graph and the list items. */
 public class BatteryChartPreferenceController extends AbstractPreferenceController
-        implements PreferenceControllerMixin, LifecycleObserver, OnPause, OnDestroy,
-                BatteryChartView.OnSelectListener, ExpandDividerPreference.OnExpandListener {
+        implements PreferenceControllerMixin, LifecycleObserver, OnCreate, OnDestroy,
+                OnSaveInstanceState, BatteryChartView.OnSelectListener, OnResume,
+                ExpandDividerPreference.OnExpandListener {
     private static final String TAG = "BatteryChartPreferenceController";
+    private static final String KEY_FOOTER_PREF = "battery_graph_footer";
+
     /** Desired battery history size for timestamp slots. */
     public static final int DESIRED_HISTORY_SIZE = 25;
     private static final int CHART_LEVEL_ARRAY_SIZE = 13;
     private static final int CHART_KEY_ARRAY_SIZE = DESIRED_HISTORY_SIZE;
     private static final long VALID_USAGE_TIME_DURATION = DateUtils.HOUR_IN_MILLIS * 2;
     private static final long VALID_DIFF_DURATION = DateUtils.MINUTE_IN_MILLIS * 3;
+
+    // Keys for bundle instance to restore configurations.
+    private static final String KEY_EXPAND_SYSTEM_INFO = "expand_system_info";
+    private static final String KEY_CURRENT_TIME_SLOT = "current_time_slot";
+
+    private static int sUiMode = Configuration.UI_MODE_NIGHT_UNDEFINED;
 
     @VisibleForTesting
     Map<Integer, List<BatteryDiffEntry>> mBatteryIndexedMap;
@@ -69,17 +88,23 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
     @VisibleForTesting BatteryChartView mBatteryChartView;
     @VisibleForTesting ExpandDividerPreference mExpandDividerPreference;
 
+    @VisibleForTesting boolean mIsExpanded = false;
     @VisibleForTesting int[] mBatteryHistoryLevels;
     @VisibleForTesting long[] mBatteryHistoryKeys;
     @VisibleForTesting int mTrapezoidIndex = BatteryChartView.SELECTED_INDEX_INVALID;
 
+    private boolean mIs24HourFormat = false;
+    private boolean mIsFooterPrefAdded = false;
+    private PreferenceScreen mPreferenceScreen;
+    private FooterPreference mFooterPreference;
+
     private final String mPreferenceKey;
     private final SettingsActivity mActivity;
     private final InstrumentedPreferenceFragment mFragment;
-    private final Handler mHandler = new Handler(Looper.getMainLooper());
+    private final CharSequence[] mNotAllowShowEntryPackages;
     private final CharSequence[] mNotAllowShowSummaryPackages;
-
-    private boolean mIsExpanded = false;
+    private final MetricsFeatureProvider mMetricsFeatureProvider;
+    private final Handler mHandler = new Handler(Looper.getMainLooper());
 
     // Preference cache to avoid create new instance each time.
     @VisibleForTesting
@@ -95,15 +120,54 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
         mActivity = activity;
         mFragment = fragment;
         mPreferenceKey = preferenceKey;
+        mIs24HourFormat = DateFormat.is24HourFormat(context);
         mNotAllowShowSummaryPackages = context.getResources()
             .getTextArray(R.array.allowlist_hide_summary_in_battery_usage);
+        mNotAllowShowEntryPackages = context.getResources()
+            .getTextArray(R.array.allowlist_hide_entry_in_battery_usage);
+        mMetricsFeatureProvider =
+            FeatureFactory.getFactory(mContext).getMetricsFeatureProvider();
         if (lifecycle != null) {
             lifecycle.addObserver(this);
         }
     }
 
     @Override
-    public void onPause() {
+    public void onCreate(Bundle savedInstanceState) {
+        if (savedInstanceState == null) {
+            return;
+        }
+        mTrapezoidIndex =
+            savedInstanceState.getInt(KEY_CURRENT_TIME_SLOT, mTrapezoidIndex);
+        mIsExpanded =
+            savedInstanceState.getBoolean(KEY_EXPAND_SYSTEM_INFO, mIsExpanded);
+        Log.d(TAG, String.format("onCreate() slotIndex=%d isExpanded=%b",
+            mTrapezoidIndex, mIsExpanded));
+    }
+
+    @Override
+    public void onResume() {
+        final int currentUiMode =
+            mContext.getResources().getConfiguration().uiMode
+                & Configuration.UI_MODE_NIGHT_MASK;
+        if (sUiMode != currentUiMode) {
+            sUiMode = currentUiMode;
+            BatteryDiffEntry.clearCache();
+            Log.d(TAG, "clear icon and label cache since uiMode is changed");
+        }
+        mIs24HourFormat = DateFormat.is24HourFormat(mContext);
+        mMetricsFeatureProvider.action(mPrefContext, SettingsEnums.OPEN_BATTERY_USAGE);
+    }
+
+    @Override
+    public void onSaveInstanceState(Bundle savedInstance) {
+        if (savedInstance == null) {
+            return;
+        }
+        savedInstance.putInt(KEY_CURRENT_TIME_SLOT, mTrapezoidIndex);
+        savedInstance.putBoolean(KEY_EXPAND_SYSTEM_INFO, mIsExpanded);
+        Log.d(TAG, String.format("onSaveInstanceState() slotIndex=%d isExpanded=%b",
+            mTrapezoidIndex, mIsExpanded));
     }
 
     @Override
@@ -121,9 +185,17 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
+        mPreferenceScreen = screen;
         mPrefContext = screen.getContext();
         mAppListPrefGroup = screen.findPreference(mPreferenceKey);
         mAppListPrefGroup.setOrderingAsAdded(false);
+        mAppListPrefGroup.setTitle(
+            mPrefContext.getString(R.string.battery_app_usage_for_past_24));
+        mFooterPreference = screen.findPreference(KEY_FOOTER_PREF);
+        // Removes footer first until usage data is loaded to avoid flashing.
+        if (mFooterPreference != null) {
+            screen.removePreference(mFooterPreference);
+        }
     }
 
     @Override
@@ -145,62 +217,55 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
         final BatteryDiffEntry diffEntry = powerPref.getBatteryDiffEntry();
         final BatteryHistEntry histEntry = diffEntry.mBatteryHistEntry;
         final String packageName = histEntry.mPackageName;
-        // Checks whether the package is installed or not.
-        boolean isValidPackage = true;
-        if (histEntry.isAppEntry()) {
-            if (mBatteryUtils == null) {
-                mBatteryUtils = BatteryUtils.getInstance(mPrefContext);
-            }
-            isValidPackage = mBatteryUtils.getPackageUid(packageName)
-                != BatteryUtils.UID_NULL;
-        }
-        Log.d(TAG, String.format("handleClick() label=%s key=%s isValid:%b %s",
-            diffEntry.getAppLabel(), histEntry.getKey(), isValidPackage, packageName));
-        if (isValidPackage) {
-            AdvancedPowerUsageDetail.startBatteryDetailPage(
+        final boolean isAppEntry = histEntry.isAppEntry();
+        mMetricsFeatureProvider.action(
+            mPrefContext,
+            isAppEntry
+                ? SettingsEnums.ACTION_BATTERY_USAGE_APP_ITEM
+                : SettingsEnums.ACTION_BATTERY_USAGE_SYSTEM_ITEM,
+            new Pair(ConvertUtils.METRIC_KEY_PACKAGE, packageName),
+            new Pair(ConvertUtils.METRIC_KEY_BATTERY_LEVEL, histEntry.mBatteryLevel),
+            new Pair(ConvertUtils.METRIC_KEY_BATTERY_USAGE, powerPref.getPercent()));
+        Log.d(TAG, String.format("handleClick() label=%s key=%s enntry=\n%s",
+                diffEntry.getAppLabel(), histEntry.getKey(), histEntry));
+        AdvancedPowerUsageDetail.startBatteryDetailPage(
                 mActivity, mFragment, diffEntry, powerPref.getPercent(),
                 isValidToShowSummary(packageName), getSlotInformation());
-            return true;
-        }
-        return false;
+        return true;
     }
 
     @Override
     public void onSelect(int trapezoidIndex) {
         Log.d(TAG, "onChartSelect:" + trapezoidIndex);
         refreshUi(trapezoidIndex, /*isForce=*/ false);
+        mMetricsFeatureProvider.action(
+            mPrefContext,
+            trapezoidIndex == BatteryChartView.SELECTED_INDEX_ALL
+                ? SettingsEnums.ACTION_BATTERY_USAGE_SHOW_ALL
+                : SettingsEnums.ACTION_BATTERY_USAGE_TIME_SLOT);
     }
 
     @Override
     public void onExpand(boolean isExpanded) {
         mIsExpanded = isExpanded;
+        mMetricsFeatureProvider.action(
+            mPrefContext,
+            SettingsEnums.ACTION_BATTERY_USAGE_EXPAND_ITEM,
+            isExpanded);
         refreshExpandUi();
     }
 
     void setBatteryHistoryMap(
-            final Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap) {
-        mHandler.post(() -> setBatteryHistoryMapInner(batteryHistoryMap));
-    }
-
-    private void setBatteryHistoryMapInner(
             final Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap) {
         // Resets all battery history data relative variables.
         if (batteryHistoryMap == null || batteryHistoryMap.isEmpty()) {
             mBatteryIndexedMap = null;
             mBatteryHistoryKeys = null;
             mBatteryHistoryLevels = null;
+            addFooterPreferenceIfNeeded(false);
             return;
         }
-        // Generates battery history timestamp slots.
-        final List<Long> batteryHistoryKeyList =
-            new ArrayList<>(batteryHistoryMap.keySet());
-        Collections.sort(batteryHistoryKeyList);
-        mBatteryHistoryKeys = new long[CHART_KEY_ARRAY_SIZE];
-        for (int index = 0; index < CHART_KEY_ARRAY_SIZE; index++) {
-            mBatteryHistoryKeys[index] = batteryHistoryKeyList.get(index);
-        }
-
-        // Generates the battery history levels for chart graph.
+        mBatteryHistoryKeys = getBatteryHistoryKeys(batteryHistoryMap);
         mBatteryHistoryLevels = new int[CHART_LEVEL_ARRAY_SIZE];
         for (int index = 0; index < CHART_LEVEL_ARRAY_SIZE; index++) {
             final long timestamp = mBatteryHistoryKeys[index * 2];
@@ -218,23 +283,21 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
             mBatteryHistoryLevels[index] =
                 Math.round(batteryLevelCounter / entryMap.size());
         }
-        // Generates indexed usage map for chart.
-        mBatteryIndexedMap =
-            ConvertUtils.getIndexedUsageMap(
-                mPrefContext, /*timeSlotSize=*/ CHART_LEVEL_ARRAY_SIZE - 1,
-                mBatteryHistoryKeys, batteryHistoryMap,
-                /*purgeLowPercentageAndFakeData=*/ true);
         forceRefreshUi();
-
         Log.d(TAG, String.format(
             "setBatteryHistoryMap() size=%d\nkeys=%s\nlevels=%s",
-            batteryHistoryKeyList.size(),
+            batteryHistoryMap.size(),
             utcToLocalTime(mBatteryHistoryKeys),
             Arrays.toString(mBatteryHistoryLevels)));
+
+        // Loads item icon and label in the background.
+        new LoadAllItemsInfoTask(batteryHistoryMap).execute();
     }
 
     void setBatteryChartView(final BatteryChartView batteryChartView) {
-        mHandler.post(() -> setBatteryChartViewInner(batteryChartView));
+        if (mBatteryChartView != batteryChartView) {
+            mHandler.post(() -> setBatteryChartViewInner(batteryChartView));
+        }
     }
 
     private void setBatteryChartViewInner(final BatteryChartView batteryChartView) {
@@ -250,6 +313,7 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
                 : mTrapezoidIndex;
         if (mBatteryChartView != null) {
             mBatteryChartView.setLevels(mBatteryHistoryLevels);
+            mBatteryChartView.setSelectedIndex(refreshIndex);
             setTimestampLabel();
         }
         refreshUi(refreshIndex, /*isForce=*/ true);
@@ -278,6 +342,7 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
     private void addAllPreferences() {
         final List<BatteryDiffEntry> entries =
             mBatteryIndexedMap.get(Integer.valueOf(mTrapezoidIndex));
+        addFooterPreferenceIfNeeded(!entries.isEmpty());
         if (entries == null) {
             Log.w(TAG, "cannot find BatteryDiffEntry for:" + mTrapezoidIndex);
             return;
@@ -286,6 +351,11 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
         final List<BatteryDiffEntry> appEntries = new ArrayList<>();
         mSystemEntries.clear();
         entries.forEach(entry -> {
+            final String packageName = entry.getPackageName();
+            if (!isValidToShowEntry(packageName)) {
+                Log.w(TAG, "ignore showing item:" + packageName);
+                return;
+            }
             if (entry.isSystemEntry()) {
                 mSystemEntries.add(entry);
             } else {
@@ -310,6 +380,7 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
             if (mExpandDividerPreference == null) {
                 mExpandDividerPreference = new ExpandDividerPreference(mPrefContext);
                 mExpandDividerPreference.setOnExpandListener(this);
+                mExpandDividerPreference.setIsExpanded(mIsExpanded);
             }
             mExpandDividerPreference.setOrder(
                 mAppListPrefGroup.getPreferenceCount());
@@ -353,6 +424,7 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
             pref.setSingleLineTitle(true);
             // Sets the BatteryDiffEntry to preference for launching detailed page.
             pref.setBatteryDiffEntry(entry);
+            pref.setEnabled(entry.validForRestriction());
             setPreferenceSummary(pref, entry);
             if (!isAdded) {
                 mAppListPrefGroup.addPreference(pref);
@@ -425,10 +497,10 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
             return null;
         }
         final String fromHour = ConvertUtils.utcToLocalTimeHour(
-            mBatteryHistoryKeys[mTrapezoidIndex * 2]);
+            mBatteryHistoryKeys[mTrapezoidIndex * 2], mIs24HourFormat);
         final String toHour = ConvertUtils.utcToLocalTimeHour(
-            mBatteryHistoryKeys[(mTrapezoidIndex + 1) * 2]);
-        return String.format("%s-%s", fromHour, toHour);
+            mBatteryHistoryKeys[(mTrapezoidIndex + 1) * 2], mIs24HourFormat);
+        return String.format("%s - %s", fromHour, toHour);
     }
 
     @VisibleForTesting
@@ -480,15 +552,14 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
         return mPrefContext.getString(resourceId, timeSequence);
     }
 
-    private boolean isValidToShowSummary(String packageName) {
-        if (mNotAllowShowSummaryPackages != null) {
-            for (CharSequence notAllowPackageName : mNotAllowShowSummaryPackages) {
-                if (TextUtils.equals(packageName, notAllowPackageName)) {
-                    return false;
-                }
-            }
-        }
-        return true;
+    @VisibleForTesting
+    boolean isValidToShowSummary(String packageName) {
+        return !contains(packageName, mNotAllowShowSummaryPackages);
+    }
+
+    @VisibleForTesting
+    boolean isValidToShowEntry(String packageName) {
+        return !contains(packageName, mNotAllowShowEntryPackages);
     }
 
     @VisibleForTesting
@@ -496,21 +567,21 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
         if (mBatteryChartView == null || mBatteryHistoryKeys == null) {
             return;
         }
-        long latestTimestamp =
+        final long latestTimestamp =
             mBatteryHistoryKeys[mBatteryHistoryKeys.length - 1];
-        // Uses the current time if we don't have history data.
-        if (latestTimestamp == 0) {
-            latestTimestamp = Clock.systemUTC().millis();
+        mBatteryChartView.setLatestTimestamp(latestTimestamp);
+    }
+
+    private void addFooterPreferenceIfNeeded(boolean containAppItems) {
+        if (mIsFooterPrefAdded || mFooterPreference == null) {
+            return;
         }
-        // Generates timestamp label for chart graph (every 8 hours).
-        final long timeSlotOffset = DateUtils.HOUR_IN_MILLIS * 8;
-        final String[] timestampLabels = new String[4];
-        for (int index = 0; index < timestampLabels.length; index++) {
-            timestampLabels[index] =
-                ConvertUtils.utcToLocalTimeHour(
-                    latestTimestamp - (3 - index) * timeSlotOffset);
-        }
-        mBatteryChartView.setTimestamps(timestampLabels);
+        mIsFooterPrefAdded = true;
+        mFooterPreference.setTitle(mPrefContext.getString(
+            containAppItems
+                ? R.string.battery_usage_screen_footer
+                : R.string.battery_usage_screen_footer_empty));
+        mHandler.post(() -> mPreferenceScreen.addPreference(mFooterPreference));
     }
 
     private static String utcToLocalTime(long[] timestamps) {
@@ -520,6 +591,17 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
                   ConvertUtils.utcToLocalTime(timestamps[index])));
         }
         return builder.toString();
+    }
+
+    private static boolean contains(String target, CharSequence[] packageNames) {
+        if (target != null && packageNames != null) {
+            for (CharSequence packageName : packageNames) {
+                if (TextUtils.equals(target, packageName)) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 
     @VisibleForTesting
@@ -534,5 +616,87 @@ public class BatteryChartPreferenceController extends AbstractPreferenceControll
             return false;
         }
         return true;
+    }
+
+    public static List<BatteryDiffEntry> getBatteryLast24HrUsageData(Context context) {
+        final long start = System.currentTimeMillis();
+        final Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap =
+            FeatureFactory.getFactory(context)
+                .getPowerUsageFeatureProvider(context)
+                .getBatteryHistory(context);
+        if (batteryHistoryMap == null || batteryHistoryMap.isEmpty()) {
+            return null;
+        }
+        Log.d(TAG, String.format("getBatteryLast24HrData() size=%d time=&d/ms",
+            batteryHistoryMap.size(), (System.currentTimeMillis() - start)));
+        final Map<Integer, List<BatteryDiffEntry>> batteryIndexedMap =
+            ConvertUtils.getIndexedUsageMap(
+                context,
+                /*timeSlotSize=*/ CHART_LEVEL_ARRAY_SIZE - 1,
+                getBatteryHistoryKeys(batteryHistoryMap),
+                batteryHistoryMap,
+                /*purgeLowPercentageAndFakeData=*/ true);
+        return batteryIndexedMap.get(BatteryChartView.SELECTED_INDEX_ALL);
+    }
+
+    private static long[] getBatteryHistoryKeys(
+            final Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap) {
+        final List<Long> batteryHistoryKeyList =
+            new ArrayList<>(batteryHistoryMap.keySet());
+        Collections.sort(batteryHistoryKeyList);
+        final long[] batteryHistoryKeys = new long[CHART_KEY_ARRAY_SIZE];
+        for (int index = 0; index < CHART_KEY_ARRAY_SIZE; index++) {
+            batteryHistoryKeys[index] = batteryHistoryKeyList.get(index);
+        }
+        return batteryHistoryKeys;
+    }
+
+    // Loads all items icon and label in the background.
+    private final class LoadAllItemsInfoTask
+            extends AsyncTask<Void, Void, Map<Integer, List<BatteryDiffEntry>>> {
+
+        private long[] mBatteryHistoryKeysCache;
+        private Map<Long, Map<String, BatteryHistEntry>> mBatteryHistoryMap;
+
+        private LoadAllItemsInfoTask(
+                Map<Long, Map<String, BatteryHistEntry>> batteryHistoryMap) {
+            this.mBatteryHistoryMap = batteryHistoryMap;
+            this.mBatteryHistoryKeysCache = mBatteryHistoryKeys;
+        }
+
+        @Override
+        protected Map<Integer, List<BatteryDiffEntry>> doInBackground(Void... voids) {
+            if (mPrefContext == null || mBatteryHistoryKeysCache == null) {
+                return null;
+            }
+            final long startTime = System.currentTimeMillis();
+            final Map<Integer, List<BatteryDiffEntry>> indexedUsageMap =
+                ConvertUtils.getIndexedUsageMap(
+                    mPrefContext, /*timeSlotSize=*/ CHART_LEVEL_ARRAY_SIZE - 1,
+                    mBatteryHistoryKeysCache, mBatteryHistoryMap,
+                    /*purgeLowPercentageAndFakeData=*/ true);
+            // Pre-loads each BatteryDiffEntry relative icon and label for all slots.
+            for (List<BatteryDiffEntry> entries : indexedUsageMap.values()) {
+                entries.forEach(entry -> entry.loadLabelAndIcon());
+            }
+            Log.d(TAG, String.format("execute LoadAllItemsInfoTask in %d/ms",
+                (System.currentTimeMillis() - startTime)));
+            return indexedUsageMap;
+        }
+
+        @Override
+        protected void onPostExecute(
+                Map<Integer, List<BatteryDiffEntry>> indexedUsageMap) {
+            mBatteryHistoryMap = null;
+            mBatteryHistoryKeysCache = null;
+            if (indexedUsageMap == null) {
+                return;
+            }
+            // Posts results back to main thread to refresh UI.
+            mHandler.post(() -> {
+                mBatteryIndexedMap = indexedUsageMap;
+                forceRefreshUi();
+            });
+        }
     }
 }

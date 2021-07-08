@@ -22,9 +22,12 @@ import static android.app.slice.Slice.EXTRA_TOGGLE_STATE;
 import static com.android.settings.slices.CustomSliceRegistry.PROVIDER_MODEL_SLICE_URI;
 
 import android.annotation.ColorInt;
+import android.app.PendingIntent;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.telephony.SubscriptionManager;
@@ -34,6 +37,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.core.graphics.drawable.IconCompat;
 import androidx.slice.Slice;
 import androidx.slice.builders.ListBuilder;
+import androidx.slice.builders.SliceAction;
 
 import com.android.settings.R;
 import com.android.settings.SubSettings;
@@ -43,6 +47,7 @@ import com.android.settings.network.telephony.NetworkProviderWorker;
 import com.android.settings.slices.CustomSliceable;
 import com.android.settings.slices.SliceBackgroundWorker;
 import com.android.settings.slices.SliceBuilderUtils;
+import com.android.settings.wifi.WifiUtils;
 import com.android.settings.wifi.slice.WifiSlice;
 import com.android.settings.wifi.slice.WifiSliceItem;
 import com.android.wifitrackerlib.WifiEntry;
@@ -58,6 +63,8 @@ import java.util.stream.Collectors;
 public class ProviderModelSlice extends WifiSlice {
 
     private static final String TAG = "ProviderModelSlice";
+    protected static final String ACTION_TITLE_CONNECT_TO_CARRIER = "Connect_To_Carrier";
+
     private final ProviderModelSliceHelper mHelper;
 
     public ProviderModelSlice(Context context) {
@@ -146,11 +153,12 @@ public class ProviderModelSlice extends WifiSlice {
             final List<WifiSliceItem> disconnectedWifiList = wifiList.stream()
                     .filter(wifiSliceItem -> wifiSliceItem.getConnectedState()
                             != WifiEntry.CONNECTED_STATE_CONNECTED)
-                    .limit(maxListSize)
+                    .limit(maxListSize - 1)
                     .collect(Collectors.toList());
             for (WifiSliceItem item : disconnectedWifiList) {
                 listBuilder.addRow(getWifiSliceItemRow(item));
             }
+            listBuilder.addRow(getSeeAllRow());
         }
         return listBuilder.build();
     }
@@ -248,6 +256,56 @@ public class ProviderModelSlice extends WifiSlice {
                 .setSubtitle(mContext.getText(R.string.to_switch_networks_disconnect_ethernet));
     }
 
+    protected ListBuilder.RowBuilder getSeeAllRow() {
+        final CharSequence title = mContext.getText(R.string.previous_connected_see_all);
+        final IconCompat icon = getSeeAllIcon();
+        return new ListBuilder.RowBuilder()
+                .setTitleItem(icon, ListBuilder.ICON_IMAGE)
+                .setTitle(title)
+                .setPrimaryAction(getPrimaryAction(icon, title));
+    }
+
+    protected IconCompat getSeeAllIcon() {
+        final Drawable drawable = mContext.getDrawable(R.drawable.ic_arrow_forward);
+        if (drawable != null) {
+            drawable.setTint(
+                    Utils.getColorAttrDefaultColor(mContext, android.R.attr.colorControlNormal));
+            return Utils.createIconWithDrawable(drawable);
+        }
+        return Utils.createIconWithDrawable(new ColorDrawable(Color.TRANSPARENT));
+    }
+
+    protected SliceAction getPrimaryAction(IconCompat icon, CharSequence title) {
+        final PendingIntent intent = PendingIntent.getActivity(mContext, 0 /* requestCode */,
+                getIntent(), PendingIntent.FLAG_IMMUTABLE /* flags */);
+        return SliceAction.createDeeplink(intent, icon, ListBuilder.ICON_IMAGE, title);
+    }
+
+    @Override
+    protected ListBuilder.RowBuilder getWifiSliceItemRow(WifiSliceItem wifiSliceItem) {
+        final CharSequence title = wifiSliceItem.getTitle();
+        final IconCompat levelIcon = getWifiSliceItemLevelIcon(wifiSliceItem);
+        final ListBuilder.RowBuilder rowBuilder = new ListBuilder.RowBuilder()
+                .setTitleItem(levelIcon, ListBuilder.ICON_IMAGE)
+                .setTitle(title)
+                .setSubtitle(wifiSliceItem.getSummary())
+                .setContentDescription(wifiSliceItem.getContentDescription());
+
+        final IconCompat endIcon;
+        if (wifiSliceItem.hasInternetAccess()) {
+            rowBuilder.setPrimaryAction(SliceAction.create(getBroadcastIntent(mContext),
+                    levelIcon, ListBuilder.ICON_IMAGE, ACTION_TITLE_CONNECT_TO_CARRIER));
+            endIcon = IconCompat.createWithResource(mContext, R.drawable.ic_settings_close);
+        } else {
+            rowBuilder.setPrimaryAction(getWifiEntryAction(wifiSliceItem, levelIcon, title));
+            endIcon = getEndIcon(wifiSliceItem);
+        }
+        if (endIcon != null) {
+            rowBuilder.addEndItem(endIcon, ListBuilder.ICON_IMAGE);
+        }
+        return rowBuilder;
+    }
+
     @Override
     protected IconCompat getWifiSliceItemLevelIcon(WifiSliceItem wifiSliceItem) {
         if (wifiSliceItem.getConnectedState() == WifiEntry.CONNECTED_STATE_CONNECTED
@@ -255,7 +313,8 @@ public class ProviderModelSlice extends WifiSlice {
             final @ColorInt int tint = Utils.getColorAttrDefaultColor(mContext,
                     android.R.attr.colorControlNormal);
             final Drawable drawable = mContext.getDrawable(
-                    Utils.getWifiIconResource(wifiSliceItem.getLevel()));
+                    WifiUtils.getInternetIconResource(
+                            wifiSliceItem.getLevel(), wifiSliceItem.shouldShowXLevelIcon()));
             drawable.setTint(tint);
             return Utils.createIconWithDrawable(drawable);
         }

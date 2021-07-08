@@ -43,12 +43,14 @@ public class AlarmsAndRemindersDetails extends AppInfoWithHeader
         implements OnPreferenceChangeListener {
 
     private static final String KEY_SWITCH = "alarms_and_reminders_switch";
+    private static final String UNCOMMITTED_STATE_KEY = "uncommitted_state";
 
     private AppStateAlarmsAndRemindersBridge mAppBridge;
     private AppOpsManager mAppOpsManager;
     private RestrictedSwitchPreference mSwitchPref;
     private AppStateAlarmsAndRemindersBridge.AlarmsAndRemindersState mPermissionState;
     private ActivityManager mActivityManager;
+    private volatile Boolean mUncommittedState;
 
     /**
      * Returns the string that states whether the app has access to
@@ -77,24 +79,33 @@ public class AlarmsAndRemindersDetails extends AppInfoWithHeader
         mAppOpsManager = context.getSystemService(AppOpsManager.class);
         mActivityManager = context.getSystemService(ActivityManager.class);
 
+        if (savedInstanceState != null) {
+            mUncommittedState = (Boolean) savedInstanceState.get(UNCOMMITTED_STATE_KEY);
+            if (mUncommittedState != null && isAppSpecific()) {
+                setResult(mUncommittedState ? RESULT_OK : RESULT_CANCELED);
+            }
+        }
         addPreferencesFromResource(R.xml.alarms_and_reminders);
         mSwitchPref = findPreference(KEY_SWITCH);
         mSwitchPref.setOnPreferenceChangeListener(this);
     }
 
     @Override
+    public void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (mUncommittedState != null) {
+            outState.putObject(UNCOMMITTED_STATE_KEY, mUncommittedState);
+        }
+    }
+
+    @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        final boolean checked = (Boolean) newValue;
         if (preference == mSwitchPref) {
-            if (mPermissionState != null && checked != mPermissionState.isAllowed()) {
-                if (Settings.AlarmsAndRemindersAppActivity.class.getName().equals(
-                        getIntent().getComponent().getClassName())) {
-                    setResult(checked ? RESULT_OK : RESULT_CANCELED);
-                }
-                setCanScheduleAlarms(checked);
-                logPermissionChange(checked, mPackageName);
-                refreshUi();
+            mUncommittedState = (Boolean) newValue;
+            if (isAppSpecific()) {
+                setResult(mUncommittedState ? RESULT_OK : RESULT_CANCELED);
             }
+            refreshUi();
             return true;
         }
         return false;
@@ -119,6 +130,25 @@ public class AlarmsAndRemindersDetails extends AppInfoWithHeader
                 newState ? 1 : 0);
     }
 
+    private boolean isAppSpecific() {
+        return Settings.AlarmsAndRemindersAppActivity.class.getName().equals(
+                getIntent().getComponent().getClassName());
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        if (getActivity().isChangingConfigurations()) {
+            return;
+        }
+        if (mPermissionState != null && mUncommittedState != null
+                && mUncommittedState != mPermissionState.isAllowed()) {
+            setCanScheduleAlarms(mUncommittedState);
+            logPermissionChange(mUncommittedState, mPackageName);
+            mUncommittedState = null;
+        }
+    }
+
     @Override
     protected boolean refreshUi() {
         if (mPackageInfo == null || mPackageInfo.applicationInfo == null) {
@@ -127,7 +157,8 @@ public class AlarmsAndRemindersDetails extends AppInfoWithHeader
         mPermissionState = mAppBridge.createPermissionState(mPackageName,
                 mPackageInfo.applicationInfo.uid);
         mSwitchPref.setEnabled(mPermissionState.shouldBeVisible());
-        mSwitchPref.setChecked(mPermissionState.isAllowed());
+        mSwitchPref.setChecked(
+                mUncommittedState != null ? mUncommittedState : mPermissionState.isAllowed());
         return true;
     }
 

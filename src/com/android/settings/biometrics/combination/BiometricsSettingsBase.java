@@ -115,24 +115,31 @@ public abstract class BiometricsSettingsBase extends DashboardFragment {
         // since FingerprintSettings and FaceSettings revoke the challenge when finishing.
         if (getFacePreferenceKey().equals(key)) {
             mDoNotFinishActivity = true;
-            mFaceManager.generateChallenge((sensorId, challenge) -> {
+            mFaceManager.generateChallenge(mUserId, (sensorId, userId, challenge) -> {
                 final byte[] token = BiometricUtils.requestGatekeeperHat(getActivity(), mGkPwHandle,
                         mUserId, challenge);
                 final Bundle extras = preference.getExtras();
                 extras.putByteArray(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, token);
                 extras.putInt(BiometricEnrollBase.EXTRA_KEY_SENSOR_ID, sensorId);
                 extras.putLong(BiometricEnrollBase.EXTRA_KEY_CHALLENGE, challenge);
+                super.onPreferenceTreeClick(preference);
             });
+
+            return true;
         } else if (getFingerprintPreferenceKey().equals(key)) {
             mDoNotFinishActivity = true;
-            mFingerprintManager.generateChallenge(mUserId, (sensorId, challenge) -> {
+            mFingerprintManager.generateChallenge(mUserId, (sensorId, userId, challenge) -> {
                 final byte[] token = BiometricUtils.requestGatekeeperHat(getActivity(), mGkPwHandle,
                         mUserId, challenge);
                 final Bundle extras = preference.getExtras();
                 extras.putByteArray(ChooseLockSettingsHelper.EXTRA_KEY_CHALLENGE_TOKEN, token);
                 extras.putLong(BiometricEnrollBase.EXTRA_KEY_CHALLENGE, challenge);
+                super.onPreferenceTreeClick(preference);
             });
+
+            return true;
         }
+
         return super.onPreferenceTreeClick(preference);
     }
 
