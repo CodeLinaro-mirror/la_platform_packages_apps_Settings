@@ -90,6 +90,7 @@ public class AdaptiveSleepPreferenceController {
         if (enforcedAdmin != null) {
             mPreference.setDisabledByAdmin(enforcedAdmin);
         } else {
+            mPreference.setChecked(isChecked());
             mPreference.setEnabled(hasSufficientPermission(mPackageManager) && !isCameraLocked()
                     && !isPowerSaveMode());
         }
@@ -138,11 +139,15 @@ public class AdaptiveSleepPreferenceController {
     }
 
     public static int isControllerAvailable(Context context) {
-        return context.getResources().getBoolean(
-                com.android.internal.R.bool.config_adaptive_sleep_available)
-                && isAttentionServiceAvailable(context)
+        return isAdaptiveSleepSupported(context)
                 ? AVAILABLE_UNSEARCHABLE
                 : UNSUPPORTED_ON_DEVICE;
+    }
+
+    static boolean isAdaptiveSleepSupported(Context context) {
+        return context.getResources().getBoolean(
+                com.android.internal.R.bool.config_adaptive_sleep_available)
+                && isAttentionServiceAvailable(context);
     }
 
     private static boolean isAttentionServiceAvailable(Context context) {

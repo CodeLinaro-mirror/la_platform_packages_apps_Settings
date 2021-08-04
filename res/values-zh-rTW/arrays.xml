@@ -104,7 +104,6 @@
     <item msgid="8568170800958331461">"不要驗證"</item>
     <item msgid="5703177653586269306">"要求取得憑證狀態"</item>
     <item msgid="326388247868439528">"需要取得憑證狀態"</item>
-    <item msgid="1090956283885790552">"需要取得所有非信任憑證的狀態"</item>
   </string-array>
   <string-array name="wifi_p2p_wps_setup">
     <item msgid="1446717102923442720">"按鈕"</item>
@@ -423,6 +422,10 @@
   <string-array name="accessibility_button_location_selector_titles">
     <item msgid="6485511780196327736">"浮動顯示在其他應用程式上"</item>
     <item msgid="3605616699204153590">"導覽列"</item>
+  </string-array>
+  <string-array name="accessibility_button_gesture_selector_titles">
+    <item msgid="2370918472773154939">"按鈕"</item>
+    <item msgid="6922258575853746220">"手勢"</item>
   </string-array>
   <string-array name="accessibility_button_size_selector_titles">
     <item msgid="7482952318152486459">"小"</item>

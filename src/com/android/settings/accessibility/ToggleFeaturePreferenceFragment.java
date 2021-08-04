@@ -16,6 +16,8 @@
 
 package com.android.settings.accessibility;
 
+import static com.android.settings.accessibility.AccessibilityDialogUtils.DialogEnums;
+
 import android.app.Dialog;
 import android.app.settings.SettingsEnums;
 import android.content.ComponentName;
@@ -50,19 +52,18 @@ import androidx.preference.PreferenceScreen;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.SettingsPreferenceFragment;
-import com.android.settings.accessibility.AccessibilityEditDialogUtils.DialogType;
+import com.android.settings.accessibility.AccessibilityDialogUtils.DialogType;
 import com.android.settings.accessibility.AccessibilityUtil.UserShortcutType;
 import com.android.settings.utils.LocaleUtils;
 import com.android.settings.widget.SettingsMainSwitchBar;
 import com.android.settings.widget.SettingsMainSwitchPreference;
 import com.android.settingslib.HelpUtils;
 import com.android.settingslib.accessibility.AccessibilityUtils;
+import com.android.settingslib.widget.IllustrationPreference;
 import com.android.settingslib.widget.OnMainSwitchChangeListener;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
 
-import java.lang.annotation.Retention;
-import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
@@ -90,7 +91,7 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
 
     private static final String DRAWABLE_FOLDER = "drawable";
     protected static final String KEY_USE_SERVICE_PREFERENCE = "use_service";
-    protected static final String KEY_GENERAL_CATEGORY = "general_categories";
+    public static final String KEY_GENERAL_CATEGORY = "general_categories";
     protected static final String KEY_HTML_DESCRIPTION_PREFERENCE = "html_description";
     private static final String KEY_SHORTCUT_PREFERENCE = "shortcut_preference";
     protected static final String KEY_SAVED_USER_SHORTCUT_TYPE = "shortcut_type";
@@ -136,7 +137,7 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
         setupDefaultShortcutIfNecessary(getPrefContext());
         final int resId = getPreferenceScreenResId();
         if (resId <= 0) {
-            PreferenceScreen preferenceScreen = getPreferenceManager().createPreferenceScreen(
+            final PreferenceScreen preferenceScreen = getPreferenceManager().createPreferenceScreen(
                     getPrefContext());
             setPreferenceScreen(preferenceScreen);
         }
@@ -228,7 +229,7 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
                         R.string.accessibility_shortcut_title, mPackageName);
                 final int dialogType = WizardManagerHelper.isAnySetupWizard(getIntent())
                         ? DialogType.EDIT_SHORTCUT_GENERIC_SUW : DialogType.EDIT_SHORTCUT_GENERIC;
-                dialog = AccessibilityEditDialogUtils.showEditShortcutDialog(
+                dialog = AccessibilityDialogUtils.showEditShortcutDialog(
                         getPrefContext(), dialogType, dialogTitle,
                         this::callOnAlertDialogCheckboxClicked);
                 setupEditShortcutDialog(dialog);
@@ -254,56 +255,6 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
             default:
                 return SettingsEnums.ACTION_UNKNOWN;
         }
-    }
-
-    /** Denotes the dialog emuns for show dialog */
-    @Retention(RetentionPolicy.SOURCE)
-    protected @interface DialogEnums {
-
-        /** OPEN: Settings > Accessibility > Any toggle service > Shortcut > Settings. */
-        int EDIT_SHORTCUT = 1;
-
-        /** OPEN: Settings > Accessibility > Magnification > Shortcut > Settings. */
-        int MAGNIFICATION_EDIT_SHORTCUT = 1001;
-
-        /**
-         * OPEN: Settings > Accessibility > Downloaded toggle service > Toggle use service to
-         * enable service.
-         */
-        int ENABLE_WARNING_FROM_TOGGLE = 1002;
-
-        /** OPEN: Settings > Accessibility > Downloaded toggle service > Shortcut checkbox. */
-        int ENABLE_WARNING_FROM_SHORTCUT = 1003;
-
-        /**
-         * OPEN: Settings > Accessibility > Downloaded toggle service > Shortcut checkbox
-         * toggle.
-         */
-        int ENABLE_WARNING_FROM_SHORTCUT_TOGGLE = 1004;
-
-        /**
-         * OPEN: Settings > Accessibility > Downloaded toggle service > Toggle use service to
-         * disable service.
-         */
-        int DISABLE_WARNING_FROM_TOGGLE = 1005;
-
-        /**
-         * OPEN: Settings > Accessibility > Magnification > Toggle user service in button
-         * navigation.
-         */
-        int ACCESSIBILITY_BUTTON_TUTORIAL = 1006;
-
-        /**
-         * OPEN: Settings > Accessibility > Magnification > Toggle user service in gesture
-         * navigation.
-         */
-        int GESTURE_NAVIGATION_TUTORIAL = 1007;
-
-        /**
-         * OPEN: Settings > Accessibility > Downloaded toggle service > Toggle user service > Show
-         * launch tutorial.
-         */
-        int LAUNCH_ACCESSIBILITY_TUTORIAL = 1008;
     }
 
     @Override
@@ -448,15 +399,13 @@ public abstract class ToggleFeaturePreferenceFragment extends SettingsPreference
             return;
         }
 
-        final int screenHalfHeight = AccessibilityUtil.getScreenHeightPixels(getPrefContext()) / 2;
-        final AnimatedImagePreference animatedImagePreference =
-                new AnimatedImagePreference(getPrefContext());
-        animatedImagePreference.setImageUri(mImageUri);
-        animatedImagePreference.setSelectable(false);
-        animatedImagePreference.setMaxHeight(screenHalfHeight);
-        animatedImagePreference.setKey(KEY_ANIMATED_IMAGE);
+        final IllustrationPreference illustrationPreference =
+                new IllustrationPreference(getPrefContext());
+        illustrationPreference.setImageUri(mImageUri);
+        illustrationPreference.setSelectable(false);
+        illustrationPreference.setKey(KEY_ANIMATED_IMAGE);
 
-        getPreferenceScreen().addPreference(animatedImagePreference);
+        getPreferenceScreen().addPreference(illustrationPreference);
     }
 
     private void initToggleServiceSwitchPreference() {

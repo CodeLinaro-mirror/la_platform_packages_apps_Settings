@@ -16,7 +16,6 @@
 
 package com.android.settings.wifi;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -35,7 +34,6 @@ import android.net.wifi.WifiEnterpriseConfig.Eap;
 import android.net.wifi.WifiEnterpriseConfig.Phase2;
 import android.net.wifi.WifiManager;
 import android.os.IBinder;
-import android.os.UserHandle;
 import android.security.keystore.KeyProperties;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
@@ -205,6 +203,7 @@ public class WifiConfigController2 implements TextWatcher,
     private TextView mProxyExclusionListView;
     private TextView mProxyPacView;
     private CheckBox mSharedCheckBox;
+    private CheckBox mShareThisWifiCheckBox;
 
     private IpAssignment mIpAssignment = IpAssignment.UNASSIGNED;
     private ProxySettings mProxySettings = ProxySettings.UNASSIGNED;
@@ -294,11 +293,19 @@ public class WifiConfigController2 implements TextWatcher,
                         ? View.GONE
                         : View.VISIBLE);
         mSecurityInPosition = new Integer[WifiEntry.NUM_SECURITY_TYPES];
+        mShareThisWifiCheckBox = (CheckBox) mView.findViewById(R.id.share_this_wifi);
 
         if (mWifiEntry == null) { // new network
             configureSecuritySpinner();
             mConfigUi.setSubmitButton(res.getString(R.string.wifi_save));
         } else {
+            if (!mWifiManager.isWifiCoverageExtendFeatureEnabled()
+                 || (mWifiEntry.getSecurity() != WifiEntry.SECURITY_NONE
+                      && mWifiEntry.getSecurity() != WifiEntry.SECURITY_PSK)) {
+                mShareThisWifiCheckBox.setChecked(false);
+                mShareThisWifiCheckBox.setVisibility(View.GONE);
+            }
+
             mConfigUi.setTitle(mWifiEntry.getTitle());
 
             ViewGroup group = (ViewGroup) mView.findViewById(R.id.info);
@@ -306,6 +313,7 @@ public class WifiConfigController2 implements TextWatcher,
             boolean showAdvancedFields = false;
             if (mWifiEntry.isSaved()) {
                 WifiConfiguration config = mWifiEntry.getWifiConfiguration();
+                mShareThisWifiCheckBox.setChecked(config.shareThisAp);
                 mMeteredSettingsSpinner.setSelection(config.meteredOverride);
                 mHiddenSettingsSpinner.setSelection(config.hiddenSSID
                         ? HIDDEN_NETWORK
@@ -402,6 +410,9 @@ public class WifiConfigController2 implements TextWatcher,
                         } else if (frequency >= WifiEntry.MIN_FREQ_5GHZ
                                 && frequency < WifiEntry.MAX_FREQ_5GHZ) {
                             band = res.getString(R.string.wifi_band_5ghz);
+                        } else if (frequency >= WifiEntry.MIN_FREQ_6GHZ
+                                && frequency < WifiEntry.MAX_FREQ_6GHZ) {
+                            band = res.getString(R.string.wifi_band_6ghz);
                         } else {
                             Log.e(TAG, "Unexpected frequency " + frequency);
                         }
@@ -596,6 +607,7 @@ public class WifiConfigController2 implements TextWatcher,
         }
 
         config.shared = mSharedCheckBox.isChecked();
+        config.shareThisAp = mShareThisWifiCheckBox.isChecked();
 
         switch (mWifiEntrySecurity) {
             case WifiEntry.SECURITY_NONE:
@@ -1660,6 +1672,16 @@ public class WifiConfigController2 implements TextWatcher,
         if (parent == mSecuritySpinner) {
             // Convert menu position to actual Wi-Fi security type
             mWifiEntrySecurity = mSecurityInPosition[position];
+
+            if (!mWifiManager.isWifiCoverageExtendFeatureEnabled()
+                 || (mWifiEntrySecurity != WifiEntry.SECURITY_NONE
+                      && mWifiEntrySecurity != WifiEntry.SECURITY_PSK)) {
+                mShareThisWifiCheckBox.setChecked(false);
+                mShareThisWifiCheckBox.setVisibility(View.GONE);
+            } else {
+                mShareThisWifiCheckBox.setVisibility(View.VISIBLE);
+            }
+
             showSecurityFields(/* refreshEapMethods */ true, /* refreshCertificates */ true);
 
             if (WifiDppUtils.isSupportEnrolleeQrCodeScanner(mContext, mWifiEntrySecurity)) {

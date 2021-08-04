@@ -80,6 +80,7 @@
     <Preference
         android:key="time_spent_in_app"
         android:title="@string/time_spent_in_app_pref_title"
+        android:summary="@string/summary_placeholder"
         settings:controller="com.android.settings.applications.appinfo.TimeSpentInAppPreferenceController" />
 
     <Preference
@@ -174,6 +175,12 @@
             android:title="@string/interact_across_profiles_title"
             android:summary="@string/summary_placeholder"
             settings:controller="com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesDetailsPreferenceController" />
+
+        <Preference
+            android:key="alarms_and_reminders"
+            android:title="@string/alarms_and_reminders_title"
+            android:summary="@string/summary_placeholder"
+            settings:controller="com.android.settings.applications.appinfo.AlarmsAndRemindersDetailPreferenceController" />
 
     </PreferenceCategory>
 

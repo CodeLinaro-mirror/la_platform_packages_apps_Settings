@@ -54,7 +54,6 @@ import com.android.settings.applications.manageapplications.ManageApplications;
 import com.android.settings.dashboard.profileselector.ProfileSelectFragment;
 import com.android.settings.deviceinfo.StorageItemPreference;
 import com.android.settings.testutils.shadow.ShadowUserManager;
-import com.android.settingslib.applications.StorageStatsSource;
 import com.android.settingslib.deviceinfo.StorageVolumeProvider;
 
 import org.junit.Before;
@@ -148,12 +147,6 @@ public class StorageItemPreferenceControllerTest {
                 .thenReturn(trash);
 
         return screen;
-    }
-
-    @Test
-    public void testUpdateStateWithInitialState() {
-        assertThat(mPreference.getSummary().toString())
-            .isEqualTo(mContext.getString(R.string.memory_calculating_size));
     }
 
     @Test
@@ -346,12 +339,6 @@ public class StorageItemPreferenceControllerTest {
         result.documentsAndOtherSize = MEGABYTE_IN_BYTES * 50;
         result.trashSize = KILOBYTE_IN_BYTES * 100;
         result.allAppsExceptGamesSize = MEGABYTE_IN_BYTES * 90;
-        result.externalStats =
-                new StorageStatsSource.ExternalStorageStats(
-                        MEGABYTE_IN_BYTES * 500, // total
-                        MEGABYTE_IN_BYTES * 100, // audio
-                        MEGABYTE_IN_BYTES * 150, // video
-                        MEGABYTE_IN_BYTES * 200, 0); // image
 
         final SparseArray<StorageAsyncLoader.StorageResult> results = new SparseArray<>();
         results.put(0, result);
@@ -398,15 +385,16 @@ public class StorageItemPreferenceControllerTest {
     }
 
     @Test
-    public void setVolume_updateFilePreferenceToHideAfterSettingVolume_hidePreference() {
+    public void setPrivateStorageCategoryPreferencesVisibility_updateFilePreferenceToHideAfterSettingVolume_hidePreference() {
         when(mSvp.findEmulatedForPrivate(nullable(VolumeInfo.class))).thenReturn(mVolume);
         when(mVolume.getType()).thenReturn(VolumeInfo.TYPE_PRIVATE);
         when(mVolume.getState()).thenReturn(VolumeInfo.STATE_MOUNTED);
         when(mVolume.isMountedReadable()).thenReturn(true);
-
         mController.displayPreference(mPreferenceScreen);
         when(mSvp.findEmulatedForPrivate(nullable(VolumeInfo.class))).thenReturn(null);
         mController.setVolume(mVolume);
+
+        mController.setPrivateStorageCategoryPreferencesVisibility(true);
 
         assertThat(mController.mDocumentsAndOtherPreference.isVisible()).isFalse();
     }

@@ -19,6 +19,7 @@ package com.android.settings.sim;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.icu.text.MessageFormat;
 import android.os.Bundle;
 import android.telephony.SubscriptionInfo;
 import android.telephony.SubscriptionManager;
@@ -41,10 +42,12 @@ import com.google.android.setupdesign.items.IItem;
 import com.google.android.setupdesign.items.Item;
 import com.google.android.setupdesign.items.ItemGroup;
 import com.google.android.setupdesign.items.RecyclerItemAdapter;
-import com.google.android.setupdesign.view.HeaderRecyclerView;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 
 /** Activity to show a list of profiles for user to choose. */
 public class ChooseSimActivity extends Activity
@@ -104,13 +107,17 @@ public class ChooseSimActivity extends Activity
         }
 
         GlifLayout layout = findViewById(R.id.glif_layout);
-        TextView textView = findViewById(R.id.subtitle);
         int subscriptionCount = mEmbeddedSubscriptions.size();
         if (mHasPsim) { // Choose a number to use
             subscriptionCount++;
         }
         layout.setHeaderText(getString(R.string.choose_sim_title));
-        textView.setText(getString(R.string.choose_sim_text, subscriptionCount));
+        MessageFormat msgFormat = new MessageFormat(
+            getString(R.string.choose_sim_text),
+            Locale.getDefault());
+        Map<String, Object> arguments = new HashMap<>();
+        arguments.put("count", subscriptionCount);
+        layout.setDescriptionText(msgFormat.format(arguments));
 
         displaySubscriptions();
 
@@ -217,7 +224,7 @@ public class ChooseSimActivity extends Activity
 
     private void displaySubscriptions() {
         View rootView = findViewById(android.R.id.content);
-        GlifRecyclerLayout layout = rootView.findViewById(R.id.recycler_list);
+        GlifRecyclerLayout layout = rootView.findViewById(R.id.glif_layout);
         RecyclerItemAdapter adapter = (RecyclerItemAdapter) layout.getAdapter();
         adapter.setOnItemSelectedListener(this);
         mItemGroup = (ItemGroup) adapter.getRootItemHierarchy();
@@ -265,10 +272,6 @@ public class ChooseSimActivity extends Activity
             item.setId(index++);
             mItemGroup.addChild(item);
         }
-
-        // This removes the unused header artifact from GlifRecyclerLayout.
-        HeaderRecyclerView rv = (HeaderRecyclerView) layout.getRecyclerView();
-        rv.getHeader().setVisibility(View.GONE);
     }
 
     private void updateSubscriptions() {

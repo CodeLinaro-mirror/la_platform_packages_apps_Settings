@@ -19,16 +19,23 @@ package com.android.settings.biometrics;
 import static com.android.settings.Utils.SETTINGS_PACKAGE_NAME;
 
 import android.annotation.Nullable;
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.UserHandle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import androidx.annotation.ColorInt;
 
 import com.android.settings.R;
 import com.android.settings.SetupWizardUtils;
+import com.android.settings.Utils;
 import com.android.settings.biometrics.fingerprint.FingerprintEnrollEnrolling;
 import com.android.settings.core.InstrumentedActivity;
 import com.android.settings.password.ChooseLockSettingsHelper;
@@ -44,12 +51,15 @@ import com.google.android.setupdesign.util.ThemeHelper;
  */
 public abstract class BiometricEnrollBase extends InstrumentedActivity {
 
+    private static final String TAG = "BiometricEnrollBase";
+
     public static final String EXTRA_FROM_SETTINGS_SUMMARY = "from_settings_summary";
     public static final String EXTRA_KEY_LAUNCHED_CONFIRM = "launched_confirm_lock";
     public static final String EXTRA_KEY_REQUIRE_VISION = "accessibility_vision";
     public static final String EXTRA_KEY_REQUIRE_DIVERSITY = "accessibility_diversity";
     public static final String EXTRA_KEY_SENSOR_ID = "sensor_id";
     public static final String EXTRA_KEY_CHALLENGE = "challenge";
+    public static final String EXTRA_KEY_MODALITY = "sensor_modality";
 
     /**
      * Used by the choose fingerprint wizard to indicate the wizard is
@@ -78,11 +88,26 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
      */
     public static final int RESULT_TIMEOUT = RESULT_FIRST_USER + 2;
 
+    /**
+     * Used by consent screens to indicate that consent was granted. Extras, such as
+     * EXTRA_KEY_MODALITY, will be included in the result to provide details about the
+     * consent that was granted.
+     */
+    public static final int RESULT_CONSENT_GRANTED = RESULT_FIRST_USER + 3;
+
+    /**
+     * Used by consent screens to indicate that consent was denied. Extras, such as
+     * EXTRA_KEY_MODALITY, will be included in the result to provide details about the
+     * consent that was not granted.
+     */
+    public static final int RESULT_CONSENT_DENIED = RESULT_FIRST_USER + 4;
+
     public static final int CHOOSE_LOCK_GENERIC_REQUEST = 1;
     public static final int BIOMETRIC_FIND_SENSOR_REQUEST = 2;
     public static final int LEARN_MORE_REQUEST = 3;
     public static final int CONFIRM_REQUEST = 4;
     public static final int ENROLL_REQUEST = 5;
+
     /**
      * Request code when starting another biometric enrollment from within a biometric flow. For
      * example, when starting fingerprint enroll after face enroll.
@@ -138,6 +163,20 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
     protected void onPostCreate(@Nullable Bundle savedInstanceState) {
         super.onPostCreate(savedInstanceState);
         initViews();
+
+        @SuppressLint("VisibleForTests")
+        final LinearLayout buttonContainer = mFooterBarMixin != null
+                ? mFooterBarMixin.getButtonContainer()
+                : null;
+        if (buttonContainer != null) {
+            buttonContainer.setBackgroundColor(getBackgroundColor());
+        }
+    }
+
+    @Override
+    public void onAttachedToWindow() {
+        super.onAttachedToWindow();
+        getWindow().setStatusBarColor(getBackgroundColor());
     }
 
     @Override
@@ -222,6 +261,8 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
     }
 
     protected void launchConfirmLock(int titleResId) {
+        Log.d(TAG, "launchConfirmLock");
+
         final ChooseLockSettingsHelper.Builder builder = new ChooseLockSettingsHelper.Builder(this);
         builder.setRequestCode(CONFIRM_REQUEST)
                 .setTitle(getString(titleResId))
@@ -241,5 +282,11 @@ public abstract class BiometricEnrollBase extends InstrumentedActivity {
         } else {
             mLaunchedConfirmLock = true;
         }
+    }
+
+    @ColorInt
+    private int getBackgroundColor() {
+        final ColorStateList stateList = Utils.getColorAttr(this, android.R.attr.windowBackground);
+        return stateList != null ? stateList.getDefaultColor() : Color.TRANSPARENT;
     }
 }

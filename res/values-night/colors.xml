@@ -27,7 +27,7 @@
     <color name="notification_importance_button_selected">#AECBFA</color> <!-- material blue 200 -->
     <color name="notification_importance_button_unselected">#5F6368</color>
     <color name="notification_history_background">#202124</color>
-    <color name="face_intro_outline">?android:attr/colorAccent</color>
+
     <!-- Palette list preference colors. -->
     <color name="palette_list_gradient_background">@android:color/black</color>
     <color name="palette_list_color_red">@color/palette_list_dark_mode_color_red</color>
@@ -48,5 +48,9 @@
     <color name="biometric_enroll_intro_color_bar">#5bb974</color>
     <color name="biometric_enroll_intro_color_icon">#669df6</color>
     <color name="biometric_enroll_intro_color_outline">#5e5e5e</color>
+    <color name="fingerprint_enrollment_finish_color_outline">#669df6</color>
+
+    <!-- Material inverse ripple color, useful for inverted backgrounds. -->
+    <color name="ripple_material_inverse">@*android:color/ripple_material_light</color>
 </resources>
 

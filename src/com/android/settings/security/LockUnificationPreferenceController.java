@@ -43,6 +43,7 @@ import com.android.settings.password.ChooseLockSettingsHelper;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 import com.android.settingslib.RestrictedSwitchPreference;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.transition.SettingsTransitionHelper;
 
 /**
  * Controller for password unification/un-unification flows.
@@ -72,6 +73,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
 
     private RestrictedSwitchPreference mUnifyProfile;
 
+    private final String mPreferenceKey;
 
     private LockscreenCredential mCurrentDevicePassword;
     private LockscreenCredential mCurrentProfilePassword;
@@ -80,10 +82,15 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mUnifyProfile = screen.findPreference(KEY_UNIFICATION);
+        mUnifyProfile = screen.findPreference(mPreferenceKey);
     }
 
     public LockUnificationPreferenceController(Context context, SettingsPreferenceFragment host) {
+        this(context, host, KEY_UNIFICATION);
+    }
+
+    public LockUnificationPreferenceController(
+            Context context, SettingsPreferenceFragment host, String key) {
         super(context);
         mHost = host;
         mUm = context.getSystemService(UserManager.class);
@@ -94,6 +101,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
         mProfileUserId = Utils.getManagedProfileId(mUm, MY_USER_ID);
         mCurrentDevicePassword = LockscreenCredential.createNone();
         mCurrentProfilePassword = LockscreenCredential.createNone();
+        this.mPreferenceKey = key;
     }
 
     @Override
@@ -104,7 +112,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
 
     @Override
     public String getPreferenceKey() {
-        return KEY_UNIFICATION;
+        return mPreferenceKey;
     }
 
     @Override
@@ -173,6 +181,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
                 .setDestination(ChooseLockGeneric.ChooseLockGenericFragment.class.getName())
                 .setSourceMetricsCategory(mHost.getMetricsCategory())
                 .setArguments(extras)
+                .setTransitionType(SettingsTransitionHelper.TransitionType.TRANSITION_SLIDE)
                 .launch();
     }
 
@@ -229,6 +238,7 @@ public class LockUnificationPreferenceController extends AbstractPreferenceContr
                 .setTitleRes(R.string.lock_settings_picker_title)
                 .setSourceMetricsCategory(mHost.getMetricsCategory())
                 .setArguments(extras)
+                .setTransitionType(SettingsTransitionHelper.TransitionType.TRANSITION_SLIDE)
                 .launch();
     }
 

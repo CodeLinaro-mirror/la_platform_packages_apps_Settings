@@ -81,6 +81,7 @@ public class ScreenTimeoutSettings extends RadioButtonPickerFragment implements
         @Override
         public void onReceive(Context context, Intent intent) {
             mAdaptiveSleepBatterySaverPreferenceController.updateVisibility();
+            mAdaptiveSleepController.updatePreference();
         }
     };
 
@@ -313,8 +314,7 @@ public class ScreenTimeoutSettings extends RadioButtonPickerFragment implements
     }
 
     private static boolean isScreenAttentionAvailable(Context context) {
-        return context.getResources().getBoolean(
-                com.android.internal.R.bool.config_adaptive_sleep_available);
+        return AdaptiveSleepPreferenceController.isAdaptiveSleepSupported(context);
     }
 
     private static class TimeoutCandidateInfo extends CandidateInfo {

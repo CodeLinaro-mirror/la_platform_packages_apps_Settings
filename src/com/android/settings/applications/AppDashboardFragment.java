@@ -69,6 +69,11 @@ public class AppDashboardFragment extends DashboardFragment {
         use(SpecialAppAccessPreferenceController.class).setSession(getSettingsLifecycle());
         mAppsPreferenceController = use(AppsPreferenceController.class);
         mAppsPreferenceController.setFragment(this /* fragment */);
+        getSettingsLifecycle().addObserver(mAppsPreferenceController);
+
+        final HibernatedAppsPreferenceController hibernatedAppsPreferenceController =
+                use(HibernatedAppsPreferenceController.class);
+        getSettingsLifecycle().addObserver(hibernatedAppsPreferenceController);
     }
 
     @Override

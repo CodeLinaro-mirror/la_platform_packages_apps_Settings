@@ -50,7 +50,6 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
 
     private SettingsMainSwitchBar mMainSwitchBar;
     private CharSequence mTitle;
-    private boolean mIsVisible;
     private EnforcedAdmin mEnforcedAdmin;
     private RestrictedPreferenceHelper mRestrictedHelper;
 
@@ -82,13 +81,18 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
         holder.setDividerAllowedAbove(false);
         holder.setDividerAllowedBelow(false);
 
+        if (mRestrictedHelper != null) {
+            mEnforcedAdmin = mRestrictedHelper.checkRestrictionEnforced();
+        }
         mMainSwitchBar = (SettingsMainSwitchBar) holder.findViewById(R.id.main_switch_bar);
-        mMainSwitchBar.show();
-        mEnforcedAdmin = mRestrictedHelper.checkRestrictionEnforced();
-        updateStatus(isChecked());
-        registerListenerToSwitchBar();
-
-        if (!mIsVisible) {
+        initMainSwitchBar();
+        if (isVisible()) {
+            mMainSwitchBar.show();
+            if (mMainSwitchBar.isChecked() != isChecked()) {
+                setChecked(isChecked());
+            }
+            registerListenerToSwitchBar();
+        } else {
             mMainSwitchBar.hide();
         }
     }
@@ -96,7 +100,6 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
     private void init(Context context, AttributeSet attrs) {
         setLayoutResource(R.layout.preference_widget_main_switch);
         mSwitchChangeListeners.add(this);
-        mIsVisible = true;
 
         if (attrs != null) {
             final TypedArray a = context.obtainStyledAttributes(attrs,
@@ -143,22 +146,10 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
     }
 
     /**
-     * Update the switch status of preference
-     */
-    public void updateStatus(boolean checked) {
-        setChecked(checked);
-        if (mMainSwitchBar != null) {
-            mMainSwitchBar.setTitle(mTitle);
-            mMainSwitchBar.setDisabledByAdmin(mEnforcedAdmin);
-            mMainSwitchBar.show();
-        }
-    }
-
-    /**
      * Show the MainSwitchBar
      */
     public void show() {
-        mIsVisible = true;
+        setVisible(true);
         if (mMainSwitchBar != null) {
             mMainSwitchBar.show();
         }
@@ -168,7 +159,7 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
      * Hide the MainSwitchBar
      */
     public void hide() {
-        mIsVisible = false;
+        setVisible(false);
         if (mMainSwitchBar != null) {
             mMainSwitchBar.hide();
         }
@@ -245,6 +236,13 @@ public class SettingsMainSwitchPreference extends TwoStatePreference implements
     public void setDisabledByAdmin(EnforcedAdmin admin) {
         mEnforcedAdmin = admin;
         if (mMainSwitchBar != null) {
+            mMainSwitchBar.setDisabledByAdmin(mEnforcedAdmin);
+        }
+    }
+
+    private void initMainSwitchBar() {
+        if (mMainSwitchBar != null) {
+            mMainSwitchBar.setTitle(mTitle);
             mMainSwitchBar.setDisabledByAdmin(mEnforcedAdmin);
         }
     }

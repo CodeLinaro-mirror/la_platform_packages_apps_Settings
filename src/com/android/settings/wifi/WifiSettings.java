@@ -160,6 +160,7 @@ public class WifiSettings extends RestrictedSettingsFragment
         return WifiPickerTracker.isVerboseLoggingEnabled();
     }
 
+    private boolean mIsWifiEntryListStale = true;
     private final Runnable mUpdateWifiEntryPreferencesRunnable = () -> {
         updateWifiEntryPreferences();
     };
@@ -232,6 +233,9 @@ public class WifiSettings extends RestrictedSettingsFragment
 
         if (FeatureFlagUtils.isEnabled(getContext(), FeatureFlagUtils.SETTINGS_PROVIDER_MODEL)) {
             final Intent intent = new Intent("android.settings.NETWORK_PROVIDER_SETTINGS");
+            // Add FLAG_ACTIVITY_NEW_TASK and FLAG_ACTIVITY_CLEAR_TASK to avoid multiple
+            // instances issue. (e.g. b/191956700)
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             final Bundle extras = getActivity().getIntent().getExtras();
             if (extras != null) {
                 intent.putExtras(extras);
@@ -421,6 +425,7 @@ public class WifiSettings extends RestrictedSettingsFragment
     public void onStop() {
         getView().removeCallbacks(mUpdateWifiEntryPreferencesRunnable);
         getView().removeCallbacks(mHideProgressBarRunnable);
+        mIsWifiEntryListStale = true;
         super.onStop();
     }
 
@@ -678,7 +683,12 @@ public class WifiSettings extends RestrictedSettingsFragment
 
     @Override
     public void onWifiEntriesChanged() {
-        updateWifiEntryPreferencesDelayed();
+        if (mIsWifiEntryListStale) {
+            mIsWifiEntryListStale = false;
+            updateWifiEntryPreferences();
+        } else {
+            updateWifiEntryPreferencesDelayed();
+        }
         changeNextButtonState(mWifiPickerTracker.getConnectedWifiEntry() != null);
 
         // Edit the Wi-Fi network of specified SSID.

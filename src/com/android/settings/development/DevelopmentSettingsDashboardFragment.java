@@ -402,11 +402,6 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         return mPreferenceControllers;
     }
 
-    @Override
-    protected boolean isParalleledControllers() {
-        return true;
-    }
-
     private void registerReceivers() {
         LocalBroadcastManager.getInstance(getContext())
                 .registerReceiver(mEnableAdbReceiver, new IntentFilter(
@@ -474,6 +469,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
             BluetoothA2dpConfigStore bluetoothA2dpConfigStore) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         controllers.add(new Prefer5GNetworkSummaryController(context, lifecycle));
+        controllers.add(new PreferVonrController(context, lifecycle));
         controllers.add(new MemoryUsagePreferenceController(context));
         controllers.add(new BugReportPreferenceController(context));
         controllers.add(new BugReportHandlerPreferenceController(context));
@@ -509,7 +505,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new LogPersistPreferenceController(context, fragment, lifecycle));
         controllers.add(new CameraLaserSensorPreferenceController(context));
         controllers.add(new WifiDisplayCertificationPreferenceController(context));
-        //controllers.add(new WifiCoverageExtendPreferenceController(context));
+        controllers.add(new WifiCoverageExtendPreferenceController(context));
         controllers.add(new WifiVerboseLoggingPreferenceController(context));
         controllers.add(new WifiScanThrottlingPreferenceController(context));
         controllers.add(new WifiEnhancedMacRandomizationPreferenceController(context));

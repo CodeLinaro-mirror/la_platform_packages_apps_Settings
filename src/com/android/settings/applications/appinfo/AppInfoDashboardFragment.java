@@ -197,8 +197,14 @@ public class AppInfoDashboardFragment extends DashboardFragment
         acrossProfiles.setPackageName(packageName);
         acrossProfiles.setParentFragment(this);
 
+        final AlarmsAndRemindersDetailPreferenceController alarmsAndReminders =
+                use(AlarmsAndRemindersDetailPreferenceController.class);
+        alarmsAndReminders.setPackageName(packageName);
+        alarmsAndReminders.setParentFragment(this);
+
         use(AdvancedAppInfoPreferenceCategoryController.class).setChildren(Arrays.asList(
-                writeSystemSettings, drawOverlay, pip, externalSource, acrossProfiles));
+                writeSystemSettings, drawOverlay, pip, externalSource, acrossProfiles,
+                alarmsAndReminders));
     }
 
     @Override
@@ -301,11 +307,6 @@ public class AppInfoDashboardFragment extends DashboardFragment
         controllers.add(new DefaultSmsShortcutPreferenceController(context, packageName));
 
         return controllers;
-    }
-
-    @Override
-    protected boolean isParalleledControllers() {
-        return true;
     }
 
     void addToCallbackList(Callback callback) {
@@ -581,9 +582,8 @@ public class AppInfoDashboardFragment extends DashboardFragment
         if (mUid <= 0) {
             final Intent intent = args == null
                     ? getActivity().getIntent() : (Intent) args.getParcelable("intent");
-            if (intent != null && intent.getExtras() != null) {
-                mUid = intent.getIntExtra("uId", -1);
-            }
+            mUid = intent != null && intent.getExtras() != null
+                    ? mUid = intent.getIntExtra("uId", -1) : -1;
         }
         return mUid;
     }

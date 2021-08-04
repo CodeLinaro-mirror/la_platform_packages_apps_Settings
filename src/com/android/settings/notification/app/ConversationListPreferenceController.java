@@ -18,7 +18,6 @@ package com.android.settings.notification.app;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
-import android.content.Intent;
 import android.content.pm.ShortcutInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -34,6 +33,7 @@ import com.android.settings.applications.AppInfoBase;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.notification.NotificationBackend;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.widget.AppPreference;
 
 import java.text.Collator;
 import java.util.Comparator;
@@ -69,9 +69,7 @@ public abstract class ConversationListPreferenceController extends AbstractPrefe
             populateConversations(conversations, containerGroup);
         }
 
-        if (containerGroup.getPreferenceCount() == 0) {
-            containerGroup.setVisible(false);
-        } else {
+        if (containerGroup.getPreferenceCount() != 0) {
             Preference summaryPref = getSummaryPreference();
             if (summaryPref != null) {
                 containerGroup.addPreference(summaryPref);
@@ -98,7 +96,7 @@ public abstract class ConversationListPreferenceController extends AbstractPrefe
 
     protected Preference createConversationPref(final ConversationChannelWrapper conversation,
             int order) {
-        Preference pref = new Preference(mContext);
+        AppPreference pref = new AppPreference(mContext);
         pref.setOrder(order);
 
         pref.setTitle(getTitle(conversation));

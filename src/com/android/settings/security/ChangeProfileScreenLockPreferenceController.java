@@ -30,15 +30,24 @@ import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.Utils;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.password.ChooseLockGeneric;
+import com.android.settingslib.transition.SettingsTransitionHelper;
 
 public class ChangeProfileScreenLockPreferenceController extends
         ChangeScreenLockPreferenceController {
 
     private static final String KEY_UNLOCK_SET_OR_CHANGE_PROFILE = "unlock_set_or_change_profile";
 
+    private final String mPreferenceKey;
+
     public ChangeProfileScreenLockPreferenceController(Context context,
             SettingsPreferenceFragment host) {
+        this(context, host, KEY_UNLOCK_SET_OR_CHANGE_PROFILE);
+    }
+
+    public ChangeProfileScreenLockPreferenceController(Context context,
+            SettingsPreferenceFragment host, String key) {
         super(context, host);
+        this.mPreferenceKey = key;
     }
 
     public boolean isAvailable() {
@@ -64,7 +73,7 @@ public class ChangeProfileScreenLockPreferenceController extends
 
     @Override
     public String getPreferenceKey() {
-        return KEY_UNLOCK_SET_OR_CHANGE_PROFILE;
+        return mPreferenceKey;
     }
 
     @Override
@@ -81,6 +90,7 @@ public class ChangeProfileScreenLockPreferenceController extends
                 .setDestination(ChooseLockGeneric.ChooseLockGenericFragment.class.getName())
                 .setSourceMetricsCategory(mHost.getMetricsCategory())
                 .setArguments(extras)
+                .setTransitionType(SettingsTransitionHelper.TransitionType.TRANSITION_SLIDE)
                 .launch();
 
         return true;

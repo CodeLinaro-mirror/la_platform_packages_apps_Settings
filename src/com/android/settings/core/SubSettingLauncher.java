@@ -181,8 +181,6 @@ public class SubSettingLauncher {
 
     @VisibleForTesting
     void launchAsUser(Intent intent, UserHandle userHandle) {
-        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         mContext.startActivityAsUser(intent, userHandle);
     }
 
