@@ -76,6 +76,7 @@ public class SettingsBaseActivity extends FragmentActivity {
         if (mPackageManager.hasSystemFeature(PackageManager.FEATURE_WATCH)){
             requestWindowFeature(Window.FEATURE_SWIPE_TO_DISMISS);
         }
+        requestWindowFeature(Window.FEATURE_OPTIONS_PANEL);
         final long startTime = System.currentTimeMillis();
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
 
