@@ -64,6 +64,7 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
     protected CollapsingToolbarLayout mCollapsingToolbarLayout;
     protected AppBarLayout mAppBarLayout;
     private Toolbar mToolbar;
+    PackageManager mPackageManager;
 
     @Override
     public CategoryMixin getCategoryMixin() {
@@ -77,6 +78,12 @@ public class SettingsBaseActivity extends FragmentActivity implements CategoryHa
             Log.w(TAG, "Devices lock task mode pinned.");
             finish();
         }
+
+        mPackageManager = getPackageManager();
+        if (mPackageManager.hasSystemFeature(PackageManager.FEATURE_WATCH)){
+            requestWindowFeature(Window.FEATURE_SWIPE_TO_DISMISS);
+        }
+
         final long startTime = System.currentTimeMillis();
         getLifecycle().addObserver(new HideNonSystemOverlayMixin(this));
         TextAppearanceConfig.setShouldLoadFontSynchronously(true);
