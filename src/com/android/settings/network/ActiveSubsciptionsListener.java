@@ -32,16 +32,14 @@ import android.util.Log;
 import androidx.annotation.VisibleForTesting;
 
 import com.android.internal.telephony.TelephonyIntents;
-
+import java.lang.ref.WeakReference;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * A listener for active subscription change
  */
-public abstract class ActiveSubsciptionsListener
-        extends SubscriptionManager.OnSubscriptionsChangedListener
-        implements AutoCloseable {
+public abstract class ActiveSubsciptionsListener implements AutoCloseable {
 
     private static final String TAG = "ActiveSubsciptions";
     private static final boolean DEBUG = false;
@@ -66,6 +64,25 @@ public abstract class ActiveSubsciptionsListener
 
     private AtomicInteger mMaxActiveSubscriptionInfos;
     private List<SubscriptionInfo> mCachedActiveSubscriptionInfo;
+    private MyOnSubscriptionsChangedListener mMyOnSubscriptionsChangedListener;
+
+    private final static class MyOnSubscriptionsChangedListener extends
+        SubscriptionManager.OnSubscriptionsChangedListener {
+            private WeakReference<ActiveSubsciptionsListener> mOwner;
+
+            public MyOnSubscriptionsChangedListener(Looper looper, ActiveSubsciptionsListener owner) {
+                super(looper);
+                mOwner = new WeakReference<ActiveSubsciptionsListener>(owner);
+            }
+
+            @Override
+            public void onSubscriptionsChanged() {
+                ActiveSubsciptionsListener listener = mOwner.get();
+                if (listener != null) {
+                    listener.onSubscriptionsChanged();
+                }
+            }
+        }
 
     /**
      * Constructor
@@ -85,7 +102,6 @@ public abstract class ActiveSubsciptionsListener
      * @param subscriptionId for subscription on this listener
      */
     public ActiveSubsciptionsListener(Looper looper, Context context, int subscriptionId) {
-        super(looper);
         mLooper = looper;
         mContext = context;
         mTargetSubscriptionId = subscriptionId;
@@ -100,6 +116,7 @@ public abstract class ActiveSubsciptionsListener
                 TelephonyIntents.ACTION_RADIO_TECHNOLOGY_CHANGED);
         mSubscriptionChangeIntentFilter.addAction(
                 TelephonyManager.ACTION_MULTI_SIM_CONFIG_CHANGED);
+        mMyOnSubscriptionsChangedListener = new MyOnSubscriptionsChangedListener(looper, this);
     }
 
     @VisibleForTesting
@@ -138,7 +155,6 @@ public abstract class ActiveSubsciptionsListener
      */
     public abstract void onChanged();
 
-    @Override
     public void onSubscriptionsChanged() {
         // clear value in cache
         clearCache();
@@ -173,7 +189,7 @@ public abstract class ActiveSubsciptionsListener
      */
     public SubscriptionManager getSubscriptionManager() {
         if (mSubscriptionManager == null) {
-            mSubscriptionManager = mContext.getSystemService(SubscriptionManager.class);
+            mSubscriptionManager = mContext.getApplicationContext().getSystemService(SubscriptionManager.class);
         }
         return mSubscriptionManager;
     }
@@ -289,7 +305,7 @@ public abstract class ActiveSubsciptionsListener
     @VisibleForTesting
     void registerForSubscriptionsChange() {
         getSubscriptionManager().addOnSubscriptionsChangedListener(
-                mContext.getMainExecutor(), this);
+                mContext.getMainExecutor(), mMyOnSubscriptionsChangedListener);
     }
 
     private void monitorSubscriptionsChange(boolean on) {
@@ -316,7 +332,7 @@ public abstract class ActiveSubsciptionsListener
         if (mSubscriptionChangeReceiver != null) {
             mContext.unregisterReceiver(mSubscriptionChangeReceiver);
         }
-        getSubscriptionManager().removeOnSubscriptionsChangedListener(this);
+        getSubscriptionManager().removeOnSubscriptionsChangedListener(mMyOnSubscriptionsChangedListener);
         clearCache();
         mCacheState.compareAndSet(STATE_STOPPING, STATE_NOT_LISTENING);
     }

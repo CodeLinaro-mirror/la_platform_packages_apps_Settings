@@ -27,7 +27,7 @@ import android.os.Looper;
 import android.provider.Settings;
 import android.telephony.SubscriptionManager;
 import android.telephony.SubscriptionManager.OnSubscriptionsChangedListener;
-
+import java.lang.ref.WeakReference;
 import com.android.internal.telephony.TelephonyIntents;
 
 /** Helper class for listening to changes in availability of telephony subscriptions */
@@ -45,17 +45,30 @@ public class SubscriptionsChangeListener extends ContentObserver {
     private Uri mAirplaneModeSettingUri;
     private BroadcastReceiver mBroadcastReceiver;
 
+    private final static class MyOnSubscriptionsChangedListener extends
+        OnSubscriptionsChangedListener {
+            private WeakReference<SubscriptionsChangeListener> mOwner;
+
+            public MyOnSubscriptionsChangedListener(Looper looper, SubscriptionsChangeListener owner) {
+                super(looper);
+                mOwner = new WeakReference<SubscriptionsChangeListener>(owner);
+            }
+
+            @Override
+            public void onSubscriptionsChanged() {
+                SubscriptionsChangeListener listener = mOwner.get();
+                if (listener!= null) {
+                    listener.subscriptionsChangedCallback();
+                }
+            }
+    }
+
     public SubscriptionsChangeListener(Context context, SubscriptionsChangeListenerClient client) {
         super(new Handler(Looper.getMainLooper()));
         mContext = context;
         mClient = client;
-        mSubscriptionManager = mContext.getSystemService(SubscriptionManager.class);
-        mSubscriptionsChangedListener = new OnSubscriptionsChangedListener(Looper.getMainLooper()) {
-            @Override
-            public void onSubscriptionsChanged() {
-                subscriptionsChangedCallback();
-            }
-        };
+        mSubscriptionManager = mContext.getApplicationContext().getSystemService(SubscriptionManager.class);
+        mSubscriptionsChangedListener = new MyOnSubscriptionsChangedListener(Looper.getMainLooper(), this);
         mAirplaneModeSettingUri = Settings.Global.getUriFor(Settings.Global.AIRPLANE_MODE_ON);
         mBroadcastReceiver = new BroadcastReceiver() {
             @Override
