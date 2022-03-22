@@ -47,9 +47,9 @@ public class DataSaverBackend {
 
     // TODO: Staticize into only one.
     public DataSaverBackend(Context context) {
-        mContext = context;
-        mMetricsFeatureProvider = FeatureFactory.getFactory(context).getMetricsFeatureProvider();
-        mPolicyManager = NetworkPolicyManager.from(context);
+        mContext = context.getApplicationContext();
+        mMetricsFeatureProvider = FeatureFactory.getFactory(mContext).getMetricsFeatureProvider();
+        mPolicyManager = NetworkPolicyManager.from(mContext);
     }
 
     public void addListener(Listener listener) {
