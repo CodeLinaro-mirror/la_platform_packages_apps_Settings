@@ -248,7 +248,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         SystemProperties.addChangeCallback(mSystemPropertiesChanged);
         final BluetoothAdapter adapter = BluetoothAdapter.getDefaultAdapter();
         if (adapter != null) {
-            adapter.getProfileProxy(getActivity(), mBluetoothA2dpServiceListener,
+            adapter.getProfileProxy(getActivity().getApplicationContext(), mBluetoothA2dpServiceListener,
                     BluetoothProfile.A2DP);
         }
         return super.onCreateView(inflater, container, savedInstanceState);

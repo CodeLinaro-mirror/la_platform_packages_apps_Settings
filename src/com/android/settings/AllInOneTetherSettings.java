@@ -294,6 +294,11 @@ public class AllInOneTetherSettings extends RestrictedDashboardFragment
     @Override
     public void onDestroy() {
         mDataSaverBackend.remListener(this);
+        final BluetoothProfile profile = mBluetoothPan.getAndSet(null);
+        final BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (profile != null && mBluetoothAdapter != null) {
+            mBluetoothAdapter.closeProfileProxy(BluetoothProfile.PAN, profile);
+        }
         super.onDestroy();
     }
 
