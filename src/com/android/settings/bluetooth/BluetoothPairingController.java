@@ -62,6 +62,7 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
     private int mPasskey;
     private String mDeviceName;
     private LocalBluetoothProfile mPbapClientProfile;
+    private LocalBluetoothProfile mPbapProfile;
 
     /**
      * Creates an instance of a BluetoothPairingController.
@@ -85,6 +86,7 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
         mPasskey = intent.getIntExtra(BluetoothDevice.EXTRA_PAIRING_KEY, BluetoothDevice.ERROR);
         mDeviceName = mBluetoothManager.getCachedDeviceManager().getName(mDevice);
         mPbapClientProfile = mBluetoothManager.getProfileManager().getPbapClientProfile();
+        mPbapProfile = mBluetoothManager.getProfileManager().getPbapProfile();
         mPasskeyFormatted = formatKey(mPasskey);
     }
 
@@ -152,7 +154,7 @@ public class BluetoothPairingController implements OnCheckedChangeListener,
      * device.
      */
     public boolean isProfileReady() {
-        return mPbapClientProfile != null && mPbapClientProfile.isProfileReady();
+        return mPbapProfile != null && mPbapProfile.isProfileReady();
     }
 
     /**
