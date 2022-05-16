@@ -4964,7 +4964,6 @@
     <string name="media_controls_no_players" msgid="3493023121892175946">"কোনও প্লেয়ার উপলভ্য নেই"</string>
     <string name="keywords_media_controls" msgid="8345490568291778638">"মিডিয়া"</string>
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"বেডটাইম মোড চালু থাকায় এই সুবিধা উপলভ্য নয়"</string>
-    <string name="bluetooth_message_access_notification_content" msgid="2986108412562309009">"বিশ্বাসযোগ্য নয় এমন ব্লুটুথ ডিভাইস আপনার মেসেজ অ্যাক্সেস করতে চাইছে। বিশদ বিবরণের জন্য ট্যাপ করুন।"</string>
     <string name="bluetooth_message_access_notification_content" msgid="5111712860712823893">"ডিভাইস আপনার মেসেজ অ্যাক্সেস করতে চাইছে। বিশদ বিবরণের জন্য ট্যাপ করুন।"</string>
     <string name="bluetooth_message_access_dialog_title" msgid="9009836130395061579">"মেসেজ দেখার অ্যাক্সেস দিতে চান?"</string>
     <string name="bluetooth_message_access_dialog_content" msgid="7186694737578788487">"ব্লুটুথ ডিভাইস, <xliff:g id="DEVICE_NAME_0">%1$s</xliff:g>, আপনার মেসেজ অ্যাক্সেস করতে চাইছে।\n\nআপনি <xliff:g id="DEVICE_NAME_1">%2$s</xliff:g>-এর সাথে আগে কখনও কানেক্ট করেননি।"</string>

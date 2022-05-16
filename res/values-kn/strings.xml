@@ -4963,9 +4963,7 @@
     <string name="media_controls_show_player" msgid="8504571042365814021">"ಪ್ಲೇಯರ್ ತೋರಿಸಿ"</string>
     <string name="media_controls_no_players" msgid="3493023121892175946">"ಯಾವುದೇ ಪ್ಲೇಯರ್‌ಗಳು ಲಭ್ಯವಿಲ್ಲ"</string>
     <string name="keywords_media_controls" msgid="8345490568291778638">"ಮಾಧ್ಯಮ"</string>
-<<<<<<< HEAD
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"ಬೆಡ್‌ಟೈಮ್ ಮೋಡ್ ಆನ್ ಇರುವುದರಿಂದ ಲಭ್ಯವಿಲ್ಲ"</string>
-    <string name="bluetooth_message_access_notification_content" msgid="2986108412562309009">"ವಿಶ್ವಾಸಾರ್ಹವಲ್ಲದ ಸಾಧನವು ನಿಮ್ಮ ಸಂದೇಶಗಳಿಗೆ ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ. ವಿವರಗಳಿಗಾಗಿ ಟ್ಯಾಪ್ ಮಾಡಿ."</string>
     <string name="bluetooth_message_access_notification_content" msgid="5111712860712823893">"ಒಂದು ಸಾಧನವು ನಿಮ್ಮ ಸಂದೇಶಗಳಿಗೆ ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ. ವಿವರಗಳಿಗಾಗಿ ಟ್ಯಾಪ್ ಮಾಡಿ."</string>
     <string name="bluetooth_message_access_dialog_title" msgid="9009836130395061579">"ಸಂದೇಶಗಳಿಗೆ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಬೇಕೇ?"</string>
     <string name="bluetooth_message_access_dialog_content" msgid="7186694737578788487">"ಬ್ಲೂಟೂತ್ ಸಾಧನ, <xliff:g id="DEVICE_NAME_0">%1$s</xliff:g>, ನಿಮ್ಮ ಸಂದೇಶಗಳಿಗೆ ಪ್ರವೇಶಿಸಲು ಬಯಸುತ್ತದೆ.\n\nನೀವು ಈ ಮೊದಲು <xliff:g id="DEVICE_NAME_1">%2$s</xliff:g> ಗೆ ಕನೆಕ್ಟ್ ಆಗಿರಲಿಲ್ಲ."</string>
