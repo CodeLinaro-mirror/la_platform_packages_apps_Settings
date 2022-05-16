@@ -4963,7 +4963,6 @@
     <string name="media_controls_show_player" msgid="8504571042365814021">"প্লেয়ার দেখুন"</string>
     <string name="media_controls_no_players" msgid="3493023121892175946">"কোনও প্লেয়ার উপলভ্য নেই"</string>
     <string name="keywords_media_controls" msgid="8345490568291778638">"মিডিয়া"</string>
-<<<<<<< HEAD
     <string name="aware_summary_when_bedtime_on" msgid="2063856008597376344">"বেডটাইম মোড চালু থাকায় এই সুবিধা উপলভ্য নয়"</string>
     <string name="bluetooth_message_access_notification_content" msgid="2986108412562309009">"বিশ্বাসযোগ্য নয় এমন ব্লুটুথ ডিভাইস আপনার মেসেজ অ্যাক্সেস করতে চাইছে। বিশদ বিবরণের জন্য ট্যাপ করুন।"</string>
     <string name="bluetooth_message_access_notification_content" msgid="5111712860712823893">"ডিভাইস আপনার মেসেজ অ্যাক্সেস করতে চাইছে। বিশদ বিবরণের জন্য ট্যাপ করুন।"</string>
