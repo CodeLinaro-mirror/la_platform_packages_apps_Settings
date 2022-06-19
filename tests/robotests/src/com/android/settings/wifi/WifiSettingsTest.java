@@ -106,7 +106,7 @@ public class WifiSettingsTest {
         mWifiSettings.mConfigureWifiSettingsPreference = new Preference(mContext);
         mWifiSettings.mWifiPickerTracker = mMockWifiPickerTracker;
         mWifiSettings.mWifiManager = mWifiManager;
-        FeatureFlagUtils.setEnabled(mContext, FeatureFlagUtils.SETTINGS_PROVIDER_MODEL, false);
+        mWifiSettings.IS_ENABLED_PROVIDER_MODEL = false;
     }
 
     @Test
@@ -277,6 +277,8 @@ public class WifiSettingsTest {
 
     @Test
     public void onWifiEntriesChanged_shouldChangeNextButtonState() {
+        final FragmentActivity activity = mock(FragmentActivity.class);
+        doReturn(activity).when(mWifiSettings).getActivity();
         mWifiSettings.onWifiEntriesChanged();
 
         verify(mWifiSettings).changeNextButtonState(anyBoolean());
