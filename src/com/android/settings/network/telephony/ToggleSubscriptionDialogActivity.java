@@ -348,7 +348,7 @@ public class ToggleSubscriptionDialogActivity extends SubscriptionActionDialogAc
 
     /* Handles the enabling SIM action. */
     private void showEnableSubDialog() {
-        Log.i(TAG, "Handle subscription enabling.");
+        Log.d(TAG, "Handle subscription enabling.");
         if (isDsdsConditionSatisfied()) {
             showEnableDsdsConfirmDialog();
             return;
@@ -473,7 +473,7 @@ public class ToggleSubscriptionDialogActivity extends SubscriptionActionDialogAc
     }
 
     private void showMepSwitchSimConfirmDialog() {
-        Log.i(TAG, "showMepSwitchSimConfirmDialog");
+        Log.d(TAG, "showMepSwitchSimConfirmDialog");
         final CharSequence displayName = SubscriptionUtil.getUniqueSubscriptionDisplayName(
                 mSubInfo, this);
         String title = getString(R.string.sim_action_switch_sub_dialog_mep_title, displayName);
@@ -481,13 +481,10 @@ public class ToggleSubscriptionDialogActivity extends SubscriptionActionDialogAc
         switchDialogMsg.append(
                 getString(R.string.sim_action_switch_sub_dialog_mep_text, displayName));
         if (isRtlMode) {
-            /* There are two lines of message in the dialog, and the RTL symbols must be added
-             * before and after each sentence, so use the line break symbol to find the position.
+            /* The RTL symbols must be added before and after each sentence.
              * (Each message are all with two line break symbols)
              */
             switchDialogMsg.insert(0, RTL_MARK)
-                    .insert(switchDialogMsg.indexOf(LINE_BREAK) - LINE_BREAK_OFFSET_ONE, RTL_MARK)
-                    .insert(switchDialogMsg.indexOf(LINE_BREAK) + LINE_BREAK_OFFSET_TWO, RTL_MARK)
                     .insert(switchDialogMsg.length(), RTL_MARK);
         }
         ConfirmDialogFragment.show(
@@ -577,27 +574,35 @@ public class ToggleSubscriptionDialogActivity extends SubscriptionActionDialogAc
 
     private boolean isDsdsConditionSatisfied() {
         if (mTelMgr.isMultiSimEnabled()) {
-            Log.i(TAG, "DSDS is already enabled. Condition not satisfied.");
+            Log.d(TAG, "DSDS is already enabled. Condition not satisfied.");
             return false;
         }
         if (mTelMgr.isMultiSimSupported() != TelephonyManager.MULTISIM_ALLOWED) {
-            Log.i(TAG, "Hardware does not support DSDS.");
+            Log.d(TAG, "Hardware does not support DSDS.");
             return false;
+        }
+        boolean isActiveSim = SubscriptionUtil.getActiveSubscriptions(
+                mSubscriptionManager).size() > 0;
+        if (isMultipleEnabledProfilesSupported() && isActiveSim) {
+            Log.d(TAG,
+                    "Device supports MEP and eSIM operation and eSIM profile is enabled."
+                            + " DSDS condition satisfied.");
+            return true;
         }
         boolean isRemovableSimEnabled = isRemovableSimEnabled();
         if (mIsEsimOperation && isRemovableSimEnabled) {
-            Log.i(TAG, "eSIM operation and removable SIM is enabled. DSDS condition satisfied.");
+            Log.d(TAG, "eSIM operation and removable SIM is enabled. DSDS condition satisfied.");
             return true;
         }
         boolean isEsimProfileEnabled =
                 SubscriptionUtil.getActiveSubscriptions(mSubscriptionManager).stream()
                         .anyMatch(SubscriptionInfo::isEmbedded);
         if (!mIsEsimOperation && isEsimProfileEnabled) {
-            Log.i(TAG, "Removable SIM operation and eSIM profile is enabled. DSDS condition"
+            Log.d(TAG, "Removable SIM operation and eSIM profile is enabled. DSDS condition"
                     + " satisfied.");
             return true;
         }
-        Log.i(TAG, "DSDS condition not satisfied.");
+        Log.d(TAG, "DSDS condition not satisfied.");
         return false;
     }
 

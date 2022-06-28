@@ -19,13 +19,16 @@ package com.android.settings.network.telephony;
 import static androidx.lifecycle.Lifecycle.Event.ON_PAUSE;
 import static androidx.lifecycle.Lifecycle.Event.ON_RESUME;
 
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Handler;
 import android.os.Looper;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
+import android.util.Log;
 
-import androidx.lifecycle.Lifecycle;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.OnLifecycleEvent;
 import androidx.preference.Preference;
@@ -33,28 +36,39 @@ import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.internal.annotations.VisibleForTesting;
+import com.android.internal.telephony.TelephonyIntents;
+import com.android.settings.datausage.DataUsageUtils;
 import com.android.settings.network.MobileDataContentObserver;
 import com.android.settings.network.SubscriptionsChangeListener;
 
 public class DataDuringCallsPreferenceController extends TelephonyTogglePreferenceController
         implements LifecycleObserver,
         SubscriptionsChangeListener.SubscriptionsChangeListenerClient {
-
+    private static final String TAG = "DataDuringCalls";
     private SwitchPreference mPreference;
     private SubscriptionsChangeListener mChangeListener;
     private TelephonyManager mManager;
     private MobileDataContentObserver mMobileDataContentObserver;
     private PreferenceScreen mScreen;
 
+    private final BroadcastReceiver mDefaultDataChangedReceiver = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            if (mPreference != null) {
+                Log.d(TAG,"DDS is changed");
+                refreshPreference();
+            }
+        }
+    };
+
     public DataDuringCallsPreferenceController(Context context,
             String preferenceKey) {
         super(context, preferenceKey);
     }
 
-    public void init(Lifecycle lifecycle, int subId) {
+    void init(int subId) {
         this.mSubId = subId;
         mManager = mContext.getSystemService(TelephonyManager.class).createForSubscriptionId(subId);
-        lifecycle.addObserver(this);
     }
 
     @OnLifecycleEvent(ON_RESUME)
@@ -73,6 +87,8 @@ public class DataDuringCallsPreferenceController extends TelephonyTogglePreferen
         if (defaultDataSub != mSubId) {
             mMobileDataContentObserver.register(mContext, defaultDataSub);
         }
+        mContext.registerReceiver(mDefaultDataChangedReceiver,
+                new IntentFilter(TelephonyIntents.ACTION_DEFAULT_DATA_SUBSCRIPTION_CHANGED));
     }
 
     @OnLifecycleEvent(ON_PAUSE)
@@ -82,6 +98,9 @@ public class DataDuringCallsPreferenceController extends TelephonyTogglePreferen
         }
         if (mMobileDataContentObserver != null) {
             mMobileDataContentObserver.unRegister(mContext);
+        }
+        if (mDefaultDataChangedReceiver != null) {
+            mContext.unregisterReceiver(mDefaultDataChangedReceiver);
         }
     }
 
@@ -106,10 +125,16 @@ public class DataDuringCallsPreferenceController extends TelephonyTogglePreferen
         return true;
     }
 
+    @VisibleForTesting
+    protected boolean hasMobileData() {
+        return DataUsageUtils.hasMobileData(mContext);
+    }
+
     @Override
     public int getAvailabilityStatus(int subId) {
         if (!SubscriptionManager.isValidSubscriptionId(subId)
-                || SubscriptionManager.getDefaultDataSubscriptionId() == subId) {
+                || SubscriptionManager.getDefaultDataSubscriptionId() == subId
+                || (!hasMobileData())) {
             return CONDITIONALLY_UNAVAILABLE;
         }
         boolean isDefDataEnabled = mManager.createForSubscriptionId(
