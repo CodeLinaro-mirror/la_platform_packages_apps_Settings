@@ -12,6 +12,11 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
+
+     Changes from Qualcomm Innovation Center are provided under the following license:
+
+     Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Strings for Dialog yes button -->
@@ -1975,8 +1980,6 @@
     <string name="wifi_display_settings_title">Cast</string>
     <!-- Wifi Display settings. The keywords of the setting. [CHAR LIMIT=NONE] -->
     <string name="keywords_wifi_display_settings">mirror</string>
-    <!-- Checkbox title for enabling particual wifi as shared -->
-    <string name="share_this_wifi">Extend Wi-Fi coverage</string>
     <!-- Wifi Display settings. The title of a menu item to enable wireless display [CHAR LIMIT=40] -->
     <string name="wifi_display_enable_menu_item">Enable wireless display</string>
     <!-- Wifi Display settings. Text that appears when scanning for devices is finished and no nearby device was found [CHAR LIMIT=40]-->
@@ -2245,6 +2248,8 @@
     <string name="wifi_hidden_network">Hidden network</string>
     <!-- Label for the warning shown to users if they try to connect to a network as "hidden" -->
     <string name="wifi_hidden_network_warning">If your router is not broadcasting a network ID but you would like to connect to it in the future, you can set the network as hidden.\n\nThis may create a security risk because your phone will regularly broadcast its signal to find the network.\n\nSetting the network as hidden will not change your router settings.</string>
+    <!-- Lable for the hidden GBK Encoding of this network -->
+    <string name="wifi_hidden_gbk">GBK Encoding</string>
     <!-- Label for the signal strength of the connection -->
     <string name="wifi_signal">Signal strength</string>
     <!-- Label for the status of the connection -->
@@ -12928,6 +12933,8 @@
     <!-- Available networks screen, toast when registered on a specific network [CHAR LIMIT=NONE] -->
     <string name="registration_done">Registered on network.</string>
 
+    <!-- Available networks screen, name of switch button to select SNPN search type [CHAR LIMIT=NONE] -->
+    <string name="enable_snpn">Enable SNPN</string>
     <!-- Available networks screen, name of switch button for whether to select network automatically [CHAR LIMIT=NONE] -->
     <string name="select_automatically">Automatically select network</string>
 
