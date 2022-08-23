@@ -494,7 +494,7 @@
     <string name="skip_anyway_button_label" msgid="3442274117023270068">"हां छोड़ें"</string>
     <string name="go_back_button_label" msgid="6139455414099035594">"वापस जाएं"</string>
     <string name="skip_lock_screen_dialog_button_label" msgid="641984698150020591">"सेट अप न करें"</string>
-    <string name="cancel_lock_screen_dialog_button_label" msgid="1801132985957491690">"अभी नहीं"</string>
+    <string name="cancel_lock_screen_dialog_button_label" msgid="1801132985957491690">"रद्द करें"</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_title" msgid="886085239313346000">"सेंसर को छुएं"</string>
     <string name="security_settings_udfps_enroll_find_sensor_title" msgid="8077484429913330179">"फ़िंगरप्रिंट सेट अप करने का तरीका"</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message" msgid="6160543980992596286">"यह आपके फ़ोन के पीछे दिया गया है. अपने अंगूठे के पास की उंगली का उपयोग करें."</string>
@@ -521,9 +521,9 @@
     <string name="security_settings_udfps_enroll_repeat_a11y_message" msgid="2785464357615568197">"ऐसा करके, आपके फ़िंगरप्रिंट को बेहतर तरीके से कैप्चर किया जा सकता है"</string>
     <string name="security_settings_udfps_enroll_progress_a11y_message" msgid="6183535114682369699">"फ़िंगरप्रिंट सेट अप करने की प्रक्रिया <xliff:g id="PERCENTAGE">%d</xliff:g> प्रतिशत तक पूरी हो चुकी है"</string>
     <string name="security_settings_fingerprint_enroll_finish_title" msgid="3606325177406951457">"फ़िंगरप्रिंट जोड़ा गया"</string>
-    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="4372740782513990687">"अब अपने फ़िंगरप्रिंट की मदद से, टैबलेट को अनलॉक किया जा सकता है. इसके अलावा, किसी ऐप्लिकेशन में साइन इन करने या ऐसे और काम करने के दौरान, अपनी पहचान की पुष्टि करने के लिए भी फ़िंगरप्रिंट का इस्तेमाल किया जा सकता है"</string>
-    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="6208711210125838327">"अब अपने फ़िंगरप्रिंट की मदद से, डिवाइस को अनलॉक किया जा सकता है. इसके अलावा, किसी ऐप्लिकेशन में साइन इन करने या ऐसे और काम करने के दौरान, अपनी पहचान की पुष्टि करने के लिए भी फ़िंगरप्रिंट का इस्तेमाल किया जा सकता है"</string>
-    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="4755651286485895622">"अब अपने फ़िंगरप्रिंट की मदद से, फ़ोन को अनलॉक किया जा सकता है. इसके अलावा, किसी ऐप्लिकेशन में साइन इन करने या ऐसे और काम करने के दौरान, अपनी पहचान की पुष्टि करने के लिए भी फ़िंगरप्रिंट का इस्तेमाल किया जा सकता है"</string>
+    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="5918110416185820480">"फ़िंगरप्रिंट अनलॉक की सुविधा का इस्तेमाल, आपके टैबलेट को अनलॉक करने और किसी ऐप्लिकेशन में आपकी पुष्टि के लिए जितना ज़्यादा किया जाता है, यह उतनी ही बेहतर होती जाती है"</string>
+    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="2989276789236025675">"फ़िंगरप्रिंट अनलॉक की सुविधा का इस्तेमाल, आपके डिवाइस को अनलॉक करने और किसी ऐप्लिकेशन में आपकी पुष्टि के लिए जितना ज़्यादा किया जाता है, यह उतनी ही बेहतर होती जाती है"</string>
+    <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="6506437402392739879">"फ़िंगरप्रिंट अनलॉक की सुविधा का इस्तेमाल, आपके फ़ोन को अनलॉक करने और किसी ऐप्लिकेशन में आपकी पुष्टि के लिए जितना ज़्यादा किया जाता है, यह उतनी ही बेहतर होती जाती है"</string>
     <string name="security_settings_fingerprint_enroll_enrolling_skip" msgid="3004786457919122854">"इसे बाद में करें"</string>
     <string name="security_settings_udfps_tip_fingerprint_help" msgid="7580784640741217494">"हटाएं, फिर दोबारा छुएं"</string>
     <string name="security_settings_udfps_side_fingerprint_help" msgid="2567232481013195191">"पहले अपनी उंगली के एक किनारे को सेंसर पर कुछ देर के लिए रखें और फिर दूसरी तरफ़ से भी ऐसा करें"</string>
@@ -2344,7 +2344,7 @@
     <string name="accessibility_text_reading_reset_button_title" msgid="5960753279788187669">"सेटिंग रीसेट करें"</string>
     <string name="accessibility_text_reading_reset_message" msgid="824644303661026712">"डिसप्ले साइज़ और टेक्स्ट की सेटिंग रीसेट हो गई हैं"</string>
     <string name="accessibility_text_reading_confirm_dialog_title" msgid="2865331351355690389">"क्या आपको डिसप्ले के साइज़ और टेक्स्ट को रीसेट करना है?"</string>
-    <string name="accessibility_text_reading_confirm_dialog_message" msgid="517090197003540264">"आपके डिसप्ले का साइज़ और मैसेज भेजने की प्राथमिकता, फ़ोन की मूल सेटिंग पर रीसेट कर दी जाएगी"</string>
+    <string name="accessibility_text_reading_confirm_dialog_message" msgid="517090197003540264">"आपके डिसप्ले का साइज़ और टेक्स्ट की सेटिंग, फ़ोन की मूल सेटिंग पर रीसेट कर दी जाएगी"</string>
     <string name="accessibility_text_reading_confirm_dialog_reset_button" msgid="8215800137850243736">"रीसेट करें"</string>
     <string name="accessibility_text_reading_conversation_message_1" msgid="7883952203831957831">"वीकेंड का कोई प्लान है?"</string>
     <string name="accessibility_text_reading_conversation_message_2" msgid="8112160435318635856">"बीच की ओर जा रहे हैं. क्या आपको आना है?"</string>
@@ -2445,7 +2445,7 @@
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"रंग बदलने की सुविधा का शॉर्टकट"</string>
     <string name="accessibility_display_inversion_preference_intro_text" msgid="1159663288481145318">"रंग बदलने की सुविधा चालू करने पर, हल्के रंग की स्क्रीन गहरे रंग में बदल जाती हैं. साथ ही, यह सुविधा इस्तेमाल करने पर, गहरे रंग की स्क्रीन हल्के रंग में बदल जाती हैं."</string>
     <string name="accessibility_display_inversion_preference_subtitle" msgid="4494767676482389509">"&lt;b&gt;ध्यान दें&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; रंग बदलने की सुविधा चालू करने पर, मीडिया और इमेज के रंग बदल जाएंगे&lt;/li&gt; &lt;li&gt; रंग बदलने की सुविधा का इस्तेमाल, सभी ऐप्लिकेशन पर किया जा सकता है&lt;/li&gt; &lt;li&gt; गहरे रंग का बैकग्राउंड रखने के लिए, रंग बदलने की सुविधा के बजाय गहरे रंग वाली थीम का इस्तेमाल करें&lt;/li&gt; &lt;/ol&gt;"</string>
-    <string name="accessibility_autoclick_preference_title" msgid="2703143361605555752">"ऑटो क्लिक (किसी कॉन्टेंट पर बिताया गया समय या ड्वेल टाइम)"</string>
+    <string name="accessibility_autoclick_preference_title" msgid="2703143361605555752">"अपने-आप क्लिक होने की सुविधा (कॉन्टेंट पर बिताया गया समय या ड्वेल टाइम)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"ऑटो क्लिक (कॉन्टेंट पर बिताया गया समय) के बारे में जानकारी"</string>
     <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"ऑटो क्लिक (कॉन्टेंट पर बिताया गया समय) के बारे में ज़्यादा जानें"</string>
     <string name="accessibility_autoclick_intro_text" msgid="8959680635470639347">"Android डिवाइस से कनेक्ट किए गए माउस को, इस तरह सेट किया जा सकता है कि एक तय समय तक कर्सर रुक जाने पर, माउस से अपने-आप क्लिक हो जाए"</string>
@@ -2472,7 +2472,7 @@
     <string name="accessibility_vibration_primary_switch_title" msgid="6162579254864450592">"वाइब्रेशन और हैप्टिक का इस्तेमाल करें"</string>
     <string name="accessibility_alarm_vibration_title" msgid="4661294337828522745">"अलार्म वाइब्रेशन"</string>
     <string name="accessibility_media_vibration_title" msgid="1372073715403945428">"मीडिया वाइब्रेशन"</string>
-    <string name="accessibility_ring_vibration_title" msgid="4689811297654320885">"घंटी के लिए वाइब्रेशन"</string>
+    <string name="accessibility_ring_vibration_title" msgid="4689811297654320885">"रिंग के लिए वाइब्रेशन"</string>
     <string name="accessibility_notification_vibration_title" msgid="6205679908785776478">"सूचना के लिए वाइब्रेशन"</string>
     <string name="accessibility_touch_vibration_title" msgid="533931451319110741">"टच फ़ीडबैक"</string>
     <string name="accessibility_service_primary_switch_title" msgid="437610853412159406">"<xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> का इस्तेमाल करें"</string>
@@ -3439,7 +3439,7 @@
     <string name="nfc_payment_favor_default" msgid="4508491832174644772">"हमेशा"</string>
     <string name="nfc_payment_favor_open" msgid="8554643344050373346">"सिवाय तब, जब पैसे चुकाने के लिए दूसरा ऐप्लिकेशन खुला हो"</string>
     <string name="nfc_payment_pay_with" msgid="3001320460566523453">"टच किए बिना पैसे चुकाने के टर्मिनल पर, इससे पैसे चुकाएं:"</string>
-    <string name="nfc_how_it_works_title" msgid="1363791241625771084">"पैसे चुकाने की मशीन का इस्तेमाल करना"</string>
+    <string name="nfc_how_it_works_title" msgid="1363791241625771084">"पैसे चुकाने की टर्मिनल का इस्तेमाल करना"</string>
     <string name="nfc_how_it_works_content" msgid="1141382684788210772">"पैसे चुकाने के लिए किसी ऐप्लिकेशन को चुनें. इसके बाद, टच किए बिना पैसे चुकाने के निशान वाले किसी टर्मिनल की ओर अपने फ़ोन का पिछला हिस्सा करके उसे पकड़े रहें."</string>
     <string name="nfc_how_it_works_got_it" msgid="4717868843368296630">"ठीक है"</string>
     <string name="nfc_more_title" msgid="1041094244767216498">"ज़्यादा…"</string>
@@ -3639,7 +3639,7 @@
     <string name="keywords_profile_challenge" msgid="5135555521652143612">"काम की चुनौती, काम, प्रोफ़ाइल"</string>
     <string name="keywords_unification" msgid="2677472004971453468">"वर्क प्रोफ़ाइल, प्रबंधित प्रोफ़ाइल, एक करना, एकीकरण, काम, प्रोफ़ाइल"</string>
     <string name="keywords_gesture" msgid="3456930847450080520">"जेस्चर"</string>
-    <string name="keywords_wallet" msgid="3757421969956996972">"वॉलेट"</string>
+    <string name="keywords_wallet" msgid="3757421969956996972">"Wallet"</string>
     <string name="keywords_payment_settings" msgid="6268791289277000043">"भुगतान करें, टैप करें, भुगतान"</string>
     <string name="keywords_backup" msgid="707735920706667685">"बैकअप, बैक अप"</string>
     <string name="keywords_assist_gesture_launch" msgid="7710762655355161924">"जेस्चर"</string>
@@ -3703,7 +3703,7 @@
     <string name="notification_unknown_sound_title" msgid="1319708450698738980">"ऐप की ओर से दी जाने वाली ध्वनि"</string>
     <string name="notification_sound_default" msgid="8630353701915294299">"सूचना की डिफ़ॉल्ट आवाज़"</string>
     <string name="alarm_ringtone_title" msgid="6680761007731764726">"अलार्म की डिफ़ॉल्ट आवाज़"</string>
-    <string name="vibrate_when_ringing_title" msgid="3436203665622843196">"कॉल आने पर वाइब्रेट होना"</string>
+    <string name="vibrate_when_ringing_title" msgid="3436203665622843196">"कॉल आने पर वाइब्रेट हो"</string>
     <string name="keywords_vibrate_for_calls" msgid="1019870409730074899">"वाइब्रेशन"</string>
     <string name="vibrate_when_ringing_option_never_vibrate" msgid="6518980907289156517">"कभी वाइब्रेट न हो"</string>
     <string name="vibrate_when_ringing_option_always_vibrate" msgid="968652667232075466">"हमेशा वाइब्रेट हो"</string>
@@ -4680,7 +4680,7 @@
     <string name="disabled_by_policy_title_biometric_parental_consent" msgid="2463673997797134678">"माता-पिता की अनुमति ज़रूरी है"</string>
     <string name="disabled_by_policy_content_biometric_parental_consent" msgid="7124116806784305206">"बायोमेट्रिक्स के ज़रिए पुष्टि करने की सुविधा सेट अप करने के लिए, अपने माता-पिता की मदद लें"</string>
     <string name="default_admin_support_msg" msgid="8338570262037182531">"अगर आपके कोई सवाल हैं, तो अपने आईटी एडमिन से संपर्क करें"</string>
-    <string name="admin_support_more_info" msgid="8407433155725898290">"ज़्यादा विवरण"</string>
+    <string name="admin_support_more_info" msgid="8407433155725898290">"ज़्यादा जानकारी"</string>
     <string name="admin_profile_owner_message" msgid="8860709969532649195">"आपका एडमिन आपकी वर्क प्रोफ़ाइल से जुड़े ऐप और डेटा की निगरानी और उनका प्रबंधन कर सकता है, जिनमें सेटिंग, अनुमतियां, कॉर्पोरेट पहुंच, नेटवर्क गतिविधि और डिवाइस के जगह की जानकारी शामिल हैं."</string>
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"आपका एडमिन इस उपयोगकर्ता से जुड़े ऐप्लिकेशन और डेटा की निगरानी और उनका प्रबंधन कर सकता है, जिनमें सेटिंग, अनुमतियां, कॉर्पोरेट पहुंच, नेटवर्क गतिविधि और डिवाइस के जगह की जानकारी शामिल है."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"आपका एडमिन इस उपयोगकर्ता से जुड़े ऐप्लिकेशन और डेटा की निगरानी और उनका प्रबंधन कर सकता है, जिनमें सेटिंग, अनुमतियां, कॉर्पोरेट पहुंच, नेटवर्क गतिविधि और डिवाइस के जगह की जानकारी शामिल है."</string>
@@ -4876,8 +4876,6 @@
     <string name="ambient_camera_summary_battery_saver_on" msgid="1787784892047029560">"कुछ समय के लिए बंद किया गया है, क्योंकि बैटरी सेवर चालू है"</string>
     <string name="ambient_camera_battery_saver_off" msgid="689825730569761613">"बैटरी सेवर की सुविधा बंद करें"</string>
     <string name="dark_ui_mode_disabled_summary_dark_theme_off" msgid="4154227921313505702">"\'बैटरी सेवर\' की वजह से कुछ समय के लिए चालू है"</string>
-    <string name="dark_ui_settings_dark_summary" msgid="1214821092462388494">"ऐप्लिकेशन भी गहरे रंग की थीम में बदल जाएंगे"</string>
-    <string name="dark_ui_settings_dialog_acknowledge" msgid="250437497729953965">"ठीक है"</string>
     <string name="dark_theme_slice_title" msgid="4684222119481114062">"गहरे रंग वाली थीम आज़माएं"</string>
     <string name="dark_theme_slice_subtitle" msgid="5555724345330434268">"बैटरी लाइफ़ बढ़ाने में मदद करती है"</string>
     <string name="quick_settings_developer_tiles" msgid="7336007844525766623">"फटाफट सेटिंग डेवलपर टाइल"</string>
@@ -5077,17 +5075,17 @@
     <string name="financed_privacy_settings" msgid="2575114436197204145">"फ़ाइनैंस किए गए डिवाइस की जानकारी"</string>
     <string name="financed_privacy_intro" msgid="5458393846604867947">"क्रेडिट सेवा देने वाली कंपनी, डिवाइस की सेटिंग में बदलाव कर सकती है और उस पर सॉफ़्टवेयर इंस्टॉल कर सकती है.\n\nअगर आपसे कोई पेमेंट छूटता है, तो आपका डिवाइस लॉक हो जाएगा.\n\nज़्यादा जानने के लिए, क्रेडिट सेवा देने वाली कंपनी से संपर्क करें."</string>
     <string name="financed_privacy_restrictions_category" msgid="2472659467919651602">"डिवाइस को फ़ाइनैंस किया गया है, तो ये काम नहीं किए जा सकते:"</string>
-    <string name="financed_privacy_install_apps" msgid="7381718005710210851">"Play Store के बाहर से ऐप्लिकेशन इंस्टॉल करें"</string>
-    <string name="financed_privacy_safe_mode" msgid="5362149445732602578">"अपने डिवाइस को सुरक्षित मोड में फिर से चालू करें"</string>
+    <string name="financed_privacy_install_apps" msgid="7381718005710210851">"Play Store के बाहर से ऐप्लिकेशन इंस्टॉल करना"</string>
+    <string name="financed_privacy_safe_mode" msgid="5362149445732602578">"अपने डिवाइस को सुरक्षित मोड में फिर से चालू करना"</string>
     <string name="financed_privacy_multi_users" msgid="1727194928477613081">"अपने डिवाइस पर एक से ज़्यादा उपयोगकर्ता जोड़ें"</string>
     <string name="financed_privacy_config_date_time" msgid="8567370445374984365">"तारीख, समय, और समय क्षेत्रों में बदलाव करें"</string>
     <string name="financed_privacy_developer_options" msgid="7602001474669831672">"\'डेवलपर के लिए सेटिंग और टूल\' चालू करें"</string>
     <string name="financed_privacy_credit_provider_capabilities_category" msgid="8737902277892987998">"क्रेडिट देने वाली कंपनी ऐसा कर सकती है:"</string>
-    <string name="financed_privacy_IMEI" msgid="1852413860963824799">"अपने डिवाइस का IMEI नंबर ऐक्सेस करें"</string>
+    <string name="financed_privacy_IMEI" msgid="1852413860963824799">"आपके डिवाइस का IMEI नंबर ऐक्सेस करना"</string>
     <string name="financed_privacy_factory_reset" msgid="8915355477801723433">"अपने डिवाइस को फ़ैक्ट्री रीसेट करें"</string>
     <string name="financed_privacy_locked_mode_category" msgid="3708288398912647751">"अगर आपका डिवाइस लॉक हो गया है, तो उसका इस्तेमाल सिर्फ़ इन कामों के लिए किया जा सकता है:"</string>
-    <string name="financed_privacy_emergency_calls" msgid="1108183987142736497">"आपातकालीन कॉल करें"</string>
-    <string name="financed_privacy_system_info" msgid="4158031444108708927">"सिस्टम से जुड़ी जानकारी देखें, जैसे कि तारीख, समय, नेटवर्क की स्थिति, और बैटरी"</string>
+    <string name="financed_privacy_emergency_calls" msgid="1108183987142736497">"आपातकालीन कॉल करने"</string>
+    <string name="financed_privacy_system_info" msgid="4158031444108708927">"सिस्टम से जुड़ी जानकारी देखने, जैसे कि तारीख, समय, नेटवर्क की स्थिति, और बैटरी"</string>
     <string name="financed_privacy_turn_on_off_device" msgid="3331566753152790571">"अपने डिवाइस को चालू या बंद करें"</string>
     <string name="financed_privacy_notifications" msgid="5932303271274089968">"सूचनाएं और मैसेज देखें"</string>
     <string name="financed_privacy_allowlisted_apps" msgid="8333040812194879963">"क्रेडिट सेवा देने वाली कंपनी से अनुमति पा चुके ऐप्लिकेशन को ऐक्सेस करें"</string>
@@ -5690,7 +5688,7 @@
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g> के लिए 2G नेटवर्क होना ज़रूरी है"</string>
     <string name="app_info_all_services_label" msgid="3600929226735860271">"सभी सेवाएं"</string>
     <string name="show_clip_access_notification" msgid="7782300987639778542">"क्लिपबोर्ड का डेटा ऐक्सेस किए जाने पर मैसेज दिखाएं"</string>
-    <string name="show_clip_access_notification_summary" msgid="474090757777203207">"जब ऐप्लिकेशन, कॉपी किए गए टेक्स्ट, इमेज या अन्य कॉन्टेंट का इस्तेमाल करें, तो मैसेज दिखाएं"</string>
+    <string name="show_clip_access_notification_summary" msgid="474090757777203207">"जब ऐप्लिकेशन आपके कॉपी किए गए टेक्स्ट, इमेज या अन्य कॉन्टेंट को ऐक्सेस करे, तो मैसेज दिखाएं"</string>
     <string name="all_apps" msgid="3054120149509114789">"सभी ऐप्लिकेशन"</string>
     <string name="request_manage_bluetooth_permission_dont_allow" msgid="8798061333407581300">"अनुमति न दें"</string>
     <string name="uwb_settings_title" msgid="8578498712312002231">"अल्ट्रा-वाइडबैंड (यूडब्ल्यूबी)"</string>
