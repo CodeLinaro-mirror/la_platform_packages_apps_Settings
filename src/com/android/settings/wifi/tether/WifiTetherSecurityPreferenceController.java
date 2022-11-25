@@ -1,0 +1,76 @@
+package com.android.settings.wifi.tether;
+
+import android.content.Context;
+import android.content.res.Resources;
+import android.net.wifi.WifiConfiguration;
+import android.support.v7.preference.ListPreference;
+import android.support.v7.preference.Preference;
+import android.support.v7.preference.PreferenceScreen;
+
+import com.android.settings.R;
+
+public class WifiTetherSecurityPreferenceController extends WifiTetherBasePreferenceController {
+
+    private static final String PREF_KEY = "wifi_tether_security";
+
+    private final String[] mSecurityEntries;
+    private int mSecurityValue;
+
+    public WifiTetherSecurityPreferenceController(Context context,
+            OnTetherConfigUpdateListener listener) {
+        super(context, listener);
+        mSecurityEntries = mContext.getResources().getStringArray(R.array.wifi_ap_security);
+    }
+
+    @Override
+    public String getPreferenceKey() {
+        return PREF_KEY;
+    }
+
+    @Override
+    public void displayPreference(PreferenceScreen screen) {
+        super.displayPreference(screen);
+        updateDisplay();
+    }
+
+    private void updateDisplay() {
+        final WifiConfiguration config = mWifiManager.getWifiApConfiguration();
+        if (config != null && config.getAuthType() == WifiConfiguration.KeyMgmt.NONE) {
+            mSecurityValue = WifiConfiguration.KeyMgmt.NONE;
+        } else if (config.getAuthType() == WifiConfiguration.KeyMgmt.OWE) {
+            mSecurityValue = WifiConfiguration.KeyMgmt.OWE;
+        } else if (config.getAuthType() == WifiConfiguration.KeyMgmt.SAE) {
+            mSecurityValue = WifiConfiguration.KeyMgmt.SAE;
+        } else {
+            mSecurityValue = WifiConfiguration.KeyMgmt.WPA2_PSK;
+        }
+
+        final ListPreference preference = (ListPreference) mPreference;
+        preference.setSummary(getSummaryForSecurityType(mSecurityValue));
+        preference.setValue(String.valueOf(mSecurityValue));
+    }
+
+    @Override
+    public boolean onPreferenceChange(Preference preference, Object newValue) {
+        mSecurityValue = Integer.parseInt((String) newValue);
+        preference.setSummary(getSummaryForSecurityType(mSecurityValue));
+        mListener.onTetherConfigUpdated();
+        return true;
+    }
+
+    public int getSecurityType() {
+        return mSecurityValue;
+    }
+
+    private String getSummaryForSecurityType(int securityType) {
+        if (securityType == WifiConfiguration.KeyMgmt.NONE) {
+            return mSecurityEntries[1];
+        } else if (securityType == WifiConfiguration.KeyMgmt.OWE) {
+            return mSecurityEntries[2];
+        } else if (securityType == WifiConfiguration.KeyMgmt.SAE) {
+            return mSecurityEntries[3];
+        }
+        // WPA2 PSK
+        return mSecurityEntries[0];
+    }
+}

@@ -15,6 +15,10 @@
 ** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 ** See the License for the specific language governing permissions and
 ** limitations under the License.
+**
+** Changes from Qualcomm Innovation Center are provided under the following license:
+** Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+** SPDX-License-Identifier: BSD-3-Clause-Clear
 */
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -240,6 +244,20 @@
     <string-array name="wifi_ap_security">
         <item>@string/wifi_security_none</item>
         <item>@string/wifi_security_wpa2</item>
+        <item>@string/wifi_security_owe</item>
+        <item>@string/wifi_security_sae</item>
+    </string-array>
+
+    <!-- Values for security type for wireless tether -->
+    <string-array name="wifi_tether_security_values">
+        <!-- Do not translate. -->
+        <item>0</item>
+        <!-- Do not translate. -->
+        <item>4</item>
+        <!-- Do not translate. -->
+        <item>12</item>
+        <!-- Do not translate. -->
+        <item>11</item>
     </string-array>
 
     <!-- Match this with the constants in WifiDialog. --> <skip />

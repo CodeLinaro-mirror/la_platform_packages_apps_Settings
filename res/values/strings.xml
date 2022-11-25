@@ -12,6 +12,10 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
+
+     Changes from Qualcomm Innovation Center are provided under the following license:
+     Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <!-- Strings for Dialog yes button -->
@@ -2074,6 +2078,8 @@
     <string name="wifi_hotspot_tethering_on_subtext" product="default">Sharing this phone\u2019s Internet connection via hotspot</string>
     <!-- Summary text when hotspot is on for local-only -->
     <string name="wifi_hotspot_on_local_only_subtext">App is sharing content. To share Internet connection, turn hotspot off, then on</string>
+    <!-- Summary text when no password is set [CHAR LIMIT=60] -->
+    <string name="wifi_hotspot_no_password_subtext">No password set</string>
 
     <!-- Wifi hotspot settings -->
     <!-- Label for Wifi hotspot name. -->

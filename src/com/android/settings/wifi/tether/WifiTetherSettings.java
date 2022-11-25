@@ -12,6 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Changes from Qualcomm Innovation Center are provided under the following license:
+ * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.settings.wifi.tether;
@@ -55,6 +59,7 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     private WifiTetherSSIDPreferenceController mSSIDPreferenceController;
     private WifiTetherPasswordPreferenceController mPasswordPreferenceController;
     private WifiTetherApBandPreferenceController mApBandPreferenceController;
+    private WifiTetherSecurityPreferenceController mSecurityPreferenceController;
 
     private WifiManager mWifiManager;
     private boolean mRestartWifiApAfterConfigChange;
@@ -129,10 +134,12 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
     protected List<AbstractPreferenceController> getPreferenceControllers(Context context) {
         final List<AbstractPreferenceController> controllers = new ArrayList<>();
         mSSIDPreferenceController = new WifiTetherSSIDPreferenceController(context, this);
+        mSecurityPreferenceController = new WifiTetherSecurityPreferenceController(context, this);
         mPasswordPreferenceController = new WifiTetherPasswordPreferenceController(context, this);
         mApBandPreferenceController = new WifiTetherApBandPreferenceController(context, this);
 
         controllers.add(mSSIDPreferenceController);
+        controllers.add(mSecurityPreferenceController);
         controllers.add(mPasswordPreferenceController);
         controllers.add(mApBandPreferenceController);
         return controllers;
@@ -157,10 +164,11 @@ public class WifiTetherSettings extends RestrictedDashboardFragment
 
     private WifiConfiguration buildNewConfig() {
         final WifiConfiguration config = new WifiConfiguration();
+        final int securityType = mSecurityPreferenceController.getSecurityType();
 
         config.SSID = mSSIDPreferenceController.getSSID();
-        config.preSharedKey = mPasswordPreferenceController.getPassword();
-        config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.WPA2_PSK);
+        config.allowedKeyManagement.set(securityType);
+        config.preSharedKey = mPasswordPreferenceController.getPasswordValidated(securityType);
         config.allowedAuthAlgorithms.set(WifiConfiguration.AuthAlgorithm.OPEN);
         config.apBand = mApBandPreferenceController.getBandIndex();
         return config;

@@ -12,6 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Changes from Qualcomm Innovation Center are provided under the following license:
+ * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.settings.wifi;
@@ -579,6 +583,14 @@ public class WifiConfigController implements TextWatcher,
                 if (mAccessPoint != null && mAccessPoint.isFils384Supported()) {
                     config.allowedKeyManagement.set(KeyMgmt.FILS_SHA384);
                 }
+                if (mAccessPoint != null && mAccessPoint.isSuiteBSupported()) {
+                    config.allowedKeyManagement.set(KeyMgmt.SUITE_B_192);
+                    config.requirePMF = true;
+                    config.allowedPairwiseCiphers.set(WifiConfiguration.PairwiseCipher.GCMP);
+                    config.allowedGroupCiphers.set(WifiConfiguration.GroupCipher.GCMP);
+                    config.allowedGroupMgmtCiphers.set(WifiConfiguration.GroupMgmtCipher.GMAC);
+                    config.allowedSuiteBCiphers.set(WifiConfiguration.SuiteBCipher.ECDHE_RSA);
+                }
                 config.enterpriseConfig = new WifiEnterpriseConfig();
                 int eapMethod = mEapMethodSpinner.getSelectedItemPosition();
                 int phase2Method = mPhase2Spinner.getSelectedItemPosition();
@@ -696,6 +708,22 @@ public class WifiConfigController implements TextWatcher,
                             || mAccessPoint.isFils384Supported())) {
                     config.enterpriseConfig.setFieldValue(WifiEnterpriseConfig.EAP_ERP, "1");
                 }
+                break;
+            case AccessPoint.SECURITY_DPP:
+                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.DPP);
+                config.requirePMF = true;
+                break;
+            case AccessPoint.SECURITY_SAE:
+                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.SAE);
+                config.requirePMF = true;
+                if (mPasswordView.length() != 0) {
+                    String password = mPasswordView.getText().toString();
+                    config.preSharedKey = password;
+                }
+                break;
+            case AccessPoint.SECURITY_OWE:
+                config.allowedKeyManagement.set(WifiConfiguration.KeyMgmt.OWE);
+                config.requirePMF = true;
                 break;
             default:
                 return null;
@@ -841,7 +869,9 @@ public class WifiConfigController implements TextWatcher,
     }
 
     private void showSecurityFields() {
-        if (mAccessPointSecurity == AccessPoint.SECURITY_NONE) {
+        if (mAccessPointSecurity == AccessPoint.SECURITY_NONE ||
+            mAccessPointSecurity == AccessPoint.SECURITY_DPP ||
+            mAccessPointSecurity == AccessPoint.SECURITY_OWE) {
             mView.findViewById(R.id.security_fields).setVisibility(View.GONE);
             return;
         }

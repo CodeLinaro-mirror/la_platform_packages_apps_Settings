@@ -12,6 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Changes from Qualcomm Innovation Center are provided under the following license:
+ * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.settings.wifi;
@@ -53,6 +57,8 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
 
     public static final int OPEN_INDEX = 0;
     public static final int WPA2_INDEX = 1;
+    public static final int OWE_INDEX = 2;
+    public static final int SAE_INDEX = 3;
 
     private View mView;
     private TextView mSsid;
@@ -82,6 +88,12 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
         if (wifiConfig.allowedKeyManagement.get(KeyMgmt.WPA2_PSK)) {
             return WPA2_INDEX;
         }
+        if (wifiConfig.allowedKeyManagement.get(KeyMgmt.OWE)) {
+            return OWE_INDEX;
+        }
+        if (wifiConfig.allowedKeyManagement.get(KeyMgmt.SAE)) {
+            return SAE_INDEX;
+        }
         return OPEN_INDEX;
     }
 
@@ -107,6 +119,20 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
             case WPA2_INDEX:
                 config.allowedKeyManagement.set(KeyMgmt.WPA2_PSK);
                 config.allowedAuthAlgorithms.set(AuthAlgorithm.OPEN);
+                if (mPassword.length() != 0) {
+                    String password = mPassword.getText().toString();
+                    config.preSharedKey = password;
+                }
+                return config;
+
+            case OWE_INDEX:
+                config.allowedKeyManagement.set(KeyMgmt.OWE);
+                config.requirePMF = true;
+                return config;
+
+            case SAE_INDEX:
+                config.allowedKeyManagement.set(KeyMgmt.SAE);
+                config.requirePMF = true;
                 if (mPassword.length() != 0) {
                     String password = mPassword.getText().toString();
                     config.preSharedKey = password;
@@ -164,6 +190,9 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
             if (mSecurityTypeIndex == WPA2_INDEX) {
                 mPassword.setText(mWifiConfig.preSharedKey);
             }
+            if (mSecurityTypeIndex == SAE_INDEX) {
+                mPassword.setText(mWifiConfig.preSharedKey);
+            }
         }
 
         mChannel.setAdapter(channelAdapter);
@@ -215,7 +244,7 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
     private void validate() {
         String mSsidString = mSsid.getText().toString();
         if ((mSsid != null && mSsid.length() == 0)
-                || ((mSecurityTypeIndex == WPA2_INDEX) && mPassword.length() < 8)
+                || ((mSecurityTypeIndex == WPA2_INDEX || mSecurityTypeIndex == SAE_INDEX) && mPassword.length() < 8)
                 || (mSsid != null &&
                 Charset.forName("UTF-8").encode(mSsidString).limit() > 32)) {
             getButton(BUTTON_SUBMIT).setEnabled(false);
@@ -253,7 +282,7 @@ public class WifiApDialog extends AlertDialog implements View.OnClickListener,
     }
 
     private void showSecurityFields() {
-        if (mSecurityTypeIndex == OPEN_INDEX) {
+        if (mSecurityTypeIndex == OPEN_INDEX || mSecurityTypeIndex == OWE_INDEX) {
             mView.findViewById(R.id.fields).setVisibility(View.GONE);
             return;
         }
