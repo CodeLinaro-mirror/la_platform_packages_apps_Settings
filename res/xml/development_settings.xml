@@ -14,6 +14,11 @@
      limitations under the License.
 -->
 
+<!-- Changes from Qualcomm Innovation Center are provided under the following license:
+     Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
+-->
+
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
                   xmlns:settings="http://schemas.android.com/apk/res-auto"
                   android:key="development_prefs_screen"
@@ -22,6 +27,12 @@
     <PreferenceCategory
         android:key="debug_misc_category"
         android:order="100">
+
+    <com.android.settingslib.RestrictedSwitchPreference
+            android:key="enable_diag_port"
+            android:title="@string/enable_diag_port"
+            android:summary="@string/enable_diag_port_summary"
+            settings:useAdditionalSummary="true" />
 
         <Preference
             android:key="memory"

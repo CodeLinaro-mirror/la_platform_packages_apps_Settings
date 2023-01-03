@@ -13769,4 +13769,9 @@
     <string name="nr_sa">SA</string>
     <string name="prefer_vonr_mode_title">Enable/Disable VoNR</string>
     <string name="prefer_vonr_mode_summary">Enable or disable VoNR</string>
+    <!-- Strings to enable/disable diag ports -->
+    <string name="enable_diag_port">Enable Diag port</string>
+    <string name="enable_diag_port_summary">Diag port will get enabled</string>
+    <string name="disable_diag_port">Disable Diag port</string>
+    <string name="disable_diag_port_summary">Diag port will get disabled</string>
 </resources>
