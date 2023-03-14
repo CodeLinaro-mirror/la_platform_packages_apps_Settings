@@ -17,7 +17,6 @@ package com.android.settings.nfc;
 
 import android.content.Context;
 import android.nfc.NfcAdapter;
-import android.os.UserManager;
 
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
@@ -33,12 +32,10 @@ public class SecureNfcPreferenceController extends TogglePreferenceController
 
     private final NfcAdapter mNfcAdapter;
     private SecureNfcEnabler mSecureNfcEnabler;
-    private final UserManager mUserManager;
 
     public SecureNfcPreferenceController(Context context, String key) {
         super(context, key);
         mNfcAdapter = NfcAdapter.getDefaultAdapter(context);
-        mUserManager = context.getSystemService(UserManager.class);
     }
 
     @Override
@@ -61,11 +58,7 @@ public class SecureNfcPreferenceController extends TogglePreferenceController
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        if (isToggleable()) {
-            return mNfcAdapter.enableSecureNfc(isChecked);
-        } else {
-            return false;
-        }
+        return mNfcAdapter.enableSecureNfc(isChecked);
     }
 
     @Override
@@ -107,12 +100,4 @@ public class SecureNfcPreferenceController extends TogglePreferenceController
             mSecureNfcEnabler.pause();
         }
     }
-
-    private boolean isToggleable() {
-        if (mUserManager.isGuestUser()) {
-            return false;
-        }
-        return true;
-    }
-
 }
