@@ -59,7 +59,6 @@ public class DefaultRingtonePreferenceTest {
         when(mDefaultRingtonePreference.getRingtoneType())
                 .thenReturn(RingtoneManager.TYPE_RINGTONE);
         mDefaultRingtonePreference.setUserId(1);
-        mDefaultRingtonePreference.mUserContext = context;
     }
 
     @Test
