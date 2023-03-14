@@ -20,6 +20,7 @@ package com.android.settings.notification;
 import static android.view.WindowManager.LayoutParams.SYSTEM_FLAG_HIDE_NON_SYSTEM_OVERLAY_WINDOWS;
 
 import static com.android.internal.notification.NotificationAccessConfirmationActivityContract.EXTRA_COMPONENT_NAME;
+import static com.android.internal.notification.NotificationAccessConfirmationActivityContract.EXTRA_PACKAGE_TITLE;
 import static com.android.internal.notification.NotificationAccessConfirmationActivityContract.EXTRA_USER_ID;
 
 import android.Manifest;
@@ -29,13 +30,10 @@ import android.app.NotificationManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageItemInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ServiceInfo;
 import android.os.Bundle;
 import android.os.UserHandle;
-import android.text.TextUtils;
 import android.util.Slog;
 import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
@@ -65,38 +63,15 @@ public class NotificationAccessConfirmationActivity extends Activity
 
         mComponentName = getIntent().getParcelableExtra(EXTRA_COMPONENT_NAME);
         mUserId = getIntent().getIntExtra(EXTRA_USER_ID, UserHandle.USER_NULL);
-        CharSequence mAppLabel;
-
-        if (mComponentName == null || mComponentName.getPackageName() == null) {
-            finish();
-            return;
-        }
-
-        try {
-            ApplicationInfo applicationInfo = getPackageManager().getApplicationInfo(
-                    mComponentName.getPackageName(), 0);
-            mAppLabel = applicationInfo.loadSafeLabel(getPackageManager(),
-                    PackageItemInfo.DEFAULT_MAX_LABEL_SIZE_PX,
-                    PackageItemInfo.SAFE_LABEL_FLAG_TRIM
-                            | PackageItemInfo.SAFE_LABEL_FLAG_FIRST_LINE);
-        } catch (PackageManager.NameNotFoundException e) {
-            Slog.e(LOG_TAG, "Couldn't find app with package name for " + mComponentName, e);
-            finish();
-            return;
-        }
-
-        if (TextUtils.isEmpty(mAppLabel)) {
-            finish();
-            return;
-        }
+        String pkgTitle = getIntent().getStringExtra(EXTRA_PACKAGE_TITLE);
 
         AlertController.AlertParams p = new AlertController.AlertParams(this);
         p.mTitle = getString(
                 R.string.notification_listener_security_warning_title,
-                mAppLabel);
+                pkgTitle);
         p.mMessage = getString(
                 R.string.notification_listener_security_warning_summary,
-                mAppLabel);
+                pkgTitle);
         p.mPositiveButtonText = getString(R.string.allow);
         p.mPositiveButtonListener = (a, b) -> onAllow();
         p.mNegativeButtonText = getString(R.string.deny);
