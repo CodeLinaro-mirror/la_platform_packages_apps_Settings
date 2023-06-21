@@ -12,6 +12,10 @@
      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
      See the License for the specific language governing permissions and
      limitations under the License.
+
+     Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+     Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+     SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
@@ -372,6 +376,11 @@
         <SwitchPreference
             android:key="bluetooth_disable_a2dp_hw_offload"
             android:title="@string/bluetooth_disable_a2dp_hw_offload" />
+
+        <SwitchPreference
+            android:key="bluetooth_disable_a2dp_sink_and_enable_a2dp_source"
+            android:title="@string/bluetooth_disable_a2dp_source_and_enable_a2dp_sink"
+            android:summary="@string/bluetooth_disable_a2dp_source_and_enable_a2dp_sink_summary" />
 
         <ListPreference
             android:key="bluetooth_select_avrcp_version"

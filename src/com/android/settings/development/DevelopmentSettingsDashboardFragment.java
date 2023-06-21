@@ -12,6 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
+ *
+ * Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+ * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.settings.development;
@@ -93,6 +97,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         AdbClearKeysDialogHost, LogPersistDialogHost,
         BluetoothRebootDialog.OnRebootDialogListener,
         AbstractBluetoothPreferenceController.Callback,
+        A2dpSinkRebootDialog.OnA2dpSinkRebootDialogConfirmedListener,
         NfcRebootDialog.OnNfcRebootDialogConfirmedListener, BluetoothSnoopLogHost {
 
     private static final String TAG = "DevSettingsDashboard";
@@ -505,6 +510,20 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
+    public void onA2dpSinkRebootDialogConfirmed() {
+        final BluetoothA2dpRolePreferenceController controller =
+                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
+        controller.onA2dpSinkRebootDialogConfirmed();
+    }
+
+    @Override
+    public void onA2dpSinkRebootDialogCanceled() {
+        final BluetoothA2dpRolePreferenceController controller =
+                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
+        controller.onA2dpSinkRebootDialogCanceled();
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         boolean handledResult = false;
         for (AbstractPreferenceController controller : mPreferenceControllers) {
@@ -670,6 +689,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new BluetoothLeAudioAllowListPreferenceController(context, fragment));
         controllers.add(new BluetoothA2dpHwOffloadPreferenceController(context, fragment));
         controllers.add(new BluetoothLeAudioHwOffloadPreferenceController(context, fragment));
+        controllers.add(new BluetoothA2dpRolePreferenceController(context, fragment));
         controllers.add(new BluetoothMaxConnectedAudioDevicesPreferenceController(context));
         controllers.add(new NfcStackDebugLogPreferenceController(context));
         controllers.add(new NfcSnoopLogPreferenceController(context, fragment));
