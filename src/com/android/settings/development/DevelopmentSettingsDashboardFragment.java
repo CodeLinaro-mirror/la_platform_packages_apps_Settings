@@ -86,7 +86,8 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         implements OnMainSwitchChangeListener, OemUnlockDialogHost, AdbDialogHost,
         AdbClearKeysDialogHost, LogPersistDialogHost,
         BluetoothA2dpHwOffloadRebootDialog.OnA2dpHwDialogConfirmedListener,
-        AbstractBluetoothPreferenceController.Callback {
+        AbstractBluetoothPreferenceController.Callback,
+        A2dpSinkRebootDialog.OnA2dpSinkRebootDialogConfirmedListener {
 
     private static final String TAG = "DevSettingsDashboard";
 
@@ -372,6 +373,20 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
+    public void onA2dpSinkRebootDialogConfirmed() {
+        final BluetoothA2dpRolePreferenceController controller =
+                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
+        controller.onA2dpSinkRebootDialogConfirmed();
+    }
+
+    @Override
+    public void onA2dpSinkRebootDialogCanceled() {
+        final BluetoothA2dpRolePreferenceController controller =
+                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
+        controller.onA2dpSinkRebootDialogCanceled();
+    }
+
+    @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         boolean handledResult = false;
         for (AbstractPreferenceController controller : mPreferenceControllers) {
@@ -533,6 +548,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new BluetoothAvrcpVersionPreferenceController(context));
         controllers.add(new BluetoothMapVersionPreferenceController(context));
         controllers.add(new BluetoothA2dpHwOffloadPreferenceController(context, fragment));
+        controllers.add(new BluetoothA2dpRolePreferenceController(context, fragment));
         controllers.add(new BluetoothMaxConnectedAudioDevicesPreferenceController(context));
         controllers.add(new ShowTapsPreferenceController(context));
         controllers.add(new PointerLocationPreferenceController(context));
