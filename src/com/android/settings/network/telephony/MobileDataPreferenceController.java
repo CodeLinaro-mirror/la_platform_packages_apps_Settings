@@ -12,10 +12,10 @@
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
  * See the License for the specific language governing permissions and
  * limitations under the License.
- *
- * Changes from Qualcomm Innovation Center are provided under the following license:
- *
- * Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+ */
+
+/* Changes from Qualcomm Innovation Center are provided under the following license:
+ * Copyright (c) 2022-2023 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
@@ -28,9 +28,8 @@ import static androidx.lifecycle.Lifecycle.Event.ON_START;
 import static androidx.lifecycle.Lifecycle.Event.ON_STOP;
 
 import android.content.Context;
-import android.os.Handler;
-import android.os.Looper;
 import android.os.RemoteException;
+import android.provider.Settings;
 import android.telephony.ims.aidl.IImsRegistration;
 import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
@@ -38,22 +37,20 @@ import android.text.TextUtils;
 import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
+import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.LifecycleObserver;
 import androidx.lifecycle.LifecycleOwner;
 import androidx.lifecycle.OnLifecycleEvent;
-import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceScreen;
 import androidx.preference.SwitchPreference;
 
 import com.android.settings.R;
-import com.android.settings.network.MobileDataContentObserver;
 import com.android.settings.network.MobileNetworkRepository;
 import com.android.settings.wifi.WifiPickerTrackerHelper;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.mobile.dataservice.MobileNetworkInfoEntity;
 import com.android.settingslib.mobile.dataservice.SubscriptionInfoEntity;
-import com.android.settingslib.mobile.dataservice.UiccInfoEntity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -70,7 +67,6 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
     private SwitchPreference mPreference;
     private TelephonyManager mTelephonyManager;
     private SubscriptionManager mSubscriptionManager;
-    private MobileDataContentObserver mDataContentObserver;
     private FragmentManager mFragmentManager;
     @VisibleForTesting
     int mDialogType;
@@ -92,9 +88,7 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
         super(context, key);
         mSubId = subId;
         mSubscriptionManager = context.getSystemService(SubscriptionManager.class);
-        mDataContentObserver = new MobileDataContentObserver(new Handler(Looper.getMainLooper()));
-        mDataContentObserver.setOnMobileDataChangedListener(() -> updateState(mPreference));
-        mMobileNetworkRepository = MobileNetworkRepository.createBySubId(context, this, mSubId);
+        mMobileNetworkRepository = MobileNetworkRepository.getInstance(context);
         mLifecycleOwner = lifecycleOwner;
         if (lifecycle != null) {
             lifecycle.addObserver(this);
@@ -116,7 +110,8 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
 
     @OnLifecycleEvent(ON_START)
     public void onStart() {
-        mMobileNetworkRepository.addRegister(mLifecycleOwner);
+        mMobileNetworkRepository.addRegister(mLifecycleOwner, this, mSubId);
+        mMobileNetworkRepository.updateEntity();
         if (mSubId != SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
             // Register for nDDS sub events. What happens to the mobile data toggle in case
             // of a voice call is dependent on the device being in temp DDS state which is
@@ -127,7 +122,7 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
 
     @OnLifecycleEvent(ON_STOP)
     public void onStop() {
-        mMobileNetworkRepository.removeRegister();
+        mMobileNetworkRepository.removeRegister(this);
         if (mSubId != SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
             mDdsDataOptionStateTuner.unregister(mContext);
         }
@@ -195,8 +190,16 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
                 if (isChecked()) {
                     Log.d(TAG, "Do not allow the user to turn off DDS mobile data");
                     mPreference.setEnabled(false);
-                    mPreference.setSummary(
-                            R.string.mobile_data_settings_summary_default_data_unavailable);
+                    boolean isSmartDdsEnabled =
+                            Settings.Global.getInt(mContext.getContentResolver(),
+                            Settings.Global.SMART_DDS_SWITCH, 0) == 1;
+                    if (isSmartDdsEnabled) {
+                        mPreference.setSummary(
+                                R.string.mobile_data_settings_summary_on_smart_dds_unavailable);
+                    } else {
+                        mPreference.setSummary(
+                                R.string.mobile_data_settings_summary_default_data_unavailable);
+                    }
                 }
             } else {
                 if (TelephonyUtils.isSubsidyFeatureEnabled(mContext) &&
@@ -221,12 +224,10 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
             SubscriptionInfoEntity subInfoEntity, MobileNetworkInfoEntity networkInfoEntity) {
         mFragmentManager = fragmentManager;
         mSubId = subId;
-
         mTelephonyManager = null;
         mTelephonyManager = getTelephonyManager();
         mSubscriptionInfoEntity = subInfoEntity;
         mMobileNetworkInfoEntity = networkInfoEntity;
-
         mDdsDataOptionStateTuner =
                 new DdsDataOptionStateTuner(mTelephonyManager,
                         mSubscriptionManager,
@@ -269,12 +270,15 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
             return true;
         }
         if (!enableData) {
-            final boolean isInVoiceCall = mDdsDataOptionStateTuner.isInVoiceCall();
+            final boolean isInVoiceCall = mTelephonyManager.getCallStateForSubscription() !=
+                    TelephonyManager.CALL_STATE_IDLE;
+            boolean isCiwlanModeSupported = false;
             boolean isInCiwlanOnlyMode = false;
             boolean isImsRegisteredOverCiwlan = false;
             if (isInVoiceCall) {
+                isCiwlanModeSupported = MobileNetworkSettings.isCiwlanModeSupported();
                 isInCiwlanOnlyMode = MobileNetworkSettings.isInCiwlanOnlyMode();
-                if (isInCiwlanOnlyMode) {
+                if (isInCiwlanOnlyMode || !isCiwlanModeSupported) {
                     IImsRegistration imsRegistrationImpl = mTelephonyManager.getImsRegistration(
                             mSubscriptionManager.getSlotIndex(mSubId), FEATURE_MMTEL);
                     if (imsRegistrationImpl != null) {
@@ -288,15 +292,20 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
                     }
                     Log.d(TAG, "isDialogNeeded: isInVoiceCall = " + isInVoiceCall +
                             ", isInCiwlanOnlyMode = " + isInCiwlanOnlyMode +
+                            ", isCiwlanModeSupported = " + isCiwlanModeSupported +
                             ", isImsRegisteredOverCiwlan = " + isImsRegisteredOverCiwlan);
                     // If IMS is registered over C_IWLAN-only mode, the device is in a call, and
                     // user is trying to disable mobile data, display a warning dialog that
                     // disabling mobile data will cause a call drop.
-                    if (isInVoiceCall && isImsRegisteredOverCiwlan && isInCiwlanOnlyMode) {
+                    if (isImsRegisteredOverCiwlan) {
                         mDialogType = MobileDataDialogFragment.TYPE_DISABLE_CIWLAN_DIALOG;
                         return true;
                     }
+                } else {
+                    Log.d(TAG, "isDialogNeeded: not in C_IWLAN-only mode");
                 }
+            } else {
+                Log.d(TAG, "isDialogNeeded: not in a call");
             }
         }
         return false;
@@ -304,7 +313,8 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
 
     private void showDialog(int type) {
         final MobileDataDialogFragment dialogFragment = MobileDataDialogFragment.newInstance(
-                mPreference.getTitle().toString(), type, mSubId);
+                mPreference.getTitle().toString(), type, mSubId,
+                MobileNetworkSettings.isCiwlanModeSupported());
         dialogFragment.show(mFragmentManager, DIALOG_TAG);
     }
 
@@ -322,14 +332,14 @@ public class MobileDataPreferenceController extends TelephonyTogglePreferenceCon
     public void onActiveSubInfoChanged(List<SubscriptionInfoEntity> subInfoEntityList) {
         mSubscriptionInfoEntityList = subInfoEntityList;
         mSubscriptionInfoEntityList.forEach(entity -> {
-            if (Integer.parseInt(entity.subId) == mSubId) {
+            if (entity.getSubId() == mSubId) {
                 mSubscriptionInfoEntity = entity;
+                if (entity.getSubId() == SubscriptionManager.getDefaultDataSubscriptionId()) {
+                    mDefaultSubId = entity.getSubId();
+                }
             }
         });
-        if (mSubscriptionInfoEntity != null
-                && mSubscriptionInfoEntity.isDefaultDataSubscription) {
-            mDefaultSubId = Integer.parseInt(mSubscriptionInfoEntity.subId);
-        }
+
         update();
         refreshSummary(mPreference);
     }
