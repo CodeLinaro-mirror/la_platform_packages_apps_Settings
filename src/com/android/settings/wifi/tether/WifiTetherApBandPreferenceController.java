@@ -74,7 +74,7 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
             mBandIndex = SoftApConfiguration.BAND_2GHZ;
             Log.d(TAG, "Updating band index to BAND_2GHZ because no config");
         } else if (is5GhzBandSupported() || is6GhzBandSupported()) {
-            if (config.getBands().length == 2) {
+            if (config.getChannels().size() == 2) {
                 if (config.getSecurityType() == SoftApConfiguration.SECURITY_TYPE_WPA3_OWE_TRANSITION
                         || config.getSecurityType() == SoftApConfiguration.SECURITY_TYPE_WPA3_OWE) {
                     mWifiManager.setSoftApConfiguration(
@@ -215,6 +215,9 @@ public class WifiTetherApBandPreferenceController extends WifiTetherBasePreferen
             if (mWifiManager.getAllowedChannels(WIFI_BAND_6_GHZ, OP_MODE_SAP).isEmpty()) {
                 return false;
             }
+        } catch (UnsupportedOperationException ue) {
+            Log.e(TAG, "Allow 6ghz based on RRO and Country code ");
+            return true;
         } catch (Exception e) {
             Log.e(TAG, "6Ghz Band Not Supported ");
             return false;
