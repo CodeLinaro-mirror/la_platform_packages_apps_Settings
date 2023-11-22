@@ -174,6 +174,12 @@ public class BADeviceVolumeController extends
             Log.d(TAG, "VCP for broadcast is not supported");
             return;
         }
+
+        if (mHeadsetProfile == null) {
+            Log.d(TAG, "HeadsetProfile is not supported");
+            return;
+        }
+
         boolean showSlider = enableSlider();
         BluetoothDevice device = mCachedDevice.getDevice();
         int audioState = mHeadsetProfile.getAudioState(device);
