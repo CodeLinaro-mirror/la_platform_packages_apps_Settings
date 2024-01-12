@@ -140,13 +140,13 @@ public class GroupUtils {
 
     public GroupUtils(Context ctx) {
         mCtx = ctx;
-        mCacheDeviceNamanger = Utils.getLocalBtManager(mCtx).getCachedDeviceManager();
-        isGroupEnabled();
         mLocalBluetoothManager = Utils.getLocalBtManager(mCtx);
         if (mLocalBluetoothManager == null) {
             Log.e(TAG, "Bluetooth is not supported on this device");
             return;
         }
+        mCacheDeviceNamanger = Utils.getLocalBtManager(mCtx).getCachedDeviceManager();
+        isGroupEnabled();
         mProfileManager = mLocalBluetoothManager.getProfileManager();
         mBCProfile = mProfileManager.getBCProfile();
     }

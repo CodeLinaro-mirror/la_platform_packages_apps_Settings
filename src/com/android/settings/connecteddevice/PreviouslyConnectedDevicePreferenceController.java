@@ -121,7 +121,9 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
     public void onStart() {
         mBluetoothDeviceUpdater.registerCallback();
         mSavedDockUpdater.registerCallback();
-        manager.getEventManager().registerCallback(this);
+        if (manager != null) {
+            manager.getEventManager().registerCallback(this);
+        }
         mContext.registerReceiver(mReceiver, mIntentFilter);
     }
 
@@ -129,7 +131,9 @@ public class PreviouslyConnectedDevicePreferenceController extends BasePreferenc
     public void onStop() {
         mBluetoothDeviceUpdater.unregisterCallback();
         mSavedDockUpdater.unregisterCallback();
-        manager.getEventManager().unregisterCallback(this);
+        if (manager != null) {
+            manager.getEventManager().unregisterCallback(this);
+        }
         mContext.unregisterReceiver(mReceiver);
     }
 
