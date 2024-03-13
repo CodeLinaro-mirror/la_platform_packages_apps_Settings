@@ -13,9 +13,8 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 
-     Changes from Qualcomm Innovation Center are provided under the following license:
-
-     Copyright (c) 2022 Qualcomm Innovation Center, Inc. All rights reserved.
+     Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
+     Copyright (c) 2022,2024 Qualcomm Innovation Center, Inc. All rights reserved.
      SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -249,6 +248,17 @@
     <string name="bluetooth_enable_leaudio_allow_list">Enable Bluetooth LE audio Allow List</string>
     <!-- Summary of toggle for enabling Bluetooth LE audio Allow List [CHAR LIMIT=none]-->
     <string name="bluetooth_enable_leaudio_allow_list_summary">Enable Bluetooth LE audio allow list feature.</string>
+
+    <!-- Setting Checkbox title for enabling Bluetooth A2DP SOURCE Role. [CHAR LIMIT=none] -->
+    <string name="bluetooth_disable_a2dp_source_and_enable_a2dp_sink">Enable Bluetooth A2DP Sink and Disable A2DP Source</string>
+    <!-- Summary of checkbox for enabling Bluetooth A2DP source Role [CHAR LIMIT=none]-->
+    <string name="bluetooth_disable_a2dp_source_and_enable_a2dp_sink_summary">Enable Bluetooth A2DP Sink and Disables A2DP Source Role</string>
+    <!-- A2dpSink developer settings: The title of the popup dialog. [CHAR_LIMIT=60] -->
+    <string name="a2dp_sink_reboot_dialog_title">Restart Device?</string>
+    <!-- A2dpSink developer settings: The content of the popup dialog. [CHAR_LIMIT=NONE] -->
+    <string name="a2dp_sink_reboot_dialog_message">You need to restart your device to change this setting. </string>
+    <!-- A2dpSink developer settings: The confirm button of the popup dialog. [CHAR_LIMIT=60] -->
+    <string name="a2dp_sink_reboot_dialog_confirm">Restart</string>
 
     <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
     <string name="connected_device_media_device_title">Media devices</string>
