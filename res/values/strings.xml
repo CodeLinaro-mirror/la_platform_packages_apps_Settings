@@ -221,15 +221,6 @@
     <!-- Bluetooth broadcasting settings, option to enable/disable broadcasting -->
     <string name="bluetooth_broadcasting">Broadcasting</string>
 
-    <!-- Bluetooth broadcast enable/disable -->
-    <string name="bluetooth_broadcast">Broadcast</string>
-
-    <!-- Bluetooth broadcast settings -->
-    <string name="bluetooth_broadcast_pin_configure">Broadcast: Bluetooth Privacy Code</string>
-
-    <!-- Bluetooth broadcast settings -->
-    <string name="bluetooth_broadcast_pin_configure_dialog">Broadcast: Configure Bluetooth Privacy Code</string>
-
     <!--Bluetooth settings screen, summary text for Bluetooth device with no name -->
     <string name="bluetooth_device">Unnamed Bluetooth device</string>
     <!--Bluetooth settings screen, text that appears in heading bar when scanning for devices -->
@@ -385,8 +376,6 @@
     <string name="connected_device_other_device_title">Other devices</string>
     <!-- Title for connected device group [CHAR LIMIT=none]-->
     <string name="connected_device_saved_title">Saved devices</string>
-    <!-- Title for connected TWS device group [CHAR LIMIT=none]-->
-    <string name="connected_tws_device_saved_title">Saved Earbuds</string>
     <!-- Summary for preference to add a device [CHAR LIMIT=none]-->
     <string name="connected_device_add_device_summary">Bluetooth will turn on to pair</string>
     <!-- Title for other connection preferences [CHAR LIMIT=none]-->
@@ -14677,8 +14666,7 @@
     <string name="find_broadcast_password_dialog_connection_error">Can\u2019t connect. Try again.</string>
     <!-- The error message of enter password dialog in bluetooth find broadcast page [CHAR LIMIT=none] -->
     <string name="find_broadcast_password_dialog_password_error">Wrong password</string>
-    <!-- The error message of join the broadcast session by scanning the QR code [CHAR LIMIT=none] -->
-    <string name="find_broadcast_join_broadcast_error">Can\u2019t join the broadcast</string>
+
 
     <!-- [CHAR LIMIT=NONE] Le audio QR code scanner sub-title -->
     <string name="bt_le_audio_scan_qr_code_scanner">To start listening, center the QR code below</string>
