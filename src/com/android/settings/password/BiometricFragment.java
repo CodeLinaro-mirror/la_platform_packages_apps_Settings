@@ -145,6 +145,7 @@ public class BiometricFragment extends InstrumentedFragment {
                         promptInfo.isDisallowBiometricsIfPolicyExists())
                 .setShowEmergencyCallButton(promptInfo.isShowEmergencyCallButton())
                 .setReceiveSystemEvents(true)
+                .setClassNameIfItIsConfirmDeviceCredentialActivity()
                 .setRealCallerForConfirmDeviceCredentialActivity(
                         promptInfo.getRealCallerForConfirmDeviceCredentialActivity());
         if (promptInfo.getLogoRes() != 0){
