@@ -43,6 +43,9 @@ class BatterySaverPreference :
 
     override fun storage(context: Context) = BatterySaverStore(context)
 
+    override fun getReadPermit(context: Context, myUid: Int, callingUid: Int) =
+        ReadWritePermit.ALLOW
+
     override fun getWritePermit(context: Context, value: Boolean?, myUid: Int, callingUid: Int) =
         ReadWritePermit.ALLOW
 
@@ -56,13 +59,13 @@ class BatterySaverPreference :
                 object : BatterySaverListener {
                     override fun onPowerSaveModeChanged() {
                         handler.postDelayed(
-                            { context.notifyPreferenceChange(this@BatterySaverPreference) },
+                            { context.notifyPreferenceChange(KEY) },
                             SWITCH_ANIMATION_DURATION,
                         )
                     }
 
                     override fun onBatteryChanged(pluggedIn: Boolean) =
-                        context.notifyPreferenceChange(this@BatterySaverPreference)
+                        context.notifyPreferenceChange(KEY)
                 }
             )
             setListening(true)
