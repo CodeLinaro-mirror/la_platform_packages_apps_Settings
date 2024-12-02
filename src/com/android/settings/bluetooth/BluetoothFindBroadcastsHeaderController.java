@@ -137,8 +137,7 @@ public class BluetoothFindBroadcastsHeaderController extends BluetoothDetailsCon
                 .putExtra(BluetoothBroadcastUtils.EXTRA_BLUETOOTH_SINK_IS_GROUP, true)
                 .putExtra(BluetoothBroadcastUtils.EXTRA_BLUETOOTH_DEVICE_SINK,
                         mCachedDevice.getDevice());
-        mBluetoothFindBroadcastsFragment.startActivityForResult(intent,
-                BluetoothFindBroadcastsFragment.REQUEST_SCAN_BT_BROADCAST_QR_CODE);
+        mContext.startActivity(intent);
     }
 
     @Override

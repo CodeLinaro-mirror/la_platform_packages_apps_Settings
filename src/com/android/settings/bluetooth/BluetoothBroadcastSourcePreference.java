@@ -107,8 +107,7 @@ class BluetoothBroadcastSourcePreference extends Preference {
     public void updateMetadataAndRefreshUi(BluetoothLeBroadcastMetadata source, boolean status) {
         mBluetoothLeBroadcastMetadata = source;
         mTitle = getProgramInfo();
-        mIsEncrypted = mBluetoothLeBroadcastMetadata != null ?
-                mBluetoothLeBroadcastMetadata.isEncrypted() : false;
+        mIsEncrypted = mBluetoothLeBroadcastMetadata.isEncrypted();
         mStatus = status || mBluetoothLeBroadcastReceiveState != null;
 
         refresh();
@@ -144,7 +143,6 @@ class BluetoothBroadcastSourcePreference extends Preference {
             if (!bluetoothLeAudioContentMetadata.isEmpty()) {
                 return bluetoothLeAudioContentMetadata.stream()
                         .map(i -> i.getProgramInfo())
-                        .filter(i -> !TextUtils.isEmpty(i))
                         .findFirst().orElse(
                                 getContext().getString(RESOURCE_ID_UNKNOWN_PROGRAM_INFO));
             }
@@ -170,16 +168,6 @@ class BluetoothBroadcastSourcePreference extends Preference {
      */
     public boolean isEncrypted() {
         return mIsEncrypted;
-    }
-
-    /**
-     * Whether the broadcast source is connected at the beginging. We will get the
-     * BluetoothLeBroadcastReceiveState from the broadcast source.
-     * See {@link BluetoothFindBroadcastsFragment#addConnectedSourcePreference}
-     * @return If true, the broadcast source is already connected by the broadcast sink.
-     */
-    public boolean isCreatedByReceiveState() {
-        return mBluetoothLeBroadcastReceiveState != null;
     }
 
     /**
