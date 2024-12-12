@@ -319,6 +319,34 @@ public class AppRestrictionsFragment extends SettingsPreferenceFragment implemen
         }
     }
 
+      /**
+          * Checks that it is safe to start the custom activity, and, if so, returns a copy of the
+          * Intent using its vetted components.
+          */
+         private Intent assertSafeToStartCustomActivity(String packageName,Intent intent) {
+             EventLog.writeEvent(0x534e4554, "223578534", -1 /* UID */, "");
+             final Intent vettedIntent = new Intent(intent);
+             ResolveInfo resolveInfo = mPackageManager.resolveActivity(
+                     vettedIntent, PackageManager.MATCH_DEFAULT_ONLY);
+
+             if (resolveInfo == null) {
+                 throw new ActivityNotFoundException("No result for resolving " + intent);
+            }
+             // Prevent potential privilege escalation
+             ActivityInfo activityInfo = resolveInfo.activityInfo;
+             if (!packageName.equals(activityInfo.packageName)) {
+                 throw new SecurityException("Application " + packageName
+                         + " is not allowed to start activity " + intent);
+            }
+
+             // We were able to vet the given intent this time. Make a copy using the components
+             // that were used to do the vetting, since that's as much as we've verified is safe.
+             vettedIntent.setComponent(activityInfo.getComponentName());
+             vettedIntent.setPackage(activityInfo.packageName);
+             return vettedIntent;
+        }
+
+
     private class AppLoadingTask extends AsyncTask<Void, Void, Void> {
 
         @Override
