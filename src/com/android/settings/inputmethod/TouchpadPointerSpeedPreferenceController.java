@@ -20,6 +20,7 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.input.InputSettings;
 
+import androidx.annotation.NonNull;
 import androidx.preference.PreferenceScreen;
 
 import com.android.settings.core.SliderPreferenceController;
@@ -27,12 +28,11 @@ import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.widget.SeekBarPreference;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-public class TrackpadPointerSpeedPreferenceController extends SliderPreferenceController {
+public class TouchpadPointerSpeedPreferenceController extends SliderPreferenceController {
 
-    private SeekBarPreference mPreference;
-    private MetricsFeatureProvider mMetricsFeatureProvider;
+    private final MetricsFeatureProvider mMetricsFeatureProvider;
 
-    public TrackpadPointerSpeedPreferenceController(Context context, String key) {
+    public TouchpadPointerSpeedPreferenceController(@NonNull Context context, @NonNull String key) {
         super(context, key);
         mMetricsFeatureProvider = FeatureFactory.getFeatureFactory().getMetricsFeatureProvider();
     }
@@ -40,11 +40,11 @@ public class TrackpadPointerSpeedPreferenceController extends SliderPreferenceCo
     @Override
     public void displayPreference(PreferenceScreen screen) {
         super.displayPreference(screen);
-        mPreference = screen.findPreference(getPreferenceKey());
-        mPreference.setMax(getMax());
-        mPreference.setMin(getMin());
-        mPreference.setProgress(getSliderPosition());
-        updateState(mPreference);
+        SeekBarPreference preference = screen.findPreference(getPreferenceKey());
+        preference.setMax(getMax());
+        preference.setMin(getMin());
+        preference.setProgress(getSliderPosition());
+        updateState(preference);
     }
 
     @Override

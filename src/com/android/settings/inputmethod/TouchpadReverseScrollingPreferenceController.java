@@ -20,30 +20,33 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.input.InputSettings;
 
+import androidx.annotation.NonNull;
+
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-public class TrackpadTapToClickPreferenceController extends TogglePreferenceController {
+public class TouchpadReverseScrollingPreferenceController extends TogglePreferenceController {
 
-    private MetricsFeatureProvider mMetricsFeatureProvider;
+    private final MetricsFeatureProvider mMetricsFeatureProvider;
 
-    public TrackpadTapToClickPreferenceController(Context context, String key) {
+    public TouchpadReverseScrollingPreferenceController(@NonNull Context context,
+                                                        @NonNull String key) {
         super(context, key);
         mMetricsFeatureProvider = FeatureFactory.getFeatureFactory().getMetricsFeatureProvider();
     }
 
     @Override
     public boolean isChecked() {
-        return InputSettings.useTouchpadTapToClick(mContext);
+        return !InputSettings.useTouchpadNaturalScrolling(mContext);
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        InputSettings.setTouchpadTapToClick(mContext, isChecked);
+        InputSettings.setTouchpadNaturalScrolling(mContext, !isChecked);
         mMetricsFeatureProvider.action(
-                mContext, SettingsEnums.ACTION_GESTURE_TAP_TO_CLICK_CHANGED, isChecked);
+                mContext, SettingsEnums.ACTION_GESTURE_REVERSE_SCROLLING_CHANGED, isChecked);
         return true;
     }
 

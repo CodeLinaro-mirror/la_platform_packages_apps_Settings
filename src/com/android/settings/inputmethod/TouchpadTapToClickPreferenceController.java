@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 The Android Open Source Project
+ * Copyright (C) 2023 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,36 +20,39 @@ import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.input.InputSettings;
 
+import androidx.annotation.NonNull;
+
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
-public class TrackpadTapDraggingPreferenceController extends TogglePreferenceController {
+public class TouchpadTapToClickPreferenceController extends TogglePreferenceController {
 
-    private MetricsFeatureProvider mMetricsFeatureProvider;
+    private final MetricsFeatureProvider mMetricsFeatureProvider;
 
-    public TrackpadTapDraggingPreferenceController(Context context, String key) {
+    public TouchpadTapToClickPreferenceController(@NonNull Context context, @NonNull String key) {
         super(context, key);
         mMetricsFeatureProvider = FeatureFactory.getFeatureFactory().getMetricsFeatureProvider();
     }
 
     @Override
     public boolean isChecked() {
-        return InputSettings.useTouchpadTapDragging(mContext);
+        return InputSettings.useTouchpadTapToClick(mContext);
     }
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        InputSettings.setTouchpadTapDragging(mContext, isChecked);
+        InputSettings.setTouchpadTapToClick(mContext, isChecked);
         mMetricsFeatureProvider.action(
-                mContext, SettingsEnums.ACTION_GESTURE_TAP_DRAGGING_CHANGED, isChecked);
+                mContext, SettingsEnums.ACTION_GESTURE_TAP_TO_CLICK_CHANGED, isChecked);
         return true;
     }
 
     @Override
     public int getAvailabilityStatus() {
-        return InputPeripheralsSettingsUtils.isTouchpad() ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
+        boolean isTouchpad = InputPeripheralsSettingsUtils.isTouchpad();
+        return isTouchpad ? AVAILABLE : CONDITIONALLY_UNAVAILABLE;
     }
 
     @Override

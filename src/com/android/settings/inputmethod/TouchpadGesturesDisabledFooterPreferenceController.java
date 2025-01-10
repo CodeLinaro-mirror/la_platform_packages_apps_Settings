@@ -19,11 +19,14 @@ package com.android.settings.inputmethod;
 import android.content.Context;
 import android.hardware.input.InputSettings;
 
+import androidx.annotation.NonNull;
+
 import com.android.settings.core.BasePreferenceController;
 
-public class TrackpadGesturesDisabledFooterPreferenceController extends BasePreferenceController {
+public class TouchpadGesturesDisabledFooterPreferenceController extends BasePreferenceController {
 
-    public TrackpadGesturesDisabledFooterPreferenceController(Context context, String key) {
+    public TouchpadGesturesDisabledFooterPreferenceController(@NonNull Context context,
+                                                              @NonNull String key) {
         super(context, key);
     }
 
