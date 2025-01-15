@@ -80,10 +80,14 @@
         android:key="accessibility_control_autoclick_cursor_area_size"
         android:title="@string/autoclick_cursor_area_size_title"
         android:summary="@string/autoclick_cursor_area_size_summary"
-        settings:seekBarIncrement="20"
         android:selectable="false"
         settings:searchable="false"
         settings:controller="com.android.settings.accessibility.ToggleAutoclickCursorAreaSizeController"/>
+
+    <SwitchPreferenceCompat
+        android:key="accessibility_control_autoclick_ignore_minor_cursor_movement"
+        android:title="@string/autoclick_ignore_minor_cursor_movement_title"
+        settings:controller="com.android.settings.accessibility.ToggleAutoclickIgnoreMinorCursorMovementController"/>
 
     <com.android.settings.accessibility.AccessibilityFooterPreference
         android:key="accessibility_autoclick_footer"

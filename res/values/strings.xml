@@ -809,6 +809,12 @@
     <!-- Message shown in summary field when Face Unlock is not set up. [CHAR LIMIT=54] -->
     <string name="security_settings_face_preference_summary_none">Setup needed</string>
     <!-- Title shown for menu item that launches face settings or enrollment. [CHAR LIMIT=32] -->
+    <string name="security_settings_face_preference_title_new">Face</string>
+    <!-- Title shown for menu item that launches face settings or enrollment, for work profile. [CHAR LIMIT=50] -->
+    <string name="security_settings_face_profile_preference_title_new">Face for work</string>
+    <!-- Title shown for menu item that launches face settings or enrollment. [CHAR LIMIT=32] -->
+    <string name="private_space_face_unlock_title_new">Face for private space</string>
+    <!-- Title shown for menu item that launches face settings or enrollment. [CHAR LIMIT=32] -->
     <string name="security_settings_face_preference_title">Face Unlock</string>
     <!-- Title shown for menu item that launches face settings or enrollment, for work profile [CHAR LIMIT=50] -->
     <string name="security_settings_face_profile_preference_title">Face Unlock for work</string>
@@ -938,6 +944,8 @@
     <string name="security_settings_fingerprint_settings_preferences_category">When using Fingerprint Unlock</string>
     <!-- Title shown for work menu item that launches fingerprint settings or enrollment [CHAR LIMIT=22] -->
     <string name="security_settings_work_fingerprint_preference_title">Fingerprint for work</string>
+    <!-- Title shown for work menu item that launches fingerprint settings or enrollment [CHAR LIMIT=22] -->
+    <string name="security_settings_work_fingerprint_preference_title_new">Fingerprint for work</string>
     <!-- Preference to check enrolled fingerprints -->
     <string name="fingerprint_check_enrolled_title">Check enrolled fingerprints</string>
     <!-- Preference to add another fingerprint -->
@@ -1381,6 +1389,8 @@
     <string name="private_space_biometric_summary">Tap to set up</string>
     <!-- Title for the Fingerprint unlock for private space preference. [CHAR LIMIT=60] -->
     <string name="private_space_fingerprint_unlock_title">Fingerprint Unlock for private space</string>
+    <!-- Title for the Fingerprint unlock for private space preference. [CHAR LIMIT=60] -->
+    <string name="private_space_fingerprint_unlock_title_new">Fingerprint for private space</string>
     <!-- Title for the Face unlock for private space preference. [CHAR LIMIT=60] -->
     <string name="private_space_face_unlock_title">Face Unlock for private space</string>
     <!-- Title for the Face and Fingerprint preference for private space. [CHAR LIMIT=60] -->
@@ -5594,6 +5604,9 @@
     <!-- Summary for the seekbar that adjust auto click cursor area size. [CHAR_LIMIT=NONE] -->
     <!-- TODO(b/383901288): Update string to translatable once approved by UXW. -->
     <string name="autoclick_cursor_area_size_summary" translatable="false">Adjust the autoclick ring indicator area size</string>
+    <!-- Title for the toggle button that turns on/off the autoclick setting of ignoring minor cursor movement. [CHAR_LIMIT=NONE] -->
+    <!-- TODO(b/388845718): Update string to translatable once approved by UXW. -->
+    <string name="autoclick_ignore_minor_cursor_movement_title" translatable="false">Ignore minor cursor movement</string>
     <!-- Title for preference screen for configuring vibrations. [CHAR LIMIT=NONE] -->
     <string name="accessibility_vibration_settings_title">Vibration &amp; haptics</string>
     <!-- Summary for preference screen for configuring vibrations. [CHAR LIMIT=NONE] -->
@@ -9003,8 +9016,11 @@
     <!-- [CHAR LIMIT=100] Title for switch that says whether this app can appear in the conversation notification section-->
     <string name="conversation_section_switch_title">Conversation section</string>
 
-    <!-- [CHAR LIMIT=100] Summary for switch that says whether this app can appear in the conversation notification section-->
+    <!-- [CHAR LIMIT=100] Summary for switch that says whether this app can appear in the conversation notification section (old)-->
     <string name="conversation_section_switch_summary">Allow app to use conversation section</string>
+
+    <!-- [CHAR LIMIT=100] Summary for switch that says whether this app can appear in the conversation notification section-->
+    <string name="conversation_section_switch_complete_summary">Allow app to use conversation section, although conversation features like prioritization and bubbles are not supported by this app.</string>
 
     <!-- [CHAR LIMIT=NONE] Conversation preference summary, the parent channel this conversation was spawned from (separator) the parent channel group (e.g. an account name)-->
     <string name="notification_conversation_summary" translatable="false">"<xliff:g id="parent_category_name">%1$s</xliff:g> • <xliff:g id="parent_category_group_name">%2$s</xliff:g>"</string>
@@ -9398,8 +9414,11 @@
     <!-- [CHAR LIMIT=NONE] Text appearing when app does not send notifications -->
     <string name="app_notifications_not_send_desc">This app does not send notifications</string>
 
+    <!-- [CHAR LIMIT=NONE] App notification settings: section header for app wide notif settings -->
+    <string name="app_notification_settings">App settings</string>
+
     <!-- [CHAR LIMIT=NONE] App notification settings: channels title -->
-    <string name="notification_channels">Categories</string>
+    <string name="notification_channels">Notification categories</string>
 
     <!-- [CHAR LIMIT=NONE] App notification settings: non-grouped-channels title -->
     <string name="notification_channels_other">Other</string>
@@ -11295,19 +11314,19 @@
     <string name="double_tap_power_for_camera_summary">To quickly open camera, press the power button twice. Works from any screen.</string>
 
     <!-- Title text for double tap power gesture [CHAR LIMIT=80]-->
-    <string name="double_tap_power_title">Double tap power button</string>
+    <string name="double_tap_power_title">Double press power button</string>
     <!-- Summary for double tap power settings [DO NOT TRANSLATE] -->
     <string name="double_tap_power_summary" translatable="false"><xliff:g id="double_tap_power_on_off" example="On">%1$s</xliff:g> / <xliff:g id="double_tap_power_actions" example="Access Wallet">%2$s</xliff:g></string>
     <!-- Switch label to enable/disable double tap power button gesture [CHAR LIMIT=60] -->
-    <string name="double_tap_power_enabled">Use double tap</string>
+    <string name="double_tap_power_enabled">Use double press</string>
     <!-- Category title for double tap power gesture [CHAR_LIMIT=80] -->
-    <string name="double_tap_power_target_action_category">Double Tap Power Button</string>
+    <string name="double_tap_power_target_action_category">Double press power button to open</string>
     <!-- Double Tap Power Gesture camera launch action title [CHAR_LIMIT=60] -->
-    <string name="double_tap_power_camera_action_title">Open Camera</string>
+    <string name="double_tap_power_camera_action_title">Camera</string>
     <!-- Setting summary to describe double tap power button will open camera. [CHAR LIMIT=NONE] -->
     <string name="double_tap_power_camera_action_summary">Access Camera</string>
     <!-- Double Tap Power Gesture wallet launch action title [CHAR_LIMIT=60] -->
-    <string name="double_tap_power_wallet_action_title">Open Wallet</string>
+    <string name="double_tap_power_wallet_action_title">Wallet</string>
     <!-- Setting summary to describe double tap power button will open wallet. [CHAR LIMIT=NONE] -->
     <string name="double_tap_power_wallet_action_summary">Access Wallet</string>
 
@@ -12441,9 +12460,9 @@
     <!-- Category name "About satellite messaging" [CHAR_LIMIT=NONE] -->
     <string name="category_name_about_satellite_messaging">About <xliff:g id="subject" example="satellite messaging">%1$s</xliff:g></string>
     <!-- Summary for category "About satellite messaging" [CHAR_LIMIT=NONE] -->
-    <string name="title_about_satellite_setting">You can send and receive text messages by satellite as part of an eligible <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
+    <string name="title_about_satellite_setting">You can send and receive text messages by satellite with an eligible <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
     <!-- Category title "Your mobile plan" [CHAR_LIMIT=NONE] -->
-    <string name="category_title_your_satellite_plan">Your <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> plan</string>
+    <string name="category_title_your_satellite_plan">Your <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
     <!-- Title for category "Your mobile plan when satellite is included in plan" [CHAR_LIMIT=NONE] -->
     <string name="title_have_satellite_plan">Messaging is included with your account</string>
     <!-- Title for category "Your mobile plan when satellite is not included in plan" [CHAR_LIMIT=NONE] -->
@@ -12461,7 +12480,7 @@
     <!-- Summary for satellite supported service [CHAR_LIMIT=NONE] -->
     <string name="summary_supported_service">You can text anyone, including emergency services. Your phone will reconnect to a mobile network when available.</string>
     <!-- learn more text - more about satellite messaging [CHAR_LIMIT=NONE] -->
-    <string name="satellite_setting_summary_more_information"><xliff:g id="subject" example="satellite messaging">%1$s</xliff:g> may take longer and is available only in some areas. Weather and certain structures may affect your satellite connection. Calling by satellite isn\u2019t available. Emergency calls may still connect.\n\nIt may take some time for account changes to show in Settings. Contact <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> for details.</string>
+    <string name="satellite_setting_summary_more_information"><xliff:g id="subject" example="satellite messaging">%1$s</xliff:g> may take longer and is available only in some areas. Weather and certain structures may affect your satellite connection. Calling by satellite isn\u2019t available. Emergency calls may still connect.\n\nIt may take some time for account changes to show in Settings. Contact <xliff:g id="carrier_name" example="T-Mobile">%2$s</xliff:g> for details.</string>
     <!-- more about satellite messaging [CHAR_LIMIT=NONE] -->
     <string name="more_about_satellite_messaging">More about <xliff:g id="subject" example="satellite messaging">%1$s</xliff:g></string>
     <!-- Title for satellite warning dialog to avoid user using wifi/bluetooth/airplane mode [CHAR_LIMIT=NONE] -->
