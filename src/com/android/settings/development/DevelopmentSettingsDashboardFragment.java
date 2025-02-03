@@ -14,7 +14,7 @@
  * limitations under the License.
  *
  * Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
- * Copyright (c) 2024 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
@@ -72,6 +72,7 @@ import com.android.settings.development.bluetooth.BluetoothQualityDialogPreferen
 import com.android.settings.development.bluetooth.BluetoothSampleRateDialogPreferenceController;
 import com.android.settings.development.graphicsdriver.GraphicsDriverEnableAngleAsSystemDriverController;
 import com.android.settings.development.qstile.DevelopmentTiles;
+import com.android.settings.development.SetDeviceModePreferenceController;
 import com.android.settings.development.storage.SharedDataPreferenceController;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
@@ -764,6 +765,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new ContrastPreferenceController(
                 context, context.getSystemService(UiModeManager.class)));
         controllers.add(new ForceEnableNotesRolePreferenceController(context));
+        controllers.add(new SetDeviceModePreferenceController(context));
 
         return controllers;
     }

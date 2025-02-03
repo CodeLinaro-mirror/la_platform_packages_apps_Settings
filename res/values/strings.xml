@@ -14,7 +14,7 @@
      limitations under the License.
 
      Changes from Qualcomm Innovation Center, Inc. are provided under the following license:
-     Copyright (c) 2022,2024 Qualcomm Innovation Center, Inc. All rights reserved.
+     Copyright (c) 2022,2024-2025 Qualcomm Innovation Center, Inc. All rights reserved.
      SPDX-License-Identifier: BSD-3-Clause-Clear
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
@@ -12322,4 +12322,9 @@
     <string name="ciwlan_exit_notification_positive_button">OPEN SETTINGS</string>
     <string name="ciwlan_exit_notification_negative_button">DISMISS</string>
     <string name="ciwlan_channel_name">Voice Over Cellular Internet</string>
+
+    <!-- To change device mode  -->
+    <string name="device_mode_title">Device Mode</string>
+    <string name="host_mode">Host Mode</string>
+    <string name="peripheral_mode">Peripheral Mode</string>
 </resources>
