@@ -305,8 +305,6 @@
 
     <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
     <string name="connected_device_media_device_title">Media devices</string>
-    <!-- Title for temporary bond device group [CHAR LIMIT=none]-->
-    <string name="connected_device_temp_bond_device_title">Guest devices</string>
     <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
     <string name="connected_device_call_device_title">Call devices</string>
     <!-- Title for connected device group [CHAR LIMIT=none]-->
@@ -502,7 +500,7 @@
     <!-- The text of the confirmation dialog showing the system locale will be changed. [CHAR LIMIT=NONE]-->
     <string name="desc_notice_device_locale_settings_change">Your device settings and regional preferences will change.</string>
 
-    <!-- A dialog button for confirmmation of system locale change. [CHAR LIMIT=25]-->
+    <!-- A dialog button for confirmation of system locale change. [CHAR LIMIT=25]-->
     <string name="button_label_confirmation_of_system_locale_change">Change</string>
 
     <!-- Title for saying this selected locale is unavailable to use. [CHAR LIMIT=50]-->
@@ -530,10 +528,11 @@
     <!-- Category for more language settings. [CHAR LIMIT=NONE]-->
     <string name="more_language_settings_category">More language settings</string>
     <!-- Title for asking to change system locale region or not. [CHAR LIMIT=50]-->
-    <string name="title_change_system_locale_region">Change region to %s ?</string>
+    <string name="title_change_system_locale_region">Change region to <xliff:g id="system_language_region" example="Canada">%1$s</xliff:g> ?</string>
     <!-- Message for asking to change system locale region or not. [CHAR LIMIT=50]-->
-    <string name="body_change_system_locale_region">Your device will keep %s as a system language</string>
-    <string name="top_intro_numbering_system_title">The digits used will be dependent on the numbering system</string>
+    <string name="body_change_system_locale_region">Your device will keep <xliff:g id="system_language" example="English">%1$s</xliff:g> as a system language</string>
+    <!-- Description for the numbering system language. [CHAR LIMIT=NONE]-->
+    <string name="top_intro_numbering_system_title">Most apps will use your regional preferences</string>
 
     <!-- Regional Preferences begin -->
     <!-- The title of the menu entry of regional preferences. [CHAR LIMIT=50] -->
@@ -2937,6 +2936,12 @@
     <string name="emergency_address_title">Emergency address</string>
     <!-- Summary of Update Emergency Address preference, explaining usage of emergency address [CHAR LIMIT=NONE] -->
     <string name="emergency_address_summary">Used as your location when you make an emergency call over Wi\u2011Fi</string>
+    <!-- Title of a preference for private DNS provider hostname [CHAR LIMIT=40] -->
+    <string name="private_dns_title">Hostname</string>
+    <!-- Message of private dns hostname that the field is required. [CHAR LIMIT=NONE] -->
+    <string name="private_dns_field_require">The field is required</string>
+    <!-- The error if the private dns hostname is not valid -->
+    <string name="private_dns_hostname_invalid">The hostname you typed isn\u2019t valid</string>
     <!-- Message of private dns that provides a help link. [CHAR LIMIT=NONE] -->
     <string name="private_dns_help_message"><annotation id="url">Learn more</annotation> about Private DNS features</string>
     <!-- Message to display when private dns is on. [CHAR LIMIT=10] -->
@@ -5770,8 +5775,12 @@
     <string name="accessibility_hearingaid_instruction_continue_button">Continue</string>
     <!-- Title for the accessibility preference for hearing devices. [CHAR LIMIT=35] -->
     <string name="accessibility_hearingaid_title">Hearing devices</string>
-    <!-- Introduction for the Hearing devices page to introduce feature. [CHAR LIMIT=NONE BACKUP_MESSAGE_ID=5856992709195963850] -->
+    <!-- Introduction for the Hearing devices page to introduce feature. [CHAR LIMIT=NONE] -->
     <string name="accessibility_hearingaid_intro">Set up and manage ASHA and LE Audio hearing aids, cochlear implants, and other amplification devices</string>
+    <!-- Introduction for the Hearing devices page to introduce feature. This string is for device that only supports ASHA hearing aids. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearingaid_asha_only_intro">Set up and manage ASHA hearing aids, cochlear implants, and other amplification devices</string>
+    <!-- Introduction for the Hearing devices page to introduce feature. This string is for device that only supports LE Audio hearing aids.  [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearingaid_hap_only_intro">Set up and manage LE Audio hearing aids, cochlear implants, and other amplification devices</string>
     <!-- Summary for the accessibility preference for hearing aid when not connected. [CHAR LIMIT=50] -->
     <string name="accessibility_hearingaid_not_connected_summary">No hearing devices connected</string>
     <!-- Summary for the accessibility preference for hearing aid when adding new devices. [CHAR LIMIT=50] -->
@@ -5806,10 +5815,18 @@
     <string name="accessibility_hac_mode_summary">Improves compatibility with telecoils and reduces unwanted noise</string>
     <!-- Title for accessibility hearing device page footer. [CHAR LIMIT=40] -->
     <string name="accessibility_hearing_device_about_title">About hearing devices</string>
-    <!-- Description for text in accessibility hearing aids footer. [CHAR LIMIT=NONE BACKUP_MESSAGE_ID=7451899224828040581] -->
+    <!-- Description for text in accessibility hearing aids footer. [CHAR LIMIT=NONE] -->
     <string name="accessibility_hearing_device_footer_summary"><![CDATA[To find other hearing devices that aren’t supported by ASHA or LE Audio, tap <b>Pair new device</b> > <b>See more devices</b>]]></string>
-    <!-- Content description for text in accessibility hearing aids footer to be announce. Replace '>' to 'then' compare to non tts version. [CHAR LIMIT=NONE BACKUP_MESSAGE_ID=7451899224828040581] -->
+    <!-- Content description for text in accessibility hearing aids footer to be announce. Replace '>' to 'then' compare to non tts version. [CHAR LIMIT=NONE] -->
     <string name="accessibility_hearing_device_footer_summary_tts">To find other hearing devices that aren’t supported by ASHA or LE Audio, tap <b>Pair new device</b> then <b>See more devices</b></string>
+    <!-- Description for text in accessibility hearing aids footer. This string is for device that only supports ASHA hearing aids. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_footer_asha_only_summary"><![CDATA[To find other hearing devices that aren’t supported by ASHA, tap <b>Pair new device</b> > <b>See more devices</b>]]></string>
+    <!-- Content description for text in accessibility hearing aids footer to be announce. This string is for device that only supports ASHA hearing aids. Replace '>' to 'then' compare to non tts version. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_footer_asha_only_summary_tts">To find other hearing devices that aren’t supported by ASHA, tap <b>Pair new device</b> then <b>See more devices</b></string>
+    <!-- Description for text in accessibility hearing aids footer. This string is for device that only supports LE Audio hearing aids. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_footer_hap_only_summary"><![CDATA[To find other hearing devices that aren’t supported by LE Audio, tap <b>Pair new device</b> > <b>See more devices</b>]]></string>
+    <!-- Content description for text in accessibility hearing aids footer to be announce. This string is for device that only supports LE Audio hearing aids. Replace '>' to 'then' compare to non tts version. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_footer_hap_only_summary_tts">To find other hearing devices that aren’t supported by LE Audio, tap <b>Pair new device</b> then <b>See more devices</b></string>
     <!-- Title for the pair hearing device page. [CHAR LIMIT=25] -->
     <string name="accessibility_hearing_device_pairing_page_title">Pair hearing device</string>
     <!-- Subtitle for the pair hearing device page. [CHAR LIMIT=NONE] -->
@@ -13956,13 +13973,15 @@
     <string name="audio_sharing_share_with_button_label">Share with <xliff:g example="My buds" id="device_name">%1$s</xliff:g></string>
     <!-- Text for audio sharing close button [CHAR LIMIT=none]-->
     <string name="audio_sharing_close_button_label">Close</string>
-    <!-- Content for audio sharing share dialog with no device, ask users to connect device  [CHAR LIMIT=none]-->
+    <!-- Content for audio sharing share dialog with no second device, ask users to connect device  [CHAR LIMIT=none]-->
     <string name="audio_sharing_dialog_connect_device_content">Connect another pair of compatible headphones, or share your stream\'s name and password with the other person</string>
-    <!-- Content for audio sharing share dialog with no device, ask users to scan qr code [CHAR LIMIT=none]-->
+    <!-- Content for audio sharing share dialog with no second device, ask users to scan qr code [CHAR LIMIT=none]-->
     <string name="audio_sharing_dialog_qr_code_content">Let others scan this code and listen to your audio\n\nStream name: <xliff:g example="Pixel 8" id="stream_name">%1$s</xliff:g>\nPassword: <xliff:g example="123456" id="password">%2$s</xliff:g></string>
-    <!-- Content for audio sharing share dialog with no device, ask users to pair new device [CHAR LIMIT=none]-->
+    <!-- Content for audio sharing share dialog with no second device and no password, ask users to scan qr code [CHAR LIMIT=none]-->
+    <string name="audio_sharing_dialog_qr_code_content_no_password">Let others scan this code and listen to your audio\n\nStream name: <xliff:g example="Pixel 8" id="stream_name">%1$s</xliff:g></string>
+    <!-- Content for audio sharing share dialog with no second device, ask users to pair new device [CHAR LIMIT=none]-->
     <string name="audio_sharing_dialog_pair_new_device_content">or pair another set of compatible headphones</string>
-    <!-- Content for audio sharing share dialog with no device, ask users to pair device  [CHAR LIMIT=none]-->
+    <!-- Content for audio sharing share dialog with no second device, ask users to pair device  [CHAR LIMIT=none]-->
     <string name="audio_sharing_dialog_pair_device_content">Pair another set of compatible headphones, or share your audio stream QR code with the other person</string>
     <!-- Text for sharing audio sharing state [CHAR LIMIT=none]-->
     <string name="audio_sharing_sharing_label">Sharing audio</string>
