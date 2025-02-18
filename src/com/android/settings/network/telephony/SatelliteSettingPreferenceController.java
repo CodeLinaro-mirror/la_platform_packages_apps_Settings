@@ -160,7 +160,7 @@ public class SatelliteSettingPreferenceController extends
      *
      * @param subId subscription ID.
      */
-    public void init(int subId) {
+    public void initialize(int subId) {
         logd("init(), subId=" + subId);
         mSubId = subId;
         mTelephonyManager = mTelephonyManager.createForSubscriptionId(subId);
