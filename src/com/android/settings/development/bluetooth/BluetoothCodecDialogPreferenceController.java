@@ -133,14 +133,6 @@ public class BluetoothCodecDialogPreferenceController extends
                 codecTypeValue = BluetoothCodecConfig.SOURCE_CODEC_TYPE_OPUS;
                 codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
                 break;
-            case 8:
-                codecTypeValue = BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_ADAPTIVE;
-                codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
-                break;
-            case 9:
-                codecTypeValue = BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_TWSP;
-                codecPriorityValue = BluetoothCodecConfig.CODEC_PRIORITY_HIGHEST;
-                break;
             default:
                 break;
         }
@@ -203,17 +195,8 @@ public class BluetoothCodecDialogPreferenceController extends
             case BluetoothCodecConfig.SOURCE_CODEC_TYPE_LDAC:
                 index = 5;
                 break;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_LC3:
-                index = 6;
-                break;
             case BluetoothCodecConfig.SOURCE_CODEC_TYPE_OPUS:
                 index = 7;
-                break;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_ADAPTIVE:
-                index = 8;
-                break;
-            case BluetoothCodecConfig.SOURCE_CODEC_TYPE_APTX_TWSP:
-                index = 9;
                 break;
             default:
                 Log.e(TAG, "Unsupported config:" + config);
