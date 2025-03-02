@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"جمع کردن برای کنترل یکپارچه"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"چپ"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"راست"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"بی‌صدا کردن پیرامون"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"صدادار کردن پیرامون"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"پیرامون به‌روز نشد"</string>
@@ -226,6 +232,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"زبان و منطقه"</string>
     <string name="language_selection_title" msgid="968179636453982415">"افزودن زبان"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"انتخاب منطقه"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"اولویت‌های منطقه"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"جستجوی زبان‌ها"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"جستجوی منطقه‌ها"</string>
@@ -233,7 +241,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"تنظیمات زبان بیشتر"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"منطقه به <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> تغییر داده شود؟"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"دستگاهتان <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> را به‌عنوان زبان سیستم حفظ خواهد کرد"</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"بیشتر برنامه‌ها از اولویت‌های منطقه‌ای شما استفاده خواهند کرد"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"اولویت‌های منطقه‌ای"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"تنظیم اولویت‌های واحد و عدد"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"به برنامه‌ها اجازه می‌دهد اولویت‌های منطقه‌ای شما را بدانند تا بتوانند تجربه‌تان را شخصی‌سازی کنند."</string>
@@ -1309,7 +1318,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"وضوح بالا"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"وضوح بیشینه"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"«وضوح بیشینه» از شارژ باتری بیشتری استفاده می‌کند. تغییر دادن وضوح ممکن است باعث شود برخی‌از برنامه‌ها بازراه‌اندازی شوند."</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"انتخاب‌شده"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"رنگ‌"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"طبیعی"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"تقویت‌شده"</string>
@@ -1750,11 +1758,11 @@
     <string name="settings_license_activity_unavailable" msgid="9014803774391134570">"مشکلی در بارگیری مجوزها وجود دارد."</string>
     <string name="settings_license_activity_loading" msgid="1653151990366578827">"در حال بارگیری…"</string>
     <string name="settings_safetylegal_activity_loading" msgid="1757860124583063395">"در حال بارگیری…"</string>
-    <string name="lockpassword_choose_your_password_header" msgid="2407205113298094824">"تنظیم گذرواژه"</string>
+    <string name="lockpassword_choose_your_password_header" msgid="2407205113298094824">"گذرواژه تنظیم کنید"</string>
     <string name="lockpassword_choose_your_profile_password_header" msgid="7038997227611893312">"تنظیم گذرواژه کاری"</string>
     <string name="lockpassword_choose_your_pin_header" msgid="7754265746504679473">"پین تنظیم کنید"</string>
     <string name="lockpassword_choose_your_profile_pin_header" msgid="4581749963670819048">"تنظیم پین کاری"</string>
-    <string name="lockpassword_choose_your_pattern_header" msgid="5674909390779586252">"تنظیم الگو"</string>
+    <string name="lockpassword_choose_your_pattern_header" msgid="5674909390779586252">"الگو تنظیم کنید"</string>
     <string name="lockpassword_choose_your_pattern_description" msgid="6808109256008481046">"برای امنیت بیشتر، الگویی برای باز کردن قفل دستگاه تنظیم کنید"</string>
     <string name="lockpassword_choose_your_profile_pattern_header" msgid="3101811498330756641">"تنظیم الگوی کاری"</string>
     <string name="lockpassword_choose_your_password_header_for_fingerprint" msgid="3167261267229254090">"تنظیم گذرواژه برای استفاده از اثر انگشت"</string>
@@ -2107,7 +2115,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"آشنایی با اشاره‌های صفحه لمسی"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"پد لمسی، پدلمسی، موشواره، مکان‌نما، پیمایش، تند کشیدن، کلیک راست، کلیک، اشاره‌گر"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"کلیک راست، ضربه زدن"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"کلیک میانی"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"راه‌اندازی «دستیار»"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"رفتن به صفحه اصلی"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"برگشتن"</string>
@@ -2898,6 +2907,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"روشن"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"خاموش"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"استفاده از «اتصال‌پذیری سازگار»"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"امنیت شبکه تلفن همراه"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"نوع شبکه، رمزگذاری، کنترل‌های اعلان"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"این تنظیمات از تماس‌ها، پیام‌ها، و داده‌های شما دربرابر شبکه‌های قدیمی یا رمزگذاری‌نشده‌ای که ممکن است شما را درمعرض نظارت یا سرقت داده قرار دهند محافظت می‌کند"</string>
@@ -2926,7 +2943,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"همه محتوا حذف شود؟"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"فضای ذخیره‌سازی اطلاعات اعتباری پاک شد."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"فضای ذخیره‌سازی اطلاعات اعتباری پاک نمی‌شود."</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"برنامه‌های مجاز به دسترسی به داده‌های مصرف"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"گواهینامه مرکز صدور گواهی"</string>
     <string name="user_certificate" msgid="6897024598058566466">"‏گواهینامه کاربر برنامه و VPN"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"‏گواهینامه Wi-Fi"</string>
@@ -2985,7 +3003,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"نظارت مجاز شود؟"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"با ادامه دادن، کاربرتان توسط سرپرست مدیریت می‌شود، که همچنین ممکن است بتواند داده‌های کاربر و نیز داده‌های شخصی شما را ذخیره کند.\n\nسرپرستتان می‌تواند بر تنظیمات، دسترسی‌ها، برنامه‌ها و داده‌ها مربوط به این کاربر (ازجمله فعالیت شبکه و اطلاعات مکان دستگاه) نظارت داشته باشد و آن‌ها را مدیریت کند."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"گزینه‌های دیگر را سرپرستتان غیرفعال کرده است"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"بیشتر بدانید"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"گزارش اعلان"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"سابقه اعلان"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"‏%d ساعت گذشته"</string>
@@ -4220,10 +4239,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"برنامه تلفن"</string>
     <string name="system_app" msgid="1863291702508355041">"(سیستم)"</string>
     <string name="apps_storage" msgid="643866814746927111">"فضای ذخیره‌سازی برنامه‌ها"</string>
-    <string name="usage_access" msgid="5487993885373893282">"دسترسی به داده‌های مصرف"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"اجازه دسترسی به داده‌های مصرف"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"مدت تماشای صفحه"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"دسترسی به داده‌های مصرف، امکان ردیابی اینکه از چه برنامه‌های دیگری و چند وقت یک‌بار استفاده می‌کنید و همچنین شرکت مخابراتی‌تان، تنظیمات زبان و سایر جزئیات را به برنامه می‌دهد."</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"حافظه"</string>
     <string name="always_running" msgid="9012705720688200252">"همیشه درحال اجرا (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"گاهی درحال اجرا (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4321,7 +4343,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"ممکن است باتری شما را سریع‌تر خالی کند. استفاده از باتری پس‌زمینه توسط برنامه دیگر محدود نخواهد شد."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"برای ماندگاری بیشتر باتری توصیه می‌شود"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"خالی"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"خاموش کردن دسترسی به داده‌های مصرف برای این برنامه، مانع از ردیابی سرپرست از میزان مصرف داده برای برنامه‌ها در نمایه کاری‌تان نمی‌شود."</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"نمایش روی سایر برنامه‌ها"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"نمایش روی سایر برنامه‌ها"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"مجاز کردن نمایش روی سایر برنامه‌ها"</string>
@@ -4995,16 +5018,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"درباره <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"با حساب واجدشرایط <xliff:g id="CARRIER_NAME">%1$s</xliff:g>، می‌توانید ازطریق ماهواره پیام نوشتاری ارسال و دریافت کنید"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"حساب <xliff:g id="CARRIER_NAME">%1$s</xliff:g> شما"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"پیام‌رسانی در حسابتان ارائه شده است"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"پیام‌رسانی ماهواره‌ای با حسابتان ارائه شده است"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"پیام‌رسانی ماهواره‌ای با حسابتان ارائه نشده است"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"بیشتر بدانید"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"روش کار"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"وقتی شبکه تلفن همراه ندارید"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"تلفن شما به‌طور خودکار به ماهواره متصل خواهد شد. برای داشتن بهترین اتصال، به فضای بازی بروید که دید واضحی به آسمان داشته باشید."</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"بعداز اتصال تلفن به ماهواره"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"می‌توانید برای هرکسی پیام ارسال کنید، ازجمله خدمات اضطراری. هروقت شبکه تلفن همراه دردسترس قرار بگیرد، تلفن دوباره به آن متصل خواهد شد."</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> ممکن است مدت زمان بیشتری طول بکشد و فقط در برخی مناطق دردسترس است. ممکن است وضعیت آب‌وهوا و برخی ساختمان‌ها بر اتصال ماهواره اثر بگذارند. تماس ماهواره‌ای دردسترس نیست. ممکن است تماس‌های اضطراری همچنان وصل شود.\n\nشاید کمی طول بکشد تا تغییرات حساب در «تنظیمات» نمایش داده شود. برای اطلاع از جزئیات، با <xliff:g id="CARRIER_NAME">%2$s</xliff:g> تماس بگیرید."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> ممکن است مدت زمان بیشتری طول بکشد و فقط در برخی مناطق دردسترس است. ممکن است وضعیت آب‌وهوا و برخی ساختمان‌ها بر اتصال ماهواره اثر بگذارند. تماس ماهواره‌ای دردسترس نیست. ممکن است تماس‌های اضطراری همچنان متصل شوند. ارسال پیامک به خدمات اضطراری ممکن است در همه مناطق دردسترس نباشد.\n\nممکن است مدتی طول بکشد تا تغییرات حساب در «تنظیمات» نشان داده شود. برای اطلاع از جزئیات، با <xliff:g id="CARRIER_NAME">%2$s</xliff:g> تماس بگیرید."</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"اطلاعات بیشتر درباره <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"‫<xliff:g id="FUNCTION">%1$s</xliff:g> روشن نشد"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"برای روشن کردن <xliff:g id="FUNCTION">%1$s</xliff:g>، ابتدا اتصال ماهواره را قطع کنید"</string>

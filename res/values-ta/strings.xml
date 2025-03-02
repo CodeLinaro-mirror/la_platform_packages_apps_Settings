@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"ஒருங்கிணைந்த கட்டுப்பாட்டுக்குச் சுருக்கும்"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"இடது"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"வலது"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"சுற்றுப்புறங்களின் ஒலியை அடக்கும்"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"சுற்றுப்புறங்களின் ஒலியை இயக்கும்"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"சுற்றுப்புறங்களைப் புதுப்பிக்க முடியவில்லை"</string>
@@ -226,6 +232,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"மொழியும் பிராந்தியமும்"</string>
     <string name="language_selection_title" msgid="968179636453982415">"மொழியைச் சேர்த்தல்"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"பிராந்தியத்தை தேர்வுசெய்க"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"மண்டல விருப்பம்"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"மொழிகளைத் தேடுக"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"பிராந்தியங்களைத் தேடுக"</string>
@@ -233,7 +241,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"கூடுதல் மொழி அமைப்புகள்"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"<xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> எனப் பிராந்தியத்தை மாற்றவா?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"சாதனம் <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> மொழியை சிஸ்டம் மொழியாக வைத்திருக்கும்"</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"உங்கள் பிராந்தியத்திற்கேற்ற விருப்பங்களைப் பெரும்பாலான ஆப்ஸ் பயன்படுத்தும்"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"பிராந்தியத்திற்கேற்ற விருப்பங்கள்"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"யூனிட்கள் மற்றும் எண் விருப்பத்தேர்வுகளை அமைக்கலாம்"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"உங்கள் பிராந்தியத்திற்கேற்ற விருப்பங்களை ஆப்ஸுக்குத் தெரிவியுங்கள். இதனால் உங்கள் அனுபவத்தை ஆப்ஸால் பிரத்தியேகமாக்க முடியும்."</string>
@@ -1309,7 +1318,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"உயர் தெளிவுத்திறன்"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"அதிகபட்சத் தெளிவுத்திறன்"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"அதிகபட்சத் தெளிவுத்திறனை அமைத்தால் பேட்டரி அதிகமாகப் பயன்படுத்தப்படும். தெளிவுத்திறனை மாற்றினால் சில ஆப்ஸ் மீண்டும் தொடங்கக்கூடும்."</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"தேர்ந்தெடுக்கப்பட்டது"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"வண்ணங்கள்"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"இயற்கை வண்ணம்"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"பூஸ்ட் செய்யப்பட்டது"</string>
@@ -2107,7 +2115,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"டச்பேட் சைகைகளை அறிந்துகொள்ளுங்கள்"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"டிராக்பேட், டிராக் பேட், மவுஸ், கர்சர், ஸ்க்ரோல், ஸ்வைப், வலது கிளிக், கிளிக், பாயிண்ட்டர்"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"வலது கிளிக், தட்டு"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"மிடில் கிளிக்"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistantடைத் தொடங்கு"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"முகப்பிற்குச் செல்"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"பின்செல்"</string>
@@ -2898,6 +2907,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"ஆன்"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"ஆஃப்"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Adaptive Connectivity சேவையைப் பயன்படுத்துதல்"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"மொபைல் நெட்வொர்க் பாதுகாப்பு"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"நெட்வொர்க் வகை, என்க்ரிப்ஷன், அறிவிப்புக் கட்டுப்பாடுகள்"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"இந்த அமைப்புகள் உங்கள் அழைப்புகள், மெசேஜ்கள், தரவு ஆகியவற்றைக் காலாவதியான அல்லது என்க்ரிப்ட் செய்யப்படாத நெட்வொர்க்குகளில் இருந்து பாதுகாக்க உதவும். அத்தகைய நெட்வொர்க்குகளால் உங்கள் தரவு திருடப்படலாம் அல்லது கண்காணிக்கப்படலாம்."</string>
@@ -2926,7 +2943,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"எல்லா உள்ளடக்கத்தையும் அகற்றவா?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"அனுமதிச் சான்று சேமிப்பகம் அழிக்கப்பட்டது."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"அனுமதிச் சான்று சேமிப்பகத்தை அழிக்க முடியாது."</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"உபயோக அணுகலுடைய ஆப்ஸ்"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"CA சான்றிதழ்"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN &amp; ஆப்ஸ் பயனர் சான்றிதழ்"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"வைஃபை சான்றிதழ்"</string>
@@ -2985,7 +3003,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"கண்காணிப்பு அம்சத்தை அனுமதிக்கவா?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"தொடர்வதன் மூலம், நிர்வாகி (உங்கள் தனிப்பட்ட தரவுடன் சேர்த்து, தொடர்புடைய தரவையும் சேமிக்கக்கூடும்) உங்கள் பயனரை நிர்வகிக்கும்.\n\nஉங்கள் நிர்வாகியால் அமைப்புகள், அணுகல், ஆப்ஸ் மற்றும் நெட்வொர்க் செயல்பாடு, உங்கள் சாதனத்தின் இருப்பிடத் தகவல் உட்பட இந்தப் பயனருடன் தொடர்புடைய தரவு ஆகியவற்றை நிர்வகிக்க முடியும்."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"உங்கள் நிர்வாகி பிற விருப்பங்களை முடக்கியுள்ளார்"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"மேலும் அறிக"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"அறிவிப்பு பதிவு"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"இதுவரை வந்த அறிவிப்புகள்"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"கடந்த %d மணிநேரம்"</string>
@@ -4220,10 +4239,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"ஃபோன்"</string>
     <string name="system_app" msgid="1863291702508355041">"(சிஸ்டம்)"</string>
     <string name="apps_storage" msgid="643866814746927111">"ஆப்ஸ் சேமிப்பகம்"</string>
-    <string name="usage_access" msgid="5487993885373893282">"உபயோக அணுகல்"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"உபயோக அணுகல் அனுமதி"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"பயன்படுத்திய நேரம்"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"உபயோக அணுகலானது, நீங்கள் வேறு எந்தெந்த ஆப்ஸை எவ்வளவு அடிக்கடி பயன்படுத்துகிறீர்கள் என்று அறியும் அனுமதியை ஒரு ஆப்ஸுக்கு வழங்குகிறது. உங்கள் மொபைல் நிறுவனம், மொழி அமைப்புகள் மற்றும் பிற விவரங்களையும் அறிந்து கொள்ளும் அனுமதியும் இதில் அடங்கும்."</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"நினைவகம்"</string>
     <string name="always_running" msgid="9012705720688200252">"எப்போதும் இயங்குபவை (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"சிலநேரங்களில் இயங்குபவை (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4321,7 +4343,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"பேட்டரியை மிக விரைவாகத் தீர்த்துவிடக்கூடும். பின்னணியில் பேட்டரியைப் பயன்படுத்துவதிலிருந்து, ஆப்ஸ் இனி தடுக்கப்படாது."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"பேட்டரியின் ஆயுளை நீடிப்பதற்காகப் பரிந்துரைக்கப்படுகிறது"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"ஏதுமில்லை"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"இந்த ஆப்ஸின் உபயோக அணுகலை முடக்குவதால், பணிக் கணக்கில் உள்ள பயன்பாடுகளுக்கான டேட்டா உபயோகத்தைக் கண்காணிப்பதிலிருந்து உங்கள் நிர்வாகியைத் தடுக்க முடியாது"</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"பிற ஆப்ஸின் மேலே காட்டு"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"பிற ஆப்ஸின் மேலே காட்டுதல்"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"பிற ஆப்ஸின் மேலே காட்டுவதை அனுமதி"</string>
@@ -4551,7 +4574,7 @@
     <string name="keywords_long_background_tasks" msgid="5788956269136054574">"நீண்டநேரப் பணிகள், தரவுப் பரிமாற்றம், பின்னணிப் பணிகள்"</string>
     <string name="reset_shortcut_manager_throttling" msgid="2183940254903144298">"ShortcutManager இன் ரேட் லிமிட்டிங்கை மீட்டமை"</string>
     <string name="reset_shortcut_manager_throttling_complete" msgid="8949943009096885470">"ShortcutManager இன் ரேட் லிமிட்டிங் மீட்டமைக்கப்பட்டது"</string>
-    <string name="notification_suggestion_title" msgid="6309263655965785411">"லாக் ஸ்கிரீனில் தகவலைக் கட்டுப்படுத்தவும்"</string>
+    <string name="notification_suggestion_title" msgid="6309263655965785411">"லாக் ஸ்கிரீனில் தகவலைக் கட்டுப்படுத்துங்கள்"</string>
     <string name="notification_suggestion_summary" msgid="7615611244249276113">"அறிவிப்பு உள்ளடக்கத்தைக் காட்டும் அல்லது மறைக்கும்"</string>
     <string name="page_tab_title_support" msgid="3235725053332345773">"உதவிக்குறிப்பு &amp; உதவி"</string>
     <string name="developer_smallest_width" msgid="632354817870920911">"மிகக் குறைந்த அகலம்"</string>
@@ -4995,16 +5018,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"<xliff:g id="SUBJECT">%1$s</xliff:g> பற்றிய அறிமுகம்"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"தகுதிபெறும் <xliff:g id="CARRIER_NAME">%1$s</xliff:g> கணக்கைப் பயன்படுத்தி சாட்டிலைட் மூலம் நீங்கள் மெசேஜ் அனுப்பலாம் பெறலாம்"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"உங்கள் <xliff:g id="CARRIER_NAME">%1$s</xliff:g> கணக்கு"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"உங்கள் கணக்கில் மெசேஜிங் அடங்கும்"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"சாட்டிலைட் மெசேஜிங் உங்கள் கணக்கில் சேர்க்கப்பட்டுள்ளது"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"சாட்டிலைட் மெசேஜிங் உங்கள் கணக்கில் சேர்க்கப்படவில்லை"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"மேலும் அறிக"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"இது செயல்படும் விதம்"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"மொபைல் நெட்வொர்க் இல்லாதபோது"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"உங்கள் மொபைல் சாட்டிலைட்டுடன் தானாக இணைக்கப்படும். சிறந்த இணைப்பிற்கு வானம் தெளிவாகத் தெரியும் இடத்தில் வையுங்கள்."</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"சாட்டிலைட்டுடன் மொபைல் இணைக்கப்பட்ட பிறகு"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"அவசரகாலச் சேவைகள் உட்பட எவருக்கும் நீங்கள் மெச்செஜ் அனுப்பலாம். மொபைல் நெட்வொர்க் கிடைக்கும்போது அதனுடன் உங்கள் மொபைல் மீண்டும் இணையும்."</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> மூலம் மெசேஜ் அனுப்புவதற்கு அதிக நேரம் ஆகலாம். மேலும் சில பகுதிகளில் மட்டுமே இந்தச் சேவை கிடைக்கும். வானிலை மற்றும் சில கட்டமைப்புகள் உங்கள் சாட்டிலைட் இணைப்பைப் பாதிக்கக்கூடும். சாட்டிலைட் மூலம் அழைக்க முடியவில்லை. அவசர அழைப்புகளை இப்போதும் தொடர்புகொள்ளலாம்.\n\nஅமைப்புகளில் கணக்கு மாற்றங்கள் காட்டப்படுவதற்குச் சிறிது நேரம் ஆகலாம். விவரங்களுக்கு <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ஐத் தொடர்புகொள்ளுங்கள்."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> மூலம் மெசேஜ் அனுப்புவதற்கு அதிக நேரம் ஆகலாம், சில பகுதிகளில் மட்டுமே இந்தச் சேவை கிடைக்கும். வானிலை மற்றும் சில கட்டமைப்புகள் உங்கள் சாட்டிலைட் இணைப்பைப் பாதிக்கக்கூடும். சாட்டிலைட் மூலம் அழைக்க முடியவில்லை. அவசர அழைப்புகள் இப்போதும் இணைக்கப்படலாம். அவசரகாலச் சேவைகளுடன் மெசேஜ் அனுப்புவது/பெறுவது சில பகுதிகளில் கிடைக்காமல் போகலாம்.\n\nகணக்கில் ஏற்படும் மாற்றங்கள் அமைப்புகளில் காட்டப்பட சிறிது நேரம் ஆகலாம். விவரங்களுக்கு <xliff:g id="CARRIER_NAME">%2$s</xliff:g> நிறுவனத்தைத் தொடர்புகொள்ளுங்கள்."</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"<xliff:g id="SUBJECT">%1$s</xliff:g> குறித்த கூடுதல் தகவல்கள்"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"<xliff:g id="FUNCTION">%1$s</xliff:g> ஐ இயக்க முடியவில்லை"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"<xliff:g id="FUNCTION">%1$s</xliff:g> ஐ இயக்க, முதலில் சாட்டிலைட் இணைப்பை முடக்கவும்"</string>

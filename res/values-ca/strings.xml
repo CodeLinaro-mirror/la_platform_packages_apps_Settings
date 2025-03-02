@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Replega per unificar el control"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Esquerra"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Dreta"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Silencia l\'entorn"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Deixa de silenciar l\'entorn"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"No s\'ha pogut actualitzar l\'entorn"</string>
@@ -226,6 +232,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Idioma i regió"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Afegeix un idioma"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Tria una regió"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Preferència de regió"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Cerca idiomes"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Cerca regions"</string>
@@ -233,7 +241,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Més opcions de configuració d\'idioma"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Vols canviar la regió a <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"El dispositiu mantindrà <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> com a idioma del sistema"</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"La majoria d\'aplicacions utilitzaran les teves preferències regionals"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"Preferències regionals"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Estableix preferències d\'unitats i de números"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Permet a les aplicacions conèixer les preferències regionals perquè puguin personalitzar la teva experiència."</string>
@@ -1309,7 +1318,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Alta resolució"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Resolució màxima"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"La resolució màxima consumeix més bateria. Si canvies la resolució, és possible que algunes aplicacions es reiniciïn."</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Seleccionada"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Colors"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturals"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Millorats"</string>
@@ -2107,7 +2115,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Aprèn els gestos del ratolí tàctil"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"ratolí tàctil, ratolí, cursor, desplaçar-se, lliscar, fer clic amb el botó dret, fer clic, punter"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"fer clic amb el botó dret, tocar"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Clic central"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Inicia l\'Assistent"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Ves a la pàgina d\'inici"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Torna"</string>
@@ -2394,7 +2403,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Text d\'alt contrast"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Canvia el color del text a blanc o negre. Maximitza el contrast amb el fons."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Millora el contrast del text"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> ha substituït <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Pots activar-lo a <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> ha substituït el <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Pots activar-lo a <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Ves a <xliff:g id="SETTINGS">%1$s</xliff:g>"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Text amb contorn"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Afegeix un fons blanc o negre al voltant del text per augmentar-ne el contrast"</string>
@@ -2900,6 +2909,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Activat"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Desactivat"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Utilitza la connectivitat adaptativa"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Seguretat de xarxes mòbils"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Tipus de xarxa, encriptació, controls de notificació"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Aquesta configuració ajuda a protegir les trucades, els missatges i les dades de xarxes obsoletes i sense encriptació que podrien exposar-te al robatori de dades o a la vigilància"</string>
@@ -2928,7 +2945,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Vols suprimir tots els continguts?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Emmagatzematge de credencials esborrat."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"L\'emmagatzematge de credencials no s\'ha esborrat."</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"Apps amb accés a dades d\'ús"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"Certificat de CA"</string>
     <string name="user_certificate" msgid="6897024598058566466">"Certificat d\'usuari d\'apps i VPN"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Certificat de Wi‑Fi"</string>
@@ -2987,7 +3005,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Vols permetre la supervisió?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"En continuar, l\'administrador gestionarà el teu usuari i és possible que també pugui desar dades associades, a més de les teves dades personals.\n\nL\'administrador pot supervisar i gestionar la configuració, l\'accés, les aplicacions i les dades associades a aquest usuari, com ara l\'activitat de xarxa i la informació sobre la ubicació del dispositiu."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"L\'administrador ha desactivat altres opcions"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"Més informació"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"Registre de notificacions"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"Historial de notificacions"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"%d darreres hores"</string>
@@ -4222,10 +4241,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Aplicació de telèfon"</string>
     <string name="system_app" msgid="1863291702508355041">"(Sistema)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Emmagatzematge d\'aplicacions"</string>
-    <string name="usage_access" msgid="5487993885373893282">"Accés a dades d\'ús"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"Permet l\'accés a dades d\'ús"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Temps de connexió"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"L\'accés a dades d\'ús permet que una aplicació pugui fer un seguiment de les altres aplicacions que utilitzes i la freqüència amb què ho fas, així com del teu operador de telefonia mòbil i de la configuració d\'idioma, entre d\'altres."</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"Memòria"</string>
     <string name="always_running" msgid="9012705720688200252">"Sempre en execució (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"De vegades en execució (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4323,7 +4345,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"És possible que la bateria s\'exhaureixi més ràpidament. L\'aplicació ja no té restringit l\'ús de la bateria en segon pla."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Es recomana per allargar la bateria"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Cap"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Encara que es desactivi l\'accés a dades d\'ús d\'aquesta aplicació, l\'administrador podrà continuar fent el seguiment de l\'ús de dades de les aplicacions del perfil de treball"</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"Mostra sobre altres aplicacions"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Mostra sobre altres aplicacions"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Permet mostrar sobre altres aplicacions"</string>
@@ -4997,16 +5020,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"Sobre <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Pots enviar i rebre missatges de text per satèl·lit amb un compte de <xliff:g id="CARRIER_NAME">%1$s</xliff:g> apte"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"El teu compte de <xliff:g id="CARRIER_NAME">%1$s</xliff:g>"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"Els missatges s\'inclouen amb el teu compte"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"Els missatges per satèl·lit s\'inclouen amb el teu compte"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"Els missatges per satèl·lit no s\'inclouen amb el teu compte"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Més informació"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"Com funciona"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Quan no tinguis connexió de xarxa mòbil"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"El telèfon es connectarà automàticament a un satèl·lit. Per obtenir la millor connexió possible, has de ser en una zona en què es vegi bé el cel."</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"Quan el telèfon es connecti a un satèl·lit"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"Pots enviar missatges de text a qualsevol persona, inclosos els serveis d\'emergències. El telèfon es tornarà a connectar a una xarxa mòbil quan estigui disponible."</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"Els <xliff:g id="SUBJECT">%1$s</xliff:g> poden tardar més i només estan disponibles en algunes zones. Les condicions meteorològiques i determinades estructures poden afectar la teva connexió per satèl·lit. Les trucades per satèl·lit no estan disponibles. És possible que puguis continuar fent trucades d\'emergència.\n\nÉs possible que els canvis al teu compte tardin una estona a mostrar-se a Configuració. Contacta amb <xliff:g id="CARRIER_NAME">%2$s</xliff:g> per obtenir més informació."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"Els <xliff:g id="SUBJECT">%1$s</xliff:g> poden tardar més i només estan disponibles en algunes zones. Les condicions meteorològiques i determinades estructures poden afectar la teva connexió per satèl·lit. Les trucades per satèl·lit no estan disponibles. És possible que les trucades d\'emergència es continuïn connectant. És possible que l\'opció d\'enviar missatges de text als serveis d\'emergències no estiguin disponibles en totes les àrees.\n\nÉs possible que els canvis al teu compte tardin una estona a mostrar-se a Configuració. Contacta amb <xliff:g id="CARRIER_NAME">%2$s</xliff:g> per obtenir més informació."</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Més informació sobre <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"No es pot activar <xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Per activar <xliff:g id="FUNCTION">%1$s</xliff:g>, primer finalitza la connexió per satèl·lit"</string>

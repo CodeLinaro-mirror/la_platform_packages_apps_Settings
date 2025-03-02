@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Kuncupkan kepada kawalan yang disatukan"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Kiri"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Kanan"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Redamkan persekitaran"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Nyahredam persekitaran"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Tidak dapat mengemaskinikan persekitaran"</string>
@@ -97,10 +103,8 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"Perihal output audio"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"Menghalakan bunyi kepada peranti pendengaran atau pembesar suara telefon anda"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"Berkaitan"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
+    <string name="bluetooth_try_nearby_share_title" msgid="4996427014054610877">"Cuba berkongsi dengan <xliff:g id="NEARBY_SHARING_APP_LABEL">%s</xliff:g>"</string>
+    <string name="bluetooth_try_nearby_share_summary" msgid="329823028635487822">"Cara terpantas untuk menghantar fail kepada peranti Android berdekatan"</string>
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Nada dering dan penggera"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"Audio semasa panggilan"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"Bunyi media dan sistem"</string>
@@ -226,6 +230,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Bahasa &amp; wilayah"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Tambahkan bahasa"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Pilih rantau"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Pilihan wilayah"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Cari bahasa"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Cari rantau"</string>
@@ -233,7 +239,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Lebih banyak tetapan bahasa"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Tukar rantau kepada <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"Peranti anda akan mengekalkan <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> sebagai bahasa sistem"</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"Kebanyakan apl akan menggunakan tetapan wilayah anda"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"Tetapan wilayah"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Tetapkan pilihan unit dan nombor"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Beritahu apl tetapan wilayah anda supaya apl boleh memeribadikan pengalaman anda."</string>
@@ -890,8 +897,7 @@
     <string name="lockpassword_credential_changed" msgid="5934778179732392028">"Kunci skrin sudah ditukar. Cuba lagi menggunakan kunci skrin yang baharu."</string>
     <string name="lockpattern_tutorial_cancel_label" msgid="775215267818384016">"Batal"</string>
     <string name="lockpattern_tutorial_continue_label" msgid="1329049481210689408">"Seterusnya"</string>
-    <!-- no translation found for manage_device_admin (7272894919651600481) -->
-    <skip />
+    <string name="manage_device_admin" msgid="7272894919651600481">"Pentadbir peranti"</string>
     <string name="number_of_device_admins_none" msgid="152926922020437312">"Tiada apl aktif"</string>
     <string name="number_of_device_admins" msgid="3402909995362162876">"{count,plural, =1{# apl aktif}other{# apl aktif}}"</string>
     <string name="manage_trust_agents" msgid="6410149930029992356">"Ejen amanah"</string>
@@ -1309,7 +1315,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Peleraian tinggi"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Peleraian maksimum"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Peleraian maksimum menggunakan lebih banyak bateri anda. Penukaran peleraian anda mungkin menyebabkan sesetengah apl dimulakan semula."</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Dipilih"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Warna"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Asli"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Ditingkatkan"</string>
@@ -2053,12 +2058,9 @@
     <string name="mouse_keys_summary" msgid="7030731235143286467">"Gunakan papan kekunci anda untuk mengawal penuding"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"Penatalan terbalik"</string>
     <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"Tatal ke atas untuk menggerakkan halaman ke bawah"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_scrolling_category_title" msgid="2992126595687187296">"Penatalan"</string>
+    <string name="mouse_scrolling_acceleration" msgid="7119758828203396430">"Penatalan terkawal"</string>
+    <string name="mouse_scrolling_speed" msgid="3999483025392860903">"Kelajuan penatalan"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"Tukar butang tetikus utama"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"Gunakan butang tetikus kiri sebagai klik kanan anda"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"Pecutan kursor"</string>
@@ -2107,7 +2109,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Ketahui gerak isyarat pad sentuh"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"pad jejak, pad jejak, tetikus, kursor, tatal, leret, klik kanan, klik, penuding"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"klik kanan, ketik"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Klik tengah"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Lancarkan Assistant"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Akses laman utama"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Kembali"</string>
@@ -2898,6 +2901,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Hidup"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Mati"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Gunakan kesambungan boleh suai"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Keselamatan rangkaian mudah alih"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Jenis rangkaian, penyulitan, kawalan pemberitahuan"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Tetapan ini melindungi panggilan, mesej dan data anda daripada rangkaian sudah lapuk atau tidak disulitkan yang boleh mendedahkan anda kepada kecurian data atau pengawasan"</string>
@@ -2926,7 +2937,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Alih keluar semua kandungan?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Storan bukti kelayakan dipadamkan."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Storan bukti kelayakan tidak boleh dipadamkan."</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"Apl dgn akses guna"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"Sijil CA"</string>
     <string name="user_certificate" msgid="6897024598058566466">"Sijil pengguna VPN &amp; apl"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Sijil Wi‑Fi"</string>
@@ -2971,8 +2983,7 @@
     <string name="remove_device_admin" msgid="3143059558744287259">"Nyahaktifkan apl pentadbir peranti ini"</string>
     <string name="uninstall_device_admin" msgid="4481095209503956916">"Nyahpasang apl"</string>
     <string name="remove_and_uninstall_device_admin" msgid="707912012681691559">"Nyahaktifkan &amp; nyahpasang"</string>
-    <!-- no translation found for select_device_admin_msg (2506262585633022884) -->
-    <skip />
+    <string name="select_device_admin_msg" msgid="2506262585633022884">"Pentadbir peranti"</string>
     <string name="no_device_admins" msgid="8888779888103079854">"Tiada apl pentabir peranti yang tersedia"</string>
     <string name="no_trust_agents" msgid="8659098725864191600">"Tiada ejen amanah tersedia"</string>
     <string name="add_device_admin_msg" msgid="7730006568970042119">"Aktifkan apl pentadbir peranti?"</string>
@@ -2985,7 +2996,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Benarkan pengawasan?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Dengan meneruskan, pengguna anda akan diurus oleh pentadbir anda yang mungkin dapat menyimpan data yang berkaitan juga, di samping data peribadi anda.\n\nPentadbir anda berupaya memantau dan mengurus tetapan, akses, apl dan data yang berkaitan dengan pengguna ini, termasuk aktiviti rangkaian dan maklumat lokasi peranti anda."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Pilihan lain dilumpuhkan oleh pentadbir anda"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"Ketahui lebih lanjut"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"Log pemberitahuan"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"Sejarah pemberitahuan"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"%d jam yang lalu"</string>
@@ -3860,8 +3872,7 @@
     <string name="notif_listener_more_settings_desc" msgid="7995492074281663658">"Lagi tetapan tersedia dalam apl ini"</string>
     <string name="notification_polite_title" msgid="6121016426991791557">"Tempoh bertenang pemberitahuan"</string>
     <string name="notification_polite_main_control_title" msgid="5812529809151927149">"Gunakan tempoh bertenang pemberitahuan"</string>
-    <!-- no translation found for notification_polite_description (6137533404978878957) -->
-    <skip />
+    <string name="notification_polite_description" msgid="6137533404978878957">"Apabila anda menerima banyak pemberitahuan dalam tempoh masa yang singkat, peranti anda akan mengurangkan kelantangan dan meminimumkan makluman hingga 1 minit. Panggilan, penggera dan perbualan keutamaan tidak terjejas. \n\nPemberitahuan yang diterima semasa tempoh bertenang boleh ditemukan dengan menarik ke bawah daripada bahagian atas skrin."</string>
     <string name="notification_polite_work" msgid="8823596456640216391">"Gunakan pada profil kerja"</string>
     <string name="notification_polite_work_summary" msgid="5014189280132951378">"Gunakan pada apl profil kerja"</string>
     <string name="notification_bundle_title" msgid="460988459835922719">"Pemberitahuan terhimpun"</string>
@@ -4220,10 +4231,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Apl telefon"</string>
     <string name="system_app" msgid="1863291702508355041">"(Sistem)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Storan apl"</string>
-    <string name="usage_access" msgid="5487993885373893282">"Akses penggunaan"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"Benarkan akses penggunaan"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Masa skrin"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"Akses penggunaan membolehkan apl mengesan apl lain yang anda gunakan dan kekerapan penggunaan tersebut serta pembawa anda, tetapan bahasa dan butiran lain."</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"Memori"</string>
     <string name="always_running" msgid="9012705720688200252">"Sentiasa berjalan (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Kadangkala berjalan (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4321,7 +4335,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Mungkin menyusutkan bateri anda dengan lebih cepat. Apl tidak lagi dihadkan daripada menggunakan bateri latar belakang."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Disyorkan untuk hayat bateri yang lebih lama"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Tiada"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Tindakan mematikan akses penggunaan untuk apl ini tidak menghalang pentadbir anda daripada memantau penggunaan data untuk apl dalam profil kerja"</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"Paparkan di atas apl lain"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Paparkan di atas apl lain"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Benarkan pemaparan di atas apl lain"</string>
@@ -4995,16 +5010,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"Perihal <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Anda boleh menghantar dan menerima mesej teks melalui satelit dengan akaun <xliff:g id="CARRIER_NAME">%1$s</xliff:g> yang layak"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"Akaun <xliff:g id="CARRIER_NAME">%1$s</xliff:g> anda"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"Pemesejan disertakan dengan akaun anda"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"Pemesejan satelit disertakan dengan akaun anda"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"Pemesejan satelit tidak disertakan dengan akaun anda"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Ketahui Lebih Lanjut"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"Cara ciri ini berfungsi"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Apabila liputan rangkaian mudah alih tiada"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"Telefon anda akan disambungkan secara automatik kepada satelit. Untuk mendapatkan sambungan terbaik, pastikan anda berada di kawasan dengan pandangan langit yang jelas."</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"Selepas telefon anda disambungkan kepada satelit"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"Anda boleh menghantar teks kepada sesiapa sahaja, termasuk perkhidmatan kecemasan. Telefon anda akan disambungkan semula kepada rangkaian mudah alih jika tersedia."</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> mungkin mengambil masa lebih lama dan tersedia di beberapa kawasan sahaja. Cuaca dan struktur tertentu boleh menjejaskan sambungan satelit anda. Panggilan melalui satelit tidak tersedia. Panggilan kecemasan masih boleh disambungkan.\n\nPerubahan pada akaun mungkin memerlukan sedikit masa untuk dipaparkan dalam Tetapan. Hubungi <xliff:g id="CARRIER_NAME">%2$s</xliff:g> untuk mendapatkan butiran."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> mungkin mengambil masa lebih lama dan tersedia di beberapa kawasan sahaja. Cuaca dan struktur tertentu boleh menjejaskan sambungan satelit anda. Panggilan melalui satelit tidak tersedia. Panggilan kecemasan masih boleh disambungkan. Penghantaran teks dengan perkhidmatan kecemasan mungkin tidak tersedia di semua kawasan.\n\nPerubahan pada akaun mungkin memerlukan sedikit masa untuk dipaparkan dalam Tetapan. Hubungi <xliff:g id="CARRIER_NAME">%2$s</xliff:g> untuk mendapatkan butiran."</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Maklumat lanjut tentang <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Tidak dapat menghidupkan <xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Untuk menghidupkan <xliff:g id="FUNCTION">%1$s</xliff:g>, tamatkan sambungan satelit dahulu"</string>
@@ -5183,44 +5208,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"Maklumat dasar kerja anda"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"Tetapan diurus oleh pentadbir IT anda"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="1758111531461408337">"But dengan saiz halaman 16 KB"</string>
+    <string name="enable_16k_pages_summary" msgid="1937836453571509085">"But peranti dengan kernel disokong saiz halaman 16 KB"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="5477376227161609124">"Tukar daripada mod 4 KB kepada mod 16 KB"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6211693250692246982">"Anda menggunakan mod halaman agnostik yang menjalankan kernel 4 KB dan anda sedang menukar kepada mod 16 KB. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Hal ini akan mengebut semula peranti. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk mengembalikan peranti kepada mod pengeluaran, anda perlu menukar kembali kepada mod 4 KB dan mengunci pemuat but yang akan menetapkan semula peranti kepada tetapan kilang. Selepas peranti berjaya dibut masuk dalam Android, lumpuhkan pembukaan kunci OEM dalam Pilihan pembangun."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3001009010581393119">"Tukar daripada mod 16 KB kepada mod 4 KB"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="3398001587586470689">"Anda menggunakan mod halaman agnostik yang menjalankan kernel 16 KB dan anda sedang menukar kepada mod 4 KB. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Hal ini akan mengebut semula peranti. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk mengembalikan peranti kepada mod pengeluaran, anda perlu mengunci pemuat but kemudiannya yang akan menetapkan semula peranti kepada tetapan kilang. Selepas peranti berjaya dibut masuk dalam Android, lumpuhkan pembukaan kunci OEM dalam Pilihan pembangun."</string>
+    <string name="toast_16k_update_failed_text" msgid="7848383020572918850">"Gagal mengemaskinikan kernel kepada kernel serasi halaman 16 KB."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"Menggunakan perubahan"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="4754057414728537125">"Format semula peranti kepada ext4? (diperlukan untuk mod 16 KB)"</string>
+    <string name="confirm_format_ext4_text" msgid="432847493298532536">"Pemetakan data peranti ini perlu ditukar kepada ext4 sebelum menggunakan pilihan pembangun 16 KB. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Pengaktifan pilihan 16 KB akan memerlukan satu lagi but semula selepas ini. Setelah anda menggunakan mod ini, anda boleh bertukar berulang kali antara mod 4 KB dengan 16 KB menerusi satu but semula. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk mengembalikan peranti kepada mod pengeluaran, anda perlu menukar kembali kepada mod 4 KB dan mengunci pemuat but yang akan menetapkan semula peranti kepada tetapan kilang. Selepas peranti berjaya dibut masuk dalam Android, lumpuhkan pembukaan kunci OEM dalam Pilihan pembangun. Data peranti akan dihapuskan dan sistem fail akan ditukar kepada ext4 selepas pengesahan. Selepas proses ini selesai, sila kembali untuk mendayakan semula 16 KB."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"Padamkan semua data"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"Gagal memformat semula dan menghapuskan pemetakan data kepada ext4."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"Buka Kunci Pemuat But Diperlukan"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="8089310116854544106">"Peranti ini perlu membuka kunci pemuat but sebelum menggunakan pilihan pembangun 16 KB. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Semua data dan tetapan pengguna akan dihapuskan semasa mengaktifkan mod 16 KB. Setelah pemuat but tidak berkunci, pengaktifan pilihan 16 KB akan memerlukan dua but semula. Setelah anda menggunakan mod ini, anda boleh bertukar berulang kali antara mod 4 KB dengan 16 KB menerusi satu but semula. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk mengembalikan peranti kepada mod pengeluaran, anda perlu menukar kembali kepada mod 4 KB dan melakukan penguncian OEM/pemuat but (yang akan melakukan tetapan semula kilang) pada peranti. Sila buka kunci pemuat but dan cuba lagi. Anda boleh melihat arahan tentang cara melakukan perkara ini menerusi &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt;"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="293797217034340398">"Menggunakan mod halaman agnostik 4 KB"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="731597455785555266">"Anda menggunakan mod 4 KB bagi mod halaman agnostik. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk memasuki semula mod pengeluaran, anda perlu mengunci pemuat but peranti. Ketik untuk baca lagi."</string>
+    <string name="page_agnostic_4k_pages_text" msgid="7572233914423063169">"Anda menggunakan mod 4 KB bagi mod halaman agnostik. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk memasuki semula mod pengeluaran, anda perlu mengunci pemuat but peranti. Tindakan ini akan menetapkan semula peranti kepada tetapan kilang dan memulihkan peranti kepada tetapan pengeluaran. Selepas peranti berjaya dibut masuk dalam Android, lumpuhkan pembukaan kunci OEM dalam Pilihan pembangun. Jika peranti gagal mengebut masuk dalam Android atau tidak stabil, denyar semula peranti dengan imej kilang terkini daripada &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; atau gunakan &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; dan pilih \'Hapuskan Peranti\', \'Kunci Pemuat But\' dan \'Denyar Paksa semua pemetakan\'."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="8940585327969638637">"Menggunakan mod halaman agnostik 16 KB"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="7613206944532151035">"Anda menggunakan mod 16 KB bagi mod halaman agnostik. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk memasuki semula mod pengeluaran, anda perlu beralih kembali kepada mod 4 KB dan mengunci pemuat but peranti. Ketik untuk baca lagi."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2860363435021452169">"Anda menggunakan mod 16 KB bagi mod halaman agnostik. Integriti perisian tidak boleh dijamin dalam mod ini dan sebarang data yang disimpan pada telefon semasa pemuat but tidak berkunci mungkin dalam risiko. Sesetengah ciri akan dilumpuhkan dalam mod ini, maka sesetengah aplikasi mungkin tidak berfungsi. Untuk memasuki semula mod pengeluaran, anda perlu beralih kembali kepada mod 4 KB dan mengunci pemuat but peranti. Tindakan ini akan menetapkan semula peranti kepada tetapan kilang dan memulihkan peranti kepada tetapan pengeluaran. Selepas peranti berjaya dibut masuk dalam Android, lumpuhkan pembukaan kunci OEM dalam Pilihan pembangun. Jika peranti gagal mengebut masuk dalam Android atau tidak stabil, denyar semula peranti dengan imej kilang terkini daripada &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; atau gunakan &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; dan pilih \'Hapuskan Peranti\', \'Kunci Pemuat But\' dan \'Denyar Paksa semua pemetakan\'."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Mod Halaman agnostik 16 KB"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Baca lebih lanjut"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Jalankan apl dengan mod keserasian saiz halaman"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"Apl akan dijalankan dalam mod keserasian saiz halaman pada peranti bersaiz 16 KB apabila ditogol."</string>

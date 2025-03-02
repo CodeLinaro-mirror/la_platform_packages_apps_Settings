@@ -35,6 +35,7 @@ import android.os.Bundle;
 import android.provider.DeviceConfig;
 import android.provider.Settings;
 import android.text.TextUtils;
+import android.view.InputDevice;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -231,9 +232,32 @@ public class ToggleScreenMagnificationPreferenceFragment extends
 
         if (!arguments.containsKey(AccessibilitySettings.EXTRA_HTML_DESCRIPTION)
                 && !Flags.enableMagnificationOneFingerPanningGesture()) {
-            String summary = MessageFormat.format(
-                    context.getString(R.string.accessibility_screen_magnification_summary),
-                    new Object[]{1, 2, 3, 4, 5});
+            String summary = "";
+            boolean hasTouchscreen = hasTouchscreen();
+            if (Flags.enableMagnificationKeyboardControl() && hasHardKeyboard()) {
+                // Include the keyboard summary when a keyboard is plugged in.
+                final String meta = context.getString(R.string.modifier_keys_meta);
+                final String alt = context.getString(R.string.modifier_keys_alt);
+                summary += MessageFormat.format(
+                        context.getString(
+                                R.string.accessibility_screen_magnification_keyboard_summary,
+                                meta, alt, meta, alt),
+                        new Object[]{1, 2, 3, 4});
+                if (hasTouchscreen) {
+                    // Add a newline before the touchscreen text.
+                    summary += "<br/><br/>";
+                }
+
+            }
+            if (hasTouchscreen || TextUtils.isEmpty(summary)) {
+                // Always show the touchscreen summary if there is no summary yet, even if the
+                // touchscreen is missing.
+                // If the keyboard summary is present and there is no touchscreen, then we can
+                // ignore the touchscreen summary.
+                summary += MessageFormat.format(
+                        context.getString(R.string.accessibility_screen_magnification_summary),
+                        new Object[]{1, 2, 3, 4, 5});
+            }
             arguments.putCharSequence(AccessibilitySettings.EXTRA_HTML_DESCRIPTION, summary);
         }
 
@@ -608,6 +632,25 @@ public class ToggleScreenMagnificationPreferenceFragment extends
     protected int getUserPreferredShortcutTypes() {
         return PreferredShortcuts.retrieveUserShortcutType(
                 getPrefContext(), MAGNIFICATION_CONTROLLER_NAME);
+    }
+
+    private boolean hasHardKeyboard() {
+        final int[] devices = InputDevice.getDeviceIds();
+        for (int i = 0; i < devices.length; i++) {
+            InputDevice device = InputDevice.getDevice(devices[i]);
+            if (device == null || device.isVirtual() || !device.isFullKeyboard()) {
+                continue;
+            }
+
+            return true;
+        }
+        return false;
+    }
+
+    private boolean hasTouchscreen() {
+        return getPackageManager()
+                .hasSystemFeature(PackageManager.FEATURE_TOUCHSCREEN)
+                || getPackageManager().hasSystemFeature(PackageManager.FEATURE_FAKETOUCH);
     }
 
     public static final Indexable.SearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =

@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Объединить в один элемент"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Слева"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Справа"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Заглушить окружающие звуки"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Включить окружающие звуки"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Не удалось отрегулировать окружающие звуки."</string>
@@ -226,6 +232,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Язык и регион"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Добавить язык"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Выберите регион"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Региональные настройки"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Поиск языка"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Поиск региона"</string>
@@ -233,7 +241,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Другие языковые настройки"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Новый регион – <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>. Сохранить изменение?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"<xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> останется языком системы."</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"Большинство приложений будут использовать ваши региональные настройки"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"Региональные настройки"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Укажите предпочтительные единицы измерения и форматы отображения чисел"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Приложения используют эти параметры для персонализации."</string>
@@ -256,8 +265,8 @@
     <string name="title_regional_pref_footer" msgid="7450438024324794380">"Если в приложении нельзя выбрать регион, будут использоваться настройки по умолчанию."</string>
     <string name="desc_regional_pref_footer_learn_more" msgid="4401708653329230081">"Узнайте больше о языковых настройках"</string>
     <string name="metric_measurement_system" msgid="7489725697268321541">"Метрическая"</string>
-    <string name="us_measurement_system" msgid="8738587232938189052">"Имперская (США)"</string>
-    <string name="uk_measurement_system" msgid="4196897001775627597">"Имперская (Великобритания)"</string>
+    <string name="us_measurement_system" msgid="8738587232938189052">"Американская"</string>
+    <string name="uk_measurement_system" msgid="4196897001775627597">"Британская"</string>
     <string name="category_title_terms_of_address" msgid="4309422700380895278">"Дополнительные настройки"</string>
     <string name="terms_of_address_title" msgid="7338630812197476808">"Выберите, как к вам обращаться"</string>
     <string name="terms_of_address_summary" msgid="7802443422612600620">"Настроить обращение к вам на устройстве"</string>
@@ -1309,7 +1318,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Высокое разрешение"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Максимальное разрешение"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"При максимальном разрешении расходуется больше заряда. Когда разрешение меняется, некоторые приложения могут перезапуститься."</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Выбрано"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Цвета"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Натуральные"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Яркие"</string>
@@ -2107,7 +2115,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Узнать о жестах на сенсорной панели"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"сенсорная панель, мышь, указатель мыши, прокрутить, провести по экрану, нажать правую кнопку мыши, нажать"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"нажать правую кнопку мыши, нажать"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Нажатие средней кнопки мыши"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Запустить Ассистента"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Возврат на главный экран"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Переход назад"</string>
@@ -2393,8 +2402,8 @@
     <string name="accessibility_button_disabled_button_mode_summary" msgid="1978174613270619492">"Недост.: кнопка на пан. навиг."</string>
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Контрастный текст"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Изменить цвет текста на черный или белый, чтобы сделать его максимально заметным"</string>
-    <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Контрастность текста улучшена"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"Вместо параметра \"<xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>\" теперь доступен \"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g>\". Вы можете включить его в приложении \"<xliff:g id="SETTINGS">%3$s</xliff:g>\"."</string>
+    <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Сделайте текст контрастнее"</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> позволяет получить <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Вы можете включить его в приложении \"<xliff:g id="SETTINGS">%3$s</xliff:g>\"."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Открыть приложение \"<xliff:g id="SETTINGS">%1$s</xliff:g>\""</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Текст с контуром"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Добавлять к тексту черный или белый фон для большего контраста"</string>
@@ -2898,6 +2907,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Включено"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Отключено"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Использование адаптивного подключения"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Безопасность мобильной сети"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Тип сети, шифрование, управление уведомлениями"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Эти настройки помогают вам защищать свои звонки, сообщения и информацию от устаревших и незашифрованных сетей, из-за которых возникает риск кражи данных или отслеживания."</string>
@@ -2926,7 +2943,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Удалить все содержимое?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Хранилище учетных данных очищено"</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Не удалось очистить хранилище."</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"Доступ к данным"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"Сертификат центра сертификации"</string>
     <string name="user_certificate" msgid="6897024598058566466">"Сертификат пользователя приложений и VPN"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Сертификат Wi-Fi"</string>
@@ -2985,7 +3003,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Разрешить родительский контроль?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Администратор будет управлять этим профилем и сможет сохранять связанные с ним данные, а также вашу личную информацию.\n\nКроме того, администратор сможет контролировать и изменять настройки и параметры доступа, а также управлять приложениями и данными этого пользователя, в том числе получать сведения о действиях в сети и местоположении."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Другие настройки отключены администратором"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"Подробнее"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"Журнал уведомлений"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"История уведомлений"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"За последние %d ч."</string>
@@ -4220,10 +4239,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Приложение для звонков"</string>
     <string name="system_app" msgid="1863291702508355041">"(системное)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Приложения"</string>
-    <string name="usage_access" msgid="5487993885373893282">"Доступ к данным об использовании"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"Разрешить доступ"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Время использования"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"Приложение сможет отслеживать, какие ещё приложения вы используете и как часто, а также определять оператора сети, язык и другие параметры."</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"Память"</string>
     <string name="always_running" msgid="9012705720688200252">"Постоянно (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Иногда (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4321,7 +4343,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Батарея может разрядиться быстрее. Ограничение на использование батареи в фоновом режиме будет снято."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Рекомендуется для увеличения времени работы устройства от батареи."</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Нет"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Если вы закроете приложению доступ к истории использования, администратор все равно сможет просматривать эти данные в вашем рабочем профиле."</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"Поверх других приложений"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Поверх других приложений"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Показывать поверх других приложений"</string>
@@ -4995,16 +5018,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"О функции \"<xliff:g id="SUBJECT">%1$s</xliff:g>\""</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Вы можете обмениваться текстовыми сообщениями по спутниковой связи, используя отвечающий требованиям аккаунт <xliff:g id="CARRIER_NAME">%1$s</xliff:g>."</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"Ваш аккаунт <xliff:g id="CARRIER_NAME">%1$s</xliff:g>"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"В вашем аккаунте есть возможность обмениваться сообщениями"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"В вашем аккаунте есть возможность обмениваться сообщениями по спутниковой связи"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"В вашем аккаунте нет возможности обмениваться сообщениями по спутниковой связи"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Подробнее"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"Как это работает"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Если нет мобильной сети"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"Ваш телефон автоматически подключится к спутниковой связи. Для оптимального качества соединения найдите место, где хорошо видно небо."</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"После подключения телефона к спутниковой связи"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"Вы можете отправлять текстовые сообщения кому угодно, в том числе экстренным службам. Ваш телефон повторно подключится к мобильной сети, когда она станет доступна."</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> может занять больше времени и доступен только в некоторых регионах. На качество соединения могут влиять погода и внешние препятствия. Звонки по спутниковой связи недоступны (кроме экстренных).\n\nМожет пройти некоторое время, прежде чем изменения в вашем аккаунте появятся в настройках. За дополнительной информацией о функции \"<xliff:g id="CARRIER_NAME">%2$s</xliff:g>\" обратитесь к своему оператору."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> может занять больше времени и доступен только в некоторых регионах. На качество соединения могут влиять погода и внешние препятствия. Звонки по спутниковой связи недоступны (кроме экстренных). Отправка текстовых сообщений экстренным службам может быть разрешена не во всех регионах.\n\nНе исключено, что изменения в вашем аккаунте появятся в настройках не сразу. За дополнительной информацией обратитесь к оператору \"<xliff:g id="CARRIER_NAME">%2$s</xliff:g>\"."</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"<xliff:g id="SUBJECT">%1$s</xliff:g>: дополнительная информация"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Не удается включить функцию \"<xliff:g id="FUNCTION">%1$s</xliff:g>\""</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Чтобы включить функцию \"<xliff:g id="FUNCTION">%1$s</xliff:g>\", сначала отключите спутниковую связь."</string>

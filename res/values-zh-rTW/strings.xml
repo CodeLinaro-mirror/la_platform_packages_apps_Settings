@@ -85,6 +85,12 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"收合為統合控制選項"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"左"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"右"</string>
+    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
+    <skip />
+    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
+    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"將環境靜音"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"取消環境靜音"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"無法更新環境狀態"</string>
@@ -226,6 +232,8 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"語言和區域"</string>
     <string name="language_selection_title" msgid="968179636453982415">"新增語言"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"選擇區域"</string>
+    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
+    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"地區偏好設定"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"搜尋語言"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"搜尋區域"</string>
@@ -233,7 +241,8 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"更多語言設定"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"要將地區變更為<xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>嗎？"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"裝置將繼續使用<xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g>做為系統語言"</string>
-    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"大部分應用程式都會採用你的地區偏好設定"</string>
+    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
+    <skip />
     <string name="regional_preferences_title" msgid="4304567374498629528">"地區偏好設定"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"設定單位和數字偏好設定"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"讓應用程式取得地區偏好設定，為你提供個人化體驗。"</string>
@@ -1309,7 +1318,6 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"高解析度"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"最大解析度"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"使用最大解析度會比較耗電。如果切換解析度，部分應用程式可能會重新啟動。"</string>
-    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"已選取"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"色彩"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"自然"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"增強"</string>
@@ -2107,7 +2115,8 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"學習觸控板手勢"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"觸控板, 滑鼠, 游標, 捲動, 滑動, 按滑鼠右鍵, 點按, 指標"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"按滑鼠右鍵, 輕觸"</string>
-    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"按中間鍵"</string>
+    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
+    <skip />
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"啟動 Google 助理"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"返回主畫面"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"返回"</string>
@@ -2898,6 +2907,14 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"開啟"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"關閉"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"使用自動調節連線"</string>
+    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
+    <skip />
+    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
+    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"行動網路安全性"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"網路類型、加密、通知控制選項"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"這些設定可以保護你的通話、訊息和資料，避免有心人士利用過時或未加密網路，竊取或監視你的資料"</string>
@@ -2926,7 +2943,8 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"要移除所有內容嗎？"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"憑證儲存空間已清除。"</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"無法清除認證儲存空間。"</string>
-    <string name="usage_access_title" msgid="1580006124578134850">"有權查看使用情況的應用程式"</string>
+    <!-- no translation found for usage_access_title (8784394396356369568) -->
+    <skip />
     <string name="ca_certificate" msgid="3076484307693855611">"CA 憑證"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN 和應用程式使用者憑證"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Wi‑Fi 憑證"</string>
@@ -2985,7 +3003,8 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"要允許啟用監護功能嗎？"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"繼續這項動作，你的使用者將由管理員進行管理，該管理員也能儲存相關資料和你的個人資料。\n\n你的管理員可以監控並管理與這個使用者相關聯的設定、存取權、應用程式和資料，包括網路活動和裝置位置資訊。"</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"其他選項已由你的管理員停用"</string>
-    <string name="admin_more_details" msgid="4928985331640193758">"瞭解詳情"</string>
+    <!-- no translation found for admin_more_details (6091028872148388357) -->
+    <skip />
     <string name="notification_log_title" msgid="2812594935014664891">"通知記錄"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"通知記錄"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"過去 %d 小時"</string>
@@ -4220,10 +4239,13 @@
     <string name="default_phone_title" msgid="7616730756650803827">"電話應用程式"</string>
     <string name="system_app" msgid="1863291702508355041">"(系統)"</string>
     <string name="apps_storage" msgid="643866814746927111">"應用程式儲存空間"</string>
-    <string name="usage_access" msgid="5487993885373893282">"用量資料存取權"</string>
-    <string name="permit_usage_access" msgid="179630895262172674">"允許存取使用情形"</string>
+    <!-- no translation found for usage_access (640680494210288246) -->
+    <skip />
+    <!-- no translation found for permit_usage_access (1590518257313260262) -->
+    <skip />
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"螢幕時間"</string>
-    <string name="usage_access_description" msgid="8547716253713890707">"具有使用存取權的應用程式可以追蹤你使用的其他應用程式與頻率，以及你的電信業者、語言設定等詳情。"</string>
+    <!-- no translation found for usage_access_description (2593955296993609047) -->
+    <skip />
     <string name="memory_settings_title" msgid="6582588646363308430">"記憶體"</string>
     <string name="always_running" msgid="9012705720688200252">"一律執行 (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"有時執行 (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4321,7 +4343,8 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"這可能會加快電力耗損速度。系統將不再限制應用程式在背景耗用電力。"</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"建議使用以延長電池續航力"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"無"</string>
-    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"即使關閉此應用程式的使用記錄存取功能，你的管理員仍可存取工作資料夾中應用程式的數據用量"</string>
+    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
+    <skip />
     <string name="draw_overlay" msgid="7902083260500573027">"重疊顯示於其他應用程式上方"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"重疊顯示於其他應用程式上方"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"允許重疊顯示於其他應用程式上方"</string>
@@ -4995,16 +5018,26 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"關於<xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"你可以在符合資格的「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」帳戶中透過衛星收發訊息"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"你的「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」帳戶"</string>
-    <string name="title_have_satellite_plan" msgid="857337944804101443">"你的帳戶支援訊息功能"</string>
+    <string name="title_have_satellite_plan" msgid="2048372355699977947">"你的帳戶支援衛星訊息"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"你的帳戶不支援衛星訊息"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"瞭解詳情"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"運作方式"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"沒有行動網路時"</string>
+    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
+    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"手機會自動連上衛星。為獲得最佳連線品質，請在沒有物體遮住天空的地方使用。"</string>
+    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
+    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"手機連上衛星後"</string>
+    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
+    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"你可以傳送訊息給任何人，包括緊急救援服務。如果有可用的行動網路，手機就會重新連線。"</string>
-    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g>可能需要比較長的時間才會送達，而且這項功能僅支援部分地區。天氣和特定結構可能會影響衛星連線的品質。系統不支援衛星電話，但你仍可撥打緊急電話。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%2$s</xliff:g>」。"</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g>可能需要比較長的時間才會送達，而且這項功能僅支援部分地區。天氣和特定結構可能會影響衛星連線的品質。系統不支援衛星電話，但緊急電話可能仍會接通。在某些地區可能無法使用緊急救援服務傳送訊息。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%2$s</xliff:g>」。"</string>
+    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
+    <skip />
+    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
+    <skip />
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"進一步瞭解<xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"無法開啟<xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"如要開啟<xliff:g id="FUNCTION">%1$s</xliff:g>，請先中斷衛星連線"</string>

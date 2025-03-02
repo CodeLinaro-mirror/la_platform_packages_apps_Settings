@@ -444,17 +444,13 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
         if (isUseDisplaySettingEnabled(mInjector)) {
             addUseDisplayPreferenceForDisplay(context, refresh, display, isEnabled, position);
         }
-        if (!isEnabled) {
-            // Skip all other settings
-            return;
-        }
         final var displayRotation = getDisplayRotation(display.getDisplayId());
-        if (includeV1Helpers) {
+        if (includeV1Helpers && isEnabled) {
             addIllustrationImage(context, refresh, displayRotation);
         }
 
-        addResolutionPreference(context, refresh, display, position);
-        addRotationPreference(context, refresh, display, displayRotation, position);
+        addResolutionPreference(context, refresh, display, position, isEnabled);
+        addRotationPreference(context, refresh, display, displayRotation, position, isEnabled);
         if (isResolutionSettingEnabled(mInjector)) {
             // Do not show the footer about changing resolution affecting apps. This is not in the
             // UX design for v2, and there is no good place to put it, since (a) if it is on the
@@ -466,13 +462,13 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
             // inconsistent with the topology pane, which shows that display.
             // TODO(b/352648432): probably remove footer once the pane and rest of v2 UI is in
             // place.
-            if (includeV1Helpers) {
+            if (includeV1Helpers && isEnabled) {
                 addFooterPreference(
                         context, refresh, EXTERNAL_DISPLAY_CHANGE_RESOLUTION_FOOTER_RESOURCE);
             }
         }
         if (isDisplaySizeSettingEnabled(mInjector)) {
-            addSizePreference(context, refresh, display.getDisplayId(), position);
+            addSizePreference(context, refresh, display.getDisplayId(), position, isEnabled);
         }
     }
 
@@ -562,8 +558,8 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
         }
     }
 
-    private void addRotationPreference(final Context context,
-            PrefRefresh refresh, final Display display, final int displayRotation, int position) {
+    private void addRotationPreference(final Context context, PrefRefresh refresh,
+            final Display display, final int displayRotation, int position, boolean isEnabled) {
         var pref = reuseRotationPreference(context, refresh, position);
         if (mRotationEntries == null || mRotationEntriesValues == null) {
             mRotationEntries = new String[] {
@@ -587,11 +583,11 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
             pref.setValueIndex(rotation);
             return true;
         });
-        pref.setEnabled(isRotationSettingEnabled(mInjector));
+        pref.setEnabled(isEnabled && isRotationSettingEnabled(mInjector));
     }
 
     private void addResolutionPreference(final Context context, PrefRefresh refresh,
-            final Display display, int position) {
+            final Display display, int position, boolean isEnabled) {
         var pref = reuseResolutionPreference(context, refresh, position);
         pref.setSummary(display.getMode().getPhysicalWidth() + " x "
                 + display.getMode().getPhysicalHeight());
@@ -600,11 +596,11 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
             launchResolutionSelector(context, display.getDisplayId());
             return true;
         });
-        pref.setEnabled(isResolutionSettingEnabled(mInjector));
+        pref.setEnabled(isEnabled && isResolutionSettingEnabled(mInjector));
     }
 
     private void addSizePreference(final Context context, PrefRefresh refresh, int displayId,
-            int position) {
+            int position, boolean isEnabled) {
         var pref = reuseSizePreference(context, refresh, displayId, position);
         pref.setSummary(EXTERNAL_DISPLAY_SIZE_SUMMARY_RESOURCE);
         pref.setOnPreferenceClickListener(
@@ -612,6 +608,7 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
                     writePreferenceClickMetric(p);
                     return true;
                 });
+        pref.setEnabled(isEnabled);
     }
 
     private int getDisplayRotation(int displayId) {

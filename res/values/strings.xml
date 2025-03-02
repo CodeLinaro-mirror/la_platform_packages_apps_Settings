@@ -1739,6 +1739,11 @@
     <!-- Summary specifying that this is the current screen lock setting [CHAR LIMIT=45] -->
     <string name="current_screen_lock">Current screen lock</string>
 
+    <!-- Accessibility description of the PIN password view. [CHAR_LIMIT=none] -->
+    <string name="unlock_accessibility_pin_area">PIN area</string>
+    <!-- Accessibility description of the normal password view. [CHAR_LIMIT=none] -->
+    <string name="unlock_accessibility_password">Device password</string>
+
     <!-- Title for preference that guides the user through creating a backup unlock pattern for fingerprint [CHAR LIMIT=45]-->
     <string name="fingerprint_unlock_set_unlock_pattern">Pattern \u2022 Fingerprint</string>
     <!-- Title for preference that guides the user through creating a backup unlock PIN for fingerprint [CHAR LIMIT=45]-->
@@ -3016,9 +3021,6 @@
     <string name="screen_resolution_option_full">Max resolution</string>
     <!-- The footer message for switch screen resolution [CHAR LIMIT=NONE] -->
     <string name="screen_resolution_footer">Max resolution uses more of your battery. Switching your resolution may cause some apps to restart.</string>
-    <!-- Message announced to a11y users when they selected one resolution [CHAR LIMIT=NONE] -->
-    <string name="screen_resolution_selected_a11y">Selected</string>
-
     <!-- Display settings screen, Color mode settings title [CHAR LIMIT=30] -->
     <string name="color_mode_title">Colors</string>
     <!-- Display settings screen, Color mode option for "natural(sRGB) color"  [CHAR LIMIT=45] -->
@@ -5343,6 +5345,16 @@
         {4,number,integer}. Lift finger to stop magnification
         ]]>
     </string>
+    <!-- Instructions on the accessibility preference screen teaching the user how to control magnification with a keyboard. [CHAR LIMIT=none] -->
+    <string name="accessibility_screen_magnification_keyboard_summary">
+        <![CDATA[
+        <b>To zoom with the keyboard:</b><br/>
+        {0,number,integer}. Use the shortcut to start magnification<br/>
+        {1,number,integer}. Hold down <xliff:g id="meta1">%1$s</xliff:g> and <xliff:g id="alt1">%2$s</xliff:g> and press + or - to zoom in or out<br/>
+        {2,number,integer}. Hold down <xliff:g id="meta2">%3$s</xliff:g> and <xliff:g id="alt2">%4$s</xliff:g> and press the arrow keys to move around the screen<br/>
+        {3,number,integer}. Use the shortcut to stop magnification
+        ]]>
+    </string>
     <!-- Instructions on the accessibility preference screen teaching the user how to interact with screen magnification when one finger panning feature is turned off. [CHAR LIMIT=none] -->
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off">
         <![CDATA[
@@ -5693,6 +5705,9 @@
     <!-- Title for the toggle button that turns on/off the autoclick setting of ignoring minor cursor movement. [CHAR_LIMIT=NONE] -->
     <!-- TODO(b/388845718): Update string to translatable once approved by UXW. -->
     <string name="autoclick_ignore_minor_cursor_movement_title" translatable="false">Ignore minor cursor movement</string>
+    <!-- TODO(b/394683600): Update string to translatable once approved by UXW. -->
+    <!-- Title for the switch setting to toggle on/off the revert to left click after action. [CHAR LIMIT=NONE] -->
+    <string name="autoclick_revert_to_left_click_title" translatable="false">Revert to left click after action</string>
     <!-- Title for preference screen for configuring vibrations. [CHAR LIMIT=NONE] -->
     <string name="accessibility_vibration_settings_title">Vibration &amp; haptics</string>
     <!-- Summary for preference screen for configuring vibrations. [CHAR LIMIT=NONE] -->
@@ -14250,4 +14265,6 @@ Data usage charges may apply.</string>
     <string name="supervision_change_pin_preference_title">Change PIN</string>
     <!-- Title for supervision forgot PIN setting entry [CHAR LIMIT=60] -->
     <string name="supervision_add_forgot_pin_preference_title">Forgot PIN</string>
+    <!-- Title for web content filters entry [CHAR LIMIT=60] -->
+    <string name="supervision_web_content_filters_title">Web content filters</string>
 </resources>

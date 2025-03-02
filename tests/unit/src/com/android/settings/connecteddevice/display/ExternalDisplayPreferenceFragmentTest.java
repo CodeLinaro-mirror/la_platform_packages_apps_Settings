@@ -25,6 +25,7 @@ import static com.android.settings.flags.Flags.FLAG_DISPLAY_SIZE_CONNECTED_DISPL
 import static com.android.settings.flags.Flags.FLAG_DISPLAY_TOPOLOGY_PANE_IN_DISPLAY_LIST;
 
 import static com.google.common.truth.Truth.assertThat;
+import static com.google.common.truth.Truth.assertWithMessage;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyInt;
@@ -163,6 +164,34 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
 
     @Test
     @UiThreadTest
+    public void testShowDisplayControlsDisabled() {
+        doReturn(new Display[] {mDisplays[0], mDisplays[2]}).when(mMockedInjector)
+                .getEnabledDisplays();
+        doReturn(true).when(mMockedInjector).isDisplayEnabled(mDisplays[0]);
+        doReturn(false).when(mMockedInjector).isDisplayEnabled(mDisplays[1]);
+        doReturn(true).when(mMockedInjector).isDisplayEnabled(mDisplays[2]);
+        initFragment();
+        mHandler.flush();
+
+        assertDisplayListCount(2);
+        Preference pref;
+        for (int disp = 0; disp < 2; disp++) {
+            pref = mPreferenceScreen.findPreference(
+                    PrefBasics.EXTERNAL_DISPLAY_RESOLUTION.keyForNth(disp));
+            assertWithMessage("resolution " + disp).that(pref.isEnabled()).isEqualTo(disp == 1);
+
+            pref = mPreferenceScreen.findPreference(
+                    PrefBasics.EXTERNAL_DISPLAY_ROTATION.keyForNth(disp));
+            assertWithMessage("rotation " + disp).that(pref.isEnabled()).isEqualTo(disp == 1);
+
+            pref = mPreferenceScreen.findPreference(
+                    PrefBasics.EXTERNAL_DISPLAY_SIZE.keyForNth(disp));
+            assertWithMessage("size " + disp).that(pref.isEnabled()).isEqualTo(disp == 1);
+        }
+    }
+
+    @Test
+    @UiThreadTest
     public void testLaunchDisplaySettingFromList() {
         initFragment();
         doReturn(true).when(mMockedInjector).isDisplayEnabled(any());
@@ -280,13 +309,13 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
         assertThat(mainPref.isEnabled()).isTrue();
         assertThat(mainPref.getOnPreferenceChangeListener()).isNotNull();
         var pref = category.findPreference(PrefBasics.EXTERNAL_DISPLAY_RESOLUTION.keyForNth(0));
-        assertThat(pref).isNull();
+        assertThat(pref.isEnabled()).isFalse();
         pref = category.findPreference(PrefBasics.EXTERNAL_DISPLAY_ROTATION.keyForNth(0));
-        assertThat(pref).isNull();
+        assertThat(pref.isEnabled()).isFalse();
         var footerPref = category.findPreference(PrefBasics.FOOTER.key);
         assertThat(footerPref).isNull();
         var sizePref = category.findPreference(PrefBasics.EXTERNAL_DISPLAY_SIZE.keyForNth(0));
-        assertThat(sizePref).isNull();
+        assertThat(sizePref.isEnabled()).isFalse();
     }
 
     @Test
