@@ -42,7 +42,6 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.Icon;
-import android.graphics.drawable.LayerDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.UserHandle;
@@ -78,7 +77,6 @@ import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.drawer.TileUtils;
 import com.android.settingslib.utils.ThreadUtils;
 import com.android.settingslib.widget.AdaptiveIcon;
-import com.android.settingslib.widget.SettingsThemeHelper;
 
 import com.google.common.collect.Iterables;
 
@@ -94,7 +92,6 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
     private static final String TAG = "DashboardFeatureImpl";
     private static final String DASHBOARD_TILE_PREF_KEY_PREFIX = "dashboard_tile_pref_";
     private static final String META_DATA_KEY_INTENT_ACTION = "com.android.settings.intent.action";
-    private static final String TOP_LEVEL_ACCOUNT_CATEGORY = "top_level_account_category";
 
     protected final Context mContext;
 
@@ -457,19 +454,13 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             preference.setIcon(null);
             return;
         }
-        // Handle homepage icons
+        // Tint homepage icons
         if (TextUtils.equals(tile.getCategory(), CategoryKey.CATEGORY_HOMEPAGE)) {
-            if (Flags.homepageRevamp()) {
-                if (SettingsThemeHelper.isExpressiveTheme(mContext)) {
-                    preference.setIcon(getExpressiveHomepageIcon(tile, iconDrawable, iconPackage));
-                    return;
-                }
-                // Skip tinting and Adaptive Icon transformation for homepage account type raw icons
-                if (TextUtils.equals(tile.getGroupKey(), TOP_LEVEL_ACCOUNT_CATEGORY)
-                        && iconPackage == null) {
-                    preference.setIcon(iconDrawable);
-                    return;
-                }
+            // Skip tinting and Adaptive Icon transformation for homepage account type raw icons
+            if (TextUtils.equals(tile.getGroupKey(), "top_level_account_category")
+                    && iconPackage == null) {
+                preference.setIcon(iconDrawable);
+                return;
             }
             iconDrawable.setTint(Utils.getHomepageIconColor(preference.getContext()));
         }
@@ -480,34 +471,6 @@ public class DashboardFeatureProviderImpl implements DashboardFeatureProvider {
             ((AdaptiveIcon) iconDrawable).setBackgroundColor(mContext, tile);
         }
         preference.setIcon(iconDrawable);
-    }
-
-    private Drawable getExpressiveHomepageIcon(Tile tile, Drawable iconDrawable,
-            @Nullable String iconPackage) {
-        if (TextUtils.equals(tile.getGroupKey(), TOP_LEVEL_ACCOUNT_CATEGORY)
-                && iconPackage == null) {
-            // Normalize size for homepage account type raw icons
-            LayerDrawable drawable = new LayerDrawable(new Drawable[] {iconDrawable});
-            int size = mContext.getResources().getDimensionPixelSize(
-                    R.dimen.dashboard_tile_image_size);
-            drawable.setLayerSize(0, size, size);
-            return drawable;
-        } else if (TextUtils.equals(tile.getPackageName(),
-                mPackageManager.getWellbeingPackageName())) {
-            return getRoundedIcon(iconDrawable,
-                    R.color.homepage_wellbeing_foreground, R.color.homepage_wellbeing_background);
-        }
-        // For future injections, please add the package name and color resources here.
-
-        iconDrawable.setTint(Utils.getHomepageIconColor(mContext));
-        return iconDrawable;
-    }
-
-    private Drawable getRoundedIcon(Drawable iconDrawable, int fgColorId, int bgColorId) {
-        iconDrawable.setTint(mContext.getColor(fgColorId));
-        AdaptiveIcon roundedIcon = new AdaptiveIcon(mContext, iconDrawable);
-        roundedIcon.setBackgroundColor(mContext.getColor(bgColorId));
-        return roundedIcon;
     }
 
     private void launchPendingIntentOrSelectProfile(FragmentActivity activity, Tile tile,

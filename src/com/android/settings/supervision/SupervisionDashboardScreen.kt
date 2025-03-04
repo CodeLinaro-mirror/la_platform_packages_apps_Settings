@@ -57,14 +57,13 @@ class SupervisionDashboardScreen : PreferenceScreenCreator {
     override fun getPreferenceHierarchy(context: Context) =
         preferenceHierarchy(context, this) {
             +SupervisionMainSwitchPreference()
-            +TitlelessPreferenceGroup(SUPERVISION_DYNAMIC_GROUP_1) += {
-                +SupervisionWebContentFiltersScreen.KEY
+            +TitlelessPreferenceGroup("supervision_features_group_1") += {
+                // Empty category for dynamic injection targeting.
             }
             +SupervisionPinManagementScreen.KEY
         }
 
     companion object {
         const val KEY = "top_level_supervision"
-        internal const val SUPERVISION_DYNAMIC_GROUP_1 = "supervision_features_group_1"
     }
 }

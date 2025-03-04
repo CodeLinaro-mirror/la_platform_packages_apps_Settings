@@ -54,7 +54,6 @@ import com.android.settingslib.utils.ThreadUtils;
 import com.google.common.base.Supplier;
 import com.google.common.collect.ImmutableList;
 
-import java.util.Collection;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -316,15 +315,11 @@ public final class Utils {
         CachedBluetoothDeviceManager deviceManager = localBtManager.getCachedDeviceManager();
         List<BluetoothDevice> connectedDevices =
                 assistant == null ? ImmutableList.of() : assistant.getAllConnectedDevices();
-        Collection<CachedBluetoothDevice> bondedDevices =
-                deviceManager == null ? ImmutableList.of() : deviceManager.getCachedDevicesCopy();
         // Block the pairing if there is ongoing audio sharing session and
-        // a) there is already one temp bond sink bonded
+        // a) there is already one temp bond sink connected
         // or b) there are already two sinks joining the audio sharing
         return assistant != null && deviceManager != null
-                && (bondedDevices.stream().anyMatch(
-                        d -> BluetoothUtils.isTemporaryBondDevice(d.getDevice())
-                                && d.getBondState() == BluetoothDevice.BOND_BONDED)
+                && (connectedDevices.stream().anyMatch(BluetoothUtils::isTemporaryBondDevice)
                 || connectedDevices.stream().filter(
                         d -> BluetoothUtils.hasActiveLocalBroadcastSourceForBtDevice(d,
                                 localBtManager))

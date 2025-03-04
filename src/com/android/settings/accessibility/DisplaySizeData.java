@@ -19,8 +19,6 @@ package com.android.settings.accessibility;
 import android.content.Context;
 import android.content.res.Resources;
 
-import androidx.annotation.NonNull;
-
 import com.android.settingslib.display.DisplayDensityUtils;
 
 import java.util.Arrays;
@@ -30,17 +28,13 @@ import java.util.stream.Collectors;
 /**
  * Data class for storing the configurations related to the display size.
  */
-public class DisplaySizeData extends PreviewSizeData<Integer> {
+class DisplaySizeData extends PreviewSizeData<Integer> {
     private final DisplayDensityUtils mDensity;
 
     DisplaySizeData(Context context) {
-        this(context, new DisplayDensityUtils(context));
-    }
-
-    public DisplaySizeData(@NonNull Context context, @NonNull DisplayDensityUtils util) {
         super(context);
 
-        mDensity = util;
+        mDensity = new DisplayDensityUtils(getContext());
         final int initialIndex = mDensity.getCurrentIndex();
         if (initialIndex < 0) {
             // Failed to obtain default density, which means we failed to
@@ -60,7 +54,7 @@ public class DisplaySizeData extends PreviewSizeData<Integer> {
     }
 
     @Override
-    public void commit(int currentProgress) {
+    void commit(int currentProgress) {
         final int densityDpi = getValues().get(currentProgress);
         if (densityDpi == getDefaultValue()) {
             mDensity.clearForcedDisplayDensity();

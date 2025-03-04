@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"Askıya alındı"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"Bilinmiyor"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"Önizleme"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"Önceki önizleme"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"Sonraki önizleme"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR kodu"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"Küçült"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"Büyüt"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Kontrolleri birleştirerek daralt"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Sol"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Sağ"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Çevredeki sesleri kapat"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Çevredeki sesleri aç"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Çevredeki sesler güncellenemedi"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"Ses çıkışı hakkında"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"Sesleri işitme cihazınıza veya telefon hoparlörünüze yönlendirin"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"Benzer"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Zil sesi ve alarmlar"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"Telefon görüşmelerinde ses"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"Medya ve sistem sesleri"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Dil ve bölge"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Dil ekle"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Bölge seçin"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Bölge tercihi"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Dil ara"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Bölge ara"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Diğer dil ayarları"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Bölge <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> olarak değiştirilsin mi?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"Cihazınızda sistem dili olarak <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> kalacak"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"Çoğu uygulama, Bölgesel Tercihlerinizi kullanır"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Bölgesel tercihler"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Birimleri ve sayı tercihlerini ayarlayın"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Deneyiminizin kişiselleştirilebilmesi için bölgesel tercihlerinizi uygulamalarla paylaşın."</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Yüksek çözünürlük"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maksimum çözünürlük"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Maksimum çözünürlük daha fazla pil kullanır. Çözünürlük değiştirildiğinde bazı uygulamalar yeniden başlatılabilir."</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Seçili"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Renkler"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Doğal"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Zenginleştirilmiş"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"Fare tuşlarını kullan"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"İşaretçiyi kontrol etmek için klavyenizi kullanın"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"Ters kaydırma"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"Sayfayı aşağı taşımak için yukarı kaydırın"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"Aşağı kaydırdığınızda içerikler yukarı çıkar"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"Birincil fare düğmesini değiştir"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"Sol fare düğmesini sağ fare düğmesi olarak kullanın"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"İmleç hızlandırması"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Dokunmatik alan hareketlerini öğrenin"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"dokunmatik yüzey, dokunma yüzeyi, fare, imleç, kaydırma, sağ tıklama, tıklama, işaretçi"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"sağ tıklama, dokunma"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Orta tıklama"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Asistan\'ı başlat"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Ana sayfaya git"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Geri dön"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"Geri bildirim"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"Ankete katılarak erişilebilirliği iyileştirmemize yardımcı olun"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"Anket yok"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Geri bildirim gönder"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"İndirilen uygulamalar"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"Deneysel"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"Özellik bayrakları"</string>
@@ -2403,7 +2387,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Yüksek kontrastlı metin"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Metin rengini siyah veya beyaz olarak değiştirin. Arka planla kontrast en üst düzeye çıkar."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Metin kontrastını artırın"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g>, <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g> biçiminin yerini aldı. Bunu <xliff:g id="SETTINGS">%3$s</xliff:g> içinde etkinleştirebilirsiniz."</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>, <xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> ile değiştirildi. Bunu <xliff:g id="SETTINGS">%3$s</xliff:g> içinde etkinleştirebilirsiniz."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Şuraya gidin: <xliff:g id="SETTINGS">%1$s</xliff:g>"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Dış çizgili metin"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Kontrastı artırmak için metnin etrafına siyah veya beyaz bir arka plan ekleyin"</string>
@@ -2908,14 +2892,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Açık"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Kapalı"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Uyarlanabilir bağlantıyı kullanın"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Mobil ağ güvenliği"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Ağ türü, şifreleme, bildirim kontrolleri"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Bu ayarlar; aramalarınızı, mesajlarınızı ve verilerinizi veri hırsızlığı ya da izleme riskine açık hale getirebilecek eski veya şifrelenmemiş ağlara karşı korumanıza yardımcı olur"</string>
@@ -2944,8 +2920,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Tüm içerik kaldırılsın mı?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Kimlik bilgileri deposu silindi."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Kimlik bilgileri deposu silinemedi."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"Erişimi olan uygulamalar"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"CA sertifikası"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN ve uygulama kullanıcı sertifikası"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Kablosuz sertifikası"</string>
@@ -3004,8 +2979,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Gözetime izin verilsin mi?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Devam ettiğinizde, kullanıcınız, kişisel verilerinize ek olarak ilişkili verileri de depolayabilecek olan yöneticiniz tarafından yönetilecek.\n\nYöneticiniz, ağ etkinliği ve cihazınızın konum bilgileri de dahil olmak üzere, bu kullanıcıyla ilişkili ayarları, erişimi, uygulamaları ve verileri izleyebilir ve yönetebilir."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Diğer seçenekler yöneticiniz tarafından devre dışı bırakıldı"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"Daha fazla bilgi"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"Bildirim günlüğü"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"Bildirim geçmişi"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"Son %d saat"</string>
@@ -4240,13 +4214,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Telefon uygulaması"</string>
     <string name="system_app" msgid="1863291702508355041">"(Sistem)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Uygulama depolaması"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"Kullanım erişimi"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"Kullanım erişimine izin ver"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Ekran başında kalma süresi"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"Kullanım erişimi vermeniz halinde uygulama, başka hangi uygulamaları ne sıklıkta kullandığınızı, operatörünüzü, dil ayarlarınızı ve diğer ayrıntıları takip edebilir."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"Bellek"</string>
     <string name="always_running" msgid="9012705720688200252">"Her zaman çalışıyor (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Ara sıra çalışır (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4344,8 +4315,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Pilinizi daha hızlı tüketebilir. Uygulamanın arka planda pil kullanımı artık kısıtlanmayacak."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Daha uzun pil ömrü için önerilir"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Yok"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Bu uygulama için kullanım erişimini kapatmanız, yöneticinizin, iş profilinizdeki uygulamalara ilişkin veri kullanımını izlemesini engellenmez."</string>
     <string name="draw_overlay" msgid="7902083260500573027">"Diğer uyg. üzerinde göster"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Diğer uygulamaların üzerinde göster"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Diğer uygulamalar üzerinde gösterime izin ver"</string>
@@ -4393,7 +4363,8 @@
     <string name="disconnected" msgid="3469373726996129247">"Bağlı değil"</string>
     <string name="keyboard_disconnected" msgid="796053864561894531">"Bağlı değil"</string>
     <string name="apps_summary" msgid="4007416751775414252">"<xliff:g id="COUNT">%1$d</xliff:g> uygulama yüklü"</string>
-    <string name="storage_summary" msgid="7631468664968572688">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> kullanılıyor- <xliff:g id="FREE_SPACE_VALUE">%2$s</xliff:g> <xliff:g id="FREE_SPACE_UNITS">%3$s</xliff:g> boş"</string>
+    <!-- no translation found for storage_summary (7631468664968572688) -->
+    <skip />
     <string name="display_dashboard_summary" msgid="1599453894989339454">"Koyu tema, yazı tipi boyutu, parlaklık"</string>
     <string name="memory_summary" msgid="8221954450951651735">"Toplam <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> belleğin ortalama <xliff:g id="USED_MEMORY">%1$s</xliff:g> kadarı kullanılıyor"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> olarak oturum açıldı"</string>
@@ -4462,7 +4433,8 @@
     <string name="ethernet_data_usage" msgid="4552227880905679761">"Ethernet veri kullanımı"</string>
     <string name="wifi" msgid="2932584495223243842">"Kablosuz"</string>
     <string name="ethernet" msgid="4665162609974492983">"Ethernet"</string>
-    <string name="ethernet_interface_title" msgid="1634881244068292765">"Ethernet <xliff:g id="INTERFACEID">%1$s</xliff:g>"</string>
+    <!-- no translation found for ethernet_interface_title (1634881244068292765) -->
+    <skip />
     <string name="cell_data_template" msgid="6077963976103260821">"<xliff:g id="AMOUNT">^1</xliff:g> mobil veri"</string>
     <string name="wifi_data_template" msgid="935934798340307438">"<xliff:g id="AMOUNT">^1</xliff:g> kablosuz bağlantı verisi"</string>
     <string name="ethernet_data_template" msgid="1429173767445201145">"<xliff:g id="AMOUNT">^1</xliff:g> ethernet verisi"</string>
@@ -5019,26 +4991,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"<xliff:g id="SUBJECT">%1$s</xliff:g> hakkında"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Uygun bir <xliff:g id="CARRIER_NAME">%1$s</xliff:g> hesabınız varsa uydu üzerinden kısa mesaj gönderip alabilirsiniz"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"<xliff:g id="CARRIER_NAME">%1$s</xliff:g> hesabınız"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"Uydu üzerinden mesajlaşma, hesabınıza dahil edilir"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"Hesabınızda uydu üzerinden mesajlaşılabilir"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"Uydu üzerinden mesajlaşma, hesabınıza dahil edilmez"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Daha Fazla Bilgi"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"İşleyiş şekli"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Mobil ağ bağlantınız olmadığında"</string>
-    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
-    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"Telefonunuz otomatik olarak bir uyduya bağlanır. En iyi bağlantıyı kurmak için gökyüzünü net bir şekilde görmeniz gerekir."</string>
-    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
-    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"Telefonunuz bir uyduya bağlandıktan sonra"</string>
-    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
-    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"Acil durum hizmetleri de dahil istediğiniz kişilere mesaj gönderebilirsiniz. Telefonunuz, mevcut olduğunda mobil ağa tekrar bağlanır."</string>
-    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> daha uzun sürebilir ve yalnızca bazı bölgelerde kullanılabilir. Uydu bağlantınız, hava durumundan ve bazı yapılardan etkilenebilir. Uydu üzerinden arama yapılamaz. Ancak, acil durum aramaları bağlanabilir.\n\nHesapta yapılan değişikliklerin, Ayarlar\'da görünmesi biraz zaman alabilir. Ayrıntılar için <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ile iletişime geçin."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> daha uzun sürebilir ve yalnızca bazı bölgelerde kullanılabilir. Uydu bağlantınız, hava durumundan ve bazı yapılardan etkilenebilir. Uydu üzerinden arama yapılamaz. Acil durum aramaları yine de bağlanabilir. Acil durum hizmetlerine kısa mesaj gönderme özelliği her bölgede kullanılamayabilir.\n\nHesaptaki değişikliklerin, Ayarlar\'da görünmesi biraz zaman alabilir. Ayrıntılar için <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ile iletişime geçin."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"<xliff:g id="SUBJECT">%1$s</xliff:g> hakkında daha fazla bilgi"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"<xliff:g id="FUNCTION">%1$s</xliff:g> etkinleştirilemiyor"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"<xliff:g id="FUNCTION">%1$s</xliff:g> işlevini etkinleştirmek için önce uydu bağlantısını sonlandırın"</string>
@@ -5047,9 +5009,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"uydu bağlantısı"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"uydu üzerinden mesajlaşma"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"Hesabınızda uydu üzerinden veri iletilebilir"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"Telefonunuzdaki desteklenen uygulamalar"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"tüm uygulamaları göster"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"Telefonunuzdaki desteklenen uygulamalar"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"Erişim Noktası Adları"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"apn"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"<xliff:g id="CARRIER">%1$s</xliff:g> operatörüne bağlıyken kullanılamaz"</string>
@@ -5217,44 +5182,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"İş politikası bilgileriniz"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"Ayarlar BT yöneticiniz tarafından yönetilir"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"16 KB sayfa boyutuyla başlat"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"Cihazı 16 KB sayfayı destekleyen çekirdekle başlat"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"4 KB modundan 16 KB moduna geçiş yapın"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"16 KB çekirdek çalıştıran sayfadan bağımsız moddasınız ve 4 KB moduna geçiş yapıyorsunuz. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu işlem, cihazı yeniden başlatır. Bu modlarda bazı özellikler devre dışı bırakılacağı için bir takım uygulamalar çalışmayabilir. Cihazı üretim moduna döndürmek için 4 KB moduna geri dönmeniz ve bootloader\'ı kilitlemeniz gerekir. Bu durumda cihaz fabrika ayarlarına sıfırlanır. Cihaz başarılı bir şekilde Android\'de başlatıldıktan sonra Geliştirici seçeneklerinde OEM kilit açma özelliğini devre dışı bırakın."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"16 KB modundan 4 KB moduna geçiş yapın"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"16 KB çekirdek çalıştıran sayfadan bağımsız moddasınız ve 4 KB moduna geçiş yapıyorsunuz. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu işlem, cihazı yeniden başlatır. Bu modlarda bazı özellikler devre dışı bırakılacağı için bazı uygulamalar çalışmayabilir. Cihazı üretim moduna döndürmek için bootloader\'ı kilitlemeniz gerekir. Bu durumda cihaz fabrika ayarlarına sıfırlanır. Cihaz başarılı bir şekilde Android\'de başlatıldıktan sonra Geliştirici seçeneklerinde OEM kilit açma özelliğini devre dışı bırakın."</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"Çekirdek, 16 KB sayfalarla uyumlu çekirdeğe güncellenemedi."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"Değişiklik uygulanıyor"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"Ext4 olarak biçimlendirilsin mi? (16 KB modu için gereklidir)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"16 KB geliştirici seçeneğini kullanmadan önce bu cihazın veri bölümünün ext4\'e dönüştürülmesi gerekir. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. 16 KB seçeneğini etkinleştirdikten sonra bir kez daha yeniden başlatma yapılması gerekir. Bu moddayken tek bir yeniden başlatma işlemiyle 4 KB ve 16 KB modları arasında geçiş yapabilirsiniz. Bu modlarda bazı özellikler devre dışı bırakılacağı için bazı uygulamalar çalışmayabilir. Cihazı üretim moduna döndürmek için 4 KB moduna geri dönmeniz ve bootloader\'ı kilitlemeniz gerekir. Bu durumda cihaz fabrika ayarlarına sıfırlanır. Cihaz başarılı bir şekilde Android\'de başlatıldıktan sonra Geliştirici seçeneklerinde OEM kilit açma özelliğini devre dışı bırakın. Onayınızın ardından cihaz temizlenecek ve dosya sistemi ext4 olarak değiştirilecektir. Bu işlem tamamlandıktan sonra lütfen geri gelerek 16 KB modunu tekrar etkinleştirin."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"Tüm verileri sil"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"Veriler temizlenemedi ve ext4 olarak yeniden biçimlendirilemedi."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"Bootloader Kilidinin Açılması Gerekiyor"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"16 KB geliştirici seçeneğini kullanmadan önce bu cihazın bootloader\'ının kilidinin açılması gerekir. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. 16 KB modu etkinleştirildiğinde tüm kullanıcı verileri ve ayarlar silinir. Bootloader\'ın kilidi açıldıktan sonra 16 KB seçeneğinin etkinleştirilmesi için iki kez yeniden başlatma yapılması gerekir. Bu moddayken tek bir yeniden başlatma işlemiyle 4 KB ve 16 KB modları arasında geçiş yapabilirsiniz. Bu modlarda bazı özellikler devre dışı bırakılacağı için bazı uygulamalar çalışmayabilir. Cihazı üretim moduna döndürmek için 4 KB moduna geri dönmeniz ve cihazda OEM/bootloader kilidini etkinleştirmeniz gerekir. Bu durumda cihaz fabrika ayarlarına sıfırlanır. Lütfen bootloader\'ın kilidini açıp tekrar deneyin. Bu işlemle ilgili talimatları görmek için &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt; adresine gidin."</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"4 KB sayfadan bağımsız modunu kullanıyorsunuz"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"Sayfadan bağımsız moddaki 4 KB modundasınız. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu modlarda bazı özellikler devre dışı bırakılacağı için bazı uygulamalar çalışmayabilir. Üretim moduna tekrar girmek için cihazın bootloader\'ını kilitlemeniz gerekir. Daha fazla bilgi için dokunun."</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"Sayfadan bağımsız moddaki 4 KB modundasınız. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu modlarda bazı özellikler devre dışı bırakılacağı için bazı uygulamalar çalışmayabilir. Üretim moduna tekrar girmek için cihazın bootloader\'ını kilitlemeniz gerekir. Bu durumda cihaz tekrar fabrika ayarlarına sıfırlanır ve üretim ayarlarına geri döner. Cihaz başarılı bir şekilde Android\'de başlatıldıktan sonra Geliştirici seçeneklerinde OEM kilit açma özelliğini devre dışı bırakın. Cihaz Android\'de başlatılamıyorsa veya kararsızsa cihazı &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; adresindeki en güncel fabrika ayarı görüntüleriyle yeniden yükleyin veya &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; adresine gidip \"Cihazı Temizle\", \"Bootloader\'ı Kilitle\" ve \"Tüm bölümleri zorla yükle\"yi seçin."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"16 KB sayfadan bağımsız modunu kullanıyorsunuz"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"Sayfadan bağımsız moddaki 16 KB modundasınız. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu modlarda bazı özellikler devre dışı bırakılacağı için bir takım uygulamalar çalışmayabilir. Üretim moduna tekrar girmek için 4 KB moduna geçtikten sonra cihazın bootloader\'ını kilitlemeniz gerekir. Daha fazla bilgi için dokunun."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"Sayfadan bağımsız moddaki 16 KB modundasınız. Bu modda yazılım bütünlüğü garanti edilemez ve bootloader\'ın kilidi açıkken telefonda saklanan veriler risk altında olabilir. Bu modlarda bazı özellikler devre dışı bırakılacağı için bir takım uygulamalar çalışmayabilir. Üretim moduna tekrar girmek için 4 KB moduna geçtikten sonra cihazın bootloader\'ını kilitlemeniz gerekir. Bu durumda cihaz tekrar fabrika ayarlarına sıfırlanır ve üretim ayarlarına geri döner. Cihaz başarılı bir şekilde Android\'de başlatıldıktan sonra Geliştirici seçeneklerinde OEM kilit açma özelliğini devre dışı bırakın. Cihaz Android\'de başlatılamıyorsa veya kararsızsa cihazı &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; adresindeki en güncel fabrika ayarı görüntüleriyle yeniden yükleyin veya &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; adresine gidip \"Cihazı Temizle\", \"Bootloader\'ı Kilitle\" ve \"Tüm bölümleri zorla yükle\"yi seçin."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"16 KB Sayfadan Bağımsız Mod"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Devamı"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Uygulamayı sayfa boyutu uyumluluk moduyla çalıştır"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"Uygulama, 16 KB etkinleştirilmiş cihazda sayfa boyutu uyumluluk modunda çalıştırılacak."</string>
@@ -5663,7 +5611,8 @@
     <string name="audio_sharing_block_pairing_dialog_title" msgid="1756723860075818856">"Ses Paylaşımı özelliğini kapatın"</string>
     <string name="audio_sharing_block_pairing_dialog_content" msgid="6352030314206654722">"Yeni bir cihazı eşlemek için önce Ses Paylaşımı özelliğini kapatın."</string>
     <string name="audio_sharing_turn_off_button_label" msgid="1934956352475393641">"Kapat"</string>
-    <string name="share_audio_notification_title" msgid="5201976754820387782">"Sesi <xliff:g id="DEVICE_NAME">%1$s</xliff:g> ile paylaş"</string>
+    <!-- no translation found for share_audio_notification_title (5201976754820387782) -->
+    <skip />
     <string name="audio_streams_category_title" msgid="4878022761829895463">"LE ses akışına bağlanın"</string>
     <string name="audio_streams_pref_title" msgid="6320485086288646209">"Yakındaki ses akışları"</string>
     <string name="audio_streams_title" msgid="6617990880383079165">"Ses akışları"</string>
@@ -5693,9 +5642,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"Akış duraklatıldı"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"Dinlemeyi bırak"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"Uyumlu kulaklık bağlayın"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"TalkBack\'i geçici olarak kapatın"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"TalkBack, ses yayınlarını dinlerken kullanılamaz. Dinlemeye başlamak için TalkBack\'i kapatın."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"Kapat"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"Cihaz bağla"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"Ses yayını ayrıntıları"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"Ses yayını QR kodu"</string>

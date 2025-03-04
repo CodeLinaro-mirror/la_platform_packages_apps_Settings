@@ -134,15 +134,14 @@ public class ResolutionPreferenceFragmentTest extends ExternalDisplayTestBase {
     @Test
     @UiThreadTest
     public void testModeChange() {
-        DisplayDevice display = mDisplays.get(0);
-        mDisplayIdArg = display.getId();
+        mDisplayIdArg = 1;
         initFragment();
         mHandler.flush();
         PreferenceCategory topPref = mPreferenceScreen.findPreference(TOP_OPTIONS_KEY);
         assertThat(topPref).isNotNull();
         var modePref = (SelectorWithWidgetPreference) topPref.getPreference(1);
         modePref.onClick();
-        var mode = display.getSupportedModes().get(1);
+        var mode = mDisplays[mDisplayIdArg].getSupportedModes()[1];
         verify(mMockedInjector).setUserPreferredDisplayMode(mDisplayIdArg, mode);
     }
 

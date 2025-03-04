@@ -111,7 +111,7 @@ public class FactoryResetPreferenceController extends BasePreferenceController {
                     return prepareFactoryResetWizardRequest;
                 }
             }
-            return null;
+            return prepareFactoryResetWizardRequest;
         }
         Log.i(TAG, "Unable to resolve a Factory Reset Handler Activity");
         return null;

@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"Imetanguliwa"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"Haijulikani"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"Kagua kwanza"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"Toleo la kukagua lililotangulia"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"Toleo la kukagua linalofuata"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"Msimbo wa QR"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"Punguza"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"Kuza"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Kunja iwe kidhibiti cha pamoja"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Kushoto"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Kulia"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Zima sauti ya mazingira"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Rejesha sauti ya mazingira"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Imeshindwa kusasisha mazingira"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"Kuhusu vifaa vya kutoa sauti"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"Elekeza sauti kwenye kifaa chako cha kusikia au spika ya simu"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"Zinazofanana"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Milio ya simu na kengele"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"Sauti wakati wa simu"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"Sauti za maudhui na mfumo"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Lugha na eneo"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Weka lugha"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Chagua eneo"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Mapendeleo ya eneo"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Tafuta lugha"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Tafuta maeneo"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Mipangilio zaidi ya lugha"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Ungependa kubadilisha eneo liwe <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"Kifaa chako kitatumia <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> kama lugha ya mfumo"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"Programu nyingi zitatumia mapendeleo yako ya kimaeneo"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Mapendeleo ya kimaeneo"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Weka mapendeleo ya vipimo na namba"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Ruhusu programu zifahamu mapendeleo yako ya kimaeneo ili ziweze kuwekea hali yako ya utumiaji mapendeleo."</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Ubora wa juu"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Ubora wa juu zaidi"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Ubora wa juu zaidi wa skrini hutumia zaidi betri yako. Ukibadilisha ubora wa skrini yako, huenda baadhi ya programu zikazimwa kisha kuwashwa."</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Umechaguliwa"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Rangi"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Asili"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Imeongezwa Rangi"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"Tumia vitufe vya kipanya"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"Tumia kibodi yako kudhibiti kielekezi"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"Kubadilisha mwelekeo wa kipanya"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"Sogeza juu ili usogeze ukurasa chini"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"Maudhui husogezwa juu unaposogeza chini"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"Kubadilisha kitufe msingi cha kipanya"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"Tumia kitufe cha kushoto cha kipanya kutekeleza majukumu ya kitufe cha kulia"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"Kuongezeka kasi ya kiteuzi"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Jifunze ishara za padi ya kugusa"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"padi ya kusogeza, padi ya kusogeza, kipanya, kiteuzi, nenda, telezesha kidole, bofya kulia, bofya, kishale"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"bofya kulia, gusa"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Kubofya katikati"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Fungua programu ya Mratibu"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Nenda kwenye ukurasa wa mwanzo"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Rudi nyuma"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"Maoni"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"Tusaidie kuboresha kwa kukamilisha utafiti"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"Hakuna utafiti unaopatikana"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Tuma maoni"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"Programu ulizopakua"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"Ya majaribio"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"Alama za vipengele"</string>
@@ -2402,8 +2386,8 @@
     <string name="accessibility_button_disabled_button_mode_summary" msgid="1978174613270619492">"Haipatikani katika hali ya kitufe cha sehemu ya viungo muhimu."</string>
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Maandishi yenye utofautishaji bora"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Badilisha rangi ya maandishi kuwa nyeusi au nyeupe. Ongeza utofautishaji ukitumia mandharinyuma."</string>
-    <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Boresha ung’aavu wa maandishi"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> kumechukua nafasi ya <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Unaweza kuiwasha kwenye <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
+    <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Boresha ung\'aavu wa maandishi"</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> imechukua nafasi ya <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Unaweza kuiwasha kwenye <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Nenda kwenye <xliff:g id="SETTINGS">%1$s</xliff:g>"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Kuangazia maandishi"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Weka mandharinyuma meusi au meupe kwenye maandishi ili uongeze utofautishaji"</string>
@@ -2907,14 +2891,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Imewashwa"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Imezimwa"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Tumia muunganisho unaojirekebisha"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Usalama wa mtandao wa simu"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Aina ya mtandao, usimbaji fiche, vidhibiti vya arifa"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Mipangilio hii inasaidia kulinda simu, ujumbe na data yako kutokana na mitandao iliyopitwa na wakati au ambayo haijasimbwa kwa njia fiche inayoweza kusababisha wizi au kufuatiliwa kwa data yako"</string>
@@ -2943,8 +2919,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Ungependa kuondoa maudhui yote?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Hifadhi ya stakabadhi imefutwa"</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Hifadhi ya stakabadhi haikuweza kufutwa."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"Zenye idhini ya kufikia maelezo"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"Cheti cha CA"</string>
     <string name="user_certificate" msgid="6897024598058566466">"Cheti cha mtumiaji wa programu na VPN"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Cheti cha Wi-Fi"</string>
@@ -3003,8 +2978,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Ungependa kuruhusu usimamizi?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Ukiendelea, mtumiaji wa programu yako atasimamiwa na msimamizi wako, ambaye anaweza pia kuhifadhi data husika, pamoja na data yako ya binafsi.\n\nMsimamizi wako ana uwezo wa kufuatilia na kudhibiti mipangilio, kufikia programu na data inayohusiana na mtumiaji huyu, ikijumuisha shughuli za mtandao na maelezo ya mahali kilipo kifaa chako."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Baadhi ya chaguo zimezimwa na msimamizi wako"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"Pata maelezo zaidi"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"Kumbukumbu ya arifa"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"Historia ya arifa"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"Saa %d zilizopita"</string>
@@ -4239,13 +4213,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Programu ya simu"</string>
     <string name="system_app" msgid="1863291702508355041">"(Mfumo)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Hifadhi ya programu"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"Kufikia matumizi"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"Idhinisha ufikiaji wa matumizi"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Muda wa kutumia kifaa"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"Ufikiaji wa matumizi huruhusu programu kufuatilia programu zingine unazotumia na mara ngapi unazitumia, pamoja na mtoa huduma, mipangilio ya lugha, na maelezo yako mengine."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"Hifadhi ya kumbukumbu"</string>
     <string name="always_running" msgid="9012705720688200252">"Inatumika wakati wote (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Inayotumika wakati mwingine (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4343,8 +4314,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Huenda ikamaliza chaji ya betri yako haraka zaidi. Programu haitazuiwa tena kutumia betri chinichini."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Imependekezwa kwa muda bora wa matumizi ya betri"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Hamna"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Kuzima idhini ya kufikia matumizi ya programu hii hakutamzuia msimamizi wako kufuatilia matumizi ya data ya programu zilizo katika wasifu wako wa kazini."</string>
     <string name="draw_overlay" msgid="7902083260500573027">"Onyesha juu ya programu zingine"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Kuonyeshwa juu ya programu zingine"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Programu ionekane juu ya zingine"</string>
@@ -4392,7 +4362,8 @@
     <string name="disconnected" msgid="3469373726996129247">"Haujaunganishwa"</string>
     <string name="keyboard_disconnected" msgid="796053864561894531">"Haijaunganishwa"</string>
     <string name="apps_summary" msgid="4007416751775414252">"Programu <xliff:g id="COUNT">%1$d</xliff:g> zimesakinishwa"</string>
-    <string name="storage_summary" msgid="7631468664968572688">"Umetumia <xliff:g id="PERCENTAGE">%1$s</xliff:g> - zimesalia <xliff:g id="FREE_SPACE_UNITS">%3$s</xliff:g> <xliff:g id="FREE_SPACE_VALUE">%2$s</xliff:g>"</string>
+    <!-- no translation found for storage_summary (7631468664968572688) -->
+    <skip />
     <string name="display_dashboard_summary" msgid="1599453894989339454">"Mandhari meusi, ukubwa wa fonti, ung\'aavu"</string>
     <string name="memory_summary" msgid="8221954450951651735">"Takriban <xliff:g id="USED_MEMORY">%1$s</xliff:g> kati ya <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> za hifadhi zimetumika"</string>
     <string name="users_summary" msgid="8473589474976307510">"Umeingia katika akaunti kama <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
@@ -4461,7 +4432,8 @@
     <string name="ethernet_data_usage" msgid="4552227880905679761">"Matumizi ya data ya ethaneti"</string>
     <string name="wifi" msgid="2932584495223243842">"Wi-Fi"</string>
     <string name="ethernet" msgid="4665162609974492983">"Ethaneti"</string>
-    <string name="ethernet_interface_title" msgid="1634881244068292765">"Ethaneti <xliff:g id="INTERFACEID">%1$s</xliff:g>"</string>
+    <!-- no translation found for ethernet_interface_title (1634881244068292765) -->
+    <skip />
     <string name="cell_data_template" msgid="6077963976103260821">"Data ya mtandao wa simu <xliff:g id="AMOUNT">^1</xliff:g>"</string>
     <string name="wifi_data_template" msgid="935934798340307438">"Data ya Wi-Fi <xliff:g id="AMOUNT">^1</xliff:g>"</string>
     <string name="ethernet_data_template" msgid="1429173767445201145">"Data ya ethaneti <xliff:g id="AMOUNT">^1</xliff:g>"</string>
@@ -5018,26 +4990,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"Kuhusu <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Unaweza kutuma na kupokea ujumbe wa maandishi kupitia setilaiti ukitumia akaunti ya <xliff:g id="CARRIER_NAME">%1$s</xliff:g> inayotimiza masharti"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"Akaunti yako ya <xliff:g id="CARRIER_NAME">%1$s</xliff:g>"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"Huduma ya kutuma ujumbe kupitia setilaiti imejumuishwa kwenye akaunti yako"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"Huduma ya kutuma ujumbe imejumuishwa kwenye akaunti yako"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"Huduma ya kutuma ujumbe kupitia setilaiti haijajumuishwa kwenye akaunti yako"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Pata Maelezo Zaidi"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"Utaratibu wake"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Ukiwa huna mtandao wa simu"</string>
-    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
-    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"Simu yako itaunganisha kiotomatiki kwenye setilaiti. Kwa muunganisho bora, hakikisha anga inaonekana vizuri."</string>
-    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
-    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"Baada ya simu yako kuunganisha kwenye setilaiti"</string>
-    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
-    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"Unaweza kumtumia yeyote ujumbe, ikiwa ni pamoja na huduma za dharura. Simu yako itaunganisha tena kwenye mtandao wa simu ukipatikana."</string>
-    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"Huduma ya <xliff:g id="SUBJECT">%1$s</xliff:g> inaweza kuchukua muda mrefu zaidi na inapatikana tu katika baadhi ya maeneo. Hali ya hewa na majengo fulani yanaweza kuathiri muunganisho wako wa setilaiti. Huduma ya kupiga simu kupitia setilaiti haipatikani. Simu za dharura bado zinaweza kuunganishwa.\n\nInaweza kuchukua muda kabla ya mabadiliko uliyofanya kwenye akaunti kuonekana katika Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%2$s</xliff:g> upate maelezo."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"Huduma ya <xliff:g id="SUBJECT">%1$s</xliff:g> inaweza kuchukua muda mrefu zaidi na inapatikana tu katika baadhi ya maeneo. Hali ya hewa na majengo fulani yanaweza kuathiri muunganisho wako wa setilaiti. Huduma ya kupiga simu kupitia setilaiti haipatikani. Bado simu za dharura zinaweza kuunganishwa. Huenda huduma ya utumaji ujumbe kupitia huduma za dharura isipatikane katika maeneo yote.\n\nItachukua muda kiasi mabadiliko ya akaunti kuonekana kwenye Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ili upate maelezo."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Maelezo zaidi kuhusu <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Imeshindwa kuwasha <xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Ili uwashe <xliff:g id="FUNCTION">%1$s</xliff:g>, zima kwanza muunganisho wa setilaiti"</string>
@@ -5046,9 +5008,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"muunganisho wa setilaiti"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"kutuma ujumbe kupitia setilaiti"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"Huduma ya kutuma data imejumuishwa kwenye akaunti yako"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"Programu zinazotumika kwenye simu yako"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"kuangalia programu zote"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"Programu zinazotumika kwenye simu yako"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"Majina ya Milango ya Mtandao"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"apn"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"Haipatikani inapounganishwa kwenye <xliff:g id="CARRIER">%1$s</xliff:g>"</string>
@@ -5216,44 +5181,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"Maelezo yako ya sera ya kazini"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"Mipangilio inayodhibitiwa na msimamizi wako wa TEHAMA"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"Washa ukitumia ukurasa wa KB 16"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"Washa kifaa ukitumia kiini cha ukurasa wa KB 16"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"Badilisha kutoka hali ya KB 4 utumie hali ya KB 16"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"Uko katika hali isiyotegemea ukurasa inayotumia kiini cha KB 4 na unabadilisha ili utumie hali ya KB 16. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Hatua hii itawasha tena kifaa. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili urudishe kifaa kwenye hali ya toleo la umma, utahitaji kurudi kwenye hali ya KB 4 kisha ufunge programu ya kuwasha mfumo wa uendeshaji, hatua itakayorejesha mipangilio ambayo kifaa kilitoka nayo kiwandani. Baada ya kifaa kuwashwa katika Android, zima mipangilio ya kufungua OEM katika Chaguo za wasanidi programu."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"Badilisha kutoka hali ya KB 16 utumie hali ya KB 4"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"Uko kwenye hali isiyotegemea ukurasa inayotumia kiini cha KB 16 na unabadilisha ili utumie hali ya KB 4. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Hatua hii itawasha tena kifaa. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili urejeshe kifaa kwenye hali ya toleo la umma, utahitaji kufunga programu ya kuwasha mfumo wa uendeshaji, hatua itakayorejesha mipangilio ambayo kifaa kilitoka nayo kiwandani. Baada ya kifaa kuwashwa katika Android, zima mipangilio ya kufungua OEM katika Chaguo za wasanidi programu."</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"Imeshindwa kusasisha kiini kiwe kinachooana na kurasa za KB 16."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"Kutekeleza mabadiliko"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"Ungependa kubadilisha muundo wa kifaa uwe ext4? (inahitajika katika hali ya KB 16)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"Sehemu ya data ya kifaa hiki inahitaji kugeuzwa kuwa ext4 kabla ya kutumia chaguo la wasanidi programu la KB 16. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Hatua ya kuwasha chaguo la KB 16 itahitaji kifaa kiwashwe tena baada ya hatua hii. Ukiwa katika hali hii, unaweza kubadilisha kati ya hali za KB 4 na KB 16 kwa kuwasha tena kifaa. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili urudishe kifaa kwenye hali ya toleo la umma, utahitaji kurudi kwenye hali ya KB 4 kisha ufunge programu ya kuwasha mfumo wa uendeshaji, hatua itakayorejesha mipangilio ambayo kifaa kilitoka nayo kiwandani. Baada ya kifaa kuwashwa katika Android, zima mipangilio ya kufungua OEM katika Chaguo za wasanidi programu. Data na mipangilio yote ya kifaa itafutwa na mfumo wa faili utabadilishwa kuwa ext4 baada ya uthibitishaji. Baada ya hili kukamilika, tafadhali rudi ili uwashe tena hali ya KB 16."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"Futa data yote"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"Imeshindwa kubadilisha muundo na kufuta sehemu ya data kuwa ext4."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"Unahitaji Mbinu ya Kufungua Programu ya Kuwasha Mfumo wa Uendeshaji"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"Kifaa hiki kinahitaji programu ya kuwasha mfumo wa uendeshaji ifunguliwe kabla ya kutumia chaguo la wasanidi programu la KB 16. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Mipangilio na data yote ya mtumiaji itafutwa hali ya KB 16 ikiwashwa. Baada ya programu ya kuwasha mfumo wa uendeshaji kufunguliwa, hatua ya kuwasha chaguo la KB 16 itahitaji kifaa kuwashwa tena mara mbili. Ukiwa katika hali hii, unaweza kubadilisha kati ya hali za KB 4 na KB 16 kwa kuwasha tena kifaa. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili urejeshe kifaa kwenye hali ya toleo la umma, utahitaji kurudi kwenye hali ya KB 4 kisha ufunge programu ya kuwasha mfumo wa uendeshaji au urejeshe mipangilio ya kampuni halisi iliyotengeneza kifaa (OEM), (hatua itakayorejesha mipangilio ambayo kifaa kilitoka nayo kiwandani). Tafadhali fungua programu ya kuwasha mfumo wa uendeshaji kisha ujaribu tena. Unaweza kuona maagizo kuhusu jinsi ya kufanya hivyo katika &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt;"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"Kutumia hali isiyotegemea ukurasa ya KB 4"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"Unatumia hali ya KB 4 kwenye hali isiyotegemea ukurasa. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili uingie tena katika hali ya toleo la umma, lazima ufunge programu ya kuwasha mfumo wa uendeshaji kwenye kifaa. Gusa ili uendelee kusoma."</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"Unatumia hali ya KB 4 kwenye hali isiyotegemea ukurasa. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili uingie tena katika hali ya toleo la umma, lazima ufunge programu ya kuwasha mfumo wa uendeshaji kwenye kifaa. Hatua hii itarejesha tena mipangilio ambayo kifaa kilitoka nayo kiwandani na kuirejesha katika mipangilio ya toleo la umma. Baada ya kifaa kuwashwa katika Android, zima mipangilio ya kufungua OEM katika Chaguo za wasanidi programu. Iwapo kifaa kitashindwa kuwaka katika Android au si thabiti, weka upya data ya kifaa ukitumia faili mpya kabisa za kiwandani kutoka &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; or use &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; kisha uchague \'Futa Data Yote ya Kifaa\', \'Funga Programu ya Kuwasha Mfumo wa Uendeshaji\' na \'Lazimisha Kuweka kwenye sehemu zote\'."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"Kutumia hali ya KB 16 isiyotegemea ukurasa"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"Unatumia hali ya KB 16 kwenye hali isiyotegemea ukubwa wa ukurasa. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili uingie tena katika hali ya toleo la umma, ni lazima urudi katika hali ya KB 4 kisha ufunge programu ya kuwasha mfumo wa uendeshaji kwenye kifaa. Gusa ili uendelee kusoma."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"Unatumia hali ya KB 16 kwenye hali isiyotegemea ukubwa wa ukurasa. Hatuwezi kukuhakikishia uadilifu wa programu katika hali hii na huenda data yoyote iliyohifadhiwa kwenye simu wakati programu ya kuwasha mfumo wa uendeshaji imefunguliwa ikawa katika hatari. Baadhi ya vipengele vitazimwa katika hali hizi, kwa hivyo huenda baadhi ya programu zisifanye kazi. Ili uingie tena katika hali ya toleo la umma, ni lazima urudi katika hali ya KB 4 kisha ufunge programu ya kuwasha mfumo wa uendeshaji kwenye kifaa. Hatua hii itarejesha tena mipangilio ambayo kifaa kilitoka nayo kiwandani na kuirejesha katika mipangilio ya toleo la umma. Baada ya kifaa kuwashwa katika Android, zima mipangilio ya kufungua OEM katika Chaguo za wasanidi programu. Iwapo kifaa kitashindwa kuwaka katika Android au si thabiti, weka upya data ya kifaa ukitumia picha mpya kabisa za kiwandani kutoka &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; au utumie &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; kisha uchague \'Futa Kabisa Data Yote Kwenye Kifaa\', \'Funga Programu ya Kuwasha Mfumo wa Uendeshaji\' na \'Lazimisha Kuweka kwenye sehemu zote\'."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"Hali ya KB 16 Isiyotegemea Ukurasa"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Endelea kusoma"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Tekeleza programu katika hali ya uoanifu wa ukubwa wa ukurasa"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"Programu itatekelezwa katika hali ya uoanifu wa ukubwa wa ukurasa kwenye kifaa cha KB 16 inapowashwa."</string>
@@ -5662,7 +5610,8 @@
     <string name="audio_sharing_block_pairing_dialog_title" msgid="1756723860075818856">"Zima kipengele cha Kusikiliza Pamoja"</string>
     <string name="audio_sharing_block_pairing_dialog_content" msgid="6352030314206654722">"Ili uunganishe kifaa kipya, zima kwanza kipengele cha Kusikiliza Pamoja."</string>
     <string name="audio_sharing_turn_off_button_label" msgid="1934956352475393641">"Zima"</string>
-    <string name="share_audio_notification_title" msgid="5201976754820387782">"Ruhusu sauti ifikiwe na <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
+    <!-- no translation found for share_audio_notification_title (5201976754820387782) -->
+    <skip />
     <string name="audio_streams_category_title" msgid="4878022761829895463">"Unganisha kwenye mtiririko wa LE Audio"</string>
     <string name="audio_streams_pref_title" msgid="6320485086288646209">"Mitiririko ya maudhui ya sauti iliyo karibu nawe"</string>
     <string name="audio_streams_title" msgid="6617990880383079165">"Mitiririko ya maudhui ya sauti"</string>
@@ -5692,9 +5641,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"Imesitisha mtiririko"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"Acha kusikiliza"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"Unganisha vipokea sauti vya kichwani vinavyooana"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"Zima Talkback kwa muda"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"Huwezi kutumia Talkback ukiwa unasikiliza mitiririko ya maudhui ya sauti. Zima TalkBack ili uanze kusikiliza."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"Zima"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"Unganisha kifaa"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"Maelezo ya mtiririko wa maudhui ya sauti"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"Msimbo wa QR wa mtiririko wa maudhui ya sauti"</string>

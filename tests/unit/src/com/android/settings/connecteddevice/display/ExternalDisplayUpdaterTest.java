@@ -24,6 +24,7 @@ import static org.mockito.Mockito.doReturn;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.RemoteException;
+import android.view.Display;
 
 import androidx.annotation.Nullable;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
@@ -36,8 +37,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
-
-import java.util.List;
 
 /** Unit tests for {@link ExternalDisplayUpdater}.  */
 @RunWith(AndroidJUnit4.class)
@@ -64,7 +63,6 @@ public class ExternalDisplayUpdaterTest extends ExternalDisplayTestBase {
             return null;
         }).when(mMockedCallback).onDeviceAdded(any());
         mUpdater.initPreference(mContext, mMockedInjector);
-        mUpdater.refreshPreference();
         mUpdater.registerCallback();
         mHandler.flush();
         assertThat(mPreferenceAdded).isNotNull();
@@ -87,13 +85,13 @@ public class ExternalDisplayUpdaterTest extends ExternalDisplayTestBase {
             return null;
         }).when(mMockedCallback).onDeviceRemoved(any());
         mUpdater.initPreference(mContext, mMockedInjector);
-        mUpdater.refreshPreference();
         mUpdater.registerCallback();
         mHandler.flush();
         assertThat(mPreferenceAdded).isNotNull();
         assertThat(mPreferenceRemoved).isNull();
         // Remove display
-        doReturn(List.of()).when(mMockedInjector).getConnectedDisplays();
+        doReturn(new Display[0]).when(mMockedInjector).getAllDisplays();
+        doReturn(new Display[0]).when(mMockedInjector).getEnabledDisplays();
         mListener.onDisplayRemoved(1);
         mHandler.flush();
         assertThat(mPreferenceRemoved).isEqualTo(mPreferenceAdded);

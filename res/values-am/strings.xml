@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"ታግዷል"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"ያልታወቀ"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"ቅድመ-ዕይታ"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"ቀዳሚ ቅድመ ዕይታ"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"ቀጣይ ቅድመ ዕይታ"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR ኮድ"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"አነስ አድርግ"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"ተለቅ አድርግ"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"ወደ የተዋሃደ ቁጥጥር ሰብስብ"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"ግራ"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"ቀኝ"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"በዙሪያ ያሉትን ድምፀ-ከል አድርግ"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"በዙሪያ ያሉትን ድምፅ-ከል አንሳ"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"በዙሪያ ያሉትን ማዘመን አልተቻለም"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"ስለኦዲዮ ውፅዓት"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"ድምጾችን ወደ የመስሚያ መሣሪያዎ ወይም ወደ ስልክዎ ድምፅ ማውጫ ያዙሩ"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"ተዛማጅ"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"የጥሪ ቅላጼ እና ማንቂያዎች"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"ኦዲዮ በጥሪዎች ወቅት"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"የሚዲያ እና የስርዓት ድምጾች"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"ቋንቋ እና ክልል"</string>
     <string name="language_selection_title" msgid="968179636453982415">"ቋንቋ ያክሉ"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"ክልል ይምረጡ"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"የክልል ምርጫ"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"ቋንቋዎችን ይፈልጉ"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"ክልሎችን ይፈልጉ"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"ተጨማሪ የቋንቋ ቅንብሮች"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"ክልል ወደ <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ይለወጥ ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"መሣሪያዎ <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> እንደ የሥርዓት ቁንቋ ያቆያል"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"አብዛኛዎቹ መተግበሪያዎች ክልላዊ ምርጫዎችዎን ይጠቀማሉ"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"ክልላዊ ምርጫዎች"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"አሃዶች እና የቁጥር ምርጫዎችን ያቀናብሩ"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"መተግበሪያዎች ተሞክሮዎን ግላዊነት ማላበስ ይችሉ ዘንድ የእርስዎን ክልላዊ ምርጫዎች ያሳውቋቸው።"</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"ከፍተኛ ጥራት"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ከፍተኛው ጥራት"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ከፍተኛው ጥራት የባትሪዎን ተጨማሪ ይጠቀማል። ጥራትዎን መቀየር አንዳንድ መተግበሪያዎች እንደገና እንዲጀምሩ ሊያስደርግ ይችላል።"</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"ተመርጧል"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"ቀለማት"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"ተፈጥሯዊ"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"ተጨምሯል"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"የመዳፊት ቁልፎችን ይጠቀሙ"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"ነጥቦቹን ለመቆጣጠር የቁልፍ ሰሌዳዎን ይጠቀሙ"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"የኋላ ማሸብለል"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"ገፁን ወደ ታች ለማንቀሳቀስ ወደ ላይ ይሸብልሉ"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"ወደ ታሽ ሲያሸበልሉ ይዘት ወደ ላይ ይንቀሳቀሳል"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"የዋና መዳፊት አዘራርን ይቀያይሩ"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"የግራ የመዳፊት አዝራሩን እንደ የእርስዎ ቀኝ ይጠቀሙ"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"ጠቋሚ ማፋጠን"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"የመዳሰሻ ሰሌዳ ምልክቶችን ይወቁ"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"የመከታተያ ፓድ፣ የትራክ ፓድ፣ መዳፊት፣ ጠቋሚ፣ ሸብልል፣ ማንሸራተት፣ የቀኝ ጠቅታ፣ ጠቅ ያድርጉ፣ ጠቋሚ"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"የቀኝ ጠቅታ፣ መታ ያድርጉ"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"የመካከል ጠቅታ"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"የማስጀመር ረዳት"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ወደ መነሻ ሂድ"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"ወደኋላ ተመለስ"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"ግብረመልስ"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"የዳሰሳ ጥናት በመውሰድ ለማሻሻል ያግዙ"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"ምንም የዳሰሳ ጥናቶች አይገኙም"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ግብረመልስ ላክ"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"እንዲወረዱ የተደረጉ መተግበሪያዎች"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"የሙከራ"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"የባህሪ ጥቆማዎች"</string>
@@ -2907,14 +2891,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"አብራ"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"አጥፋ"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Adaptive Connectivityን ይጠቀሙ"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"የተንቀሳቃሽ ስልክ አውታረ መረብ ደኅንነት"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"የአውታረ መረብ ዓይነት፣ ምስጠራ፣ የማሳወቂያ መቆጣጠሪያዎች"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"እነዚህ ቅንብሮች የእርስዎን ጥሪዎች፣ መልዕክቶች እና ውሂብ እርስዎን ለውሂብ ስርቆት ወይም ክትትል ሊያጋልጡ ከሚችሉ ጊዜ ያለፈባቸው ወይም ካልተመሠጠሩ አውታረ መረቦች ለመጠበቅ ያግዛሉ።"</string>
@@ -2943,8 +2919,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"ሁሉንም ይዘቶች አስወግድ?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"የመረጃው ማከማቻ ጠፍቷል"</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"የማስረጃ ማከማቻ መጥፋት አልተቻለም።"</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"የአጠቃቀም መዳረሻ ያላቸው መተግበሪያዎች"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"CA የእውቅና ማረጋገጫ"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN እና መተግበሪያ የተጠቃሚ የእውቅና ማረጋገጫ"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Wi‑Fi የእውቅና ማረጋገጫ"</string>
@@ -3003,8 +2978,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"ክትትል ይፈቀድ?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"በመቀጠልዎ የእርስዎ ተጠቃሚ ከግል ውሂብዎ በተጨማሪ ተጓዳኝ ውሂብ ማከማቸት በሚችል አስተዳዳሪ ሊተዳደር ይችላል።\n\nየእርስዎ አስተዳዳሪ የአውታረ መረብ እንቅስቃሴን እና የመሣሪያዎ የአካባቢ መረጃንም ጨምሮ ቅንብሮችን፣ መዳረሻን፣ መተግበሪያዎችን እና ከዚህ ተጠቃሚ ጋር የተጎዳኘ ውሂብ የመከታተል እና የማቀናበር ችሎታ አለው።"</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"ሌሎች አማራጮች በእርስዎ አስተዳዳሪ ተሰናክለዋል"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"የበለጠ ለመረዳት"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"የማሳወቂያ ምዝግብ ማስታወሻ"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"የማሳወቂያ ታሪክ"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"ያለፉት %d ሰዓታት"</string>
@@ -4239,13 +4213,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"የስልክ መተግበሪያ"</string>
     <string name="system_app" msgid="1863291702508355041">"(ሥርዓት)"</string>
     <string name="apps_storage" msgid="643866814746927111">"የመተግበሪያዎች ማከማቻ"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"የአጠቃቀም መዳረሻ"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"የአጠቃቀም መዳረሻ ፍቀድ"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"የማያ ገፅ ጊዜ"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"የአጠቃቀም መዳረሻ አንድ መተግበሪያ የሚጠቀሟቸውን ሌሎች መተግበሪያዎች እና ምን ያህል ጊዜ እንደሚጠቀሙባቸው፣ እንዲሁም የአገልግሎት አቅራቢዎን፣ የቋንቋ ቅንብሮችዎን እና ሌሎች ዝርዝሮችዎን እንዲከታተል ያስችለዋል።"</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"ማህደረ ትውስታ"</string>
     <string name="always_running" msgid="9012705720688200252">"ሁልጊዜ (<xliff:g id="PERCENTAGE">%s</xliff:g>)ን በማስኬድ ላይ"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"አልፎ አልፎ (<xliff:g id="PERCENTAGE">%s</xliff:g>)ን በማስኬድ ላይ"</string>
@@ -4343,8 +4314,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"ባትሪዎን በበለጠ ፍጥነት ሊጨርሰው ይችላል። መተግበሪያ ከእንግዲህ በዳራ ባትሪ ከመጠቀም ከእንግዲህ አይገደብም።"</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"ለባትሪ እድሜ የሚመከር"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"ምንም"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"ለዚህ መተግሪያ የአጠቃቀም መዳረሻን ማጥፋት አሰተዳዳሪዎን በስራ መገለጫዎ ውስጥ የመተግበሪዎች ውሂብ አጠቃቀምን ከመከታተል አያግደውም።"</string>
     <string name="draw_overlay" msgid="7902083260500573027">"በሌሎች መተግበሪያዎች ላይ አሳይ"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"በሌሎች መተግበሪያዎች ላይ አሳይ"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"በሌሎች መተግበሪያዎች ላይ ማሳየትን ፍቀድ"</string>
@@ -4392,7 +4362,8 @@
     <string name="disconnected" msgid="3469373726996129247">"አልተያያዘም"</string>
     <string name="keyboard_disconnected" msgid="796053864561894531">"አልተገናኘም"</string>
     <string name="apps_summary" msgid="4007416751775414252">"<xliff:g id="COUNT">%1$d</xliff:g> መተግበሪያዎች ተጭነዋል"</string>
-    <string name="storage_summary" msgid="7631468664968572688">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ጥቅም ላይ ውሏል - <xliff:g id="FREE_SPACE_VALUE">%2$s</xliff:g> <xliff:g id="FREE_SPACE_UNITS">%3$s</xliff:g> ነፃ"</string>
+    <!-- no translation found for storage_summary (7631468664968572688) -->
+    <skip />
     <string name="display_dashboard_summary" msgid="1599453894989339454">"ጠቆር ያለ ገጽታ፣ የቅርጸ-ቁምፊ መጠን፣ ብሩህነት"</string>
     <string name="memory_summary" msgid="8221954450951651735">"በአማካይ <xliff:g id="USED_MEMORY">%1$s</xliff:g> ከ<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> ማህደረ ትውስጥ ሥራ ላይ ውሏል"</string>
     <string name="users_summary" msgid="8473589474976307510">"እንደ <xliff:g id="USER_NAME">%1$s</xliff:g> ሆነው ገብተዋል።"</string>
@@ -4461,7 +4432,8 @@
     <string name="ethernet_data_usage" msgid="4552227880905679761">"የኤተርኔት ውሂብ አጠቃቀም"</string>
     <string name="wifi" msgid="2932584495223243842">"Wi-Fi"</string>
     <string name="ethernet" msgid="4665162609974492983">"ኤተርኔት"</string>
-    <string name="ethernet_interface_title" msgid="1634881244068292765">"ኢተርኔት <xliff:g id="INTERFACEID">%1$s</xliff:g>"</string>
+    <!-- no translation found for ethernet_interface_title (1634881244068292765) -->
+    <skip />
     <string name="cell_data_template" msgid="6077963976103260821">"<xliff:g id="AMOUNT">^1</xliff:g> የተንቀስቃሽ ስልክ ውሂብ"</string>
     <string name="wifi_data_template" msgid="935934798340307438">"<xliff:g id="AMOUNT">^1</xliff:g> የWi-Fi ውሂብ"</string>
     <string name="ethernet_data_template" msgid="1429173767445201145">"<xliff:g id="AMOUNT">^1</xliff:g> የኤተርኔት ውሂብ"</string>
@@ -5018,26 +4990,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"ስለ <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"ብቁ በሆነ <xliff:g id="CARRIER_NAME">%1$s</xliff:g> መለያ በሳተላይት ኤስኤምኤስዎችን መላክ እና መቀበል ይችላሉ"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"የእርስዎ የ<xliff:g id="CARRIER_NAME">%1$s</xliff:g> መለያ"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"በሳተላይት መልዕክት መላላክ ከመለያዎ ጋር ተካትቷል"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"መልዕክት መላላክ ከመለያዎ ጋር ተካትቷል"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"በሳተላይት መልዕክት መላላክ ከመለያዎ ጋር አልተካተተም"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"የበለጠ ለመረዳት"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"እንዴት እንደሚሠራ"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"የተንቀሳቃሽ ስልክ አውታረ መረብ ሳይኖርዎት ሲቀር"</string>
-    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
-    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"ስልክዎ ከሳተላይት ጋር በራስ-ሰር ይገናኛል። ለምርጥ ግንኙነት፣ የሰማይ ጥርት ያለ ዕይታ ይኑርዎት።"</string>
-    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
-    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"ስልክዎ ከሳተላይት ጋር ከተገናኘ በኋላ"</string>
-    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
-    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"ድንገተኛ አደጋ አገልግሎቶችን ጨምሮ ለማንም ሰው መላክ ይችላሉ። የተንቀሳቃሽ ስልክ አውታረ መረብ ሲገኝ ከስልክዎ ጋር እንደገና ይገናኛል።"</string>
-    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> ረዘም ያለ ጊዜ ሊወስድ ይችላል እና በአንዳንድ አካባቢዎች ብቻ ሊገኝ ይችላል። የአየር ሁኔታ እና አንዳንድ አወቃቀሮች በሳተላይት ግንኙነትዎ ላይ ተጽዕኖ ሊያሳድሩ ይችላሉ። በሳተላይት መደወል አይገኝም። የአደጋ ጥሪዎች አሁንም ሊገናኙ ይችላሉ።\n\nየመለያ ለውጦች በቅንብሮች ውስጥ እስከሚታዩ ድረስ የተወሰነ ጊዜ ሊወስድ ይችላል። ለዝርዝሮች <xliff:g id="CARRIER_NAME">%2$s</xliff:g>ን ያነጋግሩ።"</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> ረዘም ያለ ጊዜ ሊወስድ ይችላል እና በአንዳንድ አካባቢዎች ብቻ ሊገኝ ይችላል። የአየር ሁኔታ እና አንዳንድ መዋቅሮች በሳተላይት ግንኙነትዎ ላይ ተጽዕኖ ሊያሳድሩ ይችላሉ። በሳተላይት መደወል አይገኝም። የአደጋ ጥሪዎች አሁንም ሊገናኙ ይችላሉ። ድንገተኛ አደጋ አገልግሎቶች ጋር የጽሑፍ መልዕክት መላክ በሁሉም አካባቢዎች ላይገኝ ይችላል።\n\n የመለያ ለውጦች በቅንብሮች ውስጥ እስኪታዩ ድረስ የተወሰነ ጊዜ ሊወስድ ይችላል። ለዝርዝሮች <xliff:g id="CARRIER_NAME">%2$s</xliff:g>ን ያነጋግሩ።"</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"ስለ <xliff:g id="SUBJECT">%1$s</xliff:g> ተጨማሪ"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"<xliff:g id="FUNCTION">%1$s</xliff:g> ማብራት አልተቻለም"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"<xliff:g id="FUNCTION">%1$s</xliff:g> ለማብራት መጀመሪያ የሳተላይት ግንኙነቱን ያጠናቅቁ"</string>
@@ -5046,9 +5008,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"የሳተላይት ግንኙነት"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"የሳተላይት መልዕክት"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"ውሂብ መጠቀም ከመለያዎ ጋር ተካትቷል"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"በስልክዎ ላይ ያሉ የሚደገፉ መተግበሪያዎች"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"ሁሉንም መተግበሪያዎች ይመልከቱ"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"በስልክዎ ላይ ያሉ የሚደገፉ መተግበሪያዎች"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"የመዳረሻ ነጥብ ስም"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"ኤፒኤን"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"ከ<xliff:g id="CARRIER">%1$s</xliff:g> ጋር ሲገናኝ የማይገኝ"</string>
@@ -5216,44 +5181,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"የእርስዎ የስራ መመሪያ መረጃ"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"በአይቲ አስተዳዳሪዎ የሚቀናበሩ ቅንብሮች"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"ጂፒዩ"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"በ16 ኪባ የገጽ መጠን አስነሳ"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"በ16 ኪባ የገጽ መጠን የሚደገፍ ከርነል በመጠቀም መሣሪያን አስነሳ"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"ከ4 ኪባ ሁነታ ወደ 16 ኪባ ሁነታ ይቀይሩ"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"በሁሉም ገጽ ተስማሚ ሁነታ ላይ 4 ኪባ አውራ ከዋኝ እያሄደ ነው እና ወደ የ16 ኪባ ሁነታ እየቀየሩ ነው። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። ይህ መሣሪያውን ዳግም ያስነሳዋል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎች ላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። መሣሪያውን ወደ የምርት ሁነታ መመለስ እንዲችሉ ወደ የ4 ኪባ ሁነታ መመለስ እና bootloaderን መቆለፍ ይኖርብዎታል፣ ይህም መሣሪያውን ወደ ፋብሪካ ዳግም ያስጀምረዋል። መሣሪያው በተሳካ ሁኔታ ወደ Android ከተነሳ በኋላ በገንቢ አማራጮች ውስጥ የOEM መክፈቻን ያሰናክሉ።"</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"ከ16 ኪባ ሁነታ ወደ 4 ኪባ ሁነታ ይቀይሩ"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"በሁሉም ገጽ ተስማሚ ሁነታ ላይ 16 ኪባ ከርነል እያሄዱ ነው፣ እና ወደ የ4 ኪባ ሁነታ እየቀየሩ ነው። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። ይህ መሣሪያውን ዳግም ያስነሳዋል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎችላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። መሣሪያውን ወደ የምርት ሁነታ ለመመለስ bootloaderን መቆለፍ ይኖርብዎታል፣ ይህም መሣሪያውን ወደ ፋብሪካ ዳግም ያስጀምረዋል። መሣሪያው በተሳካ ሁኔታ ወደ Android ከተነሳ በኋላ በገንቢ አማራጮች ውስጥ የOEM መክፈቻን ያሰናክሉ።"</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"ከርነልን ወደ 16ኪባ ገጾች ተኳዃኝ ከርነል ማዘመን አልተሳካም።"</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"ለውጦችን በመተግበር ላይ"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"መሣሪያው የex4 ቅርጸት ይሰራለት? (ለ16 ኪባ ሁነታ ያስፈልጋል)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"የ16 ኪባ ገንቢ አማራጭን ከመጠቀምዎ በፊት የዚህ መሣሪያ የውሂብ ክፍልፍል ወደ ext4 መቀየር አለበት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። የ16 ኪባ አማራጩን ማግበር ከዚህ በኋላ አንድ ተጨማሪ ዳግም ማስነሳት ያስፈልገዋል። አንዴ በዚህ ሁነታ ላይ ከሆኑ፣ በአንድ ዳግም ማስነሳት ከ4 ኪባ ወደ 16 ኪባ ሁነታ መካከል መቀያየር ይችላሉ። አንዳንድ ባህሪያት በእነዚህ ሁነታዎችላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። መሣሪያውን ወደ የምርት ሁነታ መመለስ እንዲችሉ ወደ የ4 ኪባ ሁነታ መመለስ እና bootloaderን መቆለፍ ይኖርብዎታል፣ ይህም መሣሪያውን ወደ ፋብሪካ ዳግም ያስጀምረዋል። መሣሪያው በተሳካ ሁኔታ ወደ Android ከተነሳ በኋላ በገንቢ አማራጮች ውስጥ የOEM መክፈቻን ያሰናክሉ። መሣሪያው ይጠረጋል እና የፋይል ሥርዓቱ ከተረጋገጠ በኋላ ወደ ext4 ይቀየራል። ይህ ከተጠናቀቀ በኋላ እባክዎ 16 ኪባን እንደገና ለማንቃት ይመለሱ።"</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"ሁሉንም ውሂብ ደምስስ"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"ቅርጸት መሥራት እና የውሂብ ክፍልፋይን ወደ ext4 መጥረግ አልተሳካም።"</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"በBootloader መክፈት ያስፈልጋል"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"ይህ መሣሪያ የ16 ኪባ ገንቢ አማራጩን ከመጠቀሙ በፊት bootloaderን መክፈት አለበት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። የ16 ኪባ ሁነታ ሲነቃ ሁሉም የተጠቃሚ ውሂብ እና ቅንብሮች ይጠረጋሉ። አንዴ bootloader ከተከፈተ በኋላ የ16 ኪባ አማራጩን ለማንቃት ሁለት ዳግም ማስነሳት ያስፈልገዋል። አንዴ በዚህ ሁነታ ላይ ከሆኑ፣ በአንድ ዳግም ማስነሳት ከ4 ኪባ ወደ 16 ኪባ ሁነታ መካከል መቀያየር ይችላሉ። አንዳንድ ባህሪያት በእነዚህ ሁነታዎችላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። መሣሪያውን ወደ የምርት ሁነታ መመለስ እንዲችሉ ወደ የ4 ኪባ ሁነታ መመለስ እና OEM/bootloader መቆለፍ ይኖርብዎታል፣ ይህም መሣሪያውን ወደ (ፋብሪካ ዳግም ያስጀምረዋል)። እባክዎ bootloaderን ይክፈቱ እና እንደገና ይሞክሩ። &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt; ላይ ይህንን እንዴት እንደሚያደርጉ መመሪያዎችን ማየት ይችላሉ"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"የ4 ኪባ ለሁሉም ገጽ ተስማሚ ሁነታን በመጠቀም ላይ"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"የሁሉም ገጽ ተስማሚ ሁነታ 4 ኪባ ሁነታ ውስጥ ነዎት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎችላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። ወደ የምርት ሁነታ እንደገና ለመግባት የመሣሪያውን bootloader መቆለፍ አለብዎት። የበለጠ ለማንበብ መታ ያድርጉ።"</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"የሁሉም ገጽ ተስማሚ ሁነታ 4 ኪባ ሁነታ ውስጥ ነዎት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም መረጃ ለአደጋ ሊጋለጥ ይችላል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎችላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። ወደ የምርት ሁነታ እንደገና ለመግባት የመሣሪያውን bootloader መቆለፍ አለብዎት። ይህ መሣሪያውን ወደ የፋብሪካ ዳግም ያስጀምረዋል እና የምርት ቅንብሮችን ወደነበሩበት ይመልሳል። መሣሪያው በተሳካ ሁኔታ ወደ Android ከተነሳ በኋላ በገንቢ አማራጮች ውስጥ የOEM መክፈቻን ያሰናክሉ። መሣሪያው ወደ Android መነሳት ካልቻለ ወይም ያልተረጋጋ ከሆነ መሣሪያውን &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/ምስሎች&lt;/a&gt; በመጡ የቅርብ ጊዜዎቹ የፋብሪካ ምስሎች ዳግም ፍላሽ ያድርጉት ወይም &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ይጠቀሙ እና «መሣሪያን ጥረግ»፣ «Bootloaderን ቆልፍ» እና «የሁሉንም ክፍልፋዮች ፍላሽ አስገድድ» የሚለውን ይምረጡ።"</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"የ16 ኪባ ለሁሉም ገጽ ተስማሚ ሁነታን በመጠቀም ላይ"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"የገጽ-አግኖስቲክ ሁነታ የ16 ኪባ ሁነታ ላይ ነዎት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም ውሂብ ለአደጋ ሊጋለጥ ይችላል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎች ላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። ወደ የምርት ሁነታ እንደገና ለመግባት ወደ የ4ኪባ ሁነታ መመለስ እና ከዚያ የመሣሪያውን bootloader መቆለፍ አለብዎት። የበለጠ ለማንበብ መታ ያድርጉ።"</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"የገጽ-አግኖስቲክ ሁነታ የ16 ኪባ ሁነታ ላይ ነዎት። የሶፍትዌር ታማኝነት በዚህ ሁነታ ሊረጋገጥ አይችልም፣ እና bootloader ክፍት ሆኖ ሳለ በስልኩ ላይ የተከማቸ ማንኛውም ውሂብ ለአደጋ ሊጋለጥ ይችላል። አንዳንድ ባህሪያት በእነዚህ ሁነታዎች ላይ ይሰናከላሉ፣ ስለዚህ አንዳንድ መተግበሪያዎች ላይሰሩ ይችላሉ። ወደ የምርት ሁነታ እንደገና ለመግባት ወደ የ4ኪባ ሁነታ መመለስ እና ከዚያ የመሣሪያውን bootloader መቆለፍ አለብዎት። ይህ መሣሪያውን ወደ የፋብሪካ ዳግም ያስጀምረዋል እና የምርት ቅንብሮችን ወደነበሩበት ይመልሳል። መሣሪያው በተሳካ ሁኔታ ወደ Android ከተነሳ በኋላ በገንቢ አማራጮች ውስጥ የOEM መክፈቻን ያሰናክሉ። መሣሪያው ወደ Android መነሳት ካልቻለ ወይም ያልተረጋጋ ከሆነ መሣሪያውን ከ&lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; በመጡ የቅርብ ጊዜዎቹ የፋብሪካ ምስሎች ዳግም ፍላሽ ያድርጉት ወይም &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ይጠቀሙ እና «መሣሪያን ጥረግ»፣ «Bootloaderን ቆልፍ» እና «የሁሉንም ክፍልፋዮች ፍላሽ አስገድድ» የሚለውን ይምረጡ።"</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"የ16 ኪባ ለሁሉም ገጽ ተስማሚ ሁነታ"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"ተጨማሪ ያንብቡ"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"መተግበሪያን በገፅ መጠን ተኳኋኝ ሁነታ ያሂዱ"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"ሲቀያየር መተግበሪያ በገፅ መጠን ተኳዃኝነት ሁነታ ውስጥ በ16 ኪባ መሣሪያ ላይ ይሄዳል።"</string>
@@ -5662,7 +5610,8 @@
     <string name="audio_sharing_block_pairing_dialog_title" msgid="1756723860075818856">"የድምፅ ማጋራትን ያጥፉ"</string>
     <string name="audio_sharing_block_pairing_dialog_content" msgid="6352030314206654722">"አዲስ መሣሪያ ለማጣመር መጀመሪያ የድምፅ ማጋራት ያጥፉ።"</string>
     <string name="audio_sharing_turn_off_button_label" msgid="1934956352475393641">"አጥፋ"</string>
-    <string name="share_audio_notification_title" msgid="5201976754820387782">"ኦዲዮ ለ<xliff:g id="DEVICE_NAME">%1$s</xliff:g> ይጋራ"</string>
+    <!-- no translation found for share_audio_notification_title (5201976754820387782) -->
+    <skip />
     <string name="audio_streams_category_title" msgid="4878022761829895463">"ከLE የኦዲዮ ዥረት ጋር ያገናኙ"</string>
     <string name="audio_streams_pref_title" msgid="6320485086288646209">"በአቅራቢያ ያሉ ኦዲዮ ዥረቶች"</string>
     <string name="audio_streams_title" msgid="6617990880383079165">"ኦዲዮ ዥረቶች"</string>
@@ -5692,9 +5641,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"ዥረት ባለበት ቆሟል"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"ማዳመጥ አቁም"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"ተኳዃኝ የራስ ላይ ማዳመጫዎችን ያገናኙ"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"TalkBackን በጊዜያዊነት ያጥፉ"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"የኦዲዮ ዥረቶችን በሚያዳምጡበት ጊዜ Talkback ጥቅም ላይ መዋል አይችልም። ማዳመጥ ለመጀመር TalkBackን ያብሩ።"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"አጥፋ"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"መሣሪያ ያገናኙ"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"የኦዲዮ ዥረት ዝርዝሮች"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"የኦዲዮ ዥረት QR ኮድ"</string>

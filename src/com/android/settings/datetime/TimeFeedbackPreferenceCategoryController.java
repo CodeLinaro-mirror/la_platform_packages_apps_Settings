@@ -20,7 +20,6 @@ import android.content.Context;
 import androidx.annotation.NonNull;
 
 import com.android.settings.core.BasePreferenceController;
-import com.android.settings.flags.Flags;
 import com.android.settingslib.core.AbstractPreferenceController;
 
 import java.util.ArrayList;
@@ -49,7 +48,7 @@ public class TimeFeedbackPreferenceCategoryController extends BasePreferenceCont
     @Override
     public int getAvailabilityStatus() {
         // Firstly, hide the category if it is not enabled by flags.
-        if (!Flags.datetimeFeedback()) {
+        if (!isTimeFeedbackFeatureEnabled()) {
             return UNSUPPORTED_ON_DEVICE;
         }
 
@@ -60,5 +59,9 @@ public class TimeFeedbackPreferenceCategoryController extends BasePreferenceCont
             }
         }
         return UNSUPPORTED_ON_DEVICE;
+    }
+
+    protected boolean isTimeFeedbackFeatureEnabled() {
+        return DateTimeLaunchUtils.isFeedbackFeatureSupported();
     }
 }

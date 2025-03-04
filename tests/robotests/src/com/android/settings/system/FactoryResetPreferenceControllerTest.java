@@ -22,7 +22,6 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.verifyNoMoreInteractions;
 import static org.mockito.Mockito.when;
 
 import android.Manifest;
@@ -157,22 +156,5 @@ public class FactoryResetPreferenceControllerTest {
         assertThat(intentArgumentCaptor.getValue()).isNotNull();
         assertThat(intentArgumentCaptor.getValue().getAction())
                 .isEqualTo(FactoryResetPreferenceController.ACTION_PREPARE_FACTORY_RESET);
-    }
-
-    @Test
-    @RequiresFlagsEnabled(com.android.settings.factory_reset.Flags.FLAG_ENABLE_FACTORY_RESET_WIZARD)
-    public void handlePreference_factoryResetWizardEnabled_noExistingFrwApp()
-            throws PackageManager.NameNotFoundException {
-        PackageInfo info = new PackageInfo();
-        info.requestedPermissions =
-                new String[] {Manifest.permission.PREPARE_FACTORY_RESET};
-        info.requestedPermissionsFlags = new int[] {0};
-        when(mPackageManager.getPackageInfo(anyString(), anyInt()))
-                .thenReturn(info);
-
-        assertThat(mController.handlePreferenceTreeClick(mPreference)).isTrue();
-        verify(mPackageManager).getPackageInfo(eq(FACTORY_RESET_APP_PACKAGE),
-                eq(PackageManager.GET_PERMISSIONS));
-        verifyNoMoreInteractions(mFactoryResetLauncher);
     }
 }

@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"ຖືກລະງັບແລ້ວ"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"ບໍ່ຮູ້ຈັກ"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"ສະແດງຕົວຢ່າງ"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"ໜ້າຕົວຢ່າງກ່ອນໜ້າ"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"ໜ້າຕົວຢ່າງຕໍ່ໄປ"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"ລະຫັດ QR"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"ເຮັດໃຫ້ນ້ອຍລົງ"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"ເຮັດໃຫ້ໃຫຍ່ຂຶ້ນ"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"ຫຍໍ້ລົງເພື່ອການຄວບຄຸມແບບຮວມ"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"ຊ້າຍ"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"ຂວາ"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"ປິດສຽງອ້ອມຂ້າງ"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"ເຊົາປິດສຽງອ້ອມຂ້າງ"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"ບໍ່ສາມາດອັບເດດສະພາບອ້ອມຂ້າງໄດ້"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"ກ່ຽວກັບເອົ້າພຸດສຽງ"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"ກຳນົດເສັ້ນທາງສຽງໄປຫາອຸປະກອນຊ່ວຍຟັງ ຫຼື ລຳໂພງໂທລະສັບຂອງທ່ານ"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"ກ່ຽວຂ້ອງກັນ"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"ສຽງຣິງໂທນ ແລະ ການປຸກ"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"ສຽງໃນລະຫວ່າງການໂທ"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"ສຽງມີເດຍ ແລະ ລະບົບ"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"ພາສາ ແລະ ພາກພື້ນ"</string>
     <string name="language_selection_title" msgid="968179636453982415">"ເພີ່ມພາສາ"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"ເລືອກພາກພື້ນ"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"ການຕັ້ງຄ່າພາກພື້ນ"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"ຊອກຫາພາສາ"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"ຊອກຫາພາກພື້ນ"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"ການຕັ້ງຄ່າພາສາເພີ່ມເຕີມ"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"ປ່ຽນພາກພື້ນເປັນ <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ບໍ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"ອຸປະກອນຂອງທ່ານຈະເກັບພາສາ <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> ໄວ້ເປັນພາສາຂອງລະບົບ"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"ແອັບສ່ວນໃຫຍ່ຈະໃຊ້ການຕັ້ງຄ່າຕາມພາກພື້ນຂອງທ່ານ"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"ການຕັ້ງຄ່າຕາມພາກພື້ນ"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"ກຳນົດການຕັ້ງຄ່າຫົວໜ່ວຍ ແລະ ຕົວເລກ"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"ບອກໃຫ້ແອັບຮູ້ການຕັ້ງຄ່າຕາມພາກພື້ນຂອງທ່ານເພື່ອໃຫ້ແອັບສາມາດປັບແຕ່ງປະສົບການຂອງທ່ານໃຫ້ເປັນແບບສ່ວນຕົວໄດ້."</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"ຄວາມລະອຽດສູງ"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ຄວາມລະອຽດສູງສຸດ"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ຄວາມລະອຽດສູງສຸດຈະໃຊ້ແບັດເຕີຣີຂອງທ່ານຫຼາຍຂຶ້ນ. ການປ່ຽນຄວາມລະອຽດຂອງທ່ານອາດເຮັດໃຫ້ບາງແອັບຣີສະຕາດ."</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"ເລືອກແລ້ວ"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"ສີ"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"ທຳ​ມະ​ຊາດ"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"ສີເຂັ້ມຂຶ້ນ"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"ໃຊ້ແປ້ນເມົ້າ"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"ໃຊ້ແປ້ນພິມຂອງທ່ານເພື່ອຄວບຄຸມຕົວຊີ້"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"ການເລື່ອນຍ້ອນກັບ"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"ເລື່ອນຂຶ້ນເພື່ອຍ້າຍໜ້າລົງ"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"ເນື້ອຫາຈະເລື່ອນຂຶ້ນເມື່ອທ່ານເລື່ອນລົງ"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"ສະຫຼັບປຸ່ມເມົ້າຫຼັກ"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"ໃຊ້ປຸ່ມເມົ້າເບື້ອງຊ້າຍເປັນປຸ່ມເບື້ອງຂວາຂອງທ່ານ"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"ການເລັ່ງຄວາມໄວຂອງເຄີເຊີ"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"ສຶກສາທ່າທາງຂອງແຜ່ນສຳຜັດ"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"ແທຣັກແຜດ, ແທຣັກ ແຜດ, ເມົ້າ, ເຄີເຊີ, ເລື່ອນ, ປັດ, ຄລິກຂວາ, ຄລິກ, ຕົວຊີ້"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"ຄລິກຂວາ, ແຕະ"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"ຄລິກເຄິ່ງກາງ"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"ເປີດໃຊ້ຜູ້ຊ່ວຍ"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ໄປຫາໜ້າຫຼັກ"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"ກັບຄືນ"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"ຄຳຕິຊົມ"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"ຊ່ວຍປັບປຸງໂດຍການຕື່ມແບບສຳຫຼວດ"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"ບໍ່ມີແບບສຳຫຼວດ"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ສົ່ງຄຳຕິຊົມ"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"ແອັບທີ່ດາວໂຫຼດແລ້ວ"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"ຍັງຢູ່ໃນການທົດລອງ"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"ທຸງຄຸນສົມບັດ"</string>
@@ -2907,14 +2891,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"ເປີດ"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"ປິດ"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"ອັບເດດການເຊື່ອມຕໍ່ແບບປັບອັດຕະໂນມັດ"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"ຄວາມປອດໄພເຄືອຂ່າຍມືຖື"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"ປະເພດເຄືອຂ່າຍ, ການເຂົ້າລະຫັດ, ການຄວບຄຸມການແຈ້ງເຕືອນ"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"ການຕັ້ງຄ່າເຫຼົ່ານີ້ຊ່ວຍປົກປ້ອງການໂທ, ຂໍ້ຄວາມ ແລະ ຂໍ້ມູນຂອງທ່ານຈາກເຄືອຂ່າຍທີ່ຫຼ້າສະໄໝ ຫຼື ທີ່ບໍ່ໄດ້ຖືກເຂົ້າລະຫັດ ເຊິ່ງອາດເຮັດໃຫ້ທ່ານຖືກລັກຂໍ້ມູນ ຫຼື ຖືກສອດແນມ"</string>
@@ -2943,8 +2919,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"ລຶບເນື້ອຫາທັງໝົດອອກບໍ?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"ພື້ນທີ່ຈັດເກັບຂໍ້ມູນຮັບຮອງຖືກລຶບແລ້ວ."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"ບ່ອນຈັດເກັບຂໍ້ມູນຮັບຮອງບໍ່ສາມາດຖືກລຶບໄດ້."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"ແອັບທີ່ມີສິດອະນຸຍາດເຂົ້າເຖິງ"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"ໃບຮັບຮອງ​ CA"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN ແລະ ໃບຮັບຮອງຜູ້ໃຊ້ແອັບ"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"ໃບຮັບຮອງ Wi‑Fi"</string>
@@ -3003,8 +2978,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"ອະນຸຍາດການເບິ່ງແຍງກວດກາບໍ?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"ໂດຍການດຳເນີນການຕໍ່, ຜູ້ໃຊ້ຂອງທ່ານຈະຖືກຈັດການໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ ເຊິ່ງອາດສາມາດຈັດເກັບຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັນ, ນອກເໜືອໄປຈາກຂໍ້ມູນສ່ວນຕົວຂອງທ່ານ.\n\nຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານມີຄວາມສາມາດໃນການຕິດຕາມ ແລະ ຈັດການການຕັ້ງຄ່າ, ການເຂົ້າເຖິງ, ແອັບ ແລະ ຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບຜູ້ໃຊ້ນີ້, ຮວມເຖິງການເຄື່ອນໄຫວເຄືອຂ່າຍ ແລະ ຂໍ້ມູນສະຖານທີ່ຂອງອຸປະກອນທ່ານ."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"ຕົວເລືອກອື່ນໆຖືກປິດໄວ້ໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"ສຶກສາເພີ່ມເຕີມ"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"​ບັນ​ທຶກ​ການ​ແຈ້ງ​ເຕືອນ"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"ປະຫວັດການແຈ້ງເຕືອນ"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"%d ຊົ່ວໂມງທີ່ຜ່ານມາ"</string>
@@ -4239,13 +4213,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"ແອັບ​ໂທ​ລ​ະ​ສັບ"</string>
     <string name="system_app" msgid="1863291702508355041">"(ລະບົບ)"</string>
     <string name="apps_storage" msgid="643866814746927111">"ບ່ອນ​ຈັດ​ເກັບ​ແອັບ"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"ການ​ເຂົ້າ​ເຖິງ​ການ​ນຳ​ໃຊ້"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"ອະ​ນຸ​ຍາດ​ການ​ເຂົ້າເຖິງ​ການນຳ​ໃຊ້"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"ເວລາໜ້າຈໍ"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"ການ​ເຂົ້າ​ເຖິງ​ການ​ນຳ​ໃຊ້​ອະ​ນຸ​ຍາດ​ໃຫ້​ແອັບ​ຕິດ​ຕາມ​ວ່າ ແອັບ​ອື່ນ​ອັນ​ໃດ​ທີ່​ທ່ານ​ກຳ​ລັງ​ນຳ​ໃຊ້ ແລະ ​ໃຊ້​ເລື້ອຍ​ປານ​ໃດ, ພ້ອມ​ທັງ​ຜູ້​ໃຫ້​ບໍ​ລິ​ການເຄືອ​ຂ່າຍ, ພາ​ສາ, ການ​ຕັ້ງ​ຄ່າ ແລະ​ ລາຍ​ລະ​ອຽດ​ອື່ນໆ​ຂອງ​ທ່ານ."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"ໜ່ວຍ​ຄວາມ​ຈຳ"</string>
     <string name="always_running" msgid="9012705720688200252">"ໃຊ້​​ຢູ່​ສະ​ເໝີ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"ໃຊ້​ບາງ​ຄັ້ງ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4343,8 +4314,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"ອາດໃຊ້ແບັດເຕີຣີຂອງທ່ານໝົດໄວຂຶ້ນ. ຈະບໍ່ມີການຈຳກັດການນຳໃຊ້ແບັດເຕີຣີໃນພື້ນຫຼັງອີກຕໍ່ໄປ."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"ແນະ​ນໍາ​ສຳລັບອາຍຸໃຊ້ງານແບັດເຕີຣີທີ່ດີກວ່າ"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"ບໍ່ມີ"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"ການປິດການເຂົ້າເຖິງການນຳໃຊ້ສຳລັບແອັບນີ້ຈະບໍ່ເປັນການປ້ອງກັນບໍ່ໃຫ້ຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານຕິດຕາມການນຳໃຊ້ຂໍ້ມູນສຳລັບແອັບໃນໂປຣໄຟລ໌ບ່ອນເຮັດວຽກຂອງທ່ານ"</string>
     <string name="draw_overlay" msgid="7902083260500573027">"ສະແດງແອັບບັງແອັບອື່ນ"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"ສະແດງແອັບບັງແອັບອື່ນ"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"ອະນຸຍາດໃຫ້ສະແດງແອັບບັງແອັບອື່ນ"</string>
@@ -5018,26 +4988,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"ກ່ຽວກັບ <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"ທ່ານສາມາດສົ່ງ ແລະ ຮັບຂໍ້ຄວາມຜ່ານດາວທຽມດ້ວຍບັນຊີ <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ທີ່ມີສິດ"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"ບັນຊີ <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ຂອງທ່ານ"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"ການຮັບສົ່ງຂໍ້ຄວາມຜ່ານດາວທຽມຮວມຢູ່ໃນບັນຊີຂອງທ່ານ"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"ການຮັບສົ່ງຂໍ້ຄວາມຈະຮວມຢູ່ໃນບັນຊີຂອງທ່ານ"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"ການຮັບສົ່ງຂໍ້ຄວາມຜ່ານດາວທຽມບໍ່ໄດ້ຮວມຢູ່ໃນບັນຊີຂອງທ່ານ"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"ສຶກສາເພີ່ມເຕີມ"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"ມັນເຮັດວຽກແນວໃດ"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"ເມື່ອທ່ານບໍ່ມີເຄືອຂ່າຍມືຖື"</string>
-    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
-    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"ໂທລະສັບຂອງທ່ານຈະເຊື່ອມຕໍ່ກັບດາວທຽມໂດຍອັດຕະໂນມັດ. ສຳລັບການເຊື່ອມຕໍ່ທີ່ດີທີ່ສຸດ, ກະລຸນາຢູ່ໃນພື້ນທີ່ທີ່ເບິ່ງເຫັນທ້ອງຟ້າໄດ້ຢ່າງຊັດເຈນ."</string>
-    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
-    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"ຫຼັງຈາກທີ່ໂທລະສັບຂອງທ່ານເຊື່ອມຕໍ່ກັບດາວທຽມ"</string>
-    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
-    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"ທ່ານສາມາດສົ່ງຂໍ້ຄວາມຫາໃຜກໍໄດ້, ເຊິ່ງຮວມທັງບໍລິການສຸກເສີນ. ໂທລະສັບຂອງທ່ານຈະເຊື່ອມຕໍ່ກັບເຄືອຂ່າຍມືຖືອີກຄັ້ງເມື່ອມີໃຫ້ໃຊ້."</string>
-    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> ອາດໃຊ້ເວລາດົນກວ່າປົກກະຕິ ແລະ ພ້ອມໃຫ້ບໍລິການໃນບາງພື້ນທີ່ເທົ່ານັ້ນ. ສະພາບອາກາດ ແລະ ໂຄງສ້າງບາງຢ່າງອາດສົ່ງຜົນຕໍ່ການເຊື່ອມຕໍ່ຜ່ານດາວທຽມຂອງທ່ານ. ການໂທຜ່ານດາວທຽມບໍ່ພ້ອມໃຫ້ບໍລິການ. ການໂທສຸກເສີນອາດຍັງເຊື່ອມຕໍ່ຢູ່.\n\nລະບົບອາດໃຊ້ເວລາໄລຍະໜຶ່ງຈົນກວ່າການປ່ຽນແປງໃນບັນຊີຈະສະແດງໃນການຕັ້ງຄ່າ. ກະລຸນາຕິດຕໍ່ <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ສຳລັບລາຍລະອຽດ."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> ອາດໃຊ້ເວລາດົນກວ່າປົກກະຕິ ແລະ ພ້ອມໃຫ້ບໍລິການໃນບາງພື້ນທີ່ເທົ່ານັ້ນ. ສະພາບອາກາດ ແລະ ໂຄງສ້າງບາງຢ່າງອາດສົ່ງຜົນຕໍ່ການເຊື່ອມຕໍ່ຜ່ານດາວທຽມຂອງທ່ານ. ການໂທຜ່ານດາວທຽມບໍ່ພ້ອມໃຫ້ບໍລິການ. ການໂທສຸກເສີນອາດຍັງເຊື່ອມຕໍ່ຢູ່. ການຮັບສົ່ງຂໍ້ຄວາມກັບບໍລິການສຸກເສີນອາດບໍ່ພ້ອມໃຫ້ບໍລິການໃນບາງພື້ນທີ່.\n\nອາດໃຊ້ເວລາໄລຍະໜຶ່ງກ່ອນທີ່ການປ່ຽນແປງໃນບັນຊີຈະສະແດງໃນການຕັ້ງຄ່າ. ກະລຸນາຕິດຕໍ່ <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ສຳລັບລາຍລະອຽດ."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"ຂໍ້ມູນເພີ່ມເຕີມກ່ຽວກັບ <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"ບໍ່ສາມາດເປີດ <xliff:g id="FUNCTION">%1$s</xliff:g> ໄດ້"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"ເພື່ອເປີດ <xliff:g id="FUNCTION">%1$s</xliff:g>, ໃຫ້ສິ້ນສຸດການເຊື່ອມຕໍ່ດາວທຽມກ່ອນ"</string>
@@ -5046,9 +5006,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"ການເຊື່ອມຕໍ່ຜ່ານດາວທຽມ"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"ການຮັບສົ່ງຂໍ້ຄວາມຜ່ານດາວທຽມ"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"ການໃຊ້ຂໍ້ມູນຈະຮວມຢູ່ໃນບັນຊີຂອງທ່ານ"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"ແອັບທີ່ຮອງຮັບຢູ່ໂທລະສັບຂອງທ່ານ"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"ເບິ່ງແອັບທັງໝົດ"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"ແອັບທີ່ຮອງຮັບຢູ່ໂທລະສັບຂອງທ່ານ"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"ຊື່ຈຸດເຂົ້າເຖິງ (APN)"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"APN"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"ບໍ່ສາມາດໃຊ້ໄດ້ເມື່ອເຊື່ອມຕໍ່ກັບ <xliff:g id="CARRIER">%1$s</xliff:g>"</string>
@@ -5216,44 +5179,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"ຂໍ້ມູນນະໂຍບາຍວຽກຂອງທ່ານ"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"ການຕັ້ງຄ່າແມ່ນຈັດການໂດຍຜູ້ເບິ່ງແຍງໄອທີຂອງທ່ານ"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"ເປີດໂດຍໃຊ້ໜ້າຂະໜາດ 16KB"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"ເປີດອຸປະກອນໂດຍໃຊ້ເຄີເນວທີ່ຮອງຮັບໜ້າຂະໜາດ 16KB"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"ປ່ຽນຈາກໂໝດ 4KB ເປັນໂໝດ 16KB"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"ທ່ານຢູ່ໃນໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າໂດຍໃຊ້ເຄີເນວຂະໜາດ 4KB ແລະ ທ່ານກຳລັງຈະປ່ຽນໄປໃຊ້ໂໝດ 16KB. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ການດຳເນີນການນີ້ຈະເປັນການປິດເປີດອຸປະກອນໃໝ່. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອໃຫ້ອຸປະກອນກັບຄືນເປັນໂໝດໂປຣດັກຊັນ, ທ່ານຈະຕ້ອງປ່ຽນກັບໄປໃຊ້ໂໝດ 4KB ແລະ ລັອກ bootloader, ເຊິ່ງຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານ. ຫຼັງຈາກທີ່ອຸປະກອນເປີດເຂົ້າເປັນ Android ໄດ້ສຳເລັດ, ໃຫ້ປິດການນຳໃຊ້ການປົດລັອກ OEM ໃນຕົວເລືອກນັກພັດທະນາ."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"ປ່ຽນຈາກໂໝດ 16KB ເປັນໂໝດ 4KB"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"ທ່ານຢູ່ໃນໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າໂດຍໃຊ້ເຄີເນວຂະໜາດ 16KB ແລະ ທ່ານກຳລັງຈະປ່ຽນໄປໃຊ້ໂໝດ 4KB. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ການດຳເນີນການນີ້ຈະເປັນການປິດເປີດອຸປະກອນໃໝ່. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອໃຫ້ອຸປະກອນກັບຄືນເປັນໂໝດໂປຣດັກຊັນ, ທ່ານຈະຕ້ອງລັອກ bootloader, ເຊິ່ງຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານ. ຫຼັງຈາກທີ່ອຸປະກອນເປີດເຂົ້າເປັນ Android ໄດ້ສຳເລັດ, ໃຫ້ປິດການນຳໃຊ້ການປົດລັອກ OEM ໃນຕົວເລືອກນັກພັດທະນາ."</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"ອັບເດດເປັນເຄີເນວທີ່ໃຊ້ໄດ້ກັບໜ້າຂະໜາດ 16KB ບໍ່ສຳເລັດ."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"ກຳລັງນຳໃຊ້ການປ່ຽນແປງ"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"ຟໍແມັດອຸປະກອນໃໝ່ເປັນ ext4 ບໍ? (ຈຳເປັນສຳລັບໂໝດ 16KB)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"ພາທິຊັນຂໍ້ມູນຂອງອຸປະກອນນີ້ຈະຕ້ອງປ່ຽນແປງເປັນ ext4 ກ່ອນທີ່ຈະໃຊ້ຕົວເລືອກນັກພັດທະນາແບບ 16KB. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ການເປີດນຳໃຊ້ຕົວເລືອກ 16KB ຈະຕ້ອງມີການປິດເປີດໃໝ່ອີກເທື່ອໜຶ່ງຫຼັງຈາກນີ້. ເມື່ອທ່ານຢູ່ໃນໂໝດນີ້ແລ້ວ, ທ່ານສາມາດປ່ຽນໄປມາລະຫວ່າງໂໝດ 4KB ແລະ 16KB ໄດ້ໂດຍການປິດເປີດໃໝ່ເທື່ອດຽວ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອໃຫ້ອຸປະກອນກັບຄືນເປັນໂໝດໂປຣດັກຊັນ, ທ່ານຈະຕ້ອງປ່ຽນກັບໄປໃຊ້ໂໝດ 4KB ຈາກນັ້ນລັອກ bootloader, ເຊິ່ງຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານ. ຫຼັງຈາກທີ່ອຸປະກອນເປີດເຂົ້າເປັນ Android ໄດ້ສຳເລັດ, ໃຫ້ປິດການນຳໃຊ້ການປົດລັອກ OEM ໃນຕົວເລືອກນັກພັດທະນາ. ອຸປະກອນຈະຖືກລ້າງຂໍ້ມູນ ແລະ ລະບົບໄຟລ໌ຈະປ່ຽນເປັນ ext4 ຫຼັງຈາກການຢືນຢັນ. ຫຼັງຈາກການດຳເນີນການນີ້ສຳເລັດ, ກະລຸນາກັບຄືນມາເປີດການນຳໃຊ້ໂໝດ 16KB ອີກເທື່ອໜຶ່ງ."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"ລຶບຂໍ້ມູນທັງໝົດ"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"ຟໍແມັດໃໝ່ ແລະ ລ້າງພາທິຊັນຂໍ້ມູນເປັນ ext4 ບໍ່ສຳເລັດ."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"ຕ້ອງປົດລັອກ Bootloader"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"ອຸປະກອນນີ້ຕ້ອງມີການປົດລັອກ bootloader ກ່ອນທີ່ຈະໃຊ້ຕົວເລືອກນັກພັດທະນາແບບ 16KB. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ຂໍ້ມູນຜູ້ໃຊ້ ແລະ ການຕັ້ງຄ່າທັງໝົດຈະຖືກລ້າງເມື່ອເປີດນຳໃຊ້ໂໝດ 16KB. ເມື່ອປົດລັອກ bootloader ແລ້ວ, ການເປີດນຳໃຊ້ຕົວເລືອກ 16KB ຈະຕ້ອງມີການປິດເປີດໃໝ່ສອງເທື່ອ. ເມື່ອທ່ານຢູ່ໃນໂໝດນີ້ແລ້ວ, ທ່ານສາມາດປ່ຽນໄປມາລະຫວ່າງໂໝດ 4KB ແລະ 16KB ໄດ້ໂດຍການປິດເປີດໃໝ່ເທື່ອດຽວ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອໃຫ້ອຸປະກອນກັບຄືນເປັນໂໝດໂປຣດັກຊັນ, ທ່ານຈະຕ້ອງປ່ຽນກັບໄປໃຊ້ໂໝດ 4KB ຈາກນັ້ນລັອກ OEM/bootloader (ເຊິ່ງຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານ). ກະລຸນາປົດລັອກ bootloader ແລ້ວລອງໃໝ່. ທ່ານສາມາດເບິ່ງຄຳແນະນຳສຳລັບວິທີການນີ້ໄດ້ຢູ່ &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt;"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"ກຳລັງໃຊ້ໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າ ໂດຍໃຊ້ຂະໜາດ 4KB"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"ທ່ານຢູ່ໃນໂໝດ 4KB ຂອງໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າ. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອກັບຄືນເປັນໂໝດໂປຣດັກຊັນອີກເທື່ອໜຶ່ງ, ທ່ານຕ້ອງລັອກ bootloader ຂອງອຸປະກອນ. ແຕະເພື່ອອ່ານເພີ່ມເຕີມ."</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"ທ່ານຢູ່ໃນໂໝດ 4KB ຂອງໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າ. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອກັບຄືນເປັນໂໝດໂປຣດັກຊັນອີກເທື່ອໜຶ່ງ, ທ່ານຕ້ອງລັອກ bootloader ຂອງອຸປະກອນ. ການດຳເນີນການນີ້ຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານອີກເທື່ອໜຶ່ງ ແລະ ກູ້ຄືນເປັນການຕັ້ງຄ່າໂປຣດັກຊັນ. ຫຼັງຈາກທີ່ອຸປະກອນເປີດເຂົ້າເປັນ Android ໄດ້ສຳເລັດ, ໃຫ້ປິດການນຳໃຊ້ການປົດລັອກ OEM ໃນຕົວເລືອກນັກພັດທະນາ. ຫາກອຸປະກອນບໍ່ສາມາດເປີດເຂົ້າເປັນ Android ຫຼື ບໍ່ສະຖຽນ, ໃຫ້ແຟລຊອຸປະກອນອີກເທື່ອໜຶ່ງໂດຍໃຊ້ຮູບພາບໂຮງງານຫຼ້າສຸດຈາກ &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; ຫຼື ໃຊ້ &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ແລະ ເລືອກ \'ລ້າງຂໍ້ມູນອຸປະກອນ\', \'ລັອກ Bootloader\' ແລະ \'ບັງຄັບໃຫ້ແຟລຊທຸກພາທິຊັນ\'."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"ກຳລັງໃຊ້ໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າ ໂດຍໃຊ້ຂະໜາດ 16KB"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"ທ່ານຢູ່ໃນໂໝດ 16KB ຂອງໂໝດບໍ່ຂຶ້ນກັບໜ້າ. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ Bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອກັບຄືນເປັນໂໝດໂປຣດັກຊັນອີກເທື່ອໜຶ່ງ, ທ່ານຕ້ອງປ່ຽນກັບໄປໃຊ້ໂໝດ 4KB ຈາກນັ້ນລັອກ Bootloader ຂອງອຸປະກອນ. ແຕະເພື່ອອ່ານເພີ່ມເຕີມ."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"ທ່ານຢູ່ໃນໂໝດ 16KB ຂອງໂໝດບໍ່ຂຶ້ນກັບໜ້າ. ບໍ່ຮັບປະກັນຄວາມສົມບູນຂອງຊອບແວໃນໂໝດນີ້ ແລະ ຂໍ້ມູນໃດກໍຕາມທີ່ຈັດເກັບໃນໂທລະສັບໃນລະຫວ່າງທີ່ Bootloader ປົດລັອກຢູ່ອາດມີຄວາມສ່ຽງ. ຄຸນສົມບັດບາງຢ່າງອາດຖືກປິດການນຳໃຊ້ໃນໂໝດເຫຼົ່ານີ້, ດັ່ງນັ້ນບາງແອັບພລິເຄຊັນຈຶ່ງອາດບໍ່ເຮັດວຽກ. ເພື່ອກັບຄືນເປັນໂໝດໂປຣດັກຊັນອີກເທື່ອໜຶ່ງ, ທ່ານຕ້ອງປ່ຽນກັບໄປໃຊ້ໂໝດ 4KB ຈາກນັ້ນລັອກ Bootloader ຂອງອຸປະກອນ. ການດຳເນີນການນີ້ຈະຣີເຊັດອຸປະກອນເປັນຄ່າຈາກໂຮງງານອີກເທື່ອໜຶ່ງ ແລະ ກູ້ຄືນເປັນການຕັ້ງຄ່າໂປຣດັກຊັນ. ຫຼັງຈາກທີ່ອຸປະກອນເປີດເຂົ້າເປັນ Android ໄດ້ສຳເລັດ, ໃຫ້ປິດການນຳໃຊ້ການປົດລັອກ OEM ໃນຕົວເລືອກນັກພັດທະນາ. ຫາກອຸປະກອນບໍ່ສາມາດເປີດເຂົ້າເປັນ Android ຫຼື ບໍ່ສະຖຽນ, ໃຫ້ແຟລຊອຸປະກອນອີກເທື່ອໜຶ່ງໂດຍໃຊ້ຮູບພາບໂຮງງານຫຼ້າສຸດຈາກ &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; ຫຼື ໃຊ້ &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ແລະ ເລືອກ \'ລ້າງຂໍ້ມູນອຸປະກອນ\', \'ລັອກ Bootloader\' ແລະ \'ບັງຄັບໃຫ້ແຟລຊທຸກພາທິຊັນ\'."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"ໂໝດບໍ່ເນັ້ນການໃຊ້ໜ້າ ໂດຍໃຊ້ຂະໜາດ 16KB"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"ອ່ານເພີ່ມເຕີມ"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"ເອີ້ນໃຊ້ແອັບດ້ວຍໂໝດຄວາມເຂົ້າກັນໄດ້ກັບຂະໜາດໜ້າ"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"ແອັບຈະຖືກເອີ້ນໃຊ້ໃນໂໝດຄວາມເຂົ້າກັນໄດ້ກັບຂະໜາດໜ້າເວັບຢູ່ອຸປະກອນ 16 KB ເມື່ອມີການເປີດໃຊ້."</string>
@@ -5692,9 +5638,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"ຢຸດສະຕຣີມຊົ່ວຄາວ"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"ຢຸດການຟັງ"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"ເຊື່ອມຕໍ່ຫູຟັງທີ່ເຂົ້າກັນໄດ້"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"ປິດ TalkBack ຊົ່ວຄາວ."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"ບໍ່ສາມາດໃຊ້ TalkBack ໃນເວລາທີ່ກຳລັງຟັງການສະຕຣີມສຽງໄດ້. ປິດ TalkBack ເພື່ອເລີ່ມການຟັງ."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"ປິດໄວ້"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"ເຊື່ອມຕໍ່ອຸປະກອນ"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"ລາຍລະອຽດການສະຕຣີມສຽງ"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"ລະຫັດ QR ການສະຕຣີມສຽງ"</string>

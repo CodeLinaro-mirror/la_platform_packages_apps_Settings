@@ -41,7 +41,7 @@ object NotificationMainPageProvider : SettingsPageProvider {
     @Composable
     override fun Page(arguments: Bundle?) {
         RegularScaffold(title = getTitle(arguments)) {
-            AppListNotificationsPageProvider.AllApps.EntryItem()
+            AppListNotificationsPageProvider.EntryItem()
         }
     }
 

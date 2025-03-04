@@ -28,9 +28,6 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.settings.R;
 
-import com.google.common.collect.ImmutableList;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class AudioSharingDeviceAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
@@ -38,7 +35,7 @@ public class AudioSharingDeviceAdapter extends RecyclerView.Adapter<RecyclerView
     private static final String TAG = "AudioSharingDeviceAdapter";
 
     private final Context mContext;
-    private List<AudioSharingDeviceItem> mDevices;
+    private final List<AudioSharingDeviceItem> mDevices;
     private final OnClickListener mOnClickListener;
     private final ActionType mType;
 
@@ -114,21 +111,6 @@ public class AudioSharingDeviceAdapter extends RecyclerView.Adapter<RecyclerView
     @Override
     public int getItemCount() {
         return mDevices.size();
-    }
-
-    /** Updates the data set and notify the change. */
-    public void updateItems(@NonNull List<AudioSharingDeviceItem> items) {
-        if (mDevices.size() != items.size()) {
-            List<AudioSharingDeviceItem> oldItems = new ArrayList<>(mDevices);
-            oldItems.removeAll(items);
-            if (oldItems.isEmpty()) {
-                Log.d(TAG, "Skip updateItems, no change");
-                return;
-            }
-        }
-        mDevices = ImmutableList.copyOf(items);
-        Log.d(TAG, "updateItems, items = " + mDevices);
-        notifyDataSetChanged();
     }
 
     public interface OnClickListener {

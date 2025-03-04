@@ -18,7 +18,6 @@ package com.android.settings.biometrics.fingerprint;
 
 import static android.provider.Settings.Secure.FINGERPRINT_APP_ENABLED;
 
-import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.fingerprint.FingerprintManager;
 import android.provider.Settings;
@@ -51,8 +50,6 @@ public class FingerprintSettingsAppsPreferenceController
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        mMetricsFeatureProvider.action(mContext,
-                SettingsEnums.ACTION_FINGERPRINT_ENABLED_FOR_APP, isChecked);
         return Settings.Secure.putIntForUser(mContext.getContentResolver(), FINGERPRINT_APP_ENABLED,
                 isChecked ? ON : OFF, getUserId());
     }

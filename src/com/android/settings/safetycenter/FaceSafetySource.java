@@ -29,7 +29,6 @@ import android.safetycenter.SafetyEvent;
 import com.android.settings.Utils;
 import com.android.settings.biometrics.BiometricNavigationUtils;
 import com.android.settings.biometrics.face.FaceStatusUtils;
-import com.android.settings.flags.Flags;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.RestrictedLockUtils;
 
@@ -45,10 +44,6 @@ public final class FaceSafetySource {
         if (!SafetyCenterManagerWrapper.get().isEnabled(context)) {
             return;
         }
-        if (!Flags.biometricsOnboardingEducation()) { // this source is effectively turned off
-            sendNullData(context, safetyEvent);
-            return;
-        }
 
         // Handle private profile case
         UserManager userManager = UserManager.get(context);
@@ -57,7 +52,9 @@ public final class FaceSafetySource {
                 && userManager.isPrivateProfile()) {
             // SC always expects a response from the source if the broadcast has been sent for this
             // source, therefore, we need to send a null SafetySourceData.
-            sendNullData(context, safetyEvent);
+            SafetyCenterManagerWrapper.get()
+                    .setSafetySourceData(
+                            context, SAFETY_SOURCE_ID, /* safetySourceData= */ null, safetyEvent);
             return;
         }
 
@@ -98,10 +95,6 @@ public final class FaceSafetySource {
             return;
         }
 
-        sendNullData(context, safetyEvent);
-    }
-
-    private static void sendNullData(Context context, SafetyEvent safetyEvent) {
         SafetyCenterManagerWrapper.get()
                 .setSafetySourceData(
                         context, SAFETY_SOURCE_ID, /* safetySourceData= */ null, safetyEvent);

@@ -18,7 +18,6 @@ package com.android.settings.biometrics.face;
 
 import static android.provider.Settings.Secure.FACE_KEYGUARD_ENABLED;
 
-import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.face.FaceManager;
 import android.provider.Settings;
@@ -51,8 +50,6 @@ public class FaceSettingsKeyguardUnlockPreferenceController extends
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        mMetricsFeatureProvider.action(mContext,
-                SettingsEnums.ACTION_FACE_ENABLED_ON_KEYGUARD, isChecked);
         return Settings.Secure.putIntForUser(mContext.getContentResolver(),
                 FACE_KEYGUARD_ENABLED, isChecked ? ON : OFF, getUserId());
     }

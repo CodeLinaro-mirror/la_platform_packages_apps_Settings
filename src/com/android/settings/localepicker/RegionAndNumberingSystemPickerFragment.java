@@ -34,7 +34,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.view.ViewCompat;
 import androidx.preference.PreferenceCategory;
-import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.internal.app.LocaleHelper;
@@ -43,6 +42,7 @@ import com.android.settings.R;
 import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.core.AbstractPreferenceController;
+import com.android.settingslib.core.lifecycle.Lifecycle;
 import com.android.settingslib.widget.TopIntroPreference;
 
 import com.google.android.material.appbar.AppBarLayout;
@@ -75,7 +75,6 @@ public class RegionAndNumberingSystemPickerFragment extends DashboardFragment im
     private static final String KEY_PREFERENCE_APP_LOCALE_SUGGESTED_LIST =
             "app_locale_suggested_list";
     private static final String KEY_TOP_INTRO_PREFERENCE = "top_intro_region";
-    private static final String KEY_PREFERENCE_SCREEN ="key_system_language_picker_page";
     private static final String EXTRA_EXPAND_SEARCH_VIEW = "expand_search_view";
 
     @Nullable
@@ -122,10 +121,9 @@ public class RegionAndNumberingSystemPickerFragment extends DashboardFragment im
         }
 
         Log.d(TAG, "onCreate, mIsNumberingMode = " + mIsNumberingMode);
-
-        PreferenceScreen screen = findPreference(KEY_PREFERENCE_SCREEN);
-        screen.setTitle(mIsNumberingMode ? R.string.numbering_system_selection_title
-                : R.string.region_selection_title);
+        if (!mIsNumberingMode) {
+            mActivity.setTitle(R.string.region_selection_title);
+        }
 
         TopIntroPreference topIntroPreference = findPreference(KEY_TOP_INTRO_PREFERENCE);
         if (topIntroPreference != null && mIsNumberingMode) {

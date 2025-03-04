@@ -21,6 +21,7 @@ import static android.view.Display.INVALID_DISPLAY;
 import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.DISPLAY_ID_ARG;
 import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.EXTERNAL_DISPLAY_HELP_URL;
 import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.EXTERNAL_DISPLAY_NOT_FOUND_RESOURCE;
+import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.isDisplayAllowed;
 
 import android.app.settings.SettingsEnums;
 import android.content.Context;
@@ -28,6 +29,7 @@ import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.util.Pair;
+import android.view.Display;
 import android.view.Display.Mode;
 import android.view.View;
 import android.widget.TextView;
@@ -48,7 +50,6 @@ import com.android.settingslib.widget.SelectorWithWidgetPreference;
 
 import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.List;
 
 public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase {
     private static final String TAG = "ResolutionPreference";
@@ -163,7 +164,7 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
             return;
         }
         var display = mInjector.getDisplay(getDisplayIdArg());
-        if (display == null) {
+        if (display == null || !isDisplayAllowed(display, mInjector)) {
             screen.removeAll();
             mTopOptionsPreference = null;
             mMoreOptionsPreference = null;
@@ -209,9 +210,9 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
     }
 
     private void addRemainingPreferences(@NonNull Context context,
-            @NonNull PreferenceCategory group, @NonNull DisplayDevice display,
-            boolean isSelectedModeFound, @NonNull List<Mode> moreModes) {
-        if (moreModes.isEmpty()) {
+            @NonNull PreferenceCategory group, @NonNull Display display,
+            boolean isSelectedModeFound, @NonNull Mode[] moreModes) {
+        if (moreModes.length == 0) {
             return;
         }
         mMoreOptionsExpanded |= !isSelectedModeFound;
@@ -219,12 +220,12 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
         addModePreferences(context, group, moreModes, /*checkMode=*/ null, display);
     }
 
-    private Pair<Boolean, List<Mode>> addModePreferences(@NonNull Context context,
+    private Pair<Boolean, Mode[]> addModePreferences(@NonNull Context context,
             @NonNull PreferenceGroup group,
-            @NonNull List<Mode> modes,
+            @NonNull Mode[] modes,
             @Nullable ToBooleanFunction<Mode> checkMode,
-            @NonNull DisplayDevice display) {
-        Mode curMode = display.getMode();
+            @NonNull Display display) {
+        Display.Mode curMode = display.getMode();
         var currentResolution = curMode.getPhysicalWidth() + "x" + curMode.getPhysicalHeight();
         var rotatedResolution = curMode.getPhysicalHeight() + "x" + curMode.getPhysicalWidth();
         var skippedModes = new ArrayList<Mode>();
@@ -259,7 +260,7 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
             isAnyOfModesSelected |= isCurrentMode;
             group.addPreference(pref);
         }
-        return new Pair<>(isAnyOfModesSelected, skippedModes);
+        return new Pair<>(isAnyOfModesSelected, skippedModes.toArray(Mode.EMPTY_ARRAY));
     }
 
     private boolean isTopMode(@NonNull Mode mode) {
@@ -308,7 +309,7 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
     }
 
     private void onDisplayModeClicked(@NonNull SelectorWithWidgetPreference preference,
-            @NonNull DisplayDevice display) {
+            @NonNull Display display) {
         if (mInjector == null) {
             return;
         }
@@ -318,7 +319,7 @@ public class ResolutionPreferenceFragment extends SettingsPreferenceFragmentBase
         for (var mode : display.getSupportedModes()) {
             if (mode.getPhysicalWidth() == width && mode.getPhysicalHeight() == height
                         && isAllowedMode(mode)) {
-                mInjector.setUserPreferredDisplayMode(display.getId(), mode);
+                mInjector.setUserPreferredDisplayMode(display.getDisplayId(), mode);
                 return;
             }
         }

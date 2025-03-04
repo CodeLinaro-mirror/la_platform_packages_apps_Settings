@@ -16,7 +16,6 @@
 
 package com.android.settings.biometrics.face;
 
-import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.hardware.face.FaceManager;
 import android.provider.Settings;
@@ -123,8 +122,6 @@ public class FaceSettingsAttentionPreferenceController extends FaceSettingsPrefe
 
     @Override
     public boolean setChecked(boolean isChecked) {
-        mMetricsFeatureProvider.action(mContext,
-                SettingsEnums.ACTION_FACE_REQUIRE_ATTENTION_SETTINGS, isChecked);
         // Optimistically update state and set to disabled until we know it succeeded.
         mPreference.setEnabled(false);
         mPreference.setChecked(isChecked);

@@ -22,6 +22,7 @@ import android.provider.Settings;
 import android.telephony.TelephonyManager;
 
 import com.android.internal.annotations.VisibleForTesting;
+import com.android.internal.telephony.flags.Flags;
 import com.android.settings.R;
 import com.android.settings.core.TogglePreferenceController;
 import com.android.settings.overlay.FeatureFactory;
@@ -50,12 +51,17 @@ public class HearingAidCompatibilityPreferenceController extends TogglePreferenc
 
     @Override
     public int getAvailabilityStatus() {
-        try {
+        if (Flags.enforceTelephonyFeatureMappingForPublicApis()) {
+            try {
+                return mTelephonyManager.isHearingAidCompatibilitySupported() ? AVAILABLE
+                        : UNSUPPORTED_ON_DEVICE;
+            } catch (UnsupportedOperationException e) {
+                // Device doesn't support FEATURE_TELEPHONY_CALLING
+                return UNSUPPORTED_ON_DEVICE;
+            }
+        } else {
             return mTelephonyManager.isHearingAidCompatibilitySupported() ? AVAILABLE
                     : UNSUPPORTED_ON_DEVICE;
-        } catch (UnsupportedOperationException e) {
-            // Device doesn't support FEATURE_TELEPHONY_CALLING
-            return UNSUPPORTED_ON_DEVICE;
         }
     }
 

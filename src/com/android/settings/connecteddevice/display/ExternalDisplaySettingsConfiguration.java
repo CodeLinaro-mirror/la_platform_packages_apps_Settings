@@ -44,10 +44,6 @@ import com.android.settings.R;
 import com.android.settings.flags.FeatureFlags;
 import com.android.settings.flags.FeatureFlagsImpl;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-
 public class ExternalDisplaySettingsConfiguration {
     static final String VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY =
             "persist.demo.userrotation.package_name";
@@ -118,57 +114,40 @@ public class ExternalDisplaySettingsConfiguration {
             mHandler = handler;
         }
 
-        private static DisplayDevice wrapDmDisplay(Display display, DisplayIsEnabled isEnabled) {
-            return new DisplayDevice(display.getDisplayId(), display.getName(),
-                        display.getMode(), List.<Mode>of(display.getSupportedModes()), isEnabled);
-        }
-
         /**
          * @return all displays including disabled.
          */
         @NonNull
-        public List<DisplayDevice> getConnectedDisplays() {
+        public Display[] getAllDisplays() {
             var dm = getDisplayManager();
             if (dm == null) {
-                return List.of();
+                return new Display[0];
             }
-
-            var enabledIds = new HashSet<Integer>();
-            for (Display d : dm.getDisplays()) {
-                enabledIds.add(d.getDisplayId());
-            }
-
-            var displays = new ArrayList<DisplayDevice>();
-            for (Display d : dm.getDisplays(DISPLAY_CATEGORY_ALL_INCLUDING_DISABLED)) {
-                if (!isDisplayAllowed(d, this)) {
-                    continue;
-                }
-                var isEnabled = enabledIds.contains(d.getDisplayId())
-                        ? DisplayIsEnabled.YES : DisplayIsEnabled.NO;
-                displays.add(wrapDmDisplay(d, isEnabled));
-            }
-            return displays;
+            return dm.getDisplays(DISPLAY_CATEGORY_ALL_INCLUDING_DISABLED);
         }
 
         /**
-         * @param displayId which must be returned
-         * @return display object for the displayId, or null if display is not a connected display,
-         *         the ID was not found, or the ID was invalid
+         * @return enabled displays only.
          */
-        @Nullable
-        public DisplayDevice getDisplay(int displayId) {
-            if (displayId == INVALID_DISPLAY) {
-                return null;
-            }
+        @NonNull
+        public Display[] getEnabledDisplays() {
             var dm = getDisplayManager();
             if (dm == null) {
-                return null;
+                return new Display[0];
             }
-            var display = dm.getDisplay(displayId);
-            if (display == null || !isDisplayAllowed(display, this)) {
-                return null;
+            return dm.getDisplays();
+        }
+
+        /**
+         * @return true if the display is enabled
+         */
+        public boolean isDisplayEnabled(@NonNull Display display) {
+            for (var enabledDisplay : getEnabledDisplays()) {
+                if (enabledDisplay.getDisplayId() == display.getDisplayId()) {
+                    return true;
+                }
             }
-            return wrapDmDisplay(display, DisplayIsEnabled.UNKNOWN);
+            return false;
         }
 
         /**
@@ -225,6 +204,22 @@ public class ExternalDisplaySettingsConfiguration {
             }
             dm.disableConnectedDisplay(displayId);
             return true;
+        }
+
+        /**
+         * @param displayId which must be returned
+         * @return display object for the displayId
+         */
+        @Nullable
+        public Display getDisplay(int displayId) {
+            if (displayId == INVALID_DISPLAY) {
+                return null;
+            }
+            var dm = getDisplayManager();
+            if (dm == null) {
+                return null;
+            }
+            return dm.getDisplay(displayId);
         }
 
         /**
@@ -328,7 +323,8 @@ public class ExternalDisplaySettingsConfiguration {
                 || flags.displayTopologyPaneInDisplayList();
     }
 
-    private static boolean isDisplayAllowed(Display display, SystemServicesProvider props) {
+    static boolean isDisplayAllowed(@NonNull Display display,
+            @NonNull SystemServicesProvider props) {
         return display.getType() == Display.TYPE_EXTERNAL
                 || display.getType() == Display.TYPE_OVERLAY
                 || isVirtualDisplayAllowed(display, props);
@@ -338,7 +334,7 @@ public class ExternalDisplaySettingsConfiguration {
         return injector != null && injector.getFlags().displayTopologyPaneInDisplayList();
     }
 
-    private static boolean isVirtualDisplayAllowed(@NonNull Display display,
+    static boolean isVirtualDisplayAllowed(@NonNull Display display,
             @NonNull SystemServicesProvider properties) {
         var sysProp = properties.getSystemProperty(VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY);
         return !sysProp.isEmpty() && display.getType() == Display.TYPE_VIRTUAL

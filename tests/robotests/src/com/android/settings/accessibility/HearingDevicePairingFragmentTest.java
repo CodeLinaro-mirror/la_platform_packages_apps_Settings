@@ -156,7 +156,9 @@ public class HearingDevicePairingFragmentTest {
 
     @Test
     public void handleLeScanResult_markDeviceAsHearingAid() {
-        ScanResult scanResult = createMockScanResult();
+        ScanResult scanResult = mock(ScanResult.class);
+        doReturn(mDevice).when(scanResult).getDevice();
+        doReturn(mCachedDevice).when(mCachedDeviceManager).findDevice(mDevice);
 
         mFragment.handleLeScanResult(scanResult);
 
@@ -165,7 +167,9 @@ public class HearingDevicePairingFragmentTest {
 
     @Test
     public void handleLeScanResult_isAndroidCompatible_addDevice() {
-        ScanResult scanResult = createMockScanResult();
+        ScanResult scanResult = mock(ScanResult.class);
+        doReturn(mDevice).when(scanResult).getDevice();
+        doReturn(mCachedDevice).when(mCachedDeviceManager).findDevice(mDevice);
         doReturn(true).when(mFragment).isAndroidCompatibleHearingAid(scanResult);
 
         mFragment.handleLeScanResult(scanResult);
@@ -175,7 +179,9 @@ public class HearingDevicePairingFragmentTest {
 
     @Test
     public void handleLeScanResult_isNotAndroidCompatible_discoverServices() {
-        ScanResult scanResult = createMockScanResult();
+        ScanResult scanResult = mock(ScanResult.class);
+        doReturn(mDevice).when(scanResult).getDevice();
+        doReturn(mCachedDevice).when(mCachedDeviceManager).findDevice(mDevice);
         doReturn(false).when(mFragment).isAndroidCompatibleHearingAid(scanResult);
 
         mFragment.handleLeScanResult(scanResult);
@@ -185,7 +191,9 @@ public class HearingDevicePairingFragmentTest {
 
     @Test
     public void handleLeScanResult_alreadyBonded_doNothing() {
-        ScanResult scanResult = createMockScanResult();
+        ScanResult scanResult = mock(ScanResult.class);
+        doReturn(mDevice).when(scanResult).getDevice();
+        doReturn(mCachedDevice).when(mCachedDeviceManager).findDevice(mDevice);
         doReturn(BluetoothDevice.BOND_BONDED).when(mCachedDevice).getBondState();
 
         mFragment.handleLeScanResult(scanResult);
@@ -282,14 +290,6 @@ public class HearingDevicePairingFragmentTest {
         boolean isCompatible = mFragment.isAndroidCompatibleHearingAid(scanResult);
 
         assertThat(isCompatible).isFalse();
-    }
-
-    private ScanResult createMockScanResult() {
-        ScanResult scanResult = mock(ScanResult.class);
-        doReturn(mDevice).when(scanResult).getDevice();
-        doReturn(mCachedDevice).when(mCachedDeviceManager).findDevice(mDevice);
-        doReturn(true).when(mFragment).isDeviceDiscoverable(scanResult);
-        return scanResult;
     }
 
     private ScanResult createAshaScanResult() {

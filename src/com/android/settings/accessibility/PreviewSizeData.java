@@ -40,8 +40,7 @@ abstract class PreviewSizeData<T extends Number> {
         return mContext;
     }
 
-    @NonNull
-    public List<T> getValues() {
+    List<T> getValues() {
         return mValues;
     }
 
@@ -57,7 +56,7 @@ abstract class PreviewSizeData<T extends Number> {
         mDefaultValue = defaultValue;
     }
 
-    public int getInitialIndex() {
+    int getInitialIndex() {
         return mInitialIndex;
     }
 

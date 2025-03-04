@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"Peatatud"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"Teadmata"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"Eelvaade"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"Eelmine eelvaade"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"Järgmine eelvaade"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR-kood"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"Vähendamine"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"Suurendamine"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Mõlema poole ühtne juhtimine"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Vasakpoolne"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Parempoolne"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Ümbritsevate helide vaigistamine"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Ümbritsevate helide vaigistuse tühistamine"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Ümbritsevate helide seadeid ei saanud värskendada"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"Teave heliväljundi kohta"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"Helid suunatakse kuuldeseadmesse või telefoni kõlarisse"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"Seotud"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"Helin ja äratused"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"Heli kõnede ajal"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"Meedia- ja süsteemihelid"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Keel ja piirkond"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Keele lisamine"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Piirkonna valimine"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"Piirkonnaeelistus"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Otsige keeli"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Otsige piirkondi"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Rohkem keeleseadeid"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Kas muuta piirkonnaks <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"Teie seadme süsteemikeeleks jääb <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> keel"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"Enamik rakendusi kasutavad võimaluse korral teie piirkondlikke eelistusi."</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Piirkondlikud eelistused"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Ühikute ja numbrite eelistuste määramine"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Esitage rakendustele oma piirkondlikud eelistused, et need saaks teie kasutuskogemust isikupärastada."</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Kõrge eraldusvõime"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maksimaalne eraldusvõime"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Maksimaalne eraldusvõime tarbib rohkem akut. Eraldusvõime muutmine võib mõne rakenduse taaskäivitada."</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"Valitud"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Värvid"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Loomulikud"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Võimendatud"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"Hiire klahvide kasutamine"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"Kasutage kursori juhtimiseks klaviatuuri"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"Tagurpidi kerimine"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"Lehe allapoole liigutamiseks kerige üles"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"Allakerimisel liigub sisu üles"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"Vaheta esmast hiirenuppu"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"Kasutage hiire vasakut nuppu parema nupuna"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"Kursori kiirendus"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Õppige puuteplaadi liigutusi"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"puuteplaat, hiir, kursor, kerimine, pühkimine, sõrmega tõmbamine, paremklõps, klõpsamine"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"paremklõps, puudutamine"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"Keskmine klikk"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Käivita assistent"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Avalehele"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Tagasi"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"Tagasiside"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"Aidake meil paremaks saada ja täitke küsimustik"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"Küsitlusi pole saadaval"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"Tagasiside saatmine"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"Allalaaditud rakendused"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"Katseline"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"Funktsiooni märgistamised"</string>
@@ -2403,7 +2387,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Suure kontrastsusega tekst"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Muutke tekst mustaks või valgeks. Maksimeerib kontrasti taustaga."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Teksti kontrastsuse suurendamine"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"Funktsioon <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g> asendati funktsiooniga <xliff:g id="OUTLINE_TEXT">%1$s</xliff:g>. Saate selle sisse lülitada jaotises <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> asendas järgmise: <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>. Saate selle sisse lülitada jaotises <xliff:g id="SETTINGS">%3$s</xliff:g>."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Ava <xliff:g id="SETTINGS">%1$s</xliff:g>"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Tekstile kontuuri lisamine"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Lisage tekstile must või valge taust, et kontrastsust suurendada"</string>
@@ -2907,14 +2891,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Sees"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Väljas"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Kasuta adaptiivset ühenduvust"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"Mobiilsidevõrgu turve"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Võrgu tüüp, krüpteerimine, märguannete juhtnupud"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Need seaded aitavad kaitsta teie kõnesid, sõnumeid ja andmeid aegunud või krüpteerimata võrkude eest, mis võivad tuua teie jaoks kaasa andmete varguse või jälgimise ohu"</string>
@@ -2943,8 +2919,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Kas eemaldada kogu sisu?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Mandaatide mälu kustutatakse."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Mand. mälu ei saanud kustut."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"Kasutusjuurdepääsuga rakend."</string>
     <string name="ca_certificate" msgid="3076484307693855611">"CA-sertifikaat"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN ja rak. kasutaja sertifikaat"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"WiFi-sertifikaat"</string>
@@ -3003,8 +2978,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Kas lubada järelevalve?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Kui jätkate, haldab teie kasutajat edaspidi administraator, kes saab võib-olla talletada peale teie isiklike andmete ka seotud andmeid.\n\nTeie administraator saab jälgida ja hallata selle kasutajaga seotud seadeid, juurdepääsu, rakendusi ja andmeid, sealhulgas veebitegevusi ja seadme asukohateavet."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Administraator on muud valikud keelanud."</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"Lisateave"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"Märguannete logi"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"Märguannete ajalugu"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"Viimased %d tundi"</string>
@@ -4239,13 +4213,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Telefonirakendus"</string>
     <string name="system_app" msgid="1863291702508355041">"(Süsteem)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Rakenduste salvestusruum"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"Juurdepääs kasutusele"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"Luba juurdepääs kasutusele"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Ekraaniaeg"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"Juurdepääs kasutusele võimaldab rakendusel jälgida, milliseid teisi rakendusi (ja kui sageli), operaatorit ja keeleseadeid te kasutate, ning vaadata teisi üksikasju."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"Mälu"</string>
     <string name="always_running" msgid="9012705720688200252">"Töötab alati (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Töötab vahel (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4343,8 +4314,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Aku võib kiiremini tühjeneda. Rakendusel on nüüd lubatud taustal akut kasutada."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Soovitatav aku kasutusaja pikendamiseks"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Puudub"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"Selle rakenduse puhul ei takista kasutuse juurdepääsu väljalülitamine administraatoril jälgida teie tööprofiilil olevate rakenduste andmekasutust."</string>
     <string name="draw_overlay" msgid="7902083260500573027">"Muude rakenduste peal kuvamine"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Muude rakenduste peal kuvamine"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Luba muude rakenduste peal kuvamine"</string>
@@ -4392,7 +4362,8 @@
     <string name="disconnected" msgid="3469373726996129247">"Pole ühendatud"</string>
     <string name="keyboard_disconnected" msgid="796053864561894531">"Ühendus puudub"</string>
     <string name="apps_summary" msgid="4007416751775414252">"Installitud on <xliff:g id="COUNT">%1$d</xliff:g> rakendust"</string>
-    <string name="storage_summary" msgid="7631468664968572688">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> on kasutatud – <xliff:g id="FREE_SPACE_VALUE">%2$s</xliff:g> <xliff:g id="FREE_SPACE_UNITS">%3$s</xliff:g> on vaba"</string>
+    <!-- no translation found for storage_summary (7631468664968572688) -->
+    <skip />
     <string name="display_dashboard_summary" msgid="1599453894989339454">"Tume teema, fondi suurus, eredus"</string>
     <string name="memory_summary" msgid="8221954450951651735">"Keskmiselt on kasutusel <xliff:g id="USED_MEMORY">%1$s</xliff:g> mälu <xliff:g id="TOTAL_MEMORY">%2$s</xliff:g>-st"</string>
     <string name="users_summary" msgid="8473589474976307510">"Sisse logitud kasutajana <xliff:g id="USER_NAME">%1$s</xliff:g>"</string>
@@ -4461,7 +4432,8 @@
     <string name="ethernet_data_usage" msgid="4552227880905679761">"Etherneti andmekasutus"</string>
     <string name="wifi" msgid="2932584495223243842">"WiFi"</string>
     <string name="ethernet" msgid="4665162609974492983">"Ethernet"</string>
-    <string name="ethernet_interface_title" msgid="1634881244068292765">"Ethernet <xliff:g id="INTERFACEID">%1$s</xliff:g>"</string>
+    <!-- no translation found for ethernet_interface_title (1634881244068292765) -->
+    <skip />
     <string name="cell_data_template" msgid="6077963976103260821">"<xliff:g id="AMOUNT">^1</xliff:g> mobiilset andmesidet"</string>
     <string name="wifi_data_template" msgid="935934798340307438">"<xliff:g id="AMOUNT">^1</xliff:g> WiFi-andmeid"</string>
     <string name="ethernet_data_template" msgid="1429173767445201145">"<xliff:g id="AMOUNT">^1</xliff:g> Etherneti-andmeid"</string>
@@ -5018,22 +4990,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"Teave funktsiooni <xliff:g id="SUBJECT">%1$s</xliff:g> kohta"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"Saate tekstsõnumeid satelliidi kaudu vahetada, kasutades sobilikku teenuse <xliff:g id="CARRIER_NAME">%1$s</xliff:g> kontot"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"Teie teenuse <xliff:g id="CARRIER_NAME">%1$s</xliff:g> konto"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"Satellidipõhine sõnumside on teie konto osa"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"Sõnumside on teie kontol saadaval"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"Satelliidipõhine sõnumside ei ole teie konto osa"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"Lisateave"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"Tööpõhimõtted"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"Kui teil ei ole mobiilsidevõrku"</string>
-    <string name="title_satellite_connection_guide_for_manual_type" msgid="7223875100977941341">"Saatke telefoninumber"</string>
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"Teie telefon ühendatakse satelliidiga automaatselt. Parima ühenduse tagamiseks olge õues nii, et taevas oleks selgelt näha."</string>
-    <string name="summary_satellite_connection_guide_for_manual_type" msgid="5075149380084376662">"Kui teil puudub ühendus mobiilsidevõrguga, kuvatakse teile satelliidipõhise sõnumside kasutamise valik."</string>
     <string name="title_supported_service" msgid="4275535165812691571">"Kui telefon on satelliidiga ühenduse loonud"</string>
-    <string name="title_supported_service_for_manual_type" msgid="6009284624466359864">"Järgige satelliidiga ühenduse loomise juhiseid"</string>
     <string name="summary_supported_service" msgid="4320535903444834786">"Saate sõnumeid saata kellele tahes, sealhulgas hädaabiteenustele. Teie telefon loob uuesti ühenduse mobiilsidevõrguga, kui see on saadaval."</string>
-    <string name="summary_supported_service_for_manual_type" msgid="2147958362763058271">"Pärast telefoni ühendamist saate saata sõnumeid kõigile, sealhulgas hädaabiteenustele."</string>
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> võib olla aeglasem ja see on saadaval ainult mõnes piirkonnas. Ilm ja teatud struktuurid võivad mõjutada teie satelliidiühendust. Satelliidi kaudu helistamine pole saadaval. Hädaabikõned võivad siiski toimida.\n\nKontol tehtud muudatuste jõustumiseks seadetes võib kuluda veidi aega. Üksikasju küsige operaatorilt <xliff:g id="CARRIER_NAME">%2$s</xliff:g>."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> võib olla aeglasem ja see on saadaval ainult mõnes piirkonnas. Ilm ja teatud struktuurid võivad mõjutada teie satelliidiühendust. Satelliidi kaudu helistamine pole saadaval. Hädaabikõned võivad siiski toimida. Sõnumite saatmine hädaabiteenustele ei pruugi kõigis piirkondades saadaval olla.\n\nKontol tehtud muudatuste kuvamine seadetes võib võtta veidi aega. Üksikasju küsige operaatorilt <xliff:g id="CARRIER_NAME">%2$s</xliff:g>."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Lisateave <xliff:g id="SUBJECT">%1$s</xliff:g> kohta"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Funktsiooni <xliff:g id="FUNCTION">%1$s</xliff:g> ei saa sisse lülitada"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Funktsiooni <xliff:g id="FUNCTION">%1$s</xliff:g> sisselülitamiseks katkestage esmalt satelliitühendus"</string>
@@ -5042,9 +5008,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"satelliidi ühenduvus"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"satelliidipõhine sõnumside"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"Andmete kasutamine on teie kontol saadaval"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"Toetatud rakendused teie telefonis"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"kuva kõik rakendused"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"Toetatud rakendused teie telefonis"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"Pääsupunktide nimed"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"apn"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"Pole saadaval, kui on ühendus on loodud operaatoriga <xliff:g id="CARRIER">%1$s</xliff:g>"</string>
@@ -5212,44 +5181,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"Teie tööeeskirjade teave"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"Seadeid haldab teie IT-administraator"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"Käivitamine lehe suurusega 16 kB"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"Seadme käivitamine 16 kB lehte toetava tuumaga"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"Lülitumine 4 kB režiimilt 16 kB režiimile"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"Olete lehest sõltumatus režiimis, mis kasutab 4 kB tuuma, ja soovite lülituda 16 kB režiimile. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Pärast kinnitamist seade taaskäivitatakse. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Seadme lähtestamiseks ja tavarežiimi naasmiseks lülituge uuesti 4 kB režiimile ja lukustage käivituslaadur. Pärast seda, kui seade on Androidi käivitanud, keelake arendaja valikutes OEM-tootjaluku avamine."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"Lülitumine 16 kB režiimilt 4 kB režiimile"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"Olete lehest sõltumatus režiimis, mis kasutab 16 kB tuuma, ja soovite lülituda 4 kB režiimile. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Pärast kinnitamist seade taaskäivitatakse. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Selleks, et viia seade uuesti tavarežiimile, peate lukustama käivituslaaduri. See lähtestab seadme tehaseseadetele. Pärast seda, kui seade on Androidi käivitanud, keelake arendaja valikutes OEM-tootjaluku avamine."</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"Ei õnnestunud tuuma 16 kB lehtedega ühilduvale tuumale värskendada."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"Muudatuse rakendamine"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"Kas vormindada seade ümber ext4-le? (vajalik 16 kB režiimi jaoks)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"Arendaja valiku 16 kB kasutamiseks peab seadme andmete sektsioon olema konverditud failisüsteemiks ext4. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Pärast valiku 16 kB aktiveerimist tuleb seade veel korra taaskäivitada. Selles režiimis saate 4 kB ja 16 kB režiimide vahel vahetada ühe taaskäivitamisega. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada Seadme tehaseseadetele lähtestamiseks ja tavarežiimi naasmiseks lülituge uuesti 4K režiimile ja avage seadme käivituslaadur. Pärast seda, kui seade on Androidi käivitanud, keelake arendaja valikutes OEM-tootjaluku avamine. Pärast kinnitamist seade tühjendatakse ja failisüsteemiks seatakse ext4. Kui need toimingud on lõpetatud, lubage taas režiim 16 kB."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"Kustuta kõik andmed"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"Andmete sektsiooni ümbervormindamine failisüsteemiks ext4 ja seadme tühjendamine ebaõnnestus."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"Käivituslaadur on vaja avada"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"Arendaja valiku 16 kB kasutamiseks peab seadme käivituslaadur olema avatud. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Režiimi 16 kB aktiveerimisel tühjendatakse seade kõigist kasutaja andmetest ja seadetest. Kui käivituslaadur on avatud, on valiku 16 kB aktiveerimiseks vaja seade kaks korda taaskäivitada. Selles režiimis saate 4 kB ja 16 kB režiimide vahel vahetada ühe taaskäivitamisega. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Selleks, et viia seade uuesti tavarežiimile, peate lülituma tagasi 4 kB režiimile ja lukustama OEM-i/käivituslaaduri. See lähtestab seadme tehaseseadetele. Avage käivituslaadur ja proovige uuesti. Juhiseid selle kohta vaadake aadressilt &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt;"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"Lehest sõltumatu 4 kB režiimi kasutamine"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"Olete lehest sõltumatus 4 kB režiimis. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Tavarežiimi naasmiseks peate avama seadme käivituslaaduri. Puudutage lisateabe vaatamiseks."</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"Olete lehest sõltumatus 4 kB režiimis. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Tavarežiimi naasmiseks peate avama seadme käivituslaaduri. See lähtestab seadme tehaseseadetele. Pärast seda, kui seade on Androidi käivitanud, keelake arendaja valikutes OEM-tootjaluku avamine. Kui seadmel ei õnnestu Androidi käivitada või see on ebastabiilne, installige kogu operatsioonisüsteem ja püsivara uuesti, kasutades tehaseoleku süsteemikujutisi aadressilt &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; või kasutage tööriista aadressil &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ja valige „Tühjenda seade“, „Lukusta käivituslaadur“ ja „Installi kõik sektsioonid uuesti“."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"Lehest sõltumatu 16 kB režiimi kasutamine"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"Olete lehest sõltumatus 16 kB režiimis. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Selleks et viia seade uuesti tavarežiimile, peate lülituma tagasi 4 kB režiimile ja seejärel lukustama seadme käivituslaaduri. Puudutage lisateabe vaatamiseks."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"Olete lehest sõltumatus 16 kB režiimis. Selles režiimis ei saa garanteerida tarkvara terviklust ja andmed, mis salvestatakse telefoni, kui käivituslaadur on avatud, võivad olla ohus. Mõned funktsioonid on nendes režiimides keelatud, mistõttu ei pruugi kõik rakendused töötada. Selleks et viia seade uuesti tavarežiimile, peate lülituma tagasi 4 kB režiimile ja seejärel lukustama seadme käivituslaaduri. Selle toiminguga lähtestatakse seade jälle tehaseseadetele ja taastatakse tavarežiimi seaded. Pärast seda, kui seade on Androidi käivitanud, keelake arendaja valikutes OEM-tootjaluku avamine. Kui seadmel ei õnnestu Androidi käivitada või see on ebastabiilne, uuendage kogu püsivara uuesti, kasutades tehaseoleku süsteemikujutisi aadressilt &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers.google.com/android/images&lt;/a&gt; or use &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt;, ning tehke valikud „Tühjenda seade“, „Lukusta käivituslaadur“ ja „Sunduuenda kõiki sektsioone“."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"Lehest sõltumatu 16 kB režiim"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Lisateave"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Rakenduse käitamine lehe suuruse ühilduvusrežiimis"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"Rakendust käitatakse lülitamisel 16 KB seadmes lehe suuruse ühilduvusrežiimis."</string>
@@ -5658,7 +5610,8 @@
     <string name="audio_sharing_block_pairing_dialog_title" msgid="1756723860075818856">"Lülitage Heli jagamine välja"</string>
     <string name="audio_sharing_block_pairing_dialog_content" msgid="6352030314206654722">"Uue seadme sidumiseks lülitage esmalt Heli jagamine välja."</string>
     <string name="audio_sharing_turn_off_button_label" msgid="1934956352475393641">"Lülita välja"</string>
-    <string name="share_audio_notification_title" msgid="5201976754820387782">"Heli jagamine seadmega <xliff:g id="DEVICE_NAME">%1$s</xliff:g>"</string>
+    <!-- no translation found for share_audio_notification_title (5201976754820387782) -->
+    <skip />
     <string name="audio_streams_category_title" msgid="4878022761829895463">"LE Audio vooga ühendamine"</string>
     <string name="audio_streams_pref_title" msgid="6320485086288646209">"Läheduses asuvad helivood"</string>
     <string name="audio_streams_title" msgid="6617990880383079165">"Helivood"</string>
@@ -5688,9 +5641,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"Voog on peatatud"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"Lõpeta kuulamine"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"Ühilduvate kõrvaklappide ühendamine"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"TalkBacki ajutiselt väljalülitamine"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"TalkBacki ei saa helivoo kuulamisel kasutada. Kuulamise alustamiseks lülitage TalkBack välja."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"Lülita välja"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"Ühenda seade"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"Helivoo üksikasjad"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"Helivoo QR-kood"</string>

@@ -16,6 +16,8 @@
 
 package com.android.settings.datetime;
 
+import static android.provider.DeviceConfig.NAMESPACE_SETTINGS_UI;
+
 import static com.android.settings.core.BasePreferenceController.AVAILABLE;
 import static com.android.settings.core.BasePreferenceController.CONDITIONALLY_UNAVAILABLE;
 import static com.android.settings.core.BasePreferenceController.UNSUPPORTED_ON_DEVICE;
@@ -36,9 +38,9 @@ import android.content.pm.ActivityInfo;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
-import android.platform.test.annotations.DisableFlags;
 import android.platform.test.annotations.EnableFlags;
 import android.platform.test.flag.junit.SetFlagsRule;
+import android.provider.DeviceConfig;
 
 import androidx.preference.Preference;
 
@@ -80,7 +82,6 @@ public class TimeFeedbackPreferenceControllerTest {
     }
 
     @Test
-    @EnableFlags({Flags.FLAG_DATETIME_FEEDBACK})
     public void emptyIntentUri_controllerNotAvailable() {
         String emptyIntentUri = "";
         TimeFeedbackPreferenceController controller =
@@ -90,17 +91,10 @@ public class TimeFeedbackPreferenceControllerTest {
     }
 
     @Test
-    @DisableFlags({Flags.FLAG_DATETIME_FEEDBACK})
-    public void datetimeFeedbackDisabled_controllerNotAvailable() {
-        TimeFeedbackPreferenceController controller =
-                new TimeFeedbackPreferenceController(
-                        mContext, mContext.getPackageManager(), "test_key", TEST_INTENT_URI);
-        assertThat(controller.getAvailabilityStatus()).isEqualTo(UNSUPPORTED_ON_DEVICE);
-    }
-
-    @Test
     @EnableFlags({Flags.FLAG_DATETIME_FEEDBACK})
     public void validIntentUri_targetHandlerNotFound_returnsConditionallyUnavailable() {
+        DeviceConfig.setProperty(NAMESPACE_SETTINGS_UI,
+                DateTimeLaunchUtils.KEY_HELP_AND_FEEDBACK_FEATURE_SUPPORTED, "true", true);
         when(mMockPackageManager.resolveActivity(any(), anyInt())).thenReturn(null);
 
         TimeFeedbackPreferenceController controller =
@@ -113,6 +107,8 @@ public class TimeFeedbackPreferenceControllerTest {
     @Test
     @EnableFlags({Flags.FLAG_DATETIME_FEEDBACK})
     public void validIntentUri_targetHandlerAvailable_returnsAvailable() {
+        DeviceConfig.setProperty(NAMESPACE_SETTINGS_UI,
+                DateTimeLaunchUtils.KEY_HELP_AND_FEEDBACK_FEATURE_SUPPORTED, "true", true);
         when(mMockPackageManager.resolveActivity(any(), anyInt())).thenReturn(
                 createDummyResolveInfo());
 
@@ -124,7 +120,6 @@ public class TimeFeedbackPreferenceControllerTest {
     }
 
     @Test
-    @EnableFlags({Flags.FLAG_DATETIME_FEEDBACK})
     public void clickPreference() {
         Preference preference = new Preference(mContext);
 

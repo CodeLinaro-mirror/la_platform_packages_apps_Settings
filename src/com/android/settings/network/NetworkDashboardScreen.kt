@@ -26,7 +26,6 @@ import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.preferenceHierarchy
 import com.android.settingslib.preference.PreferenceScreenCreator
-import com.android.settingslib.widget.SettingsThemeHelper.isExpressiveTheme
 
 @ProvidePreferenceScreen(NetworkDashboardScreen.KEY)
 class NetworkDashboardScreen : PreferenceScreenCreator, PreferenceIconProvider {
@@ -38,7 +37,6 @@ class NetworkDashboardScreen : PreferenceScreenCreator, PreferenceIconProvider {
 
     override fun getIcon(context: Context) =
         when {
-            isExpressiveTheme(context) -> R.drawable.ic_homepage_network
             Flags.homepageRevamp() -> R.drawable.ic_settings_wireless_filled
             else -> R.drawable.ic_settings_wireless
         }

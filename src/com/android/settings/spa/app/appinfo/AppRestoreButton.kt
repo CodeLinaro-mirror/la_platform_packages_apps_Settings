@@ -51,6 +51,7 @@ class AppRestoreButton(packageInfoPresenter: PackageInfoPresenter) {
     private val packageInstaller = userPackageManager.packageInstaller
     private val packageName = packageInfoPresenter.packageName
     private val userHandle = UserHandle.of(packageInfoPresenter.userId)
+    private var broadcastReceiverIsCreated = false
     private lateinit var coroutineScope: CoroutineScope
     private lateinit var updateButtonTextJob: Job
     private val buttonTexts = intArrayOf(
@@ -64,13 +65,15 @@ class AppRestoreButton(packageInfoPresenter: PackageInfoPresenter) {
 
     @Composable
     fun getActionButton(app: ApplicationInfo): ActionButton {
-        val intentFilter = IntentFilter(INTENT_ACTION)
-        DisposableBroadcastReceiverAsUser(intentFilter, userHandle) { intent ->
-            if (app.packageName == intent.getStringExtra(PackageInstaller.EXTRA_PACKAGE_NAME)) {
-                onReceive(intent, app)
+        if (!broadcastReceiverIsCreated) {
+            val intentFilter = IntentFilter(INTENT_ACTION)
+            DisposableBroadcastReceiverAsUser(intentFilter, userHandle) { intent ->
+                if (app.packageName == intent.getStringExtra(PackageInstaller.EXTRA_PACKAGE_NAME)) {
+                    onReceive(intent, app)
+                }
             }
+            broadcastReceiverIsCreated = true
         }
-
         coroutineScope = rememberCoroutineScope()
         if (app.isArchived && ::updateButtonTextJob.isInitialized && !updateButtonTextJob.isActive) {
             buttonTextIndexStateFlow.value = 0

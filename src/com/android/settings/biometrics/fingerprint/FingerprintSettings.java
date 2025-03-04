@@ -1716,10 +1716,6 @@ public class FingerprintSettings extends SubSettings {
                             @Override
                             public void onAuthenticationError(
                                     int errorCode, @NonNull CharSequence errString) {
-                                mMetricsFeatureProvider.action(
-                                        getContext(),
-                                        SettingsEnums.ACTION_CHECK_FINGERPRINT,
-                                        false);
                                 dialog.dismiss();
                             }
 
@@ -1730,10 +1726,6 @@ public class FingerprintSettings extends SubSettings {
                                 FingerprintSettingsFragment parent =
                                         (FingerprintSettingsFragment) getTargetFragment();
                                 parent.highlightFingerprintItem(fingerId);
-                                mMetricsFeatureProvider.action(
-                                        getContext(),
-                                        SettingsEnums.ACTION_CHECK_FINGERPRINT,
-                                        true);
                                 dialog.dismiss();
                             }
 

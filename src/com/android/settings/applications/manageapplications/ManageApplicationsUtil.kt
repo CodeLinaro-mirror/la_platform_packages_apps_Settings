@@ -31,8 +31,6 @@ import com.android.settings.Settings.ManageExternalSourcesActivity
 import com.android.settings.Settings.ManageExternalStorageActivity
 import com.android.settings.Settings.MediaManagementAppsActivity
 import com.android.settings.Settings.NotificationAppListActivity
-import com.android.settings.Settings.NotificationExcludeClassificationActivity
-import com.android.settings.Settings.NotificationExcludeSummarizationActivity
 import com.android.settings.Settings.NotificationReviewPermissionsActivity
 import com.android.settings.Settings.OverlaySettingsActivity
 import com.android.settings.Settings.StorageUseActivity
@@ -46,8 +44,6 @@ import com.android.settings.applications.manageapplications.ManageApplications.L
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_USER_ASPECT_RATIO_APPS
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_BATTERY_OPTIMIZATION
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_CLONED_APPS
-import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_NOTIFICATION_EXCLUDE_CLASSIFICATION
-import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_NOTIFICATION_EXCLUDE_SUMMARIZATION
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_GAMES
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_HIGH_POWER
 import com.android.settings.applications.manageapplications.ManageApplications.LIST_TYPE_LONG_BACKGROUND_TASKS
@@ -103,9 +99,6 @@ object ManageApplicationsUtil {
         ChangeNfcTagAppsActivity::class to LIST_TYPE_NFC_TAG_APPS,
         TurnScreenOnSettingsActivity::class to LIST_TYPE_TURN_SCREEN_ON,
         UserAspectRatioAppListActivity::class to LIST_TYPE_USER_ASPECT_RATIO_APPS,
-        NotificationExcludeSummarizationActivity::class to LIST_TYPE_NOTIFICATION_EXCLUDE_SUMMARIZATION,
-        NotificationExcludeClassificationActivity::class to LIST_TYPE_NOTIFICATION_EXCLUDE_CLASSIFICATION,
-
     )
 
     @JvmField
@@ -124,7 +117,7 @@ object ManageApplicationsUtil {
             LIST_TYPE_MEDIA_MANAGEMENT_APPS -> MediaManagementAppsAppListProvider.getAppListRoute()
             LIST_TYPE_ALARMS_AND_REMINDERS -> AlarmsAndRemindersAppListProvider.getAppListRoute()
             LIST_TYPE_WIFI_ACCESS -> WifiControlAppListProvider.getAppListRoute()
-            LIST_TYPE_NOTIFICATION -> AppListNotificationsPageProvider.AllApps.name
+            LIST_TYPE_NOTIFICATION -> AppListNotificationsPageProvider.name
             LIST_TYPE_APPS_LOCALE -> AppLanguagesPageProvider.name
             LIST_TYPE_MAIN -> AllAppListPageProvider.name
             LIST_TYPE_NFC_TAG_APPS -> NfcTagAppsSettingsProvider.getAppListRoute()
@@ -135,8 +128,6 @@ object ManageApplicationsUtil {
             //LIST_TYPE_STORAGE -> StorageAppListPageProvider.Apps.name
             //LIST_TYPE_GAMES -> StorageAppListPageProvider.Games.name
             LIST_TYPE_BATTERY_OPTIMIZATION -> BatteryOptimizationModeAppListPageProvider.name
-            LIST_TYPE_NOTIFICATION_EXCLUDE_SUMMARIZATION -> AppListNotificationsPageProvider.ExcludeSummarization.name
-            LIST_TYPE_NOTIFICATION_EXCLUDE_CLASSIFICATION -> AppListNotificationsPageProvider.ExcludeClassification.name
             else -> null
         }
     }

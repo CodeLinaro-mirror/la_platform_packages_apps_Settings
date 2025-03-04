@@ -26,28 +26,27 @@ import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.spy;
-import static org.robolectric.Shadows.shadowOf;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.os.Handler;
-import android.os.Message;
+import android.hardware.display.DisplayManagerGlobal;
+import android.hardware.display.IDisplayManager;
 import android.os.RemoteException;
-import android.view.Display.Mode;
+import android.view.Display;
+import android.view.DisplayAdjustments;
+import android.view.DisplayInfo;
 
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.test.core.app.ApplicationProvider;
 
+import com.android.server.testutils.TestHandler;
 import com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.DisplayListener;
 import com.android.settings.flags.FakeFeatureFlagsImpl;
 
 import org.junit.Before;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
-
-import java.util.ArrayDeque;
-import java.util.List;
 
 public class ExternalDisplayTestBase {
     static final int EXTERNAL_DISPLAY_ID = 1;
@@ -56,46 +55,16 @@ public class ExternalDisplayTestBase {
     @Mock
     ExternalDisplaySettingsConfiguration.Injector mMockedInjector;
     @Mock
+    IDisplayManager mMockedIDisplayManager;
     Resources mResources;
+    DisplayManagerGlobal mDisplayManagerGlobal;
     FakeFeatureFlagsImpl mFlags = new FakeFeatureFlagsImpl();
     Context mContext;
     DisplayListener mListener;
-    TestHandler mHandler;
+    TestHandler mHandler = new TestHandler(null);
     PreferenceManager mPreferenceManager;
     PreferenceScreen mPreferenceScreen;
-    List<DisplayDevice> mDisplays;
-
-    static class TestHandler extends Handler {
-        private final ArrayDeque<Message> mPending = new ArrayDeque<>();
-        private final Handler mSubhandler;
-
-        TestHandler(Handler subhandler) {
-            mSubhandler = subhandler;
-        }
-
-        ArrayDeque<Message> getPendingMessages() {
-            return mPending;
-        }
-
-        /**
-         * Schedules to send the message upon next invocation of {@link #flush()}. This ignores the
-         * time argument since our code doesn't meaningfully use it, but this is the most convenient
-         * way to intercept both Message and Callback objects synchronously.
-         */
-        @Override
-        public boolean sendMessageAtTime(Message msg, long uptimeMillis) {
-            mPending.add(msg);
-            return true;
-        }
-
-        void flush() {
-            for (var msg : mPending) {
-                mSubhandler.sendMessage(msg);
-            }
-            mPending.clear();
-            shadowOf(mSubhandler.getLooper()).idle();
-        }
-    }
+    Display[] mDisplays;
 
     /**
      * Setup.
@@ -108,19 +77,20 @@ public class ExternalDisplayTestBase {
         doReturn(mResources).when(mContext).getResources();
         mPreferenceManager = new PreferenceManager(mContext);
         mPreferenceScreen = mPreferenceManager.createPreferenceScreen(mContext);
+        doReturn(0).when(mMockedIDisplayManager).getPreferredWideGamutColorSpaceId();
+        mDisplayManagerGlobal = new DisplayManagerGlobal(mMockedIDisplayManager);
         mFlags.setFlag(FLAG_DISPLAY_TOPOLOGY_PANE_IN_DISPLAY_LIST, false);
         mFlags.setFlag(FLAG_ROTATION_CONNECTED_DISPLAY_SETTING, true);
         mFlags.setFlag(FLAG_RESOLUTION_AND_ENABLE_CONNECTED_DISPLAY_SETTING, true);
         mFlags.setFlag(FLAG_DISPLAY_SIZE_CONNECTED_DISPLAY_SETTING, true);
-        mDisplays = List.of(
-                createExternalDisplay(DisplayIsEnabled.YES),
-                createOverlayDisplay(DisplayIsEnabled.YES));
-        doReturn(mDisplays).when(mMockedInjector).getConnectedDisplays();
+        mDisplays = new Display[] {
+                createDefaultDisplay(), createExternalDisplay(), createOverlayDisplay()};
+        doReturn(mDisplays).when(mMockedInjector).getAllDisplays();
+        doReturn(mDisplays).when(mMockedInjector).getEnabledDisplays();
         for (var display : mDisplays) {
-            doReturn(display).when(mMockedInjector).getDisplay(display.getId());
+            doReturn(display).when(mMockedInjector).getDisplay(display.getDisplayId());
         }
         doReturn(mFlags).when(mMockedInjector).getFlags();
-        mHandler = new TestHandler(mContext.getMainThreadHandler());
         doReturn(mHandler).when(mMockedInjector).getHandler();
         doReturn("").when(mMockedInjector).getSystemProperty(
                 VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY);
@@ -133,26 +103,55 @@ public class ExternalDisplayTestBase {
         doReturn(mContext).when(mMockedInjector).getContext();
     }
 
-    DisplayDevice createExternalDisplay(DisplayIsEnabled isEnabled) {
-        int displayId = EXTERNAL_DISPLAY_ID;
-        var supportedModes = List.of(
-                new Mode(0, 1920, 1080, 60, 60, new float[0], new int[0]),
-                new Mode(1, 800, 600, 60, 60, new float[0], new int[0]),
-                new Mode(2, 320, 240, 70, 70, new float[0], new int[0]),
-                new Mode(3, 640, 480, 60, 60, new float[0], new int[0]),
-                new Mode(4, 640, 480, 50, 60, new float[0], new int[0]),
-                new Mode(5, 2048, 1024, 60, 60, new float[0], new int[0]),
-                new Mode(6, 720, 480, 60, 60, new float[0], new int[0]));
-        return new DisplayDevice(
-                displayId, "HDMI", supportedModes.get(0), supportedModes, isEnabled);
+    Display createDefaultDisplay() throws RemoteException {
+        int displayId = 0;
+        var displayInfo = new DisplayInfo();
+        doReturn(displayInfo).when(mMockedIDisplayManager).getDisplayInfo(displayId);
+        displayInfo.displayId = displayId;
+        displayInfo.name = "Built-in";
+        displayInfo.type = Display.TYPE_INTERNAL;
+        displayInfo.supportedModes = new Display.Mode[]{
+                new Display.Mode(0, 2048, 1024, 60, 60, new float[0],
+                    new int[0])};
+        displayInfo.appsSupportedModes = displayInfo.supportedModes;
+        return createDisplay(displayInfo);
     }
 
-    DisplayDevice createOverlayDisplay(DisplayIsEnabled isEnabled) {
+    Display createExternalDisplay() throws RemoteException {
+        int displayId = EXTERNAL_DISPLAY_ID;
+        var displayInfo = new DisplayInfo();
+        doReturn(displayInfo).when(mMockedIDisplayManager).getDisplayInfo(displayId);
+        displayInfo.displayId = displayId;
+        displayInfo.name = "HDMI";
+        displayInfo.type = Display.TYPE_EXTERNAL;
+        displayInfo.supportedModes = new Display.Mode[]{
+                new Display.Mode(0, 1920, 1080, 60, 60, new float[0], new int[0]),
+                new Display.Mode(1, 800, 600, 60, 60, new float[0], new int[0]),
+                new Display.Mode(2, 320, 240, 70, 70, new float[0], new int[0]),
+                new Display.Mode(3, 640, 480, 60, 60, new float[0], new int[0]),
+                new Display.Mode(4, 640, 480, 50, 60, new float[0], new int[0]),
+                new Display.Mode(5, 2048, 1024, 60, 60, new float[0], new int[0]),
+                new Display.Mode(6, 720, 480, 60, 60, new float[0], new int[0])};
+        displayInfo.appsSupportedModes = displayInfo.supportedModes;
+        return createDisplay(displayInfo);
+    }
+
+    Display createOverlayDisplay() throws RemoteException {
         int displayId = OVERLAY_DISPLAY_ID;
-        var supportedModes = List.of(
-                new Mode(0, 1240, 780, 60, 60, new float[0],
-                    new int[0]));
-        return new DisplayDevice(
-                displayId, "Overlay #1", supportedModes.get(0), supportedModes, isEnabled);
+        var displayInfo = new DisplayInfo();
+        doReturn(displayInfo).when(mMockedIDisplayManager).getDisplayInfo(displayId);
+        displayInfo.displayId = displayId;
+        displayInfo.name = "Overlay #1";
+        displayInfo.type = Display.TYPE_OVERLAY;
+        displayInfo.supportedModes = new Display.Mode[]{
+                new Display.Mode(0, 1240, 780, 60, 60, new float[0],
+                    new int[0])};
+        displayInfo.appsSupportedModes = displayInfo.supportedModes;
+        return createDisplay(displayInfo);
+    }
+
+    Display createDisplay(DisplayInfo displayInfo) {
+        return new Display(mDisplayManagerGlobal, displayInfo.displayId, displayInfo,
+                (DisplayAdjustments) null);
     }
 }

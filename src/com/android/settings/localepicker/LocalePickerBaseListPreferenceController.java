@@ -28,7 +28,6 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
@@ -165,8 +164,7 @@ public abstract class LocalePickerBaseListPreferenceController extends
         return getSortedLocaleList(searchItem);
     }
 
-    @VisibleForTesting
-    void setupPreference(List<LocaleStore.LocaleInfo> localeInfoList,
+    private void setupPreference(List<LocaleStore.LocaleInfo> localeInfoList,
             Map<String, Preference> existingPreferences) {
         Log.d(TAG, "setupPreference: isNumberingMode = " + isNumberingMode());
         if (isNumberingMode() && getPreferenceCategoryKey().contains(KEY_SUPPORTED)) {
@@ -257,8 +255,7 @@ public abstract class LocalePickerBaseListPreferenceController extends
         return localeInfos;
     }
 
-    @VisibleForTesting
-    void switchFragment(LocaleStore.LocaleInfo localeInfo) {
+    private void switchFragment(LocaleStore.LocaleInfo localeInfo) {
         boolean shouldShowLocaleEditor = shouldShowLocaleEditor(localeInfo);
         if (shouldShowLocaleEditor) {
             List<LocaleStore.LocaleInfo> feedItemList = getUserLocaleList();
@@ -284,6 +281,7 @@ public abstract class LocalePickerBaseListPreferenceController extends
                     .setArguments(extra)
                     .launch();
         }
+        ((Activity) mContext).finish();
     }
 
     public void setFragmentManager(@NonNull FragmentManager fragmentManager) {
@@ -297,8 +295,7 @@ public abstract class LocalePickerBaseListPreferenceController extends
         }
     }
 
-    @VisibleForTesting
-    boolean shouldShowLocaleEditor(LocaleStore.LocaleInfo localeInfo) {
+    private boolean shouldShowLocaleEditor(LocaleStore.LocaleInfo localeInfo) {
         boolean isSystemLocale = localeInfo.isSystemLocale();
         boolean isRegionLocale = localeInfo.getParent() != null;
         boolean mayHaveDifferentNumberingSystem = localeInfo.hasNumberingSystems();

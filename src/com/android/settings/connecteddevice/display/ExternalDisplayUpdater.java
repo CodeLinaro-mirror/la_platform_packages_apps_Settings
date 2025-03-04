@@ -16,6 +16,8 @@
 
 package com.android.settings.connecteddevice.display;
 
+import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.isDisplayAllowed;
+
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.UserHandle;
@@ -53,7 +55,7 @@ public class ExternalDisplayUpdater {
     private final DisplayListener mListener =  new DisplayListener() {
         @Override
         public void update(int displayId) {
-            refreshPreference();
+            scheduleUpdate();
         }
     };
 
@@ -89,6 +91,8 @@ public class ExternalDisplayUpdater {
                     .launch();
             return true;
         });
+
+        scheduleUpdate();
     }
 
     /**
@@ -132,19 +136,22 @@ public class ExternalDisplayUpdater {
             return null;
         }
 
-        var allDisplays = mInjector.getConnectedDisplays();
-        for (var display : allDisplays) {
-            if (display.isEnabled() == DisplayIsEnabled.YES) {
+        for (var display : mInjector.getEnabledDisplays()) {
+            if (display != null && isDisplayAllowed(display, mInjector)) {
                 return context.getString(R.string.external_display_on);
             }
         }
-        return allDisplays.isEmpty() ? null : context.getString(R.string.external_display_off);
+
+        for (var display : mInjector.getAllDisplays()) {
+            if (display != null && isDisplayAllowed(display, mInjector)) {
+                return context.getString(R.string.external_display_off);
+            }
+        }
+
+        return null;
     }
 
-    /**
-     * Updates preference, possibly removing it entirely.
-     */
-    public void refreshPreference() {
+    private void scheduleUpdate() {
         if (mInjector == null) {
             return;
         }

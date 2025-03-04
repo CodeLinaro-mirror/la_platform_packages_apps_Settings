@@ -42,9 +42,6 @@ public abstract class SliderPreferenceController extends BasePreferenceControlle
         } else if (preference instanceof androidx.preference.SeekBarPreference) {
             ((androidx.preference.SeekBarPreference) preference)
                 .setValue(getSliderPosition());
-        } else if (preference instanceof com.android.settingslib.widget.SliderPreference) {
-            ((com.android.settingslib.widget.SliderPreference) preference)
-                .setValue(getSliderPosition());
         }
     }
 

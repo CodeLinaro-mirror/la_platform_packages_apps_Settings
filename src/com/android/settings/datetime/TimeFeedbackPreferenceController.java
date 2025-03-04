@@ -32,7 +32,6 @@ import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
 import com.android.settings.core.BasePreferenceController;
 import com.android.settings.core.PreferenceControllerMixin;
-import com.android.settings.flags.Flags;
 
 import java.net.URISyntaxException;
 
@@ -48,6 +47,7 @@ public class TimeFeedbackPreferenceController
 
     private final PackageManager mPackageManager;
     private final String mIntentUri;
+    private final int mAvailabilityStatus;
 
     public TimeFeedbackPreferenceController(Context context, String preferenceKey) {
         this(context, context.getPackageManager(), preferenceKey, context.getResources().getString(
@@ -60,6 +60,7 @@ public class TimeFeedbackPreferenceController
         super(context, preferenceKey);
         mPackageManager = packageManager;
         mIntentUri = intentUri;
+        mAvailabilityStatus = TextUtils.isEmpty(mIntentUri) ? UNSUPPORTED_ON_DEVICE : AVAILABLE;
     }
 
     /**
@@ -74,12 +75,13 @@ public class TimeFeedbackPreferenceController
 
     @Override
     public int getAvailabilityStatus() {
-        if (!Flags.datetimeFeedback() || TextUtils.isEmpty(mIntentUri)) {
+        if (!DateTimeLaunchUtils.isFeedbackFeatureSupported()) {
             return UNSUPPORTED_ON_DEVICE;
-        } else if (!isTimeFeedbackTargetAvailable()) {
+        }
+        if (!isTimeFeedbackTargetAvailable()) {
             return CONDITIONALLY_UNAVAILABLE;
         }
-        return AVAILABLE;
+        return mAvailabilityStatus;
     }
 
     @Override

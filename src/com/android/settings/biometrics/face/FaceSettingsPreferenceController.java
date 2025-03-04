@@ -20,10 +20,8 @@ import android.app.admin.DevicePolicyManager;
 import android.content.Context;
 
 import com.android.settings.core.TogglePreferenceController;
-import com.android.settings.overlay.FeatureFactory;
 import com.android.settingslib.RestrictedLockUtils.EnforcedAdmin;
 import com.android.settingslib.RestrictedLockUtilsInternal;
-import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 
 /**
  * Abstract base class for all face settings toggles.
@@ -31,11 +29,9 @@ import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 public abstract class FaceSettingsPreferenceController extends TogglePreferenceController {
 
     private int mUserId;
-    protected MetricsFeatureProvider mMetricsFeatureProvider;
 
     public FaceSettingsPreferenceController(Context context, String preferenceKey) {
         super(context, preferenceKey);
-        mMetricsFeatureProvider = FeatureFactory.getFeatureFactory().getMetricsFeatureProvider();
     }
 
     public void setUserId(int userId) {

@@ -41,7 +41,6 @@ import android.hardware.fingerprint.FingerprintManager;
 import android.os.UserHandle;
 import android.platform.test.annotations.DisableFlags;
 import android.platform.test.annotations.EnableFlags;
-import android.platform.test.annotations.RequiresFlagsDisabled;
 import android.platform.test.annotations.RequiresFlagsEnabled;
 import android.platform.test.flag.junit.SetFlagsRule;
 import android.safetycenter.SafetyEvent;
@@ -70,6 +69,7 @@ import org.mockito.MockitoAnnotations;
 import java.util.ArrayList;
 import java.util.List;
 
+@RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
 @RunWith(AndroidJUnit4.class)
 public class FingerprintSafetySourceTest {
 
@@ -117,7 +117,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetyData_whenSafetyCenterIsDisabled_doesNotSetData() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(false);
 
@@ -129,20 +128,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsDisabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
-    public void setSafetySourceData_whenSeparateBiometricsFlagOff_setsNullData() {
-        when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
-
-        FingerprintSafetySource.setSafetySourceData(
-                mApplicationContext, EVENT_SOURCE_STATE_CHANGED);
-
-        verify(mSafetyCenterManagerWrapper)
-                .setSafetySourceData(
-                        any(), eq(FingerprintSafetySource.SAFETY_SOURCE_ID), eq(null), any());
-    }
-
-    @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_whenSafetyCenterIsEnabled_withoutFingerprint_setsNullData() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(false);
@@ -156,7 +141,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_setsDataForFingerprintSource() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
@@ -172,7 +156,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_setsDataWithCorrectSafetyEvent() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
@@ -187,7 +170,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     @DisableFlags(android.app.supervision.flags.Flags.FLAG_DEPRECATE_DPM_SUPERVISION_APIS)
     public void setSafetySourceData_withFingerprintNotEnrolled_whenDisabledByAdmin_setsData() {
         when(mDevicePolicyManager.getProfileOwnerOrDeviceOwnerSupervisionComponent(USER_HANDLE))
@@ -207,7 +189,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     @EnableFlags(android.app.supervision.flags.Flags.FLAG_DEPRECATE_DPM_SUPERVISION_APIS)
     public void setSafetySourceData_withFingerprintNotEnrolled_whenSupervisionIsOn_setsData() {
         when(mSupervisionManager.isSupervisionEnabledForUser(USER_ID)).thenReturn(true);
@@ -226,7 +207,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_withFingerprintNotEnrolled_whenNotDisabledByAdmin_setsData() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
@@ -243,7 +223,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     @DisableFlags(android.app.supervision.flags.Flags.FLAG_DEPRECATE_DPM_SUPERVISION_APIS)
     public void setSafetySourceData_withFingerprintsEnrolled_whenDisabledByAdmin_setsData() {
         int enrolledFingerprintsCount = 2;
@@ -267,7 +246,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     @EnableFlags(android.app.supervision.flags.Flags.FLAG_DEPRECATE_DPM_SUPERVISION_APIS)
     public void setSafetySourceData_withFingerprintsEnrolled_whenSupervisionIsOn_setsData() {
         int enrolledFingerprintsCount = 2;
@@ -290,7 +268,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_withFingerprintsEnrolled_whenNotDisabledByAdmin_setsData() {
         int enrolledFingerprintsCount = 2;
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
@@ -311,7 +288,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_fingerprint_whenEnrolled_setsInfoSeverity() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
@@ -333,7 +309,6 @@ public class FingerprintSafetySourceTest {
     }
 
     @Test
-    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
     public void setSafetySourceData_fingerprint_whenNotEnrolled_setsUnspSeverity() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFingerprintManager.isHardwareDetected()).thenReturn(true);

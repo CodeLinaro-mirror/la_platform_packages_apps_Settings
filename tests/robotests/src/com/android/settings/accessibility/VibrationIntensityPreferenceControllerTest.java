@@ -29,8 +29,8 @@ import androidx.preference.PreferenceScreen;
 import androidx.test.core.app.ApplicationProvider;
 
 import com.android.settings.testutils.shadow.ShadowInteractionJankMonitor;
+import com.android.settings.widget.SeekBarPreference;
 import com.android.settingslib.core.lifecycle.Lifecycle;
-import com.android.settingslib.widget.SliderPreference;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -70,7 +70,7 @@ public class VibrationIntensityPreferenceControllerTest {
     private Lifecycle mLifecycle;
     private Context mContext;
     private Vibrator mVibrator;
-    private SliderPreference mPreference;
+    private SeekBarPreference mPreference;
 
     @Before
     public void setUp() {
@@ -85,7 +85,7 @@ public class VibrationIntensityPreferenceControllerTest {
         VibrationIntensityPreferenceController controller = createPreferenceController(3);
         Settings.System.putString(mContext.getContentResolver(), SETTING_KEY, /* value= */ null);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue())
+        assertThat(mPreference.getProgress())
                 .isEqualTo(mVibrator.getDefaultVibrationIntensity(VIBRATION_USAGE));
     }
 
@@ -96,17 +96,17 @@ public class VibrationIntensityPreferenceControllerTest {
 
         updateSetting(VibrationPreferenceConfig.MAIN_SWITCH_SETTING_KEY, ON);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
         assertThat(mPreference.isEnabled()).isTrue();
 
         updateSetting(VibrationPreferenceConfig.MAIN_SWITCH_SETTING_KEY, OFF);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
         assertThat(mPreference.isEnabled()).isFalse();
 
         updateSetting(VibrationPreferenceConfig.MAIN_SWITCH_SETTING_KEY, ON);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
         assertThat(mPreference.isEnabled()).isTrue();
     }
 
@@ -116,19 +116,19 @@ public class VibrationIntensityPreferenceControllerTest {
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_HIGH);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_HIGH);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_HIGH);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_MEDIUM);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_LOW);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_OFF);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
     }
 
     @Test
@@ -137,19 +137,19 @@ public class VibrationIntensityPreferenceControllerTest {
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_HIGH);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_MEDIUM);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_MEDIUM);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_LOW);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_OFF);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
     }
 
     @Test
@@ -158,39 +158,39 @@ public class VibrationIntensityPreferenceControllerTest {
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_HIGH);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_MEDIUM);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_LOW);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_OFF);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
     }
 
     @Test
-    public void setSliderPosition_mainSwitchDisabled_ignoresUpdates() throws Exception {
+    public void setProgress_mainSwitchDisabled_ignoresUpdates() throws Exception {
         VibrationIntensityPreferenceController controller = createPreferenceController(3);
         updateSetting(SETTING_KEY, Vibrator.VIBRATION_INTENSITY_LOW);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
 
         updateSetting(VibrationPreferenceConfig.MAIN_SWITCH_SETTING_KEY, OFF);
         controller.updateState(mPreference);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
         assertThat(mPreference.isEnabled()).isFalse();
 
         assertThat(controller.setSliderPosition(Vibrator.VIBRATION_INTENSITY_HIGH)).isFalse();
         assertThat(readSetting(SETTING_KEY)).isEqualTo(Vibrator.VIBRATION_INTENSITY_LOW);
-        assertThat(mPreference.getValue()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
+        assertThat(mPreference.getProgress()).isEqualTo(Vibrator.VIBRATION_INTENSITY_OFF);
     }
     @Test
-    public void setSliderPosition_allSupportedPositions_updatesIntensitySetting() throws Exception {
+    public void setProgress_allSupportedPositions_updatesIntensitySetting() throws Exception {
         VibrationIntensityPreferenceController controller = createPreferenceController(3);
 
         controller.setSliderPosition(Vibrator.VIBRATION_INTENSITY_OFF);
@@ -207,8 +207,7 @@ public class VibrationIntensityPreferenceControllerTest {
     }
 
     @Test
-    public void setSliderPosition_twoSupportedPositions_updatesMediumPositionToHigh()
-            throws Exception {
+    public void setProgress_twoSupportedPositions_updatesMediumPositionToHigh() throws Exception {
         VibrationIntensityPreferenceController controller = createPreferenceController(2);
 
         controller.setSliderPosition(Vibrator.VIBRATION_INTENSITY_OFF);
@@ -225,7 +224,7 @@ public class VibrationIntensityPreferenceControllerTest {
     }
 
     @Test
-    public void setSliderPosition_oneSupportedPosition_updatesOnPositionsToDeviceDefault()
+    public void setProgress_oneSupportedPosition_updatesOnPositionsToDeviceDefault()
             throws Exception {
         int defaultIntensity = mVibrator.getDefaultVibrationIntensity(VIBRATION_USAGE);
         VibrationIntensityPreferenceController controller = createPreferenceController(1);
@@ -256,7 +255,7 @@ public class VibrationIntensityPreferenceControllerTest {
         VibrationIntensityPreferenceController controller =
                 new TestPreferenceController(mContext, supportedIntensityLevels);
         mLifecycle.addObserver(controller);
-        mPreference = new SliderPreference(mContext);
+        mPreference = new SeekBarPreference(mContext);
         mPreference.setSummary("Test summary");
         when(mScreen.findPreference(controller.getPreferenceKey())).thenReturn(mPreference);
         controller.displayPreference(mScreen);

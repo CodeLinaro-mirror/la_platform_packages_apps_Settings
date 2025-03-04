@@ -36,7 +36,6 @@ import com.android.settingslib.spaprivileged.model.app.AppListModel
 import com.android.settingslib.spaprivileged.model.app.AppRecord
 import com.android.settingslib.spaprivileged.model.app.userId
 import com.android.settingslib.spaprivileged.template.app.AppListItemModel
-import com.android.settingslib.spaprivileged.template.app.AppListSwitchItem
 import com.android.settingslib.spaprivileged.template.app.AppListTwoTargetSwitchItem
 import com.android.settingslib.utils.StringUtil
 import kotlinx.coroutines.Dispatchers
@@ -53,7 +52,6 @@ data class AppNotificationsRecord(
 
 class AppNotificationsListModel(
     private val context: Context,
-    private val listType: ListType
 ) : AppListModel<AppNotificationsRecord> {
     private val repository = AppNotificationRepository(context)
     private val now = System.currentTimeMillis()
@@ -66,7 +64,7 @@ class AppNotificationsListModel(
                 AppNotificationsRecord(
                     app = app,
                     sentState = usageEvents[app.packageName],
-                    controller = AppNotificationController(repository, app, listType),
+                    controller = AppNotificationController(repository, app),
                 )
             }
         }
@@ -131,35 +129,17 @@ class AppNotificationsListModel(
 
     @Composable
     override fun AppListItemModel<AppNotificationsRecord>.AppItem() {
-        when (listType) {
-            ListType.ExcludeSummarization -> {
-                AppListSwitchItem(
-                    checked = record.controller.isAllowed.observeAsCallback(),
-                    changeable = { true },
-                    onCheckedChange = record.controller::setAllowed,
-                )
-            }
-            ListType.ExcludeClassification -> {
-                AppListSwitchItem(
-                    checked = record.controller.isAllowed.observeAsCallback(),
-                    changeable = { true },
-                    onCheckedChange = record.controller::setAllowed,
-                )
-            }
-            else -> {
-                val changeable by produceState(initialValue = false) {
-                    withContext(Dispatchers.Default) {
-                        value = repository.isChangeable(record.app)
-                    }
-                }
-                AppListTwoTargetSwitchItem(
-                    onClick = { navigateToAppNotificationSettings(app = record.app) },
-                    checked = record.controller.isEnabled.observeAsCallback(),
-                    changeable = { changeable },
-                    onCheckedChange = record.controller::setEnabled,
-                )
+        val changeable by produceState(initialValue = false) {
+            withContext(Dispatchers.Default) {
+                value = repository.isChangeable(record.app)
             }
         }
+        AppListTwoTargetSwitchItem(
+            onClick = { navigateToAppNotificationSettings(app = record.app) },
+            checked = record.controller.isEnabled.observeAsCallback(),
+            changeable = { changeable },
+            onCheckedChange = record.controller::setEnabled,
+        )
     }
 
     private fun navigateToAppNotificationSettings(app: ApplicationInfo) {

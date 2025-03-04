@@ -29,6 +29,7 @@ import android.util.Log;
 
 import androidx.annotation.VisibleForTesting;
 
+import com.android.internal.telephony.flags.Flags;
 import com.android.settings.network.GlobalSettingsChangeListener;
 import com.android.settings.network.ProxySubscriptionManager;
 import com.android.settings.overlay.FeatureFactory;
@@ -161,13 +162,19 @@ public class AirplaneModeEnabler extends GlobalSettingsChangeListener {
         if (context == null || telephonyManager == null) {
             return false;
         }
-        try {
+        if (Flags.enforceTelephonyFeatureMappingForPublicApis()) {
+            try {
+                if (telephonyManager.getEmergencyCallbackMode()) {
+                    return true;
+                }
+            } catch (UnsupportedOperationException e) {
+                // Device doesn't support FEATURE_TELEPHONY_CALLING
+                // Ignore exception, device is not in ECM mode.
+            }
+        } else {
             if (telephonyManager.getEmergencyCallbackMode()) {
                 return true;
             }
-        } catch (UnsupportedOperationException e) {
-            // Device doesn't support FEATURE_TELEPHONY_CALLING
-            // Ignore exception, device is not in ECM mode.
         }
         final List<SubscriptionInfo> subInfoList =
                 ProxySubscriptionManager.getInstance(context).getActiveSubscriptionsInfo();
@@ -178,12 +185,18 @@ public class AirplaneModeEnabler extends GlobalSettingsChangeListener {
             final TelephonyManager telephonyManagerForSubId =
                     telephonyManager.createForSubscriptionId(subInfo.getSubscriptionId());
             if (telephonyManagerForSubId != null) {
-                try {
+                if (!Flags.enforceTelephonyFeatureMappingForPublicApis()) {
                     if (telephonyManagerForSubId.getEmergencyCallbackMode()) {
                         return true;
                     }
-                } catch (UnsupportedOperationException e) {
-                    // Ignore exception, device is not in ECM mode.
+                } else {
+                    try {
+                        if (telephonyManagerForSubId.getEmergencyCallbackMode()) {
+                            return true;
+                        }
+                    } catch (UnsupportedOperationException e) {
+                        // Ignore exception, device is not in ECM mode.
+                    }
                 }
             }
         }

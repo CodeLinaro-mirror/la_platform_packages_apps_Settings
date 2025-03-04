@@ -41,6 +41,8 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"ತಡೆಹಿಡಿಯಲಾಗಿದೆ"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"ಅಪರಿಚಿತ"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"ಪೂರ್ವವೀಕ್ಷಣೆ"</string>
+    <string name="preview_pager_previous_button" msgid="607771113300838313">"ಹಿಂದಿನ ಪೂರ್ವವೀಕ್ಷಣೆ"</string>
+    <string name="preview_pager_next_button" msgid="8700907912508927271">"ಮುಂದಿನ ಪೂರ್ವವೀಕ್ಷಣೆ"</string>
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR ಕೋಡ್"</string>
     <string name="font_size_make_smaller_desc" msgid="4978038055549590140">"ಚಿಕ್ಕದಾಗಿಸು"</string>
     <string name="font_size_make_larger_desc" msgid="5583046033381722247">"ದೊಡ್ಡದಾಗಿಸು"</string>
@@ -85,12 +87,6 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"ಯೂನಿಫೈಡ್ ಕಂಟ್ರೋಲ್‌ಗೆ ಸಂಕುಚಿಸಿ"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"ಎಡ"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"ಬಲ"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"ಸುತ್ತಮುತ್ತಲಿನ ಪರಿಸರವನ್ನು ಮ್ಯೂಟ್ ಮಾಡಿ"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"ಸುತ್ತಮುತ್ತಲಿನ ಪರಿಸರವನ್ನು ಅನ್‌ಮ್ಯೂಟ್ ಮಾಡಿ"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"ಸುತ್ತಮುತ್ತಲಿನ ಪರಿಸರವನ್ನು ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"</string>
@@ -103,10 +99,6 @@
     <string name="bluetooth_audio_routing_about_title" msgid="5773336779246891954">"ಆಡಿಯೋ ಔಟ್‌ಪುಟ್ ಕುರಿತು"</string>
     <string name="bluetooth_audio_routing_summary" msgid="7180947533985969066">"ಶ್ರವಣ ಸಾಧನ ಅಥವಾ ಫೋನ್ ಸ್ಪೀಕರ್‌ಗೆ ಧ್ವನಿಗಳನ್ನು ನಿರ್ದೇಶಿಸುತ್ತದೆ"</string>
     <string name="bluetooth_screen_related" msgid="7976543255501825536">"ಸಂಬಂಧಿತ"</string>
-    <!-- no translation found for bluetooth_try_nearby_share_title (4996427014054610877) -->
-    <skip />
-    <!-- no translation found for bluetooth_try_nearby_share_summary (329823028635487822) -->
-    <skip />
     <string name="bluetooth_ringtone_title" msgid="3177308461256892085">"ರಿಂಗ್‌ಟೋನ್ ಮತ್ತು ಅಲಾರಾಂಗಳು"</string>
     <string name="bluetooth_call_title" msgid="6851464952021874072">"ಕರೆಗಳ ಸಮಯದಲ್ಲಿ ಆಡಿಯೋ"</string>
     <string name="bluetooth_media_title" msgid="2878373577382067290">"ಮಾಧ್ಯಮ ಮತ್ತು ಸಿಸ್ಟಮ್ ಶಬ್ದಗಳು"</string>
@@ -232,8 +224,6 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"ಭಾಷೆ ಮತ್ತು ಪ್ರದೇಶ"</string>
     <string name="language_selection_title" msgid="968179636453982415">"ಭಾಷೆಯನ್ನು ಸೇರಿಸಿ"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"ಪ್ರದೇಶವನ್ನು ಆಯ್ಕೆಮಾಡಿ"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
     <string name="country_selection_title" msgid="5376929821458644732">"ಪ್ರದೇಶ ಪ್ರಾಶಸ್ತ್ಯ"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"ಭಾಷೆಗಳನ್ನು ಹುಡುಕಿ"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"ಪ್ರದೇಶಗಳನ್ನು ಹುಡುಕಿ"</string>
@@ -241,8 +231,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"ಇನ್ನಷ್ಟು ಭಾಷೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"ಪ್ರದೇಶವನ್ನು <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ಗೆ ಬದಲಾಯಿಸಬೇಕೆ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"ನಿಮ್ಮ ಸಾಧನವು <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> ಅನ್ನು ಸಿಸ್ಟಂ ಭಾಷೆಯಾಗಿ ಇರಿಸುತ್ತದೆ"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="8234587334207926397">"ಹೆಚ್ಚಿನ ಆ್ಯಪ್‌ಗಳು ನಿಮ್ಮ ಪ್ರಾದೇಶಿಕ ಆದ್ಯತೆಗಳನ್ನು ಬಳಸುತ್ತವೆ"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"ಪ್ರಾದೇಶಿಕ ಆದ್ಯತೆಗಳು"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"ಯೂನಿಟ್‌ಗಳು ಹಾಗೂ ಸಂಖ್ಯೆಯ ಆದ್ಯತೆಗಳನ್ನು ಸೆಟ್ ಮಾಡಿ"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"ನಿಮ್ಮ ಪ್ರಾದೇಶಿಕ ಆದ್ಯತೆಗಳನ್ನು ಆ್ಯಪ್‌ಗಳಿಗೆ ತಿಳಿಸಿ, ಇದರಿಂದ ಅವುಗಳು ನಿಮ್ಮ ಅನುಭವವನ್ನು ವೈಯಕ್ತೀಕರಿಸಬಹುದು."</string>
@@ -1318,6 +1307,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"ಹೆಚ್ಚಿನ ರೆಸಲ್ಯೂಷನ್"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ಗರಿಷ್ಠ ರೆಸಲ್ಯೂಶನ್"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ಗರಿಷ್ಠ ರೆಸಲ್ಯೂಶನ್ ನಿಮ್ಮ ಬ್ಯಾಟರಿಯನ್ನು ಹೆಚ್ಚು ಬಳಸುತ್ತದೆ. ನಿಮ್ಮ ರೆಸಲ್ಯೂಶನ್ ಅನ್ನು ಬದಲಿಸುವುದರಿಂದ ಕೆಲವು ಆ್ಯಪ್‌ಗಳು ಮರುಪ್ರಾರಂಭವಾಗಬಹುದು."</string>
+    <string name="screen_resolution_selected_a11y" msgid="6158451180032224977">"ಆಯ್ಕೆಮಾಡಲಾಗಿದೆ"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"ಬಣ್ಣಗಳು"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"ಸ್ವಾಭಾವಿಕ"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"ಬೂಸ್ಟ್ ಮಾಡಿರುವುದು"</string>
@@ -2060,13 +2050,7 @@
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"ಮೌಸ್ ಕೀಗಳನ್ನು ಬಳಸಿ"</string>
     <string name="mouse_keys_summary" msgid="7030731235143286467">"ಪಾಯಿಂಟರ್ ಅನ್ನು ಕಂಟ್ರೋಲ್ ಮಾಡಲು ನಿಮ್ಮ ಕೀಬೋರ್ಡ್ ಅನ್ನು ಬಳಸಿ"</string>
     <string name="mouse_reverse_vertical_scrolling" msgid="4067297170762853966">"ಹಿಮ್ಮುಖ ಸ್ಕ್ರಾಲ್ ಮಾಡುವಿಕೆ"</string>
-    <string name="mouse_reverse_vertical_scrolling_summary" msgid="3386655598642587942">"ಪುಟವನ್ನು ಕೆಳಕ್ಕೆ ಸರಿಸಲು ಮೇಲಕ್ಕೆ ಸ್ಕ್ರಾಲ್ ಮಾಡಿ"</string>
-    <!-- no translation found for mouse_scrolling_category_title (2992126595687187296) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_acceleration (7119758828203396430) -->
-    <skip />
-    <!-- no translation found for mouse_scrolling_speed (3999483025392860903) -->
-    <skip />
+    <string name="mouse_reverse_vertical_scrolling_summary" msgid="4403637093982742165">"ನೀವು ಕೆಳಗೆ ಸ್ಕ್ರಾಲ್ ಮಾಡಿದಾಗ ಕಂಟೆಂಟ್‌ ಮೇಲಕ್ಕೆ ಸರಿಯುತ್ತದೆ"</string>
     <string name="mouse_swap_primary_button" msgid="4798006242525441304">"ಪ್ರಾಥಮಿಕ ಮೌಸ್ ಬಟನ್ ಅನ್ನು ಸ್ವ್ಯಾಪ್ ಮಾಡಿ"</string>
     <string name="mouse_swap_primary_button_summary" msgid="3276638019321067902">"ಎಡ ಮೌಸ್ ಬಟನ್ ಅನ್ನು ನಿಮ್ಮ ಬಲ ಬಟನ್‌ ಆಗಿ ಬಳಸಿ"</string>
     <string name="mouse_pointer_acceleration" msgid="388336576055293329">"ಕರ್ಸರ್ ವೇಗವರ್ಧನೆ"</string>
@@ -2115,8 +2099,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"ಟಚ್‌ಪ್ಯಾಡ್ ಗೆಸ್ಚರ್‌ಗಳನ್ನು ಕಲಿಯಿರಿ"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"ಟ್ರ್ಯಾಕ್‌ಪ್ಯಾಡ್, ಟ್ರ್ಯಾಕ್ ಪ್ಯಾಡ್, ಮೌಸ್, ಕರ್ಸರ್, ಸ್ಕ್ರಾಲ್, ಸ್ವೈಪ್, ಬಲ-ಕ್ಲಿಕ್, ಕ್ಲಿಕ್, ಪಾಯಿಂಟರ್"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"ಬಲ ಕ್ಲಿಕ್, ಟ್ಯಾಪ್ ಮಾಡಿ"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="5274906692591143158">"ಮಧ್ಯೆ ಕ್ಲಿಕ್"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Assistant ಅನ್ನು ಪ್ರಾರಂಭಿಸಿ"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"ಹಿಂದಿರುಗಿ"</string>
@@ -2248,7 +2231,8 @@
     <string name="accessibility_feedback_title" msgid="6690472705407526006">"ಫೀಡ್‌ಬ್ಯಾಕ್"</string>
     <string name="accessibility_feedback_summary" msgid="4576591591334314827">"ಸಮೀಕ್ಷೆಯಲ್ಲಿ ಭಾಗವಹಿಸುವ ಮೂಲಕ ಸುಧಾರಿಸಲು ಸಹಾಯ ಮಾಡಿ"</string>
     <string name="accessibility_feedback_disabled_summary" msgid="3652321859452620942">"ಯಾವುದೇ ಸಮೀಕ್ಷೆಗಳು ಲಭ್ಯವಿಲ್ಲ"</string>
-    <string name="accessibility_send_feedback_title" msgid="6455703838689943046">"ಫೀಡ್‌ಬ್ಯಾಕ್ ಕಳುಹಿಸಿ"</string>
+    <!-- no translation found for accessibility_send_feedback_title (6455703838689943046) -->
+    <skip />
     <string name="user_installed_services_category_title" msgid="2639470729311439731">"ಡೌನ್‌ಲೋಡ್ ಮಾಡಲಾದ ಆ್ಯಪ್‌ಗಳು"</string>
     <string name="experimental_category_title" msgid="898904396646344152">"ಪ್ರಾಯೋಗಿಕ"</string>
     <string name="feature_flags_dashboard_title" msgid="348990373716658289">"ಫೀಚರ್ ಫ್ಲ್ಯಾಗ್‌ಗಳು"</string>
@@ -2403,7 +2387,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"ಹೆಚ್ಚು ಕಾಂಟ್ರಾಸ್ಟ್‌ನ ಪಠ್ಯ"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"ಪಠ್ಯದ ಬಣ್ಣವನ್ನು ಕಪ್ಪು ಅಥವಾ ಬಿಳಿ ಬಣ್ಣಕ್ಕೆ ಬದಲಾಯಿಸಿ. ಹಿನ್ನೆಲೆಯೊಂದಿಗಿನ ಕಾಂಟ್ರಾಸ್ಟ್ ಅನ್ನು ಗರಿಷ್ಠ ಮಟ್ಟಕ್ಕೆ ಬದಲಾಯಿಸುತ್ತದೆ."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"ಪಠ್ಯ ಕಾಂಟ್ರಾಸ್ಟ್ ಅನ್ನು ಸುಧಾರಿಸಿ"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g> <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>ವನ್ನು ಬದಲಾಯಿಸಿದೆ. ನೀವು ಅದನ್ನು <xliff:g id="SETTINGS">%3$s</xliff:g> ಎಂಬಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು."</string>
+    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g>, <xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g> ಅನ್ನು ಬದಲಾಯಿಸಿದೆ. ನೀವು ಅದನ್ನು <xliff:g id="SETTINGS">%3$s</xliff:g> ಅಲ್ಲಿ ಆನ್ ಮಾಡಬಹುದು."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"<xliff:g id="SETTINGS">%1$s</xliff:g> ಗೆ ಹೋಗಿ"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"ಔಟ್‌ಲೈನ್ ಪಠ್ಯ"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"ಕಾಂಟ್ರ್ಯಾಸ್ಟ್ ಅನ್ನು ಹೆಚ್ಚಿಸಲು ಪಠ್ಯದ ಸುತ್ತಲೂ ಕಪ್ಪು ಅಥವಾ ಬಿಳಿ ಹಿನ್ನೆಲೆಯನ್ನು ಸೇರಿಸಿ"</string>
@@ -2907,14 +2891,6 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"ಆನ್"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"ಆಫ್"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"ಅಡಾಪ್ಟಿವ್ ಕನೆಕ್ಟಿವಿಟಿ ಬಳಸಿ"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
     <string name="cellular_security_title" msgid="5562899485544677941">"ಮೊಬೈಲ್‌ ನೆಟ್‌ವರ್ಕ್‌ ಭದ್ರತೆ"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"ನೆಟ್‌ವರ್ಕ್ ಪ್ರಕಾರ, ಎನ್‌ಕ್ರಿಪ್ಶನ್, ನೋಟಿಫಿಕೇಶನ್ ಕಂಟ್ರೋಲ್‌ಗಳು"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"ಈ ಸೆಟ್ಟಿಂಗ್ ನಿಮ್ಮ ಕರೆಗಳು, ಸಂದೇಶಗಳು ಮತ್ತು ಡೇಟಾವನ್ನು ಹಳೆಯದಾದ ಅಥವಾ ಎನ್‌ಕ್ರಿಪ್ಟ್ ಮಾಡದ ನೆಟ್‌ವರ್ಕ್‌ಗಳಿಂದ ರಕ್ಷಿಸಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ ಅದು ನಿಮ್ಮನ್ನು ಡೇಟಾ ಕಳ್ಳತನ ಅಥವಾ ಕಣ್ಗಾವಲಿಗೆ ಒಡ್ಡಬಹುದು."</string>
@@ -2943,8 +2919,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"ಎಲ್ಲ ವಿಷಯಗಳನ್ನು ತೆಗೆದುಹಾಕುವುದೇ?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"ರುಜುವಾತು ಸಂಗ್ರಹಣೆಯನ್ನು ಅಳಿಸಲಾಗಿದೆ."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"ರುಜುವಾತು ಸಂಗ್ರಹಣೆಯನ್ನು ಅಳಿಸಲು ಸಾಧ್ಯವಿಲ್ಲ."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="1580006124578134850">"ಬಳಕೆಯ ಪ್ರವೇಶದ ಆ್ಯಪ್‌‌"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"CA ಪ್ರಮಾಣಪತ್ರ"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN ಮತ್ತು ಆ್ಯಪ್ ಬಳಕೆದಾರರ ಪ್ರಮಾಣಪತ್ರ"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"ವೈ-ಫೈ ಪ್ರಮಾಣಪತ್ರ"</string>
@@ -3003,8 +2978,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಲು ಅನುಮತಿಸುವುದೇ?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"ಇದನ್ನು ಮುಂದುವರಿಸಿದರೆ, ನಿಮ್ಮ ಬಳಕೆದಾರರನ್ನು ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ನಿರ್ವಹಿಸುತ್ತಾರೆ ಮತ್ತು ಇದು ನಿಮ್ಮ ವೈಯಕ್ತಿಕ ಡೇಟಾ ಮಾತ್ರವಲ್ಲದೆ, ಸಂಬಂಧಿತ ಡೇಟಾವನ್ನೂ ಸಹ ಸಂಗ್ರಹಣೆ ಮಾಡಬಲ್ಲದು.\n\nನಿಮ್ಮ ನಿರ್ವಾಹಕರು ನೆಟ್‌ವರ್ಕ್ ಚಟುವಟಿಕೆ ಮತ್ತು ನಿಮ್ಮ ಸಾಧನದ ಸ್ಥಳ ಮಾಹಿತಿ ಸೇರಿದಂತೆ ಈ ಬಳಕೆದಾರರಿಗೆ ಸಂಬಂಧಿಸಿದ ಸೆಟ್ಟಿಂಗ್‌ಗಳು, ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಡೇಟಾದ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಬಹುದು ಮತ್ತು ನಿರ್ವಹಿಸಬಹುದು."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"ಇತರ ಆಯ್ಕೆಗಳನ್ನು ನಿಮ್ಮ ನಿರ್ವಾಹಕರು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದ್ದಾರೆ"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="4928985331640193758">"ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"ನೋಟಿಫಿಕೇಶನ್ ಲಾಗ್"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"ನೋಟಿಫಿಕೇಶನ್ ಇತಿಹಾಸ"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"ಕೊನೆಯ %d ಗಂಟೆಗಳು"</string>
@@ -4239,13 +4213,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"ಫೋನ್ ಆ್ಯಪ್‌"</string>
     <string name="system_app" msgid="1863291702508355041">"(ಸಿಸ್ಟಂ)"</string>
     <string name="apps_storage" msgid="643866814746927111">"ಆ್ಯಪ್‍‍ಗಳ ಸಂಗ್ರಹ"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="5487993885373893282">"ಬಳಕೆ ಆ್ಯಕ್ಸೆಸ್"</string>
+    <string name="permit_usage_access" msgid="179630895262172674">"ಬಳಕೆ ಪ್ರವೇಶವನ್ನು ಅನುಮತಿಸಿ"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"ವೀಕ್ಷಣಾ ಅವಧಿ"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="8547716253713890707">"ಬಳಕೆ ಪ್ರವೇಶವು ನೀವು ಇತರ ಯಾವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳನ್ನು ಬಳಸುತ್ತಿರುವಿರಿ ಮತ್ತು ಎಷ್ಟು ಬಾರಿ ಎಂಬುದನ್ನು ಅಲ್ಲದೆ ನಿಮ್ಮ ವಾಹಕ, ಭಾಷೆ ಸೆಟ್ಟಿಂಗ್‌ಗಳು ಹಾಗೂ ಇತರ ವಿವರಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಲು ಅನುಮತಿಸುತ್ತದೆ."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"ಮೆಮೊರಿ"</string>
     <string name="always_running" msgid="9012705720688200252">"ಯಾವಾಗಲೂ ಚಾಲನೆಯಲ್ಲಿದೆ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"ಕೆಲವೊಮ್ಮೆ ಚಾಲನೆಯಲ್ಲಿರುತ್ತದೆ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4343,8 +4314,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"ನಿಮ್ಮ ಬ್ಯಾಟರಿಯನ್ನು ತ್ವರಿತವಾಗಿ ಬರಿದಾಗಿಸಬಹುದು. ಹಿನ್ನೆಲೆ ಬ್ಯಾಟರಿ ಬಳಸದಂತೆ ಆ್ಯಪ್‌ ಅನ್ನು ಇನ್ನು ಮುಂದೆ ನಿರ್ಬಂಧಿಸಲಾಗುವುದಿಲ್ಲ."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"ಉತ್ತಮ ಬ್ಯಾಟರಿ ಬಾಳಿಕೆಗೆ ಶಿಫಾರಸು ಮಾಡಲಾಗಿದೆ"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"ಯಾವುದೂ ಇಲ್ಲ"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="3477719910927319122">"ಈ ಆ್ಯಪ್ ಬಳಕೆಗೆ ಪ್ರವೇಶವನ್ನು ಆಫ್ ಮಾಡಿದರೂ, ಇದು ನಿಮ್ಮ ಕೆಲಸದ ಪ್ರೊಫೈಲ್‌ನಲ್ಲಿರುವ ಅಪ್ಲಿಕೇಶನ್‌ಗಳ ಡೇಟಾ ಬಳಕೆಯನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡದಂತೆ ನಿಮ್ಮ ನಿರ್ವಾಹಕರನ್ನು ತಡೆಯುವುದಿಲ್ಲ"</string>
     <string name="draw_overlay" msgid="7902083260500573027">"‍ಇತರ ಆ್ಯಪ್‍ಗಳ ಮೇಲೆ ಪ್ರದರ್ಶಿಸುವಿಕೆ"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"ಇತರ ಆ್ಯಪ್‍ಗಳ ಮೇಲೆ ಪ್ರದರ್ಶಿಸಿ"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"‍ಇತರ ಆ್ಯಪ್ ಮೇಲೆ ಡಿಸ್‌ಪ್ಲೇ ಮಾಡಲು ಅನುಮತಿಸಿ"</string>
@@ -4392,7 +4362,8 @@
     <string name="disconnected" msgid="3469373726996129247">"ಕನೆಕ್ಟ್ ಆಗಿಲ್ಲ"</string>
     <string name="keyboard_disconnected" msgid="796053864561894531">"ಸಂಪರ್ಕಗೊಂಡಿಲ್ಲ"</string>
     <string name="apps_summary" msgid="4007416751775414252">"<xliff:g id="COUNT">%1$d</xliff:g> ಆ್ಯಪ್‌ಗಳನ್ನು ಇನ್‌ಸ್ಟಾಲ್ ಮಾಡಲಾಗಿದೆ"</string>
-    <string name="storage_summary" msgid="7631468664968572688">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> ಬಳಸಲಾಗಿದೆ - <xliff:g id="FREE_SPACE_VALUE">%2$s</xliff:g> <xliff:g id="FREE_SPACE_UNITS">%3$s</xliff:g> ಲಭ್ಯವಿದೆ"</string>
+    <!-- no translation found for storage_summary (7631468664968572688) -->
+    <skip />
     <string name="display_dashboard_summary" msgid="1599453894989339454">"ಡಾರ್ಕ್‌ ಥೀಮ್, ಫಾಂಟ್ ಗಾತ್ರ, ಪ್ರಖರತೆ"</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> ಯಲ್ಲಿ ಸರಾಸರಿ <xliff:g id="USED_MEMORY">%1$s</xliff:g> ಮೆಮೊರಿ ಬಳಸಲಾಗಿದೆ"</string>
     <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> ಎಂಬುದಾಗಿ ಸೈನ್ ಇನ್ ಮಾಡಲಾಗಿದೆ"</string>
@@ -4461,7 +4432,8 @@
     <string name="ethernet_data_usage" msgid="4552227880905679761">"ಇಥರ್ನೆಟ್ ಡೇಟಾ ಬಳಕೆ"</string>
     <string name="wifi" msgid="2932584495223243842">"ವೈ-ಫೈ"</string>
     <string name="ethernet" msgid="4665162609974492983">"ಇಥರ್ನೆಟ್"</string>
-    <string name="ethernet_interface_title" msgid="1634881244068292765">"ಇಥರ್ನೆಟ್ <xliff:g id="INTERFACEID">%1$s</xliff:g>"</string>
+    <!-- no translation found for ethernet_interface_title (1634881244068292765) -->
+    <skip />
     <string name="cell_data_template" msgid="6077963976103260821">"<xliff:g id="AMOUNT">^1</xliff:g> ಮೊಬೈಲ್ ಡೇಟಾ"</string>
     <string name="wifi_data_template" msgid="935934798340307438">"<xliff:g id="AMOUNT">^1</xliff:g> ವೈ-ಫೈ ಡೇಟಾ"</string>
     <string name="ethernet_data_template" msgid="1429173767445201145">"<xliff:g id="AMOUNT">^1</xliff:g> ಇಥರ್ನೆಟ್ ಡೇಟಾ"</string>
@@ -5018,26 +4990,16 @@
     <string name="category_name_about_satellite_messaging" msgid="4978095955643523120">"<xliff:g id="SUBJECT">%1$s</xliff:g> ಕುರಿತು"</string>
     <string name="title_about_satellite_setting" msgid="3563087940535642558">"ಅರ್ಹ <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ಖಾತೆಯನ್ನು ಬಳಸಿಕೊಂಡು ನೀವು ಸ್ಯಾಟಲೈಟ್ ಮೂಲಕ ಪಠ್ಯ ಸಂದೇಶಗಳನ್ನು ಕಳುಹಿಸಬಹುದು ಮತ್ತು ಸ್ವೀಕರಿಸಬಹುದು"</string>
     <string name="category_title_your_satellite_plan" msgid="8169426217950247126">"ನಿಮ್ಮ <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ಖಾತೆ"</string>
-    <string name="title_have_satellite_plan" msgid="2048372355699977947">"ಸ್ಯಾಟಲೈಟ್ ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆಯು ನಿಮ್ಮ ಖಾತೆಯ ಜೊತೆಯಲ್ಲಿ ಸೇರಿದೆ"</string>
+    <string name="title_have_satellite_plan" msgid="857337944804101443">"ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆಯನ್ನು ಸೇರಿಸಲಾಗಿದೆ"</string>
     <string name="title_no_satellite_plan" msgid="2876056203035197505">"ಸ್ಯಾಟಲೈಟ್ ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆಯು ನಿಮ್ಮ ಖಾತೆಯ ಜೊತೆಯಲ್ಲಿ ಸೇರಿಲ್ಲ"</string>
     <string name="summary_add_satellite_setting" msgid="190359698593056946">"ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"</string>
     <string name="category_name_how_it_works" msgid="585303230539269496">"ಇದು ಹೇಗೆ ಕೆಲಸ ಮಾಡುತ್ತದೆ"</string>
     <string name="title_satellite_connection_guide" msgid="3294802307913609072">"ನೀವು ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್ ಅನ್ನು ಹೊಂದಿಲ್ಲದಿದ್ದಾಗ"</string>
-    <!-- no translation found for title_satellite_connection_guide_for_manual_type (7223875100977941341) -->
-    <skip />
     <string name="summary_satellite_connection_guide" msgid="3496123195218418456">"ನಿಮ್ಮ ಫೋನ್ ಸ್ಯಾಟಲೈಟ್‌ಗೆ ಆಟೋ-ಕನೆಕ್ಟ್ ಆಗುತ್ತದೆ. ಉತ್ತಮ ಕನೆಕ್ಷನ್‌ಗಾಗಿ, ಆಕಾಶ ಸ್ಪಷ್ಟವಾಗಿ ಕಾಣುವ ಹಾಗೆ ಇರಿಸಿ."</string>
-    <!-- no translation found for summary_satellite_connection_guide_for_manual_type (5075149380084376662) -->
-    <skip />
     <string name="title_supported_service" msgid="4275535165812691571">"ನಿಮ್ಮ ಫೋನ್ ಸ್ಯಾಟಲೈ‌ಟ್‌ಗೆ ಕನೆಕ್ಟ್ ಆದ ನಂತರ"</string>
-    <!-- no translation found for title_supported_service_for_manual_type (6009284624466359864) -->
-    <skip />
     <string name="summary_supported_service" msgid="4320535903444834786">"ತುರ್ತು ಸೇವೆಗಳಿಗೂ ಸಹಿತ, ನೀವು ಯಾರಿಗಾದರೂ ಸಂದೇಶ ಕಳುಹಿಸಬಹುದು. ಲಭ್ಯವಿರುವಾಗ ನಿಮ್ಮ ಫೋನ್ ಮೊಬೈಲ್ ನೆಟ್‌ವರ್ಕ್‌ಗೆ ರೀಕನೆಕ್ಟ್ ಆಗುತ್ತದೆ."</string>
-    <!-- no translation found for summary_supported_service_for_manual_type (2147958362763058271) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="1028146147094166868">"<xliff:g id="SUBJECT">%1$s</xliff:g> ಹೆಚ್ಚು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು ಮತ್ತು ಇದು ಕೆಲವು ಪ್ರದೇಶಗಳಲ್ಲಿ ಮಾತ್ರ ಲಭ್ಯವಿರುತ್ತದೆ. ಹವಾಮಾನ ಮತ್ತು ಕೆಲವೊಂದು ರಚನೆಗಳು ನಿಮ್ಮ ಸ್ಯಾಟಲೈಟ್ ಕನೆಕ್ಷನ್ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಬಹುದು. ಸ್ಯಾಟಲೈಟ್ ಮೂಲಕ ಕರೆ ಮಾಡುವ ಸೌಲಭ್ಯ ಲಭ್ಯವಿಲ್ಲ. ಹಾಗಿದ್ದರೂ ತುರ್ತು ಕರೆಗಳು ಕನೆಕ್ಟ್ ಆಗಬಹುದು.\n\nಖಾತೆಗೆ ಮಾಡಿರುವ ಬದಲಾವಣೆಗಳು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ಅನ್ನು ಸಂಪರ್ಕಿಸಿ."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="8042240156141790447">"<xliff:g id="SUBJECT">%1$s</xliff:g> ಹೆಚ್ಚು ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು ಮತ್ತು ಇದು ಕೆಲವು ಪ್ರದೇಶಗಳಲ್ಲಿ ಮಾತ್ರ ಲಭ್ಯವಿರುತ್ತದೆ. ಹವಾಮಾನ ಮತ್ತು ಕೆಲವೊಂದು ರಚನೆಗಳು ನಿಮ್ಮ ಸ್ಯಾಟಲೈಟ್ ಕನೆಕ್ಷನ್ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರಬಹುದು. ಸ್ಯಾಟಲೈಟ್ ಮೂಲಕ ಕರೆ ಮಾಡುವ ಸೌಲಭ್ಯ ಲಭ್ಯವಿಲ್ಲ. ತುರ್ತು ಕರೆಗಳು ಈಗಲೂ ಕನೆಕ್ಟ್ ಆಗಬಹುದು. ತುರ್ತು ಸೇವೆಗಳ ಮೂಲಕ ಪಠ್ಯ ಸಂದೇಶ ಕಳುಹಿಸುವಿಕೆಯು ಎಲ್ಲಾ ಪ್ರದೇಶಗಳಲ್ಲಿ ಲಭ್ಯವಿಲ್ಲದಿರಬಹುದು.\n\nಖಾತೆ ಬದಲಾವಣೆಗಳು ಸೆಟ್ಟಿಂಗ್‌ಗಳಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಸ್ವಲ್ಪ ಸಮಯ ತೆಗೆದುಕೊಳ್ಳಬಹುದು. ಹೆಚ್ಚಿನ ಮಾಹಿತಿಗಾಗಿ <xliff:g id="CARRIER_NAME">%2$s</xliff:g> ಅನ್ನು ಸಂಪರ್ಕಿಸಿ."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"<xliff:g id="SUBJECT">%1$s</xliff:g> ಕುರಿತು ಇನ್ನಷ್ಟು"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"<xliff:g id="FUNCTION">%1$s</xliff:g> ಅನ್ನು ಆನ್ ಮಾಡಲು ಸಾಧ್ಯವಿಲ್ಲ"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"<xliff:g id="FUNCTION">%1$s</xliff:g> ಅನ್ನು ಆನ್ ಮಾಡಲು, ಮೊದಲು ಸ್ಯಾಟಲೈಟ್ ಕನೆಕ್ಷನ್ ಅನ್ನು ಕೊನೆಗೊಳಿಸಿ"</string>
@@ -5046,9 +5008,12 @@
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"ಸ್ಯಾಟಲೈಟ್‌ ಕನೆಕ್ಟಿವಿಟಿ"</string>
     <string name="description_satellite_setting_messaging" msgid="4367494645429198805">"ಸ್ಯಾಟಲೈಟ್ ಮೆಸೇಜಿಂಗ್"</string>
     <string name="title_have_satellite_data_plan" msgid="5614932315409789011">"ಡೇಟಾದ ಬಳಕೆಯನ್ನು ನಿಮ್ಮ ಖಾತೆಯೊಂದಿಗೆ ಸೇರಿಸಲಾಗಿದೆ"</string>
-    <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಬೆಂಬಲಿಸುವ ಆ್ಯಪ್‌ಗಳು"</string>
-    <string name="title_satellite_supported_app_list_entry" msgid="3227843312488003028">"ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳನ್ನು ನೋಡಿ"</string>
-    <string name="title_satellite_supported_app_list_page" msgid="318806852682483512">"ನಿಮ್ಮ ಫೋನ್‌ನಲ್ಲಿ ಬೆಂಬಲಿಸುವ ಆ್ಯಪ್‌ಗಳು"</string>
+    <!-- no translation found for category_title_satellite_supported_apps (8445659428502119518) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_entry (3227843312488003028) -->
+    <skip />
+    <!-- no translation found for title_satellite_supported_app_list_page (318806852682483512) -->
+    <skip />
     <string name="mobile_network_apn_title" msgid="5582995550142073054">"ಆ್ಯಕ್ಸೆಸ್ ಪಾಯಿಂಟ್ ಹೆಸರುಗಳು"</string>
     <string name="keywords_access_point_names" msgid="8174967126858505945">"APN"</string>
     <string name="manual_mode_disallowed_summary" msgid="4243142645520152175">"<xliff:g id="CARRIER">%1$s</xliff:g> ಗೆ ಸಂಪರ್ಕಿಸಿದಾಗ ಲಭ್ಯವಿರುವುದಿಲ್ಲ"</string>
@@ -5216,44 +5181,27 @@
     <string name="work_policy_privacy_settings" msgid="2702644843505242596">"ನಿಮ್ಮ ಕೆಲಸದ ನೀತಿಯ ಮಾಹಿತಿ"</string>
     <string name="work_policy_privacy_settings_summary" msgid="690118670737638405">"ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ನಿಮ್ಮ IT ನಿರ್ವಾಹಕರಿಂದ ನಿರ್ವಹಿಸುತ್ತಾರೆ"</string>
     <string name="track_frame_time_keywords" msgid="7885340257945922239">"GPU"</string>
-    <!-- no translation found for enable_16k_pages (1758111531461408337) -->
-    <skip />
-    <!-- no translation found for enable_16k_pages_summary (1937836453571509085) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_title (5477376227161609124) -->
-    <skip />
-    <!-- no translation found for confirm_enable_16k_pages_text (6211693250692246982) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_title (3001009010581393119) -->
-    <skip />
-    <!-- no translation found for confirm_enable_4k_pages_text (3398001587586470689) -->
-    <skip />
-    <!-- no translation found for toast_16k_update_failed_text (7848383020572918850) -->
-    <skip />
+    <string name="enable_16k_pages" msgid="8001470927566110689">"16KB ಪುಟದ ಗಾತ್ರದೊಂದಿಗೆ ಬೂಟ್ ಮಾಡಿ"</string>
+    <string name="enable_16k_pages_summary" msgid="1964363364670306912">"16KB ಪುಟ ಗಾತ್ರದ ಬೆಂಬಲಿತ ಕರ್ನಲ್ ಬಳಸಿ ಸಾಧನ ಬೂಟ್ ಮಾಡಿ"</string>
+    <string name="confirm_enable_16k_pages_title" msgid="611010487387251491">"4KB ಮೋಡ್‌ನಿಂದ 16KB ಮೋಡ್‌ಗೆ ಬದಲಿಸಿ"</string>
+    <string name="confirm_enable_16k_pages_text" msgid="6129208614283750541">"ನೀವು 4KB ಕೆರ್ನಲ್ ಅನ್ನು ಚಾಲನೆ ಮಾಡುತ್ತಿರುವ ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ ಮತ್ತು ನೀವು 16KB ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸುತ್ತಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಇದು ಸಾಧನವನ್ನು ರೀಬೂಟ್ ಮಾಡುತ್ತದೆ. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್‌ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಆ್ಯಪ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಸಾಧನವನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿಸಲು, ನೀವು 4kB ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಲಾಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ, ಇದು ಸಾಧನವನ್ನು ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್ ಮಾಡುತ್ತದೆ. ಸಾಧನವು ಯಶಸ್ವಿಯಾಗಿ Android ಗೆ ಬೂಟ್ ಆದ ನಂತರ, ಡೆವಲಪರ್ ಆಯ್ಕೆಗಳಲ್ಲಿ OEM ಅನ್‌ಲಾಕಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ."</string>
+    <string name="confirm_enable_4k_pages_title" msgid="3210360137887034659">"16KB ಮೋಡ್‌ನಿಂದ 4KB ಮೋಡ್‌ಗೆ ಬದಲಿಸಿ"</string>
+    <string name="confirm_enable_4k_pages_text" msgid="155070605667160083">"ನೀವು 16KB ಕರ್ನಲ್ ಅನ್ನು ಚಾಲನೆ ಮಾಡುತ್ತಿರುವ, ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ ಮತ್ತು ನೀವು 4KB ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸುತ್ತಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಇದು ಸಾಧನವನ್ನು ರೀಬೂಟ್ ಮಾಡುತ್ತದೆ. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್ ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಸಾಧನವನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿಸಲು, ನೀವು ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಲಾಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ, ಇದು ಸಾಧನವನ್ನು ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್‌ ಮಾಡುತ್ತದೆ. ಸಾಧನವು ಯಶಸ್ವಿಯಾಗಿ Android ಗೆ ಬೂಟ್ ಆದ ನಂತರ, ಡೆವಲಪರ್ ಆಯ್ಕೆಗಳಲ್ಲಿ OEM ಅನ್‌ಲಾಕಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ."</string>
+    <string name="toast_16k_update_failed_text" msgid="8888858987184345567">"ಕೆರ್ನಲ್ ಅನ್ನು 16KB ಪುಟಗಳ ಹೊಂದಾಣಿಕೆಯ ಕೆರ್ನಲ್‌ಗೆ ಅಪ್‌ಡೇಟ್ ಮಾಡಲು ವಿಫಲವಾಗಿದೆ."</string>
     <string name="progress_16k_ota_title" msgid="2117218313875523741">"ಬದಲಾವಣೆಯನ್ನು ಅನ್ವಯಿಸಲಾಗುತ್ತಿದೆ"</string>
-    <!-- no translation found for confirm_format_ext4_title (4754057414728537125) -->
-    <skip />
-    <!-- no translation found for confirm_format_ext4_text (432847493298532536) -->
-    <skip />
+    <string name="confirm_format_ext4_title" msgid="6696191800594435577">"ಸಾಧನವನ್ನು ext4 ಗೆ ಮರು ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಬೇಕೇ? (16KB ಮೋಡ್‌ಗೆ ಅಗತ್ಯವಿದೆ)"</string>
+    <string name="confirm_format_ext4_text" msgid="7940372488624630214">"16KB ಡೆವಲಪರ್ ಆಯ್ಕೆಯನ್ನು ಬಳಸುವ ಮೊದಲು ಈ ಸಾಧನದ ಡೇಟಾ ಪಾರ್ಟಿಶನ್ ಅನ್ನು ext4 ಗೆ ಪರಿವರ್ತಿಸುವ ಅಗತ್ಯವಿದೆ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. 16KB ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಇದರ ನಂತರ ಮತ್ತೊಮ್ಮೆ ರೀಬೂಟ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ. ಒಮ್ಮೆ ನೀವು ಈ ಮೋಡ್‌ನಲ್ಲಿದ್ದರೆ, ಒಂದೇ ರೀಬೂಟ್‌ನೊಂದಿಗೆ ನೀವು 4KB ಮತ್ತು 16KB ಮೋಡ್‌ಗಳ ನಡುವೆ ಹಿಂದಕ್ಕೆ ಮತ್ತು ಮುಂದಕ್ಕೆ ಬದಲಾಯಿಸಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್ ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಸಾಧನವನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿಸಲು, ನೀವು 4KB ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿ ನಂತರ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಲಾಕ್ ಮಾಡಬೇಕಾಗುತ್ತದೆ, ಅದು ಸಾಧನವನ್ನು ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್ ಮಾಡುತ್ತದೆ. ಸಾಧನವು ಯಶಸ್ವಿಯಾಗಿ Android ಗೆ ಬೂಟ್ ಆದ ನಂತರ, ಡೆವಲಪರ್ ಆಯ್ಕೆಗಳಲ್ಲಿ OEM ಅನ್‌ಲಾಕಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ. ಸಾಧನವನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ ಮತ್ತು ದೃಢೀಕರಣದ ನಂತರ ಫೈಲ್‌ಸಿಸ್ಟಮ್ ಅನ್ನು ext4 ಗೆ ಬದಲಾಯಿಸಲಾಗುತ್ತದೆ. ಇದು ಪೂರ್ಣಗೊಂಡ ನಂತರ, ಮತ್ತೆ 16KB ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಹಿಂತಿರುಗಿ."</string>
     <string name="confirm_ext4_button_text" msgid="6045501984773738407">"ಎಲ್ಲಾ ಡೇಟಾವನ್ನು ಅಳಿಸಿ"</string>
     <string name="format_ext4_failure_toast" msgid="8059453995800471549">"ಡೇಟಾ ವಿಭಾಗವನ್ನು ext4 ಗೆ ಮರು ಫಾರ್ಮ್ಯಾಟ್ ಮಾಡಲು ಮತ್ತು ಅಳಿಸಲು ವಿಫಲವಾಗಿದೆ."</string>
     <string name="confirm_oem_unlock_for_16k_title" msgid="6062041826568112078">"ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಮಾಡುವ ಅಗತ್ಯವಿದೆ"</string>
-    <!-- no translation found for confirm_oem_unlock_for_16k_text (8089310116854544106) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_title (293797217034340398) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text_short (731597455785555266) -->
-    <skip />
-    <!-- no translation found for page_agnostic_4k_pages_text (7572233914423063169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_title (8940585327969638637) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text_short (7613206944532151035) -->
-    <skip />
-    <!-- no translation found for page_agnostic_16k_pages_text (2860363435021452169) -->
-    <skip />
-    <!-- no translation found for page_agnostic_notification_channel_name (2058933148654316447) -->
-    <skip />
+    <string name="confirm_oem_unlock_for_16k_text" msgid="3583604865119937957">"16KB ಡೆವಲಪರ್ ಆಯ್ಕೆಯನ್ನು ಬಳಸುವ ಮೊದಲು ಈ ಸಾಧನದಲ್ಲಿ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಬೇಕಾಗಿದೆ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. 16KB ಮೋಡ್ ಅನ್ನು ಸಕ್ರಿಯಗೊಳಿಸುವಾಗ ಎಲ್ಲಾ ಬಳಕೆದಾರರ ಡೇಟಾ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಅಳಿಸಲಾಗುತ್ತದೆ. ಒಮ್ಮೆ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಲಾದ ನಂತರ, 16KB ಆಯ್ಕೆಯನ್ನು ಸಕ್ರಿಯಗೊಳಿಸಲು ಎರಡು ರೀಬೂಟ್‌ಗಳ ಅಗತ್ಯವಿರುತ್ತದೆ. ಒಮ್ಮೆ ನೀವು ಈ ಮೋಡ್‌ನಲ್ಲಿದ್ದರೆ, ಒಂದೇ ರೀಬೂಟ್‌ನೊಂದಿಗೆ ನೀವು 4KB ಮತ್ತು 16KB ಮೋಡ್‌ಗಳ ನಡುವೆ ಹಿಂದಕ್ಕೆ ಮತ್ತು ಮುಂದಕ್ಕೆ ಬದಲಾಯಿಸಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್ ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಸಾಧನವನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿಸಲು, ನೀವು 4KB ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಬೇಕು ಮತ್ತು ನಂತರ OEM/ಬೂಟ್‌ಲೋಡರ್ ಸಾಧನವನ್ನು ಲಾಕ್ (ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್) ಮಾಡುತ್ತದೆ. ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ. ಇದನ್ನು ಹೇಗೆ ಮಾಡುವುದು ಎಂಬುದರ ಸೂಚನೆಗಳನ್ನು ನೀವು &lt;a href=\"https://source.android.com/docs/core/architecture/bootloader/locking_unlocking\"&gt;https://source.android.com/docs/core/architecture/bootloader/locking_unlocking&lt;/a&gt; ಇಲ್ಲಿ ನೋಡಬಹುದು"</string>
+    <string name="page_agnostic_4k_pages_title" msgid="1184703958249093215">"4KB ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ"</string>
+    <string name="page_agnostic_4k_pages_text_short" msgid="2894243902906666242">"ನೀವು ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್‌ನ 4KB ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್ ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್ ಅನ್ನು ಮರು-ಪ್ರವೇಶಿಸಲು, ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿನ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ನೀವು ಲಾಕ್ ಮಾಡಬೇಕು. ಇನ್ನಷ್ಟು ಓದಲು ಟ್ಯಾಪ್ ಮಾಡಿ"</string>
+    <string name="page_agnostic_4k_pages_text" msgid="8284806650260868833">"ನೀವು ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್‌ನ 4KB ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್ ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಅಪ್ಲಿಕೇಶನ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್ ಅನ್ನು ಮರು-ಪ್ರವೇಶಿಸಲು, ನಿಮ್ಮ ಸಾಧನದಲ್ಲಿನ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ನೀವು ಲಾಕ್ ಮಾಡಬೇಕು. ಇದು ಸಾಧನವನ್ನು ಮತ್ತೆ ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್ ಮಾಡುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಮರುಸ್ಥಾಪಿಸುತ್ತದೆ. ಸಾಧನವು ಯಶಸ್ವಿಯಾಗಿ Android ಗೆ ಬೂಟ್ ಆದ ನಂತರ, ಡೆವಲಪರ್ ಆಯ್ಕೆಗಳಲ್ಲಿ OEM ಅನ್‌ಲಾಕಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ. ಸಾಧನವು Android ಗೆ ಬೂಟ್ ಮಾಡಲು ವಿಫಲವಾದಲ್ಲಿ ಅಥವಾ ಅಸ್ಥಿರವಾಗಿದ್ದರೆ, &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers ನಿಂದ ಇತ್ತೀಚಿನ ಫ್ಯಾಕ್ಟರಿ ಚಿತ್ರಗಳೊಂದಿಗೆ ಸಾಧನವನ್ನು ಮರು-ಫ್ಲಾಶ್ ಮಾಡಿ .google.com/android/images&lt;/a&gt; ಅಥವಾ &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ಮತ್ತು \'ವೈಪ್ ಡಿವೈಸ್\', \'ಲಾಕ್ ಬೂಟ್‌ಲೋಡರ್\' ಮತ್ತು \'ಎಲ್ಲಾ ಪಾರ್ಟಿಶನ್‌ಗಳನ್ನು ಫೋರ್ಸ್ ಫ್ಲ್ಯಾಶ್ ಮಾಡಿ\' ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ."</string>
+    <string name="page_agnostic_16k_pages_title" msgid="7762533464569818498">"16KB ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್ ಅನ್ನು ಬಳಸಲಾಗುತ್ತಿದೆ"</string>
+    <string name="page_agnostic_16k_pages_text_short" msgid="3282018880292691631">"ನೀವು ಪೇಜ್-ಅಗ್ನಾಸ್ಟಿಕ್ ಮೋಡ್‌ನ 16KB ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್‌ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಆ್ಯಪ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್ ಅನ್ನು ಮರು-ಪ್ರವೇಶಿಸಲು, ನೀವು 4KB ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿ ಮತ್ತು ನಂತರ ಸಾಧನದ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಲಾಕ್ ಮಾಡಬೇಕು. ಇನ್ನಷ್ಟು ಓದಲು ಟ್ಯಾಪ್ ಮಾಡಿ."</string>
+    <string name="page_agnostic_16k_pages_text" msgid="2999817238546170627">"ನೀವು ಪೇಜ್-ಅಗ್ನಾಸ್ಟಿಕ್ ಮೋಡ್‌ನ 16KB ಮೋಡ್‌ನಲ್ಲಿರುವಿರಿ. ಈ ಮೋಡ್‌ನಲ್ಲಿ ಸಾಫ್ಟ್‌ವೇರ್ ಇಂಟಿಗ್ರಿಟಿಯ ಭರವಸೆ ನೀಡಲಾಗುವುದಿಲ್ಲ ಮತ್ತು ಬೂಟ್‌ಲೋಡರ್ ಅನ್‌ಲಾಕ್ ಆಗಿರುವಾಗ ಫೋನ್‌ನಲ್ಲಿ ಸಂಗ್ರಹವಾಗಿರುವ ಯಾವುದೇ ಡೇಟಾ ಅಪಾಯದಲ್ಲಿರಬಹುದು. ಈ ಮೋಡ್‌ಗಳಲ್ಲಿ ಕೆಲವು ಫೀಚರ್‌ಗಳನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಲಾಗುತ್ತದೆ, ಹಾಗಾಗಿ ಕೆಲವು ಆ್ಯಪ್‌ಗಳು ಕಾರ್ಯನಿರ್ವಹಿಸದೇ ಇರಬಹುದು. ಪ್ರೊಡಕ್ಷನ್ ಮೋಡ್ ಅನ್ನು ಮರು-ಪ್ರವೇಶಿಸಲು, ನೀವು 4KB ಮೋಡ್‌ಗೆ ಹಿಂತಿರುಗಿ ಮತ್ತು ನಂತರ ಸಾಧನದ ಬೂಟ್‌ಲೋಡರ್ ಅನ್ನು ಲಾಕ್ ಮಾಡಬೇಕು. ಇದು ಸಾಧನವನ್ನು ಮತ್ತೆ ಫ್ಯಾಕ್ಟರಿ ರೀಸೆಟ್ ಮಾಡುತ್ತದೆ ಮತ್ತು ಅದನ್ನು ಪ್ರೊಡಕ್ಷನ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಮರುಸ್ಥಾಪಿಸುತ್ತದೆ. ಸಾಧನವು ಯಶಸ್ವಿಯಾಗಿ Android ಗೆ ಬೂಟ್ ಆದ ನಂತರ, ಡೆವಲಪರ್ ಆಯ್ಕೆಗಳಲ್ಲಿ OEM ಅನ್‌ಲಾಕಿಂಗ್ ಅನ್ನು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ. ಸಾಧನವು Android ಗೆ ಬೂಟ್ ಮಾಡಲು ವಿಫಲವಾದಲ್ಲಿ ಅಥವಾ ಸ್ಥಿರವಾಗಿಲ್ಲದಿದ್ದರೆ, &lt;a href=\"https://developers.google.com/android/images\"&gt;https://developers ನಿಂದ ಇತ್ತೀಚಿನ ಫ್ಯಾಕ್ಟರಿ ಚಿತ್ರಗಳೊಂದಿಗೆ ಸಾಧನವನ್ನು ಮರು-ಫ್ಲಾಶ್ ಮಾಡಿ .google.com/android/images&lt;/a&gt; ಅಥವಾ &lt;a href=\"https://flash.android.com/back-to-public\"&gt;https://flash.android.com/back-to-public&lt;/a&gt; ಮತ್ತು \'ವೈಪ್ ಡಿವೈಸ್\', \'ಲಾಕ್ ಬೂಟ್‌ಲೋಡರ್\' ಮತ್ತು \'ಎಲ್ಲಾ ಪಾರ್ಟಿಶನ್‌ಗಳನ್ನು ಫೋರ್ಸ್ ಫ್ಲ್ಯಾಶ್ ಮಾಡಿ\' ಎಂಬುದನ್ನು ಆಯ್ಕೆಮಾಡಿ."</string>
+    <string name="page_agnostic_notification_channel_name" msgid="1658444283036376361">"16KB ಪೇಜ್-ಅಗ್ನೋಸ್ಟಿಕ್ ಮೋಡ್"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"ಇನ್ನಷ್ಟು ಓದಿ"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"ಪುಟ ಗಾತ್ರದ ಹೊಂದಾಣಿಕೆ ಮೋಡ್‌ನೊಂದಿಗೆ ಆ್ಯಪ್ ಅನ್ನು ರನ್ ಮಾಡಿ"</string>
     <string name="enable_16k_app_compat_details" msgid="3389401258168314266">"ಟಾಗಲ್ ಮಾಡಿದ 16 KB ಸಾಧನದಲ್ಲಿ ಆ್ಯಪ್ ಅನ್ನು ಪುಟ ಗಾತ್ರದ ಹೊಂದಾಣಿಕೆ ಮೋಡ್‌ನಲ್ಲಿ ರನ್ ಮಾಡಲಾಗುತ್ತದೆ."</string>
@@ -5662,7 +5610,8 @@
     <string name="audio_sharing_block_pairing_dialog_title" msgid="1756723860075818856">"ಆಡಿಯೋ ಹಂಚಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಆಫ್ ಮಾಡಿ"</string>
     <string name="audio_sharing_block_pairing_dialog_content" msgid="6352030314206654722">"ಹೊಸ ಸಾಧನವನ್ನು ಜೋಡಿಸಲು, ಮೊದಲು ಆಡಿಯೋ ಹಂಚಿಕೊಳ್ಳುವಿಕೆಯನ್ನು ಆಫ್ ಮಾಡಿ."</string>
     <string name="audio_sharing_turn_off_button_label" msgid="1934956352475393641">"ಆಫ್ ಮಾಡಿ"</string>
-    <string name="share_audio_notification_title" msgid="5201976754820387782">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> ಜೊತೆ ಆಡಿಯೋ ಹಂಚಿಕೊಳ್ಳಿ"</string>
+    <!-- no translation found for share_audio_notification_title (5201976754820387782) -->
+    <skip />
     <string name="audio_streams_category_title" msgid="4878022761829895463">"LE ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗೆ ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
     <string name="audio_streams_pref_title" msgid="6320485086288646209">"ಸಮೀಪದ ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗಳು"</string>
     <string name="audio_streams_title" msgid="6617990880383079165">"ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗಳು"</string>
@@ -5692,9 +5641,12 @@
     <string name="audio_streams_present_now" msgid="7519818719382756366">"ಸ್ಟ್ರೀಮ್ ವಿರಾಮಗೊಳಿಸಲಾಗಿದೆ"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"ಆಲಿಸುವುದನ್ನು ನಿಲ್ಲಿಸಿ"</string>
     <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"ಹೊಂದಾಣಿಕೆಯ ಹೆಡ್‌ಫೋನ್‌ಗಳನ್ನು ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"Talkback ಅನ್ನು ತಾತ್ಕಾಲಿಕವಾಗಿ ಆಫ್ ಮಾಡಿ"</string>
-    <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್‌ಗಳನ್ನು ಕೇಳುವಾಗ Talkback ಅನ್ನು ಬಳಸಲಾಗುವುದಿಲ್ಲ. ಆಲಿಸುವುದನ್ನು ಪ್ರಾರಂಭಿಸುವುದಕ್ಕಾಗಿ TalkBack ಅನ್ನು ಆಫ್ ಮಾಡಿ."</string>
-    <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"ಆಫ್ ಮಾಡಿ"</string>
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_title (6824585115302786690) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_subtitle (2394295776096273919) -->
+    <skip />
+    <!-- no translation found for audio_streams_dialog_turn_off_talkback_button (8049097689955037626) -->
+    <skip />
     <string name="audio_streams_dialog_no_le_device_button" msgid="4484355549428642588">"ಸಾಧನವನ್ನು ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
     <string name="audio_streams_detail_page_title" msgid="7884132061275273766">"ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್ ವಿವರಗಳು"</string>
     <string name="audio_streams_qr_code_page_title" msgid="9169570362469544641">"ಆಡಿಯೋ ಸ್ಟ್ರೀಮ್ QR ಕೋಡ್‌"</string>

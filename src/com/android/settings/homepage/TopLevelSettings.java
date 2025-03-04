@@ -25,13 +25,11 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.provider.SearchIndexableResource;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.VisibleForTesting;
 import androidx.fragment.app.Fragment;
 import androidx.preference.Preference;
@@ -58,9 +56,6 @@ import com.android.settings.widget.HomepagePreferenceLayoutHelper.HomepagePrefer
 import com.android.settingslib.core.instrumentation.Instrumentable;
 import com.android.settingslib.drawer.Tile;
 import com.android.settingslib.search.SearchIndexable;
-import com.android.settingslib.widget.SettingsThemeHelper;
-
-import java.util.List;
 
 @SearchIndexable(forTarget = MOBILE)
 public class TopLevelSettings extends DashboardFragment implements SplitLayoutListener,
@@ -93,7 +88,7 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
 
     @Override
     protected int getPreferenceScreenResId() {
-        return getPreferenceLayoutResId(getContext());
+        return Flags.homepageRevamp() ? R.xml.top_level_settings_v2 : R.xml.top_level_settings;
     }
 
     @Override
@@ -397,25 +392,11 @@ public class TopLevelSettings extends DashboardFragment implements SplitLayoutLi
         void doForEach(Preference preference);
     }
 
-    private static int getPreferenceLayoutResId(Context context) {
-        return Flags.homepageRevamp()
-                ? SettingsThemeHelper.isExpressiveTheme(context)
-                        ? R.xml.top_level_settings_expressive
-                        : R.xml.top_level_settings_v2
-                : R.xml.top_level_settings;
-    }
-
     public static final BaseSearchIndexProvider SEARCH_INDEX_DATA_PROVIDER =
-            new BaseSearchIndexProvider() {
-
-                @Override
-                @NonNull
-                public List<SearchIndexableResource> getXmlResourcesToIndex(
-                        @NonNull Context context, boolean enabled) {
-                    SearchIndexableResource sir = new SearchIndexableResource(context);
-                    sir.xmlResId = getPreferenceLayoutResId(context);
-                    return List.of(sir);
-                }
+            new BaseSearchIndexProvider(
+                    Flags.homepageRevamp()
+                            ? R.xml.top_level_settings_v2
+                            : R.xml.top_level_settings) {
 
                 @Override
                 protected boolean isPageSearchEnabled(Context context) {
