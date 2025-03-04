@@ -3194,11 +3194,6 @@
     </string>
     <!-- Dark UI screen footer action text linking to Modes settings. [CHAR LIMIT=NONE] -->
     <string name="dark_ui_modes_footer_action">Modes settings</string>
-    <!-- Even Dimmer setting title. Allows device to reduce brightness even further than standard range. [CHAR LIMIT=NONE] -->
-    <string name="even_dimmer_display_title">Extra dim</string>
-    <!-- Even Dimmer setting summary. [CHAR LIMIT=NONE] -->
-    <string name="even_dimmer_display_summary">Allow device to go dimmer than usual</string>
-
 
     <!-- Sound & display settings screen, setting option name to change screen timeout -->
     <string name="screen_timeout">Screen timeout</string>
@@ -13148,7 +13143,11 @@ Data usage charges may apply.</string>
     <string name="page_agnostic_notification_action">Read more</string>
 
     <string name= "enable_16k_app_compat_title">Run app with page size compat mode</string>
-    <string name= "enable_16k_app_compat_details">App will be run in page size compatibility mode on 16 KB device when toggled.</string>
+    <string name= "enable_16k_app_compat_details">App will be forced stopped and run in page size compatibility mode on 16 KB device when toggled.</string>
+
+    <string name="stop_app_dlg_title">Stop app?</string>
+    <!-- [CHAR LIMIT=200] Manage applications, text for dialog when killing persistent apps-->
+    <string name="stop_app_dlg_text">Application will be stopped to apply page size compat setting.</string>
 
     <!-- DSU Loader. Do not translate. -->
 
@@ -13947,6 +13946,9 @@ Data usage charges may apply.</string>
 
     <!-- Content description for setting password complete-->
     <string name="accessibility_setup_password_complete">Password is now set up</string>
+
+    <!-- Content description for setting PIN complete-->
+    <string name="accessibility_setup_pin_complete">PIN is now set up</string>
 
     <!-- Authority of the content provider that support methods restartPhoneProcess and restartRild. Will be overlaid by OEM.-->
     <string name="reset_telephony_stack_content_provider_authority" translatable="false"></string>
