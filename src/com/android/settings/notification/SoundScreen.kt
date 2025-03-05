@@ -26,6 +26,7 @@ import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.preferenceHierarchy
 import com.android.settingslib.preference.PreferenceScreenCreator
+import com.android.settingslib.widget.SettingsThemeHelper.isExpressiveTheme
 
 @ProvidePreferenceScreen(SoundScreen.KEY)
 class SoundScreen : PreferenceScreenCreator, PreferenceIconProvider {
@@ -40,6 +41,7 @@ class SoundScreen : PreferenceScreenCreator, PreferenceIconProvider {
 
     override fun getIcon(context: Context) =
         when {
+            isExpressiveTheme(context) -> R.drawable.ic_homepage_sound
             Flags.homepageRevamp() -> R.drawable.ic_volume_up_filled
             else -> R.drawable.ic_volume_up_24dp
         }

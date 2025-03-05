@@ -20,8 +20,7 @@ import android.content.Context
 import android.os.VibrationAttributes
 import android.os.Vibrator
 import android.provider.Settings
-import android.widget.CompoundButton
-import android.widget.CompoundButton.OnCheckedChangeListener
+import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.contract.KEY_VIBRATION_HAPTICS
 import com.android.settings.metrics.PreferenceActionMetricsProvider
@@ -29,26 +28,28 @@ import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObservableDelegate
 import com.android.settingslib.datastore.SettingsStore
 import com.android.settingslib.datastore.SettingsSystemStore
-import com.android.settingslib.metadata.MainSwitchPreference
-import com.android.settingslib.metadata.PreferenceLifecycleContext
-import com.android.settingslib.metadata.PreferenceLifecycleProvider
+import com.android.settingslib.metadata.BooleanValuePreference
+import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
+import com.android.settingslib.preference.MainSwitchPreferenceBinding
 
 /** Accessibility settings for vibration. */
 // LINT.IfChange
 class VibrationMainSwitchPreference :
-    MainSwitchPreference(
-        key = Settings.System.VIBRATE_ON,
-        title = R.string.accessibility_vibration_primary_switch_title,
-    ),
+    BooleanValuePreference,
+    MainSwitchPreferenceBinding,
     PreferenceActionMetricsProvider,
-    PreferenceLifecycleProvider,
-    OnCheckedChangeListener {
+    Preference.OnPreferenceChangeListener {
+
+    override val key
+        get() = KEY
+
+    override val title
+        get() = R.string.accessibility_vibration_primary_switch_title
+
     override val keywords: Int
         get() = R.string.keywords_accessibility_vibration_primary_switch
-
-    lateinit var vibrator: Vibrator
 
     override val preferenceActionMetrics: Int
         get() = ACTION_VIBRATION_HAPTICS
@@ -65,37 +66,26 @@ class VibrationMainSwitchPreference :
 
     override fun getWritePermissions(context: Context) = SettingsSystemStore.getWritePermissions()
 
-    override fun getWritePermit(
-        context: Context,
-        value: Boolean?,
-        callingPid: Int,
-        callingUid: Int,
-    ) = ReadWritePermit.ALLOW
+    override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
+        ReadWritePermit.ALLOW
 
     override val sensitivityLevel: Int
         get() = SensitivityLevel.NO_SENSITIVITY
 
-    override fun onResume(context: PreferenceLifecycleContext) {
-        vibrator = context.getSystemService(Vibrator::class.java)
-        context
-            .findPreference<com.android.settingslib.widget.MainSwitchPreference>(key)
-            ?.addOnSwitchChangeListener(this)
+    override fun bind(preference: Preference, metadata: PreferenceMetadata) {
+        super.bind(preference, metadata)
+        preference.onPreferenceChangeListener = this
     }
 
-    override fun onPause(context: PreferenceLifecycleContext) {
-        context
-            .findPreference<com.android.settingslib.widget.MainSwitchPreference>(key)
-            ?.removeOnSwitchChangeListener(this)
-    }
-
-    override fun onCheckedChanged(button: CompoundButton, isChecked: Boolean) {
-        if (isChecked) {
+    override fun onPreferenceChange(preference: Preference, newValue: Any): Boolean {
+        if (newValue == true) {
             // Play a haptic as preview for the main toggle only when touch feedback is enabled.
             VibrationPreferenceConfig.playVibrationPreview(
-                vibrator,
+                preference.context.getSystemService(Vibrator::class.java),
                 VibrationAttributes.USAGE_TOUCH,
             )
         }
+        return true
     }
 
     /** Provides SettingsStore for vibration main switch with custom default value. */
@@ -117,6 +107,7 @@ class VibrationMainSwitchPreference :
     }
 
     companion object {
+        const val KEY = Settings.System.VIBRATE_ON
         const val DEFAULT_VALUE = true
     }
 }

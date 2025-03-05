@@ -64,13 +64,13 @@
     <dimen name="actionbar_subsettings_contentInsetStart">72dp</dimen>
 
     <!-- Dashboard image tile size -->
-    <dimen name="dashboard_tile_image_size">36dp</dimen>
+    <dimen name="dashboard_tile_image_size">40dp</dimen>
 
     <!-- Dashboard foreground image size -->
     <dimen name="dashboard_tile_foreground_image_size">24dp</dimen>
 
     <!-- Dashboard foreground image inset (from background edge to foreground edge) -->
-    <dimen name="dashboard_tile_foreground_image_inset">6dp</dimen>
+    <dimen name="dashboard_tile_foreground_image_inset">8dp</dimen>
 
     <!-- Preference icon foreground image inset (from background edge to foreground edge) -->
     <dimen name="preference_icon_foreground_image_inset">12dp</dimen>
@@ -106,6 +106,7 @@
     <dimen name="homepage_preference_icon_padding_start_two_pane">8dp</dimen>
     <dimen name="homepage_preference_text_padding_start">16dp</dimen>
     <dimen name="homepage_preference_text_padding_start_two_pane">24dp</dimen>
+    <dimen name="homepage_preference_text_padding_start_expressive">12dp</dimen>
     <dimen name="homepage_app_bar_corner_radius">32dp</dimen>
     <dimen name="homepage_app_bar_padding_two_pane">6dp</dimen>
     <!-- bottom: search_bar_margin - homepage_app_bar_padding_two_pane -->
@@ -180,6 +181,12 @@
     <dimen name="keyboard_picker_radius">28dp</dimen>
     <dimen name="keyboard_picker_text_size">16sp</dimen>
 
+    <!-- Touchpad 3 finger tap -->
+    <dimen name="radio_group_style_padding">8dp</dimen>
+    <dimen name="three_finger_tap_radio_button_vertical_padding">24dp</dimen>
+    <dimen name="three_finger_tap_radio_button_text_padding">15dp</dimen>
+    <dimen name="three_finger_tap_radio_button_height">56dp</dimen>
+
     <!-- Pointer -->
     <dimen name="pointer_fill_container_height">80dp</dimen>
     <dimen name="pointer_fill_container_max_width">468dp</dimen>
@@ -209,8 +216,6 @@
     <dimen name="pointer_scale_padding">8dp</dimen>
     <item name="pointer_scale_size_start" format="float" type="dimen">1.0</item>
     <item name="pointer_scale_size_end" format="float" type="dimen">2.5</item>
-    <dimen name="radio_group_style_padding">8dp</dimen>
-    <dimen name="radio_group_style_text_padding">21dp</dimen>
 
     <!-- RemoteAuth-->
     <dimen name="remoteauth_fragment_padding_horizontal">40dp</dimen>

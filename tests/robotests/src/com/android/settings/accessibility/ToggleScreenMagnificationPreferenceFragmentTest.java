@@ -51,6 +51,7 @@ import android.platform.test.annotations.EnableFlags;
 import android.platform.test.flag.junit.SetFlagsRule;
 import android.provider.DeviceConfig;
 import android.provider.Settings;
+import android.view.InputDevice;
 import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.AccessibilityNodeInfo;
 
@@ -68,6 +69,7 @@ import com.android.settings.accessibility.AccessibilityDialogUtils.DialogEnums;
 import com.android.settings.accessibility.MagnificationCapabilities.MagnificationMode;
 import com.android.settings.testutils.shadow.ShadowAccessibilityManager;
 import com.android.settings.testutils.shadow.ShadowDeviceConfig;
+import com.android.settings.testutils.shadow.ShadowInputDevice;
 import com.android.settings.testutils.shadow.ShadowStorageManager;
 import com.android.settings.testutils.shadow.ShadowUserManager;
 import com.android.settingslib.core.lifecycle.LifecycleObserver;
@@ -169,6 +171,7 @@ public class ToggleScreenMagnificationPreferenceFragmentTest {
     @After
     public void tearDown() {
         ShadowDeviceConfig.reset();
+        ShadowInputDevice.reset();
     }
 
     @Test
@@ -669,6 +672,36 @@ public class ToggleScreenMagnificationPreferenceFragmentTest {
                 mFragController.create(
                         R.id.main_content, /* bundle= */ null).start().resume().get();
         assertThat(fragment.getCurrentHtmlDescription().toString()).isNotEmpty();
+    }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ENABLE_MAGNIFICATION_KEYBOARD_CONTROL)
+    public void getCurrentHtmlDescription_doesNotIncludeKeyboardInfoIfNoKeyboardAttached() {
+        ToggleScreenMagnificationPreferenceFragment fragment =
+                mFragController.create(
+                        R.id.main_content, /* bundle= */ null).start().resume().get();
+
+        String htmlDescription = fragment.getCurrentHtmlDescription().toString();
+        assertThat(htmlDescription).isNotEmpty();
+        assertThat(htmlDescription).doesNotContain("keyboard");
+    }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ENABLE_MAGNIFICATION_KEYBOARD_CONTROL)
+    @Config(shadows = ShadowInputDevice.class)
+    public void getCurrentHtmlDescription_includesKeyboardInfoIfKeyboardAttached() {
+        int deviceId = 1;
+        ShadowInputDevice.sDeviceIds = new int[]{deviceId};
+        InputDevice device = ShadowInputDevice.makeFullKeyboardInputDevicebyId(deviceId);
+        ShadowInputDevice.addDevice(deviceId, device);
+
+        ToggleScreenMagnificationPreferenceFragment fragment =
+                mFragController.create(
+                        R.id.main_content, /* bundle= */ null).start().resume().get();
+
+        String htmlDescription = fragment.getCurrentHtmlDescription().toString();
+        assertThat(htmlDescription).isNotEmpty();
+        assertThat(htmlDescription).contains("keyboard");
     }
 
     @Test
