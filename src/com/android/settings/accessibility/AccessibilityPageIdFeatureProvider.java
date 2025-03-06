@@ -16,17 +16,21 @@
 
 package com.android.settings.accessibility;
 
-import android.app.settings.SettingsEnums;
 import android.content.ComponentName;
 
-/**
- * Provider implementation for Accessibility metrics related features.
- */
-public class AccessibilityMetricsFeatureProviderImpl implements
-        AccessibilityMetricsFeatureProvider {
+import androidx.annotation.Nullable;
 
-    @Override
-    public int getDownloadedFeatureMetricsCategory(ComponentName componentName) {
-        return SettingsEnums.ACCESSIBILITY_SERVICE;
-    }
+/**
+ * Provider for Accessibility page id related features.
+ */
+public interface AccessibilityPageIdFeatureProvider {
+
+    /**
+     * Returns {@link android.app.settings.SettingsEnums} value according to the {@code
+     * componentName}.
+     *
+     * @param componentName the component name of the downloaded service or activity
+     * @return value in {@link android.app.settings.SettingsEnums}
+     */
+    int getCategory(@Nullable ComponentName componentName);
 }

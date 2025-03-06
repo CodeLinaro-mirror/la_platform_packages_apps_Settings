@@ -23,9 +23,12 @@ import static com.android.internal.accessibility.common.ShortcutConstants.UserSh
 import static com.google.common.truth.Truth.assertThat;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyInt;
+import static org.mockito.ArgumentMatchers.argThat;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
@@ -37,10 +40,13 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.icu.text.CaseMap;
 import android.os.Bundle;
+import android.platform.test.annotations.DisableFlags;
 import android.platform.test.annotations.EnableFlags;
 import android.platform.test.flag.junit.SetFlagsRule;
 import android.provider.Settings;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityManager;
@@ -66,8 +72,9 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Answers;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 import org.mockito.Spy;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
@@ -84,6 +91,8 @@ import java.util.Locale;
 })
 public class ToggleFeaturePreferenceFragmentTest {
     @Rule
+    public final MockitoRule mocks = MockitoJUnit.rule();
+    @Rule
     public final SetFlagsRule mSetFlagsRule = new SetFlagsRule();
 
     private static final String PLACEHOLDER_PACKAGE_NAME = "com.placeholder.example";
@@ -96,6 +105,7 @@ public class ToggleFeaturePreferenceFragmentTest {
             PLACEHOLDER_PACKAGE_NAME, PLACEHOLDER_TILE_CLASS_NAME);
     private static final String PLACEHOLDER_TILE_TOOLTIP_CONTENT =
             PLACEHOLDER_PACKAGE_NAME + "tooltip_content";
+    private static final String PLACEHOLDER_CATEGORY = "category";
     private static final String PLACEHOLDER_DIALOG_TITLE = "title";
     private static final String DEFAULT_SUMMARY = "default summary";
     private static final String DEFAULT_DESCRIPTION = "default description";
@@ -120,10 +130,13 @@ public class ToggleFeaturePreferenceFragmentTest {
     private ContentResolver mContentResolver;
     @Mock
     private PackageManager mPackageManager;
+    @Mock
+    private Menu mMenu;
+    @Mock
+    private MenuItem mMenuItem;
 
     @Before
     public void setUpTestFragment() {
-        MockitoAnnotations.initMocks(this);
         mShadowAccessibilityManager = Shadow.extract(
                 mContext.getSystemService(AccessibilityManager.class));
 
@@ -167,6 +180,61 @@ public class ToggleFeaturePreferenceFragmentTest {
                         Settings.Secure.ACCESSIBILITY_QS_TARGETS)),
                 eq(false),
                 any(AccessibilitySettingsContentObserver.class));
+    }
+
+    @Test
+    @EnableFlags(com.android.server.accessibility.Flags.FLAG_ENABLE_LOW_VISION_GENERIC_FEEDBACK)
+    public void onCreateOptionsMenu_enableLowVisionGenericFeedback_shouldAddSendFeedbackMenu() {
+        mFragment.setFeedbackManager(
+                new FeedbackManager(mActivity, PLACEHOLDER_PACKAGE_NAME, PLACEHOLDER_CATEGORY));
+
+        mFragment.onCreateOptionsMenu(mMenu, /* inflater= */ null);
+
+        verify(mMenu).add(anyInt(), eq(ToggleFeaturePreferenceFragment.MENU_ID_SEND_FEEDBACK),
+                anyInt(), eq(R.string.accessibility_send_feedback_title));
+    }
+
+    @Test
+    @DisableFlags(com.android.server.accessibility.Flags.FLAG_ENABLE_LOW_VISION_GENERIC_FEEDBACK)
+    public void onCreateOptionsMenu_disableLowVisionGenericFeedback_shouldNotAddSendFeedbackMenu() {
+        mFragment.setFeedbackManager(
+                new FeedbackManager(mActivity, PLACEHOLDER_PACKAGE_NAME, PLACEHOLDER_CATEGORY));
+
+        mFragment.onCreateOptionsMenu(mMenu, /* inflater= */ null);
+
+        verify(mMenu, never()).add(anyInt(),
+                eq(ToggleFeaturePreferenceFragment.MENU_ID_SEND_FEEDBACK), anyInt(),
+                        eq(R.string.accessibility_send_feedback_title));
+    }
+
+    @Test
+    @EnableFlags(com.android.server.accessibility.Flags.FLAG_ENABLE_LOW_VISION_GENERIC_FEEDBACK)
+    public void onOptionsItemSelected_enableLowVisionGenericFeedback_shouldStartSendFeedback() {
+        mFragment.setFeedbackManager(
+                new FeedbackManager(mActivity, PLACEHOLDER_PACKAGE_NAME, PLACEHOLDER_CATEGORY));
+        when(mMenuItem.getItemId()).thenReturn(
+                ToggleFeaturePreferenceFragment.MENU_ID_SEND_FEEDBACK);
+
+        mFragment.onOptionsItemSelected(mMenuItem);
+
+        verify(mActivity).startActivityForResult(
+                argThat(intent -> intent != null
+                        && Intent.ACTION_BUG_REPORT.equals(intent.getAction())), anyInt());
+    }
+
+    @Test
+    @DisableFlags(com.android.server.accessibility.Flags.FLAG_ENABLE_LOW_VISION_GENERIC_FEEDBACK)
+    public void onOptionsItemSelected_disableLowVisionGenericFeedback_shouldNotStartSendFeedback() {
+        mFragment.setFeedbackManager(
+                new FeedbackManager(mActivity, PLACEHOLDER_PACKAGE_NAME, PLACEHOLDER_CATEGORY));
+        when(mMenuItem.getItemId()).thenReturn(
+                ToggleFeaturePreferenceFragment.MENU_ID_SEND_FEEDBACK);
+
+        mFragment.onOptionsItemSelected(mMenuItem);
+
+        verify(mActivity, never()).startActivityForResult(
+                argThat(intent -> intent != null
+                        && Intent.ACTION_BUG_REPORT.equals(intent.getAction())), anyInt());
     }
 
     @Test

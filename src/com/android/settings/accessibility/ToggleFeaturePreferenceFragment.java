@@ -40,6 +40,9 @@ import android.service.quicksettings.TileService;
 import android.text.Html;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityManager;
@@ -48,6 +51,7 @@ import android.widget.CompoundButton;
 import android.widget.CompoundButton.OnCheckedChangeListener;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
@@ -89,6 +93,7 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
     // <img src="R.drawable.fileName"/>, a11y settings will get the resources successfully.
     private static final String IMG_PREFIX = "R.drawable.";
     private static final String DRAWABLE_FOLDER = "drawable";
+    static final int MENU_ID_SEND_FEEDBACK = 0;
 
     protected TopIntroPreference mTopIntroPreference;
     protected SettingsMainSwitchPreference mToggleServiceSwitchPreference;
@@ -102,6 +107,7 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
     protected Intent mSettingsIntent;
     // The mComponentName maybe null, such as Magnify
     protected ComponentName mComponentName;
+    @Nullable private FeedbackManager mFeedbackManager;
     protected CharSequence mFeatureName;
     protected Uri mImageUri;
     protected CharSequence mHtmlDescription;
@@ -238,6 +244,24 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
     public void onDestroyView() {
         super.onDestroyView();
         removeActionBarToggleSwitch();
+    }
+
+    @Override
+    public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
+        if (getFeedbackManager().isAvailable()) {
+            menu.add(Menu.NONE, MENU_ID_SEND_FEEDBACK, Menu.NONE,
+                    R.string.accessibility_send_feedback_title);
+        }
+        super.onCreateOptionsMenu(menu, inflater);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == MENU_ID_SEND_FEEDBACK) {
+            getFeedbackManager().sendFeedback();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     @Override
@@ -738,5 +762,29 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
         RecyclerView recyclerView =
                 super.onCreateRecyclerView(inflater, parent, savedInstanceState);
         return AccessibilityFragmentUtils.addCollectionInfoToAccessibilityDelegate(recyclerView);
+    }
+
+    @VisibleForTesting
+    void setFeedbackManager(FeedbackManager feedbackManager) {
+        this.mFeedbackManager = feedbackManager;
+    }
+
+    private FeedbackManager getFeedbackManager() {
+        if (mFeedbackManager == null) {
+            mFeedbackManager = new FeedbackManager(getActivity(), getFeedbackCategory());
+        }
+        return mFeedbackManager;
+    }
+
+    /**
+     * Returns the category of the feedback page.
+     *
+     * <p>By default, this method returns {@link SettingsEnums#PAGE_UNKNOWN}. This indicates that
+     * the feedback category is unknown, and the absence of a feedback menu.
+     *
+     * @return The feedback category, which is {@link SettingsEnums#PAGE_UNKNOWN} by default.
+     */
+    protected int getFeedbackCategory() {
+        return SettingsEnums.PAGE_UNKNOWN;
     }
 }

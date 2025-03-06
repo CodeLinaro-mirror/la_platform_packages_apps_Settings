@@ -246,6 +246,25 @@ public class SafetySourceBroadcastReceiverTest {
     }
 
     @Test
+    public void onReceive_onRefresh_withWearUnlockSourceId_setsWearUnlockData() {
+        when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
+        Intent intent =
+                new Intent()
+                        .setAction(ACTION_REFRESH_SAFETY_SOURCES)
+                        .putExtra(
+                                EXTRA_REFRESH_SAFETY_SOURCE_IDS,
+                                new String[] {WearSafetySource.SAFETY_SOURCE_ID})
+                        .putExtra(EXTRA_REFRESH_SAFETY_SOURCES_BROADCAST_ID, REFRESH_BROADCAST_ID);
+
+        new SafetySourceBroadcastReceiver().onReceive(mApplicationContext, intent);
+        ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
+        verify(mSafetyCenterManagerWrapper, times(1))
+                .setSafetySourceData(any(), captor.capture(), any(), any());
+
+        assertThat(captor.getValue()).isEqualTo(WearSafetySource.SAFETY_SOURCE_ID);
+    }
+
+    @Test
     public void onReceive_onRefresh_withFingerprintUnlockSourceId_setsFingerprintUnlockData() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         Intent intent =
@@ -332,7 +351,7 @@ public class SafetySourceBroadcastReceiverTest {
 
         new SafetySourceBroadcastReceiver().onReceive(mApplicationContext, intent);
         ArgumentCaptor<String> captor = ArgumentCaptor.forClass(String.class);
-        verify(mSafetyCenterManagerWrapper, times(5))
+        verify(mSafetyCenterManagerWrapper, times(6))
                 .setSafetySourceData(any(), captor.capture(), any(), any());
         List<String> safetySourceIdList = captor.getAllValues();
 
@@ -352,6 +371,11 @@ public class SafetySourceBroadcastReceiverTest {
                         safetySourceIdList.stream()
                                 .anyMatch(
                                         id -> id.equals(FingerprintSafetySource.SAFETY_SOURCE_ID)))
+                .isTrue();
+        assertThat(
+                        safetySourceIdList.stream()
+                                .anyMatch(
+                                        id -> id.equals(WearSafetySource.SAFETY_SOURCE_ID)))
                 .isTrue();
         assertThat(
                         safetySourceIdList.stream()
