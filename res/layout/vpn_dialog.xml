@@ -53,6 +53,8 @@
                     android:id="@+id/name_layout"
                     android:hint="@string/vpn_name"
                     app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/vpn_required"
                     app:errorEnabled="true">
                     <com.google.android.material.textfield.TextInputEditText
                         style="@style/vpn_value"
@@ -73,6 +75,8 @@
                     android:id="@+id/server_layout"
                     android:hint="@string/vpn_server"
                     app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/vpn_required"
                     app:errorEnabled="true">
                     <com.google.android.material.textfield.TextInputEditText
                         style="@style/vpn_value"
@@ -90,7 +94,7 @@
                         android:hint="@string/vpn_ipsec_identifier"
                         app:endIconMode="clear_text"
                         app:helperTextEnabled="true"
-                        app:helperText="@string/vpn_not_used"
+                        app:helperText="@string/vpn_required"
                         app:errorEnabled="true">
                         <com.google.android.material.textfield.TextInputEditText
                             style="@style/vpn_value"
@@ -108,6 +112,8 @@
                         android:id="@+id/ipsec_secret_layout"
                         android:hint="@string/vpn_ipsec_secret"
                         app:endIconMode="password_toggle"
+                        app:helperTextEnabled="true"
+                        app:helperText="@string/vpn_required"
                         app:errorEnabled="true">
                         <com.google.android.material.textfield.TextInputEditText
                             style="@style/vpn_value"
@@ -183,7 +189,7 @@
                         android:hint="@string/proxy_hostname_label"
                         app:endIconMode="clear_text"
                         app:helperTextEnabled="true"
-                        app:helperText="@string/proxy_hostname_hint"
+                        app:helperText="@string/vpn_optional"
                         app:errorEnabled="true">
                         <com.google.android.material.textfield.TextInputEditText
                             style="@style/vpn_value"
@@ -197,7 +203,7 @@
                         android:hint="@string/proxy_port_label"
                         app:endIconMode="clear_text"
                         app:helperTextEnabled="true"
-                        app:helperText="@string/proxy_port_hint"
+                        app:helperText="@string/vpn_optional"
                         app:errorEnabled="true">
                         <com.google.android.material.textfield.TextInputEditText
                             style="@style/vpn_value"
@@ -217,6 +223,8 @@
                     android:id="@+id/username_layout"
                     android:hint="@string/vpn_username"
                     app:endIconMode="clear_text"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/vpn_optional"
                     app:errorEnabled="true">
                     <com.google.android.material.textfield.TextInputEditText
                         style="@style/vpn_value"
@@ -228,6 +236,8 @@
                     android:id="@+id/password_layout"
                     android:hint="@string/vpn_password"
                     app:endIconMode="password_toggle"
+                    app:helperTextEnabled="true"
+                    app:helperText="@string/vpn_optional"
                     app:errorEnabled="true">
                     <com.google.android.material.textfield.TextInputEditText
                         style="@style/vpn_value"

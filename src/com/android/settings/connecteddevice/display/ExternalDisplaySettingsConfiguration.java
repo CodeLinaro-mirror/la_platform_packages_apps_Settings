@@ -109,7 +109,8 @@ public class ExternalDisplaySettingsConfiguration {
         private final Handler mHandler;
 
         Injector(@Nullable Context context) {
-            this(context, new FeatureFlagsImpl(), new Handler(Looper.getMainLooper()));
+            this(context, new DesktopExperienceFlags(new FeatureFlagsImpl()),
+                    new Handler(Looper.getMainLooper()));
         }
 
         Injector(@Nullable Context context, @NonNull FeatureFlags flags, @NonNull Handler handler) {

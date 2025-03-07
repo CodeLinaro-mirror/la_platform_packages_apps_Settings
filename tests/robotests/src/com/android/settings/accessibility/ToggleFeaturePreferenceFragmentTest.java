@@ -39,6 +39,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.icu.text.CaseMap;
+import android.net.Uri;
 import android.os.Bundle;
 import android.platform.test.annotations.DisableFlags;
 import android.platform.test.annotations.EnableFlags;
@@ -56,12 +57,14 @@ import androidx.fragment.app.FragmentActivity;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceViewHolder;
 import androidx.test.core.app.ApplicationProvider;
 
 import com.android.settings.R;
 import com.android.settings.flags.Flags;
 import com.android.settings.testutils.shadow.ShadowAccessibilityManager;
 import com.android.settings.testutils.shadow.ShadowFragment;
+import com.android.settingslib.widget.IllustrationPreference;
 import com.android.settingslib.widget.TopIntroPreference;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
@@ -79,6 +82,7 @@ import org.robolectric.RobolectricTestRunner;
 import org.robolectric.annotation.Config;
 import org.robolectric.shadow.api.Shadow;
 import org.robolectric.shadows.ShadowApplication;
+import org.robolectric.shadows.ShadowLooper;
 
 import java.util.List;
 import java.util.Locale;
@@ -313,6 +317,45 @@ public class ToggleFeaturePreferenceFragmentTest {
         mFragment.initTopIntroPreference();
 
         assertThat(mFragment.getPreferenceScreen().getPreferenceCount()).isEqualTo(0);
+    }
+
+    @Test
+    public void initAnimatedImagePreference_isAnimatable_setContentDescription() {
+        mFragment.mFeatureName = "Test Feature";
+        final View view =
+                LayoutInflater.from(mContext).inflate(
+                        com.android.settingslib.widget.preference.illustration
+                                .R.layout.illustration_preference,
+                        null);
+        IllustrationPreference preference = spy(new IllustrationPreference(mFragment.getContext()));
+        when(preference.isAnimatable()).thenReturn(true);
+        mFragment.initAnimatedImagePreference(mock(Uri.class), preference);
+
+        preference.onBindViewHolder(PreferenceViewHolder.createInstanceForTests(view));
+        ShadowLooper.runUiThreadTasksIncludingDelayedTasks();
+
+        String expectedContentDescription = mFragment.getString(
+                R.string.accessibility_illustration_content_description, mFragment.mFeatureName);
+        assertThat(preference.getContentDescription().toString())
+                .isEqualTo(expectedContentDescription);
+    }
+
+    @Test
+    public void initAnimatedImagePreference_isNotAnimatable_notSetContentDescription() {
+        mFragment.mFeatureName = "Test Feature";
+        final View view =
+                LayoutInflater.from(mContext).inflate(
+                        com.android.settingslib.widget.preference.illustration
+                                .R.layout.illustration_preference,
+                        null);
+        IllustrationPreference preference = spy(new IllustrationPreference(mFragment.getContext()));
+        when(preference.isAnimatable()).thenReturn(false);
+        mFragment.initAnimatedImagePreference(mock(Uri.class), preference);
+
+        preference.onBindViewHolder(PreferenceViewHolder.createInstanceForTests(view));
+        ShadowLooper.runUiThreadTasksIncludingDelayedTasks();
+
+        verify(preference, never()).setContentDescription(any());
     }
 
     @Test

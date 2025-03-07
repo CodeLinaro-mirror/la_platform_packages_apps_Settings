@@ -68,6 +68,7 @@ import com.android.settings.dashboard.DashboardFragment;
 import com.android.settings.flags.Flags;
 import com.android.settings.widget.SettingsMainSwitchBar;
 import com.android.settings.widget.SettingsMainSwitchPreference;
+import com.android.settingslib.utils.ThreadUtils;
 import com.android.settingslib.widget.IllustrationPreference;
 import com.android.settingslib.widget.TopIntroPreference;
 
@@ -311,6 +312,11 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
         return getString(R.string.accessibility_shortcut_title, mFeatureName);
     }
 
+    @VisibleForTesting
+    CharSequence getContentDescriptionForAnimatedIllustration() {
+        return getString(R.string.accessibility_illustration_content_description, mFeatureName);
+    }
+
     protected void onPreferenceToggled(String preferenceKey, boolean enabled) {
     }
 
@@ -427,22 +433,38 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
 
         return drawable;
     }
-
     private void initAnimatedImagePreference() {
-        if (mImageUri == null) {
+        initAnimatedImagePreference(mImageUri, new IllustrationPreference(getPrefContext()));
+    }
+
+    @VisibleForTesting
+    void initAnimatedImagePreference(
+            @Nullable Uri imageUri,
+            @NonNull IllustrationPreference preference) {
+        if (imageUri == null) {
             return;
         }
 
         final int displayHalfHeight =
                 AccessibilityUtil.getDisplayBounds(getPrefContext()).height() / 2;
-        final IllustrationPreference illustrationPreference =
-                new IllustrationPreference(getPrefContext());
-        illustrationPreference.setImageUri(mImageUri);
-        illustrationPreference.setSelectable(false);
-        illustrationPreference.setMaxHeight(displayHalfHeight);
-        illustrationPreference.setKey(KEY_ANIMATED_IMAGE);
-
-        getPreferenceScreen().addPreference(illustrationPreference);
+        preference.setImageUri(imageUri);
+        preference.setSelectable(false);
+        preference.setMaxHeight(displayHalfHeight);
+        preference.setKey(KEY_ANIMATED_IMAGE);
+        preference.setOnBindListener(view -> {
+            // isAnimatable is decided in
+            // {@link IllustrationPreference#onBindViewHolder(PreferenceViewHolder)}. Therefore, we
+            // wait until the view is bond to set the content description for it.
+            // The content description is added for an animation illustration only. Since the static
+            // images are decorative.
+            ThreadUtils.getUiThreadHandler().post(() -> {
+                if (preference.isAnimatable()) {
+                    preference.setContentDescription(
+                            getContentDescriptionForAnimatedIllustration());
+                }
+            });
+        });
+        getPreferenceScreen().addPreference(preference);
     }
 
     @VisibleForTesting
