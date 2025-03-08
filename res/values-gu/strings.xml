@@ -468,6 +468,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"ફિંગરપ્રિન્ટ સેન્સરને ટચ કરો"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"ફિંગરપ્રિન્ટ ઓળખી શકાઈ નથી"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"વૉચ અનલૉક"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"જ્યારે તમે ફેસ અનલૉક અને ફિંગરપ્રિન્ટ અનલૉક સુવિધાનું સેટઅપ કરતા હો, ત્યારે જો તમે માસ્ક પહેર્યું હોય કે અંધારિયા વિસ્તારમાં હો, તો તમારો ફોન તમારી ફિંગરપ્રિન્ટ માગશે.\n\nવૉચ અનલૉકની સુવિધા એ તમારા ફોનને અનલૉક કરવાની એક અન્ય સુગમ રીત છે, ઉદાહરણ તરીકે જ્યારે તમારી આંગળીઓ ભીની હોય અથવા તમારો ચહેરો ઓળખાતો ન હોય."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"વૉચ અનલૉકની સુવિધા એ આ ફોનને અનલૉક કરવાની એક અન્ય સુગમ રીત છે, ઉદાહરણ તરીકે જ્યારે તમારી ફિંગરપ્રિન્ટ ઓળખાતી ન હોય."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"વૉચ અનલૉકની સુવિધા એ આ ફોનને અનલૉક કરવાની એક અન્ય સુગમ રીત છે, ઉદાહરણ તરીકે જ્યારે તમારો ચહેરો ઓળખાતો ન હોય."</string>
@@ -798,7 +800,7 @@
     <string name="face_unlock_set_unlock_pin" msgid="9034912683791069602">"પિન • ફેસ"</string>
     <string name="face_unlock_set_unlock_password" msgid="5874950853246424756">"પાસવર્ડ • ફેસ"</string>
     <string name="face_unlock_skip_face" msgid="189695556498300008">"ફેસ અનલૉક વિના ચાલુ રાખો"</string>
-    <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"ફિંગરપ્રિન્ટ અથવા ચહેરા વિના ચાલુ રાખો"</string>
+    <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"ફિંગરપ્રિન્ટ અથવા ફેસ અનલૉક વિના આગળ વધો"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"કોઈ નહીં"</string>
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"સ્વાઇપ કરો"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"પૅટર્ન"</string>
@@ -1324,6 +1326,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"વધુ રિઝોલ્યુશન"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ઉચ્ચ રિઝોલ્યુશન"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ઉચ્ચ રિઝોલ્યુશનથી તમારી બૅટરીનો વપરાશ વધુ થાય છે. તમારું રિઝોલ્યુશન સ્વિચ કરવાથી કેટલીક ઍપ કદાચ ફરી શરૂ થઈ શકે છે."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"રંગો"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"કુદરતી"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"બુસ્ટ કરેલ"</string>
@@ -2274,6 +2278,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"કૅપ્શનની પસંદગીઓ વિશે વધુ જાણો"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"મોટું કરવું"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"મોટું કરવાનો શૉર્ટકટ"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"મોટું કરીને કરાતી ટાઇપિંગ"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"તમે જેમ જેમ ટાઇપ કરો છો, તેમ તેમ મેગ્નિફાયર ટેક્સ્ટને અનુસરે છે"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"ઍપ સ્વિચ કરતી વખતે ચાલુ રાખો"</string>
@@ -2835,7 +2849,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>થી <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"બૅટરીના વપરાશનો ચાર્ટ"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"બૅટરીના દૈનિક વપરાશનો ચાર્ટ"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"બૅટરીના કલાક દીઠ વપરાશનો ચાર્ટ"</string>
@@ -3126,6 +3145,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(સર્વર ચકાસશો નહીં)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(સર્વરમાંથી પ્રાપ્ત)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"દાખલ કરેલી માહિતી હંમેશાં-ચાલુ VPNને સપોર્ટ કરતી નથી"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"રદ કરો"</string>
     <string name="vpn_done" msgid="5137858784289564985">"છોડી દો"</string>
     <string name="vpn_save" msgid="683868204634860888">"સાચવો"</string>
@@ -4422,8 +4447,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"તમારા વ્યવસ્થાપક સેટિંગ, પરવાનગીઓ, કૉર્પોરેટ ઍક્સેસ, નેટવર્ક પ્રવૃત્તિ અને ડિવાઇસની સ્થાન માહિતી સહિત આ વપરાશકર્તા સાથે સંકળાયેલ ઍપ અને ડેટાને મોનિટર અને મેનેજ કરી શકે છે."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"તમારા વ્યવસ્થાપક સેટિંગ, પરવાનગીઓ, કૉર્પોરેટ ઍક્સેસ, નેટવર્ક પ્રવૃત્તિ અને ડિવાઇસની સ્થાન માહિતી સહિત આ ડિવાઇસ સાથે સંકળાયેલ ઍપ અને ડેટાને મોનિટર અને મેનેજ કરી શકે છે."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"તમારા ડિવાઇસના વ્યવસ્થાપક આ ડિવાઇસ સાથે સંકળાયેલો ડેટા ઍક્સેસ કરી શકશે અને ઍપ મેનેજ કરી શકશે તેમજ આ ડિવાઇસના સેટિંગ બદલી શકશે."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"અદ્યતન સુરક્ષા દ્વારા બ્લૉક કરવામાં આવ્યું છે"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"આ ક્રિયાને મંજૂરી આપવામાં આવતી નથી કારણ કે તમારા ડિવાઇસ માટે અદ્યતન સુરક્ષા ચાલુ છે."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"બંધ કરો"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"ચાલુ કરો"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"બતાવો"</string>
@@ -4649,6 +4684,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"ઉચ્ચ સંવેદનશીલતા સ્ક્રીનની કિનારીઓ પર થતા કોઈ ઍપના સંકેતો સાથે વિરોધાભાસ રચે તેમ બની શકે છે."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"પાછળની સંવેદનશીલતા"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"સંકેતથી નૅવિગેશન"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"બટનથી નૅવિગેશન"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"સંકેતથી નૅવિગેશન, પાછળની સંવેદિતા, પાછળના સંકેત"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"નૅવિગેશન, હોમ બટન"</string>
@@ -5159,8 +5196,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"સેટિંગ પૅનલ"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"ફ્રીફોર્મ વિન્ડો ચાલુ કરો"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"ડેસ્કટૉપ અનુભવની સુવિધાઓ ચાલુ કરો"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"ડિવાઇસ અને સેકન્ડરી ડિસ્પ્લે પર ડેસ્કટૉપ વ્યૂ ચાલુ કરો."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"સેકન્ડરી ડિસ્પ્લે પર ડેસ્કટૉપ વ્યૂ ચાલુ કરો."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"સેકન્ડરી ડિસ્પ્લે પર ફ્રીફોર્મ વિન્ડો ચાલુ કરો"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"એકથી વધુ વિન્ડોમાં ફરીથી કદ ન બદલી શકવાનો વિકલ્પ ચાલુ કરો"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"ફરીથી કદ ન બદલી શકે તેવી ઍપને એકથી વધુ વિન્ડોમાં દેખાવાની મંજૂરી આપે છે"</string>
@@ -5257,7 +5296,7 @@
     <skip />
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"વધુ વાંચો"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"પેજના કદ સુસંગતતા મોડમાં ઍપને ચલાવો"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5746,5 +5785,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"પિન બદલો"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"પિન ભૂલી ગયા"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

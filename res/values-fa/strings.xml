@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"حسگر اثر انگشت را لمس کنید"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"اثر انگشت تشخیص داده نشد"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"قفل‌گشایی با ساعت"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"وقتی «قفل‌گشایی با چهره» و «قفل‌گشایی با اثر انگشت» را راه‌اندازی می‌کنید، اگر ماسک داشته باشید یا در محیط تاریکی باشید، تلفن از شما می‌خواهد از اثر انگشتتان استفاده کنید.\n\n«قفل‌گشایی با ساعت» یکی دیگر از روش‌های آسان برای باز کردن قفل تلفن است؛ برای مثال، زمانی‌که انگشتانتان خیس است یا چهره‌تان تشخیص داده نمی‌شود."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"«قفل‌گشایی با ساعت» یکی دیگر از روش‌های آسان برای باز کردن قفل تلفن است؛ برای مثال، زمانی‌که اثر انگشتتان تشخیص داده نمی‌شود."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"«قفل‌گشایی با ساعت» یکی دیگر از روش‌های آسان برای باز کردن قفل تلفن است؛ برای مثال، زمانی‌که چهره‌تان تشخیص داده نمی‌شود."</string>
@@ -784,10 +786,8 @@
     <string name="unlock_set_unlock_password_title" msgid="2559842616268607041">"گذرواژه"</string>
     <string name="unlock_set_do_later_title" msgid="6565575303676064364">"حالا نه"</string>
     <string name="current_screen_lock" msgid="1367883977261098017">"قفل صفحه فعلی"</string>
-    <!-- no translation found for unlock_accessibility_pin_area (437104569661316525) -->
-    <skip />
-    <!-- no translation found for unlock_accessibility_password (5404713613573232309) -->
-    <skip />
+    <string name="unlock_accessibility_pin_area" msgid="437104569661316525">"ناحیه پین"</string>
+    <string name="unlock_accessibility_password" msgid="5404713613573232309">"گذرواژه دستگاه"</string>
     <string name="fingerprint_unlock_set_unlock_pattern" msgid="2229689425933043901">"الگو • اثر انگشت"</string>
     <string name="fingerprint_unlock_set_unlock_pin" msgid="7979848492740627674">"پین • اثر انگشت"</string>
     <string name="fingerprint_unlock_set_unlock_password" msgid="6207676267295036963">"گذرواژه • اثر انگشت"</string>
@@ -1321,6 +1321,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"وضوح بالا"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"وضوح بیشینه"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"«وضوح بیشینه» از شارژ باتری بیشتری استفاده می‌کند. تغییر دادن وضوح ممکن است باعث شود برخی‌از برنامه‌ها بازراه‌اندازی شوند."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"رنگ‌"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"طبیعی"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"تقویت‌شده"</string>
@@ -1650,7 +1652,7 @@
     <string name="reset_esim_error_title" msgid="6516110227665862295">"سیم‌کارت‌های داخلی پاک‌سازی نشد"</string>
     <string name="reset_esim_error_msg" msgid="8459527827897797168">"مشکلی پیش آمد و سیم‌کارت‌های داخلی‌تان پاک‌سازی نشد.\n\nدستگاه را بازراه‌اندازی کنید و دوباره امتحان کنید."</string>
     <string name="reset_private_space_delete_title" msgid="2555885198282572990">"حذف فضای خصوصی"</string>
-    <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"‏اگر فضای خصوصی در دستگاهتان دارید، برای همیشه حذف خواهد شد و «حساب Google» اضافه‌شده به فضایتان برداشته خواهد شد. \n\nهمه برنامه‌های موجود در فضای شما و همچنین داده‌های آن‌ها برای همیشه از "<b>"حافظه داخلی"</b>" تلفنتان حذف می‌شود."</string>
+    <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"‏اگر فضای خصوصی در دستگاهتان دارید، برای همیشه حذف خواهد شد و «حساب Google» اضافه‌شده به فضایتان برداشته خواهد شد. \n\nهمه برنامه‌های موجود در فضای شما و همچنین داده‌های آن‌ها برای همیشه از "<b>"فضای ذخیره‌سازی داخلی"</b>" تلفنتان حذف می‌شود."</string>
     <string name="main_clear_title" msgid="277664302144837723">"پاک کردن همه داده‌ها (بازنشانی کارخانه‌ای)"</string>
     <string name="main_clear_short_title" msgid="4752094765533020696">"پاک کردن همه داده‌ها (بازنشانی کارخانه‌ای)"</string>
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"موسیقی"</li>\n<li>"عکس"</li>\n<li>"دیگر اطلاعات کاربر"</li></string>
@@ -2268,6 +2270,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"درباره اولویت‌های زیرنویس ناشنوایان بیشتر بدانید"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"درشت‌‌نمایی"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"میان‌بر درشت‌نمایی"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"درشت‌نمایی تایپ"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"ذره‌بین هم‌زمان با تایپ کردن شما با نوشتار حرکت می‌کند"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"حین تعویض برنامه، روشن بماند"</string>
@@ -2321,8 +2333,7 @@
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"برای بزرگ‌نمایی، روی دکمه‌ای تک‌ضرب بزنید"</string>
     <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"به‌سرعت صفحه را بزرگ کنید تا محتوا درشت‌تر نمایش داده شود"</string>
     <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"‏&lt;b&gt;برای زوم‌پیش کردن:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. برای فعال کردن درشت‌نمایی، از میان‌بر استفاده کنید&lt;br/&gt; {1,number,integer}. روی صفحه تک‌ضرب بزنید&lt;br/&gt; {2,number,integer}. برای حرکت کردن در صفحه، ۲ انگشت را بکشید&lt;br/&gt; {3,number,integer}. برای تنظیم کردن زوم، ۲ انگشت را ازهم دور یا به‌هم نزدیک کنید&lt;br/&gt; {4,number,integer}. برای توقف درشت‌نمایی از میان‌براستفاده کنید&lt;br/&gt;&lt;br/&gt; &lt;b&gt;برای زوم‌پیش موقت:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. مطمئن شوید نوع درشت‌نمایی روی تمام‌صفحه تنظیم شده باشد&lt;br/&gt; {1,number,integer}. برای فعال کردن درشت‌نمایی، از میان‌بر استفاده کنید&lt;br/&gt; {2,number,integer}. جایی از صفحه را لمس کنید و نگه دارید&lt;br/&gt; {3,number,integer}. برای حرکت کردن در صفحه، انگشت را بکشید&lt;br/&gt; {4,number,integer}. برای متوقف کردن درشت‌نمایی، انگشتتان را بردارید"</string>
-    <!-- no translation found for accessibility_screen_magnification_keyboard_summary (2504303274186294767) -->
-    <skip />
+    <string name="accessibility_screen_magnification_keyboard_summary" msgid="2504303274186294767">"‏\"&lt;b&gt;برای بزرگ‌نمایی با صفحه‌کلید:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. برای فعال کردن درشت‌نمایی، از این میان‌بر استفاده کنید&lt;br/&gt; {1,number,integer}. برای زوم‌پیش یا زوم‌پس کردن، کلیدهای &lt;xliff:g id=meta1&gt;%1$s&lt;/xliff:g&gt; و &lt;xliff:g id=alt1&gt;%2$s&lt;/xliff:g&gt; را پایین نگه دارید و کلیدهای + یا - را فشار دهید&lt;br/&gt; {2,number,integer}. برای حرکت کردن در صفحه، کلیدهای &lt;xliff:g id=meta2&gt;%3$s&lt;/xliff:g&gt; و &lt;xliff:g id=alt2&gt;%4$s&lt;/xliff:g&gt; را پایین نگه دارید و کلیدهای جهت‌نما را فشار دهید&lt;br/&gt; {3,number,integer}. برای متوقف کردن درشت‌نمایی، از این میان‌بر استفاده کنید"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off" msgid="1779959623535122324">"‏&lt;b&gt;برای زوم‌پیش کردن:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. برای فعال کردن درشت‌نمایی، از میان‌بر استفاده کنید&lt;br/&gt; {1,number,integer}. روی صفحه تک‌ضرب بزنید&lt;br/&gt; {2,number,integer}. برای حرکت کردن در صفحه، ۲ انگشت را بکشید&lt;br/&gt; {3,number,integer}. برای تنظیم بزرگ‌نمایی، ۲ انگشت را ازهم دور یا به‌هم نزدیک کنید&lt;br/&gt; {4,number,integer}. از میان‌بر برای متوقف کردن درشت‌نمایی استفاده کنید&lt;br/&gt;&lt;br/&gt; همچنین می‌توانید موقتاً زوم‌پیش کنید و کارهای دیگری انجام دهید."</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_on" msgid="7323930759240678965">"‏&lt;b&gt;برای زوم‌پیش کردن:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. برای فعال کردن درشت‌نمایی، از میان‌بر استفاده کنید&lt;br/&gt; {1,number,integer}. روی صفحه تک‌ضرب بزنید&lt;br/&gt; {2,number,integer}. برای حرکت کردن در صفحه، ۱ یا ۲ انگشت را بکشید&lt;br/&gt; {3,number,integer}. برای تنظیم بزرگ‌نمایی، ۲ انگشت را ازهم دور یا به‌هم نزدیک کنید&lt;br/&gt; {4,number,integer}. از میان‌بر برای متوقف کردن درشت‌نمایی استفاده کنید&lt;br/&gt;&lt;br/&gt; همچنین می‌توانید موقتاً زوم‌پیش کنید و کارهای دیگری انجام دهید."</string>
     <string name="accessibility_screen_magnification_navbar_summary" msgid="807985499898802296">"با روشن کردن درشت‌نمایی، می‌توانید روی صفحه زوم‌پیش کنید.\n\n"<b>"برای زوم کردن"</b>"، درشت‌نمایی را روشن کنید و روی جایی از صفحه تک‌ضرب بزنید.\n"<ul><li>"برای پیمایش، دو یا چند انگشتتان را روی صفحه بکشید "</li>\n<li>"برای تنظیم کردن زوم، دو یا چند انگشتتان را به‌هم نزدیک کنید"</li></ul>\n\n<b>"برای زوم موقت"</b>"، درشت‌نمایی را روشن کنید، سپس جایی از صفحه را لمس کنید و نگه‌دارید.\n"<ul><li>"برای حرکت در صفحه، انگشتتان را روی صفحه بکشید"</li>\n<li>"برای زوم‌پس کردن، انگشتتان را بردارید"</li></ul>\n\n"نمی‌توانید صفحه‌کلید یا نوار پیمایش را کوچک کنید."</string>
@@ -2496,7 +2507,7 @@
     <string name="captioning_appearance_summary" msgid="4620682807315588019">"اندازه نوشتار <xliff:g id="ACCESSIBILITY_FONT_SIZE">%1$s</xliff:g>"</string>
     <string name="captioning_more_options_title" msgid="3484496882942539652">"گزینه‌های دیگر"</string>
     <string name="accessibility_captioning_preference_intro" msgid="8995427146374031134">"اندازه و زیرنویس ناشنوایان ناشنوایان را سفارشی کنید تا خواندن نوشتار آسان‌تر شود"</string>
-    <string name="accessibility_captioning_preference_summary" msgid="8335768472978374255">"همه برنامه‌های رسانه از این اولویت‌های زیرنویس ناشنوایان پشتیبانی نمی‌کنند"</string>
+    <string name="accessibility_captioning_preference_summary" msgid="8335768472978374255">"همه برنامه‌های رسانه‌ای از این اولویت‌های زیرنویس ناشنوایان پشتیبانی نمی‌کنند"</string>
     <string name="accessibility_shortcut_type_software" msgid="2552732582767687515">"دکمه دسترس‌پذیری"</string>
     <string name="accessibility_shortcut_type_software_gesture" msgid="5608959693931019059">"با ۲ انگشت تند به‌بالا بکشید"</string>
     <string name="accessibility_shortcut_type_hardware" msgid="4834144210432451916">"کلیدهای میزان صدا را نگه‌دارید"</string>
@@ -2506,7 +2517,7 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"‏برای استفاده از این، میان‌بر %1$s را در صفحه یکی از ویژگی‌های دسترس‌پذیری روشن کنید"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"ادامه"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"دستگاه‌های کمک‌شنوایی"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"راه‌اندازی و مدیریت سمعک‌های سازگار با «جاری‌سازی صوتی ویژه سمعک‌ها» و «صدای کم‌مصرف»، کاشت حلزون، و دیگر دستگاه‌های تقویت صدا"</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"راه‌اندازی و مدیریت کردن سمعک‌های سازگار با «جاری‌سازی صوتی ویژه سمعک‌ها» و «صدای کم‌مصرف»، کاشت حلزون، و دیگر دستگاه‌های تقویت صدا"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"راه‌اندازی و مدیریت کردن سمعک‌های سازگار با «جاری‌سازی صوتی ویژه سمعک‌ها»، کاشت حلزونی، و دیگر دستگاه‌های تقویت صدا"</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"راه‌اندازی و مدیریت کردن سمعک‌های سازگار با «صدای کم‌مصرف»، کاشت حلزونی، و دیگر دستگاه‌های تقویت صدا"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"هیچ دستگاه کمک‌شنوایی‌ای متصل نشده است"</string>
@@ -2829,7 +2840,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"از <xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> تا <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"‫<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> تا <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"نمودار مصرف باتری"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"نمودار مصرف روزانه باتری"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"نمودار مصرف ساعتی باتری"</string>
@@ -3119,6 +3135,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(سرور تأیید نشود)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(دریافت شده از سرور)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"‏اطلاعات وارد‌شده از VPN همیشه‌روشن پشتیبانی نمی‌کند"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"لغو"</string>
     <string name="vpn_done" msgid="5137858784289564985">"رد کردن"</string>
     <string name="vpn_save" msgid="683868204634860888">"ذخیره"</string>
@@ -4414,8 +4436,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"سرپرستتان می‌تواند بر برنامه‌ها و داده‌های مرتبط با این کاربر (ازجمله تنظیمات، اجازه‌ها، دسترسی شرکتی، فعالیت شبکه و اطلاعات مکان دستگاه) نظارت داشته باشد و آن‌ها را مدیریت کنید."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"سرپرستتان می‌تواند بر برنامه‌ها و داده‌های مرتبط با این دستگاه (ازجمله تنظیمات، اجازه‌ها، دسترسی شرکتی، فعالیت شبکه و اطلاعات مکان دستگاه) نظارت داشته باشد و آن‌ها را مدیریت کنید."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"سرپرست دستگاهتان می‌تواند به داده‌های مرتبط با این دستگاه دسترسی داشته باشد، برنامه‌ها را مدیریت کند، و تنظیمات این دستگاه‌ها را تغییر دهد."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"منع‌شده توسط «محافظت پیشرفته»"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"این کنش مجاز نیست چون «محافظت پیشرفته» برای دستگاهتان روشن است."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"خاموش کردن"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"روشن کردن"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"نمایش"</string>
@@ -4641,6 +4673,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"حساسیت بالاتر ممکن است با اشاره‌های برنامه در راستای لبه صفحه تداخل داشته باشد."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"حساسیت اشاره «برگشت»"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"پیمایش اشاره‌ای"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"پیمایش دکمه‌ای"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"پیمایش اشاره‌ای، حساسیت برگشت، اشاره برگشت"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"پیمایش، دکمه صفحه اصلی"</string>
@@ -5151,8 +5185,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"پانل تنظیمات"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"فعال کردن پنجره قالب آزاد"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"فعال کردن ویژگی‌های تجربه رایانه"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"«نمای ویژه رایانه رومیزی» را در دستگاه و در نمایشگرهای ثانویه فعال می‌کند."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"«نمای ویژه رایانه رومیزی» را در نمایشگرهای ثانویه فعال می‌کند."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"فعال کردن پنجره قالب آزاد در نمایشگر دوم"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"فعال کردن غیرقابل‌تغییردادنی در چندپنجره‌ای"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"مجاز کردن برنامه‌های غیرقابل‌تغییردادنی برای نمایش در چندپنجره‌ای"</string>
@@ -5232,12 +5268,10 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"حالت مستقل از صفحه ۱۶ کیلوبایتی"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"خواندن شرح بلندتر"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"اجرای برنامه در حالت سازگاری با اندازه صفحه"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
-    <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
-    <skip />
-    <!-- no translation found for stop_app_dlg_text (4373849065005318901) -->
-    <skip />
+    <string name="stop_app_dlg_title" msgid="3153921585174512587">"برنامه متوقف شود؟"</string>
+    <string name="stop_app_dlg_text" msgid="4373849065005318901">"برنامه برای اعمال کردن تنظیم سازگاری با اندازه صفحه متوقف خواهد شد."</string>
     <string name="bug_report_handler_title" msgid="713439959113250125">"کنترل‌کننده گزارش اشکال"</string>
     <string name="bug_report_handler_picker_footer_text" msgid="4935758328366585673">"تعیین می‌کند کدام برنامه میان‌بر «گزارش اشکال» را در دستگاه کنترل کند."</string>
     <string name="personal_profile_app_subtext" msgid="5586060806997067676">"شخصی"</string>
@@ -5571,8 +5605,7 @@
     <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
     <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"گذرواژه اکنون تنظیم شد"</string>
-    <!-- no translation found for accessibility_setup_pin_complete (7626702882001984236) -->
-    <skip />
+    <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"پین اکنون راه‌اندازی شد"</string>
     <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"نمایش اشاره‌گر هنگام نگه داشتن"</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"تنظیمات «مدیریت حقوق دیجیتال رسانه»"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"اجباری کردن رمزنگاری ایمن نرم‌افزار"</string>
@@ -5720,6 +5753,7 @@
     <string name="supervision_pin_management_preference_summary_add" msgid="3244161328612671896">"افزودن روش بازیابی پین"</string>
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"تغییر پین"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"پین را فراموش کردم"</string>
-    <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"فیلترهای محتوای وب"</string>
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

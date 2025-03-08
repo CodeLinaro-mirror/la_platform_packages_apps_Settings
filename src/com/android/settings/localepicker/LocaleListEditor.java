@@ -55,7 +55,6 @@ import com.android.internal.app.LocalePicker;
 import com.android.internal.app.LocaleStore;
 import com.android.settings.R;
 import com.android.settings.RestrictedSettingsFragment;
-import com.android.settings.flags.Flags;
 import com.android.settings.overlay.FeatureFactory;
 import com.android.settings.search.BaseSearchIndexProvider;
 import com.android.settingslib.search.SearchIndexable;
@@ -63,6 +62,7 @@ import com.android.settingslib.search.SearchIndexableRaw;
 import com.android.settingslib.utils.CustomDialogHelper;
 import com.android.settingslib.utils.StringUtil;
 import com.android.settingslib.widget.LayoutPreference;
+import com.android.settingslib.widget.SettingsThemeHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -289,7 +289,7 @@ public class LocaleListEditor extends RestrictedSettingsFragment implements View
     private void setRemoveMode(boolean mRemoveMode) {
         this.mRemoveMode = mRemoveMode;
         mAdapter.setRemoveMode(mRemoveMode);
-        if (Flags.settingsExpressiveDesignEnabled()) {
+        if (SettingsThemeHelper.isExpressiveTheme(getContext())) {
             mAddLanguagePreference.setVisible(!mRemoveMode);
         } else {
             mAddLanguage.setVisibility(mRemoveMode ? View.INVISIBLE : View.VISIBLE);
@@ -497,7 +497,7 @@ public class LocaleListEditor extends RestrictedSettingsFragment implements View
         list.setAdapter(mAdapter);
         list.setOnTouchListener(this);
         list.requestFocus();
-        if (Flags.settingsExpressiveDesignEnabled()) {
+        if (SettingsThemeHelper.isExpressiveTheme(getContext())) {
             mAddLanguagePreference = getPreferenceScreen().findPreference(KEY_ADD_A_LANGUAGE);
         } else {
             mAddLanguage = layout.findViewById(R.id.add_language);

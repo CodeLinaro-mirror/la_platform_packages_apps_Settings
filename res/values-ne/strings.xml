@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"फिंगरप्रिन्ट सेन्सरमा छुनुहोस्"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"फिंगरप्रिन्ट पहिचान गर्न सकिएन"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"स्मार्ट वाच प्रयोग गरी अनलक गर्ने सुविधा"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"तपाईंले फेस अनलक र फिंगरप्रिन्ट अनलक सेटअप गर्नुभयो भने तपाईंले मास्क लगाएका बेला वा तपाईं कुनै अँध्यारो ठाउँमा हुँदा तपाईंको फोनले तपाईंलाई फिंगरप्रिन्ट प्रयोग गर्न लगाउने छ।\n\nतपाईंका औँलाहरू ओसिला भएका बेला वा तपाईंको अनुहार पहिचान गर्न नसकिएका खण्डमा तपाईं स्मार्ट वाच अनलक गर्ने सुविधा प्रयोग गरेर आफ्नो फोन अनलक गर्न सक्नुहुन्छ।"</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"तपाईंको फिंगरप्रिन्ट पहिचान गर्न नसकिएका खण्डमा तपाईं स्मार्ट वाच अनलक गर्ने सुविधा प्रयोग गरेर आफ्नो फोन अनलक गर्न सक्नुहुन्छ।"</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"तपाईंको अनुहार पहिचान गर्न नसकिएका खण्डमा तपाईं स्मार्ट वाच अनलक गर्ने सुविधा प्रयोग गरेर आफ्नो फोन अनलक गर्न सक्नुहुन्छ।"</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"उच्च रिजोल्युसन"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"अधिकतम रिजोल्युसन"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"अधिकतम रिजोल्युसन प्रयोग गर्दा तपाईंको डिभाइसको ब्याट्री बढी खपत हुन्छ। तपाईंले रोजेको रिजोल्युसन प्रयोग गर्नुभयो भने केही एपहरू रिस्टार्ट हुन सक्छन्।"</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"रङ्गहरू"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"प्राकृतिक"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"बुस्ट गरिएको"</string>
@@ -1903,7 +1907,7 @@
     <string name="data_size_label" msgid="7814478940141255234">"प्रयोगकर्ताको डेटा"</string>
     <string name="uninstall_text" msgid="315764653029060126">"अनइन्स्टल गर्नुहोस्"</string>
     <string name="uninstall_all_users_text" msgid="5924715251087176474">"सम्पूर्ण प्रयोगकर्ताका लागि अनइन्स्टल गर्नुहोस्"</string>
-    <string name="install_text" msgid="4558333621516996473">"स्थापना गर्नुहोस्"</string>
+    <string name="install_text" msgid="4558333621516996473">"इन्स्टल गर्नुहोस्"</string>
     <string name="disable_text" msgid="5146002260857428005">"अफ गर्नुहोस्"</string>
     <string name="enable_text" msgid="8570798764647110430">"अन गर्नुहोस्"</string>
     <string name="clear_user_data_text" msgid="6773186434260397947">"भण्डारण खाली गर्नुहोस्"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"क्याप्सनसम्बन्धी प्राथमिकताहरूका बारेमा थप जान्नुहोस्"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"म्याग्निफिकेसन"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"जुम इनको सर्टकट"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"टाइप गरेको टेक्स्ट जुम इन गर्नुहोस्"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"म्याग्निफायरले तपाईंले टेक्स्ट टाइप गर्दै गर्दा उक्त टेक्स्ट जुम इन गरेर देखाउँछ"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"एपहरू अदलबदल गर्दा अन नै होस्"</string>
@@ -2506,7 +2520,7 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"यो प्रयोग गर्न सर्वसुलभता कायम गर्ने सुविधाको पेजमा गई %1$s को सर्टकट अन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"जारी राख्नुहोस्"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"हियरिङ डिभाइसहरू"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA र LE अडियो हियरिङ डिभाइस, कक्लियर इम्प्लान्ट तथा अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप र व्यवस्थापन गर्नुहोस्"</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA र LE अडियो प्रयोग गरिएका श्रवण यन्त्र, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"ASHA प्रयोग गरिएका श्रवण यन्त्र, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE अडियो प्रयोग गरिएका श्रवण यन्त्र, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"कुनै पनि हियरिङ डिभाइस कनेक्ट गरिएको छैन"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> देखि <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g> सम्म"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"ब्याट्रीको खपत देखाइएको चार्ट"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"दैनिक ब्याट्रीको खपतसम्बन्धी चार्ट"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"प्रति घण्टा ब्याट्रीको खपतसम्बन्धी चार्ट"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(सर्भरको पुष्टि नगर्नुहोस्)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(सर्भरबाट प्राप्त)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"हालिएको जानकारीको आधारमा \"VPN सधैँ खुला राख्नुहोस्\" प्रयोग गर्न मिल्दैन"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"रद्द गर्नुहोस्"</string>
     <string name="vpn_done" msgid="5137858784289564985">"खारेज गर्नुहोस्"</string>
     <string name="vpn_save" msgid="683868204634860888">"सेभ गर्नुहोस्"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"तपाईंको प्रशासकले यस प्रयोगकर्तासँग सम्बन्धित एप तथा डेटाका साथै सेटिङ, अनुमति, संस्थागत पहुँच, नेटवर्क सम्बन्धी गतिविधि र यस डिभाइसको स्थानसम्बन्धी जानकारीको अनुगमन र व्यवस्थापन गर्न सक्छ।"</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"तपाईंको प्रशासकले यस यन्त्रसँग सम्बन्धित एप र डेटाका साथै सेटिङ, अनुमति, संस्थागत पहुँच, नेटवर्क सम्बन्धी गतिविधि, र यस डिभाइसको स्थानसम्बन्धी जानकारीको अनुगमन र व्यवस्थापन गर्न सक्छ।"</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"तपाईंको डिभाइसका एड्मिनले यो डिभाइससँग सम्बन्धित डेटा प्रयोग गर्न, एपहरू व्यवस्थापन गर्न र यी डिभाइसहरूको सेटिङ बदल्न सक्छ।"</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"सुरक्षासम्बन्धी उन्नत सुविधाले यो कार्य गर्न रोकेको छ"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"तपाईंको डिभाइसमा सुरक्षासम्बन्धी उन्नत सुविधा अन गरिएकाले तपाईंलाई यो कार्य गर्ने अनुमति दिइएको छैन।"</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"बन्द गर्नुहोस्"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"अन गर्नुहोस्"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"देखाउनुहोस्"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"स्क्रिनका किनारामा एपको इसारा राखिएको छ भने स्क्रिनको संवेदनशीलता उच्च बनाउँदा उक्त जेस्चरसँग बाझिन सक्छ।"</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"पछाडिको भागको संवेदनशीलता"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"जेस्चर नेभिगेसन"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"बटन नेभिगेसन"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"जेस्चर नेभिगेसन, पृष्ठभागको संवेदनशीलता, पृष्ठभागको इसारा"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"नेभिगेसन, होम बटन"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"सेटिङहरू नामक प्यानल"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"फ्रिफर्म विन्डोहरू अन गर्नुहोस्"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"डेस्कटपको जस्तो अनुभव दिने सुविधाहरू अन गर्नुहोस्"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"यो डिभाइस र सहायक डिस्प्लेहरूमा डेस्कटप भ्यू अन गर्नुहोस्।"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"सहायक डिस्प्लेहरूमा डेस्कटप भ्यू अन गर्नुहोस्।"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"दोस्रो डिस्प्लेमा फ्रिफर्म विन्डो अन गर्नुहोस्"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"एउटै विन्डोमा नअट्ने एपहरू एकभन्दा बढी विन्डोमा खोल्नुहोस्"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"एउटै विन्डोमा नअट्ने एपहरू एकभन्दा बढी विन्डोमा खोल्न दिनुहोस्"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"१६ के.बि. पेज एग्नोस्टिक मोड"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"थप पढ्नुहोस्"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"यो एप पेज साइज कम्प्याटिबिलिटी मोडमा चलाउनुहोस्"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN परिवर्तन गर्नुहोस्"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN बिर्सेँ"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

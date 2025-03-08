@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"請輕觸指紋感應器"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"指紋辨識失敗"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"智慧手錶解鎖"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"設定「人臉解鎖」和「指紋解鎖」功能後，如果你戴口罩或人在光線昏暗的環境，手機會要求你使用指紋解鎖。\n\n如要解鎖這支手機，「智慧手錶解鎖」功能也很方便。舉例來說，手指有水或臉部辨識失敗時，使用智慧手錶即可輕鬆解鎖。"</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"如要解鎖這支手機，「智慧手錶解鎖」功能也很方便。舉例來說，指紋辨識失敗時，使用智慧手錶即可輕鬆解鎖。"</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"如要解鎖這支手機，「智慧手錶解鎖」功能也很方便。舉例來說，臉部辨識失敗時，使用智慧手錶即可輕鬆解鎖。"</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"高解析度"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"最大解析度"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"使用最大解析度會比較耗電。如果切換解析度，部分應用程式可能會重新啟動。"</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"色彩"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"自然"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"增強"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"進一步瞭解字幕偏好設定"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"放大"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"放大功能捷徑"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"放大目前輸入的內容"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"放大輸入的文字"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"切換應用程式時保持開啟"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>到<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g><xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g>，<xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"電池用量圖表"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"每日電池用量圖表"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"每小時電池用量圖表"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(不要驗證伺服器)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(從伺服器接收)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"輸入的資訊不支援永久連線 VPN"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"取消"</string>
     <string name="vpn_done" msgid="5137858784289564985">"關閉"</string>
     <string name="vpn_save" msgid="683868204634860888">"儲存"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"你的管理員可以監控及管理與這位使用者相關聯的應用程式和資料，包括設定、權限、公司系統權限、網路活動，以及裝置的位置資訊。"</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"你的管理員可以監控及管理與這個裝置相關聯的應用程式和資料，包括設定、權限、公司系統權限、網路活動，以及裝置的位置資訊。"</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"你的裝置管理員或許可以存取這部裝置的相關資料、管理應用程式及變更裝置設定。"</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"「進階保護」禁止你存取這項設定"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"裝置已開啟「進階保護」，因此無法執行這項操作。"</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"關閉"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"開啟"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"顯示"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"如果你調高敏感度，可能會影響螢幕邊緣的應用程式手勢操作。"</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"系統偵測「返回」手勢的敏感度"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"手勢操作"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"按鈕操作"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"手勢操作, 系統偵測「返回」手勢的敏感度,「返回」手勢"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"操作設定, 主畫面按鈕"</string>
@@ -5029,8 +5066,8 @@
     <string name="title_supported_service_for_manual_type" msgid="6009284624466359864">"按照步驟連上衛星"</string>
     <string name="summary_supported_service" msgid="4320535903444834786">"你可以傳送訊息給任何人，包括緊急救援服務。如果有可用的行動網路，手機就會重新連線。"</string>
     <string name="summary_supported_service_for_manual_type" msgid="2147958362763058271">"手機連線後，你可以傳送訊息給任何人，包括緊急救援服務。"</string>
-    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"衛星連線可能較緩慢，而且這項功能僅支援部分地區。天氣和特定結構可能會影響連線品質。系統不支援衛星電話，但你仍可撥打緊急電話。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」。"</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"衛星連線可能較緩慢，而且這項功能僅支援部分地區。天氣和特定結構可能會影響連線品質。系統不支援衛星電話，但你仍可撥打緊急電話。在某些地區，這項功能可能無法用於傳送訊息給緊急救援服務。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」。"</string>
+    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"衛星連線可能較慢，而且僅支援部分地區。天氣和特定結構可能會影響連線品質。系統不支援衛星電話，但或許仍可撥打緊急電話。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」。"</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"衛星連線可能較慢，而且僅在部分地區提供。天氣和特定結構可能會影響連線品質。系統不支援衛星電話，但或許仍可撥打緊急電話。在某些地區，可能無法用這項功能傳訊息給緊急救援服務。\n\n「設定」頁面可能要一段時間後才會顯示帳戶變動，詳情請洽「<xliff:g id="CARRIER_NAME">%1$s</xliff:g>」。"</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"進一步瞭解<xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"無法開啟<xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"如要開啟<xliff:g id="FUNCTION">%1$s</xliff:g>，請先中斷衛星連線"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"設定面板"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"啟用自由形式視窗"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"啟用電腦版服務功能"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"在裝置和第二個螢幕上啟用電腦檢視畫面。"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"在第二個螢幕上啟用電腦檢視畫面。"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"在第二個螢幕上啟用自由形式視窗功能"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"允許多視窗模式顯示無法調整大小的應用程式"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"允許透過多視窗模式顯示無法調整大小的應用程式"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 KB 可變頁面模式"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"閱讀完整內容"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"以頁面大小相容模式執行應用程式"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"變更 PIN 碼"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"忘記 PIN 碼"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

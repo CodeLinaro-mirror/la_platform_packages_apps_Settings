@@ -19,7 +19,6 @@ package com.android.settings.accessibility;
 import static com.google.common.truth.Truth.assertThat;
 import static com.google.common.truth.Truth.assertWithMessage;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.provider.Settings;
@@ -28,13 +27,11 @@ import android.text.TextUtils;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import androidx.annotation.NonNull;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.test.core.app.ApplicationProvider;
 
-import com.android.settings.DialogCreatable;
 import com.android.settings.R;
 import com.android.settings.accessibility.MagnificationCursorFollowingModePreferenceController.ModeInfo;
 
@@ -178,23 +175,5 @@ public class MagnificationCursorFollowingModePreferenceControllerTest {
                 Settings.Secure.ACCESSIBILITY_MAGNIFICATION_CURSOR_FOLLOWING_MODE_EDGE);
         assertThat(TextUtils.equals(mController.getSummary(), mContext.getString(
                 R.string.accessibility_magnification_cursor_following_edge))).isTrue();
-    }
-
-    private static class TestDialogHelper implements DialogHelper {
-        private DialogCreatable mDialogDelegate;
-        private Dialog mDialog;
-
-        @Override
-        public void showDialog(int dialogId) {
-            mDialog = mDialogDelegate.onCreateDialog(dialogId);
-        }
-
-        public void setDialogDelegate(@NonNull DialogCreatable delegate) {
-            mDialogDelegate = delegate;
-        }
-
-        public Dialog getDialog() {
-            return mDialog;
-        }
     }
 }

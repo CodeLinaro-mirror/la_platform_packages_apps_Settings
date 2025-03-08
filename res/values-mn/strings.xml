@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Хурууны хээ мэдрэгчид хүрнэ үү"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Хурууны хээг таньсангүй"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Утасны түгжээг цагаараа тайлах"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Таныг Царайгаар түгжээ тайлах болон Хурууны хээгээр түгжээ тайлахыг тохируулсан үед утас тань таныг амны хаалт зүүсэн эсвэл харанхуй газар байгаа тохиолдолд танаас хурууны хээгээ оруулахыг хүснэ.\n\nУтасны түгжээг цагаараа тайлах нь таны хуруу нойтон эсвэл царайг тань таниагүй үед утасныхаа түгжээг тайлах өөр нэг хялбар арга юм."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Утасны түгжээг цагаараа тайлах нь таны хурууг таниагүй зэрэг үед утасныхаа түгжээг тайлах өөр нэг хялбар арга юм."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Утасны түгжээг цагаараа тайлах нь таны царайг таниагүй зэрэг үед утасныхаа түгжээг тайлах өөр нэг хялбар арга юм."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Өндөр нягтрал"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Дээд нягтрал"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Дээд нягтрал нь таны батарейн цэнэгийг илүү их ашигладаг. Нягтралаа сэлгэх нь зарим аппыг дахин эхлүүлэхэд хүргэж магадгүй."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Өнгө"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Байгалийн"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Өдөөсөн"</string>
@@ -2115,8 +2119,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Мэдрэгч самбарын зангааг мэдэж авах"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"мэдрэгч самбар, мэдрэгч самбар, хулгана, курсор, гүйлгэх, шудрах, баруун талыг товших, товших, заагч"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"баруун талыг товших, товших"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="1759914275939765929">"Хулганын голын товчны товшилт"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Туслахыг эхлүүлэх"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Нүүр хуудас руу очих"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Буцах"</string>
@@ -2269,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Тайлбарын тохиргооны тухай нэмэлт мэдээлэл авах"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Томруулах"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Томруулах онцлогийн товчлол"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Бичих явцыг томруулах"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Томруулагч нь таныг бичих үед текстийг дагана"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Аппууд сэлгэх үед асаалттай байлгах"</string>
@@ -2830,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>-с <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Батарей ашиглалтын график"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Батарей ашиглалтын өдөр тутмын график"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Батарей ашиглалтын цаг тутмын график"</string>
@@ -2910,14 +2928,10 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Асаалттай байна"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Унтраалттай байна"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Дасан зохицох холболтыг ашиглах"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
+    <string name="adaptive_connectivity_wifi_switch_title" msgid="5899985025046319472">"Wi-Fi-г үүрэн холбооны сүлжээ рүү автоматаар сэлгэ"</string>
+    <string name="adaptive_connectivity_wifi_switch_summary" msgid="4650230240134029595">"Wi-Fi холболт муу, ашиглах боломжгүй үед үүрэн холбооны датаг автоматаар ашиглана уу. Дата ашиглалтын төлбөр гарч магадгүй."</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="2473274404695643218">"Хөдөлгөөнт холбооны сүлжээ рүү автоматаар сэлгэх"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="2432517485362085341">"Сүлжээний холболтыг автоматаар удирдаж батарейн ажиллах хугацааг уртасгаарай"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Хөдөлгөөнт холбооны сүлжээний аюулгүй байдал"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Сүлжээний төрөл, шифрлэлт, мэдэгдлийн тохиргоо"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Эдгээр тохиргоо нь таны мэдээллийг хулгайлах эсвэл тандахад хүргэж болзошгүй хуучирсан эсвэл шифрлэгдээгүй сүлжээнээс таны дуудлага, мессеж, өгөгдлийг хамгаалахад тусална."</string>
@@ -3124,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(серверийг тулгах хэрэггүй)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(серверээс хүлээн авсан)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Оруулсан мэдээлэл тогтмол асаалттай VPN-г дэмждэггүй"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Цуцлах"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Хаах"</string>
     <string name="vpn_save" msgid="683868204634860888">"Хадгалах"</string>
@@ -4419,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Тохиргоо, зөвшөөрөл, байгууллагын хандалт, сүлжээний үйл ажиллагаа болон төхөөрөмжийн байршлын мэдээлэл зэрэг энэ хэрэглэгчтэй холбоотой апп, өгөгдлийг таны админ удирдаж, хянах боломжтой."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Тохиргоо, зөвшөөрөл, байгууллагын хандалт, сүлжээний үйл ажиллагаа болон төхөөрөмжийн байршлын мэдээлэл зэрэг энэ төхөөрөмжтэй холбоотой апп, өгөгдлийг таны админ удирдаж, хянах боломжтой."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Таны төхөөрөмжийн администратор энэ төхөөрөмжтэй холбоотой өгөгдөлд хандаж, аппуудыг удирдаж, энэ төхөөрөмжийн тохиргоог өөрчлөх боломжтой байж болзошгүй."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Дэвшилтэт хамгаалалтаас сэргийлсэн"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Таны төхөөрөмжид Дэвшилтэт хамгаалалтыг асаасан тул энэ үйлдлийг зөвшөөрөхгүй."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Унтраах"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Асаах"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Харуулах"</string>
@@ -4646,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Илүү өндөр мэдрэгшил нь дэлгэцийн зах дагуух дурын аппын зангаатай зөрчилдөж болзошгүй."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Арын мэдрэгшил"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Зангааны навигац"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Товчлуурт навигац"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"зангааны навигац, буцах мэдрэгшил, буцах зангаа"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"навигац, нүүр хуудасны товчлуур"</string>
@@ -5034,10 +5066,8 @@
     <string name="title_supported_service_for_manual_type" msgid="6009284624466359864">"Хиймэл дагуулд холбогдох алхмуудыг дагах"</string>
     <string name="summary_supported_service" msgid="4320535903444834786">"Та яаралтай тусламжийн үйлчилгээнүүдийг оруулаад дурын хүн рүү мессеж бичих боломжтой. Таны утас хөдөлгөөнт холбооны сүлжээг боломжтой үед үүнд дахин холбогдоно."</string>
     <string name="summary_supported_service_for_manual_type" msgid="2147958362763058271">"Та утсаа холбогдсоны дараа дурын хүн рүү мессеж бичих боломжтой бөгөөд үүнд яаралтай тусламжийн үйлчилгээ багтана."</string>
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"Хиймэл дагуулын холболт удаан бөгөөд зөвхөн зарим бүсэд ашиглах боломжтой байж магадгүй. Цаг агаар болон зарим байгууламж холболтод нөлөөлж магадгүй. Хиймэл дагуулаар дуудлага хийх боломжгүй. Яаралтай дуудлагад холбогдсон хэвээр байж магадгүй.\n\nТаны бүртгэлийн өөрчлөлт Тохиргоонд харагдах хүртэл хэсэг хугацаа зарцуулж болно. Дэлгэрэнгүй мэдээлэл авах бол <xliff:g id="CARRIER_NAME">%1$s</xliff:g>-тай холбогдоно уу."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"Хиймэл дагуулын холболт удаан бөгөөд зөвхөн зарим бүсэд ашиглах боломжтой байж магадгүй. Цаг агаар болон зарим байгууламж холболтод нөлөөлж магадгүй. Хиймэл дагуулаар дуудлага хийх боломжгүй. Яаралтай дуудлага холбогдсон хэвээр байж магадгүй. Зарим бүсэд яаралтай тусламжийн үйлчилгээтэй мессеж бичих боломжгүй байж магадгүй.\n\nБүртгэлийн өөрчлөлтийг Тохиргоонд харуулахад хэсэг хугацаа заруулж болно. Дэлгэрэнгүй мэдээлэл авах бол <xliff:g id="CARRIER_NAME">%1$s</xliff:g>-тай холбогдоно уу."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"<xliff:g id="SUBJECT">%1$s</xliff:g>-н талаарх дэлгэрэнгүй"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"<xliff:g id="FUNCTION">%1$s</xliff:g>-г асаах боломжгүй"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"<xliff:g id="FUNCTION">%1$s</xliff:g>-г асаахын тулд эхлээд хиймэл дагуулын холболтыг тасална уу"</string>
@@ -5158,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Тохиргооны самбар"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Чөлөөт хэлбэрийн цонхыг идэвхжүүлэх"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Компьютерын хэрэглээний онцлогийг идэвхжүүлэх"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Дэлгэц дээр харагдах байдлыг төхөөрөмж, хоёрдогч дэлгэцэд идэвхжүүлнэ үү."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Дэлгэц дээр харагдах байдлыг хоёрдогч дэлгэцэд идэвхжүүлнэ үү."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Хоёрдогч дэлгэцэд чөлөөт хэлбэрийн цонх идэвхжүүл"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Хэмжээг өөрчлөх боломжгүй аппуудыг олон цонхонд идэвхжүүлэх"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Хэмжээг нь өөрчлөх боломжгүй аппуудыг олон цонхонд байхыг нь зөвшөөрнө"</string>
@@ -5239,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 кБ хуудасны хэмжээ сэлгэх горим"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Цааш унших"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Хуудасны хэмжээнд тохирох горимоор аппыг ажиллуулах"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5728,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"ПИН өөрчлөх"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"ПИН-г мартсан"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

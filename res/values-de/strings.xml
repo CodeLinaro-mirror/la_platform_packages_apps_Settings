@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Berühre den Fingerabdrucksensor"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Fingerabdruck nicht erkannt"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Mit Smartwatch entsperren"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Wenn du auf dem Smartphone die Entsperrung per Gesichtserkennung und die Entsperrung per Fingerabdruck einrichtest, wirst du im Dunkeln oder beim Tragen einer Maske nach deinem Fingerabdruck gefragt.\n\n„Mit Smartwatch entsperren“ ist eine weitere praktische Möglichkeit, dein Smartphone zu entsperren, z. B. wenn deine Finger nass sind oder dein Gesicht nicht erkannt wird."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"„Mit Smartwatch entsperren“ ist eine weitere praktische Möglichkeit, dein Smartphone zu entsperren, z. B. wenn dein Fingerabdruck nicht erkannt wird."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"„Mit Smartwatch entsperren“ ist eine weitere praktische Möglichkeit, dein Smartphone zu entsperren, z. B. wenn dein Gesicht nicht erkannt wird."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Hohe Auflösung"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maximale Auflösung"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Bei maximaler Auflösung wird mehr Akkukapazität verbraucht. Wenn du die Auflösung änderst, werden einige Apps möglicherweise neu gestartet."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Farben"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Natürlich"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Verstärkt"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Weitere Informationen zu den Einstellungen für Untertitel"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Vergrößerung"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Kurzbefehl für Vergrößerung"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Eingetippten Text vergrößern"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Lupe folgt dem Text, während du tippst"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Beim App-Wechsel aktiviert lassen"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"von <xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> bis <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> bis <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Diagramm zur Akkunutzung"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Diagramm zur täglichen Akkunutzung"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Diagramm zur stündlichen Akkunutzung"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(Server nicht überprüfen)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(vom Server erhalten)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Bei den eingegebenen Informationen wird durchgehend aktives VPN nicht unterstützt"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Abbrechen"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Schließen"</string>
     <string name="vpn_save" msgid="683868204634860888">"Speichern"</string>
@@ -3757,7 +3782,7 @@
     <string name="notification_pulse_title" msgid="8013178454646671529">"Benachrichtigungslicht blinkt"</string>
     <string name="lock_screen_notifications_title" msgid="2876323153692406203">"Datenschutz"</string>
     <string name="lockscreen_bypass_title" msgid="6519964196744088573">"Sperrbildschirm überspringen"</string>
-    <string name="lockscreen_bypass_summary" msgid="4578154430436224161">"Nach dem Entsperren wird direkt der zuletzt genutzte Bildschirm angezeigt. Um Benachrichtigungen auf dem Sperrbildschirm zu sehen, von oben wischen."</string>
+    <string name="lockscreen_bypass_summary" msgid="4578154430436224161">"Nach dem Entsperren wird direkt der zuletzt genutzte Bildschirm angezeigt. Um Benachrichtigungen zu sehen, von oben nach unten wischen."</string>
     <string name="keywords_lockscreen_bypass" msgid="41035425468915498">"Sperrbildschirm, überspringen, umgehen"</string>
     <string name="locked_work_profile_notification_title" msgid="279367321791301499">"Wenn das Arbeitsprofil gesperrt ist"</string>
     <string name="lock_screen_notif_minimalism" msgid="5556871004042668149">"Benachrichtigungen auf dem Sperrbildschirm verringern"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Dein Administrator kann die mit diesem Nutzer verbundenen Apps und Daten überwachen und verwalten, einschließlich der Einstellungen, Berechtigungen, Zugriffe auf Unternehmensinhalte, Netzwerkaktivitäten und Standortdaten des Geräts."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Dein Administrator kann die mit diesem Gerät verbundenen Apps und Daten überwachen und verwalten, einschließlich der Einstellungen, Berechtigungen, Zugriffe auf Unternehmensinhalte, Netzwerkaktivitäten und Standortdaten des Geräts."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Dein Geräteadministrator kann möglicherweise auf die Daten zugreifen, die mit diesem Gerät verknüpft sind, Apps verwalten und die Geräteeinstellungen ändern."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Vom erweiterten Sicherheitsprogramm verhindert"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Diese Aktion ist nicht zulässig, da das erweiterte Sicherheitsprogramm für Ihr Gerät aktiviert ist."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Deaktivieren"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Aktivieren"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Anzeigen"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Wenn du die Empfindlichkeit erhöhst, werden eventuell App-spezifische Touch-Gesten am Bildschirmrand beeinträchtigt."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Empfindlichkeit bei Touch-Geste „Zurück“"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Bedienung über Gesten"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Bedienung über Schaltflächen"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"bedienung über gesten, gestensteuerung, gestenbedienung, empfindlichkeit bei touch-geste zurück, empfindlichkeit geste zurück, empfindlichkeit zurückgeste, touch-geste zurück, geste zurück, zurückgeste"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"navigation, bedienung, startbildschirmtaste, taste in der mitte, home-taste, home button"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Einstellungen"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Freiform-Fenster zulassen"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Funktionen für die Desktop-Oberfläche aktivieren"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Desktop-Ansicht auf dem Gerät und auf sekundären Displays aktivieren."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Desktop-Ansicht auf sekundären Displays aktivieren."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Freiform-Fenster auf sekundären Displays zulassen"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Mehrfenstermodus für nicht änderbare Größen aktivieren"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Erlaubt Mehrfenstermodus für Apps mit nicht änderbarer Größe"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Speicherseitenunabhängiger 16‑KB-Modus"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Weitere Informationen"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"App im Kompatibilitätsmodus für die Seitengröße ausführen"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN ändern"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN vergessen"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

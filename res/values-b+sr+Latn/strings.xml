@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Dodirnite senzor za otisak prsta"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Otisak prsta nije prepoznat"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Otključavanje satom"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Kad podesite otključavanje licem i otključavanje otiskom prsta, telefon će vam tražiti otisak prsta kad nosite masku ili se nalazite na nekom mračnom mestu.\n\nOtključavanje satom je još jedan pogodan način za otključavanje telefona, na primer, kada su vam prsti mokri ili se lice ne prepoznaje."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Otključavanje satom je još jedan pogodan način za otključavanje telefona, na primer, kada otisak prsta nije prepoznat."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Otključavanje satom je još jedan pogodan način za otključavanje telefona, na primer, kada vam se lice ne prepoznaje."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Visoka rezolucija"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maksimalna rezolucija"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Maksimalna rezolucija koristi više baterije. Ako pređete na ovu rezoluciju, neke aplikacije će se možda restartovati."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Boje"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Prirodne"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Pojačane"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Saznajte više o podešavanjima titlova"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Uvećanje"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Prečica za uvećanje"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Uvećavaj uneti tekst"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Lupa automatski prati tekst dok ga unosite"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Zadrži pri promeni aplikacije"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>–<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>–<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Grafikon potrošnje baterije"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Grafikon dnevne potrošnje baterije"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Grafikon potrošnje baterije po satima"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(ne verifikuj server)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(primljeno sa servera)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Unete informacije ne podržavaju uvek uključeni VPN"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Otkaži"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Odbaci"</string>
     <string name="vpn_save" msgid="683868204634860888">"Sačuvaj"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Administrator može da nadgleda aplikacije i podatke povezane sa ovim korisnikom, uključujući podešavanja, dozvole, korporativni pristup, aktivnosti na mreži i informacije o lokaciji uređaja, kao i da upravlja njima."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Administrator može da prati aplikacije i podatke povezane sa ovim uređajem, uključujući podešavanja, dozvole, korporativni pristup, aktivnosti na mreži i informacije o lokaciji uređaja, kao i da upravlja njima."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Administrator uređaja možda može da pristupa podacima povezanim sa ovim uređajem, da upravlja aplikacijama i da menja podešavanja ovog uređaja."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Sprečila je Napredna zaštita"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Ova radnja nije dozvoljena jer je Napredna zaštita uključena za uređaj."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Isključi"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Uključi"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Prikaži"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Veća osetljivost može da izazove neslaganje sa pokretima u aplikaciji duž ivica ekrana."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Pozadinska osetljivost"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Navigacija pomoću pokreta"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Kretanje pomoću dugmeta"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navigacija pomoću pokreta, osetljivost pokreta za nazad, pokret za nazad"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"kretanje, dugme početak"</string>
@@ -4767,7 +4804,7 @@
     <string name="app_names_concatenation_template_3" msgid="7019703249717854148">"<xliff:g id="FIRST_APP_NAME">%1$s</xliff:g>, <xliff:g id="SECOND_APP_NAME">%2$s</xliff:g>, <xliff:g id="THIRD_APP_NAME">%3$s</xliff:g>"</string>
     <string name="storage_default_internal_storage" msgid="4055660218818688131">"Ovaj uređaj"</string>
     <string name="storage_games" msgid="1176568610086802469">"Igre"</string>
-    <string name="storage_files" msgid="7968460921272772299">"Datoteke"</string>
+    <string name="storage_files" msgid="7968460921272772299">"Fajlovi"</string>
     <string name="storage_images" msgid="2055893015567979387">"Slike"</string>
     <string name="storage_videos" msgid="6117698226447251033">"Videi"</string>
     <string name="storage_audio" msgid="5994664984472140386">"Zvuk"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Tabla sa podešavanjima"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Omogući prozore proizvoljnog formata"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Omogući funkcije doživljaja na računaru"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Omogućava prikaz za računare na uređaju i na sekundarnim ekranima."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Omogućava prikaz za računare na sekundarnim ekranima."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Omogući prozore proizv. formata na sekund. ekranu"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Omogući aplikacije nepromenjive veličine u više prozora"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Omogućava da aplikacije nepromenjive veličine budu u više prozora"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Režim od 16 kB nezavisan od veličine stranice"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Pročitajte više"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Pokrenite aplikaciju u režimu kompatibilnosti veličine stranice"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5722,5 +5761,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Promeni PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Zaboravio/la sam PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

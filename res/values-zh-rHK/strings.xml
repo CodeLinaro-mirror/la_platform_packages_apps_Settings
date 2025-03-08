@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"請輕觸指紋感應器"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"無法辨識指紋"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"手錶解鎖"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"設定「面孔解鎖」和「指紋解鎖」後，如果你戴口罩或在昏暗環境，手機就會要求你使用指紋。\n\n用「手錶解鎖」解鎖手機亦很方便，例如在手指濕了或識別不到面孔的情況。"</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"在系統無法識別你的指紋等情況下，「手錶解鎖」是另一個方便的解鎖手機方式。"</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"在系統無法識別你的面孔等情況下，「手錶解鎖」是另一個方便的解鎖手機方式。"</string>
@@ -761,7 +763,7 @@
     <string name="lock_settings_picker_update_lock_title" msgid="536853138943415927">"選擇新的螢幕鎖定方式"</string>
     <string name="lock_settings_picker_new_profile_lock_title" msgid="2270462215256413800">"選擇工作應用程式的鎖定方式"</string>
     <string name="lock_settings_picker_update_profile_lock_title" msgid="5929068163516308927">"選擇新的工作應用程式鎖定方式"</string>
-    <string name="lock_settings_picker_biometrics_added_security_message" msgid="1105247657304421299">"為提升安全性，請設定後備螢幕鎖定方式"</string>
+    <string name="lock_settings_picker_biometrics_added_security_message" msgid="1105247657304421299">"為加強安全，請設定後備螢幕鎖定方式"</string>
     <string name="lock_settings_picker_biometric_message" msgid="2609666443527262781">"選擇你的後備螢幕鎖定方式"</string>
     <string name="lock_settings_picker_admin_restricted_personal_message" msgid="3532653662159888328">"如果你忘記螢幕鎖定的解鎖方式，IT 管理員亦無法重設。"</string>
     <string name="lock_settings_picker_admin_restricted_personal_message_action" msgid="5956615234246626264">"另外為工作應用程式設定螢幕鎖定"</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"高解像度"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"最高解像度"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"設定至最高解像度時，耗電量會較高。切換解像度後，部分應用程式可能會重新啟動。"</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"顏色"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"自然"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"強化"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"進一步瞭解字幕偏好設定"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"放大"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"放大捷徑"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"放大輸入內容"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"放大輸入中的文字"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"切換應用程式時保持開啟"</string>
@@ -2526,12 +2540,12 @@
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"助聽器兼容性"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"改善 T 掣兼容性及降低噪音"</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"關於助聽器"</string>
-    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"如要找到 ASHA 或 LE Audio 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
-    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"如果要搵到 ASHA 或者 LE Audio 唔支援嘅其他助聽器，請㩒配對新裝置，然後㩒查看更多裝置"<b></b><b></b></string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"如要查看 ASHA 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"如果要搵其他 ASHA 唔支援嘅助聽器，請㩒 [配對新裝置]"<b></b>"，然後㩒 [查看更多裝置]"<b></b></string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"如要查看 LE Audio 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"如果要搵其他 LE Audio 唔支援嘅助聽器，請㩒 [配對新裝置]"<b></b>"，然後㩒 [查看更多裝置]"<b></b></string>
+    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"如要尋找 ASHA 或 LE Audio 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
+    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"如果要搵 ASHA 或者 LE Audio 唔支援嘅其他助聽器，請㩒一下配對新裝置，再㩒查看更多裝置"<b></b><b></b></string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"如要尋找 ASHA 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"如果要搵 ASHA 唔支援嘅其他助聽器，請㩒一下 [配對新裝置]"<b></b>"，再㩒 [查看更多裝置]"<b></b></string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"如要尋找 LE Audio 不支援的其他助聽器，請輕按 [配對新裝置] &gt; [查看更多裝置]&lt;b&gt;&lt;/b&gt; &lt;b&gt;&lt;/b&gt;"</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"如果要搵其他 LE Audio 唔支援嘅助聽器，請㩒一下 [配對新裝置]"<b></b>"，再㩒 [查看更多裝置]"<b></b></string>
     <string name="accessibility_hearing_device_pairing_page_title" msgid="6608901091770850295">"配對助聽器"</string>
     <string name="accessibility_hearing_device_pairing_intro" msgid="7022201665808166517">"你可在此頁面配對 ASHA 和 LE Audio 助聽器。請確保助聽器已開啟並已準備好配對。"</string>
     <string name="accessibility_found_hearing_devices" msgid="637407580358386553">"可供使用的助聽器"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>至<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g><xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"電池用量圖表"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"每日電池用量圖表"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"每小時電池用量圖表"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(不要驗證伺服器)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(從伺服器接收)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"輸入的資料不支援永久連線的 VPN"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"取消"</string>
     <string name="vpn_done" msgid="5137858784289564985">"關閉"</string>
     <string name="vpn_save" msgid="683868204634860888">"儲存"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"你的管理員可以監控及管理與此使用者相關的應用程式和資料，包括設定、權限、公司存取權、網絡活動，以及裝置的位置資料。"</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"你的管理員可以監控及管理與此裝置相關的應用程式和資料，包括設定、權限、公司存取權、網絡活動，以及裝置的位置資料。"</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"裝置管理員或可存取此裝置的相關資料、管理應用程式並變更裝置設定。"</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"已由進階保護功能禁止"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"由於裝置已開啟「進階保護功能」，因此無法執行此操作。"</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"關閉"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"開啟"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"顯示"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"較高的敏感度可能會與任何在螢幕邊緣的應用程式手勢互相衝突。"</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"返回手勢的敏感度"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"手勢導覽"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"按鈕導覽"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"手勢導覽, 返回手勢的敏感度, 返回手勢"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"導覽, 主按鈕"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"設定面板"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"啟用自由形態視窗"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"啟用桌面電腦體驗功能"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"在裝置和次要螢幕上啟用「桌面電腦檢視模式」。"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"在次要螢幕上啟用「桌面電腦檢視模式」。"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"在次要螢幕上啟用自由形態視窗"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"允許多重視窗模式顯示無法調整大小的應用程式"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"允許透過多重視窗模式顯示無法調整大小的應用程式"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16KB 頁面通用模式"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"閱讀更多"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"以頁面大小兼容模式執行應用程式"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"變更 PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"忘記 PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

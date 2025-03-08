@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"ଟିପଚିହ୍ନ ସେନ୍ସରକୁ ସ୍ପର୍ଶ କରନ୍ତୁ"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"ଟିପଚିହ୍ନ ଚିହ୍ନଟ କରାଯାଇନାହିଁ"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"ୱାଚ ଅନଲକ"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"ଯେତେବେଳେ ଆପଣ ଫେସ ଅନଲକ ଏବଂ ଫିଙ୍ଗରପ୍ରିଣ୍ଟ ଅନଲକ ସେଟ ଅପ କରନ୍ତି, ସେତେବେଳେ ଆପଣ ଏକ ମାସ୍କ ପିନ୍ଧିଥିଲେ ବା ଏକ ଅନ୍ଧାରୁଆ ସ୍ଥାନରେ ଥିଲେ ଆପଣଙ୍କ ଫୋନ ଆପଣଙ୍କ ଟିପଚିହ୍ନ ପାଇଁ ପଚାରିବ।\n\nଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ କରିବା ପାଇଁ ୱାଚ ଅନଲକ ଅନ୍ୟ ଏକ ସୁବିଧାଜନକ ଉପାୟ ଅଟେ, ଉଦାହରଣ ସ୍ୱରୂପ, ଯେତେବେଳେ ଆପଣଙ୍କ ଆଙ୍ଗୁଠି ଓଦା ଥାଏ କିମ୍ବା ଆପଣଙ୍କ ଫେସ ଚିହ୍ନଟ ହୋଇନଥାଏ।"</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ କରିବା ପାଇଁ ୱାଚ ଅନଲକ ଅନ୍ୟ ଏକ ସୁବିଧାଜନକ ଉପାୟ ଅଟେ, ଉଦାହରଣ ସ୍ୱରୂପ, ଯେତେବେଳେ ଆପଣଙ୍କ ଟିପଚିହ୍ନ ଚିହ୍ନଟ ହୋଇନଥାଏ।"</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"ଆପଣଙ୍କ ଫୋନକୁ ଅନଲକ କରିବା ପାଇଁ ୱାଚ ଅନଲକ ଅନ୍ୟ ଏକ ସୁବିଧାଜନକ ଉପାୟ ଅଟେ, ଉଦାହରଣ ସ୍ୱରୂପ, ଯେତେବେଳେ ଆପଣଙ୍କ ଫେସ ଚିହ୍ନଟ ହୋଇନଥାଏ।"</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"ଉଚ୍ଚ ରିଜୋଲ୍ୟୁସନ"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ସର୍ବାଧିକ ରିଜୋଲ୍ୟୁସନ"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ସର୍ବାଧିକ ରିଜୋଲ୍ୟୁସନ ଆପଣଙ୍କ ବେଟେରୀକୁ ଅଧିକ ବ୍ୟବହାର କରେ। ଆପଣଙ୍କ ରିଜୋଲ୍ୟୁସନକୁ ସୁଇଚ କରିବା ଦ୍ୱାରା କିଛି ଆପ୍ସ ରିଷ୍ଟାର୍ଟ ହୋଇପାରେ।"</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"ରଙ୍ଗ"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"ପ୍ରାକୃତିକ"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"ବର୍ଦ୍ଧିତ"</string>
@@ -1903,7 +1907,7 @@
     <string name="data_size_label" msgid="7814478940141255234">"ୟୁଜର ଡାଟା"</string>
     <string name="uninstall_text" msgid="315764653029060126">"ଅନଇନଷ୍ଟଲ କରନ୍ତୁ"</string>
     <string name="uninstall_all_users_text" msgid="5924715251087176474">"ସମସ୍ତ ଉପଯୋଗକର୍ତ୍ତାଙ୍କ ପାଇଁ ଅଣସଂସ୍ଥାପନ କରନ୍ତୁ"</string>
-    <string name="install_text" msgid="4558333621516996473">"ଇନ୍‌ଷ୍ଟଲ୍‌ କରନ୍ତୁ"</string>
+    <string name="install_text" msgid="4558333621516996473">"ଇନଷ୍ଟଲ କରନ୍ତୁ"</string>
     <string name="disable_text" msgid="5146002260857428005">"ଅକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="enable_text" msgid="8570798764647110430">"ସକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="clear_user_data_text" msgid="6773186434260397947">"ଷ୍ଟୋରେଜ୍‌ ଖାଲି କରନ୍ତୁ"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"କେପ୍ସନ ପସନ୍ଦଗୁଡ଼ିକ ବିଷୟରେ ଅଧିକ ଜାଣନ୍ତୁ"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"ମେଗ୍ନିଫିକେସନ"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"ମେଗ୍ନିଫିକେସନ ସର୍ଟକଟ"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"ଟାଇପିଂ ମେଗ୍ନିଫାଏ କରନ୍ତୁ"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"ଆପଣ ଟାଇପ କରିବା ବେଳେ ମେଗ୍ନିଫାୟର ଟେକ୍ସଟକୁ ଅନୁସରଣ କରେ"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"ଆପ୍ସ ସ୍ୱିଚ କରିବା ସମୟରେ ଚାଲୁ ରଖନ୍ତୁ"</string>
@@ -2506,9 +2520,9 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"ଏହାକୁ ବ୍ୟବହାର କରିବା ପାଇଁ ଏକ ଆକ୍ସେସିବିଲିଟୀ ଫିଚରର ପୃଷ୍ଠାରେ %1$s ସର୍ଟକଟ ଚାଲୁ କରନ୍ତୁ"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"ଜାରି ରଖନ୍ତୁ"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"ଶ୍ରବଣ ଡିଭାଇସଗୁଡ଼ିକ"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA ଏବଂ LE ଅଡିଓ ଶ୍ରବଣ ଯନ୍ତ୍ର, କକଲିୟର ଇମ୍ପଲାଣ୍ଟ ଓ ଅନ୍ୟ ଆମ୍ପ୍ଲିଫିକେସନ ଡିଭାଇସଗୁଡ଼ିକୁ ସେଟ ଅପ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ"</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA ଏବଂ LE Audio ଶ୍ରବଣ ଯନ୍ତ୍ର, କକଲିୟର ଇମ୍ପଲାଣ୍ଟ ଓ ଅନ୍ୟ ଆମ୍ପ୍ଲିଫିକେସନ ଡିଭାଇସଗୁଡ଼ିକୁ ସେଟ ଅପ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"ASHA ଶ୍ରବଣ ଯନ୍ତ୍ର, କକଲିୟର ଇମ୍ପଲାଣ୍ଟ ଓ ଅନ୍ୟ ଆମ୍ପ୍ଲିଫିକେସନ ଡିଭାଇସକୁ ସେଟ ଅପ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ"</string>
-    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE ଅଡିଓ ଶ୍ରବଣ ଯନ୍ତ୍ର, କକଲିୟର ଇମ୍ପଲାଣ୍ଟ ଓ ଅନ୍ୟ ଆମ୍ପ୍ଲିଫିକେସନ ଡିଭାଇସକୁ ସେଟ ଅପ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ"</string>
+    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE Audio ଶ୍ରବଣ ଯନ୍ତ୍ର, କକଲିୟର ଇମ୍ପଲାଣ୍ଟ ଓ ଅନ୍ୟ ଆମ୍ପ୍ଲିଫିକେସନ ଡିଭାଇସକୁ ସେଟ ଅପ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"କୌଣସି ଶ୍ରବଣ ଡିଭାଇସ କନେକ୍ଟ କରାଯାଇନାହିଁ"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"ଶ୍ରବଣ ଯନ୍ତ୍ର ଯୋଗ କରନ୍ତୁ"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"ଶ୍ରବଣ ଯନ୍ତ୍ରକୁ ପେୟାର କର"</string>
@@ -2526,12 +2540,12 @@
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"ଶ୍ରବଣ ଯନ୍ତ୍ର କମ୍ପାଟିବିଲିଟୀ"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"ଟେଲିକୋଲିସ ସହ କମ୍ପାଟିବିଲିଟୀକୁ ଉନ୍ନତ କରେ ଏବଂ ଅବାଞ୍ଛିତ ନଏଜକୁ ହ୍ରାସ କରେ"</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"ହିଅରିଂ ଡିଭାଇସଗୁଡ଼ିକ ବିଷୟରେ"</string>
-    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA କିମ୍ବା LE ଅଡିଓ ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ହିଅରିଂ ଡିଭାଇସଗୁଡ଼ିକ ଖୋଜିବାକୁ &lt;b&gt;ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ&lt;/b&gt; &gt; &lt;b&gt;ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ&lt;/b&gt;ରେ ଟାପ କରନ୍ତୁ"</string>
-    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA କିମ୍ବା LE ଅଡିଓ ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ହିଅରିଂ ଡିଭାଇସଗୁଡ଼ିକ ଖୋଜିବାକୁ "<b>"ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ"</b>" ତା\'ପରେ "<b>"ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ"</b>"ରେ ଟାପ କରନ୍ତୁ"</string>
+    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA କିମ୍ବା LE Audio ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ &lt;b&gt;ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ&lt;/b&gt; &gt; &lt;b&gt;ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ&lt;/b&gt;ରେ ଟାପ କରନ୍ତୁ"</string>
+    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA କିମ୍ବା LE Audio ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ "<b>"ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ"</b>" ତା\'ପରେ "<b>"ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ"</b>"ରେ ଟାପ କରନ୍ତୁ"</string>
     <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"ASHA ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ &lt;b&gt;ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ&lt;/b&gt; &gt; &lt;b&gt;ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ&lt;/b&gt;ରେ ଟାପ କରନ୍ତୁ"</string>
     <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"ASHA ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ "<b>"ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ"</b>" ତା\'ପରେ "<b>"ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ"</b>"ରେ ଟାପ କରନ୍ତୁ"</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"LE ଅଡିଓ ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ &lt;b&gt;ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ&lt;/b&gt; &gt; &lt;b&gt;ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ&lt;/b&gt;ରେ ଟାପ କରନ୍ତୁ"</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"LE ଅଡିଓ ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ "<b>"ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ"</b>" ତା\'ପରେ "<b>"ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ"</b>"ରେ ଟାପ କରନ୍ତୁ"</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"LE Audio ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ &lt;b&gt;ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ&lt;/b&gt; &gt; &lt;b&gt;ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ&lt;/b&gt;ରେ ଟାପ କରନ୍ତୁ"</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"LE Audio ସପୋର୍ଟ କରୁନଥିବା ଅନ୍ୟ ଶ୍ରବଣ ଡିଭାଇସ ଖୋଜିବାକୁ "<b>"ନୂଆ ଡିଭାଇସ ପେୟାର କରନ୍ତୁ"</b>" ତା\'ପରେ "<b>"ଅଧିକ ଡିଭାଇସ ଦେଖନ୍ତୁ"</b>"ରେ ଟାପ କରନ୍ତୁ"</string>
     <string name="accessibility_hearing_device_pairing_page_title" msgid="6608901091770850295">"ହିଅରିଂ ଡିଭାଇସକୁ ପେୟାର କର"</string>
     <string name="accessibility_hearing_device_pairing_intro" msgid="7022201665808166517">"ଆପଣ ଏହି ପୃଷ୍ଠାରେ ASHA ଏବଂ LE ଅଡିଓ ହିଅରିଂ ଡିଭାଇସଗୁଡ଼ିକୁ ପେୟାର କରିପାରିବେ। ଆପଣଙ୍କ ହିଅରିଂ ଡିଭାଇସ ଚାଲୁ ଅଛି ଏବଂ ଏହା ପେୟାର ହେବା ପାଇଁ ପ୍ରସ୍ତୁତ ଅଛି ବୋଲି ସୁନିଶ୍ଚିତ କରନ୍ତୁ।"</string>
     <string name="accessibility_found_hearing_devices" msgid="637407580358386553">"ଉପଲବ୍ଧ ଶ୍ରବଣ ଡିଭାଇସଗୁଡ଼ିକ"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>ରୁ <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"ବ୍ୟାଟେରୀ ବ୍ୟବହାରର ଚାର୍ଟ"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"ଦୈନିକ ବେଟେରୀ ବ୍ୟବହାର ଚାର୍ଟ"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"ପ୍ରତି ଘଣ୍ଟାରେ ବେଟେରୀ ବ୍ୟବହାର ଚାର୍ଟ"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(ସର୍ଭର୍‌କୁ ଯାଞ୍ଚ କରନ୍ତୁନାହିଁ)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(ସର୍ଭରରୁ ଗ୍ରହଣ କରାଯାଇଛି)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"ଏଣ୍ଟର୍‌ କରାଯାଇଥିବା ସୂଚନା ସର୍ବଦା-ଅନ୍‌ VPNକୁ ସପୋର୍ଟ କରେ ନାହିଁ"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"ବାତିଲ କରନ୍ତୁ"</string>
     <string name="vpn_done" msgid="5137858784289564985">"ଖାରଜ"</string>
     <string name="vpn_save" msgid="683868204634860888">"ସେଭ କରନ୍ତୁ"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"ସେଟିଂସ, ଅନୁମତି, କର୍ପୋରେଟ ଆକ୍ସେସ, ନେଟୱାର୍କ କାର୍ଯ୍ୟକଳାପ ଏବଂ ଡିଭାଇସର ଲୋକେସନ ସୂଚନା ସମେତ ଏହି ଉପଯୋଗକର୍ତ୍ତାଙ୍କ ସହ ଜଡ଼ିତ ଥିବା ଆପ୍ସ ଓ ଡାଟାକୁ ଆପଣଙ୍କର ଆଡମିନ ତଦାରଖ ଓ ପରିଚାଳନା କରିପାରିବେ।"</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"ସେଟିଂସ, ଅନୁମତି, କର୍ପୋରେଟ ଆକ୍ସେସ, ନେଟୱାର୍କ କାର୍ଯ୍ୟକଳାପ ଏବଂ ଡିଭାଇସର ଲୋକେସନ ସୂଚନା ସମେତ ଏହି ଡିଭାଇସ ସହ ଜଡ଼ିତ ଥିବା ଆପ୍ସ ଓ ଡାଟାକୁ ଆପଣଙ୍କର ଆଡମିନ ତଦାରଖ ଓ ପରିଚାଳନା କରିପାରିବ।"</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"ଆପଣଙ୍କ ଡିଭାଇସ ଆଡମିନିଷ୍ଟ୍ରେଟର ଏହି ଡିଭାଇସ ସହ ସମ୍ବନ୍ଧିତ ଡାଟା ଆକ୍ସେସ କରିବା, ଆପ୍ସ ପରିଚାଳନା କରିବା ଏବଂ ଏହି ଡିଭାଇସର ସେଟିଂସ ବଦଳାଇବାକୁ ସକ୍ଷମ ହୋଇପାରନ୍ତି।"</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"ଆଡଭାନ୍ସଡ ପ୍ରୋଟେକସନ ଦ୍ୱାରା ପ୍ରତିରୋଧ କରାଯାଇଛି"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"ଆପଣଙ୍କ ଡିଭାଇସ ପାଇଁ ଆଡଭାନ୍ସଡ ପ୍ରୋଟେକସନ ଚାଲୁ ଥିବା ଯୋଗୁଁ ଏହି କାର୍ଯ୍ୟକୁ ଅନୁମତି ଦିଆଯାଏ ନାହିଁ।"</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"ବନ୍ଦ କରନ୍ତୁ"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"ଚାଲୁ କରନ୍ତୁ"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"ଦେଖାନ୍ତୁ"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"ଉଚ୍ଚ ସମ୍ବେଦନଶୀଳତା, ସ୍କ୍ରିନର ଧାର ସମେତ ଯେ କୌଣସି ଆପ ଜେଶ୍ଚରରେ ପ୍ରଭାବ ପକାଇପାରେ।"</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"ବେକ ସମ୍ୱେଦନଶୀଳତା"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"ଜେଶ୍ଚର ନାଭିଗେସନ"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"ବଟନ ନାଭିଗେସନ"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"ଜେଶ୍ଚର୍ ନାଭିଗେସନ୍, ବ୍ୟାକ୍ ସେନ୍‌ସିଟିଭିଟି, ବ୍ୟାକ୍ ଜେଶ୍ଚର୍"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"ନାଭିଗେସନ, ହୋମ ବଟନ"</string>
@@ -5152,8 +5189,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"ସେଟିଂସ ପ୍ୟାନେଲ"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"ଫ୍ରିଫର୍ମ ୱିଣ୍ଡୋ ସକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"ଡେସ୍କଟପ ଅନୁଭୂତି ଫିଚର ସକ୍ଷମ କରନ୍ତୁ"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"ସେକେଣ୍ଡାରୀ ଡିସପ୍ଲେରେ ଏବଂ ଡିଭାଇସରେ ଡେସ୍କଟପ ଭ୍ୟୁ ସକ୍ଷମ କରନ୍ତୁ।"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"ସେକେଣ୍ଡାରୀ ଡିସପ୍ଲେରେ ଡେସ୍କଟପ ଭ୍ୟୁ ସକ୍ଷମ କରନ୍ତୁ।"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"ସେକେଣ୍ଡାରୀ ଡିସପ୍ଲେରେ ଫ୍ରିଫର୍ମ ୱିଣ୍ଡୋ ସକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"ମଲ୍ଟି ୱିଣ୍ଡୋରେ ରିସାଇଜ୍ କରାଯାଇପାରୁନଥିବାକୁ ସକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"ରିସାଇଜ୍ କରାଯାଇପାରୁନଥିବା ଆପଗୁଡ଼ିକୁ ମଲ୍ଟି ୱିଣ୍ଡୋରେ ରହିବା ପାଇଁ ଅନୁମତି ଦିଏ"</string>
@@ -5233,7 +5272,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 KB ପୃଷ୍ଠା-ଆଗ୍ନୋଷ୍ଟିକ ମୋଡ"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"ଅଧିକ ପଢ଼ନ୍ତୁ"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"ପୃଷ୍ଠା ସାଇଜ କମ୍ପାଟିବଲିଟୀ ମୋଡ ସହ ଆପକୁ ଚଲାନ୍ତୁ"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5722,5 +5761,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN ଭୁଲିଯାଇଛନ୍ତି"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

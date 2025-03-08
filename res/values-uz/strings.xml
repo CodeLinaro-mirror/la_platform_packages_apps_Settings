@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Barmoq izi skaneriga tegining"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Barmoq izi aniqlanmadi"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Soat bilan ochish"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Yuz va barmoq izi bilan ochish sozlanganda, telefoningiz yuz niqobi taqqaningizda yoki qorongʻi joylarda barmoq izingizni soʻraydi.\n\nBarmoqlar hoʻl boʻlsa yoki yuzingizni tanimasa, soat bilan ochish funksiyasi telefonni qulfdan chiqarishning yana bir qulay usuli hisoblanadi."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Barmoqlar hoʻl boʻlsa, soat bilan ochish funksiyasi telefonni qulfdan chiqarishning yana bir qulay usuli hisoblanadi."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Yuzingizni tanimasa, soat bilan ochish funksiyasi telefonni qulfdan chiqarishning yana bir qulay usuli hisoblanadi."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Yuqori tiniqlik"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maksimal aniqlik darajasi"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Maksimal aniqlik darajasi batareya quvvatini koʻproq sarflaydi. Tiniqlik almashtirilsa, ayrim ilovalar qayta ishga tushadi."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Ranglar"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Tabiiy"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Yorqin"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Taglavhalar parametrlari haqida batafsil"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Kattalashtirish"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Kattalashtirish tezkor tugmasi"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Kattalashtirib yozish"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Matn kiritilganda soʻzlar avtomatik kattalashadi"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Ilovalarga almashganda oʻchirilmasin"</string>
@@ -2506,9 +2520,9 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"Buni ishlatish uchun qulayliklar funksiyasi sahifasida %1$s yorligʻini yoqing"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Davom etish"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Eshitish qurilmalari"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA va LE Audio eshitish moslamalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
-    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"ASHA eshitish moslamalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
-    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE Audio eshitish moslamalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA va LE Audio eshitish qurilmalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
+    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"ASHA eshitish qurilmalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
+    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE Audio eshitish qurilmalari, koxlear implantlar va boshqa kuchaytiruvchi qurilmalarni sozlash va boshqarish"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"Hech qanday eshitish moslamasi ulanmagan"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Eshitish apparatlarini kiritish"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Eshitish moslamalarini ulang"</string>
@@ -2526,12 +2540,12 @@
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Eshitish apparati bilan moslik"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Induktiv gʻaltaklar bilan moslikni yaxshilaydi va shovqinni kamaytiradi"</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Eshitish apparatlari haqida"</string>
-    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilma ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalar&lt;/b&gt; ustiga bosing"</string>
-    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>" keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"ASHA bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilma ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalar&lt;/b&gt; ustiga bosing"</string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"ASHA bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>" keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilma ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalar&lt;/b&gt; ustiga bosing"</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>" keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilmani ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalarni koʻrish&lt;/b&gt; ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"ASHA yoki LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>", keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"ASHA bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilmani ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalarni koʻrish&lt;/b&gt; ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"ASHA bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>", keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun &lt;b&gt;Yangi qurilmani ulash&lt;/b&gt; &gt; &lt;b&gt;Boshqa qurilmalarni koʻrish&lt;/b&gt; ustiga bosing"</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"LE Audio bilan ishlamaydigan boshqa eshitish qurilmalarini topish uchun "<b>"Yangi qurilmani ulash"</b>", keyin "<b>"Boshqa qurilmalarni koʻrish"</b>" ustiga bosing"</string>
     <string name="accessibility_hearing_device_pairing_page_title" msgid="6608901091770850295">"Eshitish qurilmasini ulash"</string>
     <string name="accessibility_hearing_device_pairing_intro" msgid="7022201665808166517">"Bu sahifada ASHA va LE Audio eshitish qurilmalarini birlashtirishingiz mumkin. Eshitish qurilmangiz yoniq va ulanishga tayyorligini tekshiring."</string>
     <string name="accessibility_found_hearing_devices" msgid="637407580358386553">"Mavjud eshitish qurilmalari"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> – <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> – <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g>, <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Batareya sarfi diagrammasi"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Kunlik batareya sarfi sarhisobi"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Soatlik batareya sarfi sarhisobi"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(server tekshirilmasin)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(serverdan olingan)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Kiritilgan ma’lumot doimiy VPN tarmoqni qo‘llab-quvvatlamaydi"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Bekor qilish"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Yopish"</string>
     <string name="vpn_save" msgid="683868204634860888">"Saqlash"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Administratoringiz bu foydalanuvchi bilan bog‘liq ilova va ma’lumotlarni, jumladan, sozlamalar, ruxsatnomalar, korporativ kirish huquqi, tarmoqdagi faollik va qurilmaning joylashuvi haqidagi ma’lumotlarni kuzatishi va boshqarishi mumkin."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Administratoringiz bu qurilma bilan bog‘liq ilova va ma’lumotlarni, jumladan, sozlamalar, ruxsatnomalar, korporativ kirish huquqi, tarmoqdagi faollik va qurilmaning joylashuvi haqidagi ma’lumotlarni kuzatishi va boshqarishi mumkin."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Qurilma administratori bu qurilmaga aloqador maʼlumotlarga kirishi, ilovalarni boshqarishi hamda bu qurilma sozlamalarini oʻzgartirishi mumkin."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Kuchaytirilgan himoya tmonidan bloklandi"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Qurilmangizda Kuchaytirilgan himoya yoniqligi tufayli bu amalni bajarish imkonsiz."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Faolsizlantirish"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Yoqish"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Ko‘rsatish"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Yuqori sezuvchanlik sozlansa, ekran chekkasidan tortiladigan ishoralar ilovalarnikiga zid kelishi mumkin."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Ekran chetidagi sezuvchanlik"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Ishorali navigatsiya"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Tugmali navigatsiya"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"ishorali navigatsiya, qaytarish sensori, qaytarish ishorasi"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"navigatsiya, asosiy tugma"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Sozlamalar paneli"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Erkin shakldagi oynalarni yoqish"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Qurilmada kompyuter funksiyalarini yoqish"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Qurilma va qoʻshimcha ekranlarda kompyuter rejimini yoqish"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Qoʻshimcha ekranlarda kompyuter rejimini yoqish"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Ikkinchi ekranda erkin shakldagi oynalarni yoqish"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Koʻp oynali hajmi oʻzgarmas ilovalarni yoqish"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Hajmi oʻzgarmas ilovalar koʻp oynali rejimda ochilishiga ruxsat beradi."</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 KB sahifadan mustaqil rejim"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Batafsil"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Ilovani sahifa hajmiga muvofiq rejimda ishga tushirish"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN kodni oʻzgartirish"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN kodni unutibman"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

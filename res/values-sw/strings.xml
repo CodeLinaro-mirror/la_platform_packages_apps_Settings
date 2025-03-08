@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Gusa kitambuzi cha alama ya kidole"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Alama ya kidole haijatambuliwa"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Kufungua kupitia Saa"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Ukiweka mipangilio ya Kufungua kwa Uso na Kufungua kwa Alama ya Kidole, utahitaji kuweka alama ya kidole kwenye simu yako wakati umevaa barakoa au ukiwa penye giza.\n\nKipengele cha Kufungua kupitia Saa ni njia nyingine rahisi ya kufungua simu yako, kwa mfano, wakati vidole vyako vina unyevu au uso wako hautambuliwi."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Kipengele cha Kufungua kupitia Saa ni njia nyingine rahisi ya kufungua simu yako, kwa mfano, wakati alama ya kidole haitambuliwi."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Kipengele cha Kufungua kupitia Saa ni njia nyingine rahisi ya kufungua simu yako, kwa mfano, wakati uso wako hautambuliwi."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Ubora wa juu"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Ubora wa juu zaidi"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Ubora wa juu zaidi wa skrini hutumia zaidi betri yako. Ukibadilisha ubora wa skrini yako, huenda baadhi ya programu zikazimwa kisha kuwashwa."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Rangi"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Asili"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Imeongezwa Rangi"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Pata maelezo zaidi kuhusu mapendeleo ya manukuu"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Ukuzaji"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Njia ya mkato ya ukuzaji"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Kukuza unapoandika"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Kikuza skrini hufuata maandishi unapoandika"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Kisizime unapobadili programu"</string>
@@ -2507,8 +2521,8 @@
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Endelea"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Vifaa vya kusaidia kusikia"</string>
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Weka mipangilio na udhibiti visaidizi vya kusikia vya ASHA na LE Audio, vifaa vinavyosaidia kusikia vinavyopachikwa ndani ya sikio na vifaa vya kukuza sauti"</string>
-    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Kuweka mipangilio na kudhibiti visaidizi vya kusikia vya ASHA, vifaa vinavyosaidia kusikia vinavyopachikwa ndani ya sikio na vifaa vingine vya kukuza sauti"</string>
-    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Kuweka mipangilio na kudhibiti visaidizi vya kusikia vya LE Audio, vifaa vinavyosaidia kusikia vinavyopachikwa ndani ya sikio na vifaa vingine vya kukuza sauti"</string>
+    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Weka mipangilio na udhibiti visaidizi vya kusikia vya ASHA, vifaa vinavyosaidia kusikia vinavyopachikwa ndani ya sikio na vifaa vingine vya kukuza sauti"</string>
+    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Weka mipangilio na udhibiti visaidizi vya kusikia vya LE Audio, vifaa vinavyosaidia kusikia vinavyopachikwa ndani ya sikio na vifaa vingine vya kukuza sauti"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"Hujaunganisha vifaa vyovyote vya kusikilizia"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Ongeza vifaa vya kusaidia kusikia"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Unganisha visaidizi vya kusikia"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> hadi <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Chati ya matumizi ya betri"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Chati ya matumizi ya betri ya kila siku"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Chati ya matumizi ya betri ya kila saa"</string>
@@ -2909,9 +2928,9 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Imewashwa"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Imezimwa"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Tumia muunganisho unaojirekebisha"</string>
-    <string name="adaptive_connectivity_wifi_switch_title" msgid="5899985025046319472">"Kubadilisha Wi-Fi kiotomatiki hadi kwenye Mtandao wa Simu"</string>
+    <string name="adaptive_connectivity_wifi_switch_title" msgid="5899985025046319472">"Kubadilisha Wi-Fi hadi Mtandao wa Simu kiotomatiki"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="4650230240134029595">"Tumia data ya mtandao wa simu kiotomatiki wakati muunganisho wa Wi-Fi ni hafifu au haupatikani. Huenda ukatozwa ada za matumizi ya data."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="2473274404695643218">"Kubadili mtandao wa simu kiotomatiki kuongeza muda wa matumizi ya betri"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="2473274404695643218">"Kubadili mtandao kiotomatiki ili kuokoa betri"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="2432517485362085341">"Ongeza muda wa matumizi ya betri kwa kudhibiti miunganisho ya mtandao kiotomatiki"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Usalama wa mtandao wa simu"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Aina ya mtandao, usimbaji fiche, vidhibiti vya arifa"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(usithibitishe seva)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(imepokewa kutoka kwa seva)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Maelezo uliyoweka hayatumiki katika hali ya VPN iliyowashwa kila mara"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Ghairi"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Ondoa"</string>
     <string name="vpn_save" msgid="683868204634860888">"Hifadhi"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Msimamizi wako anaweza kufuatilia na kudhibiti programu na data zinazohusiana na mtumiaji huyu, ikiwa ni pamoja na mipangilio, ruhusa, ufikiaji wa shirika, shughuli za mtandao na maelezo ya mahali kilipo kifaa."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Msimamizi wako anaweza kufuatilia na kudhibiti programu na data zinazohusiana na kifaa hiki, ikiwa ni pamoja na mipangilio, ruhusa, ufikiaji wa shirika, shughuli za mtandao na maelezo ya mahali kilipo kifaa."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Msimamizi wa kifaa chako anaweza kufikia data inayohusiana na kifaa hiki, kudhibiti programu na kubadilisha mipangilio ya kifaa hiki."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Imezuiwa na Ulinzi wa Hali ya Juu"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Kitendo hiki hakiruhusiwi kwa sababu umewasha Ulinzi wa Hali ya Juu kwenye kifaa chako."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Zima"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Washa"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Onyesha"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Kiwango cha juu cha hisi kinaweza kukinzana na ishara zozote za programu kwenye kingo za skrini."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Hisi za Nyuma"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Usogezaji kwa Kutumia Miguso"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Usogezaji kwa kutumia kitufe"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"usogezaji kwa miguso, kiwango cha hisi ya nyuma, mguso wa nyuma"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"usogezaji, kitufe cha ukurasa wa mwanzo"</string>
@@ -5029,8 +5066,8 @@
     <string name="title_supported_service_for_manual_type" msgid="6009284624466359864">"Fuata hatua ili uunganishe kwenye setilaiti"</string>
     <string name="summary_supported_service" msgid="4320535903444834786">"Unaweza kumtumia yeyote ujumbe, ikiwa ni pamoja na huduma za dharura. Simu yako itaunganisha tena kwenye mtandao wa simu ukipatikana."</string>
     <string name="summary_supported_service_for_manual_type" msgid="2147958362763058271">"Simu yako ikishaunganishwa, unaweza kumtumia yeyote ujumbe, ikiwa ni pamoja na huduma za dharura."</string>
-    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"Huenda muunganisho wa setilaiti ukawa hafifu na unapatikana katika baadhi ya maeneo pekee. Huenda hali ya hewa na majengo fulani yakaathiri muunganisho. Huduma ya kupiga simu kupitia setilaiti haipatikani. Simu za dharura bado zinaweza kuunganishwa.\n\nInaweza kuchukua muda kabla ya mabadiliko uliyofanya kwenye akaunti yaonekane katika Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ipi upate maelezo."</string>
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"Huenda muunganisho wa setilaiti ukawa hafifu na unapatikana katika baadhi ya maeneo pekee. Huenda hali ya hewa na majengo fulani yakaathiri muunganisho. Huduma ya kupiga simu kupitia setilaiti haipatikani. Bado simu za dharura zinaweza kuunganishwa. Huenda huduma ya utumaji ujumbe kupitia huduma za dharura isipatikane katika maeneo yote.\n\nInaweza kuchukua muda kiasi kabla mabadiliko ya akaunti kuonekana kwenye Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%1$s</xliff:g> ipi upate maelezo."</string>
+    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"Huenda muunganisho wa setilaiti ukawa hafifu na unapatikana katika baadhi ya maeneo pekee. Huenda hali ya hewa na majengo fulani yakaathiri muunganisho. Huduma ya kupiga simu kupitia setilaiti haipatikani. Simu za dharura bado zinaweza kuunganishwa.\n\nInaweza kuchukua muda kabla ya mabadiliko uliyofanya kwenye akaunti yaonekane katika Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%1$s</xliff:g> upate maelezo."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"Huenda muunganisho wa setilaiti ukawa hafifu na unapatikana katika baadhi ya maeneo pekee. Huenda hali ya hewa na majengo fulani yakaathiri muunganisho. Huduma ya kupiga simu kupitia setilaiti haipatikani. Bado simu za dharura zinaweza kuunganishwa. Huenda huduma ya kutuma ujumbe kupitia huduma za dharura isipatikane katika maeneo yote.\n\nInaweza kuchukua muda kiasi kabla mabadiliko ya akaunti kuonekana kwenye Mipangilio. Wasiliana na <xliff:g id="CARRIER_NAME">%1$s</xliff:g> upate maelezo."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Maelezo zaidi kuhusu <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Imeshindwa kuwasha <xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Ili uwashe <xliff:g id="FUNCTION">%1$s</xliff:g>, zima kwanza muunganisho wa setilaiti"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Kidirisha cha Mipangilio"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Kuwasha madirisha yenye muundo huru"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Washa vipengele vya utumiaji wa kompyuta ya mezani"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Washa Mwonekano wa Kompyuta kwenye kifaa na kwenye skrini za pili."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Washa Mwonekano wa Kompyuta kwenye skrini za pili."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Ruhusu madirisha ya muundo huru kwenye skrini mbadala"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Ruhusu ukubwa usioweza kubadilishwa katika madirisha mengi"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Huruhusu programu zenye ukubwa usioweza kubadilishwa ziwe katika madirisha mengi"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Hali ya KB 16 Isiyotegemea Ukubwa wa Ukurasa"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Endelea kusoma"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Tekeleza programu katika hali ya uoanifu wa ukubwa wa ukurasa"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Badilisha PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Umesahau PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

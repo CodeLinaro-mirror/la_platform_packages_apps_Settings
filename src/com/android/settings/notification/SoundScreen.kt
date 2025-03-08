@@ -20,6 +20,7 @@ import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.SoundSettingsActivity
 import com.android.settings.flags.Flags
+import com.android.settings.sound.MediaControlsScreen
 import com.android.settings.utils.makeLaunchIntent
 import com.android.settingslib.metadata.PreferenceIconProvider
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -57,6 +58,7 @@ class SoundScreen : PreferenceScreenCreator, PreferenceIconProvider {
             +MediaVolumePreference() order -180
             +CallVolumePreference() order -170
             +SeparateRingVolumePreference() order -155
+            +MediaControlsScreen.KEY order -100
             +DialPadTonePreference() order -50
         }
 

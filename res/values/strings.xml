@@ -3391,11 +3391,11 @@
     <!-- About phone, title of EID -->
     <string name="status_eid">E&#x200B;ID</string>
     <!-- About phone, title of EID for multi-sim devices -->
-    <string name="eid_multi_sim">E&#x200B;ID (sim slot <xliff:g id="eid_slot_id">%1$d</xliff:g>)</string>
+    <string name="eid_multi_sim">E&#x200B;ID (SIM slot <xliff:g id="eid_slot_id">%1$d</xliff:g>)</string>
     <!-- About phone screen, title for IMEI for multi-sim devices -->
-    <string name="imei_multi_sim">IMEI (sim slot <xliff:g id="imei_slot_id">%1$d</xliff:g>)</string>
+    <string name="imei_multi_sim">IMEI (SIM slot <xliff:g id="imei_slot_id">%1$d</xliff:g>)</string>
     <!-- About phone screen, title for primary IMEI for multi-sim devices -->
-    <string name="imei_multi_sim_primary">IMEI (sim slot <xliff:g id="imei_slot_id_primary">%1$d</xliff:g>) (primary)</string>
+    <string name="imei_multi_sim_primary">IMEI (SIM slot <xliff:g id="imei_slot_id_primary">%1$d</xliff:g>) (primary)</string>
     <!-- About phone screen, summary of the MAC address [CHAR LIMIT=80] -->
     <string name="view_saved_network">To view, choose saved network</string>
     <!-- About phone, status item title. This translation is for specific language only. Like: fr-CA -->
@@ -3411,9 +3411,9 @@
     <!-- About phone, status item title.  The phone PRL Version of the current device.-->
     <string name="status_prl_version">PRL version</string>
     <!-- About phone screen, title for MEID for multi-sim devices -->
-    <string name="meid_multi_sim">MEID (sim slot <xliff:g id="meid_slot_id">%1$d</xliff:g>)</string>
+    <string name="meid_multi_sim">MEID (SIM slot <xliff:g id="meid_slot_id">%1$d</xliff:g>)</string>
     <!-- About phone screen, title for primary MEID for multi-sim devices -->
-    <string name="meid_multi_sim_primary">MEID (sim slot <xliff:g id="meid_slot_id_primary">%1$d</xliff:g>) (primary)</string>
+    <string name="meid_multi_sim_primary">MEID (SIM slot <xliff:g id="meid_slot_id_primary">%1$d</xliff:g>) (primary)</string>
     <!-- The status text when (Wi-Fi or Bluetooth) scanning is on. [CHAR LIMIT=100] -->
     <string name="scanning_status_text_on">On</string>
     <!-- The status text when (Wi-Fi or Bluetooth) scanning is off. [CHAR LIMIT=100] -->
@@ -5574,8 +5574,8 @@
     <string name="accessibility_toggle_high_text_contrast_preference_summary">Change text color to black or white. Maximizes contrast with the background.</string>
     <!-- Title for the notification that high contrast text has been replaced. [CHAR LIMIT=NONE] -->
     <string name="accessibility_notification_high_contrast_text_title">Improve text contrast</string>
-    <!-- Text content for the notification that high contrast text has been replaced. [CHAR LIMIT=NONE] -->
-    <string name="accessibility_notification_high_contrast_text_body"><xliff:g example="Outline text" id="outline_text">%1$s</xliff:g> has replaced <xliff:g example="high contrast text" id="high_contrast_text">%2$s</xliff:g>. You can turn it on in <xliff:g example="Settings" id="settings">%3$s</xliff:g>.</string>
+    <!-- Text content for the notification that the accessibility feature called "high contrast text" has been replaced by a new feature called "outline text". [CHAR LIMIT=NONE] -->
+    <string name="accessibility_notification_high_contrast_text_body_message">Outline text has replaced high contrast text. You can turn it on in <xliff:g example="Settings" id="settings">%1$s</xliff:g>.</string>
     <!-- Action for the notification to high contrast text to open the Settings app. [CHAR LIMIT=35] -->
     <string name="accessibility_notification_high_contrast_text_action_open_settings">Go to <xliff:g example="Settings" id="settings">%1$s</xliff:g></string>
     <!-- Title for the accessibility preference that adds an outline behind text to increase contrast and legibility. [CHAR LIMIT=35] -->
@@ -8020,7 +8020,7 @@ Data usage charges may apply.</string>
     <!-- SIM status title  [CHAR LIMIT=40] -->
     <string name="sim_status_title">SIM status</string>
     <!-- SIM status title  [CHAR LIMIT=40] -->
-    <string name="sim_status_title_sim_slot">SIM status (sim slot %1$d)</string>
+    <string name="sim_status_title_sim_slot">SIM status (SIM slot %1$d)</string>
     <!-- Summary text describing signal strength to the user.  [CHAR LIMIT=60] -->
     <string name="sim_signal_strength"><xliff:g id="dbm">%1$d</xliff:g> dBm <xliff:g id="asu">%2$d</xliff:g> asu</string>
     <!-- Title for SIM notification.  [CHAR LIMIT=40] -->

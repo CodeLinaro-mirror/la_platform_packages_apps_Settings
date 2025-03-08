@@ -87,12 +87,9 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"Объединить в один элемент"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"Слева"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"Справа"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
+    <string name="bluetooth_ambient_volume_control_description" msgid="8652460879432504546">"Окружающие звуки"</string>
+    <string name="bluetooth_ambient_volume_control_left_description" msgid="7907887057591335693">"Звуки слева"</string>
+    <string name="bluetooth_ambient_volume_control_right_description" msgid="7651747671161021283">"Звуки справа"</string>
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"Заглушить окружающие звуки"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"Включить окружающие звуки"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"Не удалось отрегулировать окружающие звуки."</string>
@@ -232,8 +229,7 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"Язык и регион"</string>
     <string name="language_selection_title" msgid="968179636453982415">"Добавить язык"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"Выберите регион"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
+    <string name="numbering_system_selection_title" msgid="1065458493488382214">"Система нумерации"</string>
     <string name="country_selection_title" msgid="5376929821458644732">"Региональные настройки"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"Поиск языка"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"Поиск региона"</string>
@@ -241,8 +237,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"Другие языковые настройки"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"Новый регион – <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>. Сохранить изменение?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"<xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> останется языком системы."</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"Выберите способ отображения цифр на устройстве, веб-сайтах и в приложениях"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Региональные настройки"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Укажите предпочтительные единицы измерения и форматы отображения чисел"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Приложения используют эти параметры для персонализации."</string>
@@ -466,6 +461,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Коснитесь сканера отпечатков пальцев."</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Отпечаток не распознан."</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Разблокировка с помощью часов"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Если вы настроили фейсконтроль и разблокировку по отпечатку пальца, то отпечаток будет запрашиваться, когда вы в маске или вокруг вас темно.\n\nКогда ваше лицо не распознается или у вас мокрые пальцы, удобно разблокировать телефон с помощью часов."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Когда отпечаток пальца не распознается, удобно разблокировать телефон с помощью часов."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Когда ваше лицо не распознается, удобно разблокировать телефон с помощью часов."</string>
@@ -1321,6 +1318,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Высокое разрешение"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Максимальное разрешение"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"При максимальном разрешении расходуется больше заряда. Когда разрешение меняется, некоторые приложения могут перезапуститься."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Цвета"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Натуральные"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Яркие"</string>
@@ -1394,8 +1393,7 @@
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"Отключится автоматически при выходе из ночного режима"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"Отключается при выходе из режима \"<xliff:g id="ID_1">%1$s</xliff:g>\""</string>
     <string name="dark_ui_text" msgid="4392646155331126666">"В тёмной теме используется черный фон. Это помогает продлить время работы от батареи для некоторых устройств. Смена темы по расписанию происходит только после выключения экрана."</string>
-    <!-- no translation found for dark_ui_text_force_invert (3776487375947497387) -->
-    <skip />
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"Темный фон меньше нагружает глаза и помогает снизить расход заряда батареи на некоторых устройствах. Если настроено расписание, тема изменится после отключения экрана."</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"Тёмная тема сейчас используется в соответствии с вашим расписанием ночного режима."</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"Настройки ночного режима"</string>
     <string name="dark_ui_modes_footer_summary" msgid="1041117250408363391">"{count,plural,offset:2 =0{Режимы могут также включать тёмную тему.}=1{Режим \"{mode_1}\" также включает тёмную тему.}=2{Режимы \"{mode_1}\" и \"{mode_2}\" также включают тёмную тему.}=3{Режимы \"{mode_1}\", \"{mode_2}\" и \"{mode_3}\" также включают тёмную тему.}one{Режимы \"{mode_1}\", \"{mode_2}\" и ещё # также включают тёмную тему.}few{Режимы \"{mode_1}\", \"{mode_2}\" и ещё # также включают тёмную тему.}many{Режимы \"{mode_1}\", \"{mode_2}\" и ещё # также включают тёмную тему.}other{Режимы \"{mode_1}\", \"{mode_2}\" и ещё # также включают тёмную тему.}}"</string>
@@ -2268,6 +2266,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Подробнее о настройках субтитров"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Увеличение"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Быстрый запуск увеличения"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Лупа при вводе текста"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Перемещать лупу по мере ввода текста"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Не отключать при смене приложений"</string>
@@ -2412,8 +2420,7 @@
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary" msgid="9034532513972547720">"Сохранять масштаб при переходе между приложениями"</string>
     <string name="accessibility_power_button_ends_call_prerefence_title" msgid="8187306131979612144">"Кнопка питания завершает вызов"</string>
     <string name="accessibility_force_invert_title" msgid="5248504501753732051">"Включить тёмную тему в приложениях"</string>
-    <!-- no translation found for accessibility_force_invert_summary (257503086198180749) -->
-    <skip />
+    <string name="accessibility_force_invert_summary" msgid="257503086198180749">"Включает тёмную тему в приложениях. Может не работать с некоторыми приложениями."</string>
     <string name="accessibility_disable_animations" msgid="2993529829457179058">"Убрать анимации"</string>
     <string name="accessibility_disable_animations_summary" msgid="5828228669556554565">"Уменьшить количество анимаций на экране"</string>
     <string name="accessibility_toggle_primary_mono_title" msgid="7587152099472946571">"Монофо­нический звук"</string>
@@ -2506,9 +2513,9 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"Чтобы использовать этот параметр, включите быстрый запуск функции \"%1$s\" на странице специальных возможностей"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Далее"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Слуховые аппараты"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Управляйте слуховыми аппаратами ASHA и LE Audio, кохлеарными имплантатами и другими устройствами усиления звука"</string>
-    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Настройка слуховых аппаратов, совместимых с ASHA, кохлеарных имплантатов и других устройств для усиления звука."</string>
-    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Настройка слуховых аппаратов, совместимых с LE Audio, кохлеарных имплантатов и других устройств для усиления звука."</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Слуховые аппараты ASHA и LE Audio, кохлеарные имплантаты и другие устройства для усиления звука."</string>
+    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Слуховые аппараты ASHA, кохлеарные имплантаты и другие устройства для усиления звука."</string>
+    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Слуховые аппараты LE Audio, кохлеарные имплантаты и другие устройства для усиления звука."</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"Слуховые аппараты не подключены"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Добавить слуховой аппарат"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Подключите аппараты"</string>
@@ -2526,12 +2533,12 @@
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Поддержка слуховых аппаратов"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Улучшить совместимость со слуховыми аппаратами и уменьшить нежелательный шум"</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"О слуховых аппаратах"</string>
-    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Чтобы найти другие слуховые аппараты, которые не поддерживают протокол ASHA или технологию LE Audio, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
-    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Чтобы найти другие слуховые аппараты, которые не поддерживают протокол ASHA или технологию LE Audio, нажмите "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"Чтобы найти другие слуховые аппараты, которые не поддерживают ASHA, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
-    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"Чтобы найти другие слуховые аппараты, которые не поддерживают ASHA, нажмите "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"Чтобы найти другие слуховые аппараты, которые не поддерживают LE Audio, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
-    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"Чтобы найти другие слуховые аппараты, которые не поддерживают LE Audio, нажмите "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
+    <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Чтобы найти слуховые аппараты, которые не поддерживают ASHA и LE Audio, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
+    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Чтобы найти слуховые аппараты, которые не поддерживают ASHA и LE Audio, нажмите "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"Чтобы найти слуховые аппараты, которые не поддерживают ASHA, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
+    <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"Чтобы найти слуховые аппараты, которые не поддерживают ASHA, нажмите "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"Чтобы найти слуховые аппараты, которые не поддерживают LE Audio, нажмите &lt;b&gt;Добавить устройство&lt;/b&gt; &gt; &lt;b&gt;Другие устройства&lt;/b&gt;."</string>
+    <string name="accessibility_hearing_device_footer_hap_only_summary_tts" msgid="4440097982533045507">"Чтобы найти слуховые аппараты, которые не поддерживают LE Audio, нажмите  "<b>"Добавить устройство"</b>", а затем "<b>"Другие устройства"</b></string>
     <string name="accessibility_hearing_device_pairing_page_title" msgid="6608901091770850295">"Подключение аппарата"</string>
     <string name="accessibility_hearing_device_pairing_intro" msgid="7022201665808166517">"На этой странице вы можете подключить слуховые устройства ASHA и LE Audio. Убедитесь, что ваш слуховой аппарат работает и готов к подключению."</string>
     <string name="accessibility_found_hearing_devices" msgid="637407580358386553">"Доступные слуховые аппараты"</string>
@@ -2829,7 +2836,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> – <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> – <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g>, <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Диаграмма расхода заряда батареи"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Диаграмма расхода заряда батареи по дням"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Диаграмма расхода заряда батареи по часам"</string>
@@ -2941,8 +2953,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"Удалить все содержимое?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"Хранилище учетных данных очищено"</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"Не удалось очистить хранилище."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="8784394396356369568">"Приложения с доступом к статистике"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"Сертификат центра сертификации"</string>
     <string name="user_certificate" msgid="6897024598058566466">"Сертификат пользователя приложений и VPN"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"Сертификат Wi-Fi"</string>
@@ -3000,8 +3011,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"Разрешить родительский контроль?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"Администратор будет управлять этим профилем и сможет сохранять связанные с ним данные, а также вашу личную информацию.\n\nКроме того, администратор сможет контролировать и изменять настройки и параметры доступа, а также управлять приложениями и данными этого пользователя, в том числе получать сведения о действиях в сети и местоположении."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"Другие настройки отключены администратором"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="6091028872148388357">"Узнать больше о недоступных параметрах отключения экрана"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"Журнал уведомлений"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"История уведомлений"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"За последние %d ч."</string>
@@ -3119,6 +3129,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(не проверять сервер)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(получено с сервера)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Исходя из введенной информации, эта VPN не может использоваться как постоянная"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Отмена"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Закрыть"</string>
     <string name="vpn_save" msgid="683868204634860888">"Сохранить"</string>
@@ -3854,8 +3870,7 @@
     <string name="nls_feature_settings_title" msgid="8208164329853194414">"Изменять настройки"</string>
     <string name="nls_feature_settings_summary" msgid="3770028705648985689">"Приложение может включать и отключать режим \"Не беспокоить\", а также менять его настройки."</string>
     <string name="nls_feature_modes_settings_summary" msgid="70022458305195595">"Приложение может активировать режимы, управлять ими и изменять их настройки"</string>
-    <!-- no translation found for notification_listener_disable_warning_summary (205200471571837170) -->
-    <skip />
+    <string name="notification_listener_disable_warning_summary" msgid="205200471571837170">"Если вы отключите доступ к уведомлениям для приложения \"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>\", также может отключиться доступ к настройкам режима \"Не беспокоить\"."</string>
     <string name="notification_listener_disable_modes_warning_summary" msgid="7528432011433844158">"Если вы отключите доступ к уведомлениям для приложения \"<xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>\", также может быть отключен доступ к режимам."</string>
     <string name="notification_listener_disable_warning_confirm" msgid="841492108402184976">"Отключить"</string>
     <string name="notification_listener_disable_warning_cancel" msgid="8802784105045594324">"Отмена"</string>
@@ -3923,11 +3938,9 @@
     <string name="interact_across_profiles_install_work_app_title" msgid="2821669067014436056">"Чтобы связать эти приложения, установите \"<xliff:g id="NAME">%1$s</xliff:g>\" в рабочем профиле"</string>
     <string name="interact_across_profiles_install_personal_app_title" msgid="4790651223324866344">"Чтобы связать эти приложения, установите \"<xliff:g id="NAME">%1$s</xliff:g>\" в личном профиле"</string>
     <string name="interact_across_profiles_install_app_summary" msgid="7715324358034968657">"Нажмите, чтобы установить приложение."</string>
-    <!-- no translation found for manage_zen_access_title (4123905441114743974) -->
-    <skip />
+    <string name="manage_zen_access_title" msgid="4123905441114743974">"Настройки режима \"Не беспокоить\""</string>
     <string name="zen_access_detail_switch" msgid="4183681772666138993">"Разрешить доступ к режиму \"Не беспокоить\""</string>
-    <!-- no translation found for zen_access_empty_text (2662270585004373785) -->
-    <skip />
+    <string name="zen_access_empty_text" msgid="2662270585004373785">"Установленные приложения не запрашивали доступ к функции \"Не беспокоить\"."</string>
     <string name="manage_zen_modes_access_title" msgid="2520680004915648824">"Доступ к режимам"</string>
     <string name="zen_modes_access_detail_switch" msgid="4060429747631111299">"Разрешить доступ к режимам"</string>
     <string name="zen_modes_access_empty_text" msgid="8750927923904377110">"Установленные приложения не запрашивали доступ к режимам."</string>
@@ -4238,13 +4251,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"Приложение для звонков"</string>
     <string name="system_app" msgid="1863291702508355041">"(системное)"</string>
     <string name="apps_storage" msgid="643866814746927111">"Приложения"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="640680494210288246">"Статистика использования"</string>
+    <string name="permit_usage_access" msgid="1590518257313260262">"Разрешить доступ к статистике использования"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"Время использования"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="2593955296993609047">"Доступ к этим данным позволяет отслеживать, какие приложения вы используете и как часто, а также определять оператора сети, язык и другие параметры"</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"Память"</string>
     <string name="always_running" msgid="9012705720688200252">"Постоянно (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"Иногда (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4342,8 +4352,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"Батарея может разрядиться быстрее. Ограничение на использование батареи в фоновом режиме будет снято."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"Рекомендуется для увеличения времени работы устройства от батареи."</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"Нет"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="7579246573371327219">"Если вы закроете приложению доступ к статистике использования, администратор все равно сможет просматривать эти данные в вашем рабочем профиле."</string>
     <string name="draw_overlay" msgid="7902083260500573027">"Поверх других приложений"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"Поверх других приложений"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"Показывать поверх других приложений"</string>
@@ -4414,8 +4423,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Администратор может контролировать настройки, приложения, разрешения и параметры доступа к корпоративным ресурсам для этого пользователя, а также связанные с ним данные, например сведения о местоположении или действиях в сети."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Администратор может контролировать настройки, приложения, разрешения и параметры доступа к корпоративным ресурсам на этом устройстве, а также связанные с ним данные, например сведения о местоположении или действиях в сети."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"У администратора есть доступ к данным, связанным с этим устройством, также он может изменять его настройки и управлять приложениями."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Заблокировано Дополнительной защитой"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Это действие запрещено, поскольку на устройстве включена Дополнительная защита."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Отключить"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Включить"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Показать"</string>
@@ -4641,6 +4660,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"При высокой чувствительности могут не работать жесты по краям экрана в приложениях."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Чувствительность для жеста \"Назад\""</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Навигация с помощью жестов"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Навигация с помощью кнопок"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"навигация с помощью жестов, чувствительность для жеста \"Назад\", жест \"Назад\""</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"навигация, кнопка главного экрана"</string>
@@ -5151,8 +5172,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Панель настроек"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Разрешить окна произвольной формы"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Включить на устройстве функции для компьютеров"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Включить режим компьютера на устройстве и дополнительных экранах"</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Включить режим компьютера на дополнительных экранах"</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Разрешить окна произвольной формы на доп. экране"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Включить неизменяемый масштаб в многооконном режиме"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Открывать приложения с неизменяемым масштабом в многооконном режиме"</string>
@@ -5232,7 +5255,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Режим, независимый от размера страницы, с размером страницы 16 КБ"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Ещё"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Запускать приложение в режиме совместимости с размером страницы"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5723,5 +5746,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Изменить PIN-код"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Забыли PIN-код?"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

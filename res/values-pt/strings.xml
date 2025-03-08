@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Toque no sensor de impressão digital"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Impressão digital não reconhecida"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Desbloqueio do relógio"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Quando o Desbloqueio facial e por impressão digital forem configurados, a impressão será solicitada para desbloquear o smartphone sempre que você estiver em uma área escura ou usando uma máscara.\n\nO Desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando seus dedos estiverem molhados ou seu rosto não for reconhecido."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"O Desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando sua impressão digital não for reconhecida."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"O Desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando seu rosto não for reconhecido."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Alta resolução"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Resolução máxima"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"A resolução máxima consome mais bateria. A troca de resolução pode fazer com que alguns apps sejam reiniciados."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Cores"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturais"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Realçadas"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Saiba mais sobre as preferências de legenda"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Ampliação"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Atalho para ampliação"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Ampliar digitação"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"A lupa acompanha o texto enquanto você digita"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Manter ativada quando mudar de app"</string>
@@ -2507,8 +2521,8 @@
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Continuar"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Aparelhos auditivos"</string>
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Configure e gerencie aparelhos auditivos ASHA e LE Audio, implantes cocleares e outros dispositivos de amplificação de som"</string>
-    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Configurar e gerenciar aparelhos auditivos ASHA, implantes cocleares e outros dispositivos de amplificação de som"</string>
-    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Configurar e gerenciar aparelhos auditivos LE Audio, implantes cocleares e outros dispositivos de amplificação de som"</string>
+    <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Configure e gerencie aparelhos auditivos ASHA, implantes cocleares e outros dispositivos de amplificação de som"</string>
+    <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Configure e gerencie aparelhos auditivos LE Audio, implantes cocleares e outros dispositivos de amplificação de som"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="7438018718889849521">"Nenhum aparelho auditivo conectado"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Adicionar aparelhos auditivos"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Parear aparelhos auditivos"</string>
@@ -2527,7 +2541,7 @@
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Melhora a compatibilidade com telecoils e reduz sons indesejados"</string>
     <string name="accessibility_hearing_device_about_title" msgid="7883758309646288250">"Sobre aparelhos auditivos"</string>
     <string name="accessibility_hearing_device_footer_summary" msgid="5513620078219951077">"Para encontrar outros aparelhos auditivos que não são compatíveis com ASHA ou LE Audio, toque em &lt;b&gt;Parear novo dispositivo&lt;/b&gt; &gt; &lt;b&gt;Mais dispositivos&lt;/b&gt;"</string>
-    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Para encontrar outros aparelhos auditivos que não são compatíveis com ASHA ou LE Audio, toque em "<b>"Parear novo dispositivo"</b>" e em "<b>"Mais dispositivos"</b></string>
+    <string name="accessibility_hearing_device_footer_summary_tts" msgid="955527026890456959">"Para encontrar outros aparelhos auditivos que não são compatíveis com ASHA ou LE Audio, toque em "<b>"Parear novo dispositivo"</b>" &gt; "<b>"Mais dispositivos"</b></string>
     <string name="accessibility_hearing_device_footer_asha_only_summary" msgid="3377169209330540616">"Para encontrar outros aparelhos auditivos que não são compatíveis com ASHA, toque em &lt;b&gt;Parear novo dispositivo&lt;/b&gt; &gt; &lt;b&gt;Mais dispositivos&lt;/b&gt;"</string>
     <string name="accessibility_hearing_device_footer_asha_only_summary_tts" msgid="8192971114504608531">"Para encontrar outros aparelhos auditivos que não são compatíveis com ASHA, toque em "<b>"Parear novo dispositivo"</b>" &gt; "<b>"Mais dispositivos"</b></string>
     <string name="accessibility_hearing_device_footer_hap_only_summary" msgid="3531758698830915205">"Para encontrar outros aparelhos auditivos que não são compatíveis com LE Audio, toque em &lt;b&gt;Parear novo dispositivo&lt;/b&gt; &gt; &lt;b&gt;Mais dispositivos&lt;/b&gt;"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> — <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> a <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g>. <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Gráfico de uso da bateria"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Gráfico de uso diário da bateria"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Gráfico de uso da bateria por hora"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(não verificar servidor)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(recebido de um servidor)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"As informações inseridas não são compatíveis com VPN sempre ativa"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Cancelar"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Dispensar"</string>
     <string name="vpn_save" msgid="683868204634860888">"Salvar"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Seu administrador pode monitorar e gerenciar apps e dados associados a este usuário, incluindo configurações, permissões, acesso corporativo, atividade de rede e informações de local do dispositivo."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"O administrador pode monitorar e gerenciar apps e dados associados a este dispositivo, incluindo configurações, permissões, acesso corporativo, atividade de rede e informações de local do dispositivo."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"O administrador do dispositivo pode gerenciar apps, mudar as configurações deste dispositivo e acessar dados associados a ele."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Ação impedida pela Proteção Avançada"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Esta ação não é permitida porque a Proteção Avançada está ativada no seu dispositivo."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Desativar"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Ativar"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Mostrar"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"O aumento da sensibilidade pode prejudicar gestos que usam as bordas da tela."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Sensibilidade para voltar"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Navegação por gestos"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Navegação com botões"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navegação por gestos, sensibilidade para voltar, gestos de retorno"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"navegação, botão home"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Painel de configurações"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Ativar janelas de forma livre"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Ativar recursos da experiência para computadores"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Ativar a versão para computadores no dispositivo e em telas secundárias."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Ativar a versão para computadores em telas secundárias."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Ativar janelas de forma livre na tela secundária"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Ativar recursos não redimensionáveis em várias janelas"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Permitir que apps não redimensionáveis sejam usados em várias janelas"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Modo agnóstico de páginas de 16 KB"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Leia mais"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Executar app com o modo de compatibilidade de tamanho de página"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5760,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Mudar PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Esqueci o PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

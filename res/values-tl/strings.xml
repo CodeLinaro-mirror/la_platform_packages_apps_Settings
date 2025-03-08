@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Pindutin ang sensor para sa fingerprint"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Hindi nakilala ang fingerprint"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Pag-unlock Gamit ang Relo"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Kapag nag-set up ka ng Pag-unlock Gamit ang Mukha at Pag-unlock Gamit ang Fingerprint, hihingin ng iyong telepono ang fingerprint mo kapag naka-mask ka o nasa madilim kang lugar.\n\nAng Pag-unlock Gamit ang Relo ay isa pang madaling paraan para i-unlock ang iyong telepono, halimbawa, kapag basa ang mga daliri mo o hindi nakikilala ang iyong mukha."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Ang Pag-unlock Gamit ang Relo ay isa pang madaling paraan para i-unlock ang iyong telepono, halimbawa, kapag hindi nakikilala ang fingerprint mo."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Ang Pag-unlock Gamit ang Relo ay isa pang madaling paraan para i-unlock ang iyong telepono, halimbawa, kapag hindi nakikilala ang mukha mo."</string>
@@ -784,10 +786,8 @@
     <string name="unlock_set_unlock_password_title" msgid="2559842616268607041">"Password"</string>
     <string name="unlock_set_do_later_title" msgid="6565575303676064364">"Huwag ngayon"</string>
     <string name="current_screen_lock" msgid="1367883977261098017">"Kasalukuyang screen lock"</string>
-    <!-- no translation found for unlock_accessibility_pin_area (437104569661316525) -->
-    <skip />
-    <!-- no translation found for unlock_accessibility_password (5404713613573232309) -->
-    <skip />
+    <string name="unlock_accessibility_pin_area" msgid="437104569661316525">"Lugar ng PIN"</string>
+    <string name="unlock_accessibility_password" msgid="5404713613573232309">"Password ng device"</string>
     <string name="fingerprint_unlock_set_unlock_pattern" msgid="2229689425933043901">"Pattern • Fingerprint"</string>
     <string name="fingerprint_unlock_set_unlock_pin" msgid="7979848492740627674">"PIN • Fingerprint"</string>
     <string name="fingerprint_unlock_set_unlock_password" msgid="6207676267295036963">"Password • Fingerprint"</string>
@@ -1321,6 +1321,7 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Mataas na resolution"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Max na resolution"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Mas malakas gumamit ng iyong baterya ang max na resolution. Kapag pinalitan mo ang iyong resolution, posible itong maging sanhi ng pag-restart ng ilang app."</string>
+    <string name="screen_resolution_delimiter_a11y" msgid="5826162120538795842">"<xliff:g id="WIDTH">%1$s</xliff:g> by <xliff:g id="HEIGHT">%2$s</xliff:g>"</string>
     <string name="color_mode_title" msgid="8666690832113906028">"Mga Kulay"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Natural"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Naka-boost"</string>
@@ -2268,6 +2269,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Matuto pa tungkol sa mga kagustuhan sa caption"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Pag-magnify"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Shortcut ng pag-magnify"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"I-magnify ang pagta-type"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Sinusundan ng magnifier ang text habang nagta-type ka"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Naka-on habang lumilipat ng app"</string>
@@ -2321,8 +2332,7 @@
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"Mag-tap ng button upang mag-zoom"</string>
     <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"Mabilisang mag-zoom in sa screen para palakihin ang content"</string>
     <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"&lt;b&gt;Para mag-zoom in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Gamitin ang shortcut para simulan ang pag-magnify&lt;br/&gt; {1,number,integer}. I-tap ang screen&lt;br/&gt; {2,number,integer}. I-drag ang 2 daliri para gumalaw sa screen&lt;br/&gt; {3,number,integer}. Mag-pinch gamit ang 2 daliri para i-adjust ang pag-zoom&lt;br/&gt; {4,number,integer}. Gamitin ang shortcut para ihinto ang pag-magnify&lt;br/&gt;&lt;br/&gt; &lt;b&gt;Para mag-zoom in nang pansamantala:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Tiyaking nakatakda sa full screen ang iyong uri ng pag-magnify&lt;br/&gt; {1,number,integer}. Gamitin ang shortcut para simulan ang pag-magnify&lt;br/&gt; {2,number,integer}. Pumindot nang matagal kahit saan sa screen&lt;br/&gt; {3,number,integer}. I-drag ang daliri para gumalaw sa screen&lt;br/&gt; {4,number,integer}. Iangat ang daliri para ihinto ang pag-magnify"</string>
-    <!-- no translation found for accessibility_screen_magnification_keyboard_summary (2504303274186294767) -->
-    <skip />
+    <string name="accessibility_screen_magnification_keyboard_summary" msgid="2504303274186294767">"&lt;b&gt;Para mag-zoom gamit ang keyboard:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Gamitin ang shortcut para simulan ang pag-magnify&lt;br/&gt; {1,number,integer}. I-hold ang &lt;xliff:g id=meta1&gt;%1$s&lt;/xliff:g&gt; at &lt;xliff:g id=alt1&gt;%2$s&lt;/xliff:g&gt; at pindutin ang + o - para mag-zoom in o mag-zoom out&lt;br/&gt; {2,number,integer}. I-hold ang &lt;xliff:g id=meta2&gt;%3$s&lt;/xliff:g&gt; at &lt;xliff:g id=alt2&gt;%4$s&lt;/xliff:g&gt; at pindutin ang mga arrow key para gumalaw sa screen&lt;br/&gt; {3,number,integer}. Gamitin ang shortcut para ihinto ang pag-magnify"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off" msgid="1779959623535122324">"&lt;b&gt;Para mag-zoom in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Gamitin ang shortcut para simulan ang pag-magnify&lt;br/&gt; {1,number,integer}. I-tap ang screen&lt;br/&gt; {2,number,integer}. I-drag ang 2 daliri para gumalaw sa screen&lt;br/&gt; {3,number,integer}. Mag-pinch gamit ang 2 daliri para i-adjust ang pag-zoom&lt;br/&gt; {4,number,integer}. Gumamit ng shortcut para ihinto ang pag-magnify&lt;br/&gt;&lt;br/&gt; Puwede ka ring mag-zoom in pansamantala at higit pa."</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_on" msgid="7323930759240678965">"&lt;b&gt;Para mag-zoom in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Gamitin ang shortcut para simulan ang pag-magnify&lt;br/&gt; {1,number,integer}. I-tap ang screen&lt;br/&gt; {2,number,integer}. I-drag ang 1 o 2 daliri para gumalaw sa screen&lt;br/&gt; {3,number,integer}. Mag-pinch gamit ang 2 daliri para i-adjust ang pag-zoom&lt;br/&gt; {4,number,integer}. Gumamit ng shortcut para ihinto ang pag-magnify&lt;br/&gt;&lt;br/&gt; Puwede ka ring mag-zoom in pansamantala at higit pa."</string>
     <string name="accessibility_screen_magnification_navbar_summary" msgid="807985499898802296">"Kapag naka-on ang pag-magnify, makakapag-zoom in ka sa iyong screen.\n\n"<b>"Para mag-zoom"</b>", simulan ang pag-magnify, pagkatapos ay mag-tap kahit saan sa screen.\n"<ul><li>"Mag-drag ng 2 o higit pang daliri para mag-scroll"</li>\n<li>"Mag-pinch ng 2 o higit pang daliri para isaayos ang pag-zoom"</li></ul>\n\n<b>"Para mag-zoom pansamantala"</b>", simulan ang pag-magnify, pagkatapos ay pumindot nang matagal kahit saan sa screen.\n"<ul><li>"Mag-drag para gumalaw-galaw sa screen"</li>\n<li>"Iangat ang daliri para mag-zoom out"</li></ul>\n\n"Hindi ka makakapag-zoom in sa keyboard o navigation bar."</string>
@@ -2829,7 +2839,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> hanggang <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Chart ng paggamit ng baterya"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Chart ng paggamit ng baterya kada araw"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Chart ng paggamit ng baterya kada oras"</string>
@@ -3119,6 +3134,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(huwag i-verify ang server)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(natanggap mula sa server)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Hindi sinusuportahan ng impormasyong inilagay ang VPN na palaging naka-on"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Kanselahin"</string>
     <string name="vpn_done" msgid="5137858784289564985">"I-dismiss"</string>
     <string name="vpn_save" msgid="683868204634860888">"I-save"</string>
@@ -4414,8 +4435,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Masusubaybayan at mapamamahalaan ng iyong admin ang mga app at data na nauugnay sa user na ito, kabilang ang mga setting, pahintulot, access ng kumpanya, aktibidad ng network, at impormasyon ng lokasyon ng device."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Masusubaybayan at mapamamahalaan ng iyong admin ang mga app at data na nauugnay sa device na ito, kabilang ang mga setting, pahintulot, access ng kumpanya, aktibidad ng network, at impormasyon ng lokasyon ng device."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Posibleng ma-access ng administrator ng iyong device ang data na nauugnay sa device na ito at posible rin nitong mapamahalaan ang mga app at mabago ang mga setting ng device na ito."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Pinipigilan ng Advanced na Proteksyon"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Hindi pinapayagan ang pagkilos na ito dahil naka-on ang Advanced na Proteksyon para sa iyong device."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"I-off"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"I-on"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Ipakita"</string>
@@ -4641,6 +4672,7 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Baka makasagabal ang pagkakaroon ng mas mataas na sensitivity sa anumang galaw sa app sa mga gilid ng screen."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Pagkasensitibo sa Likod"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Navigation Gamit ang Galaw"</string>
+    <string name="gesture_navigation_tutorial_title" msgid="1605955266131665429">"Sumubok ng demo"</string>
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Button na pag-navigate"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navigation gamit ang galaw, sensitivity ng bumalik, galaw na bumalik"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"pag-navigate, button ng home"</string>
@@ -5151,8 +5183,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Panel ng Mga Setting"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"I-enable ang mga freeform window"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"I-enable ang mga feature sa experience sa desktop"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"I-enable ang Desktop View sa device at mga pangalawang display."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"I-enable ang Desktop View sa mga pangalawang display."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"I-enable ang freeform windows sa secondary display"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"I-enable ang hindi nare-resize sa multi-window"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Nagpapahintulot sa mga hindi nare-resize na app na lumabas sa multi-window"</string>
@@ -5232,12 +5266,9 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 KB Page-agnostic Mode"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Magbasa pa"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Paganahin ang app sa page size compat mode"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
-    <skip />
-    <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
-    <skip />
-    <!-- no translation found for stop_app_dlg_text (4373849065005318901) -->
-    <skip />
+    <string name="enable_16k_app_compat_details" msgid="5382562613011853452">"Ihihinto ang app at gagana ito sa page size compatibility mode sa 16 KB na device kapag na-toggle."</string>
+    <string name="stop_app_dlg_title" msgid="3153921585174512587">"Ihinto ang app?"</string>
+    <string name="stop_app_dlg_text" msgid="4373849065005318901">"Ihihinto ang application para ilapat ang setting ng compatibility sa laki ng page."</string>
     <string name="bug_report_handler_title" msgid="713439959113250125">"Tagapangasiwa ng ulat ng bug"</string>
     <string name="bug_report_handler_picker_footer_text" msgid="4935758328366585673">"Tinutukoy kung aling app ang mangangasiwa sa shortcut ng Ulat ng Bug sa iyong device."</string>
     <string name="personal_profile_app_subtext" msgid="5586060806997067676">"Personal"</string>
@@ -5571,8 +5602,7 @@
     <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
     <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Naka-set up na ngayon ang password"</string>
-    <!-- no translation found for accessibility_setup_pin_complete (7626702882001984236) -->
-    <skip />
+    <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"Naka-set up na ang PIN"</string>
     <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Ipakita ang pointer habang nagho-hover"</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Mga setting ng media DRM"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"I-force ang Software Secure na Crypto"</string>
@@ -5720,6 +5750,7 @@
     <string name="supervision_pin_management_preference_summary_add" msgid="3244161328612671896">"Magdagdag ng paraan ng pag-recover ng PIN"</string>
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Palitan ang PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Nakalimutan ang PIN"</string>
-    <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"Mga filter ng content sa web"</string>
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

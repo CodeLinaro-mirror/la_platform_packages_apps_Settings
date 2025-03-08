@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Toca o sensor de impresión dixital"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Non se recoñeceu a impresión dixital"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Desbloqueo mediante reloxo"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Se configuras o desbloqueo facial e o dactilar, o teléfono pedirache a impresión dixital no caso de que leves máscara ou esteas nun espazo escuro.\n\nA función Desbloqueo mediante reloxo ofréceche outra forma de desbloquear o teléfono facilmente en determinadas situacións (por exemplo, cando teñas os dedos mollados ou non se che recoñeza a cara)."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"A función Desbloqueo mediante reloxo ofréceche outra forma de desbloquear o teléfono facilmente en determinadas situacións (por exemplo, cando non se recoñeza a túa impresión dixital)."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"A función Desbloqueo mediante reloxo ofréceche outra forma de desbloquear o teléfono facilmente en determinadas situacións (por exemplo, cando non se che recoñeza a cara)."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Alta resolución"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Máxima resolución"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"A máxima resolución consome máis batería. Se cambias a resolución, pode que se reinicien algunhas aplicacións."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Cores"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturais"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Realzadas"</string>
@@ -2115,8 +2119,7 @@
     <string name="trackpad_touch_gesture" msgid="8641725062131922497">"Consultar xestos do panel táctil"</string>
     <string name="keywords_touchpad" msgid="8159846254066666032">"panel táctil, rato, cursor, desprazar, pasar o dedo, facer clic co botón dereito, facer clic, punteiro"</string>
     <string name="keywords_trackpad_bottom_right_tap" msgid="1285062446073929305">"facer clic co botón dereito, tocar"</string>
-    <!-- no translation found for three_finger_tap_middle_click (1759914275939765929) -->
-    <skip />
+    <string name="three_finger_tap_middle_click" msgid="1759914275939765929">"Botón de clic central do rato"</string>
     <string name="three_finger_tap_launch_gemini" msgid="4030401656711588982">"Iniciar Asistente"</string>
     <string name="three_finger_tap_go_home" msgid="6526301745535089812">"Ir á páxina de inicio"</string>
     <string name="three_finger_tap_go_back" msgid="2898205524575684271">"Volver"</string>
@@ -2269,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Máis información acerca das preferencias dos subtítulos"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Ampliación"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Atallo de ampliación"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Ampliar escritura"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"A lupa segue o texto a medida que escribes"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Manter activada ao cambiar de aplicación"</string>
@@ -2832,7 +2845,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"De <xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> a <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Gráfico de uso da batería"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Gráfico de uso da batería por día"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Gráfico de uso da batería por hora"</string>
@@ -2912,14 +2930,10 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Activada"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Desactivada"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Usar conectividade intelixente"</string>
-    <!-- no translation found for adaptive_connectivity_wifi_switch_title (5899985025046319472) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_wifi_switch_summary (4650230240134029595) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_title (2473274404695643218) -->
-    <skip />
-    <!-- no translation found for adaptive_connectivity_mobile_network_switch_summary (2432517485362085341) -->
-    <skip />
+    <string name="adaptive_connectivity_wifi_switch_title" msgid="5899985025046319472">"Cambiar automaticamente de wifi a datos móbiles"</string>
+    <string name="adaptive_connectivity_wifi_switch_summary" msgid="4650230240134029595">"Usa automaticamente os datos móbiles cando a conexión wifi sexa deficiente ou non estea dispoñible. Pódense aplicar cargos polo uso de datos."</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="2473274404695643218">"Cambiar automaticamente de rede móbil pola batería"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="2432517485362085341">"Xestiona automaticamente as conexións de rede para ampliar a duración da batería"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Seguranza das redes de telefonía móbil"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Tipo de rede, encriptación, controis de notificacións"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Estas opcións de configuración axudan a protexer as túas chamadas, mensaxes e datos nas redes desactualizadas ou non encriptadas que te poden expoñer ao roubo ou vixilancia de datos"</string>
@@ -3126,6 +3140,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(non verificar servidor)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(recibido do servidor)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"A información inserida non é compatible con VPN que estean sempre activadas"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Cancelar"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Pechar"</string>
     <string name="vpn_save" msgid="683868204634860888">"Gardar"</string>
@@ -4421,8 +4441,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"O teu administrador pode supervisar e xestionar as aplicacións e os datos asociados a este usuario, mesmo os permisos, a configuración, o acceso corporativo, a actividade da rede e a información de localización do dispositivo."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"O teu administrador pode supervisar e xestionar as aplicacións e os datos asociados a este dispositivo, mesmo os permisos, a configuración, o acceso corporativo, a actividade da rede e a información de localización do dispositivo."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"É posible que o administrador do teu dispositivo poida acceder aos datos asociados ao dispositivo, cambiar a súa configuración e xestionar as aplicacións."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Opción bloqueada por Protección avanzada"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Non se permite esta acción porque o teu dispositivo ten activada a función Protección avanzada"</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Desactivar"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Activar"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Mostrar"</string>
@@ -4648,6 +4678,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Unha maior sensibilidade pode provocar conflitos cos xestos da aplicación que se fagan nos bordos da pantalla."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Sensibilidade traseira"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Navegación con xestos"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Navegación con botóns"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navegación con xestos, sensibilidade traseira, xestos traseiros"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"navegación, botón de inicio"</string>
@@ -5036,10 +5068,8 @@
     <string name="title_supported_service_for_manual_type" msgid="6009284624466359864">"Sigue os pasos para conectarte ao satélite"</string>
     <string name="summary_supported_service" msgid="4320535903444834786">"Podes intercambiar mensaxes de texto con calquera persoa, mesmo cos servizos de emerxencia. O teléfono volverá conectarse a unha rede de telefonía móbil en canto haxa unha dispoñible."</string>
     <string name="summary_supported_service_for_manual_type" msgid="2147958362763058271">"Cando o teléfono estea conectado, poderás intercambiar mensaxes de texto con calquera persoa, mesmo cos servizos de emerxencia."</string>
-    <!-- no translation found for satellite_setting_summary_more_information (276312352285564071) -->
-    <skip />
-    <!-- no translation found for satellite_setting_summary_more_information_no_emergency_messaging (2090170250936862158) -->
-    <skip />
+    <string name="satellite_setting_summary_more_information" msgid="276312352285564071">"As conexións por satélite poden ser máis lentas e só están dispoñibles nalgunhas zonas. Ademais, as condiciones meteorolóxicas e algunhas estruturas poden afectar a este tipo de conexión. Non é posible facer chamadas por satélite. Quizais poidas facer chamadas de emerxencia.\n\nOs cambios na conta poden tardar un anaco en aparecer na configuración. Contacta con <xliff:g id="CARRIER_NAME">%1$s</xliff:g> para ter máis información."</string>
+    <string name="satellite_setting_summary_more_information_no_emergency_messaging" msgid="2090170250936862158">"As conexións por satélite poden ser máis lentas e só están dispoñibles nalgunhas zonas. Ademais, as condiciones meteorolóxicas e algunhas estruturas poden afectar a este tipo de conexión. Non é posible facer chamadas por satélite. Quizais poidas facer chamadas de emerxencia. O envío de mensaxes de texto aos servizos de emerxencia pode que non estea dispoñible en todas as zonas.\n\nOs cambios na conta poden tardar un anaco en aparecer na configuración. Contacta con <xliff:g id="CARRIER_NAME">%1$s</xliff:g> para ter máis información."</string>
     <string name="more_about_satellite_messaging" msgid="1039277943532711584">"Máis información sobre <xliff:g id="SUBJECT">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_title" msgid="1610117852475376931">"Non se pode activar a función <xliff:g id="FUNCTION">%1$s</xliff:g>"</string>
     <string name="satellite_warning_dialog_content" msgid="936419945275934955">"Para activar a función <xliff:g id="FUNCTION">%1$s</xliff:g>, primeiro pecha a conexión por satélite"</string>
@@ -5160,8 +5190,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Panel de configuración"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Activar ventás de forma libre"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Activar funcións de experiencia para ordenador"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Activa a vista para ordenadores no dispositivo e nas pantallas secundarias."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Activa a vista para ordenadores nas pantallas secundarias."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Activar ventás de forma libre na pantalla secundaria"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Activar aplicacións sen axuste de tamaño no modo multiventá"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Permite utilizar as aplicacións sen axuste de tamaño no modo multiventá"</string>
@@ -5241,7 +5273,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Modo independente de páxina de 16 kB"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Ler máis"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Executar a aplicación no modo de compatibilidade co tamaño de páxina"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5730,5 +5762,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Cambiar PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Esquecín o PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

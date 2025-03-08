@@ -128,7 +128,7 @@ public class MagnificationModePreferenceController extends BasePreferenceControl
         super.displayPreference(screen);
         mModePreference = screen.findPreference(getPreferenceKey());
         mLinkPreference = screen.findPreference(
-                ToggleFeaturePreferenceFragment.KEY_SHORTCUT_PREFERENCE);
+                ToggleScreenMagnificationPreferenceFragment.KEY_MAGNIFICATION_SHORTCUT_PREFERENCE);
         Preconditions.checkNotNull(mModePreference).setOnPreferenceClickListener(preference -> {
             mModeCache = MagnificationCapabilities.getCapabilities(mContext);
             Preconditions.checkNotNull(mDialogHelper).showDialog(

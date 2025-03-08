@@ -26,7 +26,6 @@ import com.android.settings.contract.KEY_VIBRATION_HAPTICS
 import com.android.settings.metrics.PreferenceActionMetricsProvider
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObservableDelegate
-import com.android.settingslib.datastore.SettingsStore
 import com.android.settingslib.datastore.SettingsSystemStore
 import com.android.settingslib.metadata.BooleanValuePreference
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -56,8 +55,7 @@ class VibrationMainSwitchPreference :
 
     override fun tags(context: Context) = arrayOf(KEY_VIBRATION_HAPTICS)
 
-    override fun storage(context: Context): KeyValueStore =
-        VibrationMainSwitchToggleStorage(SettingsSystemStore.get(context))
+    override fun storage(context: Context): KeyValueStore = VibrationMainSwitchStore(context)
 
     override fun getReadPermissions(context: Context) = SettingsSystemStore.getReadPermissions()
 
@@ -81,34 +79,41 @@ class VibrationMainSwitchPreference :
         if (newValue == true) {
             // Play a haptic as preview for the main toggle only when touch feedback is enabled.
             VibrationPreferenceConfig.playVibrationPreview(
-                preference.context.getSystemService(Vibrator::class.java),
+                preference.context.vibrator,
                 VibrationAttributes.USAGE_TOUCH,
             )
         }
         return true
     }
 
-    /** Provides SettingsStore for vibration main switch with custom default value. */
-    @Suppress("UNCHECKED_CAST")
-    private class VibrationMainSwitchToggleStorage(private val settingsStore: SettingsStore) :
-        KeyedObservableDelegate<String>(settingsStore), KeyValueStore {
-
-        override fun contains(key: String) = settingsStore.contains(key)
-
-        override fun <T : Any> getDefaultValue(key: String, valueType: Class<T>) =
-            DEFAULT_VALUE as T
-
-        override fun <T : Any> getValue(key: String, valueType: Class<T>) =
-            (settingsStore.getBoolean(key) ?: DEFAULT_VALUE) as T
-
-        override fun <T : Any> setValue(key: String, valueType: Class<T>, value: T?) {
-            settingsStore.setBoolean(key, value as Boolean?)
-        }
-    }
-
     companion object {
         const val KEY = Settings.System.VIBRATE_ON
-        const val DEFAULT_VALUE = true
     }
 }
+
+/** Provides SettingsStore for vibration main switch with custom default value. */
+@Suppress("UNCHECKED_CAST")
+class VibrationMainSwitchStore(
+    context: Context,
+    private val settingsStore: KeyValueStore = SettingsSystemStore.get(context),
+) : KeyedObservableDelegate<String>(settingsStore), KeyValueStore {
+
+    override fun contains(key: String) = settingsStore.contains(key)
+
+    override fun <T : Any> getDefaultValue(key: String, valueType: Class<T>) = DEFAULT_VALUE as T
+
+    override fun <T : Any> getValue(key: String, valueType: Class<T>) =
+        settingsStore.getValue(key, valueType) ?: getDefaultValue(key, valueType)
+
+    override fun <T : Any> setValue(key: String, valueType: Class<T>, value: T?) =
+        settingsStore.setValue(key, valueType, value)
+
+    companion object {
+        private const val DEFAULT_VALUE = true
+    }
+}
+
+val Context.vibrator: Vibrator
+    get() = getSystemService(Vibrator::class.java)!!
+
 // LINT.ThenChange(VibrationMainSwitchPreferenceController.java)

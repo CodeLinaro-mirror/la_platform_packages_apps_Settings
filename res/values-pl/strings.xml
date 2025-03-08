@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Dotknij czytnika linii papilarnych"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Nie rozpoznano odcisku palca"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Odblokowywanie za pomocą zegarka"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Jeśli ustawisz rozpoznawanie twarzy i odblokowywanie odciskiem palca, w ciemnym otoczeniu lub gdy będziesz mieć maskę, na telefonie pojawi się prośba o użycie odcisku palca.\n\nOdblokowywanie telefonu za pomocą zegarka to wygodny sposób na wyłączenie blokady, gdy masz mokre palce lub nie udaje się rozpoznać Twojej twarzy."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Odblokowywanie za pomocą zegarka to inny wygodny sposób na odblokowanie telefonu, gdy nie udaje się rozpoznać odcisku palca."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Odblokowywanie telefonu za pomocą zegarka to wygodny sposób na pozbycie się blokady, gdy na przykład nie udaje się rozpoznać Twojej twarzy."</string>
@@ -1321,6 +1323,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Wysoka rozdzielczość"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Maksymalna rozdzielczość"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Maksymalna rozdzielczość bardziej zużywa baterię. Po przełączeniu rozdzielczości niektóre aplikacje mogą wymagać ponownego uruchomienia."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Kolory"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturalne"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Wzmocnione"</string>
@@ -2268,6 +2272,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Więcej informacji o ustawieniach napisów"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Powiększenie"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Skrót do powiększenia"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Pisanie w powiększeniu"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Lupa podąża za wpisywanym tekstem"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Pozostaw włączone przy przełączaniu aplikacji"</string>
@@ -2829,7 +2843,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>–<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"Od <xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> do <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Wykres zużycia baterii"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Wykres dziennego wykorzystania baterii"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Wykres godzinowego wykorzystania baterii"</string>
@@ -3119,6 +3138,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(nie weryfikuj serwera)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(odebrany z serwera)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Podane informacje nie umożliwiają obsługi stałej sieci VPN"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Anuluj"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Zamknij"</string>
     <string name="vpn_save" msgid="683868204634860888">"Zapisz"</string>
@@ -4414,8 +4439,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Administrator może monitorować aplikacje i dane powiązane z tym użytkownikiem (w tym ustawienia, uprawnienia, firmowe uprawnienia dostępu, aktywność w sieci i informacje o lokalizacji urządzenia) oraz nimi zarządzać."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Administrator może monitorować aplikacje i dane powiązane z tym urządzeniem (w tym ustawienia, uprawnienia, firmowe uprawnienia dostępu, aktywność w sieci i informacje o lokalizacji urządzenia) oraz nimi zarządzać."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Administrator urządzenia może uzyskiwać dostęp do danych powiązanych z tym urządzeniem, zarządzać aplikacjami i zmieniać ustawienia urządzenia."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Zablokowane przez Ochronę zaawansowaną"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Ta czynność jest niedozwolona, ponieważ na urządzeniu jest włączona Ochrona zaawansowana."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Wyłącz"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Włącz"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Pokaż"</string>
@@ -4641,6 +4676,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Wyższa czułość może powodować konflikt w przypadku gestów w aplikacji przy krawędziach ekranu."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Czułość cofania"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Nawigacja przy użyciu gestów"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Nawigacja przy użyciu przycisków"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"nawigacja przy użyciu gestów, czułość cofania, gest cofania"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"nawigacja, ekran główny"</string>
@@ -5151,8 +5188,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Panel ustawień"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Włącz dowolny rozmiar okien"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Włącz funkcje wersji na komputery"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Włącz wersję na komputery na urządzeniu i na dodatkowych wyświetlaczach."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Włącz wersję na komputery na dodatkowych wyświetlaczach."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Włącz dowolny rozmiar okien na dodatkowym ekranie"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Włącz brak możliwości zmiany rozmiaru w trybie wielu okien"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Zezwala na wyświetlanie aplikacji bez możliwości zmiany rozmiaru w trybie wielu okien"</string>
@@ -5232,7 +5271,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"Tryb 16 KB niezależy od rozmiaru strony pamięci"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Więcej informacji"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Uruchamiaj aplikację w trybie zgodności z rozmiarem strony"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5723,5 +5762,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Zmień kod PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Nie pamiętam kodu PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

@@ -87,12 +87,9 @@
     <string name="bluetooth_ambient_volume_control_collapse" msgid="7103189728479091531">"ຫຍໍ້ລົງເພື່ອການຄວບຄຸມແບບຮວມ"</string>
     <string name="bluetooth_ambient_volume_control_left" msgid="1927760358765239141">"ຊ້າຍ"</string>
     <string name="bluetooth_ambient_volume_control_right" msgid="5783836267230662002">"ຂວາ"</string>
-    <!-- no translation found for bluetooth_ambient_volume_control_description (8652460879432504546) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_left_description (7907887057591335693) -->
-    <skip />
-    <!-- no translation found for bluetooth_ambient_volume_control_right_description (7651747671161021283) -->
-    <skip />
+    <string name="bluetooth_ambient_volume_control_description" msgid="8652460879432504546">"ສຽງແວດລ້ອມ"</string>
+    <string name="bluetooth_ambient_volume_control_left_description" msgid="7907887057591335693">"ສຽງແວດລ້ອມຂ້າງຊ້າຍ"</string>
+    <string name="bluetooth_ambient_volume_control_right_description" msgid="7651747671161021283">"ສຽງແວດລ້ອມຂ້າງຂວາ"</string>
     <string name="bluetooth_ambient_volume_mute" msgid="2700088105160838096">"ປິດສຽງອ້ອມຂ້າງ"</string>
     <string name="bluetooth_ambient_volume_unmute" msgid="8055038818824925188">"ເຊົາປິດສຽງອ້ອມຂ້າງ"</string>
     <string name="bluetooth_ambient_volume_error" msgid="259328969488233714">"ບໍ່ສາມາດອັບເດດສະພາບອ້ອມຂ້າງໄດ້"</string>
@@ -232,8 +229,7 @@
     <string name="language_and_region_title" msgid="8374151891112162767">"ພາສາ ແລະ ພາກພື້ນ"</string>
     <string name="language_selection_title" msgid="968179636453982415">"ເພີ່ມພາສາ"</string>
     <string name="region_selection_title" msgid="3630336682851020349">"ເລືອກພາກພື້ນ"</string>
-    <!-- no translation found for numbering_system_selection_title (1065458493488382214) -->
-    <skip />
+    <string name="numbering_system_selection_title" msgid="1065458493488382214">"ລະບົບຕົວເລກ"</string>
     <string name="country_selection_title" msgid="5376929821458644732">"ການຕັ້ງຄ່າພາກພື້ນ"</string>
     <string name="search_language_hint" msgid="6738370354628565338">"ຊອກຫາພາສາ"</string>
     <string name="search_region_hint" msgid="1748708432568237552">"ຊອກຫາພາກພື້ນ"</string>
@@ -241,8 +237,7 @@
     <string name="more_language_settings_category" msgid="3669703092480725416">"ການຕັ້ງຄ່າພາສາເພີ່ມເຕີມ"</string>
     <string name="title_change_system_locale_region" msgid="1977530992614685128">"ປ່ຽນພາກພື້ນເປັນ <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> ບໍ?"</string>
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"ອຸປະກອນຂອງທ່ານຈະເກັບພາສາ <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> ໄວ້ເປັນພາສາຂອງລະບົບ"</string>
-    <!-- no translation found for top_intro_numbering_system_title (3962000662073238392) -->
-    <skip />
+    <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"ເລືອກວິທີສະແດງຕົວເລກຢູ່ອຸປະກອນ, ເວັບໄຊ ແລະ ແອັບຕ່າງໆຂອງທ່ານ"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"ການຕັ້ງຄ່າຕາມພາກພື້ນ"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"ກຳນົດການຕັ້ງຄ່າຫົວໜ່ວຍ ແລະ ຕົວເລກ"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"ບອກໃຫ້ແອັບຮູ້ການຕັ້ງຄ່າຕາມພາກພື້ນຂອງທ່ານເພື່ອໃຫ້ແອັບສາມາດປັບແຕ່ງປະສົບການຂອງທ່ານໃຫ້ເປັນແບບສ່ວນຕົວໄດ້."</string>
@@ -466,6 +461,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"ສຳຜັດເຊັນເຊີລາຍນິ້ວມື"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"ບໍ່ສາມາດຈຳແນກລາຍນິ້ວມືໄດ້"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"ປົດລັອກດ້ວຍໂມງ"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"ເມື່ອທ່ານຕັ້ງຄ່າການປົດລັອກດ້ວຍໜ້າ ແລະ ການປົດລັອກດ້ວຍລາຍນິ້ວມື, ໂທລະສັບຂອງທ່ານຈະຂໍໃຫ້ສະແກນລາຍນິ້ວມືຂອງທ່ານເມື່ອທ່ານໃສ່ໜ້າກາກອະນາໄມ ຫຼື ຢູ່ໃນບ່ອນມືດ.\n\nການປົດລັອກດ້ວຍໂມງເປັນອີກວິທີໜຶ່ງທີ່ສະດວກໃນການປົດລັອກໂທລະສັບຂອງທ່ານ ຕົວຢ່າງ: ເມື່ອນິ້ວຂອງທ່ານປຽກຢູ່ ຫຼື ລະບົບຈື່ໃບໜ້າຂອງທ່ານບໍ່ໄດ້."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"ການປົດລັອກດ້ວຍໂມງເປັນອີກວິທີໜຶ່ງທີ່ສະດວກໃນການປົດລັອກໂທລະສັບຂອງທ່ານ ຕົວຢ່າງ: ເມື່ອລະບົບຈື່ລາຍນິ້ວມືຂອງທ່ານບໍ່ໄດ້."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"ການປົດລັອກດ້ວຍໂມງເປັນອີກວິທີໜຶ່ງທີ່ສະດວກໃນການປົດລັອກໂທລະສັບຂອງທ່ານ ຕົວຢ່າງ: ເມື່ອລະບົບຈື່ໃບໜ້າຂອງທ່ານບໍ່ໄດ້."</string>
@@ -1321,6 +1318,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"ຄວາມລະອຽດສູງ"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"ຄວາມລະອຽດສູງສຸດ"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"ຄວາມລະອຽດສູງສຸດຈະໃຊ້ແບັດເຕີຣີຂອງທ່ານຫຼາຍຂຶ້ນ. ການປ່ຽນຄວາມລະອຽດຂອງທ່ານອາດເຮັດໃຫ້ບາງແອັບຣີສະຕາດ."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"ສີ"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"ທຳ​ມະ​ຊາດ"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"ສີເຂັ້ມຂຶ້ນ"</string>
@@ -1394,8 +1393,7 @@
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"ຈະປິດອັດຕະໂນມັດຫຼັງຈາກເວລານອນ"</string>
     <string name="dark_ui_summary_on_auto_mode_modes" msgid="7769594183411785087">"ຈະປິດເມື່ອ <xliff:g id="ID_1">%1$s</xliff:g> ສິ້ນສຸດ"</string>
     <string name="dark_ui_text" msgid="4392646155331126666">"ຮູບແບບສີສັນມືດຈະໃຊ້ພື້ນຫຼັງສີດຳເພື່ອຊ່ວຍເຮັດໃຫ້ໃຊ້ແບັດເຕີຣີໄດ້ດົນຂຶ້ນໃນໜ້າຈໍບາງຮຸ່ນ. ກຳນົດເວລາຮູບແບບສີສັນມືດຈະລໍຖ້າເປີດຈົນກວ່າໜ້າຈໍຂອງທ່ານຈະປິດ."</string>
-    <!-- no translation found for dark_ui_text_force_invert (3776487375947497387) -->
-    <skip />
+    <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"ໃຊ້ພາບພື້ນຫຼັງມືດເພື່ອເຮັດໃຫ້ໜ້າຈໍຂອງທ່ານເບິ່ງສະດວກສະບາຍຍິ່ງຂຶ້ນ ແລະ ຫຼຸດການໃຊ້ແບັດເຕີຣີຢູ່ບາງໜ້າຈໍ. ຮູບແບບສີສັນຂອງທ່ານຈະປ່ຽນຫາກທ່ານມີກຳນົດເວລາ, ເມື່ອໜ້າຈໍປິດ."</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"ຕອນນີ້ຮູບແບບສີສັນມືດກຳລັງປະຕິບັດຕາມກຳນົດເວລາໂໝດເວລານອນຂອງທ່ານ"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"ການຕັ້ງຄ່າໂໝດເວລານອນ"</string>
     <string name="dark_ui_modes_footer_summary" msgid="1041117250408363391">"{count,plural,offset:2 =0{ໂໝດຍັງສາມາດເປີດໃຊ້ຮູບແບບສີສັນມືດນຳ}=1{{mode_1} ຍັງສາມາດເປີດໃຊ້ຮູບແບບສີສັນມືດນຳ}=2{{mode_1} ແລະ {mode_2} ຍັງສາມາດເປີດໃຊ້ຮູບແບບສີສັນມືດນຳ}=3{{mode_1}, {mode_2} ແລະ {mode_3} ຍັງສາມາດເປີດໃຊ້ຮູບແບບສີສັນມືດນຳ}other{{mode_1}, {mode_2} ແລະ ອີກ # ໂໝດຍັງສາມາດເປີດໃຊ້ຮູບແບບສີສັນມືດນຳ}}"</string>
@@ -2268,6 +2266,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"ສຶກສາເພີ່ມເຕີມກ່ຽວກັບການຕັ້ງຄ່າຄຳບັນຍາຍ"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"ການຂະຫຍາຍ"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"ທາງລັດການຂະຫຍາຍ"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"ຂະຫຍາຍການພິມ"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"ແວ່ນຂະຫຍາຍຈະຕິດຕາມຂໍ້ຄວາມໃນເວລາທີ່ທ່ານພິມ"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"ເປີດໄວ້ໃນລະຫວ່າງທີ່ສະຫຼັບແອັບ"</string>
@@ -2412,8 +2420,7 @@
     <string name="accessibility_toggle_screen_magnification_auto_update_preference_summary" msgid="9034532513972547720">"ອັບເດດການຂະຫຍາຍໜ້າຈໍເມື່ອປ່ຽນແອັບພລິເຄຊັນ"</string>
     <string name="accessibility_power_button_ends_call_prerefence_title" msgid="8187306131979612144">"ກົດປຸ່ມ ປິດ/ເປີດ ເພື່ອວາງສາຍ"</string>
     <string name="accessibility_force_invert_title" msgid="5248504501753732051">"ກຳນົດໃຫ້ແອັບອື່ນໆໃຊ້ຮູບແບບສີສັນມືດ"</string>
-    <!-- no translation found for accessibility_force_invert_summary (257503086198180749) -->
-    <skip />
+    <string name="accessibility_force_invert_summary" msgid="257503086198180749">"ຂະຫຍາຍຮູບແບບສີສັນມືດໄປຫາແອັບຕ່າງໆຫຼາຍຂຶ້ນ. ອາດໃຊ້ບໍ່ໄດ້ກັບແອັບທັງໝົດ."</string>
     <string name="accessibility_disable_animations" msgid="2993529829457179058">"ລຶບການເຄື່ອນໄຫວອອກ"</string>
     <string name="accessibility_disable_animations_summary" msgid="5828228669556554565">"ຫຼຸດການເຄື່ອນໄຫວຢູ່ໜ້າຈໍ"</string>
     <string name="accessibility_toggle_primary_mono_title" msgid="7587152099472946571">"ສຽງໂມໂນ"</string>
@@ -2829,7 +2836,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> ຫາ <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>⁠"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"ແຜນພາບການໃຊ້ແບັດເຕີຣີ"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"ແຜນພາບການໃຊ້ແບັດເຕີຣີລາຍວັນ"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"ແຜນພາບການໃຊ້ແບັດເຕີຣີລາຍຊົ່ວໂມງ"</string>
@@ -2941,8 +2953,7 @@
     <string name="credentials_reset_hint" msgid="4054601857203464867">"ລຶບເນື້ອຫາທັງໝົດອອກບໍ?"</string>
     <string name="credentials_erased" msgid="9121052044566053345">"ພື້ນທີ່ຈັດເກັບຂໍ້ມູນຮັບຮອງຖືກລຶບແລ້ວ."</string>
     <string name="credentials_not_erased" msgid="3611058412683184031">"ບ່ອນຈັດເກັບຂໍ້ມູນຮັບຮອງບໍ່ສາມາດຖືກລຶບໄດ້."</string>
-    <!-- no translation found for usage_access_title (8784394396356369568) -->
-    <skip />
+    <string name="usage_access_title" msgid="8784394396356369568">"ແອັບທີ່ມີສິດເຂົ້າເຖິງຂໍ້ມູນການນຳໃຊ້ແອັບ"</string>
     <string name="ca_certificate" msgid="3076484307693855611">"ໃບຮັບຮອງ​ CA"</string>
     <string name="user_certificate" msgid="6897024598058566466">"VPN ແລະ ໃບຮັບຮອງຜູ້ໃຊ້ແອັບ"</string>
     <string name="wifi_certificate" msgid="8461905432409380387">"ໃບຮັບຮອງ Wi‑Fi"</string>
@@ -3000,8 +3011,7 @@
     <string name="profile_owner_add_title_simplified" msgid="2320828996993774182">"ອະນຸຍາດການເບິ່ງແຍງກວດກາບໍ?"</string>
     <string name="adding_profile_owner_warning" msgid="6868275476058020513">"ໂດຍການດຳເນີນການຕໍ່, ຜູ້ໃຊ້ຂອງທ່ານຈະຖືກຈັດການໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ ເຊິ່ງອາດສາມາດຈັດເກັບຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັນ, ນອກເໜືອໄປຈາກຂໍ້ມູນສ່ວນຕົວຂອງທ່ານ.\n\nຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານມີຄວາມສາມາດໃນການຕິດຕາມ ແລະ ຈັດການການຕັ້ງຄ່າ, ການເຂົ້າເຖິງ, ແອັບ ແລະ ຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບຜູ້ໃຊ້ນີ້, ຮວມເຖິງການເຄື່ອນໄຫວເຄືອຂ່າຍ ແລະ ຂໍ້ມູນສະຖານທີ່ຂອງອຸປະກອນທ່ານ."</string>
     <string name="admin_disabled_other_options" msgid="8122039047419172139">"ຕົວເລືອກອື່ນໆຖືກປິດໄວ້ໂດຍຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານ"</string>
-    <!-- no translation found for admin_more_details (6091028872148388357) -->
-    <skip />
+    <string name="admin_more_details" msgid="6091028872148388357">"ສຶກສາເພີ່ມເຕີມກ່ຽວກັບຕົວເລືອກໄລຍະໝົດເວລາໜ້າຈໍທີ່ປິດການນຳໃຊ້"</string>
     <string name="notification_log_title" msgid="2812594935014664891">"​ບັນ​ທຶກ​ການ​ແຈ້ງ​ເຕືອນ"</string>
     <string name="notification_history_title" msgid="8821060912502593309">"ປະຫວັດການແຈ້ງເຕືອນ"</string>
     <string name="notification_history_today" msgid="6081829638548808795">"%d ຊົ່ວໂມງທີ່ຜ່ານມາ"</string>
@@ -3119,6 +3129,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(ບໍ່ຕ້ອງພິສູດເຊີບເວີ)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(ໄດ້ຮັບຈາກເຊີບເວີ)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"ຂໍ້ມູນທີ່ລະບຸມານັ້ນບໍ່ຮອງຮັບ VPN ແບບເປີດຕະຫຼອດ"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"ຍົກເລີກ"</string>
     <string name="vpn_done" msgid="5137858784289564985">"ປິດໄວ້"</string>
     <string name="vpn_save" msgid="683868204634860888">"ບັນທຶກ"</string>
@@ -3854,8 +3870,7 @@
     <string name="nls_feature_settings_title" msgid="8208164329853194414">"ປ່ຽນການຕັ້ງຄ່າ"</string>
     <string name="nls_feature_settings_summary" msgid="3770028705648985689">"ມັນສາມາດເປີດ ຫຼື ປິດໂໝດຫ້າມລົບກວນ ແລະ ປ່ຽນການຕັ້ງຄ່າທີ່ກ່ຽວຂ້ອງໄດ້."</string>
     <string name="nls_feature_modes_settings_summary" msgid="70022458305195595">"ໂດຍສາມາດຈັດການ ແລະ ເປີດນຳໃຊ້ໂໝດ, ຮວມທັງປ່ຽນແປງການຕັ້ງຄ່າທີ່ກ່ຽວຂ້ອງໄດ້."</string>
-    <!-- no translation found for notification_listener_disable_warning_summary (205200471571837170) -->
-    <skip />
+    <string name="notification_listener_disable_warning_summary" msgid="205200471571837170">"ຫາກທ່ານປິດສິດເຂົ້າເຖິງການແຈ້ງເຕືອນສຳລັບ <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, ການຄວບຄຸມຫ້າມລົບກວນອາດຖືກປິດໄປນຳ."</string>
     <string name="notification_listener_disable_modes_warning_summary" msgid="7528432011433844158">"ຫາກທ່ານປິດການເຂົ້າເຖິງການແຈ້ງເຕືອນສຳລັບ <xliff:g id="NOTIFICATION_LISTENER_NAME">%1$s</xliff:g>, ການເຂົ້າເຖິງໂໝດອາດຈະຖືກປິດໄປນຳ."</string>
     <string name="notification_listener_disable_warning_confirm" msgid="841492108402184976">"ປິດໄວ້"</string>
     <string name="notification_listener_disable_warning_cancel" msgid="8802784105045594324">"ຍົກເລີກ"</string>
@@ -3923,11 +3938,9 @@
     <string name="interact_across_profiles_install_work_app_title" msgid="2821669067014436056">"ເພື່ອເຊື່ອມຕໍ່ຫາແອັບເຫຼົ່ານີ້, ກະລຸນາຕິດຕັ້ງ <xliff:g id="NAME">%1$s</xliff:g> ໃນ​ໂປຣ​ໄຟລ໌​ບ່ອນ​ເຮັດ​ວຽກຂອງທ່ານກ່ອນ"</string>
     <string name="interact_across_profiles_install_personal_app_title" msgid="4790651223324866344">"ເພື່ອເຊື່ອມຕໍ່ຫາແອັບເຫຼົ່ານີ້, ກະລຸນາຕິດຕັ້ງ <xliff:g id="NAME">%1$s</xliff:g> ໃນໂປຣໄຟລ໌ສ່ວນຕົວຂອງທ່ານກ່ອນ"</string>
     <string name="interact_across_profiles_install_app_summary" msgid="7715324358034968657">"ແຕະເພື່ອໂຫຼດແອັບ"</string>
-    <!-- no translation found for manage_zen_access_title (4123905441114743974) -->
-    <skip />
+    <string name="manage_zen_access_title" msgid="4123905441114743974">"ການຄວບຄຸມຫ້າມລົບກວນ"</string>
     <string name="zen_access_detail_switch" msgid="4183681772666138993">"ອະນຸຍາດໂໝດຫ້າມລົບກວນ"</string>
-    <!-- no translation found for zen_access_empty_text (2662270585004373785) -->
-    <skip />
+    <string name="zen_access_empty_text" msgid="2662270585004373785">"ບໍ່ມີແອັບທີ່ຕິດຕັ້ງທີ່ໄດ້ຮ້ອງຂໍການຄວບຄຸມຫ້າມລົບກວນ"</string>
     <string name="manage_zen_modes_access_title" msgid="2520680004915648824">"ການເຂົ້າເຖິງໂໝດ"</string>
     <string name="zen_modes_access_detail_switch" msgid="4060429747631111299">"ອະນຸຍາດການເຂົ້າເຖິງໂໝດ"</string>
     <string name="zen_modes_access_empty_text" msgid="8750927923904377110">"ບໍ່ມີແອັບໃດທີ່ຕິດຕັ້ງໄວ້ຂໍເຂົ້າເຖິງໂໝດ"</string>
@@ -4238,13 +4251,10 @@
     <string name="default_phone_title" msgid="7616730756650803827">"ແອັບ​ໂທ​ລ​ະ​ສັບ"</string>
     <string name="system_app" msgid="1863291702508355041">"(ລະບົບ)"</string>
     <string name="apps_storage" msgid="643866814746927111">"ບ່ອນ​ຈັດ​ເກັບ​ແອັບ"</string>
-    <!-- no translation found for usage_access (640680494210288246) -->
-    <skip />
-    <!-- no translation found for permit_usage_access (1590518257313260262) -->
-    <skip />
+    <string name="usage_access" msgid="640680494210288246">"ຂໍ້ມູນການນຳໃຊ້ແອັບ"</string>
+    <string name="permit_usage_access" msgid="1590518257313260262">"ອະນຸຍາດສິດເຂົ້າເຖິງຫາຂໍ້ມູນການນຳໃຊ້ແອັບ"</string>
     <string name="time_spent_in_app_pref_title" msgid="25327097913383330">"ເວລາໜ້າຈໍ"</string>
-    <!-- no translation found for usage_access_description (2593955296993609047) -->
-    <skip />
+    <string name="usage_access_description" msgid="2593955296993609047">"ຂໍ້ມູນການນຳໃຊ້ແອັບອະນຸຍາດໃຫ້ແອັບຕິດຕາມເບິ່ງວ່າທ່ານກຳລັງໃຊ້ແອັບອື່ນໃດແດ່ ແລະ ໃຊ້ເລື້ອຍໆປານໃດ, ຮວມທັງຜູ້ໃຫ້ບໍລິການ, ການຕັ້ງຄ່າພາສາ ແລະ ລາຍລະອຽດອື່ນໆຂອງທ່ານ."</string>
     <string name="memory_settings_title" msgid="6582588646363308430">"ໜ່ວຍ​ຄວາມ​ຈຳ"</string>
     <string name="always_running" msgid="9012705720688200252">"ໃຊ້​​ຢູ່​ສະ​ເໝີ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
     <string name="sometimes_running" msgid="7954947311082655448">"ໃຊ້​ບາງ​ຄັ້ງ (<xliff:g id="PERCENTAGE">%s</xliff:g>)"</string>
@@ -4342,8 +4352,7 @@
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"ອາດໃຊ້ແບັດເຕີຣີຂອງທ່ານໝົດໄວຂຶ້ນ. ຈະບໍ່ມີການຈຳກັດການນຳໃຊ້ແບັດເຕີຣີໃນພື້ນຫຼັງອີກຕໍ່ໄປ."</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"ແນະ​ນໍາ​ສຳລັບອາຍຸໃຊ້ງານແບັດເຕີຣີທີ່ດີກວ່າ"</string>
     <string name="app_list_preference_none" msgid="1635406344616653756">"ບໍ່ມີ"</string>
-    <!-- no translation found for work_profile_usage_access_warning (7579246573371327219) -->
-    <skip />
+    <string name="work_profile_usage_access_warning" msgid="7579246573371327219">"ການປິດຂໍ້ມູນການນຳໃຊ້ແອັບສຳລັບແອັບນີ້ຈະບໍ່ເປັນການປ້ອງກັນບໍ່ໃຫ້ຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານຕິດຕາມການນຳໃຊ້ອິນເຕີເນັດສຳລັບແອັບໃນໂປຣໄຟລ໌ບ່ອນເຮັດວຽກຂອງທ່ານ"</string>
     <string name="draw_overlay" msgid="7902083260500573027">"ສະແດງແອັບບັງແອັບອື່ນ"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"ສະແດງແອັບບັງແອັບອື່ນ"</string>
     <string name="permit_draw_overlay" msgid="4468994037192804075">"ອະນຸຍາດໃຫ້ສະແດງແອັບບັງແອັບອື່ນ"</string>
@@ -4414,8 +4423,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"ຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານສາມາດຕິດຕາມ ແລະ ຈັດການແອັບ ແລະ ຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບຜູ້ໃຊ້ນີ້ໄດ້ ເຊິ່ງຮວມເຖິງການຕັ້ງຄ່າ, ການອະນຸຍາດ, ການເຂົ້າເຖິງອົງກອນ, ການເຄື່ອນໄຫວເຄືອຂ່າຍ ແລະ ຂໍ້ມູນສະຖານທີ່ຂອງອຸປະກອນ."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"ຜູ້ເບິ່ງແຍງລະບົບຂອງທ່ານສາມາດຕິດຕາມ ແລະ ຈັດການແອັບ ແລະ ຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບອຸປະກອນນີ້ໄດ້ ເຊິ່ງຮວມເຖິງການຕັ້ງຄ່າ, ການອະນຸຍາດ, ການເຂົ້າເຖິງອົງກອນ, ການເຄື່ອນໄຫວເຄືອຂ່າຍ ແລະ ຂໍ້ມູນສະຖານທີ່ຂອງອຸປະກອນ."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"ຜູ້ເບິ່ງແຍງລະບົບອຸປະກອນຂອງທ່ານອາດສາມາດເຂົ້າເຖິງຂໍ້ມູນທີ່ເຊື່ອມໂຍງກັບອຸປະກອນນີ້, ຈັດການແອັບ ແລະ ປ່ຽນການຕັ້ງຄ່າອຸປະກອນນີ້ໄດ້."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"ປ້ອງກັນໂດຍການປົກປ້ອງຂັ້ນສູງ"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"ຄຳສັ່ງນີ້ບໍ່ໄດ້ຮັບອະນຸຍາດຍ້ອນວ່າການປົກປ້ອງຂັ້ນສູງເປີດຢູ່ສຳລັບອຸປະກອນຂອງທ່ານ."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"ປິດ"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"ເປີດ​ໃຊ້"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"ສະແດງ"</string>
@@ -4641,6 +4660,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"ຄວາມລະອຽດອ່ອນທີ່ສູງຂຶ້ນອາດຂັດແຍ່ງກັບທ່າທາງແອັບໃດໆທີ່ມີຢູ່ຂອບຈໍ."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"ຄວາມລະອຽດອ່ອນກັບຫຼັງ"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"ການນຳທາງແບບທ່າທາງ"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"ການນຳທາງແບບປຸ່ມ"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"ການນຳທາງທ່າທາງ, ຄວາມລະອຽດອ່ອນທາງຫຼັງ, ທ່າທາງທາງຫຼັງ"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"ການນຳທາງ, ປຸ່ມໜ້າທໍາອິດ"</string>
@@ -5151,8 +5172,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"ແຜງການຕັ້ງຄ່າ"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"ເປີດການນຳໃຊ້ໜ້າຈໍຮູບແບບອິດສະຫຼະ"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"ເປີດການນຳໃຊ້ຄຸນສົມບັດປະສົບການເດັສທັອບ"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"ເປີດການນຳໃຊ້ມຸມມອງເດັສທັອບຢູ່ອຸປະກອນ ແລະ ຢູ່ຈໍສະແດງຜົນສຳຮອງ."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"ເປີດການນຳໃຊ້ມຸມມອງເດັສທັອບຢູ່ຈໍສະແດງຜົນສຳຮອງ."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"ເປີດການນຳໃຊ້ໜ້າຈໍຮູບແບບອິດສະຫຼະຢູ່ຈໍສະແດງຜົນສຳຮອງ"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"ເປີດການນຳໃຊ້ແບບບໍ່ສາມາດປັບຂະໜາດໃນການໃຊ້ຫຼາຍໜ້າຈໍ"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"ອະນຸຍາດໃຫ້ມີແອັບແບບບໍ່ສາມາດປັບຂະໜາດໄດ້ໃນການໃຊ້ຫຼາຍໜ້າຈໍ"</string>
@@ -5232,7 +5255,7 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"ໂໝດບໍ່ຂຶ້ນກັບໜ້າ ໂດຍໃຊ້ຂະໜາດ 16 KB"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"ອ່ານເພີ່ມເຕີມ"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"ເອີ້ນໃຊ້ແອັບດ້ວຍໂໝດຄວາມເຂົ້າກັນໄດ້ກັບຂະໜາດໜ້າ"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
     <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
     <skip />
@@ -5721,5 +5744,7 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"ປ່ຽນ PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"ລືມ PIN"</string>
     <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <skip />
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>

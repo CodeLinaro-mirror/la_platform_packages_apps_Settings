@@ -466,6 +466,8 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Tryck på fingeravtryckssensorn"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Fingeravtrycket känns inte igen"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Upplåsning med klockan"</string>
+    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
+    <skip />
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"När du konfigurerar ansiktslås och fingeravtryckslås frågar telefonen om fingeravtryck när du använder munskydd eller om det är mörkt.\n\nMed upplåsning med klockan kan du smidigt låsa upp telefonen, till exempel när dina fingrar är fuktiga eller ditt ansikte inte känns igen."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Med upplåsning med klockan kan du smidigt låsa upp telefonen, till exempel när ditt fingeravtryck inte känns igen."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Med upplåsning med klockan kan du smidigt låsa upp telefonen, till exempel när ditt ansikte inte känns igen."</string>
@@ -784,10 +786,8 @@
     <string name="unlock_set_unlock_password_title" msgid="2559842616268607041">"Lösenord"</string>
     <string name="unlock_set_do_later_title" msgid="6565575303676064364">"Inte nu"</string>
     <string name="current_screen_lock" msgid="1367883977261098017">"Nuvarande skärmlås"</string>
-    <!-- no translation found for unlock_accessibility_pin_area (437104569661316525) -->
-    <skip />
-    <!-- no translation found for unlock_accessibility_password (5404713613573232309) -->
-    <skip />
+    <string name="unlock_accessibility_pin_area" msgid="437104569661316525">"Pinkodsområde"</string>
+    <string name="unlock_accessibility_password" msgid="5404713613573232309">"Lösenord för enhet"</string>
     <string name="fingerprint_unlock_set_unlock_pattern" msgid="2229689425933043901">"Mönster • Fingeravtryck"</string>
     <string name="fingerprint_unlock_set_unlock_pin" msgid="7979848492740627674">"Pinkod • Fingeravtryck"</string>
     <string name="fingerprint_unlock_set_unlock_password" msgid="6207676267295036963">"Lösenord • Fingeravtryck"</string>
@@ -1321,6 +1321,8 @@
     <string name="screen_resolution_option_high" msgid="2617496842852992853">"Hög upplösning"</string>
     <string name="screen_resolution_option_full" msgid="4456839315039000517">"Högsta upplösning"</string>
     <string name="screen_resolution_footer" msgid="1230761249204935717">"Högsta upplösning drar mer batteri. Om du byter upplösning kan vissa appar startas om."</string>
+    <!-- no translation found for screen_resolution_delimiter_a11y (5826162120538795842) -->
+    <skip />
     <string name="color_mode_title" msgid="8666690832113906028">"Färger"</string>
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturliga"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Förstärkta"</string>
@@ -2268,6 +2270,16 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Läs mer om inställningar för textning"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Förstoring"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Genväg till förstoring"</string>
+    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
+    <skip />
+    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
+    <skip />
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Förstora texten du skriver"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Förstoraren följer texten medan du skriver"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Behåll på när du byter app"</string>
@@ -2321,8 +2333,7 @@
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"Tryck på en knapp för att zooma"</string>
     <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"Zooma in snabbt så att innehåll på skärmen förstoras"</string>
     <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"&lt;b&gt;Så här zoomar du in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Starta förstoring med genvägen&lt;br/&gt; {1,number,integer}. Tryck på skärmen&lt;br/&gt; {2,number,integer}. Navigera på skärmen genom att dra med två fingrar&lt;br/&gt; {3,number,integer}. Nyp med två fingrar för att justera zoomnivån&lt;br/&gt; {4,number,integer}. Stoppa förstoringen med genvägen&lt;br/&gt;&lt;br/&gt; &lt;b&gt;Så här zoomar du in tillfälligt:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Kontrollera att förstoringstyp är inställd som helskärm&lt;br/&gt; {1,number,integer}. Starta förstoring med genvägen&lt;br/&gt; {2,number,integer}. Tryck länge var som helst på skärmen&lt;br/&gt; {3,number,integer}. Navigera på skärmen genom att dra med fingret&lt;br/&gt; {4,number,integer}. Stoppa förstoringen genom att lyfta fingret"</string>
-    <!-- no translation found for accessibility_screen_magnification_keyboard_summary (2504303274186294767) -->
-    <skip />
+    <string name="accessibility_screen_magnification_keyboard_summary" msgid="2504303274186294767">"&lt;b&gt;Så här zoomar du med tangentbordet:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Starta förstoring med kortkommandot&lt;br/&gt; {1,number,integer}. Håll ned &lt;xliff:g id=meta1&gt;%1$s&lt;/xliff:g&gt; och &lt;xliff:g id=alt1&gt;%2$s&lt;/xliff:g&gt; och tryck på + eller – för att zooma in eller ut&lt;br/&gt; {2,number,integer}. Håll ned &lt;xliff:g id=meta2&gt;%3$s&lt;/xliff:g&gt; och &lt;xliff:g id=alt2&gt;%4$s&lt;/xliff:g&gt; och tryck på piltangenterna för att navigera på skärmen&lt;br/&gt; {3,number,integer}. Stoppa förstoringen med kortkommandot"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off" msgid="1779959623535122324">"&lt;b&gt;Så här zoomar du in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Starta förstoring med kortkommando&lt;br/&gt; {1,number,integer}. Tryck på skärmen&lt;br/&gt; {2,number,integer}. Navigera på skärmen genom att dra med två fingrar&lt;br/&gt; {3,number,integer}. Nyp med två fingrar för att justera zoomnivån&lt;br/&gt; {4,number,integer}. Stoppa förstoring med kortkommando&lt;br/&gt;&lt;br/&gt; Du kan även zooma in tillfälligt med mera."</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_on" msgid="7323930759240678965">"&lt;b&gt;Så här zoomar du in:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. Starta förstoring med kortkommando&lt;br/&gt; {1,number,integer}. Tryck på skärmen&lt;br/&gt; {2,number,integer}. Navigera på skärmen genom att dra med ett finger eller två fingrar&lt;br/&gt; {3,number,integer}. Nyp med två fingrar för att justera zoomnivån&lt;br/&gt; {4,number,integer}. Stoppa förstoring med kortkommando&lt;br/&gt;&lt;br/&gt; Du kan även zooma in tillfälligt med mera."</string>
     <string name="accessibility_screen_magnification_navbar_summary" msgid="807985499898802296">"När förstoring har aktiverats kan du zooma in på skärmen.\n\n"<b>"Om du vill zooma"</b>" aktiverar du förstoring och trycker var som helst på skärmen.\n"<ul><li>"Scrolla genom att dra med minst två fingrar."</li>\n<li>"Justera zoomen genom att nypa med minst två fingrar."</li></ul>\n\n<b>"Om du vill zooma tillfälligt"</b>" aktiverar du förstoring och trycker länge var som helst på skärmen.\n"<ul><li>"Flytta runt på skärmen genom att dra."</li>\n<li>"Zooma ut genom att lyfta fingret."</li></ul>\n\n"Det går inte att zooma in på tangentbordet eller navigeringsfältet."</string>
@@ -2829,7 +2840,12 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>–<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> till <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <string name="battery_usage_time_info_and_battery_level" msgid="6732629268310936155">"<xliff:g id="TIME_INFO">%1$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%2$s</xliff:g>"</string>
+    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
+    <skip />
+    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
+    <skip />
     <string name="battery_usage_chart" msgid="4114747521432440017">"Diagram över batteriförbrukning"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Diagram över batteriförbrukning per dag"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Diagram över batteriförbrukning per timme"</string>
@@ -3119,6 +3135,12 @@
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(kontrollera inte servern)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(mottaget från server)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Informationen som angavs stöder inte Alltid på-VPN"</string>
+    <!-- no translation found for vpn_optional (3085880299239180702) -->
+    <skip />
+    <!-- no translation found for vpn_required (2538500165710360491) -->
+    <skip />
+    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Avbryt"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Ignorera"</string>
     <string name="vpn_save" msgid="683868204634860888">"Spara"</string>
@@ -4414,8 +4436,18 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Administratören kan övervaka och hantera appar och data som är kopplade till den här användaren, bland annat inställningar, behörigheter, företagsåtkomst, nätverksaktivitet och enhetens platsuppgifter."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Administratören kan övervaka och hantera appar och data som är kopplade till den här enheten, bland annat inställningar, behörigheter, företagsåtkomst, nätverksaktivitet och enhetens platsuppgifter."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Enhetsadministratören kanske kan komma åt data kopplad till den här enheten, hantera appar och ändra enhetens inställningar."</string>
-    <string name="disabled_by_advanced_protection_title" msgid="766656508280098112">"Förhindras av Avancerat skydd"</string>
-    <string name="disabled_by_advanced_protection_message" msgid="5515085544669304056">"Den här åtgärden tillåts inte eftersom Avancerat skydd är aktiverat för enheten."</string>
+    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
+    <skip />
+    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
+    <skip />
     <string name="condition_turn_off" msgid="402707350778441939">"Inaktivera"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Aktivera"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Visa"</string>
@@ -4641,6 +4673,8 @@
     <string name="back_sensitivity_dialog_message" msgid="6638367716784103306">"Om känsligheten höjs kan konflikter med apprörelser längs skärmens kant uppstå."</string>
     <string name="back_sensitivity_dialog_title" msgid="6153608904168908264">"Känslighet för tillbaka-rörelsen"</string>
     <string name="gesture_settings_activity_title" msgid="1882463161833981820">"Navigering med rörelser"</string>
+    <!-- no translation found for gesture_navigation_tutorial_title (1605955266131665429) -->
+    <skip />
     <string name="button_navigation_settings_activity_title" msgid="7335636045504461813">"Navigering med knappar"</string>
     <string name="keywords_gesture_navigation_settings" msgid="667561222717238931">"navigering med rörelser, känslighet för bakåtrörelsen, bakåtrörelse"</string>
     <string name="keywords_button_navigation_settings" msgid="7888812253110553920">"navigering, hemknappen"</string>
@@ -5151,8 +5185,10 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Panelen Inställningar"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Aktivera frihandsfönster"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Aktivera datorupplevelsen"</string>
-    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="6021998363632868925">"Aktivera datorvyn på enheten och på sekundära skärmar."</string>
-    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="6635507335168490646">"Aktivera datorvyn på sekundära skärmar."</string>
+    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
+    <skip />
+    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
+    <skip />
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Aktivera frihandsfönster på sekundär skärm"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Aktivera appar vars storlek inte kan ändras i flerfönsterläge"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Låter appar vars storlek inte kan ändras finnas i flerfönsterläge"</string>
@@ -5232,12 +5268,10 @@
     <string name="page_agnostic_notification_channel_name" msgid="2058933148654316447">"16 kB-versionen av det sidagnostiska läget"</string>
     <string name="page_agnostic_notification_action" msgid="2309805437430150456">"Läs mer"</string>
     <string name="enable_16k_app_compat_title" msgid="4173159228844992989">"Kör appen i kompatibilitetsläge för sidstorlek"</string>
-    <!-- no translation found for enable_16k_app_compat_details (8008347535539304604) -->
+    <!-- no translation found for enable_16k_app_compat_details (5382562613011853452) -->
     <skip />
-    <!-- no translation found for stop_app_dlg_title (3153921585174512587) -->
-    <skip />
-    <!-- no translation found for stop_app_dlg_text (4373849065005318901) -->
-    <skip />
+    <string name="stop_app_dlg_title" msgid="3153921585174512587">"Vill du avsluta appen?"</string>
+    <string name="stop_app_dlg_text" msgid="4373849065005318901">"Appen stoppas för att tillämpa inställningen för kompatibilitet med sidstorlek."</string>
     <string name="bug_report_handler_title" msgid="713439959113250125">"Felrapportshanterare"</string>
     <string name="bug_report_handler_picker_footer_text" msgid="4935758328366585673">"Avgör vilken app som hanterar Genväg till felrapport på enheten."</string>
     <string name="personal_profile_app_subtext" msgid="5586060806997067676">"Privat"</string>
@@ -5571,8 +5605,7 @@
     <string name="content_protection_preference_subpage_summary" msgid="3595621220981703364"></string>
     <string name="content_protection_preference_subpage_info" msgid="6890886357653365489"></string>
     <string name="accessibility_setup_password_complete" msgid="6358749253318369077">"Nu är lösenordet inställt"</string>
-    <!-- no translation found for accessibility_setup_pin_complete (7626702882001984236) -->
-    <skip />
+    <string name="accessibility_setup_pin_complete" msgid="7626702882001984236">"Pinkoden har nu ställts in"</string>
     <string name="show_stylus_pointer_icon" msgid="1010583689203665786">"Visa pekare när du håller muspekaren över något"</string>
     <string name="media_drm_settings_title" msgid="897424966554739867">"Medieinställningar för kopieringsskydd"</string>
     <string name="force_swcrypto_fallback_title" msgid="8053166299808645593">"Tvinga säker mjukvarukryptering"</string>
@@ -5720,6 +5753,7 @@
     <string name="supervision_pin_management_preference_summary_add" msgid="3244161328612671896">"Lägg till en pinkod för återställning"</string>
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Byt pinkod"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"Glömt pinkoden"</string>
-    <!-- no translation found for supervision_web_content_filters_title (3653430162065686156) -->
+    <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"Webbinnehållsfilter"</string>
+    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
     <skip />
 </resources>
