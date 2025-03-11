@@ -16,7 +16,7 @@
  * Changes from Qualcomm Innovation Center are provided under the
  * following license:
  *
- * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2023,2025 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
@@ -24,9 +24,11 @@ package com.android.settings.development;
 
 import android.app.Dialog;
 import android.app.settings.SettingsEnums;
+import android.bluetooth.BluetoothAdapter;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.os.PowerManager;
+import android.util.Log;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.FragmentManager;
@@ -34,22 +36,25 @@ import androidx.fragment.app.FragmentManager;
 import com.android.settings.R;
 import com.android.settings.core.instrumentation.InstrumentedDialogFragment;
 
+import java.lang.Thread;
+
 /**
  * The A2dpSink  switch should reboot the device to take effect,
  * the dialog is to ask the user to reboot the device.
  */
-public class A2dpSinkRebootDialog extends InstrumentedDialogFragment
+public class BluetoothAudioRoleSwitchRebootDialog extends InstrumentedDialogFragment
         implements DialogInterface.OnClickListener {
 
-    public static final String TAG = "A2dpSinkRebootDialog";
-
+    public static final String TAG = "BluetoothAudioRoleSwitchRebootDialog";
+    private static BluetoothAdapter mBluetoothAdapter = null;
+    private static boolean disableTriggered = false;
     /**
      * The function to show the Dialog.
      */
     public static void show(DevelopmentSettingsDashboardFragment host) {
         final FragmentManager manager = host.getActivity().getSupportFragmentManager();
         if (manager.findFragmentByTag(TAG) == null) {
-            final A2dpSinkRebootDialog dialog = new A2dpSinkRebootDialog();
+            final BluetoothAudioRoleSwitchRebootDialog dialog = new BluetoothAudioRoleSwitchRebootDialog();
             dialog.setTargetFragment(host, 0 /* requestCode */);
             dialog.show(manager, TAG);
         }
@@ -63,10 +68,10 @@ public class A2dpSinkRebootDialog extends InstrumentedDialogFragment
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         return new AlertDialog.Builder(getActivity())
-                .setMessage(R.string.a2dp_sink_reboot_dialog_message)
-                .setTitle(R.string.a2dp_sink_reboot_dialog_title)
+                .setMessage(R.string.bluetooth_reboot_dialog_message)
+                .setTitle(R.string.bluetooth_reboot_dialog_title)
                 .setPositiveButton(
-                        R.string.a2dp_sink_reboot_dialog_confirm, this)
+                        R.string.bluetooth_reboot_dialog_confirm, this)
                 .setNegativeButton(
                         android.R.string.cancel, this)
                 .create();
@@ -74,32 +79,52 @@ public class A2dpSinkRebootDialog extends InstrumentedDialogFragment
 
     @Override
     public void onClick(DialogInterface dialog, int which) {
-        final OnA2dpSinkRebootDialogConfirmedListener host =
-                (OnA2dpSinkRebootDialogConfirmedListener) getTargetFragment();
+        final OnBluetoothAudioRoleSwitchRebootDialogConfirmedListener host =
+                (OnBluetoothAudioRoleSwitchRebootDialogConfirmedListener) getTargetFragment();
         if (host == null) {
             return;
         }
         if (which == DialogInterface.BUTTON_POSITIVE) {
-            host.onA2dpSinkRebootDialogConfirmed();
-            PowerManager pm = getContext().getSystemService(PowerManager.class);
-            pm.reboot(null);
+            mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+            host.onBluetoothAudioRoleSwitchRebootDialogConfirmed();
+            if (mBluetoothAdapter != null) {
+                if (mBluetoothAdapter.isEnabled()) {
+                    /*Disabling bluetooth*/
+                    mBluetoothAdapter.disable();
+                    disableTriggered = true;
+                }
+            } else {
+                Log.e(TAG, "BluetoothAdapter is NULL, not able to restart BT");
+            }
+            mBluetoothAdapter = null;
         } else {
-            host.onA2dpSinkRebootDialogCanceled();
+            host.onBluetoothAudioRoleSwitchRebootDialogCanceled();
+        }
+    }
+
+    public static void enableBluetooth() {
+        mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (mBluetoothAdapter != null && disableTriggered) {
+            Log.d(TAG, "Enabling bluetooth after resetting the bluetooth profiles role");
+            disableTriggered = false;
+            mBluetoothAdapter.enable();
+        } else {
+            Log.e(TAG, "BluetoothAdapter is NULL or Disable triggered from other user");
         }
     }
 
     /**
      * Interface for EnableAdbWarningDialog callbacks.
      */
-    public interface OnA2dpSinkRebootDialogConfirmedListener {
+    public interface OnBluetoothAudioRoleSwitchRebootDialogConfirmedListener {
         /**
          * Called when the user presses enable on the warning dialog.
          */
-        void onA2dpSinkRebootDialogConfirmed();
+        void onBluetoothAudioRoleSwitchRebootDialogConfirmed();
 
         /**
          * Called when the user presses cancel on the warning dialog.
          */
-        void onA2dpSinkRebootDialogCanceled();
+        void onBluetoothAudioRoleSwitchRebootDialogCanceled();
     }
 }

@@ -249,16 +249,16 @@
     <!-- Summary of toggle for enabling Bluetooth LE audio Allow List [CHAR LIMIT=none]-->
     <string name="bluetooth_enable_leaudio_allow_list_summary">Enable Bluetooth LE audio allow list feature.</string>
 
-    <!-- Setting Checkbox title for enabling Bluetooth A2DP SOURCE Role. [CHAR LIMIT=none] -->
-    <string name="bluetooth_disable_a2dp_source_and_enable_a2dp_sink">Enable Bluetooth A2DP Sink and Disable A2DP Source</string>
-    <!-- Summary of checkbox for enabling Bluetooth A2DP source Role [CHAR LIMIT=none]-->
-    <string name="bluetooth_disable_a2dp_source_and_enable_a2dp_sink_summary">Enable Bluetooth A2DP Sink and Disables A2DP Source Role</string>
+    <!-- Setting Checkbox title for enabling Bluetooth Audio SOURCE Role. [CHAR LIMIT=none] -->
+    <string name="bluetooth_enable_audio_source_role">Enable Bluetooth A2DP Source and HF Gateway Role</string>
+    <!-- Summary of checkbox for enabling Bluetooth Audio source Role [CHAR LIMIT=none]-->
+    <string name="bluetooth_enable_audio_source_role_summary">Enable Bluetooth A2DP Source, HF Gateway Role and Disables A2DP Sink, HFP Client Role</string>
     <!-- A2dpSink developer settings: The title of the popup dialog. [CHAR_LIMIT=60] -->
-    <string name="a2dp_sink_reboot_dialog_title">Restart Device?</string>
+    <string name="bluetooth_reboot_dialog_title">Restart Bluetooth?</string>
     <!-- A2dpSink developer settings: The content of the popup dialog. [CHAR_LIMIT=NONE] -->
-    <string name="a2dp_sink_reboot_dialog_message">You need to restart your device to change this setting. </string>
+    <string name="bluetooth_reboot_dialog_message">You need to restart your bluetooth to change this setting. </string>
     <!-- A2dpSink developer settings: The confirm button of the popup dialog. [CHAR_LIMIT=60] -->
-    <string name="a2dp_sink_reboot_dialog_confirm">Restart</string>
+    <string name="bluetooth_reboot_dialog_confirm">Restart</string>
 
     <!-- Title for Bluetooth device group with media capability group [CHAR LIMIT=none]-->
     <string name="connected_device_media_device_title">Media devices</string>

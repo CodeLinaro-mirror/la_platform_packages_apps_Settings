@@ -16,13 +16,17 @@
  * Changes from Qualcomm Innovation Center are provided under the
  * following license:
  *
- * Copyright (c) 2023 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Copyright (c) 2023, 2025 Qualcomm Innovation Center, Inc. All rights reserved.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
 package com.android.settings.development;
 
+import android.bluetooth.BluetoothAdapter;
+import android.content.BroadcastReceiver;
 import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.SystemProperties;
 import android.util.Log;
 
@@ -36,31 +40,40 @@ import com.android.settingslib.development.DeveloperOptionsPreferenceController;
 /**
  * Preference controller to control A2DP Role
  */
-public class BluetoothA2dpRolePreferenceController extends
+public class BluetoothAudioRoleSwitch extends
         DeveloperOptionsPreferenceController implements Preference.OnPreferenceChangeListener,
         PreferenceControllerMixin {
 
     private static final String TAG = "A2dpRole";
     private static final String A2DP_SINK_ROLE_KEY =
-            "bluetooth_disable_a2dp_sink_and_enable_a2dp_source";
+            "bluetooth_enable_audio_source_role";
     @VisibleForTesting
     static final String A2DP_SINK_ROLE_PROPERTY =
             "persist.vendor.service.bt.a2dp.sink";
 
     @VisibleForTesting
-    static final String A2DP_SINK_ROLE_ENABLED = "true";
+    static final String HFP_CLIENT_ROLE_PROPERTY =
+            "persist.vendor.service.bt.hfp.client";
+
     @VisibleForTesting
-    static final String A2DP_SINK_ROLE_DISABLED = "false";
+    static final String SINK_ROLE_ENABLED = "true";
+    @VisibleForTesting
+    static final String SINK_ROLE_DISABLED = "false";
 
     @VisibleForTesting
     boolean mChanged = false;
+    private BroadcastReceiver mReceiver;
+    private Context mContext;
 
     private final DevelopmentSettingsDashboardFragment mFragment;
 
-    public BluetoothA2dpRolePreferenceController(Context context,
+    public BluetoothAudioRoleSwitch(Context context,
             DevelopmentSettingsDashboardFragment fragment) {
         super(context);
+        mContext = context;
         mFragment = fragment;
+        mReceiver =  new BTStateChangeReceiver();
+        mContext.registerReceiver(mReceiver, new IntentFilter(BluetoothAdapter.ACTION_STATE_CHANGED));
     }
 
     @Override
@@ -70,7 +83,7 @@ public class BluetoothA2dpRolePreferenceController extends
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        A2dpSinkRebootDialog.show(mFragment);
+        BluetoothAudioRoleSwitchRebootDialog.show(mFragment);
         mChanged = true;
         return false;
     }
@@ -80,7 +93,7 @@ public class BluetoothA2dpRolePreferenceController extends
         super.updateState(preference);
         final boolean currentValue =
                  SystemProperties.getBoolean(A2DP_SINK_ROLE_PROPERTY, true);
-        ((SwitchPreference) mPreference).setChecked(currentValue);
+        ((SwitchPreference) mPreference).setChecked(!currentValue);
     }
 
 
@@ -88,10 +101,11 @@ public class BluetoothA2dpRolePreferenceController extends
     protected void onDeveloperOptionsSwitchDisabled() {
         super.onDeveloperOptionsSwitchDisabled();
         try {
-            SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, A2DP_SINK_ROLE_ENABLED);
+            SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
+            SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_ENABLED);
             ((SwitchPreference) mPreference).setChecked(false);
         } catch (RuntimeException e) {
-            Log.e(TAG, "Fail to set A2DP sink system property: " + e.getMessage());
+            Log.e(TAG, "Fail to set A2DP sink and HFP Client system property: " + e.getMessage());
         }
     }
 
@@ -102,7 +116,7 @@ public class BluetoothA2dpRolePreferenceController extends
     public boolean isDefaultValue() {
        try {
             final String currentValue = SystemProperties.get(A2DP_SINK_ROLE_PROPERTY);
-            return !currentValue.equals(A2DP_SINK_ROLE_ENABLED);
+            return !currentValue.equals(SINK_ROLE_ENABLED);
         } catch (RuntimeException e) {
             Log.e(TAG, "Fail to get A2DP sink system property: " + e.getMessage());
         }
@@ -110,31 +124,47 @@ public class BluetoothA2dpRolePreferenceController extends
     }
 
     /**
-     * Called when the A2dpSinkRebootDialog confirm is clicked.
+     * Called when the BluetoothAudioRoleSwitchRebootDialog confirm is clicked.
      */
-    public void onA2dpSinkRebootDialogConfirmed() {
+    public void onBluetoothAudioRoleSwitchRebootDialogConfirmed() {
         if (!mChanged) {
             return;
         }
         try {
             final String currentValue = SystemProperties
-                    .get(A2DP_SINK_ROLE_PROPERTY, A2DP_SINK_ROLE_ENABLED);
-            if (currentValue.equals(A2DP_SINK_ROLE_DISABLED)) {
-                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, A2DP_SINK_ROLE_ENABLED);
+                    .get(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
+            if (currentValue.equals(SINK_ROLE_DISABLED)) {
+                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
+                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_ENABLED);
             } else {
-                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, A2DP_SINK_ROLE_DISABLED);
+                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_DISABLED);
+                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_DISABLED);
             }
             updateState(mPreference);
         } catch (RuntimeException e) {
-            Log.e(TAG, "Fail to set A2DP sink system property: " + e.getMessage());
+            Log.e(TAG, "Fail to set A2DP sink and HFP Client system property: " + e.getMessage());
         }
     }
 
 
     /**
-     * Called when the A2dpSinkRebootDialog cancel is clicked.
+     * Called when the BluetoothAudioRoleSwitchRebootDialog cancel is clicked.
      */
-    public void onA2dpSinkRebootDialogCanceled() {
+    public void onBluetoothAudioRoleSwitchRebootDialogCanceled() {
         mChanged = false;
+    }
+
+    private final class BTStateChangeReceiver extends BroadcastReceiver {
+
+        public void onReceive(Context context, Intent intent) {
+            if (intent == null) {
+                return;
+            }
+            if (BluetoothAdapter.ACTION_STATE_CHANGED.equals(intent.getAction())
+                     && intent.getIntExtra(BluetoothAdapter.EXTRA_STATE, -1)
+                     == BluetoothAdapter.STATE_OFF) {
+                BluetoothAudioRoleSwitchRebootDialog.enableBluetooth();
+            }
+        }
     }
 }
