@@ -29,10 +29,7 @@ import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
 import android.os.Bundle;
-import android.os.SystemClock;
-import android.view.Choreographer;
 import android.view.View;
-import android.widget.SeekBar;
 import android.widget.TextView;
 import android.window.DesktopExperienceFlags;
 
@@ -46,13 +43,10 @@ import androidx.preference.PreferenceGroup;
 import com.android.internal.annotations.VisibleForTesting;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragmentBase;
-import com.android.settings.accessibility.AccessibilitySeekBarPreference;
-import com.android.settings.accessibility.DisplaySizeData;
 import com.android.settings.accessibility.TextReadingPreferenceFragment;
 import com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.DisplayListener;
 import com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.Injector;
 import com.android.settings.core.SubSettingLauncher;
-import com.android.settingslib.display.DisplayDensityUtils;
 import com.android.settingslib.widget.FooterPreference;
 import com.android.settingslib.widget.IllustrationPreference;
 import com.android.settingslib.widget.MainSwitchPreference;
@@ -352,36 +346,20 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
     }
 
     @NonNull
-    private AccessibilitySeekBarPreference reuseSizePreference(Context context,
-            PrefRefresh refresh, int displayId, int position) {
-        AccessibilitySeekBarPreference pref =
+    private ExternalDisplaySizePreference reuseSizePreference(Context context,
+            PrefRefresh refresh, DisplayDevice display, int position) {
+        ExternalDisplaySizePreference pref =
                 refresh.findUnusedPreference(PrefBasics.EXTERNAL_DISPLAY_SIZE.keyForNth(position));
         if (pref == null) {
-            pref = new AccessibilitySeekBarPreference(context, /* attrs= */ null);
-            pref.setIconStart(R.drawable.ic_remove_24dp);
-            pref.setIconStartContentDescription(R.string.screen_zoom_make_smaller_desc);
-            pref.setIconEnd(R.drawable.ic_add_24dp);
-            pref.setIconEndContentDescription(R.string.screen_zoom_make_larger_desc);
+            pref = new ExternalDisplaySizePreference(context, /* attrs= */ null);
             PrefBasics.EXTERNAL_DISPLAY_SIZE.apply(pref, position);
-
-            setStateForDisplaySizePreference(context, displayId, pref);
+        }
+        if (display.getMode() != null) {
+            pref.setStateForPreference(display.getMode().getPhysicalWidth(),
+                    display.getMode().getPhysicalHeight(), display.getId());
         }
         refresh.addPreference(pref);
         return pref;
-    }
-
-    private void setStateForDisplaySizePreference(Context context, int displayId,
-            AccessibilitySeekBarPreference preference) {
-        var displaySizeData = new DisplaySizeData(context,
-                new DisplayDensityUtils(context, (info) -> info.displayId == displayId));
-        ExternalDisplaySizePreferenceStateHandler seekBarChangeHandler =
-                new ExternalDisplaySizePreferenceStateHandler(
-                        displaySizeData, preference);
-
-        preference.setMax(displaySizeData.getValues().size() - 1);
-        preference.setProgress(displaySizeData.getInitialIndex());
-        preference.setContinuousUpdates(false);
-        preference.setOnSeekBarChangeListener(seekBarChangeHandler);
     }
 
     private void update() {
@@ -587,7 +565,7 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
 
     private void addSizePreference(final Context context, PrefRefresh refresh,
             DisplayDevice display, int position) {
-        var pref = reuseSizePreference(context, refresh, display.getId(), position);
+        var pref = reuseSizePreference(context, refresh, display, position);
         pref.setSummary(EXTERNAL_DISPLAY_SIZE_SUMMARY_RESOURCE);
         pref.setOnPreferenceClickListener(
                 (Preference p) -> {
@@ -635,54 +613,6 @@ public class ExternalDisplayPreferenceFragment extends SettingsPreferenceFragmen
             launchBuiltinDisplaySettings();
             return true;
         }
-    }
-
-    private static class ExternalDisplaySizePreferenceStateHandler
-            implements SeekBar.OnSeekBarChangeListener {
-        private static final long MIN_COMMIT_INTERVAL_MS = 800;
-        private static final long CHANGE_BY_BUTTON_DELAY_MS = 300;
-        private final DisplaySizeData mDisplaySizeData;
-        private int mLastDisplayProgress;
-        private long mLastCommitTime;
-        private final AccessibilitySeekBarPreference mPreference;
-        ExternalDisplaySizePreferenceStateHandler(DisplaySizeData displaySizeData,
-                AccessibilitySeekBarPreference preference) {
-            mDisplaySizeData = displaySizeData;
-            mPreference = preference;
-        }
-
-        final Choreographer.FrameCallback mCommit = this::tryCommitDisplaySizeConfig;
-
-        private void tryCommitDisplaySizeConfig(long unusedFrameTimeNanos) {
-            final int displayProgress = mPreference.getProgress();
-            if (displayProgress != mLastDisplayProgress) {
-                mDisplaySizeData.commit(displayProgress);
-                mLastDisplayProgress = displayProgress;
-            }
-            mLastCommitTime = SystemClock.elapsedRealtime();
-        }
-
-        private void postCommitDelayed() {
-            var commitDelayMs = CHANGE_BY_BUTTON_DELAY_MS;
-            if (SystemClock.elapsedRealtime() - mLastCommitTime < MIN_COMMIT_INTERVAL_MS) {
-                commitDelayMs += MIN_COMMIT_INTERVAL_MS;
-            }
-
-            final Choreographer choreographer = Choreographer.getInstance();
-            choreographer.removeFrameCallback(mCommit);
-            choreographer.postFrameCallbackDelayed(mCommit, commitDelayMs);
-        }
-
-        @Override
-        public void onProgressChanged(@NonNull SeekBar seekBar, int i, boolean b) {
-            postCommitDelayed();
-        }
-
-        @Override
-        public void onStartTrackingTouch(@NonNull SeekBar seekBar) {}
-
-        @Override
-        public void onStopTrackingTouch(@NonNull SeekBar seekBar) {}
     }
 
     private static class PrefRefresh implements AutoCloseable {
