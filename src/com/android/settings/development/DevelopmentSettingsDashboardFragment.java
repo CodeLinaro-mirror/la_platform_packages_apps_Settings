@@ -87,7 +87,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         AdbClearKeysDialogHost, LogPersistDialogHost,
         BluetoothA2dpHwOffloadRebootDialog.OnA2dpHwDialogConfirmedListener,
         AbstractBluetoothPreferenceController.Callback,
-        A2dpSinkRebootDialog.OnA2dpSinkRebootDialogConfirmedListener {
+        BluetoothAudioRoleSwitchRebootDialog.OnBluetoothAudioRoleSwitchRebootDialogConfirmedListener {
 
     private static final String TAG = "DevSettingsDashboard";
 
@@ -373,17 +373,17 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
     }
 
     @Override
-    public void onA2dpSinkRebootDialogConfirmed() {
-        final BluetoothA2dpRolePreferenceController controller =
-                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
-        controller.onA2dpSinkRebootDialogConfirmed();
+    public void onBluetoothAudioRoleSwitchRebootDialogConfirmed() {
+        final BluetoothAudioRoleSwitch controller =
+                getDevelopmentOptionsController(BluetoothAudioRoleSwitch.class);
+        controller.onBluetoothAudioRoleSwitchRebootDialogConfirmed();
     }
 
     @Override
-    public void onA2dpSinkRebootDialogCanceled() {
-        final BluetoothA2dpRolePreferenceController controller =
-                getDevelopmentOptionsController(BluetoothA2dpRolePreferenceController.class);
-        controller.onA2dpSinkRebootDialogCanceled();
+    public void onBluetoothAudioRoleSwitchRebootDialogCanceled() {
+        final BluetoothAudioRoleSwitch controller =
+                getDevelopmentOptionsController(BluetoothAudioRoleSwitch.class);
+        controller.onBluetoothAudioRoleSwitchRebootDialogCanceled();
     }
 
     @Override
@@ -548,7 +548,7 @@ public class DevelopmentSettingsDashboardFragment extends RestrictedDashboardFra
         controllers.add(new BluetoothAvrcpVersionPreferenceController(context));
         controllers.add(new BluetoothMapVersionPreferenceController(context));
         controllers.add(new BluetoothA2dpHwOffloadPreferenceController(context, fragment));
-        controllers.add(new BluetoothA2dpRolePreferenceController(context, fragment));
+        controllers.add(new BluetoothAudioRoleSwitch(context, fragment));
         controllers.add(new BluetoothMaxConnectedAudioDevicesPreferenceController(context));
         controllers.add(new ShowTapsPreferenceController(context));
         controllers.add(new PointerLocationPreferenceController(context));

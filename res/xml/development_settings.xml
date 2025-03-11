@@ -351,9 +351,9 @@
             android:title="@string/bluetooth_disable_a2dp_hw_offload" />
 
         <SwitchPreference
-            android:key="bluetooth_disable_a2dp_sink_and_enable_a2dp_source"
-            android:title="@string/bluetooth_disable_a2dp_sink_and_enable_a2dp_source"
-            android:summary="@string/bluetooth_disable_a2dp_sink_and_enable_a2dp_source_summary" />
+            android:key="bluetooth_enable_audio_source_role"
+            android:title="@string/bluetooth_enable_audio_source_role"
+            android:summary="@string/bluetooth_enable_audio_source_role_summary" />
 
         <ListPreference
             android:key="bluetooth_select_avrcp_version"
