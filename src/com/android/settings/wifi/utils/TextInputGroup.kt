@@ -59,6 +59,12 @@ open class TextInputGroup(
         editText.addTextChangedListener(watcher)
     }
 
+    var label: String
+        get() = layout.hint?.toString() ?: ""
+        set(value) {
+            layout.setHint(value)
+        }
+
     var text: String
         get() = editText.text?.toString() ?: ""
         set(value) {
@@ -75,6 +81,7 @@ open class TextInputGroup(
         get() = layout.error?.toString() ?: ""
         set(value) {
             layout.setError(value)
+            if (value.isEmpty()) layout.isErrorEnabled = false
         }
 
     open fun validate(): Boolean {
