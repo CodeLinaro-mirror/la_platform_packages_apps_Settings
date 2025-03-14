@@ -167,11 +167,13 @@
     <string name="date_and_time" msgid="1788358029823431692">"Data ir laikas"</string>
     <string name="proxy_settings_title" msgid="4201866858226087066">"Tarpinis serveris"</string>
     <string name="proxy_clear_text" msgid="6529658759984031149">"Išvalyti"</string>
-    <string name="proxy_port_label" msgid="4647357286461712574">"Tarpinio serverio prievadas"</string>
+    <!-- no translation found for proxy_port_label (6698001018215165848) -->
+    <skip />
     <string name="proxy_exclusionlist_label" msgid="2598613986784917542">"Išjungti įgaliotąjį serverį, skirtą"</string>
     <string name="proxy_defaultView_text" msgid="6795150505379688451">"Atkurti numatytuosius nustatymus"</string>
     <string name="proxy_action_text" msgid="1103328484441449542">"Atlikta"</string>
-    <string name="proxy_hostname_label" msgid="5504327742505848063">"Tarpinio serverio prieglobos pavadinimas"</string>
+    <!-- no translation found for proxy_hostname_label (345510072664361960) -->
+    <skip />
     <string name="proxy_error" msgid="3615905975598084126">"Dėmesio"</string>
     <string name="proxy_error_dismiss" msgid="4207430265140873078">"Gerai"</string>
     <string name="proxy_error_invalid_host" msgid="3814412792702059247">"Įvestas prieglobos serverio pavadinimas netinkamas."</string>
@@ -218,6 +220,8 @@
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"Sužinokite daugiau apie programos kalbas"</string>
     <string name="title_change_system_region" msgid="5476591184463491936">"Pakeisti regioną į: %s?"</string>
     <string name="desc_notice_device_region_change" msgid="6702773189066944100">"Jūsų įrenginyje %s bus išsaugota kaip sistemos kalba"</string>
+    <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
+    <skip />
     <string name="title_change_system_locale" msgid="8589844586256566951">"Pakeisti sistemos kalbą į %s ?"</string>
     <string name="title_system_locale_addition" msgid="8218683660751479466">"Pridėti %s prie pageidaujamų kalbų?"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"Tai nurodo programoms ir svetainėms, kad jūs taip pat teikiate pirmenybę šiai kalbai."</string>
@@ -461,8 +465,7 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Palieskite piršto atspaudo jutiklį"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Kontrolinis kodas neatpažintas"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Laikrodžio atrakinimas"</string>
-    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
-    <skip />
+    <string name="security_settings_activeunlock" msgid="8922823742770802651">"Žiūrėti"</string>
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Jei nustatote atrakinimą pagal veidą ir atrakinimą piršto atspaudu, telefone prašoma piršto atspaudo, kai dėvite kaukę arba esate tamsioje vietoje.\n\nLaikrodžio atrakinimo funkcija yra dar vienas patogus būdas atrakinti telefoną, pvz., kai jūsų pirštai šlapi arba kai nepavyksta atpažinti jūsų veido."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Laikrodžio atrakinimo funkcija yra dar vienas patogus būdas atrakinti telefoną, pvz., kai nepavyksta atpažinti jūsų piršto atspaudo."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Laikrodžio atrakinimo funkcija yra dar vienas patogus būdas atrakinti telefoną, pvz., kai nepavyksta atpažinti jūsų veido"</string>
@@ -1477,17 +1480,22 @@
     <string name="storage_settings_for_app" msgid="229425418984637483">"Saugykla ir talpykla"</string>
     <string name="storage_settings_title" msgid="486118156723194815">"Atmintinės nustatymai"</string>
     <string name="status_eid" msgid="3588471107671992684">"E​ID"</string>
-    <string name="eid_multi_sim" msgid="6551259348909791790">"E​ID (<xliff:g id="EID_SLOT_ID">%1$d</xliff:g> SIM kortelės anga)"</string>
-    <string name="imei_multi_sim" msgid="9001570420423929507">"IMEI (<xliff:g id="IMEI_SLOT_ID">%1$d</xliff:g> SIM lizdas)"</string>
-    <string name="imei_multi_sim_primary" msgid="7914653040843734282">"IMEI (<xliff:g id="IMEI_SLOT_ID_PRIMARY">%1$d</xliff:g> SIM lizdas) (pagrindinis)"</string>
+    <!-- no translation found for eid_multi_sim (6659492335576379274) -->
+    <skip />
+    <!-- no translation found for imei_multi_sim (27798473711249145) -->
+    <skip />
+    <!-- no translation found for imei_multi_sim_primary (4320457587114117400) -->
+    <skip />
     <string name="view_saved_network" msgid="1232387673095080910">"Norėdami peržiūrėti pasirinkite išsaugotą tinklą"</string>
     <string name="status_imei" msgid="5719752369250485007">"IMEI"</string>
     <string name="status_imei_sv" msgid="6908985558726440951">"IMEI SV"</string>
     <string name="status_min_number" msgid="4492899165438225714">"MIN."</string>
     <string name="status_msid_number" msgid="3871958248824595774">"MSID"</string>
     <string name="status_prl_version" msgid="9002131357502714281">"PRL versija"</string>
-    <string name="meid_multi_sim" msgid="1460689549266621286">"MEID (<xliff:g id="MEID_SLOT_ID">%1$d</xliff:g> SIM lizdas)"</string>
-    <string name="meid_multi_sim_primary" msgid="8921262417580407201">"MEID (<xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g> SIM lizdas) (pagrindinis)"</string>
+    <!-- no translation found for meid_multi_sim (5076814185188481456) -->
+    <skip />
+    <!-- no translation found for meid_multi_sim_primary (6269908735700854437) -->
+    <skip />
     <string name="scanning_status_text_on" msgid="3846571210578042940">"Įjungta"</string>
     <string name="scanning_status_text_off" msgid="4002352668313705132">"Išjungta"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
@@ -1555,6 +1563,8 @@
     <string name="storage_wizard_init_v2_or" msgid="5558706089661158026">"Arba"</string>
     <string name="storage_wizard_init_v2_external_title" msgid="2786416384217054112">"Formatuoti SD kortelę kaip nešiojamąją saugyklą"</string>
     <string name="storage_wizard_init_v2_external_summary" msgid="2002761631147966185">"Saugokite nuotraukas, vaizdo įrašus, muziką ir kitą turinį, kurį galėsite pasiekti kituose įrenginiuose. &lt;a href=https://support.google.com/android/answer/12153449&gt;Sužinokite daugiau apie SD kortelės nustatymą&lt;/a&gt;."</string>
+    <!-- no translation found for storage_wizard_init_v2_external_summary_non_sd_card (6638380506793421312) -->
+    <skip />
     <string name="storage_wizard_init_v2_external_action" msgid="6140058734875839081">"Formatuoti"</string>
     <string name="storage_wizard_init_v2_later" msgid="5366815913892609285">"Nustatyti vėliau"</string>
     <string name="storage_wizard_format_confirm_v2_title" msgid="6294104100437326067">"Formatuoti šią saugyklą (<xliff:g id="NAME">^1</xliff:g>)?"</string>
@@ -2408,7 +2418,8 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Didelio kontrasto tekstas"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Keiskite teksto spalvą į juodą arba baltą. Nustatykite didžiausią kontrastą su fonu."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Teksto kontrasto pagerinimas"</string>
-    <string name="accessibility_notification_high_contrast_text_body" msgid="4111896614825062003">"„<xliff:g id="OUTLINE_TEXT">%1$s</xliff:g>“ pakeitė „<xliff:g id="HIGH_CONTRAST_TEXT">%2$s</xliff:g>“. Galite jį įjungti skiltyje „<xliff:g id="SETTINGS">%3$s</xliff:g>“."</string>
+    <!-- no translation found for accessibility_notification_high_contrast_text_body_message (6846453833480117658) -->
+    <skip />
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Eiti į „<xliff:g id="SETTINGS">%1$s</xliff:g>“"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Teksto kontūras"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Pridėkite juodos arba baltos spalvos foną aplink tekstą, kad padidintumėte kontrastą"</string>
@@ -3109,27 +3120,33 @@
     <string name="data_usage_uninstalled_apps_users" msgid="1262228664057122983">"Pašalintos programos ir naudotojai"</string>
     <string name="wifi_metered_title" msgid="6623732965268033931">"Tinklo naudojimas"</string>
     <string name="data_usage_metered_yes" msgid="4262598072030135223">"Matuojamas"</string>
-    <string name="vpn_name" msgid="3806456074909253262">"Pavadinimas"</string>
+    <!-- no translation found for vpn_name (1119885022967213297) -->
+    <skip />
     <string name="vpn_type" msgid="5533202873260826663">"Tipas"</string>
-    <string name="vpn_server" msgid="2908816134941973935">"Serverio adresas"</string>
-    <string name="vpn_ipsec_identifier" msgid="8511842694369254801">"„IPSec“ identifikatorius"</string>
-    <string name="vpn_ipsec_secret" msgid="532007567355505963">"„IPSec“ iš anksto bendrinamas raktas"</string>
+    <!-- no translation found for vpn_server (5771717512763639505) -->
+    <skip />
+    <!-- no translation found for vpn_ipsec_identifier (6976476088030400883) -->
+    <skip />
+    <!-- no translation found for vpn_ipsec_secret (3110033645671775202) -->
+    <skip />
     <string name="vpn_ipsec_user_cert" msgid="2714372103705048405">"„IPSec“ naudotojo sertifikatas"</string>
     <string name="vpn_ipsec_ca_cert" msgid="5558498943577474987">"„IPSec“ CA sertifikatas"</string>
     <string name="vpn_ipsec_server_cert" msgid="1411390470454731396">"„IPSec“ serverio sertifikatas"</string>
     <string name="vpn_show_options" msgid="6105437733943318667">"Rodyti išplėstines parinktis"</string>
-    <string name="vpn_username" msgid="8671768183475960068">"Naudotojo vardas"</string>
-    <string name="vpn_password" msgid="1183746907642628127">"Slaptažodis"</string>
+    <!-- no translation found for vpn_username_optional (8564310631984689947) -->
+    <skip />
+    <!-- no translation found for vpn_password_optional (1255147723869461543) -->
+    <skip />
+    <!-- no translation found for vpn_username_required (1808631251331232149) -->
+    <skip />
+    <!-- no translation found for vpn_password_required (1916107706318825437) -->
+    <skip />
     <string name="vpn_save_login" msgid="5986762519977472618">"Išsaugoti paskyros informaciją"</string>
     <string name="vpn_not_used" msgid="7229312881336083354">"(nenaudojama)"</string>
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(nepatvirtinti serverio)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(gauta iš serverio)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Pagal įvestą informaciją nepalaikomas visada įjungtas VPN"</string>
-    <!-- no translation found for vpn_optional (3085880299239180702) -->
-    <skip />
-    <!-- no translation found for vpn_required (2538500165710360491) -->
-    <skip />
-    <!-- no translation found for vpn_field_required (952531424443686800) -->
+    <!-- no translation found for vpn_field_required (582849543970781302) -->
     <skip />
     <string name="vpn_cancel" msgid="5929410618112404383">"Atšaukti"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Atsisakyti"</string>
@@ -3361,7 +3378,8 @@
     <string name="color_orange" msgid="216547825489739010">"Oranžinė"</string>
     <string name="color_purple" msgid="6603701972079904843">"Purpurinė"</string>
     <string name="sim_status_title" msgid="6188770698037109774">"SIM būsena"</string>
-    <string name="sim_status_title_sim_slot" msgid="4932996839194493313">"SIM būsena (%1$d SIM lizdas)"</string>
+    <!-- no translation found for sim_status_title_sim_slot (5421926522479103027) -->
+    <skip />
     <string name="sim_signal_strength" msgid="6351052821700294501">"<xliff:g id="DBM">%1$d</xliff:g> dBm <xliff:g id="ASU">%2$d</xliff:g> ASU"</string>
     <string name="sim_notification_title" msgid="6839556577405929262">"Jūsų SIM kortelė pakeista"</string>
     <string name="sim_notification_summary" msgid="5593339846307029991">"Palieskite, kad nustatytumėte"</string>
@@ -4419,18 +4437,12 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Administratorius gali stebėti ir tvarkyti su šiuo naudotoju susietas programas ir duomenis, įskaitant nustatymus, leidimus, prieigą prie įmonės duomenų, tinklo veiklą ir įrenginio vietovės informaciją."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Administratorius gali stebėti ir tvarkyti programas ir duomenis, susijusius su šiuo įrenginiu, įskaitant nustatymus, leidimus, prieigą prie įmonės duomenų, tinklo veiklą ir įrenginio vietovės informaciją."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Įrenginio administratorius gali pasiekti duomenis, susietus su šiuo įrenginiu, tvarkyti programas ir pakeisti šio įrenginio nustatymus."</string>
-    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
-    <skip />
+    <string name="disabled_by_advanced_protection_title" msgid="9051476417559262469">"Apribota naudojant Papildomą apsaugą"</string>
+    <string name="disabled_by_advanced_protection_setting_is_on_message" msgid="4242986779932956593">"Dėl jūsų saugumo naudojant Papildomą apsaugą šis nustatymas turi likti įjungtas"</string>
+    <string name="disabled_by_advanced_protection_setting_is_off_message" msgid="7777487013672230696">"Dėl jūsų saugumo naudojant Papildomą apsaugą šis nustatymas turi likti išjungtas"</string>
+    <string name="disabled_by_advanced_protection_action_message" msgid="7164789633582857150">"Dėl jūsų saugumo Papildoma apsauga neleidžia atlikti šio veiksmo"</string>
+    <string name="disabled_by_advanced_protection_wep_action_message" msgid="239574547298386495">"Šiame tinkle naudojamas WEP – pasenęs šifravimo metodas, dėl kurio gali kilti pavojus jūsų duomenims. WEP ryšiai užblokuoti naudojant Papildomą apsaugą."</string>
+    <string name="disabled_by_advanced_protection_help_button_title" msgid="6539346613660731777">"Nustatymai"</string>
     <string name="condition_turn_off" msgid="402707350778441939">"Išjungti"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Įjungti"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Rodyti"</string>
@@ -5253,6 +5265,10 @@
     <string name="enable_16k_app_compat_details" msgid="5382562613011853452">"Įjungus jungiklį, programa bus sustabdyta ir paleista naudojant puslapio dydžio suderinamumo režimą 16 KB įrenginyje."</string>
     <string name="stop_app_dlg_title" msgid="3153921585174512587">"Sustabdyti programą?"</string>
     <string name="stop_app_dlg_text" msgid="4373849065005318901">"Programa bus sustabdyta, kad būtų pritaikytas puslapio dydžio suderinamumo nustatymas."</string>
+    <!-- no translation found for error_pending_updates (7196832772265874760) -->
+    <skip />
+    <!-- no translation found for error_ota_failed (4762376085470989653) -->
+    <skip />
     <string name="bug_report_handler_title" msgid="713439959113250125">"Pranešimų apie riktus doroklė"</string>
     <string name="bug_report_handler_picker_footer_text" msgid="4935758328366585673">"Nustatoma, kuri programa apdoroja pranešimo apie riktą spartųjį klavišą įrenginyje."</string>
     <string name="personal_profile_app_subtext" msgid="5586060806997067676">"Asmeninė"</string>
@@ -5522,12 +5538,6 @@
     <string name="user_aspect_ratio_4_3" msgid="5196232982878982220">"4:3"</string>
     <string name="user_aspect_ratio_option_a11y" msgid="1235801996029095219">"<xliff:g id="NUMERATOR">%1$s</xliff:g> ir <xliff:g id="DENOMINATOR">%2$s</xliff:g>"</string>
     <string name="app_aspect_ratio_footer" msgid="4029509301182067475">"Programa bus paleista iš naujo, kai pakeisite kraštinių santykį. Neišsaugoti pakeitimai gali būti prarasti. Kai kurios programos gali būti neoptimizuotos pagal tam tikrus kraštinių santykius."</string>
-    <string name="aspect_ratio_experimental_title" msgid="9088785421062044831">"Kraštinių santykis (eksperimentinis)"</string>
-    <string name="aspect_ratio_experiment_title" msgid="128614319422121040">"Kraštinių santykis (eksperimentas)"</string>
-    <string name="aspect_ratio_labs_title" msgid="6733893837442759383">"Kraštinių santykis (laboratorijos)"</string>
-    <string name="aspect_ratio_experimental_label" msgid="6319009297672567578">"Eksperimentinė versija"</string>
-    <string name="aspect_ratio_experiment_label" msgid="7861871612376167784">"Eksperimentas"</string>
-    <string name="aspect_ratio_labs_label" msgid="7008498116297651342">"Laboratorijos"</string>
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Piršto atspaudo jutiklis"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Mirksėjimo pranešimai"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Apie mirksėjimo pranešimus"</string>

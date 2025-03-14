@@ -25,7 +25,7 @@ import com.google.android.material.textfield.TextInputLayout
 
 /** A widget that wraps the relationship work between a TextInputLayout and an EditText. */
 open class TextInputGroup(
-    private val view: View,
+    val view: View,
     private val layoutId: Int,
     private val editTextId: Int,
     private val errorMessageId: Int,
@@ -88,7 +88,7 @@ open class TextInputGroup(
         val isValid = text.isNotEmpty()
         if (!isValid) {
             Log.w(TAG, "validate failed in ${layout.hint ?: "unknown"}")
-            error = errorMessage.toString()
+            error = errorMessage
         }
         return isValid
     }

@@ -28,7 +28,6 @@ import android.widget.TextView;
 import androidx.appcompat.app.AlertDialog;
 
 import com.android.settings.R;
-import com.android.settings.wifi.utils.TextInputGroup;
 import com.android.settings.wifi.utils.WifiDialogHelper;
 import com.android.settingslib.RestrictedLockUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
@@ -119,9 +118,7 @@ public class WifiDialog extends AlertDialog implements WifiConfigUiBase,
             mController.hideForgetButton();
         }
 
-        mDialogHelper = new WifiDialogHelper(this,
-                new TextInputGroup(mView, R.id.ssid_layout, R.id.ssid,
-                        R.string.vpn_field_required));
+        mDialogHelper = new WifiDialogHelper(this, mController.getValidator());
     }
 
     @SuppressWarnings("MissingSuperCall") // TODO: Fix me

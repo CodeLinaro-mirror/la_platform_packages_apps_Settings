@@ -2817,6 +2817,15 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".supervision.ConfirmSupervisionCredentialsActivity"
+            android:exported="true"
+            android:featureFlag="android.app.supervision.flags.supervision_manager_apis">
+            <intent-filter>
+                <action android:name="android.app.supervision.action.CONFIRM_SUPERVISION_CREDENTIALS" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".SetupRedactionInterstitial"
             android:enabled="false"
             android:exported="true"
@@ -5596,6 +5605,14 @@
                 <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_DEVICE_CONNECTED" />
                 <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_ADD_SOURCE" />
                 <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_SHARING_CANCEL_NOTIF" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.android.settings.connecteddevice.audiosharing.audiostreams.PrivateBroadcastReceiver"
+            android:permission="android.permission.BLUETOOTH_PRIVILEGED"
+            android:exported="true"> <!-- Exported for SystemUI. -->
+            <intent-filter>
+                <action android:name="com.android.settings.action.BLUETOOTH_LE_AUDIO_PRIVATE_BROADCAST_RECEIVED" />
             </intent-filter>
         </receiver>
 

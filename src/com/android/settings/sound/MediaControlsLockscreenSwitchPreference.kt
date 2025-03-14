@@ -16,9 +16,12 @@
 
 package com.android.settings.sound
 
+import android.app.settings.SettingsEnums.ACTION_SHOW_MEDIA_ON_LOCK_SCREEN
 import android.content.Context
 import android.provider.Settings.Secure.MEDIA_CONTROLS_LOCK_SCREEN
 import com.android.settings.R
+import com.android.settings.contract.KEY_SHOW_MEDIA_ON_LOCK_SCREEN
+import com.android.settings.metrics.PreferenceActionMetricsProvider
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyValueStoreDelegate
 import com.android.settingslib.datastore.SettingsSecureStore
@@ -32,7 +35,13 @@ class MediaControlsLockscreenSwitchPreference :
         KEY,
         R.string.media_controls_lockscreen_title,
         R.string.media_controls_lockscreen_description,
-    ) {
+    ),
+    PreferenceActionMetricsProvider {
+
+    override val preferenceActionMetrics: Int
+        get() = ACTION_SHOW_MEDIA_ON_LOCK_SCREEN
+
+    override fun tags(context: Context) = arrayOf(KEY_SHOW_MEDIA_ON_LOCK_SCREEN)
 
     override val sensitivityLevel
         get() = SensitivityLevel.NO_SENSITIVITY

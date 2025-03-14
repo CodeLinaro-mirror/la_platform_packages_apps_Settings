@@ -78,6 +78,12 @@
 
     <!-- Content description for preview pager. [CHAR LIMIT=NONE] -->
     <string name="preview_pager_content_description">Preview</string>
+    <!-- Content description for home screen preview. [CHAR LIMIT=NONE] -->
+    <string name="preview_pager_home_content_description">Home screen preview</string>
+    <!-- Content description for message preview. [CHAR LIMIT=NONE] -->
+    <string name="preview_pager_message_content_description">Message preview</string>
+    <!-- Content description for email preview. [CHAR LIMIT=NONE] -->
+    <string name="preview_pager_email_content_description">Email preview</string>
     <!-- Content description for qrcode image. [CHAR LIMIT=none]-->
     <string name="qr_code_content_description">QR code</string>
     <!-- Previous button for preview pager. [CHAR LIMIT=NONE] -->
@@ -497,7 +503,7 @@
     <string name="link_locale_picker_footer_learn_more" translatable="false">https://support.google.com/android?p=per_language_app_settings</string>
 
     <!-- Title for asking to change system region or not. [CHAR LIMIT=50]-->
-    <string name="title_change_system_region">Change region to %s ?</string>
+    <string name="title_change_system_region">Change region to %s?</string>
 
     <!-- The content of a confirmation dialog indicating the impact when the user change the system region. [CHAR LIMIT=NONE]-->
     <string name="desc_notice_device_region_change">Your device will keep %s as a system language</string>
@@ -506,7 +512,7 @@
     <string name="desc_notice_device_region_change_for_preferred_language">%1$s will replace %2$s in your preferred languages</string>
 
     <!-- Title for asking to change system locale or not. [CHAR LIMIT=50]-->
-    <string name="title_change_system_locale">Change system language to %s ?</string>
+    <string name="title_change_system_locale">Change system language to %s?</string>
 
     <!-- The title of a confirmation dialog to indicate adding a system locale. [CHAR LIMIT=50]-->
     <string name="title_system_locale_addition">Add %s to preferred languages?</string>
@@ -547,7 +553,7 @@
     <!-- Category for more language settings. [CHAR LIMIT=NONE]-->
     <string name="more_language_settings_category">More language settings</string>
     <!-- Title for asking to change system locale region or not. [CHAR LIMIT=50]-->
-    <string name="title_change_system_locale_region">Change region to <xliff:g id="system_language_region" example="Canada">%1$s</xliff:g> ?</string>
+    <string name="title_change_system_locale_region">Change region to <xliff:g id="system_language_region" example="Canada">%1$s</xliff:g>?</string>
     <!-- Message for asking to change system locale region or not. [CHAR LIMIT=50]-->
     <string name="body_change_system_locale_region">Your device will keep <xliff:g id="system_language" example="English">%1$s</xliff:g> as a system language</string>
     <!-- Description for the numbering system language. [CHAR LIMIT=NONE]-->
@@ -833,6 +839,8 @@
     <string name="security_settings_face_preference_summary">Face added</string>
     <!-- Message shown in summary field when Face Unlock is not set up. [CHAR LIMIT=54] -->
     <string name="security_settings_face_preference_summary_none">Setup needed</string>
+    <!-- Message shown in summary field when Face Unlock is not set up. [CHAR LIMIT=54] -->
+    <string name="security_settings_face_preference_summary_none_new">Add face</string>
     <!-- Title shown for menu item that launches face settings or enrollment. [CHAR LIMIT=32] -->
     <string name="security_settings_face_preference_title_new">Face</string>
     <!-- Title shown for menu item that launches face settings or enrollment, for work profile. [CHAR LIMIT=50] -->
@@ -1006,6 +1014,8 @@
         }</string>
     <!-- message shown in summary field when no fingerprints are registered -->
     <string name="security_settings_fingerprint_preference_summary_none">Setup needed</string>
+    <!-- message shown in summary field when no fingerprints are registered -->
+    <string name="security_settings_fingerprint_preference_summary_none_new">Add fingerprint</string>
     <!-- Introduction title shown in fingerprint enrollment to introduce the fingerprint feature [CHAR LIMIT=29] -->
     <string name="security_settings_fingerprint_enroll_introduction_title">Set up your fingerprint</string>
     <!-- Introduction title shown in fingerprint enrollment when asking for parental consent for fingerprint unlock [CHAR LIMIT=29] -->
@@ -1771,6 +1781,8 @@
 
     <!-- Summary for "Configure lockscreen" when lock screen is off [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_off">None</string>
+    <!-- Summary for "Configure lockscreen" when lock screen is off [CHAR LIMIT=45] -->
+    <string name="unlock_set_unlock_mode_off_new">Add PIN, pattern, password, or swipe</string>
     <!-- Summary for "Configure lockscreen" when security is disabled [CHAR LIMIT=45] -->
     <string name="unlock_set_unlock_mode_none">Swipe</string>
     <!-- Summary for "Configure lockscreen" when security pattern is enabled [CHAR LIMIT=45] -->
@@ -2383,7 +2395,7 @@
     <!-- Extended message for talkback to say when Advanced Options is collapsed. (e.g., Double-tap to expand) [CHAR LIMIT=NONE] -->
     <string name="wifi_advanced_toggle_description_collapsed">expand</string>
     <!-- Label for the SSID of the network -->
-    <string name="wifi_ssid">Network name</string>
+    <string name="wifi_ssid">Network name*</string>
     <!-- Hint for a text field to enter the SSID of a hidden wifi network. [CHAR LIMIT=35] -->
     <string name="wifi_ssid_hint">Enter the SSID</string>
     <!-- Label for the security of the connection -->
@@ -2429,7 +2441,9 @@
     <!-- Label for the EAP anonymous identity of the network -->
     <string name="wifi_eap_anonymous">Anonymous identity</string>
     <!-- Label for the password of the secured network -->
-    <string name="wifi_password">Password</string>
+    <string name="wifi_password">Password*</string>
+    <!-- Label for the password of the secured network -->
+    <string name="wifi_password_invalid">The password is invalid</string>
     <!-- Label for the check box to show password -->
     <string name="wifi_show_password">Show password</string>
     <!-- Label for the radio button to choose wifi ap 2.4 GHz band -->
@@ -2562,6 +2576,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown">To improve location accuracy and for other purposes, an unknown app wants to turn on network scanning, even when Wi\u2011Fi is off.\n\nAllow this for all apps that want to scan?</string>
     <string name="wifi_scan_always_confirm_allow">Allow</string>
     <string name="wifi_scan_always_confirm_deny">Deny</string>
+    <!-- Error message displayed below the Wi-Fi EditText when the filed is required. [CHAR LIMIT=NONE] -->
+    <string name="wifi_field_required">*required</string>
 
     <!-- Dialog text to tell the user that the selected network does not have Internet access. -->
     <string name="no_internet_access_text">This network has no internet access. Stay connected?</string>
@@ -3655,6 +3671,21 @@
     <string name="communal_settings_title">Communal</string>
     <!-- Summary of the communal settings under Settings > Communal [CHAR LIMIT=50] -->
     <string name="communal_settings_summary">Communal settings</string>
+    <!-- Title of Hub mode category [CHAR LIMIT=30] -->
+    <string name="hub_mode_category_title">Hub mode</string>
+    <!-- Title of the "widgets on lockscreen" settings page. [CHAR LIMIT=NONE] -->
+    <string name="widgets_on_lockscreen_title">Widgets on lock screen</string>
+
+    <!-- Title of a setting to control when to automatically show widgets on the lockscren. [CHAR LIMIT=NONE] -->
+    <string name="when_to_auto_show_hubmode_title">When to automatically show</string>
+    <!-- Summary for when to automatically show hub mode (widgets on lockscreen): never  [CHAR LIMIT=100] -->
+    <string name="when_to_show_hubmode_never">Never</string>
+    <!-- Summary for when to automatically show hub mode (widgets on lockscreen): charging  [CHAR LIMIT=100] -->
+    <string name="when_to_show_hubmode_charging">While charging</string>
+    <!-- Summary for when to automatically show hub mode (widgets on lockscreen): charging and upright  [CHAR LIMIT=100] -->
+    <string name="when_to_show_hubmode_charging_and_upright">While charging and upright</string>
+    <!-- Summary for when to automatically show hub mode (widgets on lockscreen): docked  [CHAR LIMIT=100] -->
+    <string name="when_to_show_hubmode_docked">While docked</string>
 
     <!-- _satellite_setting_preference_layout -->
     <!-- _satellite_setting_preference_layout screen title-->
@@ -3896,6 +3927,18 @@
     <!-- Bluetooth Tethering settings-->
     <!-- Label for bluetooth tether checkbox [CHAR LIMIT=25]-->
     <string name="bluetooth_tether_checkbox_text">Bluetooth tethering</string>
+
+    <!-- Ethernet settings-->
+    <!-- Label for ethernet IP address [CHAR LIMIT=NONE]-->
+    <string name="ethernet_ip_address">IP address</string>
+    <!-- Label for ethernet MAC address [CHAR LIMIT=NONE]-->
+    <string name="ethernet_mac_address_title">MAC address</string>
+    <!-- Label for ethernet transfer speed [CHAR LIMIT=NONE]-->
+    <string name="tx_ethernet_speed">Transit link speed</string>
+    <!-- Label for ethernet receive speed [CHAR LIMIT=NONE]-->
+    <string name="rx_ethernet_speed">Receive link speed</string>
+    <!-- Label for ethernet network usage [CHAR LIMIT=NONE]-->
+    <string name="ethernet_network_usage">Network usage</string>
 
     <!-- Ethernet Tethering settings-->
     <!-- Label for ethernet tether checkbox [CHAR LIMIT=NONE]-->
@@ -5691,6 +5734,9 @@
     <string name="accessibility_autoclick_longer_desc">Longer</string>
     <!-- Description for the seekbar that adjust auto click time. [CHAR_LIMIT=NONE] -->
     <string name="accessibility_autoclick_seekbar_desc">Auto click time</string>
+    <!-- Title for the toggle button that turns on/off the autoclick setting. [CHAR_LIMIT=NONE] -->
+    <!-- TODO(b/394683600): Update string to translatable once approved by UXW. -->
+    <string name="accessibility_autoclick_main_switch_title" translatable="false">Use autoclick</string>
     <!-- Title for the toggle button that turns on/off the autoclick shortcut. [CHAR_LIMIT=NONE] -->
     <!-- TODO(b/394683600): Update string to translatable once approved by UXW. -->
     <string name="accessibility_autoclick_shortcut_title" translatable="false">Autoclick shortcut</string>
@@ -14309,5 +14355,7 @@ Data usage charges may apply.</string>
     <!-- Title for web content filters browser category allow all sites option [CHAR LIMIT=60] -->
     <string name="supervision_web_content_filters_browser_allow_all_sites_title">Allow all sites</string>
     <!-- Generic content description that is attached to the preview illustration at the top of an Accessibility feature toggle page. [CHAR LIMIT=NONE] -->
+    <!-- Title for supervision PIN verification screen [CHAR LIMIT=60] -->
+    <string name="supervision_full_screen_pin_verification_title">Enter supervision PIN</string>
     <string name="accessibility_illustration_content_description"><xliff:g id="feature" example="Select to Speak">%1$s</xliff:g> animation</string>
 </resources>
