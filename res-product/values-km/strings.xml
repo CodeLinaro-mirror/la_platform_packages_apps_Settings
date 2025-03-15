@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"អាសយដ្ឋាន​ប៊្លូធូស​របស់ឧបករណ៍៖ <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់ធ្វើឱ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញឧបករណ៍របស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"កម្មវិធីចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"កម្មវិធីចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"កម្មវិធីចង់ធ្វើឱ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញឧបករណ៍របស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នក។ អ្នកអាចផ្លាស់ប្តូរសកម្មភាពនេះពេលក្រោយនៅក្នុងការកំណត់ប៊្លូធូស។"</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់ធ្វើឲ្យឧបករណ៍ប៊្លូធូសផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នក។ អ្នកអាចផ្លាស់ប្តូរសកម្មភាពនេះពេលក្រោយនៅក្នុងការកំណត់ប៊្លូធូស។"</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់​ធ្វើឱ្យ​ឧបករណ៍​ប៊្លូធូស​ផ្សេង​ទៀត​អាច​មើល​ឃើញ​ឧបករណ៍​របស់​អ្នក។ អ្នក​អាច​ផ្លាស់​ប្តូរ​លក្ខណៈ​នេះ​ពេល​ក្រោយ​បាន នៅ​ក្នុង​ការកំណត់​ប៊្លូធូស។"</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"កម្មវិធី​ចង់​ធ្វើឱ្យ​ឧបករណ៍​ប៊្លូធូស​ផ្សេង​ទៀត​អាច​មើល​ឃើញ​ឧបករណ៍​របស់​អ្នក។ អ្នក​អាច​ផ្លាស់​ប្តូរ​លក្ខណៈ​នេះ​ពេល​ក្រោយ​បាន នៅ​ក្នុង​ការកំណត់​ប៊្លូធូស។"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់​បើក​ប៊្លូធូស និង​ធ្វើឱ្យ​ឧបករណ៍ផ្សេង​ទៀត​អាច​មើល​ឃើញ​ឧបករណ៍​របស់​អ្នក​រយៈ​ពេល <xliff:g id="TIMEOUT">%2$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"កម្មវិធីចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"កម្មវិធីចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"កម្មវិធីចង់បើកប៊្លូធូស និងធ្វើឱ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញឧបករណ៍របស់អ្នករយៈពេល <xliff:g id="TIMEOUT">%1$d</xliff:g> វិនាទី។"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញថេប្លេតរបស់អ្នក។ អ្នកអាចផ្លាស់ប្តូរសកម្មភាពនេះពេលក្រោយនៅក្នុងការកំណត់ប៊្លូធូស។"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់បើកប៊្លូធូស និងធ្វើឲ្យឧបករណ៍ផ្សេងទៀតអាចមើលឃើញទូរសព្ទរបស់អ្នក។ អ្នកអាចផ្លាស់ប្តូរសកម្មភាពនេះពេលក្រោយនៅក្នុងការកំណត់ប៊្លូធូស។"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g> ចង់​បើក​ប៊្លូធូស និង​ធ្វើឱ្យ​ឧបករណ៍​ប៊្លូធូស​ផ្សេង​ទៀត​អាច​មើល​ឃើញ​ឧបករណ៍​របស់​អ្នក។ អ្នក​អាច​ផ្លាស់​ប្តូរ​លក្ខណៈ​នេះ​ពេល​ក្រោយ​បាន នៅ​ក្នុង​ការកំណត់​ប៊្លូធូស។"</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"សេនស័រចាប់ស្នាមម្រាមដៃ​ស្ថិតនៅលើប៊ូតុង​ថាមពល។ វាជាប៊ូតុងរាបស្មើនៅជាប់នឹងប៊ូតុងកម្រិតសំឡេងដែលលៀនចេញមកនៅលើគែមថេប្លេត។"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"សេនស័រចាប់ស្នាមម្រាមដៃ​ស្ថិតនៅលើប៊ូតុង​ថាមពល។ វាជាប៊ូតុងរាបស្មើនៅជាប់នឹងប៊ូតុងកម្រិតសំឡេងដែលលៀនចេញមកនៅលើគែមឧបករណ៍។"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"សេនស័រចាប់ស្នាមម្រាមដៃ​ស្ថិតនៅលើប៊ូតុង​ថាមពល។ វាជាប៊ូតុងរាបស្មើនៅជាប់នឹងប៊ូតុងកម្រិតសំឡេងដែលលៀនចេញមកនៅលើគែមទូរសព្ទ។"</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"សេនស័រចាប់ស្នាមម្រាមដៃ​ស្ថិតនៅលើប៊ូតុង​ថាមពល។ វាជាប៊ូតុងរាបស្មើនៅជាប់នឹងប៊ូតុង​កម្រិត​សំឡេងដែលលៀនចេញមកនៅលើគែមកុំព្យូទ័រ។"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"ឥឡូវនេះ អ្នកអាចប្រើ​ស្នាមម្រាមដៃរបស់អ្នក ដើម្បីដោះសោ​ថេប្លេតរបស់អ្នក ឬផ្ទៀងផ្ទាត់​ថាជាអ្នក ដូចជានៅពេលអ្នក​ចូលកម្មវិធី ឬយល់ព្រមលើ​ការទិញជាដើម"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"ឥឡូវនេះ អ្នកអាចប្រើ​ស្នាមម្រាមដៃរបស់អ្នក ដើម្បីដោះសោ​ឧបករណ៍របស់អ្នក ឬផ្ទៀងផ្ទាត់​ថាជាអ្នក ដូចជានៅពេលអ្នក​ចូលគណនីកម្មវិធី ឬយល់ព្រមលើ​ការទិញជាដើម"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"ឥឡូវនេះ អ្នកអាចប្រើ​ស្នាមម្រាមដៃរបស់អ្នក ដើម្បីដោះសោ​ទូរសព្ទរបស់អ្នក ឬផ្ទៀងផ្ទាត់​ថាជាអ្នក ដូចជានៅពេលអ្នក​ចូលគណនីកម្មវិធី ឬយល់ព្រមលើ​ការទិញជាដើម"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"អ្នកអាច​ដោះសោ​ឧបករណ៍​របស់អ្នក​ដោយប្រើ​មុខ ឬ​ស្នាមម្រាមដៃ​របស់អ្នក​។ ដើម្បី​សុវត្ថិភាព ជម្រើសនេះ​តម្រូវឱ្យមាន​ការចាក់សោអេក្រង់​បម្រុង។"</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"អ៊ីនគ្រីប​ថេប្លេត"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"អ៊ីនគ្រីប​ទូរសព្ទ"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"អ៊ីនគ្រីប​ឧបករណ៍"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"កំណត់​ការ​ចាក់​សោ​អេក្រង់ ដើម្បី​ការពារ​ថេប្លេត"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"កំណត់​ការ​ចាក់​សោ​អេក្រង់ ដើម្បី​ការពារ​ឧបករណ៍"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"កំណត់​ការ​ចាក់​សោ​អេក្រង់ ដើម្បី​ការពារ​ទូរសព្ទ"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"អនុញ្ញាត​ឱ្យប្រើ NFC តែ​នៅពេល​អេក្រង់​មិនជាប់សោ​ប៉ុណ្ណោះ"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញនៅក្នុង​ទូរសព្ទរបស់អ្នក"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញ​នៅក្នុង​ថេប្លេត​របស់អ្នក"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញ​នៅក្នុងឧបករណ៍​របស់អ្នក"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញទាំងនេះ​នៅក្នុងទូរសព្ទ​របស់អ្នក"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញទាំងនេះ​នៅក្នុង​ថេប្លេត​របស់អ្នក"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> ចង់រក្សាទុក​បណ្ដាញទាំងនេះ​នៅក្នុងឧបករណ៍​របស់អ្នក"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"ប្ដូរទិសអេក្រង់​ដោយស្វ័យប្រវត្តិ នៅពេលដែល​អ្នកបង្វិល​ទូរសព្ទរបស់អ្នកទៅ​ជាបញ្ឈរ និងផ្ដេក"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"កែតម្រូវទិសអេក្រង់​ដោយស្វ័យប្រវត្តិ នៅពេល​អ្នកបង្វិល​ថេប្លេតរបស់អ្នកទៅ​ជាបញ្ឈរ និងផ្ដេក"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"កែតម្រូវទិសអេក្រង់​ដោយស្វ័យប្រវត្តិ នៅពេល​អ្នកដាក់ឧបករណ៍របស់អ្នកឱ្យបញ្ឈរ និងផ្ដេក"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"ទាមទារ​កូដ PIN ដើម្បី​ប្រើ​កុំព្យូទ័រ​បន្ទះ"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"ទាមទារ​កូដ PIN ដើម្បី​ប្រើ​ទូរសព្ទ"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"តម្រូវឱ្យមានកូដ PIN ដើម្បីប្រើឧបករណ៍"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"ទាមទារ​កូដ PIN ដើម្បី​ប្រើ​កុំព្យូទ័រ​បន្ទះ"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"ទាមទារ​​​កូដ PIN ដើម្បី​ប្រើ​ទូរសព្ទ"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"តម្រូវឱ្យមានកូដ PIN ដើម្បីប្រើឧបករណ៍"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"លេខទូរសព្ទ"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (រន្ធស៊ីម %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"លេខទូរសព្ទ (រន្ធស៊ីម %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"MDN នៅលើស៊ីម"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"លេខទូរសព្ទនៅលើស៊ីម"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"ឈូស​កាត SD សម្រាប់​ប្រើ​ជា​ទំហំ​​ផ្ទុក​ខាង​ក្នុង"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"រក្សា​ទុក​កម្មវិធី និង​មេឌៀ ដើម្បី​ប្រើប្រាស់​នៅ​លើ​ទូរសព្ទ​នេះ​តែ​ប៉ុណ្ណោះ។ &lt;a href=https://support.google.com/android/answer/12153449&gt;ស្វែង​យល់​បន្ថែម​អំពី​ការរៀបចំ​កាត SD&lt;/a&gt;។"</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"ឈូស"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"ឈូស​កាត SD សម្រាប់​ប្រើ​ជា​ទំហំ​​ផ្ទុក​ខាង​ក្នុង"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"រក្សា​ទុក​កម្មវិធី និង​មេឌៀ ដើម្បី​ប្រើប្រាស់​នៅ​លើឧបករណ៍​នេះ​តែ​ប៉ុណ្ណោះ។ &lt;a href=https://support.google.com/android/answer/12153449&gt;ស្វែង​យល់​បន្ថែម​អំពី​ការរៀបចំ​កាត SD&lt;/a&gt;។"</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"ឈូស"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"អ្នក​អាច​ផ្លាស់ទី​ឯកសារ មេឌៀ និង​កម្មវិធី​ជាក់លាក់​ទៅ <xliff:g id="NAME">^1</xliff:g> នេះបាន។ \n\nការ​ផ្លាស់​ទី​នេះ​នឹង​បង្កើន​​ទំហំផ្ទុក​នៃ​ថេប្លេត​របស់អ្នកបាន <xliff:g id="SIZE">^2</xliff:g> និង​អាច​ចំណាយ​ពេល​ប្រមាណ <xliff:g id="DURATION">^3</xliff:g> ។"</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"អ្នក​អាច​ផ្លាស់ទី​ឯកសារ មេឌៀ និង​កម្មវិធី​ជាក់លាក់​ទៅ <xliff:g id="NAME">^1</xliff:g> នេះបាន។ \n\nការ​ផ្លាស់​ទី​នេះ​នឹង​បង្កើន​​ទំហំផ្ទុក​នៃ​ទូរសព្ទ​របស់អ្នកបាន <xliff:g id="SIZE">^2</xliff:g> និង​អាច​ចំណាយ​ពេល​ប្រមាណ <xliff:g id="DURATION">^3</xliff:g> ។"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"អ្នក​អាច​ផ្លាស់ទី​ឯកសារ មេឌៀ និង​កម្មវិធី​ជាក់លាក់​ទៅ <xliff:g id="NAME">^1</xliff:g> នេះបាន។ \n\nការ​ផ្លាស់​ទី​នេះ​នឹង​បង្កើន​​ទំហំផ្ទុក​នៃឧបករណ៍​របស់អ្នកបាន <xliff:g id="SIZE">^2</xliff:g> និង​អាច​ចំណាយ​ពេល​ប្រមាណ <xliff:g id="DURATION">^3</xliff:g>។"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"ទុកឱ្យ​ថេប្លេតនេះ​បន្តសាក​ថ្ម"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"ទុកឱ្យ​ទូរសព្ទ​នេះ​បន្តសាក​ថ្ម"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"រក្សាឱ្យឧបករណ៍នេះនៅសាកថ្ម"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"ការធ្វើបែបនេះ​នឹង​លុប​ទិន្នន័យ​ទាំងអស់ពី"<b>"ទំហំផ្ទុកខាងក្នុង"</b>"នៃថេប្លេត​របស់អ្នក រួមទាំង៖\n\n"<li>"គណនី Google របស់អ្នក"</li>\n<li>"ទិន្នន័យ​កម្មវិធី​និង​ប្រព័ន្ធ​ និងការកំណត់​"</li>\n<li>"កម្មវិធី​ដែលបានទាញយក"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"ការធ្វើបែបនេះ​នឹង​លុប​ទិន្នន័យ​ទាំងអស់​ពី"<b>"ទំហំផ្ទុក​ខាង​ក្នុង"</b>"នៃ​ទូរសព្ទ​របស់​អ្នក រួមទាំង៖\n\n"<li>"គណនី Google របស់​អ្នក"</li>\n<li>"ទិន្នន័យ​កម្មវិធី​និង​ប្រព័ន្ធ​ និងការកំណត់"</li>\n<li>"កម្មវិធី​ដែលបាន​ទាញ​យក"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"ការធ្វើបែបនេះ​នឹង​លុប​ទិន្នន័យ​ទាំងអស់ពី"<b>"ទំហំ​​ផ្ទុក​ខាង​ក្នុង"</b>"នៃឧបករណ៍​របស់អ្នក រួមទាំង៖\n\n"<li>"គណនី Google របស់អ្នក"</li>\n<li>"ទិន្នន័យកម្មវិធី​និង​ប្រព័ន្ធ​ និងការកំណត់​"</li>\n<li>"កម្មវិធី​ដែលបានទាញយក"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"បច្ចុប្បន្ន អ្នក​បាន​ចូល​គណនី​ដូច​ខាង​ក្រោម៖\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"មានអ្នកប្រើប្រាស់​ផ្សេងទៀតមានវត្តមាន​នៅលើឧបករណ៍នេះ។\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"ដើម្បី​សម្អាតតន្ត្រី រូបភាព និង​ទិន្នន័យ​អ្នកប្រើប្រាស់​ផ្សេងទៀត ចាំបាច់ត្រូវលុប"<b>"ឧបករណ៍ផ្ទុក USB"</b>"។"</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"បើ​អ្នក​បញ្ឈប់​សេវាកម្ម​នេះ មុខងារ​មួយ​ចំនួន​នៃ​ឧបករណ៍​របស់​អ្នក​អាច​មិន​ដំណើរការ​ត្រឹមត្រូវ លុះ​ត្រា​តែ​អ្នក​បិទ ហើយ​បើក​វា​ឡើងវិញ។"</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"ព័ត៌មាន​កុំព្យូទ័រ​បន្ទះ"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"ព័ត៌មាន​ទូរស័ព្ទ"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"ព័ត៌មានឧបករណ៍"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"ចំណូលចិត្តអក្សរ និងទំហំបង្ហាញរបស់អ្នកនឹងកំណត់ឡើងវិញទៅការកំណត់ដើមរបស់ទូរសព្ទ"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"ចំណូលចិត្តអក្សរ និងទំហំបង្ហាញរបស់អ្នកនឹងកំណត់ឡើងវិញទៅការកំណត់ដើមរបស់ថេប្លេត"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"ចំណូលចិត្តអក្សរ និងទំហំ​បង្ហាញរបស់អ្នកនឹងកំណត់ឡើងវិញទៅការកំណត់ដើមរបស់ឧបករណ៍"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"កែតម្រូវរបៀបដែលពណ៌បង្ហាញនៅលើទូរសព្ទរបស់អ្នក"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"កែតម្រូវ​របៀបដែលពណ៌​បង្ហាញនៅលើ​ថេប្លេត​របស់អ្នក"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"កែតម្រូវ​របៀបដែលពណ៌​បង្ហាញនៅលើ​ឧបករណ៍​របស់អ្នក"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"បន្ថយពន្លឺ​អេក្រង់​ឱ្យតិចជាង​ពន្លឺ​អប្បបរមា​របស់ទូរសព្ទ​អ្នក"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"បន្ថយពន្លឺ​អេក្រង់​ឱ្យតិចជាង​ពន្លឺ​អប្បបរមា​របស់ថេប្លេត​អ្នក"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"បន្ថយពន្លឺអេក្រង់លើសពីកម្រិតពន្លឺអប្បបរមានៃឧបករណ៍របស់អ្នក"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"ងងឹតខ្លាំងអាចមានប្រយោជន៍នៅពេល៖ &lt;ol&gt; &lt;li&gt; ពន្លឺអប្បបរមាលំនាំដើមរបស់ទូរសព្ទអ្នកនៅតែភ្លឺខ្លាំងនៅឡើយ&lt;/li&gt; &lt;li&gt; អ្នកកំពុងប្រើទូរសព្ទរបស់អ្នកនៅក្នុងស្ថានភាពងងឹតដូចជា នៅពេលយប់ ឬក្នុងបន្ទប់ងងឹតមុនពេលចូលគេងជាដើម&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"ងងឹតខ្លាំងអាចមានប្រយោជន៍នៅពេល៖ &lt;ol&gt; &lt;li&gt; ពន្លឺអប្បបរមាលំនាំដើមរបស់ថេប្លេតអ្នកនៅតែភ្លឺខ្លាំងនៅឡើយ&lt;/li&gt; &lt;li&gt; អ្នកកំពុងប្រើថេប្លេតរបស់អ្នកនៅក្នុងស្ថានភាពងងឹតដូចជា នៅពេលយប់ ឬក្នុងបន្ទប់ងងឹតមុនពេលចូលគេងជាដើម&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"ពន្លឺងងឹតខ្លាំងអាចមានប្រយោជន៍នៅពេល៖ &lt;ol&gt; &lt;li&gt; ពន្លឺអប្បបរមាលំនាំដើមរបស់ឧបករណ៍អ្នកនៅតែភ្លឺខ្លាំងនៅឡើយ&lt;/li&gt; &lt;li&gt; អ្នកកំពុងប្រើឧបករណ៍របស់អ្នកនៅក្នុងស្ថានភាពងងឹតដូចជា នៅពេលយប់ ឬក្នុងបន្ទប់ងងឹតមុនពេលចូលគេងជាដើម&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"ទូរសព្ទ​ប្រើប្រាស់ថ្ម​នៅផ្ទៃខាងក្រោយ​ធម្មតា"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"ថេប្លេតប្រើប្រាស់ថ្ម​នៅផ្ទៃខាងក្រោយ​ធម្មតា"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"ឧបករណ៍​ប្រើប្រាស់ថ្ម​នៅផ្ទៃខាងក្រោយ​ធម្មតា"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"ឧបករណ៍​ប្រើប្រាស់ថ្ម​នៅផ្ទៃខាងក្រោយ​ធម្មតា"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"ក្នុងស្ថានភាពមួយចំនួន ដូចជាសីតុណ្ហភាពខ្ពស់ និងរយៈពេលសាកថ្មយូរ ការសាកថ្មអាចត្រូវបានដាក់កំហិតត្រឹម <xliff:g id="PERCENT">%1$s</xliff:g> ដើម្បីជួយការពារ​គុណភាពថ្ម។\n\nនៅពេលដែលស្ថានភាពទាំងនោះបញ្ចប់ ទូរសព្ទរបស់អ្នកនឹងសាកថ្មដូចធម្មតាដោយស្វ័យប្រវត្តិវិញ។"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"ក្នុងស្ថានភាពមួយចំនួន ដូចជាសីតុណ្ហភាពខ្ពស់ និងរយៈពេលសាកថ្មយូរ ការសាកថ្មអាចត្រូវបានដាក់កំហិតត្រឹម <xliff:g id="PERCENT">%1$s</xliff:g> ដើម្បីជួយការពារ​គុណភាពថ្ម។\n\nនៅពេលដែលស្ថានភាពទាំងនោះបញ្ចប់ ថេប្លេតរបស់អ្នកនឹងសាកថ្មដូចធម្មតាដោយស្វ័យប្រវត្តិវិញ។"</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"ក្នុងស្ថានភាពមួយចំនួន ដូចជាសីតុណ្ហភាពខ្ពស់ និងរយៈពេលសាកថ្មយូរ ការសាកថ្មអាចត្រូវបានដាក់កំហិតត្រឹម <xliff:g id="PERCENT">%1$s</xliff:g> ដើម្បីជួយការពារគុណភាព​ថ្ម។\n\nនៅពេលដែលស្ថានភាពទាំងនោះបញ្ចប់ ឧបករណ៍របស់អ្នកនឹងសាកថ្មដូចធម្មតាដោយស្វ័យប្រវត្តិវិញ។"</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"ដោយសារអ្នក​បានប្រើ​ទូរសព្ទ​របស់អ្នក​ច្រើនជាងប្រក្រតី ថ្មរបស់អ្នក​អាចនឹង​ឆាប់អស់ជាង​ពេលធម្មតា។\n\nកម្មវិធី​ដែលប្រើថ្ម​ច្រើនបំផុត៖"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"ដោយសារអ្នក​បានប្រើ​ថេប្លេត​របស់អ្នក​ច្រើនជាងធម្មតា ថ្មរបស់អ្នក​អាចនឹង​ឆាប់អស់ជាង​ពេលធម្មតា។\n\nកម្មវិធី​ដែលប្រើថ្ម​ច្រើនបំផុត៖"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"ដោយសារអ្នក​បានប្រើ​ឧបករណ៍​របស់អ្នក​ច្រើនជាងធម្មតា ថ្មរបស់អ្នក​អាចនឹង​ឆាប់អស់ជាង​ពេលធម្មតា។\n\nកម្មវិធី​ដែលប្រើថ្ម​ច្រើនបំផុត៖"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"ការលុប​គណនី​នេះ​នឹង​លុប​សារ ទំនាក់ទំនង និង​ទិន្នន័យ​ផ្សេងៗ​របស់​គណនី​នេះ​ទាំង​អស់​ចេញ​ពី​ឧបករណ៍!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"ការ​ផ្លាស់ប្ដូរ​ទាំងឡាយ​​ដែល​អ្នក​ធ្វើ​មកលើគណនី​របស់​អ្នក​នៅ​លើ​បណ្ដាញ​នឹង​ត្រូវ​បាន​ចម្លង​ទៅថេប្លេត​​របស់​អ្នកដោយ​ស្វ័យ​ប្រវត្តិ។​\n\nគណនី​មួយ​ចំនួន​ក៏​ប្រហែលជាចម្លង​ការ​ផ្លាស់ប្ដូរ​ទាំងឡាយដែល​អ្នក​ធ្វើ​នៅលើ​ថេប្លេតទៅ​បណ្ដាញដោយ​ស្វ័យ​ប្រវត្តិ​ផងដែរ។ គណនី Google ដំណើរការ​តាម​របៀបនេះ។"</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"ការ​ផ្លាស់ប្ដូរ​ណា​មួយ​ដែល​អ្នក​ធ្វើ​ឡើងចំពោះ​គណនី​របស់​អ្នក​នៅ​លើ​បណ្ដាញ នឹង​ត្រូវ​បាន​ចម្លង​ដោយ​ស្វ័យ​ប្រវត្តិ​ទៅ​ទូរសព្ទ​របស់​អ្នក។​\n\nគណនី​មួយ​ចំនួន​ក៏​អាច​ចម្លង​ការ​ផ្លាស់ប្ដូរ​របស់អ្នក​នៅលើ​ទូរសព្ទ​ទៅ​បណ្ដាញដោយ​ស្វ័យ​ប្រវត្តិផងដែរ។ គណនី Google ដំណើរការ​តាម​វិធី​នេះ។"</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"ការ​ផ្លាស់ប្ដូរ​ទាំងឡាយ​ដែល​អ្នក​ធ្វើ​ឡើងចំពោះ​គណនី​របស់​អ្នក​នៅ​លើ​បណ្ដាញនឹង​ត្រូវ​បាន​ចម្លង​ដោយ​ស្វ័យ​ប្រវត្តិ​ទៅ​ឧបករណ៍​របស់​អ្នក។\n\nគណនី​មួយ​ចំនួន​ក៏​អាចនឹង​ចម្លង​ការ​ផ្លាស់ប្ដូរ​របស់អ្នក​នៅលើឧបករណ៍​ទៅ​បណ្ដាញដោយ​ស្វ័យ​ប្រវត្តិផងដែរ។ គណនី Google ដំណើរការ​តាម​វិធី​នេះ។"</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"ថេប្លេត​របស់​អ្នក​នឹង​បិទ​ទិន្នន័យ​ទូរសព្ទចល័ត ​នៅ​ពេល​ដែល​វា​ឈាន​ដល់កម្រិតដែល​អ្នក​បាន​កំណត់។\n\nដោយសារ​តែ​ការ​ប្រើ​ប្រាស់​ទិន្នន័យ​ត្រូវ​បាន​វាស់​ស្ទង់ដោយ​ថេប្លេតរបស់អ្នក ​ហើយក្រុមហ៊ុនបម្រើសេវាទូរសព្ទរបស់​អ្នកអាចគណនាលើការប្រើប្រាស់​ខុសពីនោះ សូមពិចារណា​កំណត់កម្រិតដែលទាបជាង។"</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"ទូរសព្ទ​របស់​អ្នក​នឹង​បិទ​ទិន្នន័យ​ទូរសព្ទចល័ត ​នៅ​ពេល​ដែល​វា​ឈាន​ដល់កម្រិតដែល​អ្នក​បាន​កំណត់។\n\nដោយសារ​តែ​ការ​ប្រើ​ប្រាស់​ទិន្នន័យ​ត្រូវ​បាន​វាស់​ស្ទង់ដោយ​ទូរសព្ទ​របស់អ្នក ​ហើយក្រុមហ៊ុនបម្រើសេវាទូរសព្ទ​របស់​អ្នកអាចគណនាលើការប្រើប្រាស់​ខុសពីនោះ សូមពិចារណា​កំណត់កម្រិតដែលទាបជាង។"</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"ឧបករណ៍​របស់​អ្នក​នឹង​បិទទិន្នន័យទូរសព្ទចល័ត នៅ​ពេល​ដែល​វា​ឈាន​ដល់​កម្រិត​ដែល​អ្នក​បាន​កំណត់។\n\nដោយសារ​តែ​ការប្រើទិន្នន័យ​ត្រូវ​បាន​វាស់​ស្ទង់ដោយ​ឧបករណ៍របស់អ្នក ​ហើយ​ក្រុមហ៊ុន​សេវា​ទូរសព្ទ​របស់​អ្នក​អាច​គណនា​លើ​ការប្រើប្រាស់​ខុស​ពី​នោះ សូម​ពិចារណា​លើ​ការកំណត់​កម្រិត​ដែល​មាន​លក្ខណៈ​សន្សំសំចៃ។"</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"ចែក​រំលែក​ឧបករណ៍​របស់អ្នក​ដោយ​បញ្ចូល​អ្នក​ប្រើប្រាស់​ថ្មី។ អ្នក​ប្រើ​ប្រាស់​ម្នាក់ៗ​មាន​កន្លែង​ផ្ទាល់​ខ្លួន​នៅលើ​ឧបករណ៍​របស់អ្នក​សម្រាប់​អេក្រង់​ដើមផ្ទាល់ខ្លួន គណនី​ កម្មវិធី ការកំណត់ និង​អ្វីៗ​ជាច្រើនទៀត។"</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"ចែក​រំលែកថេប្លេតរបស់អ្នក​ដោយ​បញ្ចូល​អ្នក​ប្រើប្រាស់​ថ្មី។ អ្នក​ប្រើ​ប្រាស់​ម្នាក់ៗ​មាន​កន្លែង​ផ្ទាល់​ខ្លួន​នៅលើ​ថេប្លេត​របស់អ្នក​សម្រាប់​អេក្រង់​ដើម គណនី​ កម្មវិធី ការកំណត់ផ្ទាល់ខ្លួន និង​អ្វីៗ​ជាច្រើនទៀត។"</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"ប្រើទូរសព្ទរបស់អ្នករួមគ្នា​ដោយ​បញ្ចូល​អ្នក​ប្រើប្រាស់​ថ្មី។ អ្នក​ប្រើ​ប្រាស់​ម្នាក់ៗ​មានលំហផ្ទាល់​ខ្លួន​នៅលើ​ទូរសព្ទ​របស់អ្នក​សម្រាប់​គណនី​ កម្មវិធី ការកំណត់ អេក្រង់​ដើមផ្ទាល់ខ្លួន និង​អ្វីៗ​ជាច្រើនទៀត។"</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"ឧបករណ៍របស់អ្នកអាច​នឹងសាកថ្មយឺត ឬមិនសាក។ សម្រាប់ការសាកថ្មរហ័ស សូមប្រើខ្សែ និងអាដាប់ទ័រតាមការណែនាំ។"</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"ដោយមិនចាំបាច់​ដោះសោ​ទូរសព្ទរបស់អ្នក"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"ដោយមិនចាំបាច់​ដោះសោ​ថេប្លេតរបស់អ្នក"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"ដោយមិនដោះ​សោឧបករណ៍របស់អ្នក"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"នៅពេលដែល​អ្នកដាក់​ទូរសព្ទ​របស់អ្នកឱ្យ​បញ្ឈរ និងផ្ដេក"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"នៅពេលដែល​អ្នកដាក់ថេប្លេត​របស់អ្នកឱ្យ​បញ្ឈរ និងផ្ដេក"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"នៅពេលដែល​អ្នកដាក់ឧបករណ៍​របស់អ្នកឱ្យ​បញ្ឈរ និងផ្ដេក"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"កែតម្រូវរបៀបដែលពណ៌បង្ហាញនៅលើទូរសព្ទរបស់អ្នក"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"កែតម្រូវ​របៀបដែលពណ៌​បង្ហាញនៅលើ​ថេប្លេត​របស់អ្នក"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"កែតម្រូវ​របៀបដែលពណ៌​បង្ហាញនៅលើ​ឧបករណ៍​របស់អ្នក"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"ឧបករណ៍បំពងសំឡេងរបស់ទូរសព្ទ"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"ឧបករណ៍បំពងសំឡេងរបស់ថេប្លេត"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"ឧបករណ៍បំពងសំឡេងរបស់ឧបករណ៍"</string>

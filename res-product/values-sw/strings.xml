@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"Anwani ya Bluetooth ya Kifaa chako: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya simu yako ionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya vifaa vyako vionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"Programu fulani inataka kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"Programu fulani inataka kufanya simu yako ionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"Programu inataka kufanya kifaa chako kionekane kwenye vifaa vingine vya Bluetooth kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine vya Bluetooth. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya simu yako ionekane kwenye vifaa vingine vya Bluetooth. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kufanya kifaa chako kionekane kwenye vifaa vingine vya Bluetooth. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"Programu fulani inataka kufanya kifaa chako kionekane kwenye vifaa vingine vya Bluetooth. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya simu yako ionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya kifaa chako kionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"Programu inataka kuwasha Bluetooth na kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"Programu inataka kuwasha Bluetooth na kufanya simu yako ionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"Programu inataka kuwasha Bluetooth na kufanya kifaa chako kionekane kwenye vifaa vingine kwa sekunde <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya kompyuta kibao uliyo nayo ionekane kwenye vifaa vingine. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya simu yako ionekane kwenye vifaa vingine. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g> inataka kuwasha Bluetooth na kufanya kifaa chako kionekane kwenye vifaa vingine. Unaweza kubadilisha hali hii katika mipangilio ya Bluetooth baadaye."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"Kitambuzi cha alama ya kidole kinapatikana kwenye kitufe cha kuwasha/kuzima. Ni kitufe bapa pembeni pa kitufe cha sauti kilichoinuka kwenye ukingo wa kompyuta kibao."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"Kitambuzi cha alama ya kidole kinapatikana kwenye kitufe cha kuwasha/kuzima. Ni kitufe bapa pembeni pa kitufe cha sauti kilichoinuka kwenye ukingo wa kifaa."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"Kitambuzi cha alama ya kidole kinapatikana kwenye kitufe cha kuwasha/kuzima. Ni kitufe bapa pembeni pa kitufe cha sauti kilichoinuka kwenye ukingo wa simu."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"Kitambuzi cha alama ya kidole kinapatikana kwenye kitufe cha kuwasha/kuzima. Ni kitufe bapa karibu na kitufe cha sauti kilichoinuka kwenye ukingo wa kompyuta ya mezani."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"Sasa unaweza kutumia alama ya kidole chako kufungua kompyuta kibao yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"Sasa unaweza kutumia alama ya kidole chako kufungua kifaa chako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"Sasa unaweza kutumia alama ya kidole chako kufungua simu yako au kuthibitisha kuwa ni wewe, kama vile unapoingia katika akaunti kwenye programu au unapoidhinisha ununuzi"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"Unaweza kufungua kifaa chako kwa kutumia uso au alama ya kidole chako. Kwa ajili ya usalama, chaguo hili linahitaji mbinu mbadala ya kufunga skrini."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"Simba kompyuta kibao kwa njia fiche"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"Simba simu kwa njia fiche"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"Simba kifaa kwa njia fiche"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"Weka mbinu ya kufunga skrini ili ulinde kompyuta kibao"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"Weka mbinu ya kufunga skrini ili ulinde kifaa chako"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"Weka mbinu ya kufunga skrini ili ulinde simu yako"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"Ruhusu tu matumizi ya NFC wakati skrini imefunguliwa"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mtandao kwenye simu yako"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mtandao kwenye kompyuta yako kibao"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mtandao kwenye kifaa chako"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mitandao hii kwenye simu yako"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mitandao hii kwenye kompyuta yako kibao"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> inataka kuhifadhi mitandao hii kwenye kifaa chako"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Rekebisha mkao wa skrini kiotomatiki unaposogeza simu yako kati ya mkao wima na mlalo"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Rekebisha kiotomatiki mkao wa skrini unapobadili kishikwambi chako kati ya mkao wima na mlalo"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Rekebisha kiotomatiki mkao wa skrini ukibadilisha mkao wa kifaa chako kati ya wima na mlalo"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"Inahitaji PIN ili kutumia kompyuta kibao"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"Unahitaji PIN ili utumie simu"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"Itisha PIN ili kutumia kifaa"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"Itisha PIN ili kutumia kompyuta kibao"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"Itisha PIN kabla kuruhusu simu itumike"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"Itisha PIN ili kutumia kifaa"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"Namba ya simu"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (nafasi ya SIM ya %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"Namba ya simu (nafasi ya SIM ya %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"MDN kwenye SIM"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"Nambari ya simu kwenye SIM"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"Andaa kadi ya SD kwa ajili ya hifadhi ya mfumo"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"Hifadhi programu na maudhui ya kutumia kwenye simu hii tu. &lt;a href=https://support.google.com/android/answer/12153449&gt;Pata maelezo zaidi kuhusu kuweka mipangilio ya kadi ya SD&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"Andaa diski"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"Andaa kadi ya SD kwa ajili ya hifadhi ya mfumo"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"Hifadhi programu na maudhui ili utumie kwenye kifaa hiki tu. &lt;a href=https://support.google.com/android/answer/12153449&gt;Pata maelezo zaidi kuhusu kuweka mipangilio ya kadi ya SD&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"Andaa diski"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"Unaweza kuhamishia faili, maudhui na baadhi ya programu kwenye <xliff:g id="NAME">^1</xliff:g>. \n\nHatua hii itafuta vipengee ili upate nafasi ya <xliff:g id="SIZE">^2</xliff:g> kwenye hifadhi ya kompyuta yako kibao na inaweza kuchukua takribani <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"Unaweza kuhamishia faili, maudhui na baadhi ya programu kwenye <xliff:g id="NAME">^1</xliff:g>. \n\nHatua hii itafuta vipengee ili upate nafasi ya <xliff:g id="SIZE">^2</xliff:g> kwenye hifadhi ya simu yako na inaweza kuchukua takribani <xliff:g id="DURATION">^3</xliff:g>."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"Unaweza kuhamishia faili, maudhui na baadhi ya programu kwenye <xliff:g id="NAME">^1</xliff:g> hii. \n\nHatua hii itakurejeshea <xliff:g id="SIZE">^2</xliff:g> ya hifadhi ya kifaa chako na inaweza kuchukua takribani <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"Usiondoe kompyuta kibao hii kwenye chaja"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"Usiondoe simu hii kwenye chaja"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"Endelea kuchaji kifaa hiki"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"Hatua hii itafuta data yote kwenye "<b>"hifadhi ya mfumo"</b>" ya kompyuta yako kibao, ikiwa ni pamoja na:\n \n"<li>"Akaunti yako ya Google"</li>\n<li>"Data na mipangilio ya mfumo na programu"</li>\n<li>"Programu zilizopakuliwa"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"Hatua hii itafuta data yote kwenye "<b>"hifadhi ya mfumo"</b>" ya simu yako, ikiwa ni pamoja na:\n \n"<li>"Akaunti yako ya Google"</li>\n<li>"Data na mipangilio ya mfumo na programu"</li>\n<li>"Programu zilizopakuliwa"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"Hatua hii itafuta data yote iliyo kwenye "<b>"hifadhi ya mfumo"</b>" wa kifaa chako, ikiwemo:\n\n"<li>"Akaunti yako ya Google"</li>\n<li>"Mfumo na data ya programu na mipangilio"</li>\n<li>"Programu zilizopakuliwa"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"Kwa sasa umeingia katika akaunti zifuatazo:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"Kuna watumiaji wengine waliopo kwenye kifaa hiki.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"Ili kufuta muziki, picha na data nyingine ya mtumiaji, data iliyo kwenye "<b>"hifadhi ya USB"</b>" inahitaji kufutwa."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"Ukisitisha huduma hii, baadhi ya vipengele vya kifaa chako vinaweza kuacha kufanya kazi kwa usahihi mpaka ukizime kisha ukiwashe tena."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"Maelezo ya kompyuta kibao"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"Maelezo ya simu"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"Maelezo ya kifaa"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"Mapendeleo yako ya ukubwa wa vipengee na maandishi yatarejeshwa kuwa mipangilio halisi ya simu"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"Mapendeleo yako ya maandishi na ukubwa wa skrini yatarejeshwa katika mipangilio halisi ya kishikwambi"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"Mapendeleo yako ya maandishi na ukubwa wa onyesho yatarejeshwa katika mipangilio halisi ya kifaa"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Rekebisha jinsi rangi zinavyoonekana kwenye simu yako"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Badilisha jinsi rangi zinavyoonekana kwenye kompyuta kibao yako"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Badilisha jinsi rangi zinavyoonekana kwenye kifaa chako"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"Punguza mwangaza wa skrini zaidi ya kiwango cha chini cha ung\'aavu wa simu yako"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"Punguza mwangaza wa skrini zaidi ya kiwango cha chini cha ung\'aavu wa kompyuta yako kibao"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"Punguza mwangaza wa skrini uwe chini zaidi ya kikomo cha mwangaza wa kifaa"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Kipunguza mwangaza zaidi kinaweza kusaidia wakati: &lt;ol&gt; &lt;li&gt; Uangavu chaguomsingi wa kiwango cha chini kwenye simu yako bado una mwangaza mwingi&lt;/li&gt; &lt;li&gt; Unatumia simu yako katika hali zenye giza, kama vile usiku au katika chumba chenye giza kabla ya kulala&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Kipunguza mwangaza zaidi kinasaidia wakati: &lt;ol&gt; &lt;li&gt; Uangavu chaguomsingi wa kiwango cha chini kwenye kompyuta kibao yako bado una mwangaza mwingi&lt;/li&gt; &lt;li&gt; Unatumia kompyuta kibao katika hali zenye giza, kama vile usiku au katika chumba chenye giza kabla ya kulala&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"Kipunguza mwangaza zaidi kinaweza kusaidia wakati: &lt;ol&gt; &lt;li&gt; Mwangaza chaguomsingi wa kiwango cha chini kwenye kifaa chako bado ni mwingi mno&lt;/li&gt; &lt;li&gt; Unatumia kifaa chako katika hali zenye giza, kama vile usiku au katika chumba chenye giza kabla ya kulala&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"Simu inatumia kiwango cha kawaida cha betri chinichini"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"Kompyuta kibao inatumia kiwango cha kawaida cha betri chinichini"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"Kifaa kinatumia kiwango cha kawaida cha betri chinichini"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"Kifaa kinatumia kiwango cha kawaida cha betri chinichini"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"Katika hali fulani, kama vile halijoto za kiwango cha juu na vipindi virefu vya kuchaji, huenda isichaji zaidi ya <xliff:g id="PERCENT">%1$s</xliff:g> ili kusaidia kudumisha muda wa matumizi ya betri. \n\nHali hizo zitakapoisha, simu yako itachaji kiotomatiki kwa njia ya kawaida."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"Katika hali fulani, kama vile halijoto za kiwango cha juu na vipindi virefu vya kuchaji, huenda isichaji zaidi ya <xliff:g id="PERCENT">%1$s</xliff:g> ili kusaidia kudumisha muda wa matumizi ya betri. \n\nHali hizo zitakapoisha, kompyuta yako kibao itachaji kiotomatiki kwa njia ya kawaida."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"Katika hali fulani, kama vile halijoto za kiwango cha juu na vipindi virefu vya kuchaji, huenda isichaji zaidi ya <xliff:g id="PERCENT">%1$s</xliff:g> ili kusaidia kudumisha muda wa kudumu wa betri. \n\nHali hizo zitakapoisha, kifaa chako kitachaji kiotomatiki kwa njia ya kawaida."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"Kwa kuwa umetumia simu yako kuliko kawaida, huenda chaji ya betri yako ikaisha haraka kuliko kawaida.\n\nProgramu zinazotumia betri zaidi:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"Kwa kuwa umetumia kompyuta yako kibao kuliko kawaida, huenda chaji ya betri yako ikaisha haraka kuliko kawaida.\n\nProgramu zinazotumia betri zaidi:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"Kwa kuwa umetumia kifaa chako kuliko kawaida, huenda chaji ya betri yako ikaisha haraka kuliko kawaida.\n\nProgramu zinazotumia betri zaidi:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"Kuondoa akaunti hii kutasababisha kufutwa kwa ujumbe, anwani na data nyingine kwenye kifaa!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"Mabadiliko yoyote utakayofanya katika akaunti zako kwenye wavuti yatanakiliwa kiotomatiki kwenye kompyuta kibao yako.\n\nBaadhi ya akaunti pia zinaweza kunakili kiotomatiki kwenye wavuti mabadiliko yoyote utakayofanya kwenye kompyuta kibao. Akaunti ya Google hufanya kazi kwa namna hii."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"Mabadiliko yoyote utakayofanya katika akaunti zako kwenye wavuti yatanakiliwa kiotomatiki kwenye simu yako.\n\nBaadhi ya akaunti pia zinaweza kunakili kiotomatiki kwenye wavuti mabadiliko yoyote utakayofanya kwenye simu. Akaunti ya Google hufanyakazi kwa namna hii."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"Mabadiliko yoyote utakayofanya katika akaunti zako kwenye wavuti yatanakiliwa kiotomatiki katika kifaa chako.\n\nHuenda baadhi ya akaunti pia zikanakili kiotomatiki kwenye wavuti mabadiliko yoyote utakayofanya katika kifaa. Hivi ndivyo Akaunti ya Google hufanya kazi."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"Kompyuta kibao yako itazima data ya mtandao wa simu pindi itakapofikia kikomo cha matumizi ulichoweka.\n\nKwa kuwa kompyuta kibao yako ndiyo huwa inapima matumizi ya data, na kampuni inayokupa huduma za mtandao huenda ikahesabu matumizi kwa njia tofauti, unashauriwa kuweka kikomo cha wastani."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"Simu yako itazima data ya mtandao wa simu pindi itakapofikia kikomo cha matumizi ya data ulichoweka. \n\nKwa kuwa simu yako ndiyo huwa inapima matumizi ya data, na kampuni inayokupa huduma za mtandao huenda ikahesabu matumizi kwa njia tofauti, unashauriwa kuweka kikomo cha wastani."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"Kifaa chako kitazima data ya mtandao wa simu pindi kitakapofikia kikomo cha matumizi ya data ulichoweka. \n\nKwa kuwa kifaa chako ndicho kinachopima matumizi ya data na huenda mtoa huduma wako akakadiria matumizi kwa njia tofauti, unashauriwa kuweka kikomo cha chini."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"Shiriki kifaa chako kwa kuongeza watumiaji wapya. Kila mtumiaji ana nafasi ya binafsi kwenye kifaa chako kwa ajili ya Skrini ya kwanza, akaunti, programu, mipangilio na vipengee vingine maalum."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"Tumia kishikwambi chako pamoja na wengine kwa kuongeza watumiaji wapya. Kila mtumiaji ana nafasi ya binafsi ya Skrini ya kwanza, akaunti, programu, mipangilio na vipengee vingine maalum kwenye kishikwambi chako"</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"Tumia simu yako na wengine kwa kuongeza watumiaji wapya. Kila mtumiaji ana nafasi ya binafsi kwenye simu yako ya kuweka Skrini ya Kwanza, akaunti, programu, mipangilio na vipengee vingine maalum kwake."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"Huenda kifaa chako kinachaji polepole au hakichaji. Ili uchaji kwa kasi, tumia kebo na adapta inayopendekezwa."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"Bila kufungua simu yako"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"Bila kufungua kompyuta kibao yako"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"Bila kufungua kifaa chako"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"Unapobadilisha mkao wa simu yako kati ya wima na mlalo"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"Unapobadilisha mkao wa kompyuta kibao yako kati ya wima na mlalo"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"Ukibadilisha mkao wa kifaa chako kati ya wima na mlalo"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"Rekebisha jinsi rangi zinaonekana kwenye simu yako"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"Rekebisha jinsi rangi zinaonekana kwenye kishikwambi chako"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"Badilisha jinsi rangi zinavyoonekana kwenye kifaa chako"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"Spika za simu"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"Spika za kishikwambi"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"Spika za kifaa"</string>

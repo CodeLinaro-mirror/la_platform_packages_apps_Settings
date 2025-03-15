@@ -41,6 +41,12 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"Suspendido"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"Desconocida"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"Vista previa"</string>
+    <!-- no translation found for preview_pager_home_content_description (3961399947853424786) -->
+    <skip />
+    <!-- no translation found for preview_pager_message_content_description (3018855090807833755) -->
+    <skip />
+    <!-- no translation found for preview_pager_email_content_description (100055784235660338) -->
+    <skip />
     <string name="qr_code_content_description" msgid="1852208464419291347">"Código QR"</string>
     <string name="preview_pager_previous_button" msgid="607771113300838313">"Vista previa anterior"</string>
     <string name="preview_pager_next_button" msgid="8700907912508927271">"Vista previa siguiente"</string>
@@ -218,11 +224,13 @@
     <string name="desc_introduction_of_language_picker" msgid="4012265379885200083">"El dispositivo, las apps y los sitios web usan el primer idioma compatible de entre los preferidos.\n\nMuchas apps también usarán la región del idioma preferido para cambiar la forma en la que muestran fechas, números y unidades. Para realizar cambios, agrega un idioma y elige una región preferida."</string>
     <string name="desc_notice_of_language_picker" msgid="3449290526457925447">"Para seleccionar un idioma para cada app, ve a la configuración de idioma de la app."</string>
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"Obtén más información sobre los idiomas de las apps"</string>
-    <string name="title_change_system_region" msgid="5476591184463491936">"¿Quieres cambiar la región a %s?"</string>
+    <!-- no translation found for title_change_system_region (9196602029960380112) -->
+    <skip />
     <string name="desc_notice_device_region_change" msgid="6702773189066944100">"El idioma de tu dispositivo seguirá siendo %s"</string>
     <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
     <skip />
-    <string name="title_change_system_locale" msgid="8589844586256566951">"¿Deseas cambiar el idioma del sistema a %s?"</string>
+    <!-- no translation found for title_change_system_locale (4102991236063984803) -->
+    <skip />
     <string name="title_system_locale_addition" msgid="8218683660751479466">"¿Quieres agregar %s a los idiomas preferidos?"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"Esto permite que las apps y los sitios web sepan que prefieres este idioma."</string>
     <string name="desc_notice_device_locale_settings_change" msgid="8311132485850714160">"Cambiarán la configuración y las preferencias regionales de tu dispositivo."</string>
@@ -239,7 +247,8 @@
     <string name="search_region_hint" msgid="1748708432568237552">"Buscar regiones"</string>
     <string name="top_intro_region_title" msgid="2336323415395642117">"La región que elijas afecta la forma en que tu teléfono muestra la hora, las fechas, la temperatura y mucho más."</string>
     <string name="more_language_settings_category" msgid="3669703092480725416">"Más parámetros de configuración de idioma"</string>
-    <string name="title_change_system_locale_region" msgid="1977530992614685128">"¿Quieres cambiar la región a <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>?"</string>
+    <!-- no translation found for title_change_system_locale_region (4401478579429442695) -->
+    <skip />
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"El idioma de tu dispositivo seguirá siendo <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g>"</string>
     <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"Elige cómo quieres que se muestren los números en tu dispositivo, sitios web y apps"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Preferencias regionales"</string>
@@ -359,6 +368,8 @@
     <string name="safety_center_summary" msgid="3554867379951053869">"Seguridad de apps, bloqueo del dispositivo, permisos"</string>
     <string name="security_settings_face_preference_summary" msgid="6675126437396914838">"Se agregó el rostro"</string>
     <string name="security_settings_face_preference_summary_none" msgid="523320857738436024">"Se requiere configuración"</string>
+    <!-- no translation found for security_settings_face_preference_summary_none_new (1963253146734002815) -->
+    <skip />
     <string name="security_settings_face_preference_title_new" msgid="7680231874730796331">"Rostro"</string>
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"Rostro para el trabajo"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"Rostro para espacio privado"</string>
@@ -441,6 +452,8 @@
     <string name="fingerprint_add_title" msgid="1837610443487902050">"Agregar huella dactilar"</string>
     <string name="security_settings_fingerprint_preference_summary" msgid="8486134175759676037">"{count,plural, =1{Se agregó la huella dactilar}other{Se agregaron # huellas dactilares}}"</string>
     <string name="security_settings_fingerprint_preference_summary_none" msgid="1146977379031250790">"Se requiere configuración"</string>
+    <!-- no translation found for security_settings_fingerprint_preference_summary_none_new (510376523784190149) -->
+    <skip />
     <string name="security_settings_fingerprint_enroll_introduction_title" msgid="7931650601996313070">"Configura tu huella dactilar"</string>
     <string name="security_settings_fingerprint_enroll_consent_introduction_title" msgid="2278592030102282364">"Desbloq. con huella dactilar"</string>
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled" msgid="1911710308293783998">"Usa tus huellas dactilares"</string>
@@ -796,6 +809,8 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"Continuar sin Desbloqueo facial"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"Continuar sin desbloqueo facial ni con huella dactilar"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"Ninguno"</string>
+    <!-- no translation found for unlock_set_unlock_mode_off_new (865396805830816266) -->
+    <skip />
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"Deslizar"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"Patrón"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"PIN"</string>
@@ -1064,7 +1079,8 @@
     <string name="wifi_show_advanced" msgid="2969378109942071741">"Opciones avanzadas"</string>
     <string name="wifi_advanced_toggle_description" msgid="7299179796727934885">"Lista desplegable \"Opciones avanzadas\""</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="3615140699129928913">"expandir"</string>
-    <string name="wifi_ssid" msgid="2713062130735103151">"Nombre de la red"</string>
+    <!-- no translation found for wifi_ssid (5139273830867723030) -->
+    <skip />
     <string name="wifi_ssid_hint" msgid="1940577553241083524">"Ingresa el SSID"</string>
     <string name="wifi_security" msgid="9095934643631406913">"Seguridad"</string>
     <string name="wifi_hidden_network" msgid="6466834025375485596">"Red oculta"</string>
@@ -1087,7 +1103,10 @@
     <string name="wifi_eap_user_cert" msgid="3569182430929173220">"Certificado del usuario"</string>
     <string name="wifi_eap_identity" msgid="3629406902174137028">"Identidad"</string>
     <string name="wifi_eap_anonymous" msgid="8630332141751267000">"Identidad anónima"</string>
-    <string name="wifi_password" msgid="1458802324849513755">"Contraseña"</string>
+    <!-- no translation found for wifi_password (165204973532996861) -->
+    <skip />
+    <!-- no translation found for wifi_password_invalid (8884500804472828356) -->
+    <skip />
     <string name="wifi_show_password" msgid="6865993988238157923">"Mostrar contraseña"</string>
     <string name="wifi_ap_choose_2G" msgid="1436802195991542016">"Banda de 2.4 GHz"</string>
     <string name="wifi_ap_prefer_5G" msgid="2520628479818369902">"Banda preferida: 5.0 GHz"</string>
@@ -1153,6 +1172,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown" msgid="4903345360745717385">"Para mejorar la precisión de la ubicación y para otros fines, una app desconocida quiere activar la búsqueda de redes aunque el Wi‑Fi esté desactivado.\n\n¿Permitir que todas las apps puedan hacerlo?"</string>
     <string name="wifi_scan_always_confirm_allow" msgid="4154200627800959777">"Permitir"</string>
     <string name="wifi_scan_always_confirm_deny" msgid="6997087934558839256">"Denegar"</string>
+    <!-- no translation found for wifi_field_required (6312381745503042588) -->
+    <skip />
     <string name="no_internet_access_text" msgid="3611993143350310936">"Esta red no tiene acceso a Internet. ¿Deseas mantener la conexión?"</string>
     <string name="partial_connectivity_text" msgid="8874614799723694554">"Puede que algunas apps y servicios no funcionen debido a la conectividad limitada. ¿Usar igualmente?"</string>
     <string name="no_internet_access_remember" msgid="5113610157731269258">"No volver a preguntar para esta red"</string>
@@ -1589,6 +1610,20 @@
     <string name="battery_level_title" msgid="1371765298786083448">"Nivel de la batería"</string>
     <string name="communal_settings_title" msgid="2845678473945902115">"Comunal"</string>
     <string name="communal_settings_summary" msgid="4923914136953940317">"Configuraciones compartidas"</string>
+    <!-- no translation found for hub_mode_category_title (5290081595872103974) -->
+    <skip />
+    <!-- no translation found for widgets_on_lockscreen_title (6979558402208585885) -->
+    <skip />
+    <!-- no translation found for when_to_auto_show_hubmode_title (2307148913387518369) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_never (976644329215156021) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging (1874391105066805128) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging_and_upright (6293947459712755814) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_docked (7107631545009933891) -->
+    <skip />
     <string name="satellite_setting" msgid="4171265534842459910">"Mensajería satelital"</string>
     <string name="apn_settings" msgid="4295467389400441299">"APN"</string>
     <string name="apn_edit" msgid="2003683641840248741">"Editar punto de acceso"</string>
@@ -1697,6 +1732,16 @@
     <string name="tether_preference_summary_off" msgid="6266799346319794630">"No"</string>
     <string name="usb_tethering_button_text" msgid="7364633823180913777">"Conexión mediante USB"</string>
     <string name="bluetooth_tether_checkbox_text" msgid="6108398414967813545">"Conexión Bluetooth"</string>
+    <!-- no translation found for ethernet_ip_address (4218340787862242573) -->
+    <skip />
+    <!-- no translation found for ethernet_mac_address_title (3235879195237611007) -->
+    <skip />
+    <!-- no translation found for tx_ethernet_speed (4785035505065551012) -->
+    <skip />
+    <!-- no translation found for rx_ethernet_speed (6642000569214969711) -->
+    <skip />
+    <!-- no translation found for ethernet_network_usage (3795965384177426780) -->
+    <skip />
     <string name="ethernet_tether_checkbox_text" msgid="959743110824197356">"Conexión Ethernet"</string>
     <string name="tethering_footer_info" msgid="6824352505979800594">"Usa la función de hotspot y conexión mediante dispositivo móvil para brindar acceso a Internet a otros dispositivos a través de tu conexión de datos móviles. Las apps también pueden crear un hotspot para compartir contenido con dispositivos cercanos."</string>
     <string name="tethering_footer_info_sta_ap_concurrency" msgid="2079039077487477676">"Usa Hotspot y conexión mediante dispositivos móviles para brindar acceso a Internet a otros dispositivos a través de una conexión Wi-Fi o de datos móviles. Las apps también pueden crear un hotspot para compartir contenido con dispositivos cercanos."</string>
@@ -5407,8 +5452,10 @@
     <string name="smart_forwarding_input_mdn_dialog_title" msgid="7542216086697868415">"Ingresa el número de teléfono"</string>
     <string name="smart_forwarding_missing_mdn_text" msgid="2907314684242542226">"Falta el número de teléfono."</string>
     <string name="smart_forwarding_missing_alert_dialog_text" msgid="7870419247987316112">"Aceptar"</string>
-    <string name="enable_2g_title" msgid="8184757884636162942">"Permitir 2G"</string>
-    <string name="enable_2g_summary" msgid="2794534052372565914">"2G es menos seguro, pero podría mejorar tu conexión en algunas ubicaciones. Para llamadas de emergencia, siempre se permite 2G."</string>
+    <!-- no translation found for enable_2g_title (5657132300321750181) -->
+    <skip />
+    <!-- no translation found for enable_2g_summary (6317192326100541563) -->
+    <skip />
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g> requiere 2G para brindar servicio"</string>
     <string name="require_cellular_encryption_title" msgid="6087085031703089235">"Permitir solo las redes encriptadas"</string>
     <string name="require_cellular_encryption_summary" msgid="6090569065420631457">"Esto es más seguro, pero podría limitar tu conexión de red móvil en algunas ubicaciones. Las llamadas de emergencia siempre están permitidas"</string>
@@ -5735,5 +5782,15 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"Cambia el PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"¿Olvidaste tu PIN?"</string>
     <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"Filtros de contenido web"</string>
+    <!-- no translation found for supervision_web_content_filters_browser_title (979037187423952892) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_title (7923982596891796260) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_summary (1477766506765966613) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_allow_all_sites_title (3909739592466381845) -->
+    <skip />
+    <!-- no translation found for supervision_full_screen_pin_verification_title (78513043528333399) -->
+    <skip />
     <string name="accessibility_illustration_content_description" msgid="557376174860150903">"Animación de <xliff:g id="FEATURE">%1$s</xliff:g>"</string>
 </resources>

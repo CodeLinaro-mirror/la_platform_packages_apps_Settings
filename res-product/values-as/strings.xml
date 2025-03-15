@@ -27,36 +27,28 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"ডিভাইচৰ ব্লুটুথৰ ঠিকনা: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ টে\'বলেটো <xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ফ\'নটো<xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ডিভাইচটো <xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"এটা এপে আপোনাৰ টেবলেটো <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"এটা এপে আপোনাৰ ফ\'নটো <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"এটা এপে আপোনাৰ ডিভাইচটো <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ টে\'বলেটটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ফ\'নটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
-    <!-- no translation found for bluetooth_ask_lasting_discovery (3887794644497572519) -->
-    <skip />
+    <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ডিভাইচটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি এয়া পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_lasting_discovery_no_name" product="tablet" msgid="1062185767225450964">"এটা এপে আপোনাৰ টে\'বলেটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_lasting_discovery_no_name" product="default" msgid="7909547303183236140">"এটা এপে আপোনাৰ ফ\'নটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
-    <!-- no translation found for bluetooth_ask_lasting_discovery_no_name (6517618973665289643) -->
-    <skip />
+    <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"এটা এপে আপোনাৰ ডিভাইচটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি এয়া পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ <xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে ব্লুটুথ অন কৰি অন্য ডিভাইচে আপোনাৰ টে\'বলেটটো বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ফ\'নটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু <xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ডিভাইচে ফ\'নটোক বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ডিভাইচটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু <xliff:g id="TIMEOUT">%2$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ডিভাইচে ইয়াক বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"এটা এপে আপোনাৰ টে\'বলেটৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে টে\'বলেটটোক বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"এটা এপে আপোনাৰ ফ\'নটো <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"এটা এপে আপোনাৰ ডিভাইচটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু <xliff:g id="TIMEOUT">%1$d</xliff:g> ছেকেণ্ডৰ বাবে অন্য ব্লুটুথ ডিভাইচে ইয়াক বিচাৰি পাব পৰা কৰিব বিচাৰিছে।"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g> আপোনাৰ টে\'বলেটটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু ইয়াক অন্য ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g>এ আপোনাৰ ফ\'নটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_lasting_discovery (2790161567276762264) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g> আপোনাৰ ডিভাইচটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু ইয়াক অন্য ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি এয়া পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="tablet" msgid="505214056751470551">"এটা এপে আপোনাৰ টে\'বলেটটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু টে\'বলেটটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="default" msgid="6187216564831513193">"এটা এপে আপোনাৰ ফ\'নটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু ফ\'নটো অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি ইয়াক পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_lasting_discovery_no_name (5587751002247136990) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_lasting_discovery_no_name" product="desktop" msgid="5587751002247136990">"এটা এপে আপোনাৰ ডিভাইচটোৰ ব্লুটুথ অন কৰিব বিচাৰিছে আৰু ইয়াক অন্য ব্লুটুথ ডিভাইচে বিচাৰি পাব পৰা কৰিব বিচাৰিছে। আপুনি এয়া পাছত ব্লুটুথ ছেটিঙত সলনি কৰিব পাৰিব।"</string>
     <string name="encryption_and_credential_settings_summary" product="default" msgid="3741475436042800617">"ফ\'ন এনক্ৰিপ্ট কৰা হ’ল"</string>
     <string name="encryption_and_credential_settings_summary" product="tablet" msgid="2220021007677215054">"ডিভাইচ এনক্ৰিপ্ট কৰা হ’ল"</string>
     <string name="encryption_and_credential_settings_summary" product="desktop" msgid="2220021007677215054">"ডিভাইচ এনক্ৰিপ্ট কৰা হ’ল"</string>
@@ -199,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"ফিংগাৰপ্ৰিণ্ট ছেন্সৰটো পাৱাৰ বুটামটোত আছে। এইটো হৈছে টেবলেটটোৰ প্ৰান্তত থকা উঠঙা ভলিউমৰ বুটামটোৰ কাষত থকা চেপেটা বুটামটো।"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"ফিংগাৰপ্ৰিণ্ট ছেন্সৰটো পাৱাৰ বুটামটোত আছে। এইটো হৈছে ডিভাইচটোৰ প্ৰান্তত থকা উঠঙা ভলিউমৰ বুটামটোৰ কাষত থকা চেপেটা বুটামটো।"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"ফিংগাৰপ্ৰিণ্ট ছেন্সৰটো পাৱাৰ বুটামটোত আছে। এইটো হৈছে ফ’নটোৰ প্ৰান্তত থকা উঠঙা ভলিউমৰ বুটামটোৰ কাষত থকা চেপেটা বুটামটো।"</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"ফিংগাৰপ্ৰিণ্ট ছেন্সৰটো পাৱাৰ বুটামটোত আছে। এইটো হৈছে ডেস্কটপটোৰ প্ৰান্তত থকা উঠঙা ভলিউমৰ বুটামটোৰ কাষত থকা চেপেটা বুটামটো।"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"এতিয়া আপুনি নিজৰ টেবলেটটো আনলক কৰোঁতে অথবা আপুনি এপত ছাইন ইন কৰা অথবা কোনো ক্ৰয়ৰ অনুমোদন জনোৱা আদিৰ দৰে কাৰ্য কৰোঁতে এয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ নিজৰ ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰিব পাৰে"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"এতিয়া আপুনি নিজৰ ডিভাইচটো আনলক কৰোঁতে অথবা আপুনি এপত ছাইন ইন কৰা অথবা কোনো ক্ৰয়ৰ অনুমোদন জনোৱা আদিৰ দৰে কাৰ্য কৰোঁতে এয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ নিজৰ ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰিব পাৰে"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"এতিয়া আপুনি নিজৰ ফ’নটো আনলক কৰোঁতে অথবা আপুনি এপত ছাইন ইন কৰা অথবা কোনো ক্ৰয়ৰ অনুমোদন জনোৱা আদিৰ দৰে কাৰ্য কৰোঁতে এয়া আপুনিয়েই বুলি সত্যাপন কৰিবলৈ নিজৰ ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰিব পাৰে"</string>
@@ -279,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"আপুনি আপোনাৰ মুখাৱয়ব অথবা ফিংগাৰপ্ৰিণ্ট ব্যৱহাৰ কৰি আপোনাৰ ডিভাইচটো আনলক কৰিব পাৰে। সুৰক্ষাৰ বাবে, এই বিকল্পটোক এটা বেকআপ স্ক্ৰীন লকৰ আৱশ্যক।"</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"টেবলেট এনক্ৰিপ্ট কৰক"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"ফ’ন এনক্ৰিপ্ট কৰক"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"ডিভাইচ এনক্ৰিপ্ট কৰক"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"টেবলেটক সুৰক্ষা প্ৰদান কৰিবলৈ স্ক্ৰীন লক ছেট কৰক"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"ডিভাইচক সুৰক্ষা প্ৰদান কৰিবলৈ স্ক্ৰীন লক ছেট কৰক"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"ফ\'নক সুৰক্ষিত কৰিবলৈ স্ক্ৰীন লক ছেট কৰক"</string>
@@ -316,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"স্ক্ৰীনখন আনলক হৈ থকা অৱস্থাতহে NFCৰ ব্যৱহাৰৰ অনুমতি দিয়ক"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ ফ’নত এটা নেটৱৰ্ক ছেভ কৰিবলৈ বিচাৰে"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ টেবলেটত এটা নেটৱৰ্ক ছেভ কৰিবলৈ বিচাৰে"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ ডিভাইচত এটা নেটৱৰ্ক ছেভ কৰিবলৈ বিচাৰে"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ ফ’নত এই নেটৱৰ্কসমূহ ছেভ কৰিবলৈ বিচাৰে"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ টেবলেটত এই নেটৱৰ্কসমূহ ছেভ কৰিবলৈ বিচাৰে"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g>এ আপোনাৰ ডিভাইচত এই নেটৱৰ্কসমূহ ছেভ কৰিবলৈ বিচাৰে"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"আপুনি আপোনাৰ ফ’নটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে স্ক্ৰীনৰ দিশ স্বয়ংক্ৰিয়ভাৱে মিলাওক"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"আপুনি আপোনাৰ টেবলেটটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে স্ক্ৰীনৰ দিশ স্বয়ংক্ৰিয়ভাৱে মিলাওক"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"আপুনি আপোনাৰ ডিভাইচটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে স্ক্ৰীনৰ দিশ স্বয়ংক্ৰিয়ভাৱে মিলাওক"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"টে\'বলেটটো ব্যৱহাৰ কৰিবলৈ পিন দিয়াটো বাধ্যতামূলক"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"ফ\'ন ব্যৱহাৰ কৰিবলৈ পিনৰ দৰকাৰ"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"ডিভাইচ ব্যৱহাৰ কৰিবলৈ পিনৰ প্ৰয়োজন"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"টে\'বলেট ব্যৱহাৰ কৰিবলৈ পিনৰ দৰকাৰ হয়"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"ফ\'ন ব্যৱহাৰ কৰিবলৈ পিনৰ প্ৰয়োজন"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"ডিভাইচ ব্যৱহাৰ কৰিবলৈ পিনৰ প্ৰয়োজন"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"এমডিএন"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"ফ\'ন নম্বৰ"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (ছিমৰ শ্লট %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"ফ’ন নম্বৰ (ছিমৰ শ্লট %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"ছিমত এমডিএন"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"ছিমত থকা ফ\'ন নম্বৰ"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"অভ্যন্তৰীণ ষ্ট’ৰেজৰ বাবে SD কাৰ্ড ফৰ্মেট কৰক"</string>
@@ -349,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"কেৱল এই ফ’নটোত ব্যৱহাৰ কৰিবলৈ এপ্‌ আৰু মিডিয়া ষ্ট’ৰ কৰক। &lt;a href=https://support.google.com/android/answer/12153449&gt;এখন SD কাৰ্ড ছেট আপ কৰাৰ বিষয়ে অধিক জানক&lt;/a&gt;।"</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"ফৰ্মেট কৰক"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"অভ্যন্তৰীণ ষ্ট’ৰেজৰ বাবে SD কাৰ্ড ফৰ্মেট কৰক"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"কেৱল এই ডিভাইচটোত ব্যৱহাৰ কৰিবলৈ এপ্‌ আৰু মিডিয়া ষ্ট’ৰ কৰক। &lt;a href=https://support.google.com/android/answer/12153449&gt;এখন SD কাৰ্ড ছেট আপ কৰাৰ বিষয়ে অধিক জানক&lt;/a&gt;।"</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"ফৰ্মেট কৰক"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"আপুনি <xliff:g id="NAME">^1</xliff:g>লৈ ফাইল, মিডিয়া আৰু কিছুমান নিৰ্দিষ্ট এপ্ স্থানান্তৰ কৰিব পাৰে। \n\nএই কাৰ্যই আপোনাৰ টেবলেটৰ ষ্ট’ৰেজত <xliff:g id="SIZE">^2</xliff:g> ঠাই মুকলি কৰিব আৰু এই কাম কৰোঁতে প্ৰায় <xliff:g id="DURATION">^3</xliff:g> লাগিব।"</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"আপুনি <xliff:g id="NAME">^1</xliff:g>লৈ ফাইল, মিডিয়া আৰু কিছুমান নিৰ্দিষ্ট এপ্ স্থানান্তৰ কৰিব পাৰে। \n\nএই কাৰ্যই আপোনাৰ ফ’নৰ ষ্ট’ৰেজত <xliff:g id="SIZE">^2</xliff:g> ঠাই মুকলি কৰিব আৰু এই কাম কৰোঁতে প্ৰায় <xliff:g id="DURATION">^3</xliff:g> লাগিব।"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"আপুনি <xliff:g id="NAME">^1</xliff:g>লৈ ফাইল, মিডিয়া আৰু কিছুমান নিৰ্দিষ্ট এপ্ স্থানান্তৰ কৰিব পাৰে। \n\nএই কাৰ্যই আপোনাৰ ডিভাইচৰ ষ্ট’ৰেজত <xliff:g id="SIZE">^2</xliff:g> ঠাই খালী কৰিব আৰু এই কাম কৰোঁতে প্ৰায় <xliff:g id="DURATION">^3</xliff:g> সময় লাগিব।"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"এই টেবলেটটো চাৰ্জ কৰি ৰাখক"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"এই ফ\'নটো চাৰ্জ কৰি ৰাখক"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"এই ডিভাইচটো চাৰ্জ কৰি ৰাখক"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"এই কাৰ্যই তলত উল্লেখ কৰাসমূহকে অন্তৰ্ভুক্ত কৰি আপোনাৰ টেবলেটটোৰ "<b>"অভ্যন্তৰীণ ষ্ট’ৰেজ"</b>"ত থকা আটাইবোৰ ডেটা মচিব:\n\n"<li>"আপোনাৰ Google একাউণ্ট"</li>\n<li>"ছিষ্টেম আৰু এপ্‌ ডেটা আৰু ছেটিং"</li>\n<li>"ডাউনল’ড কৰা এপ্‌"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"এই কাৰ্যই তলত উল্লেখ কৰাসমূহকে অন্তৰ্ভুক্ত কৰি আপোনাৰ ফ’নটোৰ "<b>"অভ্যন্তৰীণ ষ্ট’ৰেজ"</b>"ত থকা আটাইবোৰ ডেটা মচিব:\n\n"<li>"আপোনাৰ Google একাউণ্ট"</li>\n<li>"ছিষ্টেম আৰু এপ্‌ ডেটা আৰু ছেটিং"</li>\n<li>"ডাউনল’ড কৰা এপ্‌"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"এই কাৰ্যই আপোনাৰ ডিভাইচৰ "<b>"আভ্যন্তৰীণ সঞ্চয়াগাৰ"</b>"ৰ লগতে \n\n"<li>"আপোনাৰ Google একাউণ্ট"</li>\n<li>"ছিষ্টেম আৰু এপ্ ডেটা আৰু ছেটিংসমূহ"</li>\n<li>"ডাউনল’ড কৰা এপসমূহ"</li>"ৰ পৰা আটাইবোৰ ডেটা মচিব"</string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"আপুনি বৰ্তমান এই একাউণ্টসমূহত ছাইন ইন হৈ আছে:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"এই ডিভাইচত আৰু ব্যৱহাৰকাৰী আছে।\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"সংগীত, চিত্ৰ আৰু অন্য ব্যৱহাৰকাৰীৰ ডেটা মচিবলৈ, "<b>"USB ষ্ট’ৰেজ"</b>" মচিব লাগিব।"</string>
@@ -397,36 +376,29 @@
     <string name="install_all_warning" product="desktop" msgid="6293002353591632851">"আপোনাৰ ডিভাইচ আৰু ব্যক্তিগত ডেটা অজ্ঞাত এপৰ আক্ৰমণৰ বলি হোৱাৰ সম্ভাৱনা অধিক। এই উৎসৰ পৰা এপ্ ইনষ্টল কৰি, আপুনি সেইবিলাক ব্যৱহাৰ কৰাৰ ফলত আপোনাৰ ডিভাইচৰ হ\'ব পৰা ক্ষতি বা ডেটা হানিৰ বাবে আপুনিয়েই দায়বব্ধ হ\'ব বুলি সন্মতি দিছে।"</string>
     <string name="runningservicedetails_stop_dlg_text" product="tablet" msgid="6321057186549848774">"যদি আপুনি এই সেৱাটো বন্ধ কৰে, তেন্তে আপুনি টে\'বলেটটোৰ পাৱাৰ অফ কৰি পুনৰ অন নকৰালৈকে ইয়াৰ কিছুমান সুবিধাই কাম কৰা বন্ধ কৰিব পাৰে৷"</string>
     <string name="runningservicedetails_stop_dlg_text" product="default" msgid="6869998550403667737">"যদি আপুনি এই সেৱাটো বন্ধ কৰি দিয়ে, আপুনি ফ\'নটোৰ পাৱাৰ অফ কৰি পুনৰ অন নকৰালৈকে আপোনাৰ ফ\'নৰ কিছুমান সুবিধাবোৰে সঠিকভাৱে কাম নকৰিবও পাৰে।"</string>
-    <!-- no translation found for runningservicedetails_stop_dlg_text (7348478178049461009) -->
-    <skip />
+    <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"যদি আপুনি এই সেৱাটো বন্ধ কৰি দিয়ে, আপুনি ডিভাইচটোৰ পাৱাৰ অফ কৰি পুনৰ অন নকৰালৈকে আপোনাৰ ডিভাইচৰ কিছুমান সুবিধাই সঠিকভাৱে কাম নকৰিব পাৰে।"</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"টে\'বলেট সম্পৰ্কীয় তথ্য"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"ফ\'নৰ তথ্য"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"ডিভাইচৰ তথ্য"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"আপোনাৰ ডিছপ্লে’ৰ আকাৰ আৰু পাঠৰ অগ্ৰাধিকাৰ ফ’নটোৰ মূল ছেটিঙলৈ ৰিছেট হ’ব"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"আপোনাৰ ডিছপ্লে’ৰ আকাৰ আৰু পাঠৰ অগ্ৰাধিকাৰ টেবলেটটোৰ মূল ছেটিঙলৈ ৰিছেট হ’ব"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"আপোনাৰ স্ক্ৰীনৰ আকাৰ আৰু পাঠৰ অগ্ৰাধিকাৰ ডিভাইচটোৰ মূল ছেটিঙলৈ ৰিছেট হ’ব"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"আপোনাৰ ফ’নত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"আপোনাৰ টেবলেটত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"আপোনাৰ ডিভাইচত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"আপোনাৰ ফ’নটোৰ ন্যূনতম উজ্জ্বলতাতকৈ স্ক্ৰীনখনৰ উজ্জ্বলতা কম কৰক"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"আপোনাৰ টেবলেটটোৰ ন্যূনতম উজ্জ্বলতাতকৈ স্ক্ৰীনখনৰ উজ্জ্বলতা কম কৰক"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"আপোনাৰ ডিভাইচটোৰ ন্যূনতম উজ্জ্বলতাতকৈ স্ক্ৰীনখনৰ উজ্জ্বলতা কম কৰক"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"অতিৰিক্তভাৱে পোহৰ কমোৱাৰ সুবিধাটো এই ক্ষেত্ৰসমূহত সহায়ক হ’ব পাৰে: &lt;ol&gt; &lt;li&gt; আপোনাৰ ফ’নটোৰ ডিফ’ল্ট ন্যূনতম উজ্জ্বলতা তথাপি যদি বেছি উজ্জ্বল হয়&lt;/li&gt; &lt;li&gt; আপুনি নিজৰ ফ’নটো কোনো অন্ধকাৰ স্থানত ব্যৱহাৰ কৰি থাকিলে যেনে, ৰাতি অথবা শোৱাৰ আগতে এটা অন্ধকাৰ কোঠাত ব্যৱহাৰ কৰি থাকোঁতে&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"অতিৰিক্তভাৱে পোহৰ কমোৱাৰ সুবিধাটো এই ক্ষেত্ৰসমূহত সহায়ক হ’ব পাৰে: &lt;ol&gt; &lt;li&gt; আপোনাৰ ফ’নটোৰ ডিফ’ল্ট ন্যূনতম উজ্জ্বলতা তথাপি যদি বেছি উজ্জ্বল হয়&lt;/li&gt; &lt;li&gt; আপুনি নিজৰ ফ’নটো কোনো অন্ধকাৰ স্থানত ব্যৱহাৰ কৰি থাকিলে যেনে, ৰাতি অথবা শোৱাৰ আগতে এটা অন্ধকাৰ কোঠাত ব্যৱহাৰ কৰি থাকোঁতে&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"এক্সট্ৰা ডিমৰ সুবিধাটো এই ক্ষেত্ৰসমূহত সহায়ক হ’ব পাৰে: &lt;ol&gt; &lt;li&gt; আপোনাৰ ফ’নটোৰ ডিফ’ল্ট ন্যূনতম উজ্জ্বলতা তথাপি যদি বেছি উজ্জ্বল হয়&lt;/li&gt; &lt;li&gt; আপুনি নিজৰ ডিভাইচটো কোনো অন্ধকাৰ স্থানত ব্যৱহাৰ কৰি থাকিলে যেনে, ৰাতি বা শোৱাৰ আগতে এটা অন্ধকাৰ কোঠাত ব্যৱহাৰ কৰি থাকোঁতে&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"ফ’নটোত গতানুগতিক বেটাৰীৰ নেপথ্য ব্যৱহাৰ চলি আছে"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"টেবলেটটোত গতানুগতিক বেটাৰীৰ নেপথ্য ব্যৱহাৰ চলি আছে"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"ডিভাইচটোত গতানুগতিকভাৱে নেপথ্যত বেটাৰীৰ ব্যৱহাৰ চলি আছে"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"ডিভাইচটোত গতানুগতিকভাৱে নেপথ্যত বেটাৰীৰ ব্যৱহাৰ চলি আছে"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"উচ্চ তাপমাত্ৰা আৰু দীঘলীয়া সময় ধৰি চাৰ্জ কৰাৰ দৰে কিছুমান পৰিস্থিতিত, বেটাৰীৰ অৱস্থা ভালে ৰখাত সহায় কৰিবলৈ চাৰ্জিং <xliff:g id="PERCENT">%1$s</xliff:g>লৈ সীমিত কৰা হ’ব পাৰে।\n\nতেনে পৰিস্থিতিৰ পৰিৱৰ্তন হ’লে আপোনাৰ ফ’নটো স্বয়ংক্ৰিয়ভাৱে স্বাভাৱিকভাৱে চাৰ্জ হ’ব।"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"উচ্চ তাপমাত্ৰা আৰু দীঘলীয়া সময় ধৰি চাৰ্জ কৰাৰ দৰে কিছুমান পৰিস্থিতিত, বেটাৰীৰ অৱস্থা ভালে ৰখাত সহায় কৰিবলৈ চাৰ্জিং <xliff:g id="PERCENT">%1$s</xliff:g>লৈ সীমিত কৰা হ’ব পাৰে।\n\nতেনে পৰিস্থিতিৰ পৰিৱৰ্তন হ’লে আপোনাৰ টেবলেটটো স্বয়ংক্ৰিয়ভাৱে স্বাভাৱিকভাৱে চাৰ্জ হ’ব।"</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"উচ্চ তাপমাত্ৰা আৰু দীঘলীয়া সময় ধৰি চাৰ্জ কৰাৰ দৰে কিছুমান পৰিস্থিতিত, বেটাৰীৰ অৱস্থা ভালে ৰখাত সহায় কৰিবলৈ চাৰ্জিং <xliff:g id="PERCENT">%1$s</xliff:g>লৈ সীমিত কৰা হ’ব পাৰে।\n\nতেনে পৰিস্থিতিৰ পৰিৱৰ্তন হ’লে আপোনাৰ ডিভাইচটো স্বয়ংক্ৰিয়ভাৱে স্বাভাৱিকভাৱে চাৰ্জ হ’ব।"</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"আপুনি নিজৰ ফ\'নটো সচৰাচৰতকৈ বেছিকৈ ব্যৱহাৰ কৰাৰ বাবে আপোনাৰ বেটাৰীৰ চাৰ্জ সাধাৰণতে শেষ হ\'ব লগা সময়তকে সোনকালে শেষ হ’ব পাৰে।\n\nআটাইতকৈ বেছিকৈ বেটাৰী ব্যৱহাৰ কৰি থকা এপ্‌সমূহ হৈছে:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"আপুনি নিজৰ টেবলেটটো সচৰাচৰতকৈ বেছিকৈ ব্যৱহাৰ কৰাৰ বাবে আপোনাৰ বেটাৰীৰ চাৰ্জ সাধাৰণতে শেষ হ\'ব লগা সময়তকে সোনকালে শেষ হ’ব পাৰে।\n\nআটাইতকৈ বেছিকৈ বেটাৰী ব্যৱহাৰ কৰি থকা এপ্‌সমূহ হৈছে:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"আপুনি নিজৰ ডিভাইচটো সচৰাচৰতকৈ বেছিকৈ ব্যৱহাৰ কৰাৰ বাবে আপোনাৰ বেটাৰীৰ চাৰ্জ সাধাৰণতে শেষ হ\'ব লগা সময়তকে সোনকালে শেষ হ’ব পাৰে।\n\nআটাইতকৈ বেছিকৈ বেটাৰী ব্যৱহাৰ কৰি থকা এপ্‌সমূহ হৈছে:"</string>
@@ -449,24 +421,20 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"এই একাউণ্টটো আঁতৰালে ডিভাইচটোৰ পৰা ইয়াৰ আটাইবোৰ বাৰ্তা, সম্পৰ্কসূচী আৰু অন্য ডেটা মচা হ\'ব!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"আপুনি ৱেবৰ যোগেৰে আপোনাৰ একাউণ্টত কৰা যিকোনো সাল-সলনি স্বয়ংক্ৰিয়ভাৱে আপোনাৰ ফ\'নত প্ৰতিফলিত হ\'ব।\n\nকিছুমান একাউণ্টে আপুনি ফ\'নত কৰা সাল-সলনিসমূুহও স্বয়ংক্ৰিয়ভাৱে ৱেবলৈ প্ৰতিলিপি কৰিব পাৰে। এটা Google একাউণ্টে এইধৰণে কাম কৰে।"</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"আপুনি ৱেবত আপোনাৰ একাউণ্টত কৰা যিকোনো সাল-সলনি স্বয়ংক্ৰিয়ভাৱে আপোনাৰ ফ\'নত প্ৰতিফলিত হ\'ব।\n\nকিছুমান একাউণ্টে আপুনি ফ\'নত কৰা সাল-সলনিসমূহো স্বয়ংক্ৰিয়ভাৱে ৱেবলৈ প্ৰতিলিপি কৰিব পাৰে। এটা Google একাউণ্টে এইধৰণে কাম কৰে।"</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"আপুনি ৱেবত আপোনাৰ একাউণ্টত কৰা যিকোনো সাল-সলনি স্বয়ংক্ৰিয়ভাৱে আপোনাৰ ডিভাইচলৈ প্ৰতিলিপি কৰা হ’ব।\n\nকিছুমান একাউণ্টে আপুনি ডিভাইচটোত কৰা সাল-সলনিসমূহো স্বয়ংক্ৰিয়ভাৱে ৱেবলৈ প্ৰতিলিপি কৰিব পাৰে। এটা Google একাউণ্টে এইধৰণে কাম কৰে।"</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"আপুনি ছেট কৰা ডেটা শেষ হোৱাৰ পাছত আপোনাৰ টে\'বলেটৰ ম’বাইল ডেটা অফ হ\'ব।\n\nযিহেতু, আপোনাৰ টে\'বলেটে ডেটাৰ ব্যৱহাৰ নিৰ্ধাৰণ কৰে আৰু আপোনাৰ বাহকে ব্যৱহাৰৰ ওপৰত ভিত্তি কৰি ডেটাৰ গণনা পৃথকভাৱে কৰিব পাৰে, সেয়েহে ভাবি চিন্তি ডেটাৰ সীমা নিৰ্ধাৰণ কৰক।"</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"আপুনি ছেট কৰা সীমাত উপনীত হোৱাৰ লগে লগে ফ\'নটোৱে ম’বাইল ডেটা অফ কৰি দিব।\n\nযিহেতু ডেটাৰ ব্যৱহাৰ আপোনাৰ ফ\'নটোৱে গণনা কৰে যিটো আপোনাৰ বাহকৰ গণনাৰ সৈতে একে নহ\'বও পাৰে, গতিকে এক ৰক্ষণশীল সীমা বন্ধাৰ কথা বিবেচনা কৰক।"</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"আপুনি ছেট কৰা সীমাটোত উপনীত হোৱাৰ পাছত, আপোনাৰ ডিভাইচটোৱে ম’বাইলৰ ডেটা অফ কৰিব।\n\nযিহেতু, আপোনাৰ ডিভাইচে ডেটাৰ ব্যৱহাৰ নিৰ্ধাৰণ কৰে আৰু আপোনাৰ বাহকে ডেটাৰ ব্যৱহাৰ পৃথকভাৱে গণনা কৰিব পাৰে, গতিকে এটা ৰক্ষণশীল সীমা ছেট কৰাৰ কথা বিবেচনা কৰক।"</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"নতুন ব্যৱহাৰকাৰী যোগ কৰি নিজৰ ডিভাইচ শ্বেয়াৰ কৰক। আপোনাৰ ডিভাইচত সকলো ব্যৱহাৰকাৰীৰ নিজৰ উপযোগিতা অনুসৰি কৰা গৃহ স্ক্ৰীন, একাউণ্ট, এপ্, ছেটিং আৰু বহুতো বস্তুৰ বাবে ব্যক্তিগত খালী ঠাই থাকে।"</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"নতুন ব্যৱহাৰকাৰী যোগ কৰি নিজৰ টেবলেট শ্বেয়াৰ কৰক। আপোনাৰ টেবলেটতে সকলো ব্যৱহাৰকাৰীৰ নিজৰ উপযোগিতা অনুসৰি কৰা গৃহ স্ক্ৰীন, একাউণ্ট, এপ্, ছেটিং আৰু বহুতো বস্তুৰ বাবে ব্যক্তিগত খালী ঠাই থাকে।"</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"নতুন ব্যৱহাৰকাৰী যোগ কৰি নিজৰ ফ\'ন শ্বেয়াৰ কৰক। আপোনাৰ ফ\'নত সকলো ব্যৱহাৰকাৰীৰ নিজৰ উপযোগিতা অনুসৰি কৰা গৃহ স্ক্ৰীন, একাউণ্ট, এপ্, ছেটিং আৰু বহুতো বস্তুৰ বাবে ব্যক্তিগত খালী ঠাই থাকে।"</string>
     <string name="user_settings_footer_text" product="desktop" msgid="8543171604218174424">"নতুন ব্যৱহাৰকাৰী যোগ কৰি নিজৰ ডিভাইচ শ্বেয়াৰ কৰক। আপোনাৰ ডিভাইচত সকলো ব্যৱহাৰকাৰীৰ নিজৰ উপযোগিতা অনুসৰি কৰা গৃহ স্ক্ৰীন, একাউণ্ট, এপ্, ছেটিং আৰু বহুতো বস্তুৰ বাবে ব্যক্তিগত খালী ঠাই থাকে।"</string>
     <string name="user_cannot_manage_message" product="tablet" msgid="5566619500245432179">"কেৱল টেবলেটৰ গৰাকীয়ে ব্যৱহাৰকাৰীসকলক পৰিচালনা কৰিব পাৰে।"</string>
     <string name="user_cannot_manage_message" product="default" msgid="8596259161937605316">"কেৱল ফ\'নটোৰ গৰাকীয়েহে ব্যৱহাৰকাৰীসকলক পৰিচালনা কৰিব পাৰে।"</string>
-    <!-- no translation found for user_cannot_manage_message (6132301775596845288) -->
-    <skip />
+    <string name="user_cannot_manage_message" product="device" msgid="6132301775596845288">"কেৱল ডিভাইচটোৰ গৰাকীয়েহে ব্যৱহাৰকাৰীসকলক পৰিচালনা কৰিব পাৰে।"</string>
     <string name="user_confirm_remove_self_message" product="tablet" msgid="6880861846664267876">"আপুনি এই টেবলেটত আপোনাৰ বাবে সংৰক্ষিত ঠাই আৰু ডেটা হেৰুৱাব। আপুনি এই কাৰ্য পাছত শুধৰাব নোৱাৰিব।"</string>
     <string name="user_confirm_remove_self_message" product="default" msgid="3209762447055039706">"আপুনি এই ফ\'নত আপোনাৰ বাবে সংৰক্ষিত ঠাই আৰু ডেটা হেৰুৱাব। আপুনি এই কাৰ্য পাছত শুধৰাব নোৱাৰিব।"</string>
-    <!-- no translation found for user_confirm_remove_self_message (3652163924130510374) -->
-    <skip />
+    <string name="user_confirm_remove_self_message" product="desktop" msgid="3652163924130510374">"আপুনি এই ডিভাইচটোত আপোনাৰ স্পে’চ আৰু ডেটা হেৰুৱাব। আপুনি এই কাৰ্যটো আনডু কৰিব নোৱাৰে।"</string>
     <string name="support_summary" product="default" msgid="2044721479256103419">"সহায়কাৰী প্ৰবন্ধ, ফ’ন আৰু চাট"</string>
     <string name="support_summary" product="tablet" msgid="2588832599234347108">"সহায়কাৰী প্ৰবন্ধ, টেবলেট আৰু চাট"</string>
     <string name="support_summary" product="device" msgid="6821511162132497205">"সহায়কাৰী প্ৰবন্ধ, ডিভাইচ আৰু চাট"</string>
@@ -515,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"আপোনাৰ ডিভাইচটো হয়তো লাহে লাহে চাৰ্জ হৈ আছে বা চাৰ্জ হোৱা নাই। দ্ৰুত চাৰ্জিঙৰ বাবে, চুপাৰিছ কৰা কে’বল আৰু এডাপ্টাৰ ব্যৱহাৰ কৰক।"</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"আপোনাৰ ফ’নটো আনলক নকৰাকৈ"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"আপোনাৰ টেবলেটটো আনলক নকৰাকৈ"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"আপোনৰ ডিভাইচ আনলক নকৰাকৈ"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"আপুনি নিজৰ ফ’নটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"আপুনি নিজৰ টেবলেটটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"আপুনি নিজৰ ডিভাইচটো প’ৰ্ট্ৰেইট আৰু লেণ্ডস্কে’পৰ মাজত সালসলনি কৰিলে"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"আপোনাৰ ফ’নত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"আপোনাৰ টেবলেটত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"আপোনাৰ ডিভাইচত ৰংবোৰ কেনেকৈ প্ৰদৰ্শিত হয় সেয়া মিলাওক"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"ফ’নৰ স্পীকাৰ"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"টেবলেটৰ স্পীকাৰ"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"ডিভাইচৰ স্পীকাৰ"</string>

@@ -41,6 +41,12 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"已暫停"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"不明"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"預覽"</string>
+    <!-- no translation found for preview_pager_home_content_description (3961399947853424786) -->
+    <skip />
+    <!-- no translation found for preview_pager_message_content_description (3018855090807833755) -->
+    <skip />
+    <!-- no translation found for preview_pager_email_content_description (100055784235660338) -->
+    <skip />
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR 碼"</string>
     <string name="preview_pager_previous_button" msgid="607771113300838313">"上一個預覽項目"</string>
     <string name="preview_pager_next_button" msgid="8700907912508927271">"下一個預覽項目"</string>
@@ -167,13 +173,11 @@
     <string name="date_and_time" msgid="1788358029823431692">"日期和時間"</string>
     <string name="proxy_settings_title" msgid="4201866858226087066">"Proxy"</string>
     <string name="proxy_clear_text" msgid="6529658759984031149">"清除"</string>
-    <!-- no translation found for proxy_port_label (6698001018215165848) -->
-    <skip />
+    <string name="proxy_port_label" msgid="6698001018215165848">"Proxy 通訊埠 (選填)"</string>
     <string name="proxy_exclusionlist_label" msgid="2598613986784917542">"略過以下 Proxy："</string>
     <string name="proxy_defaultView_text" msgid="6795150505379688451">"還原預設值"</string>
     <string name="proxy_action_text" msgid="1103328484441449542">"完成"</string>
-    <!-- no translation found for proxy_hostname_label (345510072664361960) -->
-    <skip />
+    <string name="proxy_hostname_label" msgid="345510072664361960">"Proxy 主機名稱 (選填)"</string>
     <string name="proxy_error" msgid="3615905975598084126">"注意"</string>
     <string name="proxy_error_dismiss" msgid="4207430265140873078">"確定"</string>
     <string name="proxy_error_invalid_host" msgid="3814412792702059247">"你所輸入的主機名稱無效。"</string>
@@ -218,11 +222,12 @@
     <string name="desc_introduction_of_language_picker" msgid="4012265379885200083">"你的裝置、應用程式和網站會使用你的偏好語言清單中第一個支援的語言。\n\n大量應用程式亦會根據你偏好語言的地區提供日期、數字和單位的格式。如要變更地區，請新增語言，然後選擇你偏好的地區。"</string>
     <string name="desc_notice_of_language_picker" msgid="3449290526457925447">"如要為各應用程式選取語言，請前往應用程式語言設定。"</string>
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"進一步瞭解應用程式語言"</string>
-    <string name="title_change_system_region" msgid="5476591184463491936">"要將地區變更為「%s」嗎？"</string>
-    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"你的裝置將繼續使用%s為系統語言"</string>
-    <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
+    <!-- no translation found for title_change_system_region (9196602029960380112) -->
     <skip />
-    <string name="title_change_system_locale" msgid="8589844586256566951">"要將系統語言變更為「%s」嗎？"</string>
+    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"你的裝置將繼續使用%s為系統語言"</string>
+    <string name="desc_notice_device_region_change_for_preferred_language" msgid="408517366942324267">"%1$s將取代偏好語言中的%2$s"</string>
+    <!-- no translation found for title_change_system_locale (4102991236063984803) -->
+    <skip />
     <string name="title_system_locale_addition" msgid="8218683660751479466">"要將「%s」新增為偏好語言嗎？"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"此操作讓應用程式和網站知道你同時偏好此語言。"</string>
     <string name="desc_notice_device_locale_settings_change" msgid="8311132485850714160">"系統將變更裝置設定和地區偏好設定。"</string>
@@ -239,7 +244,8 @@
     <string name="search_region_hint" msgid="1748708432568237552">"搜尋地區"</string>
     <string name="top_intro_region_title" msgid="2336323415395642117">"所選地區會影響手機顯示時間、日期和溫度等資訊的方式。"</string>
     <string name="more_language_settings_category" msgid="3669703092480725416">"更多語言設定"</string>
-    <string name="title_change_system_locale_region" msgid="1977530992614685128">"要將地區變更為<xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g>嗎？"</string>
+    <!-- no translation found for title_change_system_locale_region (4401478579429442695) -->
+    <skip />
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"你的裝置將繼續使用<xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g>為系統語言"</string>
     <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"選擇裝置、網站和應用程式顯示號碼的方式"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"地區偏好設定"</string>
@@ -359,6 +365,8 @@
     <string name="safety_center_summary" msgid="3554867379951053869">"應用程式安全性、裝置鎖定、權限"</string>
     <string name="security_settings_face_preference_summary" msgid="6675126437396914838">"已加入面孔"</string>
     <string name="security_settings_face_preference_summary_none" msgid="523320857738436024">"需要設定"</string>
+    <!-- no translation found for security_settings_face_preference_summary_none_new (1963253146734002815) -->
+    <skip />
     <string name="security_settings_face_preference_title_new" msgid="7680231874730796331">"面孔"</string>
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"使用面孔解鎖工作設定檔"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"使用面孔解鎖私人空間"</string>
@@ -441,6 +449,8 @@
     <string name="fingerprint_add_title" msgid="1837610443487902050">"新增指紋"</string>
     <string name="security_settings_fingerprint_preference_summary" msgid="8486134175759676037">"{count,plural, =1{已新增指紋}other{已新增 # 個指紋}}"</string>
     <string name="security_settings_fingerprint_preference_summary_none" msgid="1146977379031250790">"需要設定"</string>
+    <!-- no translation found for security_settings_fingerprint_preference_summary_none_new (510376523784190149) -->
+    <skip />
     <string name="security_settings_fingerprint_enroll_introduction_title" msgid="7931650601996313070">"設定指紋"</string>
     <string name="security_settings_fingerprint_enroll_consent_introduction_title" msgid="2278592030102282364">"允許使用指紋解鎖"</string>
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled" msgid="1911710308293783998">"使用你的指紋"</string>
@@ -465,8 +475,7 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"請輕觸指紋感應器"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"無法辨識指紋"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"手錶解鎖"</string>
-    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
-    <skip />
+    <string name="security_settings_activeunlock" msgid="8922823742770802651">"觀看"</string>
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"設定「面孔解鎖」和「指紋解鎖」後，如果你戴口罩或在昏暗環境，手機就會要求你使用指紋。\n\n用「手錶解鎖」解鎖手機亦很方便，例如在手指濕了或識別不到面孔的情況。"</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"在系統無法識別你的指紋等情況下，「手錶解鎖」是另一個方便的解鎖手機方式。"</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"在系統無法識別你的面孔等情況下，「手錶解鎖」是另一個方便的解鎖手機方式。"</string>
@@ -797,6 +806,8 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"繼續但不設定「面孔解鎖」"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"不使用指紋或面孔解鎖並繼續操作"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"無"</string>
+    <!-- no translation found for unlock_set_unlock_mode_off_new (865396805830816266) -->
+    <skip />
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"滑動"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"圖案"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"PIN 碼"</string>
@@ -1065,7 +1076,8 @@
     <string name="wifi_show_advanced" msgid="2969378109942071741">"進階選項"</string>
     <string name="wifi_advanced_toggle_description" msgid="7299179796727934885">"下拉式清單進階選項"</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="3615140699129928913">"展開"</string>
-    <string name="wifi_ssid" msgid="2713062130735103151">"網絡名稱"</string>
+    <!-- no translation found for wifi_ssid (5139273830867723030) -->
+    <skip />
     <string name="wifi_ssid_hint" msgid="1940577553241083524">"輸入 SSID"</string>
     <string name="wifi_security" msgid="9095934643631406913">"安全性"</string>
     <string name="wifi_hidden_network" msgid="6466834025375485596">"隱藏的網絡"</string>
@@ -1088,7 +1100,10 @@
     <string name="wifi_eap_user_cert" msgid="3569182430929173220">"使用者憑證"</string>
     <string name="wifi_eap_identity" msgid="3629406902174137028">"身分"</string>
     <string name="wifi_eap_anonymous" msgid="8630332141751267000">"匿名身分"</string>
-    <string name="wifi_password" msgid="1458802324849513755">"密碼"</string>
+    <!-- no translation found for wifi_password (165204973532996861) -->
+    <skip />
+    <!-- no translation found for wifi_password_invalid (8884500804472828356) -->
+    <skip />
     <string name="wifi_show_password" msgid="6865993988238157923">"顯示密碼"</string>
     <string name="wifi_ap_choose_2G" msgid="1436802195991542016">"2.4 GHz 頻段"</string>
     <string name="wifi_ap_prefer_5G" msgid="2520628479818369902">"首選 5.0 GHz 頻段"</string>
@@ -1154,6 +1169,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown" msgid="4903345360745717385">"有不明的應用程式要求開啟網絡掃瞄功能 (即使 Wi-Fi 已關閉)，以提升定位精確度及用於其他用途。\n\n你要為所有需要掃瞄的應用程式允許這項要求嗎？"</string>
     <string name="wifi_scan_always_confirm_allow" msgid="4154200627800959777">"允許"</string>
     <string name="wifi_scan_always_confirm_deny" msgid="6997087934558839256">"拒絕"</string>
+    <!-- no translation found for wifi_field_required (6312381745503042588) -->
+    <skip />
     <string name="no_internet_access_text" msgid="3611993143350310936">"此網絡並未連接互聯網，你仍要保持連線嗎？"</string>
     <string name="partial_connectivity_text" msgid="8874614799723694554">"由於連線受限，部分應用程式和服務可能無法運作。仍要使用？"</string>
     <string name="no_internet_access_remember" msgid="5113610157731269258">"不要再問我是否使用此網絡"</string>
@@ -1481,22 +1498,17 @@
     <string name="storage_settings_for_app" msgid="229425418984637483">"儲存空間與快取空間"</string>
     <string name="storage_settings_title" msgid="486118156723194815">"儲存設定"</string>
     <string name="status_eid" msgid="3588471107671992684">"EID"</string>
-    <!-- no translation found for eid_multi_sim (6659492335576379274) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim (27798473711249145) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim_primary (4320457587114117400) -->
-    <skip />
+    <string name="eid_multi_sim" msgid="6659492335576379274">"EID (SIM 卡插槽 <xliff:g id="EID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim" msgid="27798473711249145">"IMEI (SIM 卡插槽 <xliff:g id="IMEI_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim_primary" msgid="4320457587114117400">"IMEI (SIM 卡插槽 <xliff:g id="IMEI_SLOT_ID_PRIMARY">%1$d</xliff:g>) (主要)"</string>
     <string name="view_saved_network" msgid="1232387673095080910">"如要查看，請選擇已儲存的網絡"</string>
     <string name="status_imei" msgid="5719752369250485007">"IMEI"</string>
     <string name="status_imei_sv" msgid="6908985558726440951">"IMEI SV"</string>
     <string name="status_min_number" msgid="4492899165438225714">"MIN"</string>
     <string name="status_msid_number" msgid="3871958248824595774">"MSID"</string>
     <string name="status_prl_version" msgid="9002131357502714281">"PRL 版本"</string>
-    <!-- no translation found for meid_multi_sim (5076814185188481456) -->
-    <skip />
-    <!-- no translation found for meid_multi_sim_primary (6269908735700854437) -->
-    <skip />
+    <string name="meid_multi_sim" msgid="5076814185188481456">"MEID (SIM 卡插槽 <xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="meid_multi_sim_primary" msgid="6269908735700854437">"MEID (SIM 卡插槽 <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>) (主要)"</string>
     <string name="scanning_status_text_on" msgid="3846571210578042940">"已開啟"</string>
     <string name="scanning_status_text_off" msgid="4002352668313705132">"關閉"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
@@ -1564,8 +1576,7 @@
     <string name="storage_wizard_init_v2_or" msgid="5558706089661158026">"或"</string>
     <string name="storage_wizard_init_v2_external_title" msgid="2786416384217054112">"將 SD 卡格式化為外置儲存空間"</string>
     <string name="storage_wizard_init_v2_external_summary" msgid="2002761631147966185">"儲存相片、影片、音樂及其他檔案，然後在其他裝置上存取。&lt;a href=https://support.google.com/android/answer/12153449&gt;進一步瞭解如何設定 SD 卡&lt;/a&gt;"</string>
-    <!-- no translation found for storage_wizard_init_v2_external_summary_non_sd_card (6638380506793421312) -->
-    <skip />
+    <string name="storage_wizard_init_v2_external_summary_non_sd_card" msgid="6638380506793421312">"儲存相片、影片、音樂及其他檔案，方便你在其他裝置上使用。"</string>
     <string name="storage_wizard_init_v2_external_action" msgid="6140058734875839081">"格式化"</string>
     <string name="storage_wizard_init_v2_later" msgid="5366815913892609285">"稍後設定"</string>
     <string name="storage_wizard_format_confirm_v2_title" msgid="6294104100437326067">"要將此 <xliff:g id="NAME">^1</xliff:g>格式化嗎？"</string>
@@ -1590,6 +1601,20 @@
     <string name="battery_level_title" msgid="1371765298786083448">"電量"</string>
     <string name="communal_settings_title" msgid="2845678473945902115">"共用"</string>
     <string name="communal_settings_summary" msgid="4923914136953940317">"共用設定"</string>
+    <!-- no translation found for hub_mode_category_title (5290081595872103974) -->
+    <skip />
+    <!-- no translation found for widgets_on_lockscreen_title (6979558402208585885) -->
+    <skip />
+    <!-- no translation found for when_to_auto_show_hubmode_title (2307148913387518369) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_never (976644329215156021) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging (1874391105066805128) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging_and_upright (6293947459712755814) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_docked (7107631545009933891) -->
+    <skip />
     <string name="satellite_setting" msgid="4171265534842459910">"衛星訊息"</string>
     <string name="apn_settings" msgid="4295467389400441299">"APN"</string>
     <string name="apn_edit" msgid="2003683641840248741">"編輯存取點"</string>
@@ -1698,6 +1723,16 @@
     <string name="tether_preference_summary_off" msgid="6266799346319794630">"關閉"</string>
     <string name="usb_tethering_button_text" msgid="7364633823180913777">"USB 網絡共享"</string>
     <string name="bluetooth_tether_checkbox_text" msgid="6108398414967813545">"藍牙網絡共享"</string>
+    <!-- no translation found for ethernet_ip_address (4218340787862242573) -->
+    <skip />
+    <!-- no translation found for ethernet_mac_address_title (3235879195237611007) -->
+    <skip />
+    <!-- no translation found for tx_ethernet_speed (4785035505065551012) -->
+    <skip />
+    <!-- no translation found for rx_ethernet_speed (6642000569214969711) -->
+    <skip />
+    <!-- no translation found for ethernet_network_usage (3795965384177426780) -->
+    <skip />
     <string name="ethernet_tether_checkbox_text" msgid="959743110824197356">"以太網網絡共享"</string>
     <string name="tethering_footer_info" msgid="6824352505979800594">"使用熱點和網絡共享功能，透過你的數據連線提供互聯網服務給其他裝置。應用程式也可以建立熱點，與附近的裝置分享內容。"</string>
     <string name="tethering_footer_info_sta_ap_concurrency" msgid="2079039077487477676">"使用熱點和網絡共享功能，讓其他裝置透過 Wi‑Fi 或流動數據連接到互聯網。應用程式亦可以建立熱點，與附近的裝置分享內容。"</string>
@@ -2274,16 +2309,11 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"進一步瞭解字幕偏好設定"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"放大"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"放大捷徑"</string>
-    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
-    <skip />
+    <string name="accessibility_magnification_cursor_following_title" msgid="29531257984012743">"追蹤游標"</string>
+    <string name="accessibility_magnification_cursor_following_header" msgid="7283095798622223509">"選擇「放大」功能追蹤游標的方式。"</string>
+    <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"在滑鼠移動時連續移動螢幕"</string>
+    <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"以滑鼠游標為中心移動畫面"</string>
+    <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"在滑鼠輕觸畫面邊緣時移動畫面"</string>
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"放大輸入內容"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"放大輸入中的文字"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"切換應用程式時保持開啟"</string>
@@ -2419,8 +2449,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"高對比文字"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"將文字顏色改成黑色或白色，與背景顏色形成最大對比。"</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"提升文字對比度"</string>
-    <!-- no translation found for accessibility_notification_high_contrast_text_body_message (6846453833480117658) -->
-    <skip />
+    <string name="accessibility_notification_high_contrast_text_body_message" msgid="6846453833480117658">"文字加外框功能已取代高對比文字，你可以前往「<xliff:g id="SETTINGS">%1$s</xliff:g>」開啟。"</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"前往「<xliff:g id="SETTINGS">%1$s</xliff:g>」"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"描繪文字外框"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"在文字周圍加上黑色或白色背景提升對比度"</string>
@@ -2844,12 +2873,9 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>至<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g><xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
-    <skip />
+    <string name="battery_usage_status_time_info_and_battery_level" msgid="5158088815445378555">"<xliff:g id="SELECTED_STATUS">%1$s</xliff:g>，<xliff:g id="TIME_INFO">%2$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%3$s</xliff:g>"</string>
+    <string name="battery_chart_slot_status_selected" msgid="4196580689444438148">"揀咗"</string>
+    <string name="battery_chart_slot_status_unselected" msgid="6930198843537021396">"冇揀到"</string>
     <string name="battery_usage_chart" msgid="4114747521432440017">"電池用量圖表"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"每日電池用量圖表"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"每小時電池用量圖表"</string>
@@ -3121,34 +3147,25 @@
     <string name="data_usage_uninstalled_apps_users" msgid="1262228664057122983">"已移除的應用程式和使用者"</string>
     <string name="wifi_metered_title" msgid="6623732965268033931">"網絡用量"</string>
     <string name="data_usage_metered_yes" msgid="4262598072030135223">"按用量收費"</string>
-    <!-- no translation found for vpn_name (1119885022967213297) -->
-    <skip />
+    <string name="vpn_name" msgid="1119885022967213297">"名稱*"</string>
     <string name="vpn_type" msgid="5533202873260826663">"類型"</string>
-    <!-- no translation found for vpn_server (5771717512763639505) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_identifier (6976476088030400883) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_secret (3110033645671775202) -->
-    <skip />
+    <string name="vpn_server" msgid="5771717512763639505">"伺服器位址*"</string>
+    <string name="vpn_ipsec_identifier" msgid="6976476088030400883">"IPSec ID*"</string>
+    <string name="vpn_ipsec_secret" msgid="3110033645671775202">"IPSec 預先共用金鑰*"</string>
     <string name="vpn_ipsec_user_cert" msgid="2714372103705048405">"IPSec 使用者憑證"</string>
     <string name="vpn_ipsec_ca_cert" msgid="5558498943577474987">"IPSec CA 憑證"</string>
     <string name="vpn_ipsec_server_cert" msgid="1411390470454731396">"IPSec 伺服器憑證"</string>
     <string name="vpn_show_options" msgid="6105437733943318667">"顯示進階選項"</string>
-    <!-- no translation found for vpn_username_optional (8564310631984689947) -->
-    <skip />
-    <!-- no translation found for vpn_password_optional (1255147723869461543) -->
-    <skip />
-    <!-- no translation found for vpn_username_required (1808631251331232149) -->
-    <skip />
-    <!-- no translation found for vpn_password_required (1916107706318825437) -->
-    <skip />
+    <string name="vpn_username_optional" msgid="8564310631984689947">"使用者名稱 (選填)"</string>
+    <string name="vpn_password_optional" msgid="1255147723869461543">"密碼 (選填)"</string>
+    <string name="vpn_username_required" msgid="1808631251331232149">"使用者名稱*"</string>
+    <string name="vpn_password_required" msgid="1916107706318825437">"密碼*"</string>
     <string name="vpn_save_login" msgid="5986762519977472618">"儲存帳戶資訊"</string>
     <string name="vpn_not_used" msgid="7229312881336083354">"(未使用)"</string>
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(不要驗證伺服器)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(從伺服器接收)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"輸入的資料不支援永久連線的 VPN"</string>
-    <!-- no translation found for vpn_field_required (582849543970781302) -->
-    <skip />
+    <string name="vpn_field_required" msgid="582849543970781302">"*必填"</string>
     <string name="vpn_cancel" msgid="5929410618112404383">"取消"</string>
     <string name="vpn_done" msgid="5137858784289564985">"關閉"</string>
     <string name="vpn_save" msgid="683868204634860888">"儲存"</string>
@@ -3379,8 +3396,7 @@
     <string name="color_orange" msgid="216547825489739010">"橙色"</string>
     <string name="color_purple" msgid="6603701972079904843">"紫色"</string>
     <string name="sim_status_title" msgid="6188770698037109774">"SIM 卡狀態"</string>
-    <!-- no translation found for sim_status_title_sim_slot (5421926522479103027) -->
-    <skip />
+    <string name="sim_status_title_sim_slot" msgid="5421926522479103027">"SIM 卡狀態 (SIM 卡插槽 %1$d)"</string>
     <string name="sim_signal_strength" msgid="6351052821700294501">"<xliff:g id="DBM">%1$d</xliff:g> dBm <xliff:g id="ASU">%2$d</xliff:g> asu"</string>
     <string name="sim_notification_title" msgid="6839556577405929262">"SIM 卡已變更"</string>
     <string name="sim_notification_summary" msgid="5593339846307029991">"輕按即可設定"</string>
@@ -4438,18 +4454,12 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"你的管理員可以監控及管理與此使用者相關的應用程式和資料，包括設定、權限、公司存取權、網絡活動，以及裝置的位置資料。"</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"你的管理員可以監控及管理與此裝置相關的應用程式和資料，包括設定、權限、公司存取權、網絡活動，以及裝置的位置資料。"</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"裝置管理員或可存取此裝置的相關資料、管理應用程式並變更裝置設定。"</string>
-    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
-    <skip />
+    <string name="disabled_by_advanced_protection_title" msgid="9051476417559262469">"受「進階保護功能」限制"</string>
+    <string name="disabled_by_advanced_protection_setting_is_on_message" msgid="4242986779932956593">"為安全起見，「進階保護功能」要求保持開啟此設定"</string>
+    <string name="disabled_by_advanced_protection_setting_is_off_message" msgid="7777487013672230696">"為安全起見，「進階保護功能」要求保持關閉此設定"</string>
+    <string name="disabled_by_advanced_protection_action_message" msgid="7164789633582857150">"為安全起見，「進階保護功能」禁止此操作"</string>
+    <string name="disabled_by_advanced_protection_wep_action_message" msgid="239574547298386495">"此網絡使用 WEP，這種過時的加密方式可能會讓你的資料面臨風險。「進階保護功能」已封鎖 WEP 連線。"</string>
+    <string name="disabled_by_advanced_protection_help_button_title" msgid="6539346613660731777">"設定"</string>
     <string name="condition_turn_off" msgid="402707350778441939">"關閉"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"開啟"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"顯示"</string>
@@ -4607,7 +4617,7 @@
     <string name="keywords_long_background_tasks" msgid="5788956269136054574">"長時間執行的工作, 資料轉移, 背景工作"</string>
     <string name="reset_shortcut_manager_throttling" msgid="2183940254903144298">"重設 ShortcutManager 的速率限制"</string>
     <string name="reset_shortcut_manager_throttling_complete" msgid="8949943009096885470">"已重設 ShortcutManager 的速率限制"</string>
-    <string name="notification_suggestion_title" msgid="6309263655965785411">"控制上鎖畫面上顯示的資料"</string>
+    <string name="notification_suggestion_title" msgid="6309263655965785411">"控制上鎖畫面顯示的資料"</string>
     <string name="notification_suggestion_summary" msgid="7615611244249276113">"顯示或隱藏通知內容"</string>
     <string name="page_tab_title_support" msgid="3235725053332345773">"提示和支援"</string>
     <string name="developer_smallest_width" msgid="632354817870920911">"最小寬度"</string>
@@ -5186,10 +5196,8 @@
     <string name="settings_panel_title" msgid="346363079938069215">"設定面板"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"啟用自由形態視窗"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"啟用桌面電腦體驗功能"</string>
-    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
-    <skip />
-    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
-    <skip />
+    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="8586716390362684564">"在裝置和次要螢幕上啟用桌面電腦視窗模式。"</string>
+    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="7567963048658976895">"在次要螢幕上啟用桌面電腦視窗模式。"</string>
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"在次要螢幕上啟用自由形態視窗"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"允許多重視窗模式顯示無法調整大小的應用程式"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"允許透過多重視窗模式顯示無法調整大小的應用程式"</string>
@@ -5424,8 +5432,10 @@
     <string name="smart_forwarding_input_mdn_dialog_title" msgid="7542216086697868415">"輸入電話號碼"</string>
     <string name="smart_forwarding_missing_mdn_text" msgid="2907314684242542226">"缺少電話號碼。"</string>
     <string name="smart_forwarding_missing_alert_dialog_text" msgid="7870419247987316112">"確定"</string>
-    <string name="enable_2g_title" msgid="8184757884636162942">"允許 2G"</string>
-    <string name="enable_2g_summary" msgid="2794534052372565914">"2G 的安全性較低，但在某些地區可改善連線品質。緊急電話一律可使用 2G 撥打。"</string>
+    <!-- no translation found for enable_2g_title (5657132300321750181) -->
+    <skip />
+    <!-- no translation found for enable_2g_summary (6317192326100541563) -->
+    <skip />
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g>要求你啟用 2G"</string>
     <string name="require_cellular_encryption_title" msgid="6087085031703089235">"只允許已加密的網絡"</string>
     <string name="require_cellular_encryption_summary" msgid="6090569065420631457">"這麼做雖然更加安全，但流動網絡連線在部分地區可能會受到限制。緊急電話則隨時可用，不受任何影響。"</string>
@@ -5752,6 +5762,15 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"變更 PIN"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"忘記 PIN"</string>
     <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"網絡內容篩選器"</string>
-    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
+    <!-- no translation found for supervision_web_content_filters_browser_title (979037187423952892) -->
     <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_title (7923982596891796260) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_summary (1477766506765966613) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_allow_all_sites_title (3909739592466381845) -->
+    <skip />
+    <!-- no translation found for supervision_full_screen_pin_verification_title (78513043528333399) -->
+    <skip />
+    <string name="accessibility_illustration_content_description" msgid="557376174860150903">"<xliff:g id="FEATURE">%1$s</xliff:g>動畫"</string>
 </resources>

@@ -16,13 +16,14 @@
 
 package com.android.settings.wifi.utils
 
-import android.util.Log
+import android.content.DialogInterface
 import androidx.appcompat.app.AlertDialog
 
 class WifiDialogHelper(
     alertDialog: AlertDialog,
+    onClickListener: DialogInterface.OnClickListener?,
     private val validator: TextInputValidator,
-) : AlertDialogHelper(alertDialog) {
+) : AlertDialogHelper(alertDialog, onClickListener) {
 
     override fun canDismiss(): Boolean = validator.validate()
 

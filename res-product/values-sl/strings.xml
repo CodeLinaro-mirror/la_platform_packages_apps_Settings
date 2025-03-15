@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"Naslov Bluetooth naprave: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš tablični računalnik za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš telefon za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaše naprave za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"Aplikacija želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš tablični računalnik za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"Aplikacija želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš telefon za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"Aplikacija želi omogočiti, da bodo lahko druge naprave Bluetooth videle vašo napravo za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš tablični računalnik. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vaš telefon. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi omogočiti, da bodo lahko druge naprave Bluetooth videle vašo napravo. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"Aplikacija želi omogočiti, da bodo lahko druge naprave Bluetooth videle vašo napravo. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave Bluetooth videle vaš tablični računalnik za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave Bluetooth videle vaš telefon za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave Bluetooth videle vašo napravo za toliko sekund: <xliff:g id="TIMEOUT">%2$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"Aplikacija želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vaš tablični računalnik za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"Aplikacija želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vaš telefon za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"Aplikacija želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vašo napravo za toliko sekund: <xliff:g id="TIMEOUT">%1$d</xliff:g>."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vaš tablični računalnik. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vaš telefon. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"Aplikacija <xliff:g id="APP_NAME">%1$s</xliff:g> želi vklopiti Bluetooth in omogočiti, da bodo lahko druge naprave videle vašo napravo. To lahko pozneje spremenite v nastavitvah za Bluetooth."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"Tipalo prstnih odtisov je na gumbu za vklop. To je ploski gumb ob izbočenem gumbu za glasnost na robu tabličnega računalnika."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"Tipalo prstnih odtisov je na gumbu za vklop. To je ploski gumb ob izbočenem gumbu za glasnost na robu naprave."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"Tipalo prstnih odtisov je na gumbu za vklop. To je ploski gumb ob izbočenem gumbu za glasnost na robu telefona."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"Tipalo prstnih odtisov je na gumbu za vklop. To je ploski gumb ob izbočenem gumbu za glasnost na robu zaslona."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"Zdaj lahko s prstnim odtisom odklenete tablični računalnik ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"Zdaj lahko s prstnim odtisom odklenete napravo ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"Zdaj lahko s prstnim odtisom odklenete telefon ali potrdite svojo identiteto, na primer ob prijavi v aplikacije ali odobritvi nakupa."</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"Napravo lahko odklenete z obrazom ali prstnim odtisom. Zaradi varnosti ta možnost zahteva uporabo nadomestnega načina zaklepanja zaslona."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"Šifriraj tablični računalnik"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"Šifriranje telefona"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"Šifriranje naprave"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"Nastavite zaklepanje zaslona, da zaščitite tablico"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"Nastavite zaklepanje zaslona, da zaščitite napravo"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"Nastavite zaklepanje zaslona, da zaščitite telefon"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"Uporabo povezave NFC dovoli samo pri odklenjenem zaslonu."</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti omrežje v telefon"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti omrežje v tablični računalnik"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti omrežje v napravo"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti ta omrežja v telefon"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti ta omrežja v tablični računalnik"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi shraniti ta omrežja v napravo"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Samodejna sprememba usmerjenosti zaslona, ko telefon obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Samodejna sprememba usmerjenosti zaslona, ko tablični računalnik obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Samodejna sprememba postavitve zaslona, ko napravo obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"Zahtevaj PIN za uporabo tabličnega računalnika"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"Zahtevaj kodo PIN za uporabo telefona."</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"Zahtevaj kodo PIN za uporabo naprave"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"Zahtevaj PIN za uporabo tabličnega računalnika"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"Zahtevaj kodo PIN za uporabo telefona."</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"Zahtevaj kodo PIN za uporabo naprave"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"Telefonska številka"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (reža za kartico SIM %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"Telefonska številka (reža za SIM %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"Številka MDN na kartici SIM"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"Telefonska št. na kartici SIM"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"Formatiranje kartice SD kot notranjega pomnilnika"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"Shranite aplikacije in predstavnost za uporabo samo v tem telefonu. &lt;a href=https://support.google.com/android/answer/12153449&gt;Preberite več o nastavljanju kartice SD.&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"Formatiraj"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"Formatiranje kartice SD kot notranjega pomnilnika"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"Shranite aplikacije in predstavnost za uporabo samo v tej napravi. &lt;a href=https://support.google.com/android/answer/12153449&gt;Preberite več o nastavljanju kartice SD.&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"Formatiraj"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"V nosilec <xliff:g id="NAME">^1</xliff:g> lahko premaknete datoteke, predstavnost in določene aplikacije. \n\nS tem premikom boste v shrambi tabličnega računalnika sprostili do <xliff:g id="SIZE">^2</xliff:g>. Premikanje bo trajalo približno <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"V nosilec <xliff:g id="NAME">^1</xliff:g> lahko premaknete datoteke, predstavnost in nekatere aplikacije. \n\nS tem premikom boste v shrambi telefona sprostili do <xliff:g id="SIZE">^2</xliff:g>. Premikanje bo trajalo približno <xliff:g id="DURATION">^3</xliff:g>."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"V nosilec <xliff:g id="NAME">^1</xliff:g> lahko premaknete datoteke, predstavnost in določene aplikacije. \n\nS tem premikom boste v shrambi naprave sprostili do <xliff:g id="SIZE">^2</xliff:g>. Premikanje bo trajalo približno <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"Naj bo ta tablični računalnik napolnjen"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"Naj bo ta telefon napolnjen"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"Poskrbite, da bo ta naprava napolnjena"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"S tem boste iz "<b>"notranje shrambe"</b>" tabličnega računalnika izbrisali vse podatke, kar vključuje tudi:\n\n"<li>"račun Google "</li>\n<li>"podatke in nastavitve sistema in aplikacij"</li>\n<li>"prenesene aplikacije"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"S tem boste iz "<b>"notranje shrambe"</b>" telefona izbrisali vse podatke, kar vključuje tudi:\n\n"<li>"račun Google"</li>\n<li>"podatke in nastavitve sistema in aplikacij"</li>\n<li>"prenesene aplikacije"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"S tem boste iz "<b>"notranjega pomnilnika"</b>" naprave izbrisali vse podatke, kar vključuje tudi:\n\n"<li>"račun Google"</li>\n<li>"podatke in nastavitve sistema in aplikacij"</li>\n<li>"prenesene aplikacije"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"Trenutno ste prijavljeni v te račune:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"V napravi so prisotni drugi uporabniki.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"Če želite izbrisati glasbo, slike in druge uporabniške podatke, morate izbrisati "<b>"pomnilnik USB"</b>"."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"Če ustavite to storitev, bodo nekatere funkcije v napravi morda nehale pravilno delovati, dokler je ne izklopite in znova vklopite."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"Informacije o tabličnem računalniku"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"Informacije o telefonu"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"Podatki o napravi"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"Nastavitve velikosti prikaza in besedila bodo ponastavljene na prvotne nastavitve telefona."</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"Nastavitve besedila in velikosti prikaza bodo ponastavljene na prvotne nastavitve tabličnega računalnika."</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"Nastavitve besedila in velikosti prikaza bodo ponastavljene na prvotne nastavitve naprave."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Prilagodite prikaz barv v telefonu."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Prilagodite prikaz barv v tabličnem računalniku."</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Prilagodite prikaz barv v napravi"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"Zatemnite zaslon telefona, da bo temnejši od najmanjše svetlosti."</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"Zatemnite zaslon tabličnega računalnika, da bo temnejši od najmanjše svetlosti."</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"Zatemnite zaslon, da bo temnejši od najmanjše svetlosti."</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Zelo zatemnjen zaslon je lahko koristen v teh primerih: &lt;ol&gt; &lt;li&gt; Privzeta najmanjša svetlost zaslona telefona je presvetla.&lt;/li&gt; &lt;li&gt; Telefon uporabljate v temnih okoliščinah, na primer ponoči ali v temni sobi, preden greste spat.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Zelo zatemnjen zaslon je lahko koristen v teh primerih: &lt;ol&gt; &lt;li&gt; Privzeta najmanjša svetlost zaslona tabličnega računalnika je presvetla.&lt;/li&gt; &lt;li&gt; Tablični računalnik uporabljate v temnih okoliščinah, na primer ponoči ali v temni sobi, preden greste spat.&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"Možnost »Zelo zatemnjeno« je lahko koristna v teh primerih: &lt;ol&gt; &lt;li&gt; Privzeta najmanjša svetlost zaslona naprave je presvetla.&lt;/li&gt; &lt;li&gt; Napravo uporabljate v temnih okoliščinah, na primer ponoči ali v temni sobi, preden greste spat.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"Telefon ima običajno porabo baterije v ozadju"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"Tablični računalnik ima običajno porabo energije baterije v ozadju"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"Naprava ima običajno porabo energije baterije v ozadju"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"Naprava ima običajno porabo energije baterije v ozadju"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"V nekaterih pogojih, na primer pri visokih temperaturah ali daljšem polnjenju, bo polnjenje morda omejeno na <xliff:g id="PERCENT">%1$s</xliff:g> za ohranjanje ustreznega stanja baterije.\n\nKo teh pogojev ni več, polnjenje baterije telefona samodejno zopet poteka kot običajno."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"V nekaterih pogojih, na primer pri visokih temperaturah ali daljšem polnjenju, bo polnjenje morda omejeno na <xliff:g id="PERCENT">%1$s</xliff:g> za ohranjanje ustreznega stanja baterije.\n\nKo teh pogojev ni več, polnjenje baterije tabličnega računalnika samodejno zopet poteka kot običajno."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"V nekaterih pogojih, na primer pri visokih temperaturah ali daljšem polnjenju, bo polnjenje morda omejeno na <xliff:g id="PERCENT">%1$s</xliff:g> za ohranjanje ustreznega stanja baterije.\n\nKo teh pogojev ni več, polnjenje baterije naprave samodejno zopet poteka kot običajno."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"Telefon ste uporabljali več kot običajno, zato se bo baterija morda izpraznila prej kot običajno.\n\nAplikacije, ki porabljajo največ energije baterije:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"Tablični računalnik ste uporabljali več kot običajno, zato se bo baterija morda izpraznila prej kot običajno.\n\nAplikacije, ki porabljajo največ energije baterije:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"Napravo ste uporabljali več kot običajno, zato se bo baterija morda izpraznila prej kot običajno.\n\nAplikacije, ki porabljajo največ energije baterije:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"Z odstranitvijo računa boste iz naprave izbrisali vsa sporočila, stike in druge podatke v računu."</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"Morebitne spremembe v računih, ki jih naredite v spletu, bodo samodejno kopirane v tablični računalnik.\n\nNekateri računi morda tudi samodejno kopirajo morebitne spremembe, ki jih naredite v tabličnem računalniku, v splet. Tako deluje račun Google."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"Morebitne spremembe v računih, ki jih naredite v spletu, bodo samodejno kopirane v telefon.\n\nNekateri računi morda tudi samodejno kopirajo morebitne spremembe, ki jih naredite v telefonu, v splet. Tako deluje račun Google."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"Morebitne spremembe v računih, ki jih naredite v spletu, bodo samodejno kopirane v napravo.\n\nNekateri računi morebitne spremembe, ki jih naredite v napravi, morda tudi samodejno kopirajo v splet. Tako deluje račun Google."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"Tablični računalnik bo izklopil prenos podatkov v mobilnih omrežjih, ko bo dosežena nastavljena omejitev.\n\nKer količino prenesenih podatkov meri tablični računalnik, operater pa jo morda drugače, priporočamo, da nastavite nekoliko manjšo omejitev."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"Telefon bo izklopil prenos podatkov v mobilnih omrežjih, ko bo dosežena nastavljena omejitev.\n\nKer količino prenesenih podatkov meri telefon, operater pa jo morda meri drugače, priporočamo, da nastavite nekoliko manjšo omejitev."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"Naprava bo izklopila prenos podatkov v mobilnih omrežjih, ko bo dosežena nastavljena omejitev.\n\nKer količino prenesenih podatkov meri naprava, operater pa jo morda meri drugače, priporočamo, da nastavite nekoliko manjšo omejitev."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"Dodajte nove uporabnike, ki bodo lahko souporabljali vašo napravo. Vsak uporabnik ima v napravi svoj osebni prostor za začetne zaslone po meri, račune, aplikacije, nastavitve in drugo."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"Dodajte nove uporabnike, ki bodo lahko souporabljali vaš tablični računalnik. Vsak uporabnik ima v tabličnem računalniku svoj osebni prostor za začetne zaslone po meri, račune, aplikacije, nastavitve in drugo."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"Dodajte nove uporabnike, ki bodo lahko souporabljali vaš telefon. Vsak uporabnik ima v telefonu svoj osebni prostor za začetne zaslone po meri, račune, aplikacije, nastavitve in drugo."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"Baterija naprave se morda polni počasi ali se sploh ne polni. Za hitrejše polnjenje uporabite priporočena kabel in napajalnik."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"Brez odklepanja telefona"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"Brez odklepanja tabličnega računalnika"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"Brez odklepanja naprave"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"Ko telefon obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"Ko tablični računalnik obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"Ko napravo obrnete iz navpičnega v vodoravni položaj ali obratno."</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"Prilagodite prikaz barv v telefonu."</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"Prilagodite prikaz barv v tabličnem računalniku."</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"Prilagodite prikaz barv v napravi"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"Zvočniki telefona"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"Zvočniki tabličnega računalnika"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"Zvočniki naprave"</string>

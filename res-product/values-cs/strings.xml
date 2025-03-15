@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"Adresa Bluetooth zařízení: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> požaduje zviditelnění tabletu pro ostatní zařízení Bluetooth na <xliff:g id="TIMEOUT">%2$d</xliff:g> s."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> požaduje zviditelnění telefonu pro ostatní zařízení Bluetooth na <xliff:g id="TIMEOUT">%2$d</xliff:g> s."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zařízení na <xliff:g id="TIMEOUT">%2$d</xliff:g> s zviditelnit pro ostatní zařízení Bluetooth."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"Aplikace požaduje zviditelnění tabletu pro ostatní zařízení Bluetooth na <xliff:g id="TIMEOUT">%1$d</xliff:g> s."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"Aplikace požaduje zviditelnění telefonu pro ostatní zařízení Bluetooth na <xliff:g id="TIMEOUT">%1$d</xliff:g> s."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"Aplikace chce zařízení na <xliff:g id="TIMEOUT">%1$d</xliff:g> s zviditelnit pro ostatní zařízení Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> požaduje zviditelnění tabletu pro ostatní zařízení Bluetooth. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> požaduje zviditelnění telefonu pro ostatní zařízení Bluetooth. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> požaduje zviditelnění zařízení pro ostatní zařízení s Bluetooth. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"Aplikace chce zařízení zviditelnit pro ostatní zařízení s Bluetooth. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%2$d</xliff:g> s tablet zviditelnit pro ostatní zařízení."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%2$d</xliff:g> s telefon zviditelnit pro ostatní zařízení."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%2$d</xliff:g> s zařízení zviditelnit pro ostatní zařízení."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"Aplikace chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%1$d</xliff:g> s tablet zviditelnit pro ostatní zařízení."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"Aplikace chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%1$d</xliff:g> s telefon zviditelnit pro ostatní zařízení."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"Aplikace chce zapnout Bluetooth a na <xliff:g id="TIMEOUT">%1$d</xliff:g> s zařízení zviditelnit pro ostatní zařízení."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a zviditelnit tablet pro ostatní zařízení. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a zviditelnit telefon pro ostatní zařízení. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"Aplikace <xliff:g id="APP_NAME">%1$s</xliff:g> chce zapnout Bluetooth a zviditelnit zařízení pro ostatní zařízení. Svoji volbu můžete později změnit v nastavení Bluetooth."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"Snímač otisků prstů je na vypínači. Je to ploché tlačítko vedle vystouplého tlačítka hlasitosti na hraně tabletu."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"Snímač otisků prstů je na vypínači. Je to ploché tlačítko vedle vystouplého tlačítka hlasitosti na hraně zařízení."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"Snímač otisků prstů je na vypínači. Je to ploché tlačítko vedle vystouplého tlačítka hlasitosti na hraně telefonu."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"Snímač otisků prstů je na vypínači. Je to ploché tlačítko vedle vystouplého tlačítka hlasitosti na hraně zařízení."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"Odteď můžete otiskem prstu odemykat tablet nebo ověřovat svoji totožnost, například při přihlašování do aplikací nebo schvalování nákupů"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"Odteď můžete pomocí otisku prstu odemykat zařízení nebo ověřovat svoji totožnost, například při přihlašování do aplikací nebo schvalování nákupů"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"Odteď můžete pomocí otisku prstu odemykat telefon nebo ověřovat svoji totožnost, například při přihlašování do aplikací nebo schvalování nákupů"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"Zařízení můžete odemykat obličejem nebo otiskem prstu. Z bezpečnostních důvodů tato možnost vyžaduje záložní zámek obrazovky."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"Šifrování tabletu"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"Šifrování telefonu"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"Šifrovat zařízení"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"Ochraňte tablet pomocí zámku obrazovky"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"Ochraňte zařízení pomocí zámku obrazovky"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"Ochraňte telefon pomocí zámku obrazovky"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"Povolit použití NFC pouze při odemknuté obrazovce"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do telefonu uložit síť"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do tabletu uložit síť"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do zařízení uložit síť"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do telefonu uložit tyto sítě"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do tabletu uložit tyto sítě"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"Aplikace <xliff:g id="APPNAME">%1$s</xliff:g> chce do zařízení uložit tyhle sítě"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Orientace obrazovky se automaticky změní, když telefon otočíte na výšku nebo na šířku."</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Orientace obrazovky se automaticky změní, když tablet otočíte na výšku nebo na šířku"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Automaticky změnit orientaci obrazovky, když zařízení otočíte z režimu na výšku do režimu na šířku nebo naopak"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"K použití tabletu je vyžadován kód PIN"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"K použití telefonu vyžadovat PIN"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"K použití zařízení vyžadovat PIN"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"K použití tabletu je vyžadován kód PIN"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"K použití telefonu vyžadovat PIN"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"K použití zařízení vyžadovat PIN"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"Telefonní číslo"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (slot na SIM kartu %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"Telefonní číslo (slot na SIM kartu %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"MDN na SIM kartě"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"Telefonní číslo na SIM kartě"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"Formátovat SD kartu jako interní úložiště"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"Ukládejte aplikace a média k použití jen s tímto telefonem. &lt;a href=https://support.google.com/android/answer/12153449&gt;Další informace o nastavení SD karty&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"Formátovat"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"Formátovat SD kartu jako interní úložiště"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"Ukládat aplikace a média k použití jen na tomhle zařízení. &lt;a href=https://support.google.com/android/answer/12153449&gt;Další informace o nastavení SD karty&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"Formátovat"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"Na toto médium <xliff:g id="NAME">^1</xliff:g> můžete přesunout soubory, některé aplikace a další obsah. \n\nPřesunem uvolníte <xliff:g id="SIZE">^2</xliff:g> úložiště tabletu a potrvá to asi <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"Na toto médium <xliff:g id="NAME">^1</xliff:g> můžete přesunout soubory, některé aplikace a další obsah. \n\nPřesunem uvolníte <xliff:g id="SIZE">^2</xliff:g> úložiště telefonu a potrvá to asi <xliff:g id="DURATION">^3</xliff:g>."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"Na tohle úložné zařízení <xliff:g id="NAME">^1</xliff:g> můžete přesunout soubory, média a některé aplikace. \n\nPřesunutím uvolníte v úložišti zařízení <xliff:g id="SIZE">^2</xliff:g> a potrvá asi <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"Tablet nabíjejte"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"Telefon nabíjejte"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"Udržujte zařízení nabité"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"Tato akce smaže veškerá data z "<b>"interního úložiště"</b>" tabletu, např.:\n\n"<li>"váš účet Google"</li>\n<li>"nastavení a data systému a aplikací"</li>\n<li>"stažené aplikace"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"Tato akce smaže veškerá data z "<b>"interního úložiště"</b>" telefonu, např.:\n\n"<li>"váš účet Google"</li>\n<li>"nastavení a data systému a aplikací"</li>\n<li>"stažené aplikace"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"Tahle akce vymaže veškerá data z "<b>"interního úložiště"</b>" zařízení, mimo jiné i:\n\n"<li>"váš účet Google,"</li>\n<li>"nastavení a data systému a aplikací,"</li>\n<li>"stažené aplikace."</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"Aktuálně jste přihlášeni k těmto účtům:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"V tomto zařízení jsou přítomni další uživatelé.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"Chcete-li smazat také hudbu, obrázky a další uživatelská data, je potřeba vymazat "<b>"úložiště USB"</b>"."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"Pokud tuto službu zastavíte, může se stát, že některé funkce zařízení nebudou fungovat správně, dokud zařízení nevypnete a opět nezapnete."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"Informace o tabletu"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"Informace o telefonu"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"Informace o zařízení"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"Předvolby velikosti zobrazovaných prvků a textu se resetují na původní nastavení telefonu"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"Předvolby velikosti zobrazovaných prvků a textu se resetují na původní nastavení tabletu"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"Předvolby velikosti obrazovky a textu se resetují na původní nastavení zařízení"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Můžete si upravit, jak se budou v telefonu zobrazovat barvy."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Upravte si zobrazování barev v tabletu"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Upravte zobrazování barev na zařízení"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"Ztmavit obrazovku více, než je minimální nastavení jasu na telefonu"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"Ztmavit obrazovku více, než je minimální nastavení jasu na tabletu"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"Ztmavit obrazovku víc, než je minimální nastavení jasu zařízení"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Velmi tmavé nastavení se může hodit v těchto případech: &lt;ol&gt; &lt;li&gt; Minimální nastavení jasu na telefonu je stále příliš vysoké.&lt;/li&gt; &lt;li&gt; Telefon používáte v tmavém prostředí, například v noci nebo v tmavém pokoji před spaním.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Velmi tmavé nastavení se může hodit v těchto případech: &lt;ol&gt; &lt;li&gt; Minimální nastavení jasu na tabletu je stále příliš vysoké.&lt;/li&gt; &lt;li&gt; Tablet používáte v tmavém prostředí, například v noci nebo v tmavém pokoji před spaním.&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"Velmi tmavé zobrazení se může hodit v následujících případech: &lt;ol&gt; &lt;li&gt; Výchozí nastavení minimální jasu na zařízení je moc vysoké.&lt;/li&gt; &lt;li&gt; Používáte zařízení v tmavém prostředí, například v noci nebo v tmavém pokoji před spaním.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"V telefonu dochází k běžnému využívání baterie na pozadí"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"V tabletu dochází k běžnému využívání baterie na pozadí"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"V zařízení dochází k běžnému využívání baterie na pozadí"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"V zařízení dochází k běžnému využívání baterie na pozadí"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"Za určitých podmínek, jako je vysoká teplota a dlouhá doba mezi nabitími, může být nabíjení omezeno na <xliff:g id="PERCENT">%1$s</xliff:g> za účelem udržení výdrže baterie.\n\nKdyž tyto podmínky pominou, telefon se automaticky začne nabíjet normálně."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"Za určitých podmínek, jako je vysoká teplota a dlouhá doba mezi nabitími, může být nabíjení omezeno na <xliff:g id="PERCENT">%1$s</xliff:g> za účelem udržení výdrže baterie.\n\nKdyž tyto podmínky pominou, tablet se automaticky začne nabíjet normálně."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"Za určitých podmínek, jako je vysoká teplota a dlouhá doba mezi nabitími, může být nabíjení omezeno na <xliff:g id="PERCENT">%1$s</xliff:g>, aby se předešlo degradaci baterie.\n\nKdyž tyhle podmínky pominou, zařízení se automaticky začne nabíjet normálně."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"Protože jste telefon používali více než obvykle, může se baterie vybít dříve, než je běžné.\n\nNejvíc baterii vybíjejí tyto aplikace:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"Protože jste tablet používali více než obvykle, může se baterie vybít dříve, než je běžné.\n\nNejvíc baterii vybíjejí tyto aplikace:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"Protože jste zařízení používali více než obvykle, může se baterie vybít dříve, než je běžné.\n\nNejvíc baterii vybíjejí tyto aplikace:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"Odebráním účtu smažete ze zařízení také všechny jeho zprávy, kontakty a další data."</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"Změny, které v rámci svých účtů provedete na webu, se automaticky zkopírují do tabletu.\n\nNěkteré účty také automaticky zkopírují změny provedené v tabletu na web. Tímto způsobem funguje například účet Google."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"Změny, které v rámci svých účtů provedete na webu, se automaticky zkopírují do telefonu.\n\nNěkteré účty také automaticky zkopírují změny provedené v telefonu na web. Tímto způsobem funguje například účet Google."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"Změny ve vašich účtech provedené na webu se automaticky zkopírují do zařízení.\n\nNěkteré účty taky změny provedené na zařízení automaticky zkopírují na web. Takhle účty Google fungují."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"Až tablet dosáhne stanoveného limitu, datové připojení k mobilní síti bude vypnuto.\n\nProtože se přenesená data měří pomocí tabletu a operátor je může účtovat odlišně, je vhodné nastavit nízký limit."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"Až telefon dosáhne stanoveného limitu, datové připojení k mobilní síti se vypne.\n\nProtože se přenesená data měří pomocí telefonu a operátor je může účtovat odlišně, je vhodné nastavit nízký limit."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"Až zařízení dosáhne stanoveného limitu, mobilní data se vypnou.\n\nProtože operátor může data účtovat jinak, než je měří zařízení, doporučujeme nastavit spíš nižší limit."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"Chcete-li zařízení sdílet, přidejte nové uživatele. Každý uživatel má v zařízení vlastní prostor na plochy, účty, aplikace, nastavení apod."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"Pokud chcete tablet sdílet, přidejte nové uživatele. Každý uživatel má v tabletu vlastní prostor na plochy, účty, aplikace, nastavení apod."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"Pokud bude telefon používat více lidí, přidejte nové uživatele. Každý uživatel má v telefonu vlastní prostor na plochy, účty, aplikace, nastavení apod."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"Zařízení se nabíjí pomalu nebo se nenabíjí vůbec. K rychlejšímu nabíjení použijte doporučený kabel a adaptér."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"Bez odemknutí telefonu"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"Bez odemknutí tabletu"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"Bez odemknutí zařízení"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"Když telefon otočíte z režimu na výšku do režimu na šířku nebo naopak"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"Když tablet otočíte z režimu na výšku do režimu na šířku nebo naopak"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"Když zařízení otočíte z režimu na výšku do režimu na šířku nebo naopak"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"Upravte si zobrazování barev v telefonu"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"Upravte si zobrazování barev v tabletu"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"Upravte zobrazování barev na zařízení"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"Reproduktory telefonu"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"Reproduktory tabletu"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"Reproduktory zařízení"</string>

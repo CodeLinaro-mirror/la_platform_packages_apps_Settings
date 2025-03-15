@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"Toestel se Bluetooth-adres: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou tablet <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes lank vir ander Bluetooth-toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou foon <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes lank vir ander Bluetooth-toestelle sigbaar maak."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou toestelle vir <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes vir ander Bluetooth-toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"\'n App wil jou tablet <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes lank vir ander Bluetooth-toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"\'n App wil jou foon <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes lank vir ander Bluetooth-toestelle sigbaar maak."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"’n App wil jou toestel vir <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes vir ander Bluetooth-toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou tablet vir ander Bluetooth-toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou foon vir ander Bluetooth-toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil jou toestel vir ander Bluetooth-toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"\'n Program wil jou toestel vir ander Bluetooth-toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou tablet <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes lank vir ander toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou foon <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes lank vir ander toestelle sigbaar maak."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou toestel vir <xliff:g id="TIMEOUT">%2$d</xliff:g> sekondes vir ander toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"\'n App wil Bluetooth aanskakel en jou tablet <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes lank vir ander toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"\'n App wil Bluetooth aanskakel en jou foon <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes lank vir ander toestelle sigbaar maak."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"’n App wil Bluetooth aanskakel en jou toestel vir <xliff:g id="TIMEOUT">%1$d</xliff:g> sekondes vir ander toestelle sigbaar maak."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou tablet vir ander toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou foon vir ander toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g> wil Bluetooth aanskakel en jou toestel vir ander toestelle sigbaar maak. Jy kan dit later in Bluetooth-instellings verander."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"Die vingerafdruksensor is op die aan/af-skakelaar. Dit is die plat knoppie langs die verhewe volumeknoppie op die rand van die tablet."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"Die vingerafdruksensor is op die aan/af-skakelaar. Dit is die plat knoppie langs die verhewe volumeknoppie op die rand van die toestel."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"Die vingerafdruksensor is op die aan/af-skakelaar. Dit is die plat knoppie langs die verhewe volumeknoppie op die rand van die foon."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"Die vingerafdruksensor is op die aan/af-skakelaar. Dit is die plat knoppie langs die verhewe volumeknoppie aan die kant van die skerm."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"Jy kan nou jou vingerafdruk gebruik om jou tablet te ontsluit of te verifieer dat dit jy is, soos wanneer jy by apps aanmeld of ’n aankoop goedkeur"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"Jy kan nou jou vingerafdruk gebruik om jou toestel te ontsluit of te verifieer dat dit jy is, soos wanneer jy by apps aanmeld of ’n aankoop goedkeur"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"Jy kan nou jou vingerafdruk gebruik om jou foon te ontsluit of te verifieer dat dit jy is, soos wanneer jy by apps aanmeld of ’n aankoop goedkeur"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"Jy kan jou toestel met jou gesig of vingerafdruk ontsluit. Om veiligheidsredes vereis hierdie opsie \'n rugsteunskermslot."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"Enkripteer tablet"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"Enkripteer foon"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"Enkripteer toestel"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"Stel skermslot om tablet te beskerm"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"Stel skermslot om toestel te beskerm"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"Stel skermslot om foon te beskerm"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"Laat NFC-gebruik net toe wanneer skerm ontsluit is"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g> wil \'n netwerk op jou foon stoor"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g> wil \'n netwerk op jou tablet stoor"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g> wil ’n netwerk op jou toestel stoor"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g> wil hierdie netwerke op jou foon stoor"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g> wil hierdie netwerke op jou tablet stoor"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> wil hierdie netwerke op jou toestel stoor"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Verstel die skermoriëntasie outomaties wanneer jy jou foon tussen portret en landskap beweeg"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Verstel die skermoriëntasie outomaties wanneer jy jou tablet tussen portret en landskap beweeg"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Verstel die skermoriëntasie outomaties wanneer jy jou toestel tussen portret en landskap beweeg"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"Vereis PIN om tablet te gebruik"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"Benodig PIN om foon te gebruik"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"PIN word vereis om toestel te gebruik"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"Vereis PIN om tablet te gebruik"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"Benodig PIN om foon te gebruik"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"PIN word vereis om toestel te gebruik"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"Foonnommer"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (SIM-gleuf %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"Foonnommer (SIM-gleuf %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"MDN op SIM"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"Foonnommer op SIM"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"Formateer SD-kaart vir interne berging"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"Berg programme en media om slegs op hierdie foon te gebruik. &lt;a href=https://support.google.com/android/answer/12153449&gt;Kom meer te wete oor hoe om ’n SD-kaart op te stel&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"Formateer"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"Formateer SD-kaart vir interne berging"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"Berg apps en media om net op hierdie toestel te gebruik. &lt;a href=https://support.google.com/android/answer/12153449&gt;Kry meer inligting oor hoe om ’n SD-kaart op te stel&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"Formateer"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"Jy kan lêers, media en sekere programme na hierdie <xliff:g id="NAME">^1</xliff:g> toe skuif. \n\nDit sal <xliff:g id="SIZE">^2</xliff:g> van jou tablet se bergingspasie beskikbaar maak en sal waarskynlik sowat <xliff:g id="DURATION">^3</xliff:g> neem."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"Jy kan lêers, media en sekere programme na hierdie <xliff:g id="NAME">^1</xliff:g> toe skuif. \n\nDit sal <xliff:g id="SIZE">^2</xliff:g> van jou foon se bergingspasie beskikbaar maak en sal waarskynlik sowat <xliff:g id="DURATION">^3</xliff:g> neem."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"Jy kan lêers, media en sekere apps na hierdie <xliff:g id="NAME">^1</xliff:g> toe skuif. \n\nDit sal <xliff:g id="SIZE">^2</xliff:g> van jou toestel se bergingspasie beskikbaar maak en sal waarskynlik sowat <xliff:g id="DURATION">^3</xliff:g> neem."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"Hou hierdie tablet gelaai"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"Hou hierdie foon gelaai"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"Hou hierdie toestel gelaai"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"Dit sal alle data uit jou tablet se "<b>"interne berging"</b>" uitvee, insluitend:\n\n"<li>"Jou Google-rekening"</li>\n" "<li>"Stelsel- en appdata en -instellings"</li>\n<li>"Afgelaaide apps"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"Dit sal alle data uit jou foon se "<b>"interne berging"</b>" uitvee, insluitend:\n\n"<li>"Jou Google-rekening"</li>\n<li>"Stelsel- en appdata en -instellings"</li>\n<li>"Afgelaaide apps"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"Dit sal alle data in jou toestel se "<b>"interne berging"</b>" uitvee, insluitend:\n\n"<li>"Jou Google-rekening"</li>\n<li>"Stelsel- en appdata en instellings"</li>\n<li>"Afgelaaide apps"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"Jy is tans aangemeld by die volgende rekeninge:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"Daar is ander gebruikers op hierdie toestel teenwoordig.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"Om musiek, prente en ander gebruikerdata uit te vee, moet die "<b>"USB-berging"</b>" uitgevee word."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"As jy hierdie diens stop sal sommige funksies van jou toestel dalk nie meer behoorlik werk nie totdat jy dit eers af- en dan weer aanskakel."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"Tabletinligting"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"Fooninligting"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"Toestelinligting"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"Jou skermgrootte en teksvoorkeure sal na die foon se oorspronklike instellings teruggestel word"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"Jou skermgrootte en teksvoorkeure sal na die tablet se oorspronklike instellings teruggestel word"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"Jou vertoongrootte en teksvoorkeure sal na die toestel se oorspronklike instellings teruggestel word"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Verstel hoe kleure op jou foon gewys word"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Verstel hoe kleure op jou tablet gewys word"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Verstel hoe kleure op jou toestel vertoon"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"Maak skerm donkerder as jou foon se minimum helderheid"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"Maak skerm donkerder as jou tablet se minimum helderheid"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"Maak skerm donkerder as jou toestel se minimum helderheid"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Ekstra donker kan nuttig wees wanneer: &lt;ol&gt; &lt;li&gt; Jou foon se verstek- minimum helderheid steeds te helder is&lt;/li&gt; &lt;li&gt; Jy jou foon in donker situasies gebruik, soos snags of in ’n donker vertrek voor slaaptyd&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Ekstra donker kan nuttig wees wanneer: &lt;ol&gt; &lt;li&gt; Jou tablet se verstek- minimum helderheid steeds te helder is&lt;/li&gt; &lt;li&gt; Jy jou tablet in donker situasies gebruik, soos snags of in ’n donker vertrek voor slaaptyd&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"Ekstra donker kan nuttig wees wanneer: &lt;ol&gt; &lt;li&gt; Jou toestel se verstek- minimum helderheid steeds te helder is&lt;/li&gt; &lt;li&gt; Jy jou toestel in donker situasies gebruik, soos snags of in ’n donker vertrek voor slaaptyd&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"Foon het gewone agtergrondbatteryverbruik"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"Tablet het gewone agtergrondbatteryverbruik"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"Toestel het gewone agtergrondbatteryverbruik"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"Toestel het gewone agtergrondbatteryverbruik"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"In sekere omstandighede, soos hoë temperature en lang laaitydperke, kan die laaiproses tot <xliff:g id="PERCENT">%1$s</xliff:g> beperk word om die battery gesond te hou.\n\nWanneer dié omstandighede eindig, sal jou foon outomaties normaalweg laai."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"In sekere omstandighede, soos hoë temperature en lang laaitydperke, kan die laaiproses tot <xliff:g id="PERCENT">%1$s</xliff:g> beperk word om die battery gesond te hou.\n\nWanneer daardie omstandighede eindig, sal jou tablet outomaties normaalweg laai."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"In sekere omstandighede, soos hoë temperature en lang laaitydperke, kan die laaiproses tot <xliff:g id="PERCENT">%1$s</xliff:g> beperk word om die batterygesondheid te help bewaar.\n\nWanneer dié omstandighede nie langer geld nie, sal jou toestel outomaties normaalweg laai."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"Jy het jou foon meer as gewoonlik gebruik en daarom sal jou battery dalk gouer as normaalweg pap word.\n\nProgramme wat die meeste batterykrag gebruik:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"Jy het jou tablet meer as gewoonlik gebruik en daarom sal jou battery dalk gouer as normaalweg pap word.\n\nProgramme wat die meeste batterykrag gebruik:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"Jy het jou toestel meer as gewoonlik gebruik en daarom sal jou battery dalk gouer as normaalweg pap word.\n\nProgramme wat die meeste batterykrag gebruik:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"As hierdie rekening verwyder word, sal al sy boodskappe, kontakte en ander data van die toestel af uitgevee word!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"Enige veranderings wat jy aan jou rekeninge op die web aanbring, sal outomaties na jou tablet gekopieer word.\n\nSommige rekeninge kan ook outomaties enige veranderings wat jy op die tablet maak, na die web kopieer. Dis hoe \'n Google-rekening werk."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"Enige veranderings wat jy aan jou rekeninge aanbring, sal outomaties na jou foon gekopieer word.\n\nSommige rekeninge kan ook outomaties enige veranderings wat jy op die tablet maak, na die web kopieer. \'n Google-rekening werk so."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"Enige veranderinge wat jy aan jou rekeninge maak op die web, sal outomaties na jou toestel gekopieer word.\n\nSommige rekeninge kan ook outomaties enige veranderinge wat jy op die toestel maak, na die web kopieer. ’n Google-rekening werk op hierdie manier."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"Jou tablet sal mobiele data afskakel wanneer dit die limiet wat jy gestel het, bereik het.\n\nOorweeg dit om \'n konserwatiewe limiet te stel omdat die datagebruik deur jou tablet gemeet word terwyl jou diensverskaffer die gebruik dalk anders bereken."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"Jou foon sal mobiele data afskakel wanneer dit die limiet wat jy gestel het, bereik het.\n\nOorweeg dit om \'n konserwatiewe limiet te stel omdat die datagebruik deur jou foon gemeet word terwyl jou diensverskaffer die gebruik dalk anders bereken."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"Jou toestel sal mobieldata afskakel sodra dit die limiet bereik wat jy gestel het.\n\nAangesien datagebruik deur jou toestel gemeet word, maar jou diensverskaffer dalk gebruik anders bereken, moet jy daaraan dink om ’n konserwatiewe limiet te stel."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"Deel jou toestel deur nuwe gebruikers by te voeg. Elke gebruiker het \'n persoonlike spasie op jou toestel vir gepasmaakte tuisskerms, rekeninge, programme, instellings en meer."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"Deel jou tablet deur nuwe gebruikers by te voeg. Elke gebruiker het \'n persoonlike spasie op jou tablet vir gepasmaakte tuisskerms, rekeninge, apps, instellings en meer."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"Deel jou foon deur nuwe gebruikers by te voeg. Elke gebruiker het \'n persoonlike spasie op jou foon vir gepasmaakte tuisskerms, rekeninge, apps, instellings en meer."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"Jou toestel laai dalk stadig of laai glad nie. Gebruik ’n aanbeveelde kabel en aansluitprop om vinniger te laai."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"Sonder om jou foon te ontsluit"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"Sonder om jou tablet te ontsluit"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"Sonder om jou toestel te ontsluit"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"Wanneer jy jou foon tussen portret en landskap beweeg"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"Wanneer jy jou tablet tussen portret en landskap beweeg"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"Wanneer jy jou toestel tussen portret en landskap beweeg"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"Verstel hoe kleure op jou foon gewys word"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"Verstel hoe kleure op jou tablet gewys word"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"Verstel hoe kleure op jou toestel vertoon"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"Foonluidsprekers"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"Tabletluidsprekers"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"Toestelluidsprekers"</string>

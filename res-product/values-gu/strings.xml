@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"ડિવાઇસનું બ્લૂટૂથ ઍડ્રેસ: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g>, તમારા ટેબ્લેટને અન્ય બ્લૂટૂથ ઉપકરણો પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g>, <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે તમારા ફોનને અન્ય બ્લૂટૂથ ઉપકરણો પર દૃશ્યક્ષમ બનાવવા માગે છે."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g>, તમારા ડિવાઇસને અન્ય બ્લૂટૂથ ડિવાઇસ પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"કોઈ ઍપ્લિકેશન તમારા ટેબ્લેટને અન્ય બ્લૂટૂથ ઉપકરણો પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"કોઈ ઍપ્લિકેશન તમારા ફોનને અન્ય બ્લૂટૂથ ઉપકરણો પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"કોઈ ઍપ તમારા ડિવાઇસને અન્ય બ્લૂટૂથ ડિવાઇસ પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g>, તમારા ટૅબ્લેટને અન્ય બ્લૂટૂથ ડિવાઇસ પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને પછીથી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g>, તમારા ફોનને અન્ય બ્લૂટૂથ ડિવાઇસ પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને પછીથી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g> તમારા ઉપકરણને અન્ય બ્લૂટૂથ ઉપકરણો પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને થોડા સમય પછી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"ઍપ તમારા ઉપકરણને અન્ય બ્લૂટૂથ ઉપકરણો પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને થોડા સમય પછી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g>, બ્લૂટૂથ ચાલુ કરવા અને તમારા ટેબ્લેટને અન્ય ઉપકરણો પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g>, બ્લૂટૂથ ચાલુ કરવા અને તમારા ફોનને અન્ય ઉપકરણો પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g> બ્લૂટૂથ ચાલુ કરવા અને તમારા ડિવાઇસને અન્ય ડિવાઇસ પર <xliff:g id="TIMEOUT">%2$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"કોઈ ઍપ્લિકેશન બ્લૂટૂથ ચાલુ કરવા અને તમારા ટેબ્લેટને અન્ય ઉપકરણો પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"ઍપ્લિકેશન બ્લૂટૂથ ચાલુ કરવા અને તમારા ફોનને અન્ય ઉપકરણો પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"કોઈ ઍપ બ્લૂટૂથ ચાલુ કરવા અને તમારા ડિવાઇસને અન્ય ડિવાઇસ પર <xliff:g id="TIMEOUT">%1$d</xliff:g> સેકન્ડ માટે દૃશ્યક્ષમ બનાવવા માગે છે."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g>, બ્લૂટૂથ ચાલુ કરવા અને તમારા ટૅબ્લેટને અન્ય ડિવાઇસ પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને પછીથી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g>, બ્લૂટૂથ ચાલુ કરવા અને તમારા ફોનને અન્ય ડિવાઇસ પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને પછીથી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g> બ્લૂટૂથ ચાલુ કરવા અને તમારા ઉપકરણને અન્ય ઉપકરણો પર દૃશ્યક્ષમ બનાવવા માગે છે. તમે આને થોડા સમય પછી બ્લૂટૂથ સેટિંગમાં બદલી શકો છો."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"ફિંગરપ્રિન્ટ સેન્સર પાવર બટન પર છે. તે ટૅબ્લેટની કિનારીએ આવેલા ઉપસેલા વૉલ્યૂમ બટનની બાજુમાં આવેલું સપાટ બટન છે."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"ફિંગરપ્રિન્ટ સેન્સર પાવર બટન પર છે. તે ડિવાઇસની કિનારીએ આવેલા ઉપસેલા વૉલ્યૂમ બટનની બાજુમાં આવેલું સપાટ બટન છે."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"ફિંગરપ્રિન્ટ સેન્સર પાવર બટન પર છે. તે ફોનની કિનારીએ આવેલા ઉપસેલા વૉલ્યૂમ બટનની બાજુમાં આવેલું સપાટ બટન છે."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"ફિંગરપ્રિન્ટ સેન્સર પાવર બટન પર છે. તે ડેસ્કટૉપની કિનારીએ આવેલા ઉપસેલા વૉલ્યૂમ બટનની બાજુમાં આવેલું સપાટ બટન છે."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"તમે ઍપમાં સાઇન ઇન કરો કે કોઈ ખરીદીને મંજૂરી આપો તેવા સમયે તમારું ટૅબ્લેટ અનલૉક કરવા અથવા સાઇન ઇન કરનાર તમે જ છો તેની ચકાસણી કરવા માટે, હવે તમે તમારી ફિંગરપ્રિન્ટનો ઉપયોગ કરી શકો છો"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"તમે ઍપમાં સાઇન ઇન કરો કે કોઈ ખરીદીને મંજૂરી આપો તેવા સમયે તમારું ડિવાઇસ અનલૉક કરવા અથવા સાઇન ઇન કરનાર તમે જ છો તેની ચકાસણી કરવા માટે, હવે તમે તમારી ફિંગરપ્રિન્ટનો ઉપયોગ કરી શકો છો"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"તમે ઍપમાં સાઇન ઇન કરો કે કોઈ ખરીદીને મંજૂરી આપો તેવા સમયે તમારો ફોન અનલૉક કરવા અથવા સાઇન ઇન કરનાર તમે જ છો તેની ચકાસણી કરવા માટે, હવે તમે તમારી ફિંગરપ્રિન્ટનો ઉપયોગ કરી શકો છો"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"તમે તમારા ચહેરા કે ફિંગરપ્રિન્ટનો ઉપયોગ કરીને તમારું ડિવાઇસ અનલૉક કરી શકો છો. સુરક્ષા માટે, આ વિકલ્પ માટે બૅકઅપ સ્ક્રીન લૉક આવશ્યક છે."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"ટૅબ્લેટને એન્ક્રિપ્ટ કરો"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"ફોનને એન્ક્રિપ્ટ કરો"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"ડિવાઇસને એન્ક્રિપ્ટ કરો"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"ટૅબ્લેટને સુરક્ષિત કરવા માટે સ્ક્રીન લૉક સેટ કરો"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"ડિવાઇસને સુરક્ષિત કરવા માટે સ્ક્રીન લૉક સેટ કરો"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"ફોનને સુરક્ષિત કરવા માટે સ્ક્રીન લૉક સેટ કરો"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"જ્યારે સ્ક્રીન અનલૉક કરેલી હોય, ત્યારે જ NFCના ઉપયોગની મંજૂરી આપો"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ફોનમાં આ નેટવર્ક સાચવવા માગે છે"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ટૅબ્લેટમાં નેટવર્ક સાચવવા માગે છે"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ડિવાઇસમાં નેટવર્ક સાચવવા માગે છે"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ફોનમાં આ બધાં નેટવર્ક સાચવવા માગે છે"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ટૅબ્લેટમાં આ નેટવર્કને સાચવવા માગે છે"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> તમારા ડિવાઇસમાં આ નેટવર્કને સાચવવા માગે છે"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"જ્યારે તમે તમારા ફોનને પોર્ટ્રેટ અને લૅન્ડસ્કેપ સ્થિતિમાં ખસેડો, ત્યારે સ્ક્રીન ઓરિએન્ટેશનને ઑટોમૅટિક રીતે ગોઠવો."</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"જ્યારે તમે તમારા ટૅબ્લેટને પોર્ટ્રેટ અને લૅન્ડસ્કેપ સ્થિતિ વચ્ચે ખસેડો, ત્યારે સ્ક્રીન ઓરિએન્ટેશનને ઑટોમૅટિક રીતે ગોઠવો"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"જ્યારે તમે તમારા ડિવાઇસને પોર્ટ્રેટ અને લૅન્ડસ્કેપ સ્થિતિમાં ખસેડો, ત્યારે સ્ક્રીન ઓરિએન્ટેશનને ઑટોમૅટિક રીતે ગોઠવો"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"ટૅબ્લેટનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"ફોનનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"ડિવાઇસનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"ટૅબ્લેટનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"ફોનનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"ડિવાઇસનો ઉપયોગ કરવા માટે પિન જરૂરી છે"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"ફોન નંબર"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (સિમ કાર્ડનો સ્લૉટ %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"ફોન નંબર (સિમ કાર્ડનો સ્લૉટ %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"સિમ પરનો MDN"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"સિમ પરનો ફોન નંબર"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"આંતરિક સ્ટોરેજ માટે SD કાર્ડને ફૉર્મેટ કરો"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"માત્ર આ ફોન પર ઉપયોગ કરવા માટે ઍપ અને મીડિયા સ્ટોર કરો. &lt;a href=https://support.google.com/android/answer/12153449&gt;SD કાર્ડનું સેટઅપ કરવા વિશે વધુ જાણો&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"ફૉર્મેટ કરો"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"આંતરિક સ્ટોરેજ માટે SD કાર્ડને ફૉર્મેટ કરો"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"માત્ર આ ડિવાઇસ પર ઉપયોગ કરવા માટે ઍપ અને મીડિયા સ્ટોર કરો. &lt;a href=https://support.google.com/android/answer/12153449&gt;SD કાર્ડનું સેટઅપ કરવા વિશે વધુ જાણો&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"ફૉર્મેટ કરો"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"તમે આ <xliff:g id="NAME">^1</xliff:g> પર ફાઇલો, મીડિયા અને અમુક ઍપ ખસેડી શકો છો. \n\nઆ પગલું તમારા ટૅબ્લેટના સ્ટોરેજમાંથી <xliff:g id="SIZE">^2</xliff:g> ખાલી કરશે અને <xliff:g id="DURATION">^3</xliff:g> જેટલો સમય લઈ શકે છે."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"તમે આ <xliff:g id="NAME">^1</xliff:g> પર ફાઇલો, મીડિયા અને અમુક ઍપ ખસેડી શકો છો. \n\nઆ પગલું તમારા ફોનના સ્ટોરેજમાંથી <xliff:g id="SIZE">^2</xliff:g> ખાલી કરશે અને <xliff:g id="DURATION">^3</xliff:g> જેટલો સમય લઈ શકે છે."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"તમે આ <xliff:g id="NAME">^1</xliff:g> પર ફાઇલો, મીડિયા અને અમુક ઍપ ખસેડી શકો છો. \n\nઆ પગલું તમારા ડિવાઇસના સ્ટોરેજમાંથી <xliff:g id="SIZE">^2</xliff:g> ખાલી કરશે અને <xliff:g id="DURATION">^3</xliff:g> જેટલો સમય લઈ શકે છે."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"આ ટૅબ્લેટને ચાર્જ કરેલ રાખો"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"આ ફોનને ચાર્જ કરેલ રાખો"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"આ ડિવાઇસને ચાર્જ કરેલું રાખો"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"આ ક્રિયા તમારા ટૅબ્લેટના "<b>"આંતરિક સ્ટોરેજ"</b>"માંથી બધો ડેટા કાઢી નાખશે, જેમાં આનો સમાવેશ થાય છે:\n\n"<li>"તમારું Google એકાઉન્ટ"</li>\n<li>"સિસ્ટમ તેમજ ઍપ ડેટા અને સેટિંગ"</li>\n<li>"ડાઉનલોડ કરેલી ઍપ"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"આ ક્રિયા તમારા ફોનના "<b>"આંતરિક સ્ટોરેજ"</b>"માંથી બધો ડેટા કાઢી નાખશે, જેમાં આનો સમાવેશ થાય છે:\n\n"<li>"તમારું Google એકાઉન્ટ"</li>\n<li>"સિસ્ટમ તેમજ ઍપ ડેટા અને સેટિંગ"</li>\n<li>"ડાઉનલોડ કરેલી ઍપ"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"આ તમારા ડિવાઇસના "<b>"આંતરિક સ્ટોરેજ"</b>"માંથી બધો ડેટા કાઢી નાખશે, આના સહિત:\n\n"<li>"તમારું Google એકાઉન્ટ"</li>\n<li>"સિસ્ટમ અને ઍપ ડેટા તથા સેટિંગ"</li>\n<li>"ડાઉનલોડ કરેલી ઍપ"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"તમે અત્યારે નીચેના એકાઉન્ટમાં સાઇન ઇન થયેલા છો:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"આ ડિવાઇસ પર અન્ય વપરાશકર્તાઓ હાજર છે.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"મ્યુઝિક, ફોટા અને અન્ય વપરાશકર્તા ડેટા સાફ કરવા માટે, "<b>"USB સ્ટોરેજ"</b>" કાઢી નાખવાની જરૂર છે."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"જો તમે આ સેવા બંધ કરો છો, તો જ્યાં સુધી તમે તેનો પાવર બંધ કરીને ફરીથી ચાલુ ન કરો ત્યાં સુધી તમારા ઉપકરણની અમુક સુવિધાઓ કાર્ય કરતી બંધ થઈ શકે છે."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"ટેબ્લેટ માહિતી"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"ફોન માહિતી"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"ડિવાઇસની માહિતી"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"તમારા ડિસ્પ્લેનું કદ અને ટેક્સ્ટની પસંદગીઓને ફોનના ઑરિજિનલ સેટિંગ પર રીસેટ કરવામાં આવશે"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"તમારા ડિસ્પ્લેનું કદ અને ટેક્સ્ટની પસંદગીઓ ટૅબ્લેટના ઑરિજિનલ સેટિંગ પર રીસેટ થઈ જશે"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"તમારી ડિસ્પ્લે સાઇઝ અને ટેક્સ્ટની પસંદગીઓ ડિવાઇસના ઑરિજિનલ સેટિંગ પર રીસેટ થઈ જશે"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"તમારા ફોન પર રંગો કેવી રીતે બતાવવામાં આવે તેની ગોઠવણી કરો"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"તમારા ટૅબ્લેટ પર રંગો કેવી રીતે બતાવવામાં આવે તેની ગોઠવણી કરો"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"તમારા ડિવાઇસ પર રંગો કેવી રીતે ડિસ્પ્લે થશે તેની ગોઠવણી કરો"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"સ્ક્રીનને તમારા ફોનની ઓછામાં ઓછી બ્રાઇટનેસ કરતાં પણ વધુ ડિમ કરો"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"સ્ક્રીનને તમારા ટૅબ્લેટની ઓછામાં ઓછી બ્રાઇટનેસ કરતાં પણ વધુ ડિમ કરો"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"સ્ક્રીનને તમારા ડિવાઇસની ન્યૂનતમ બ્રાઇટનેસ કરતા વધુ ડિમ કરો"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"એક્સ્ટ્રા ડિમની સુવિધા ત્યારે સહાયરૂપ બની શકે છે કે જ્યારે: &lt;ol&gt; &lt;li&gt; તમારા ફોનની ડિફૉલ્ટ બ્રાઇટનેસ ઓછામાં ઓછી હોવા છતાં ખૂબ જ વધુ બ્રાઇટ દેખાતી હોય&lt;/li&gt; &lt;li&gt; તમે તમારા ફોનનો ઉપયોગ અંધારામાં કરી રહ્યાં હો, જેમ કે રાત્રે અથવા સૂતા પહેલાં અંધારિયા રૂમમાં&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"એક્સ્ટ્રા ડિમની સુવિધા ત્યારે સહાયરૂપ બની શકે છે કે જ્યારે: &lt;ol&gt; &lt;li&gt; તમારા ટૅબ્લેટની ડિફૉલ્ટ બ્રાઇટનેસ ઓછામાં ઓછી હોવા છતાં ખૂબ જ વધુ બ્રાઇટ દેખાતી હોય&lt;/li&gt; &lt;li&gt; તમે તમારા ટૅબ્લેટનો ઉપયોગ અંધારામાં કરી રહ્યાં હો, જેમ કે રાત્રે અથવા સૂતા પહેલાં અંધારિયા રૂમમાં&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"એક્સ્ટ્રા ડિમની સુવિધા ત્યારે સહાયરૂપ બની શકે છે કે જ્યારે: &lt;ol&gt; &lt;li&gt; તમારા ડિવાઇસની ડિફૉલ્ટ બ્રાઇટનેસ ઓછામાં ઓછી હોવા છતાં ખૂબ જ વધુ બ્રાઇટ દેખાતી હોય&lt;/li&gt; &lt;li&gt; તમે તમારા ડિવાઇસનો ઉપયોગ અંધારામાં કરી રહ્યાં હો, જેમ કે રાત્રે અથવા સૂતા પહેલાં અંધારિયા રૂમમાં&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"ફોન બૅકગ્રાઉન્ડમાં બૅટરીનો વપરાશ સામાન્ય રૂપે જ કરે છે"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"ટૅબ્લેટ બૅકગ્રાઉન્ડમાં બૅટરીનો વપરાશ સામાન્ય રૂપે જ કરે છે"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"ઉપકરણ બૅકગ્રાઉન્ડમાં બૅટરીનો વપરાશ સામાન્ય રૂપે જ કરે છે"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"ઉપકરણ બૅકગ્રાઉન્ડમાં બૅટરીનો વપરાશ સામાન્ય રૂપે જ કરે છે"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"ઉચ્ચ તાપમાન અને ચાર્જિંગની લાંબી અવધિ જેવી અમુક ચોક્કસ પરિસ્થિતિઓમાં, ચાર્જિંગ <xliff:g id="PERCENT">%1$s</xliff:g> સુધી મર્યાદિત હોઈ શકે છે જેથી બૅટરીની ક્ષમતાને જાળવી રાખવામાં સહાય કરી શકાય.\n\n"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"ઉચ્ચ તાપમાન અને ચાર્જિંગની લાંબી અવધિ જેવી અમુક ચોક્કસ પરિસ્થિતિઓમાં, ચાર્જિંગ <xliff:g id="PERCENT">%1$s</xliff:g> સુધી મર્યાદિત હોઈ શકે છે જેથી બૅટરીની ક્ષમતાને જાળવી રાખવામાં સહાય કરી શકાય.\n\nજ્યારે એ પરિસ્થિતિઓ સમાપ્ત થશે, ત્યારે ઑટોમૅટિક રીતે તમારું ટૅબ્લેટ સામાન્ય રીતે ચાર્જ થશે."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"ઉચ્ચ તાપમાન અને ચાર્જિંગની લાંબી અવધિ જેવી અમુક ચોક્કસ પરિસ્થિતિઓમાં, ચાર્જિંગ <xliff:g id="PERCENT">%1$s</xliff:g> સુધી મર્યાદિત હોઈ શકે છે જેથી બૅટરીની ક્ષમતાને જાળવી રાખવામાં સહાય કરી શકાય.\n\nજ્યારે એ પરિસ્થિતિઓ સમાપ્ત થશે, ત્યારે ઑટોમૅટિક રીતે તમારું ડિવાઇસ સામાન્ય રીતે ચાર્જ થશે."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"તમે તમારા ફોનનો સામાન્ય કરતાં વધુ ઉપયોગ કર્યો હોવાથી, તમારી બૅટરી હંમેશાં કરતાં વહેલી સમાપ્ત થઈ શકે છે.\n\nબૅટરીનો સૌથી વધુ વપરાશ કરતી ઍપ:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"તમે તમારા ટૅબ્લેટનો સામાન્ય કરતાં વધુ ઉપયોગ કર્યો હોવાથી, તમારી બૅટરી હંમેશાં કરતાં વહેલી સમાપ્ત થઈ શકે છે.\n\nબૅટરીનો સૌથી વધુ વપરાશ કરતી ઍપ:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"તમે તમારા ડિવાઇસનો સામાન્ય કરતાં વધુ ઉપયોગ કર્યો હોવાથી, તમારી બૅટરી હંમેશાં કરતાં વહેલી સમાપ્ત થઈ શકે છે.\n\nબૅટરીનો સૌથી વધુ વપરાશ કરતી ઍપ:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"આ એકાઉન્ટને કાઢી નાખવાથી તેના બધા મેસેજ, સંપર્કો તેમજ ડિવાઇસમાંનો અન્ય ડેટા ડિલીટ થઈ જશે!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"તમે વેબ પર તમારા એકાઉન્ટમાં કરો તે કોઈપણ ફેરફારોને ઑટોમૅટિક રીતે તમારા ફોન પર કૉપિ કરાશે.\n\nકેટલાક એકાઉન્ટ પણ તમે ટૅબ્લેટ પર કરો તે ફેરફારોની વેબ પર ઑટોમૅટિક રીતે કૉપિ કરશે. Google એકાઉન્ટ આ પ્રમાણે કાર્ય કરે છે."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"તમે વેબ પર તમારા એકાઉન્ટમાં કરો તે કોઈપણ ફેરફારોને ઑટોમૅટિક રીતે તમારા ફોન પર કૉપિ કરાશે.\n\nકેટલાક એકાઉન્ટ પણ તમે ફોન પર કરો તે ફેરફારોની વેબ પર ઑટોમૅટિક રીતે કૉપિ કરશે. Google એકાઉન્ટ આ પ્રમાણે કાર્ય કરે છે."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"તમે વેબ પર તમારા એકાઉન્ટમાં કરો તે કોઈપણ ફેરફારોને ઑટોમૅટિક રીતે તમારા ડિવાઇસ પર કૉપિ કરાશે.\n\nઅમુક એકાઉન્ટ પણ તમે ડિવાઇસ પર કરો તે ફેરફારોને વેબ પર ઑટોમૅટિક રીતે કૉપિ કરશે. Google એકાઉન્ટ આ પ્રમાણે કાર્ય કરે છે."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"એકવાર તમારો મોબાઇલ ડેટા તમે સેટ કરેલી મર્યાદા પર પહોંચી જાય, પછી તમારું ટૅબ્લેટ તેને બંધ કરી દેશે.\n\nડેટા ઉપયોગની ગણતરી તમારા ટૅબ્લેટ દ્વારા કરવામાં આવે છે અને તમારા કૅરિઅર ભિન્ન રીતે વપરાશની ગણતરી કરી શકે છે, તેથી અપરિવર્તનશીલ મર્યાદા સેટ કરવાનું વિચારો."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"એકવાર તમારો મોબાઇલ ડેટા તમે સેટ કરેલી મર્યાદા પર પહોંચી જાય, પછી તમારો ફોન તેને બંધ કરી દેશે.\n\nડેટા વપરાશની ગણતરી તમારા ફોન દ્વારા કરવામાં આવે છે અને તમારા કૅરિઅર ભિન્ન રીતે વપરાશની ગણતરી કરી શકે છે, તેથી અપરિવર્તનશીલ મર્યાદા સેટ કરવાનું વિચારો."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"એકવાર તમારો મોબાઇલ ડેટા તમે સેટ કરેલી મર્યાદા પર પહોંચી જાય, પછી તમારું ડિવાઇસ તેને બંધ કરી દેશે.\n\nડેટા વપરાશની ગણતરી તમારા ડિવાઇસ દ્વારા કરવામાં આવે છે અને તમારા મોબાઇલ ઑપરેટર ભિન્ન રીતે વપરાશની ગણતરી કરી શકે છે, તેથી અપરિવર્તનશીલ મર્યાદા સેટ કરવાનું વિચારો."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"નવા વપરાશકર્તાઓને ઉમેરીને તમારું ઉપકરણ શેર કરો. કસ્ટમ હોમ સ્ક્રીન, એકાઉન્ટ, ઍપ, સેટિંગ અને વધુ માટે તમારા ઉપકરણ પર દરેક વપરાશકર્તા માટે વ્યક્તિગત સ્પેસ છે."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"નવા વપરાશકર્તાઓને ઉમેરીને તમારું ટૅબ્લેટ શેર કરો. કસ્ટમ હોમ સ્ક્રીન, એકાઉન્ટ, ઍપ, સેટિંગ અને વધુ માટે તમારા ટૅબ્લેટ પર દરેક વપરાશકર્તા માટે વ્યક્તિગત સ્પેસ છે."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"નવા વપરાશકર્તાઓને ઉમેરીને તમારો ફોન શેર કરો. કસ્ટમ હોમ સ્ક્રીન, એકાઉન્ટ, ઍપ, સેટિંગ અને વધુ માટે તમારા ફોન પર દરેક વપરાશકર્તા માટે વ્યક્તિગત સ્પેસ છે."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"તમારું ડિવાઇસ ધીમે ચાર્જ થઈ રહ્યું હોય અથવા ચાર્જ ન થઈ રહ્યું હોય એવું બની શકે છે. વધુ ઝડપી ચાર્જિંગ માટે, સુઝાવ આપેલા કેબલ અને અડૅપ્ટરનો ઉપયોગ કરો."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"તમારો ફોન અનલૉક કર્યા વિના"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"તમારું ટૅબ્લેટ અનલૉક કર્યા વિના"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"તમારું ડિવાઇસ અનલૉક કર્યા વિના"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"તમારા ફોનને પોર્ટ્રેટ અને લૅન્ડસ્કેપ વચ્ચેની સ્થિતિમાં ખસેડતી વખતે"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"તમારા ટૅબ્લેટને પોર્ટ્રેટ અને લૅન્ડસ્કેપ વચ્ચેની સ્થિતિમાં ખસેડતી વખતે"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"તમારા ડિવાઇસને પોર્ટ્રેટ અને લૅન્ડસ્કેપ વચ્ચેની સ્થિતિમાં ખસેડતી વખતે"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"તમારા ફોન પર રંગો કેવી રીતે બતાવવામાં આવે તેની ગોઠવણી કરો"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"તમારા ટૅબ્લેટ પર રંગો કેવી રીતે બતાવવામાં આવે તેની ગોઠવણી કરો"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"તમારા ડિવાઇસ પર રંગો કેવી રીતે ડિસ્પ્લે થશે તેની ગોઠવણી કરો"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"ફોનના સ્પીકર"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"ટૅબ્લેટના સ્પીકર"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"ડિવાઇસના સ્પીકર"</string>

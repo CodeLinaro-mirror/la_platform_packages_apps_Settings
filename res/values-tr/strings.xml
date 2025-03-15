@@ -41,6 +41,12 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"Askıya alındı"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"Bilinmiyor"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"Önizleme"</string>
+    <!-- no translation found for preview_pager_home_content_description (3961399947853424786) -->
+    <skip />
+    <!-- no translation found for preview_pager_message_content_description (3018855090807833755) -->
+    <skip />
+    <!-- no translation found for preview_pager_email_content_description (100055784235660338) -->
+    <skip />
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR kodu"</string>
     <string name="preview_pager_previous_button" msgid="607771113300838313">"Önceki önizleme"</string>
     <string name="preview_pager_next_button" msgid="8700907912508927271">"Sonraki önizleme"</string>
@@ -167,13 +173,11 @@
     <string name="date_and_time" msgid="1788358029823431692">"Tarih ve saat"</string>
     <string name="proxy_settings_title" msgid="4201866858226087066">"Proxy"</string>
     <string name="proxy_clear_text" msgid="6529658759984031149">"Temizle"</string>
-    <!-- no translation found for proxy_port_label (6698001018215165848) -->
-    <skip />
+    <string name="proxy_port_label" msgid="6698001018215165848">"Proxy bağlantı noktası (isteğe bağlı)"</string>
     <string name="proxy_exclusionlist_label" msgid="2598613986784917542">"Şunlar için proxy\'yi atla"</string>
     <string name="proxy_defaultView_text" msgid="6795150505379688451">"Varsayılanları geri yükle"</string>
     <string name="proxy_action_text" msgid="1103328484441449542">"Bitti"</string>
-    <!-- no translation found for proxy_hostname_label (345510072664361960) -->
-    <skip />
+    <string name="proxy_hostname_label" msgid="345510072664361960">"Proxy ana makine adı (isteğe bağlı)"</string>
     <string name="proxy_error" msgid="3615905975598084126">"Dikkat"</string>
     <string name="proxy_error_dismiss" msgid="4207430265140873078">"Tamam"</string>
     <string name="proxy_error_invalid_host" msgid="3814412792702059247">"Yazdığınız ana makine adı geçersiz."</string>
@@ -218,11 +222,12 @@
     <string name="desc_introduction_of_language_picker" msgid="4012265379885200083">"Cihazınız, uygulamalarınız ve web siteleriniz, tercih ettiğiniz dil listesindeki ilk desteklenen dili kullanır.\n\nAyrıca birçok uygulama; tarihlerin, sayıların ve birimlerin biçimini belirlemek için tercih ettiğiniz dile ait bölgeyi de kullanır. Bölgenizi değiştirmek için bir dil ekledikten sonra tercih ettiğiniz bölgeyi seçin."</string>
     <string name="desc_notice_of_language_picker" msgid="3449290526457925447">"Her uygulamaya özel bir dil seçmek için uygulama dil ayarlarına gidin."</string>
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"Uygulama dilleri hakkında daha fazla bilgi"</string>
-    <string name="title_change_system_region" msgid="5476591184463491936">"Bölge %s olarak değiştirilsin mi?"</string>
-    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"Cihazınız sistem dili olarak %s kullanmaya devam edecek"</string>
-    <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
+    <!-- no translation found for title_change_system_region (9196602029960380112) -->
     <skip />
-    <string name="title_change_system_locale" msgid="8589844586256566951">"Sistem dili %s olarak değiştirilsin mi?"</string>
+    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"Cihazınız sistem dili olarak %s kullanmaya devam edecek"</string>
+    <string name="desc_notice_device_region_change_for_preferred_language" msgid="408517366942324267">"Tercih ettiğiniz dillerde %2$s yerine %1$s kullanılacak"</string>
+    <!-- no translation found for title_change_system_locale (4102991236063984803) -->
+    <skip />
     <string name="title_system_locale_addition" msgid="8218683660751479466">"%s tercih edilen dillere eklensin mi?"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"Bu, uygulamaların ve web sitelerinin sizin de bu dili tercih ettiğinizi bilmesini sağlar."</string>
     <string name="desc_notice_device_locale_settings_change" msgid="8311132485850714160">"Cihaz ayarlarınız ve bölgesel tercihleriniz değişecek."</string>
@@ -239,7 +244,8 @@
     <string name="search_region_hint" msgid="1748708432568237552">"Bölge ara"</string>
     <string name="top_intro_region_title" msgid="2336323415395642117">"Telefonunuzun saati, tarihleri, sıcaklığı ve diğer bilgileri nasıl göstereceği seçtiğiniz bölgeye göre değişir"</string>
     <string name="more_language_settings_category" msgid="3669703092480725416">"Diğer dil ayarları"</string>
-    <string name="title_change_system_locale_region" msgid="1977530992614685128">"Bölge <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> olarak değiştirilsin mi?"</string>
+    <!-- no translation found for title_change_system_locale_region (4401478579429442695) -->
+    <skip />
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"Cihazınızda sistem dili olarak <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> kalacak"</string>
     <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"Cihazınız, web siteleri ve uygulamaların numaraları gösterme şeklini seçin"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"Bölgesel tercihler"</string>
@@ -359,6 +365,8 @@
     <string name="safety_center_summary" msgid="3554867379951053869">"Uygulama güvenliği, cihaz kilidi, izinler"</string>
     <string name="security_settings_face_preference_summary" msgid="6675126437396914838">"Yüz eklendi"</string>
     <string name="security_settings_face_preference_summary_none" msgid="523320857738436024">"Kurulum gerekiyor"</string>
+    <!-- no translation found for security_settings_face_preference_summary_none_new (1963253146734002815) -->
+    <skip />
     <string name="security_settings_face_preference_title_new" msgid="7680231874730796331">"Yüz"</string>
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"Çalışma için yüz"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"Özel alan için yüz"</string>
@@ -441,6 +449,8 @@
     <string name="fingerprint_add_title" msgid="1837610443487902050">"Parmak izi ekle"</string>
     <string name="security_settings_fingerprint_preference_summary" msgid="8486134175759676037">"{count,plural, =1{Parmak izi eklendi}other{# parmak izi eklendi}}"</string>
     <string name="security_settings_fingerprint_preference_summary_none" msgid="1146977379031250790">"Kurulum gerekiyor"</string>
+    <!-- no translation found for security_settings_fingerprint_preference_summary_none_new (510376523784190149) -->
+    <skip />
     <string name="security_settings_fingerprint_enroll_introduction_title" msgid="7931650601996313070">"Parmak izinizi kurun"</string>
     <string name="security_settings_fingerprint_enroll_consent_introduction_title" msgid="2278592030102282364">"Parmak izi kilidine izin verin"</string>
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled" msgid="1911710308293783998">"Parmak izinizi kullanma"</string>
@@ -465,8 +475,7 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"Parmak izi sensörüne dokunun"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Parmak izi tanınmadı"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Saat ile Kilit Açma"</string>
-    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
-    <skip />
+    <string name="security_settings_activeunlock" msgid="8922823742770802651">"Kol saati"</string>
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Yüz Tanıma Kilidi ve Parmak İzi Kilidi\'ni ayarladığınızda telefonunuz, yüzünüzde maske varken veya karanlık bir yerdeyseniz parmak izinizi ister.\n\nSaat ile Kilit Açma, bu telefonun kilidini açabileceğiniz pratik yöntemlerden biridir. Örneğin, parmaklarınız ıslak olduğunda veya yüzünüz tanınmadığında bu özelliği kullanabilirsiniz."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"Saat ile Kilit Açma, telefonunuzun kilidini açabileceğiniz pratik yöntemlerden biridir. Örneğin, parmak iziniz tanınmadığında bu özelliği kullanabilirsiniz."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"Saat ile Kilit Açma, telefonunuzun kilidini açabileceğiniz pratik yöntemlerden biridir. Örneğin, yüzünüz tanınmadığında bu özelliği kullanabilirsiniz."</string>
@@ -797,6 +806,8 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"Yüz Tanıma Kilidi olmadan devam et"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"Parmak izi veya yüz tanıma kilidi kurmadan devam et"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"Yok"</string>
+    <!-- no translation found for unlock_set_unlock_mode_off_new (865396805830816266) -->
+    <skip />
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"Kaydırma"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"Desen"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"PIN"</string>
@@ -1065,7 +1076,8 @@
     <string name="wifi_show_advanced" msgid="2969378109942071741">"Gelişmiş seçenekler"</string>
     <string name="wifi_advanced_toggle_description" msgid="7299179796727934885">"Açılır liste Gelişmiş Seçenekler"</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="3615140699129928913">"genişlet"</string>
-    <string name="wifi_ssid" msgid="2713062130735103151">"Ağ adı"</string>
+    <!-- no translation found for wifi_ssid (5139273830867723030) -->
+    <skip />
     <string name="wifi_ssid_hint" msgid="1940577553241083524">"SSID\'yi girin"</string>
     <string name="wifi_security" msgid="9095934643631406913">"Güvenlik"</string>
     <string name="wifi_hidden_network" msgid="6466834025375485596">"Gizli ağ"</string>
@@ -1088,7 +1100,10 @@
     <string name="wifi_eap_user_cert" msgid="3569182430929173220">"Kullanıcı sertifikası"</string>
     <string name="wifi_eap_identity" msgid="3629406902174137028">"Kimlik"</string>
     <string name="wifi_eap_anonymous" msgid="8630332141751267000">"Anonim kimlik"</string>
-    <string name="wifi_password" msgid="1458802324849513755">"Şifre"</string>
+    <!-- no translation found for wifi_password (165204973532996861) -->
+    <skip />
+    <!-- no translation found for wifi_password_invalid (8884500804472828356) -->
+    <skip />
     <string name="wifi_show_password" msgid="6865993988238157923">"Şifreyi göster"</string>
     <string name="wifi_ap_choose_2G" msgid="1436802195991542016">"2,4 GHz Bandı"</string>
     <string name="wifi_ap_prefer_5G" msgid="2520628479818369902">"5,0 GHz Bandı tercih edilir"</string>
@@ -1154,6 +1169,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown" msgid="4903345360745717385">"Bir uygulama, konumun doğruluğunu iyileştirmek ve başka amaçlar için Kablosuz bağlantı kapalıyken bile ağ tarama işlevini açmak istiyor.\n\nTarama yapmak isteyen tüm uygulamalara bu izin verilsin mi?"</string>
     <string name="wifi_scan_always_confirm_allow" msgid="4154200627800959777">"İzin ver"</string>
     <string name="wifi_scan_always_confirm_deny" msgid="6997087934558839256">"Reddet"</string>
+    <!-- no translation found for wifi_field_required (6312381745503042588) -->
+    <skip />
     <string name="no_internet_access_text" msgid="3611993143350310936">"Bu ağda internet erişimi yok. Bağlı kalınsın mı?"</string>
     <string name="partial_connectivity_text" msgid="8874614799723694554">"Bazı uygulamalar ve hizmetler, sınırlı bağlantı nedeniyle çalışmayabilir. Yine de kullanılsın mı?"</string>
     <string name="no_internet_access_remember" msgid="5113610157731269258">"Bu ağ için bir daha sorma"</string>
@@ -1481,22 +1498,17 @@
     <string name="storage_settings_for_app" msgid="229425418984637483">"Depolama alanı ve önbellek"</string>
     <string name="storage_settings_title" msgid="486118156723194815">"Depolama ayarları"</string>
     <string name="status_eid" msgid="3588471107671992684">"SIM kimliği"</string>
-    <!-- no translation found for eid_multi_sim (6659492335576379274) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim (27798473711249145) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim_primary (4320457587114117400) -->
-    <skip />
+    <string name="eid_multi_sim" msgid="6659492335576379274">"E​ID (SIM yuvası <xliff:g id="EID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim" msgid="27798473711249145">"IMEI (SIM yuvası <xliff:g id="IMEI_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim_primary" msgid="4320457587114117400">"IMEI (SIM yuvası <xliff:g id="IMEI_SLOT_ID_PRIMARY">%1$d</xliff:g>) (birincil)"</string>
     <string name="view_saved_network" msgid="1232387673095080910">"Görüntülemek için kaydedilmiş ağı seçin"</string>
     <string name="status_imei" msgid="5719752369250485007">"IMEI"</string>
     <string name="status_imei_sv" msgid="6908985558726440951">"IMEI SV"</string>
     <string name="status_min_number" msgid="4492899165438225714">"MIN"</string>
     <string name="status_msid_number" msgid="3871958248824595774">"MSID"</string>
     <string name="status_prl_version" msgid="9002131357502714281">"PRL sürümü"</string>
-    <!-- no translation found for meid_multi_sim (5076814185188481456) -->
-    <skip />
-    <!-- no translation found for meid_multi_sim_primary (6269908735700854437) -->
-    <skip />
+    <string name="meid_multi_sim" msgid="5076814185188481456">"MEID (SIM yuvası <xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="meid_multi_sim_primary" msgid="6269908735700854437">"MEID (SIM yuvası <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>) (birincil)"</string>
     <string name="scanning_status_text_on" msgid="3846571210578042940">"Açık"</string>
     <string name="scanning_status_text_off" msgid="4002352668313705132">"Kapalı"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
@@ -1564,8 +1576,7 @@
     <string name="storage_wizard_init_v2_or" msgid="5558706089661158026">"Veya"</string>
     <string name="storage_wizard_init_v2_external_title" msgid="2786416384217054112">"SD kartı taşınabilir depolama için biçimlendirin"</string>
     <string name="storage_wizard_init_v2_external_summary" msgid="2002761631147966185">"Fotoğraf, video, müzik ve diğer içerikleri depolayıp bunlara diğer cihazlardan erişin. &lt;a href=https://support.google.com/android/answer/12153449&gt;SD kart yapılandırma hakkında daha fazla bilgi&lt;/a&gt;."</string>
-    <!-- no translation found for storage_wizard_init_v2_external_summary_non_sd_card (6638380506793421312) -->
-    <skip />
+    <string name="storage_wizard_init_v2_external_summary_non_sd_card" msgid="6638380506793421312">"Fotoğraf, video, müzik ve diğer içerikleri depolayıp bunlara diğer cihazlardan erişin."</string>
     <string name="storage_wizard_init_v2_external_action" msgid="6140058734875839081">"Biçim"</string>
     <string name="storage_wizard_init_v2_later" msgid="5366815913892609285">"Sonra kur"</string>
     <string name="storage_wizard_format_confirm_v2_title" msgid="6294104100437326067">"Bu <xliff:g id="NAME">^1</xliff:g> biçimlendirilsin mi?"</string>
@@ -1590,6 +1601,20 @@
     <string name="battery_level_title" msgid="1371765298786083448">"Pil düzeyi"</string>
     <string name="communal_settings_title" msgid="2845678473945902115">"Ortak"</string>
     <string name="communal_settings_summary" msgid="4923914136953940317">"Ortak ayarlar"</string>
+    <!-- no translation found for hub_mode_category_title (5290081595872103974) -->
+    <skip />
+    <!-- no translation found for widgets_on_lockscreen_title (6979558402208585885) -->
+    <skip />
+    <!-- no translation found for when_to_auto_show_hubmode_title (2307148913387518369) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_never (976644329215156021) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging (1874391105066805128) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging_and_upright (6293947459712755814) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_docked (7107631545009933891) -->
+    <skip />
     <string name="satellite_setting" msgid="4171265534842459910">"Uydu üzerinden mesajlaşma"</string>
     <string name="apn_settings" msgid="4295467389400441299">"APN\'ler"</string>
     <string name="apn_edit" msgid="2003683641840248741">"Erişim noktasını düzenleyin"</string>
@@ -1698,6 +1723,16 @@
     <string name="tether_preference_summary_off" msgid="6266799346319794630">"Kapalı"</string>
     <string name="usb_tethering_button_text" msgid="7364633823180913777">"USB tethering"</string>
     <string name="bluetooth_tether_checkbox_text" msgid="6108398414967813545">"Bluetooth tethering"</string>
+    <!-- no translation found for ethernet_ip_address (4218340787862242573) -->
+    <skip />
+    <!-- no translation found for ethernet_mac_address_title (3235879195237611007) -->
+    <skip />
+    <!-- no translation found for tx_ethernet_speed (4785035505065551012) -->
+    <skip />
+    <!-- no translation found for rx_ethernet_speed (6642000569214969711) -->
+    <skip />
+    <!-- no translation found for ethernet_network_usage (3795965384177426780) -->
+    <skip />
     <string name="ethernet_tether_checkbox_text" msgid="959743110824197356">"Ethernet tethering"</string>
     <string name="tethering_footer_info" msgid="6824352505979800594">"Veri bağlantınızdan başka cihazlara internet bağlantısı sağlamak için hotspot ve tethering\'i kullanın. Yakınlardaki cihazlarla içerik paylaşmak için uygulamalar da hotspot oluşturabilir."</string>
     <string name="tethering_footer_info_sta_ap_concurrency" msgid="2079039077487477676">"Kablosuz veya mobil veri bağlantınızdan başka cihazlara internet bağlantısı sağlamak için hotspot ve tethering\'i kullanın. Yakınlardaki cihazlarla içerik paylaşmak için uygulamalar da hotspot oluşturabilir."</string>
@@ -2274,16 +2309,11 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Altyazı tercihleri hakkında daha fazla bilgi edinin"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Büyütme"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Büyütme kısayolu"</string>
-    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
-    <skip />
+    <string name="accessibility_magnification_cursor_following_title" msgid="29531257984012743">"İmleç takibi"</string>
+    <string name="accessibility_magnification_cursor_following_header" msgid="7283095798622223509">"Büyütme özelliğinin imlecinizi nasıl takip edeceğini seçin."</string>
+    <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"Fare hareket ederken ekranı sürekli olarak taşı"</string>
+    <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"Fareyi ekranın ortasında tutarak ekranı taşı"</string>
+    <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"Fare ekranın kenarlarına dokunduğunda ekranı taşı"</string>
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"Yazma sırasında büyütme"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"Büyüteç siz yazarken metni takip eder"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Uygulama değiştirirken açık kalsın"</string>
@@ -2419,8 +2449,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"Yüksek kontrastlı metin"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"Metin rengini siyah veya beyaz olarak değiştirin. Arka planla kontrast en üst düzeye çıkar."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"Metin kontrastını artırın"</string>
-    <!-- no translation found for accessibility_notification_high_contrast_text_body_message (6846453833480117658) -->
-    <skip />
+    <string name="accessibility_notification_high_contrast_text_body_message" msgid="6846453833480117658">"Artık yüksek kontrastlı metin yerine dış çizgili metin kullanılıyor. Bunu <xliff:g id="SETTINGS">%1$s</xliff:g> içinde etkinleştirebilirsiniz."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"Şuraya gidin: <xliff:g id="SETTINGS">%1$s</xliff:g>"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"Dış çizgili metin"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"Kontrastı artırmak için metnin etrafına siyah veya beyaz bir arka plan ekleyin"</string>
@@ -2845,12 +2874,9 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>-<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g>-<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>"</string>
-    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
-    <skip />
+    <string name="battery_usage_status_time_info_and_battery_level" msgid="5158088815445378555">"<xliff:g id="BATTERY_LEVEL">%3$s</xliff:g> <xliff:g id="TIME_INFO">%2$s</xliff:g> <xliff:g id="SELECTED_STATUS">%1$s</xliff:g>"</string>
+    <string name="battery_chart_slot_status_selected" msgid="4196580689444438148">"Seçili"</string>
+    <string name="battery_chart_slot_status_unselected" msgid="6930198843537021396">"Seçili değil"</string>
     <string name="battery_usage_chart" msgid="4114747521432440017">"Pil kullanım grafiği"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"Günlük pil kullanımı grafiği"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"Saatlik pil kullanımı grafiği"</string>
@@ -3122,34 +3148,25 @@
     <string name="data_usage_uninstalled_apps_users" msgid="1262228664057122983">"Kaldırılmış kullanıcılar ve uygulamalar"</string>
     <string name="wifi_metered_title" msgid="6623732965268033931">"Ağ kullanımı"</string>
     <string name="data_usage_metered_yes" msgid="4262598072030135223">"Sayaçlı"</string>
-    <!-- no translation found for vpn_name (1119885022967213297) -->
-    <skip />
+    <string name="vpn_name" msgid="1119885022967213297">"Ad*"</string>
     <string name="vpn_type" msgid="5533202873260826663">"Tür"</string>
-    <!-- no translation found for vpn_server (5771717512763639505) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_identifier (6976476088030400883) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_secret (3110033645671775202) -->
-    <skip />
+    <string name="vpn_server" msgid="5771717512763639505">"Sunucu adresi*"</string>
+    <string name="vpn_ipsec_identifier" msgid="6976476088030400883">"IPSec tanımlayıcı*"</string>
+    <string name="vpn_ipsec_secret" msgid="3110033645671775202">"IPSec önceden paylaşılan anahtar*"</string>
     <string name="vpn_ipsec_user_cert" msgid="2714372103705048405">"IPSec kullanıcı sertifikası"</string>
     <string name="vpn_ipsec_ca_cert" msgid="5558498943577474987">"IPSec CA sertifikası"</string>
     <string name="vpn_ipsec_server_cert" msgid="1411390470454731396">"IPSec sunucu sertifikası"</string>
     <string name="vpn_show_options" msgid="6105437733943318667">"Gelişmiş seçenekleri göster"</string>
-    <!-- no translation found for vpn_username_optional (8564310631984689947) -->
-    <skip />
-    <!-- no translation found for vpn_password_optional (1255147723869461543) -->
-    <skip />
-    <!-- no translation found for vpn_username_required (1808631251331232149) -->
-    <skip />
-    <!-- no translation found for vpn_password_required (1916107706318825437) -->
-    <skip />
+    <string name="vpn_username_optional" msgid="8564310631984689947">"Kullanıcı adı (isteğe bağlı)"</string>
+    <string name="vpn_password_optional" msgid="1255147723869461543">"Şifre (isteğe bağlı)"</string>
+    <string name="vpn_username_required" msgid="1808631251331232149">"Kullanıcı adı*"</string>
+    <string name="vpn_password_required" msgid="1916107706318825437">"Şifre*"</string>
     <string name="vpn_save_login" msgid="5986762519977472618">"Hesap bilgilerini kaydet"</string>
     <string name="vpn_not_used" msgid="7229312881336083354">"(kullanılmıyor)"</string>
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(sunucuyu doğrulama)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(sunucudan alınır)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"Girilen bilgiler her zaman açık durumda olan VPN\'yi desteklemiyor"</string>
-    <!-- no translation found for vpn_field_required (582849543970781302) -->
-    <skip />
+    <string name="vpn_field_required" msgid="582849543970781302">"*zorunlu"</string>
     <string name="vpn_cancel" msgid="5929410618112404383">"İptal"</string>
     <string name="vpn_done" msgid="5137858784289564985">"Kapat"</string>
     <string name="vpn_save" msgid="683868204634860888">"Kaydet"</string>
@@ -3380,8 +3397,7 @@
     <string name="color_orange" msgid="216547825489739010">"Turuncu"</string>
     <string name="color_purple" msgid="6603701972079904843">"Mor"</string>
     <string name="sim_status_title" msgid="6188770698037109774">"SIM durumu"</string>
-    <!-- no translation found for sim_status_title_sim_slot (5421926522479103027) -->
-    <skip />
+    <string name="sim_status_title_sim_slot" msgid="5421926522479103027">"SIM durumu (SIM yuvası %1$d)"</string>
     <string name="sim_signal_strength" msgid="6351052821700294501">"<xliff:g id="DBM">%1$d</xliff:g> dBm <xliff:g id="ASU">%2$d</xliff:g> asu"</string>
     <string name="sim_notification_title" msgid="6839556577405929262">"SIM\'leriniz değiştirildi"</string>
     <string name="sim_notification_summary" msgid="5593339846307029991">"Ayarlamak için dokunun"</string>
@@ -4439,18 +4455,12 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"Yöneticiniz ayarlar, izinler, kurumsal erişim, ağ etkinliği ve cihazın konum bilgileri dahil bu kullanıcıyla ilişkilendirilen uygulamaları ve verileri izleyip yönetebilir."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"Yöneticiniz ayarlar, izinler, kurumsal erişim, ağ etkinliği ve cihazın konum bilgileri dahil bu cihazla ilişkilendirilen uygulamaları ve verileri izleyip yönetebilir."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"Cihaz yöneticiniz, bu cihazla ilişkilendirilmiş verilere erişebilir, uygulamaları yönetebilir ve bu cihazın ayarlarını değiştirebilir."</string>
-    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
-    <skip />
+    <string name="disabled_by_advanced_protection_title" msgid="9051476417559262469">"Gelişmiş Koruma tarafından kısıtlandı"</string>
+    <string name="disabled_by_advanced_protection_setting_is_on_message" msgid="4242986779932956593">"Gelişmiş Koruma, güvenliğiniz için bu ayarın açık kalmasını zorunlu kılıyor"</string>
+    <string name="disabled_by_advanced_protection_setting_is_off_message" msgid="7777487013672230696">"Gelişmiş Koruma, güvenliğiniz için bu ayarın kapalı kalmasını zorunlu kılıyor"</string>
+    <string name="disabled_by_advanced_protection_action_message" msgid="7164789633582857150">"Gelişmiş Koruma, güvenliğiniz için bu işlemi engelliyor"</string>
+    <string name="disabled_by_advanced_protection_wep_action_message" msgid="239574547298386495">"Bu ağda, verilerinizi riske atabilecek eski bir şifreleme yöntemi olan WEP kullanılıyor. WEP bağlantıları, Gelişmiş Koruma tarafından engelleniyor."</string>
+    <string name="disabled_by_advanced_protection_help_button_title" msgid="6539346613660731777">"Ayarlar"</string>
     <string name="condition_turn_off" msgid="402707350778441939">"Kapat"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"Aç"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"Göster"</string>
@@ -5187,10 +5197,8 @@
     <string name="settings_panel_title" msgid="346363079938069215">"Ayarlar Paneli"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"Serbest biçimli pencereleri etkinleştir"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"Masaüstü deneyimi özelliklerini etkinleştir"</string>
-    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
-    <skip />
-    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
-    <skip />
+    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="8586716390362684564">"Cihazda ve ikincil ekranlarda masaüstü pencereleme etkinleştirilir."</string>
+    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="7567963048658976895">"İkincil ekranlarda masaüstü pencereleme etkinleştirilir."</string>
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"Serbest biçimli pencereleri ikincil ekranda etkinleştir"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"Çoklu pencerede yeniden boyutlandırılamayan uygulamalara izin ver"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"Çoklu pencerede yeniden boyutlandırılamayan uygulamalara izin verir"</string>
@@ -5425,8 +5433,10 @@
     <string name="smart_forwarding_input_mdn_dialog_title" msgid="7542216086697868415">"Telefon numarası girin"</string>
     <string name="smart_forwarding_missing_mdn_text" msgid="2907314684242542226">"Telefon numarası eksik."</string>
     <string name="smart_forwarding_missing_alert_dialog_text" msgid="7870419247987316112">"Tamam"</string>
-    <string name="enable_2g_title" msgid="8184757884636162942">"2G\'ye izin ver"</string>
-    <string name="enable_2g_summary" msgid="2794534052372565914">"2G daha az güvenli olsa da bazı konumlarda bağlantınızı iyileştirebilir. Acil durum aramaları için 2G\'ye her zaman izin verilir."</string>
+    <!-- no translation found for enable_2g_title (5657132300321750181) -->
+    <skip />
+    <!-- no translation found for enable_2g_summary (6317192326100541563) -->
+    <skip />
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g> için 2G\'nin kullanılabilir olması gerekir"</string>
     <string name="require_cellular_encryption_title" msgid="6087085031703089235">"Yalnızca şifrelenmiş ağlara izin ver"</string>
     <string name="require_cellular_encryption_summary" msgid="6090569065420631457">"Bu daha güvenli olsa da bazı konumlarda mobil ağ bağlantınızı sınırlayabilir. Acil durum aramasına her zaman izin verilir."</string>
@@ -5753,6 +5763,15 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN\'i değiştir"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN\'i unuttum"</string>
     <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"Web içeriği filtreleri"</string>
-    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
+    <!-- no translation found for supervision_web_content_filters_browser_title (979037187423952892) -->
     <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_title (7923982596891796260) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_summary (1477766506765966613) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_allow_all_sites_title (3909739592466381845) -->
+    <skip />
+    <!-- no translation found for supervision_full_screen_pin_verification_title (78513043528333399) -->
+    <skip />
+    <string name="accessibility_illustration_content_description" msgid="557376174860150903">"<xliff:g id="FEATURE">%1$s</xliff:g> animasyonu"</string>
 </resources>

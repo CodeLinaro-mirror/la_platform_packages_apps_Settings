@@ -27,13 +27,16 @@ import com.android.wifitrackerlib.WifiEntry.SECURITY_WEP
 /**
  * The Wi-Fi password {@code TextInputGroup} that supports input validation.
  */
-class WifiPasswordInput(view: View) :
-    TextInputGroup(view, R.id.password_input_layout, R.id.password, R.string.wifi_field_required) {
+class WifiPasswordInput(
+    view: View,
+    var security: Int = SECURITY_NONE,
+) : TextInputGroup(view, R.id.password_input_layout, R.id.password, R.string.wifi_field_required) {
 
-    var security: Int = SECURITY_NONE
+    var canBeEmpty: Boolean = false
 
     override fun validate(): Boolean {
         if (!editText.isShown) return true
+        if (canBeEmpty && text.isEmpty()) return true
 
         return when (security) {
             SECURITY_WEP -> super.validate()

@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"デバイスの Bluetooth アドレス: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間他の Bluetooth デバイスにこのタブレットを表示しようとしています。"</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間他の Bluetooth デバイスにこのスマートフォンを表示しようとしています。"</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間他の Bluetooth デバイスにこのデバイスを表示しようとしています。"</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間他の Bluetooth デバイスにこのタブレットを表示しようとしています。"</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間他の Bluetooth デバイスにこのスマートフォンを表示しようとしています。"</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間他の Bluetooth デバイスにこのデバイスを表示しようとしています。"</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が他の Bluetooth デバイスにこのタブレットを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が他の Bluetooth デバイスにこのスマートフォンを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が他の Bluetooth デバイスにこのデバイスを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"アプリが他の Bluetooth デバイスにこのデバイスを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのタブレットを表示しようとしています。"</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのスマートフォンを表示しようとしています。"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が <xliff:g id="TIMEOUT">%2$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのデバイスを表示しようとしています。"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのタブレットを表示しようとしています。"</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのスマートフォンを表示しようとしています。"</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"アプリが <xliff:g id="TIMEOUT">%1$d</xliff:g> 秒間 Bluetooth を ON にして他のデバイスにこのデバイスを表示しようとしています。"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が Bluetooth を ON にして他のデバイスにこのタブレットを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が Bluetooth を ON にして他のデバイスにこのスマートフォンを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"「<xliff:g id="APP_NAME">%1$s</xliff:g>」が Bluetooth を ON にして他のデバイスにこのデバイスを表示しようとしています。これは後から Bluetooth の設定で変更できます。"</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"指紋認証センサーは電源ボタンに内蔵されています。タブレット縁の盛り上がった音量ボタンの横にあるフラットなボタンです。"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"指紋認証センサーは電源ボタンに内蔵されています。デバイス縁の盛り上がった音量ボタンの横にあるフラットなボタンです。"</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"指紋認証センサーは電源ボタンに内蔵されています。スマートフォン縁の盛り上がった音量ボタンの横にあるフラットなボタンです。"</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"指紋認証センサーは電源ボタンに内蔵されています。パソコン側面のボタンのうち、音量ボタンの横にあるフラットなボタンです。"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"指紋認証を使用して、タブレットのロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようになりました"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"指紋認証を使用して、デバイスのロック解除や本人確認（アプリへのログインや購入の承認など）を行えるようになりました"</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"今後は、指紋認証でスマートフォンのロック解除や本人確認（アプリへのログインや購入の承認など）ができます"</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"顔認証や指紋認証でデバイスのロックを解除できます。セキュリティ上の理由により、この機能を使用する際は予備の画面ロックを選択する必要があります。"</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"タブレットの暗号化"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"スマートフォンの暗号化"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"デバイスを暗号化"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"画面ロックを設定するとタブレットを保護できます"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"画面ロックを設定するとデバイスを保護できます"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"画面ロックを設定するとスマートフォンを保護できます"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"画面がロック解除されている場合のみ NFC の利用を許可します"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g> がスマートフォンにネットワークを保存しようとしています"</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g> がタブレットにネットワークを保存しようとしています"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g> がデバイスにネットワークを保存しようとしています"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g> がスマートフォンにこれらのネットワークを保存しようとしています"</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g> がタブレットにこれらのネットワークを保存しようとしています"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> がデバイスにこれらのネットワークを保存しようとしています"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"スマートフォンの縦横の向きに合わせて、画面の向きを自動的に調整します"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"タブレットの縦横の向きに合わせて、画面の向きを自動的に調整します"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"デバイスを縦向きや横向きに動かすと、画面の向きが自動的に調整されます"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"タブレット使用時にPIN入力が必要になります"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"デバイスでの使用時に PIN 入力が要求されます"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"デバイスの使用時に PIN を要求する"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"タブレット使用時にPIN入力が必要になります"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"ON にすると、デバイスでの使用時に PIN を要求します"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"デバイスの使用時に PIN を要求する"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"電話番号"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN（SIM スロット %1$d）"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"電話番号（SIM スロット %1$d）"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"SIM の MDN"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"SIM の電話番号"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"内部ストレージとして SD カードをフォーマット"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"このスマートフォンでのみ使用するアプリとメディアを保存します。&lt;a href=https://support.google.com/android/answer/12153449&gt;SD カードのセットアップの詳細&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"フォーマット"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"内部ストレージとして SD カードをフォーマット"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"このデバイスでのみ使用するアプリとメディアを保存します。&lt;a href=https://support.google.com/android/answer/12153449&gt;SD カードのセットアップの詳細&lt;/a&gt;"</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"フォーマット"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"ファイル、メディア、一部のアプリをこの <xliff:g id="NAME">^1</xliff:g>に移動できます。\n\nこの移動により、タブレットの空き容量が <xliff:g id="SIZE">^2</xliff:g> 増えます。この処理にはおよそ <xliff:g id="DURATION">^3</xliff:g>かかります。"</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"ファイル、メディア、一部のアプリをこの <xliff:g id="NAME">^1</xliff:g>に移動できます。\n\nこの移動により、スマートフォンの空き容量が <xliff:g id="SIZE">^2</xliff:g> 増えます。この処理にはおよそ <xliff:g id="DURATION">^3</xliff:g>かかります。"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"ファイル、メディア、一部のアプリをこの <xliff:g id="NAME">^1</xliff:g>に移動できます。\n\nこの移動により、デバイスの空き容量が <xliff:g id="SIZE">^2</xliff:g> 増えます。この処理にはおよそ <xliff:g id="DURATION">^3</xliff:g>かかります。"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"このタブレットを充電器に接続したままにします"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"このスマートフォンを充電器に接続したままにします"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"このデバイスを充電したままにしてください"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"この操作を行うと、以下のデータを含め、タブレットの"<b>"内部ストレージ"</b>"の全データが消去されます。\n\n"<li>"Google アカウント"</li>\n<li>"システムやアプリのデータと設定"</li>\n<li>"ダウンロードしたアプリ"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"この操作を行うと、以下のデータを含め、スマートフォンの"<b>"内部ストレージ"</b>"の全データが消去されます。\n\n"<li>"Google アカウント"</li>\n<li>"システムやアプリのデータと設定"</li>\n<li>"ダウンロードしたアプリ"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"この操作を行うと、以下のデータを含め、デバイスの"<b>"内部ストレージ"</b>"の全データが消去されます。\n\n"<li>"Google アカウント"</li>\n<li>"システムやアプリのデータと設定"</li>\n<li>"ダウンロードしたアプリ"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"以下のアカウントにログインしています:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"このデバイスには他にもユーザーがいます。\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"音楽、画像、その他のユーザーデータを消去する場合は "<b>"USB ストレージ データ"</b>"を消去する必要があります。"</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"このサービスを停止すると、電源を一旦オフにして再度オンにするまで、デバイスの一部の機能が正常に動作しなくなる場合があります。"</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"タブレット情報"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"携帯電話情報"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"デバイス情報"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"ディスプレイのサイズとテキストの設定をスマートフォンの元の設定にリセットします"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"ディスプレイのサイズとテキストの設定をタブレットの元の設定にリセットします"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"ディスプレイのサイズとテキストの設定をデバイスの元の設定にリセットします"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"スマートフォンでの色表示を補正できます"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"スマートフォンでの色表示を補正できます"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"デバイスで色をどのように表示するかを調整できます"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"スマートフォンで設定できる最低限の明るさよりも画面を暗くします"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"タブレットで設定できる最低限の明るさよりも画面を暗くします"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"デバイスで設定できる最低限の明るさよりも画面を暗くします"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"「さらに輝度を下げる」機能は次のような場合に便利です。&lt;ol&gt; &lt;li&gt; デフォルトの最低限の明るさでも、スマートフォンの画面が明るすぎる&lt;/li&gt; &lt;li&gt; 夜の時間帯や就寝前の照明を消した部屋など、暗い場所でスマートフォンを使用している&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"「さらに輝度を下げる」機能は次のような場合に便利です。&lt;ol&gt; &lt;li&gt; デフォルトの最低限の明るさでも、タブレットの画面が明るすぎる&lt;/li&gt; &lt;li&gt; 夜の時間帯や就寝前の照明を消した部屋など、暗い場所でタブレットを使用している&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"「さらに輝度を下げる」機能は次のような場合に便利です。&lt;ol&gt; &lt;li&gt; デフォルトの最低限の明るさでも、デバイスの画面が明るすぎる&lt;/li&gt; &lt;li&gt; 夜の時間帯や就寝前の照明を消した部屋など、暗い場所でデバイスを使用している&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"スマートフォンのバックグラウンドでのバッテリー使用量は正常です"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"タブレットのバックグラウンドでのバッテリー使用量は正常です"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"デバイスのバックグラウンドでのバッテリー使用量は正常です"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"デバイスのバックグラウンドでのバッテリー使用量は正常です"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"気温が高い、充電時間が長いなど、条件によって、バッテリーの状態を保つために充電が <xliff:g id="PERCENT">%1$s</xliff:g> に制限されることがあります。\n\nこれらの条件が解消されると、スマートフォンは自動的に通常どおり充電されます。"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"気温が高い、充電時間が長いなど、条件によって、バッテリーの状態を保つために充電が <xliff:g id="PERCENT">%1$s</xliff:g> に制限されることがあります。\n\nこれらの条件が解消されると、タブレットは自動的に通常どおり充電されます。"</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"気温が高い、充電時間が長いなど、条件によって、バッテリーの状態を保つために充電が <xliff:g id="PERCENT">%1$s</xliff:g> に制限されることがあります。\n\nこれらの条件が解消されると、デバイスは自動的に通常どおり充電されます。"</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"スマートフォンのバッテリー使用量が通常より多いため、通常より早くバッテリーがなくなる可能性があります。\n\nバッテリーを多く使用しているアプリ:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"タブレットの使用が通常より多いため、バッテリーが通常より早くなくなる可能性があります。\n\nバッテリーを多く使用しているアプリ:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"デバイスの使用が通常より多いため、バッテリーが通常より早くなくなる可能性があります。\n\nバッテリーを多く使用しているアプリ:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"このアカウントを削除すると、メール、連絡先などのすべてのデータもデバイスから削除されます。"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"ウェブでアカウントに変更を加えると自動的にタブレットに反映されます。\n\nGoogle アカウントなど、アカウントによっては、タブレットで変更を加えた場合も自動的にウェブに反映されます。"</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"ウェブでアカウントに変更を加えると自動的にスマートフォンに反映されます。\n\nGoogle アカウントなど、アカウントによっては、スマートフォンで変更を加えた場合も自動的にウェブに反映されます。"</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"ウェブでアカウントに変更を加えると自動的にデバイスに反映されます。\n\nGoogle アカウントなど、アカウントによっては、デバイスで変更を加えた場合も自動的にウェブに反映されます。"</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"タブレットで設定した上限に達するとモバイルデータが OFF になります。\n\nデータ使用量はタブレットで測定された値ですが、携帯通信会社による測定結果とは異なることがあるため、余裕をもって上限を設定することをおすすめします。"</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"スマートフォンで設定した上限に達するとモバイルデータが OFF になります。\n\nデータ使用量はスマートフォンで測定された値ですが、携帯通信会社による測定結果とは異なることがあるため、余裕をもって上限を設定することをおすすめします。"</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"デバイスで設定した上限に達するとモバイルデータが OFF になります。\n\nデータ使用量はデバイスで測定された値ですが、携帯通信会社での使用量の計算はこれと異なることがあるため、余裕をもって上限を設定することをおすすめします。"</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"新しいユーザーを追加してデバイスを共有できます。デバイス上にユーザーごとのスペースが作られ、ホーム画面、アカウント、アプリ、設定などをカスタマイズできます。"</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"新しいユーザーを追加してタブレットを共有できます。タブレット上にユーザーごとのスペースが作られ、ホーム画面、アカウント、アプリ、設定などをカスタマイズできます。"</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"新しいユーザーを追加してスマートフォンを共有できます。スマートフォン上にユーザーごとのスペースが作られ、ホーム画面、アカウント、アプリ、設定などをカスタマイズできます。"</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"デバイスのバッテリーが充電されていないか、充電に非常に時間がかかっています。充電時間を短くするには、推奨されるケーブルとアダプターを使用してください。"</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"スマートフォンのロックを解除せずに操作"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"タブレットのロックを解除せずに操作"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"デバイスのロックを解除せずに操作"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"スマートフォンを動かして縦向きと横向きを切り替えたとき"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"タブレットを動かして縦向きと横向きを切り替えたとき"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"デバイスを動かして縦向きと横向きを切り替えたとき"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"スマートフォンでの色表示を補正できます"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"タブレットでの色表示を補正できます"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"デバイスで色をどのように表示するかを調整できます"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"スマートフォンのスピーカー"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"タブレットのスピーカー"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"デバイスのスピーカー"</string>

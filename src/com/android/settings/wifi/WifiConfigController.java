@@ -296,7 +296,7 @@ public class WifiConfigController implements TextWatcher,
 
         mSsidInput = new TextInputGroup(mView, R.id.ssid_layout, R.id.ssid,
                 R.string.wifi_ssid_hint);
-        mPasswordInput = new WifiPasswordInput(mView);
+        mPasswordInput = new WifiPasswordInput(mView, mAccessPointSecurity);
         mValidator.addTextInput(mSsidInput);
         mValidator.addTextInput(mPasswordInput);
 

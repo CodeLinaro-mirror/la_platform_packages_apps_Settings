@@ -686,7 +686,7 @@
             <meta-data android:name="com.android.settings.PRIMARY_PROFILE_CONTROLLED"
                        android:value="true" />
             <meta-data android:name="com.android.settings.FRAGMENT_CLASS"
-                       android:value="com.android.settings.network.telephony.SatelliteSetting" />
+                       android:value="com.android.settings.network.telephony.satellite.SatelliteSetting" />
             <meta-data android:name="com.android.settings.HIGHLIGHT_MENU_KEY"
                        android:value="@string/menu_key_network"/>
         </activity>

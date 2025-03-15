@@ -41,6 +41,12 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"තහනම් කරන ලදී"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"නොදනී"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"පෙරදසුන"</string>
+    <!-- no translation found for preview_pager_home_content_description (3961399947853424786) -->
+    <skip />
+    <!-- no translation found for preview_pager_message_content_description (3018855090807833755) -->
+    <skip />
+    <!-- no translation found for preview_pager_email_content_description (100055784235660338) -->
+    <skip />
     <string name="qr_code_content_description" msgid="1852208464419291347">"QR කේතය"</string>
     <string name="preview_pager_previous_button" msgid="607771113300838313">"පූර්ව පෙරදසුන"</string>
     <string name="preview_pager_next_button" msgid="8700907912508927271">"මීළඟ පෙරදසුන"</string>
@@ -218,11 +224,13 @@
     <string name="desc_introduction_of_language_picker" msgid="4012265379885200083">"ඔබේ උපාංගය, යෙදුම් සහ වෙබ් අඩවි ඔබ කැමති භාෂා ලැයිස්තුවෙන් පළමු සහය දක්වන භාෂාව භාවිතා කරයි.\n\nබොහෝ යෙදුම් දින, අංක සහ ඒකක හැඩතල ගැන්වීමට ඔබ කැමති භාෂාවෙන් කලාපය ද භාවිත කරනු ඇත. ඔබේ කලාපය වෙනස් කිරීමට, භාෂාවක් එක් කරන්න, ඉන්පසු ඔබ කැමති කලාපය තෝරා ගන්න."</string>
     <string name="desc_notice_of_language_picker" msgid="3449290526457925447">"එක් එක් යෙදුම සඳහා භාෂාවක් තේරීමට, යෙදුම් භාෂා සැකසීම් වෙත යන්න."</string>
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"යෙදුම් භාෂා ගැන තව දැන ගන්න"</string>
-    <string name="title_change_system_region" msgid="5476591184463491936">"කලාපය %s ලෙස වෙනස් කරන්න ද?"</string>
+    <!-- no translation found for title_change_system_region (9196602029960380112) -->
+    <skip />
     <string name="desc_notice_device_region_change" msgid="6702773189066944100">"ඔබේ උපාංගය %s පද්ධති භාෂාවක් ලෙස තබා ගනු ඇත"</string>
     <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
     <skip />
-    <string name="title_change_system_locale" msgid="8589844586256566951">"පද්ධති භාෂාව %s ලෙස වෙනස් කරන්න ද?"</string>
+    <!-- no translation found for title_change_system_locale (4102991236063984803) -->
+    <skip />
     <string name="title_system_locale_addition" msgid="8218683660751479466">"%s කැමති භාෂාවලට එක් කරන්න ද?"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"මෙය ඔබ මෙම භාෂාවට ද කැමති බව යෙදුම්වලට සහ වෙබ් අඩවිවලට දන්වයි."</string>
     <string name="desc_notice_device_locale_settings_change" msgid="8311132485850714160">"ඔබේ උපාංග සැකසීම් සහ කලාපීය මනාප වෙනස් වේ."</string>
@@ -239,7 +247,8 @@
     <string name="search_region_hint" msgid="1748708432568237552">"කලාප සොයන්න"</string>
     <string name="top_intro_region_title" msgid="2336323415395642117">"ඔබ තෝරා ගන්නා කලාපය ඔබේ දුරකථනය කාලය, දිනයන්, උෂ්ණත්වය, සහ තවත් දේ පෙන්වන ආකාරයට බලපායි"</string>
     <string name="more_language_settings_category" msgid="3669703092480725416">"තවත් භාෂා සැකසීම්"</string>
-    <string name="title_change_system_locale_region" msgid="1977530992614685128">"<xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> වෙත කලාපය වෙනස් කරන්න ද?"</string>
+    <!-- no translation found for title_change_system_locale_region (4401478579429442695) -->
+    <skip />
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"ඔබේ උපාංගය <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> පද්ධති භාෂාවක් ලෙස තබා ගනු ඇත"</string>
     <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"ඔබේ උපාංගය, වෙබ් අඩවි, සහ යෙදුම් අංක පෙන්වන ආකාරය තෝරා ගන්න"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"කලාපීය මනාප"</string>
@@ -359,6 +368,8 @@
     <string name="safety_center_summary" msgid="3554867379951053869">"යෙදුම් ආරක්ෂාව, උපාංග අගුල, අවසර"</string>
     <string name="security_settings_face_preference_summary" msgid="6675126437396914838">"මුහුණ එකතු කරන ලදි"</string>
     <string name="security_settings_face_preference_summary_none" msgid="523320857738436024">"පිහිටුවීම අවශ්‍යයි"</string>
+    <!-- no translation found for security_settings_face_preference_summary_none_new (1963253146734002815) -->
+    <skip />
     <string name="security_settings_face_preference_title_new" msgid="7680231874730796331">"මුහුණ"</string>
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"වැඩ සඳහා මුහුණත"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"රහසිගත අවකාශය සඳහා මුහුණත"</string>
@@ -441,6 +452,8 @@
     <string name="fingerprint_add_title" msgid="1837610443487902050">"ඇඟිලි සලකුණ එක් කරන්න"</string>
     <string name="security_settings_fingerprint_preference_summary" msgid="8486134175759676037">"{count,plural, =1{ඇඟිලි සලකුණ එක් කරන ලදි}one{ඇඟිලි සලකුණු #ක් එක් කරන ලදි}other{ඇඟිලි සලකුණු #ක් එක් කරන ලදි}}"</string>
     <string name="security_settings_fingerprint_preference_summary_none" msgid="1146977379031250790">"පිහිටුවීම අවශ්‍යයි"</string>
+    <!-- no translation found for security_settings_fingerprint_preference_summary_none_new (510376523784190149) -->
+    <skip />
     <string name="security_settings_fingerprint_enroll_introduction_title" msgid="7931650601996313070">"ඔබගේ ඇඟිලි සලකුණ පිහිටුවන්න"</string>
     <string name="security_settings_fingerprint_enroll_consent_introduction_title" msgid="2278592030102282364">"ඇඟිලි සලකුණු අගුලු හැ. ඉඩ දෙ."</string>
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled" msgid="1911710308293783998">"ඔබේ ඇඟිලි සලකුණ භාවිත කරන්න"</string>
@@ -465,8 +478,7 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"ඇඟිලි සලකුණු සංවේදකය ස්පර්ශ කරන්න"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"ඇඟිලි සලකුණ හඳුනා නොගැනිණි"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"ඔරලෝසුව අගුළු හැරීම"</string>
-    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
-    <skip />
+    <string name="security_settings_activeunlock" msgid="8922823742770802651">"ඔරලෝසුව"</string>
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"ඔබ මුහුණෙන් අගුළු හැරීම සහ ඇඟිලි සලකුණු අගුළු හැරීම පිහිටුවන විට, ඔබ මුහුණු ආවරණයක් පැළඳ සිටින විට හෝ අඳුරු ප්‍රදේශයක සිටින විට ඔබේ දුරකථනය ඔබේ ඇඟිලි සලකුණ සඳහා විමසනු ඇත.\n\nඔරලෝසුව අගුළු හැරීම යනු ඔබේ දුරකථනය අගුළු ඇරීමට තවත් පහසු ක්‍රමයකි, උදාහරණයක් ලෙස, ඔබේ ඇඟිලි තෙත් වූ විට හෝ මුහුණ හඳුනා නොගත් විට."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"ඔරලෝසුව අගුළු හැරීම යනු ඔබේ දුරකථනය අගුළු ඇරීමට තවත් පහසු ක්‍රමයකි, උදාහරණයක් ලෙස, ඔබේ ඇඟිලි සලකුණ හඳුනා නොගත් විට."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"ඔරලෝසුව අගුළු හැරීම යනු ඔබේ දුරකථනය අගුළු ඇරීමට තවත් පහසු ක්‍රමයකි, උදාහරණයක් ලෙස, ඔබේ මුහුණ හඳුනා නොගත් විට."</string>
@@ -797,6 +809,8 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"මුහුණෙන් අගුළු හැරීම නොමැතිව ඉදිරියට යන්න"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"ඇඟිලි සලකුණ හෝ මුහුණ නොමැතිව ඉදිරියට යන්න"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"කිසිවක් නැත"</string>
+    <!-- no translation found for unlock_set_unlock_mode_off_new (865396805830816266) -->
+    <skip />
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"ස්වයිප් කරන්න"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"රටාව"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"PIN"</string>
@@ -1065,7 +1079,8 @@
     <string name="wifi_show_advanced" msgid="2969378109942071741">"උසස් විකල්ප"</string>
     <string name="wifi_advanced_toggle_description" msgid="7299179796727934885">"පතන ලැයිස්තු උසස් විකල්ප"</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="3615140699129928913">"දිග හරින්න"</string>
-    <string name="wifi_ssid" msgid="2713062130735103151">"ජාල නම"</string>
+    <!-- no translation found for wifi_ssid (5139273830867723030) -->
+    <skip />
     <string name="wifi_ssid_hint" msgid="1940577553241083524">"SSID ඇතුලත් කරන්න"</string>
     <string name="wifi_security" msgid="9095934643631406913">"ආරක්ෂාව"</string>
     <string name="wifi_hidden_network" msgid="6466834025375485596">"සඟවන ලද ජාලය"</string>
@@ -1088,7 +1103,10 @@
     <string name="wifi_eap_user_cert" msgid="3569182430929173220">"පරිශීලක සහතිකය"</string>
     <string name="wifi_eap_identity" msgid="3629406902174137028">"අනන්‍යතාවය"</string>
     <string name="wifi_eap_anonymous" msgid="8630332141751267000">"නොදන්නා අනන්‍යතාව"</string>
-    <string name="wifi_password" msgid="1458802324849513755">"මුරපදය"</string>
+    <!-- no translation found for wifi_password (165204973532996861) -->
+    <skip />
+    <!-- no translation found for wifi_password_invalid (8884500804472828356) -->
+    <skip />
     <string name="wifi_show_password" msgid="6865993988238157923">"මුරපදය පෙන්වන්න"</string>
     <string name="wifi_ap_choose_2G" msgid="1436802195991542016">"2.4 GHz කලාපය"</string>
     <string name="wifi_ap_prefer_5G" msgid="2520628479818369902">"5.0 GHz කලාපය වඩාත් කැමතිය"</string>
@@ -1154,6 +1172,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown" msgid="4903345360745717385">"ස්ථාන නිරවද්‍යතාව වැඩිදියුණු කිරීමටත් වෙනත් අරමුණු සඳහාත් නොදන්නා යෙදුමකට Wi-Fi අක්‍රියව තිබෙන විටත් ජාල ස්කෑන් කිරීම සක්‍රීය කිරීමට අවශ්‍යයි.\n\nස්කෑන් කිරීම අවශ්‍ය කරන සියලුම යෙදුම්වලට මෙයට ඉඩ දෙන්නේද?"</string>
     <string name="wifi_scan_always_confirm_allow" msgid="4154200627800959777">"අවසර දෙන්න"</string>
     <string name="wifi_scan_always_confirm_deny" msgid="6997087934558839256">"ප්‍රතික්ෂේප කරන්න"</string>
+    <!-- no translation found for wifi_field_required (6312381745503042588) -->
+    <skip />
     <string name="no_internet_access_text" msgid="3611993143350310936">"මෙම ජාලයට අන්තර්ජාල ප්‍රවේශය නැත. සබැඳී සිටින්නද?"</string>
     <string name="partial_connectivity_text" msgid="8874614799723694554">"සීමිත සබැඳීමේ හැකියාව හේතුවෙන් සමහර යෙදුම් සහ සේවා ක්‍රියා නොකළ හැක. කෙසේ හෝ භාවිත කරන්නේද?"</string>
     <string name="no_internet_access_remember" msgid="5113610157731269258">"මෙම ජාලය සඳහා නැවත නොඅසන්න"</string>
@@ -1590,6 +1610,20 @@
     <string name="battery_level_title" msgid="1371765298786083448">"බැටරි මට්ටම"</string>
     <string name="communal_settings_title" msgid="2845678473945902115">"වාර්ගික"</string>
     <string name="communal_settings_summary" msgid="4923914136953940317">"වාර්ගික සැකසීම්"</string>
+    <!-- no translation found for hub_mode_category_title (5290081595872103974) -->
+    <skip />
+    <!-- no translation found for widgets_on_lockscreen_title (6979558402208585885) -->
+    <skip />
+    <!-- no translation found for when_to_auto_show_hubmode_title (2307148913387518369) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_never (976644329215156021) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging (1874391105066805128) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging_and_upright (6293947459712755814) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_docked (7107631545009933891) -->
+    <skip />
     <string name="satellite_setting" msgid="4171265534842459910">"චන්ද්‍රිකා පණිවුඩ යැවීම"</string>
     <string name="apn_settings" msgid="4295467389400441299">"APN"</string>
     <string name="apn_edit" msgid="2003683641840248741">"ප්‍රවේශ ස්ථානය සංස්කරණය"</string>
@@ -1698,6 +1732,16 @@
     <string name="tether_preference_summary_off" msgid="6266799346319794630">"ක්‍රියාවිරහිතයි"</string>
     <string name="usb_tethering_button_text" msgid="7364633823180913777">"USB ටෙදරින්"</string>
     <string name="bluetooth_tether_checkbox_text" msgid="6108398414967813545">"බ්ලූටූත් ටෙදරින්"</string>
+    <!-- no translation found for ethernet_ip_address (4218340787862242573) -->
+    <skip />
+    <!-- no translation found for ethernet_mac_address_title (3235879195237611007) -->
+    <skip />
+    <!-- no translation found for tx_ethernet_speed (4785035505065551012) -->
+    <skip />
+    <!-- no translation found for rx_ethernet_speed (6642000569214969711) -->
+    <skip />
+    <!-- no translation found for ethernet_network_usage (3795965384177426780) -->
+    <skip />
     <string name="ethernet_tether_checkbox_text" msgid="959743110824197356">"ඊතර්නෙට් ටෙදරින්"</string>
     <string name="tethering_footer_info" msgid="6824352505979800594">"ඔබේ දත්ත සම්බන්ධතාව හරහා වෙනත් උපාංග සඳහා අන්තර්ජාලය සැපයීමට හොට්ස්පොට් සහ ටෙදරින් භාවිත කරන්න. යෙදුම් අවට උපාංග සමග අන්තර්ගතය බෙදා ගැනීමට හොට්ස්පොට් එකක් ද තැනීමට හැක."</string>
     <string name="tethering_footer_info_sta_ap_concurrency" msgid="2079039077487477676">"ඔබේ Wi-Fi හෝ ජංගම දත්ත සම්බන්ධතාව හරහා අනෙක් උපාංගවලට අන්තර්ජාලය ලබා දීමට හොට්ස්පොට් සහ ටෙදරින් භාවිත කරන්න. අවට උපාංග සමඟ අන්තර්ගත බෙදා ගැනීමට හොට්ස්පොට් එකක් තැනීමට ද යෙදුම්වලට හැකිය."</string>
@@ -2274,16 +2318,11 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"සිරස්තල මනාප ගැන තව දැන ගන්න"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"විශාලනය"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"විශාලනය කිරීමේ කෙටි මග"</string>
-    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
-    <skip />
+    <string name="accessibility_magnification_cursor_following_title" msgid="29531257984012743">"කර්සරය අනුගමනය කරමින්"</string>
+    <string name="accessibility_magnification_cursor_following_header" msgid="7283095798622223509">"විශාලනය ඔබේ කර්සරය අනුගමනය කරන ආකාරය තෝරන්න."</string>
+    <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"මූසිකය ගෙන යන විට අඛණ්ඩව තිරය ගෙන යන්න"</string>
+    <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"තිරය මධ්‍යයේ මූසිකය තබාගෙන තිරය ගෙන යන්න"</string>
+    <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"මූසිකය තිරයේ දාර ස්පර්ශ කරන විට තිරය ගෙන යන්න"</string>
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"ටයිප් කිරීම විශාලනය කරන්න"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"විශාලනය ඔබ ටයිප් කරන විට පෙළ අනුගමනය කරයි"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"යෙදුම් මාරු අතරේ ක්‍රියාත්මකව තබන්න"</string>
@@ -2844,12 +2883,9 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="TO_TIMESTAMP">%2$s</xliff:g> සිට <xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> දක්වා"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
-    <skip />
+    <string name="battery_usage_status_time_info_and_battery_level" msgid="5158088815445378555">"<xliff:g id="SELECTED_STATUS">%1$s</xliff:g>, <xliff:g id="TIME_INFO">%2$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%3$s</xliff:g>"</string>
+    <string name="battery_chart_slot_status_selected" msgid="4196580689444438148">"තෝරන ලදි"</string>
+    <string name="battery_chart_slot_status_unselected" msgid="6930198843537021396">"තෝරා නොගත්"</string>
     <string name="battery_usage_chart" msgid="4114747521432440017">"බැටරි භාවිතය පිළිබඳ ප්‍රස්තාරය"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"දිනපතා බැටරි භාවිතයේ ප්‍රස්තාරය"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"පැයක් පාසා බැටරි භාවිතයේ ප්‍රස්තාරය"</string>
@@ -4438,18 +4474,12 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"සැකසීම්, අවසර, සංස්ථාපිත ප්‍රවේශය, ජාල ක්‍රියාකාරකම, සහ උපාංගයේ ස්ථාන තොරතුරු ඇතුළුව, මෙම පරිශීලකයා සමඟ සම්බන්ධිත යෙදුම් සහ දත්ත නිරීක්ෂණය කිරීමට සහ කළමනාකරණය කිරීමට ඔබේ පරිපාලකට හැකිය."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"සැකසීම්, අවසර, සංස්ථාපිත ප්‍රවේශය, ජාල ක්‍රියාකාරකම, සහ උපාංගයේ ස්ථාන තොරතුරු ඇතුළුව, මෙම උපාංගය සමඟ සම්බන්ධිත යෙදුම් සහ දත්ත නිරීක්ෂණය කිරීමට සහ කළමනාකරණය කිරීමට ඔබේ පරිපාලකට හැකිය."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"ඔබගේ උපාංග පරිපාලකට මෙම උපාංගය හා සම්බන්ධ දත්ත වෙත ප්‍රවේශ වීමට, යෙදුම් කළමනාකරණය කිරීමට සහ මෙම උපාංග සැකසීම් වෙනස් කිරීමට හැකිය."</string>
-    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
-    <skip />
+    <string name="disabled_by_advanced_protection_title" msgid="9051476417559262469">"උසස් ආරක්ෂණය මඟින් සීමා කර ඇත"</string>
+    <string name="disabled_by_advanced_protection_setting_is_on_message" msgid="4242986779932956593">"ඔබේ ආරක්ෂාව සඳහා, උසස් ආරක්ෂාවට මෙම සැකසීම ක්‍රියාත්මකව පැවතීම අවශ්‍ය වේ"</string>
+    <string name="disabled_by_advanced_protection_setting_is_off_message" msgid="7777487013672230696">"ඔබේ ආරක්ෂාව සඳහා, උසස් ආරක්ෂාවට මෙම සැකසීම ක්‍රියාවිරහිතව තිබීම අවශ්‍ය වේ"</string>
+    <string name="disabled_by_advanced_protection_action_message" msgid="7164789633582857150">"ඔබේ ආරක්ෂාව සඳහා, උසස් ආරක්ෂාව මෙම ක්‍රියාව වළක්වයි"</string>
+    <string name="disabled_by_advanced_protection_wep_action_message" msgid="239574547298386495">"මෙම ජාලය WEP භාවිත කරයි, එය ඔබේ දත්ත අවදානමට ලක් කළ හැකි යල් පැන ගිය සංකේතන ක්‍රමයකි. උසස් ආරක්ෂණය මඟින් WEP සම්බන්ධතා අවහිර කර ඇත."</string>
+    <string name="disabled_by_advanced_protection_help_button_title" msgid="6539346613660731777">"සැකසීම්"</string>
     <string name="condition_turn_off" msgid="402707350778441939">"ක්‍රියා විරහිත කරන්න"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"ක්‍රියාත්මක කරන්න"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"පෙන්වන්න"</string>
@@ -5186,10 +5216,8 @@
     <string name="settings_panel_title" msgid="346363079938069215">"සැකසීම් පුවරුව"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"අනියම් හැඩැති කවුළු සබල කරන්න"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"ඩෙස්ක්ටොප් අත්දැකීම් විශේෂාංග සබල කරන්න"</string>
-    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
-    <skip />
-    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
-    <skip />
+    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="8586716390362684564">"උපාංගයේ සහ ද්විතියික සංදර්ශකවල ඩෙස්ක්ටොප් කවුළුකරණය සබල කරන්න."</string>
+    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="7567963048658976895">"ද්විතියික සංදර්ශකවල ඩෙස්ක්ටොප් කවුළුකරණය සබල කරන්න."</string>
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"ද්විතියික සංදර්ශකය මත නිදහස් ආකෘති කවුළු සබල කරන්න"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"බහු කවුළුව තුළ ප්‍රතිප්‍රමාණ කළ නොහැකි සබල කරන්න"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"බහු කවුළුව තුළ ප්‍රතිප්‍රමාණ කළ නොහැකි යෙදුම් තිබීමට ඉඩ දෙයි"</string>
@@ -5424,8 +5452,10 @@
     <string name="smart_forwarding_input_mdn_dialog_title" msgid="7542216086697868415">"දුරකථන අංකය ඇතුළත් කරන්න"</string>
     <string name="smart_forwarding_missing_mdn_text" msgid="2907314684242542226">"දුරකථන අංකය අස්ථානගතයි."</string>
     <string name="smart_forwarding_missing_alert_dialog_text" msgid="7870419247987316112">"හරි"</string>
-    <string name="enable_2g_title" msgid="8184757884636162942">"2G ඉඩ දෙන්න"</string>
-    <string name="enable_2g_summary" msgid="2794534052372565914">"2G ආරක්ෂාව අඩු නමුත් සමහර ස්ථානවල ඔබගේ සම්බන්ධතාවය වැඩිදියුණු කළ හැකිය. හදිසි අවස්ථා ඇමතුම් සඳහා, 2G සැම විට ඉඩ දේ."</string>
+    <!-- no translation found for enable_2g_title (5657132300321750181) -->
+    <skip />
+    <!-- no translation found for enable_2g_summary (6317192326100541563) -->
+    <skip />
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g> හට 2G ලබා ගැනීමේ හැකියාව අවශ්‍ය වේ"</string>
     <string name="require_cellular_encryption_title" msgid="6087085031703089235">"සංකේතිත ජාලවලට පමණක් ඉඩ දෙන්න"</string>
     <string name="require_cellular_encryption_summary" msgid="6090569065420631457">"මෙය ඉතා සුරක්‍ෂිත නමුත් සමහර ස්ථානවල ඔබේ ජංගම ජාල සම්බන්‍ධතාව සීමා කරාවි. හදිසි ඇමතුමට සැම විටම ඉඩ දෙනු ලැබේ."</string>
@@ -5752,6 +5782,15 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"PIN වෙනස් කරන්න"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"PIN අමතක විණි"</string>
     <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"වෙබ් අන්තර්ගත පෙරහන්"</string>
-    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
+    <!-- no translation found for supervision_web_content_filters_browser_title (979037187423952892) -->
     <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_title (7923982596891796260) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_summary (1477766506765966613) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_allow_all_sites_title (3909739592466381845) -->
+    <skip />
+    <!-- no translation found for supervision_full_screen_pin_verification_title (78513043528333399) -->
+    <skip />
+    <string name="accessibility_illustration_content_description" msgid="557376174860150903">"<xliff:g id="FEATURE">%1$s</xliff:g> සජීවනය"</string>
 </resources>

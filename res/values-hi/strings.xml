@@ -41,6 +41,12 @@
     <string name="radioInfo_data_suspended" msgid="2001254415431299603">"निलंबित"</string>
     <string name="radioInfo_unknown" msgid="2892562356748600367">"अज्ञात"</string>
     <string name="preview_pager_content_description" msgid="3762247188224576303">"झलक"</string>
+    <!-- no translation found for preview_pager_home_content_description (3961399947853424786) -->
+    <skip />
+    <!-- no translation found for preview_pager_message_content_description (3018855090807833755) -->
+    <skip />
+    <!-- no translation found for preview_pager_email_content_description (100055784235660338) -->
+    <skip />
     <string name="qr_code_content_description" msgid="1852208464419291347">"क्यूआर कोड"</string>
     <string name="preview_pager_previous_button" msgid="607771113300838313">"पिछली झलक"</string>
     <string name="preview_pager_next_button" msgid="8700907912508927271">"अगली झलक"</string>
@@ -167,13 +173,11 @@
     <string name="date_and_time" msgid="1788358029823431692">"तारीख और समय"</string>
     <string name="proxy_settings_title" msgid="4201866858226087066">"प्रॉक्सी"</string>
     <string name="proxy_clear_text" msgid="6529658759984031149">"साफ़ करें"</string>
-    <!-- no translation found for proxy_port_label (6698001018215165848) -->
-    <skip />
+    <string name="proxy_port_label" msgid="6698001018215165848">"प्रॉक्सी पोर्ट (ज़रूरी नहीं)"</string>
     <string name="proxy_exclusionlist_label" msgid="2598613986784917542">"इसके लिए प्रॉक्‍सी का इस्तेमाल न करें"</string>
     <string name="proxy_defaultView_text" msgid="6795150505379688451">"डिफ़ॉल्ट पुनर्स्थापित करें"</string>
     <string name="proxy_action_text" msgid="1103328484441449542">"हो गया"</string>
-    <!-- no translation found for proxy_hostname_label (345510072664361960) -->
-    <skip />
+    <string name="proxy_hostname_label" msgid="345510072664361960">"प्रॉक्सी होस्टनेम (ज़रूरी नहीं)"</string>
     <string name="proxy_error" msgid="3615905975598084126">"ध्यान दें"</string>
     <string name="proxy_error_dismiss" msgid="4207430265140873078">"ठीक है"</string>
     <string name="proxy_error_invalid_host" msgid="3814412792702059247">"  लिखा गया होस्‍टनाम मान्‍य नहीं है."</string>
@@ -218,11 +222,12 @@
     <string name="desc_introduction_of_language_picker" msgid="4012265379885200083">"आपका डिवाइस, उस पर मौजूद ऐप्लिकेशन, और देखी जाने वाली वेबसाइटें उस भाषा का इस्तेमाल करती हैं जिसे आपने अपनी पहली पसंदीदा भाषा के तौर पर सेट किया है. इसके लिए ज़रूरी है कि चुनी गई भाषा उस डिवाइस पर काम करती हो.\n\nकई ऐप्लिकेशन आपकी पसंदीदा भाषा के आधार पर देश या इलाका चुनते हैं और इसी के हिसाब से तारीख, संख्या, और इकाइयों का फ़ॉर्मैट दिखाते हैं. अपने देश या इलाके की जानकारी बदलने के लिए, कोई भाषा जोड़ें और अपना पसंदीदा देश या इलाका चुनें."</string>
     <string name="desc_notice_of_language_picker" msgid="3449290526457925447">"अगर आपको हर ऐप्लिकेशन के लिए अलग भाषा चुननी है, तो ऐप्लिकेशन की भाषा सेटिंग पर जाएं."</string>
     <string name="desc_locale_helper_footer_general" msgid="6112153921151780303">"ऐप्लिकेशन की भाषाओं के बारे में ज़्यादा जानें"</string>
-    <string name="title_change_system_region" msgid="5476591184463491936">"क्या इलाके को बदलकर %s पर सेट करना है?"</string>
-    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"सिस्टम भाषा के तौर पर, आपका डिवाइस %s का इस्तेमाल करेगा"</string>
-    <!-- no translation found for desc_notice_device_region_change_for_preferred_language (408517366942324267) -->
+    <!-- no translation found for title_change_system_region (9196602029960380112) -->
     <skip />
-    <string name="title_change_system_locale" msgid="8589844586256566951">"क्या सिस्टम की भाषा बदलकर %s करनी है ?"</string>
+    <string name="desc_notice_device_region_change" msgid="6702773189066944100">"सिस्टम भाषा के तौर पर, आपका डिवाइस %s का इस्तेमाल करेगा"</string>
+    <string name="desc_notice_device_region_change_for_preferred_language" msgid="408517366942324267">"आपकी पसंदीदा भाषाओं में %2$s की जगह %1$s का इस्तेमाल किया जाएगा"</string>
+    <!-- no translation found for title_change_system_locale (4102991236063984803) -->
+    <skip />
     <string name="title_system_locale_addition" msgid="8218683660751479466">"क्या आपको पसंदीदा भाषाओं में %s को जोड़ना है?"</string>
     <string name="desc_system_locale_addition" msgid="3409917362651596070">"इससे ऐप्लिकेशन और वेबसाइट को जानकारी मिलेगी कि आपको यह भाषा भी इस्तेमाल करनी है."</string>
     <string name="desc_notice_device_locale_settings_change" msgid="8311132485850714160">"आपके डिवाइस की सेटिंग और जगह के हिसाब से प्राथमिकताएं बदल जाएंगी."</string>
@@ -239,7 +244,8 @@
     <string name="search_region_hint" msgid="1748708432568237552">"इलाके खोजें"</string>
     <string name="top_intro_region_title" msgid="2336323415395642117">"आपके फ़ोन पर समय, तारीख, तापमान वगैरह के दिखने का तरीका, आपके चुने गए इलाके के हिसाब से बदलता है"</string>
     <string name="more_language_settings_category" msgid="3669703092480725416">"भाषा की ज़्यादा सेटिंग"</string>
-    <string name="title_change_system_locale_region" msgid="1977530992614685128">"क्या इलाके को बदलकर <xliff:g id="SYSTEM_LANGUAGE_REGION">%1$s</xliff:g> पर सेट करना है?"</string>
+    <!-- no translation found for title_change_system_locale_region (4401478579429442695) -->
+    <skip />
     <string name="body_change_system_locale_region" msgid="9064318449821043189">"सिस्टम की भाषा के तौर पर, आपका डिवाइस <xliff:g id="SYSTEM_LANGUAGE">%1$s</xliff:g> का इस्तेमाल करेगा"</string>
     <string name="top_intro_numbering_system_title" msgid="3962000662073238392">"डिवाइस, वेबसाइट, और ऐप्लिकेशन पर नंबर दिखने का तरीका चुनें"</string>
     <string name="regional_preferences_title" msgid="4304567374498629528">"जगह के हिसाब से प्राथमिकताएं"</string>
@@ -359,6 +365,8 @@
     <string name="safety_center_summary" msgid="3554867379951053869">"ऐप्लिकेशन की सुरक्षा, डिवाइस लॉक, अनुमतियां"</string>
     <string name="security_settings_face_preference_summary" msgid="6675126437396914838">"फ़ेस कैप्चर किया गया"</string>
     <string name="security_settings_face_preference_summary_none" msgid="523320857738436024">"सेटअप करना होगा"</string>
+    <!-- no translation found for security_settings_face_preference_summary_none_new (1963253146734002815) -->
+    <skip />
     <string name="security_settings_face_preference_title_new" msgid="7680231874730796331">"फ़ेस अनलॉक"</string>
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"वर्क प्रोफ़ाइल के लिए फे़स अनलॉक"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"प्राइवेट स्पेस के लिए फ़ेस अनलॉक"</string>
@@ -441,6 +449,8 @@
     <string name="fingerprint_add_title" msgid="1837610443487902050">"फ़िंगरप्रिंट जोड़ें"</string>
     <string name="security_settings_fingerprint_preference_summary" msgid="8486134175759676037">"{count,plural, =1{फ़िंगरप्रिंट जोड़ा गया}one{# फ़िंगरप्रिंट जोड़ा गया}other{# फ़िंगरप्रिंट जोड़े गए}}"</string>
     <string name="security_settings_fingerprint_preference_summary_none" msgid="1146977379031250790">"सेटअप करना होगा"</string>
+    <!-- no translation found for security_settings_fingerprint_preference_summary_none_new (510376523784190149) -->
+    <skip />
     <string name="security_settings_fingerprint_enroll_introduction_title" msgid="7931650601996313070">"अपना फ़िंगरप्रिंट सेट अप करें"</string>
     <string name="security_settings_fingerprint_enroll_consent_introduction_title" msgid="2278592030102282364">"फ़िंगरप्रिंट से अनलॉक करने की सुविधा इस्तेमाल करने की अनुमति दें"</string>
     <string name="security_settings_fingerprint_enroll_introduction_title_unlock_disabled" msgid="1911710308293783998">"फ़िंगरप्रिंट का उपयोग करें"</string>
@@ -465,8 +475,7 @@
     <string name="fingerprint_check_enroll_touch_sensor" msgid="5010063281557456236">"फ़िंगरप्रिंट सेंसर को छुएं"</string>
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"फ़िंगरप्रिंट की पहचान नहीं हो पाई"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"स्मार्टवॉच से फ़ोन अनलॉक करने की सुविधा"</string>
-    <!-- no translation found for security_settings_activeunlock (8922823742770802651) -->
-    <skip />
+    <string name="security_settings_activeunlock" msgid="8922823742770802651">"स्मार्टवॉच"</string>
     <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"अगर आपके फ़ोन में फ़ेस अनलॉक और फ़िंगरप्रिंट अनलॉक सेट अप हैं, तो चेहरे पर मास्क लगा होने या आस-पास कम रोशनी होने पर, फ़ोन आपका फ़िंगरप्रिंट मांगेगा.\n\nस्मार्टवॉच से फ़ोन अनलॉक करना भी एक बेहतरीन सुविधा है. यह सुविधा, कई मौकों पर काम आ सकती है. जैसे, जब आपकी उंगलियां गीली हों या चेहरे से पहचान न हो पा रही हो."</string>
     <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"स्मार्टवॉच से फ़ोन अनलॉक करने की सुविधा, अपने फ़ोन को आसानी से अनलॉक करने का एक बेहतरीन तरीका है. यह तरीका, कई मौकों पर काम आ सकता है. जैसे, जब आपकी उंगलियों से पहचान न हो पा रही हो."</string>
     <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"स्मार्टवॉच से फ़ोन अनलॉक करने की सुविधा, अपने फ़ोन को आसानी से अनलॉक करने का एक बेहतरीन तरीका है. यह तरीका, कई मौकों पर काम आ सकता है. जैसे, जब आपके चेहरे से पहचान न हो पा रही हो."</string>
@@ -797,6 +806,8 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"फ़ेस अनलॉक की सुविधा सेट अप किए बिना जारी रखें"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"फ़िंगरप्रिंट या फ़ेस अनलॉक सुविधा सेटअप किए बिना आगे बढ़ें"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"कोई नहीं"</string>
+    <!-- no translation found for unlock_set_unlock_mode_off_new (865396805830816266) -->
+    <skip />
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"स्वाइप"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"पैटर्न"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"पिन"</string>
@@ -1065,7 +1076,8 @@
     <string name="wifi_show_advanced" msgid="2969378109942071741">"ऐडवांस विकल्प"</string>
     <string name="wifi_advanced_toggle_description" msgid="7299179796727934885">"बेहतर विकल्पों की ड्रॉप-डाउन सूची"</string>
     <string name="wifi_advanced_toggle_description_collapsed" msgid="3615140699129928913">"बड़ा करें"</string>
-    <string name="wifi_ssid" msgid="2713062130735103151">"नेटवर्क का नाम"</string>
+    <!-- no translation found for wifi_ssid (5139273830867723030) -->
+    <skip />
     <string name="wifi_ssid_hint" msgid="1940577553241083524">"SSID डालें"</string>
     <string name="wifi_security" msgid="9095934643631406913">"सुरक्षा"</string>
     <string name="wifi_hidden_network" msgid="6466834025375485596">"छिपा हुआ नेटवर्क"</string>
@@ -1088,7 +1100,10 @@
     <string name="wifi_eap_user_cert" msgid="3569182430929173220">"उपयोगकर्ता सर्टिफ़िकेट"</string>
     <string name="wifi_eap_identity" msgid="3629406902174137028">"पहचान"</string>
     <string name="wifi_eap_anonymous" msgid="8630332141751267000">"अनाम पहचान"</string>
-    <string name="wifi_password" msgid="1458802324849513755">"पासवर्ड"</string>
+    <!-- no translation found for wifi_password (165204973532996861) -->
+    <skip />
+    <!-- no translation found for wifi_password_invalid (8884500804472828356) -->
+    <skip />
     <string name="wifi_show_password" msgid="6865993988238157923">"पासवर्ड दिखाएं"</string>
     <string name="wifi_ap_choose_2G" msgid="1436802195991542016">"2.4 गीगाहर्ट्ज़ बैंड"</string>
     <string name="wifi_ap_prefer_5G" msgid="2520628479818369902">"5.0 गीगाहर्ट्ज़ बैंड का इस्तेमाल करना बेहतर होगा"</string>
@@ -1154,6 +1169,8 @@
     <string name="wifi_scan_always_turn_on_message_unknown" msgid="4903345360745717385">"जगह की जानकारी सटीक बनाने और दूसरे कामों के लिए, एक अज्ञात ऐप्लिकेशन वाई-फ़ाई बंद होने पर भी  नेटवर्क स्कैन करने की सुविधा चालू करना चाहता है.\n\nस्कैन की अनुमति मांगने वाले सभी ऐप्लिकेशन को ऐसा करने दें."</string>
     <string name="wifi_scan_always_confirm_allow" msgid="4154200627800959777">"अनुमति दें"</string>
     <string name="wifi_scan_always_confirm_deny" msgid="6997087934558839256">"अस्वीकार करें"</string>
+    <!-- no translation found for wifi_field_required (6312381745503042588) -->
+    <skip />
     <string name="no_internet_access_text" msgid="3611993143350310936">"इस नेटवर्क में कोई इंटरनेट ऐक्सेस नहीं है. जुड़े रहें?"</string>
     <string name="partial_connectivity_text" msgid="8874614799723694554">"सीमित कनेक्टिविटी की वजह से हो सकता है कुछ ऐप्लिकेशन और सेवाएं न काम करें. फिर भी इस्तेमाल करें?"</string>
     <string name="no_internet_access_remember" msgid="5113610157731269258">"इस नेटवर्क के लिए फिर से ना पूछें"</string>
@@ -1481,22 +1498,17 @@
     <string name="storage_settings_for_app" msgid="229425418984637483">"स्टोरेज और कैश मेमोरी"</string>
     <string name="storage_settings_title" msgid="486118156723194815">"मेमोरी सेटिंग"</string>
     <string name="status_eid" msgid="3588471107671992684">"ईआईडी"</string>
-    <!-- no translation found for eid_multi_sim (6659492335576379274) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim (27798473711249145) -->
-    <skip />
-    <!-- no translation found for imei_multi_sim_primary (4320457587114117400) -->
-    <skip />
+    <string name="eid_multi_sim" msgid="6659492335576379274">"ईआईडी (सिम स्लॉट <xliff:g id="EID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim" msgid="27798473711249145">"IMEI (सिम स्लॉट <xliff:g id="IMEI_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="imei_multi_sim_primary" msgid="4320457587114117400">"IMEI (सिम स्लॉट <xliff:g id="IMEI_SLOT_ID_PRIMARY">%1$d</xliff:g>) (प्राइमरी)"</string>
     <string name="view_saved_network" msgid="1232387673095080910">"देखने के लिए, सेव किया गया नेटवर्क चुनें"</string>
     <string name="status_imei" msgid="5719752369250485007">"IMEI"</string>
     <string name="status_imei_sv" msgid="6908985558726440951">"IMEI SV"</string>
     <string name="status_min_number" msgid="4492899165438225714">"MIN"</string>
     <string name="status_msid_number" msgid="3871958248824595774">"MSID"</string>
     <string name="status_prl_version" msgid="9002131357502714281">"PRL वर्शन"</string>
-    <!-- no translation found for meid_multi_sim (5076814185188481456) -->
-    <skip />
-    <!-- no translation found for meid_multi_sim_primary (6269908735700854437) -->
-    <skip />
+    <string name="meid_multi_sim" msgid="5076814185188481456">"एमईआईडी (सिम स्लॉट <xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
+    <string name="meid_multi_sim_primary" msgid="6269908735700854437">"एमईआईडी (सिम स्लॉट <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>) (प्राइमरी)"</string>
     <string name="scanning_status_text_on" msgid="3846571210578042940">"चालू है"</string>
     <string name="scanning_status_text_off" msgid="4002352668313705132">"बंद है"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
@@ -1564,8 +1576,7 @@
     <string name="storage_wizard_init_v2_or" msgid="5558706089661158026">"या"</string>
     <string name="storage_wizard_init_v2_external_title" msgid="2786416384217054112">"पोर्टेबल स्टोरेज के लिए, एसडी कार्ड फ़ॉर्मैट करें"</string>
     <string name="storage_wizard_init_v2_external_summary" msgid="2002761631147966185">"फ़ोटो, वीडियो, संगीत वगैरह सेव करें और उन्हें दूसरे डिवाइसों से ऐक्सेस करें. &lt;a href=https://support.google.com/android/answer/12153449&gt;एसडी कार्ड को सेट अप करने के बारे में ज़्यादा जानें&lt;/a&gt;."</string>
-    <!-- no translation found for storage_wizard_init_v2_external_summary_non_sd_card (6638380506793421312) -->
-    <skip />
+    <string name="storage_wizard_init_v2_external_summary_non_sd_card" msgid="6638380506793421312">"फ़ोटो, वीडियो, संगीत वगैरह सेव करें और उन्हें दूसरे डिवाइसों से ऐक्सेस करें."</string>
     <string name="storage_wizard_init_v2_external_action" msgid="6140058734875839081">"फ़ॉर्मैट करें"</string>
     <string name="storage_wizard_init_v2_later" msgid="5366815913892609285">"बाद में सेटअप करें"</string>
     <string name="storage_wizard_format_confirm_v2_title" msgid="6294104100437326067">"क्या इस <xliff:g id="NAME">^1</xliff:g> को फ़ॉर्मैट करना है?"</string>
@@ -1590,6 +1601,20 @@
     <string name="battery_level_title" msgid="1371765298786083448">"बैटरी स्‍तर"</string>
     <string name="communal_settings_title" msgid="2845678473945902115">"कम्यूनिटी"</string>
     <string name="communal_settings_summary" msgid="4923914136953940317">"कम्यूनिटी सेटिंग"</string>
+    <!-- no translation found for hub_mode_category_title (5290081595872103974) -->
+    <skip />
+    <!-- no translation found for widgets_on_lockscreen_title (6979558402208585885) -->
+    <skip />
+    <!-- no translation found for when_to_auto_show_hubmode_title (2307148913387518369) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_never (976644329215156021) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging (1874391105066805128) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_charging_and_upright (6293947459712755814) -->
+    <skip />
+    <!-- no translation found for when_to_show_hubmode_docked (7107631545009933891) -->
+    <skip />
     <string name="satellite_setting" msgid="4171265534842459910">"सैटलाइट के ज़रिए मैसेज भेजने की सुविधा"</string>
     <string name="apn_settings" msgid="4295467389400441299">"एपीएन"</string>
     <string name="apn_edit" msgid="2003683641840248741">"ऐक्सेस पॉइंट में बदलाव करें"</string>
@@ -1698,6 +1723,16 @@
     <string name="tether_preference_summary_off" msgid="6266799346319794630">"बंद है"</string>
     <string name="usb_tethering_button_text" msgid="7364633823180913777">"यूएसबी टेदरिंग"</string>
     <string name="bluetooth_tether_checkbox_text" msgid="6108398414967813545">"ब्लूटूथ टेदरिंग"</string>
+    <!-- no translation found for ethernet_ip_address (4218340787862242573) -->
+    <skip />
+    <!-- no translation found for ethernet_mac_address_title (3235879195237611007) -->
+    <skip />
+    <!-- no translation found for tx_ethernet_speed (4785035505065551012) -->
+    <skip />
+    <!-- no translation found for rx_ethernet_speed (6642000569214969711) -->
+    <skip />
+    <!-- no translation found for ethernet_network_usage (3795965384177426780) -->
+    <skip />
     <string name="ethernet_tether_checkbox_text" msgid="959743110824197356">"ईथरनेट टेदरिंग"</string>
     <string name="tethering_footer_info" msgid="6824352505979800594">"अपने डेटा कनेक्शन से, दूसरे डिवाइसों पर इंटरनेट उपलब्ध कराने के लिए हॉटस्पॉट और टेदरिंग का इस्तेमाल करें. आस-पास मौजूद डिवाइसों के साथ कॉन्टेंट शेयर करने के लिए, ऐप्लिकेशन हॉटस्पॉट भी बना सकते हैं."</string>
     <string name="tethering_footer_info_sta_ap_concurrency" msgid="2079039077487477676">"दूसरे डिवाइसों के साथ अपना वाई-फ़ाई या मोबाइल डेटा कनेक्शन शेयर करने के लिए, हॉटस्पॉट और टेदरिंग का इस्तेमाल करें. आस-पास के डिवाइसों के साथ कॉन्टेंट शेयर करने के लिए, ऐप्लिकेशन भी हॉटस्पॉट बना सकते हैं."</string>
@@ -2274,16 +2309,11 @@
     <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"कैप्शन की सेटिंग के बारे में ज़्यादा जानें"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"ज़ूम करने की सुविधा"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"ज़ूम करने की सुविधा का शॉर्टकट"</string>
-    <!-- no translation found for accessibility_magnification_cursor_following_title (29531257984012743) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_header (7283095798622223509) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_continuous (1119319218662522794) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_center (3504798009192014460) -->
-    <skip />
-    <!-- no translation found for accessibility_magnification_cursor_following_edge (8675207762416655758) -->
-    <skip />
+    <string name="accessibility_magnification_cursor_following_title" msgid="29531257984012743">"कर्सर फ़ॉलो करें"</string>
+    <string name="accessibility_magnification_cursor_following_header" msgid="7283095798622223509">"चुनें कि ज़ूम करने की सुविधा, आपके कर्सर के मूवमेंट को किस तरह फ़ॉलो करे."</string>
+    <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"माउस को मूव करने के साथ-साथ स्क्रीन को लगातार मूव करें"</string>
+    <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"माउस को स्क्रीन के बीच में रखने पर स्क्रीन को मूव करें"</string>
+    <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"माउस को स्क्रीन के किनारों को छूने पर स्क्रीन को मूव करें"</string>
     <string name="accessibility_screen_magnification_follow_typing_title" msgid="6379517513916651560">"टाइप किए गए टेक्स्ट को ज़ूम करें"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2882250257391761678">"ज़ूम करने की सुविधा, टेक्स्ट टाइप किए जाने पर उसे बड़ा करके दिखाती है"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"ऐप स्विच करते समय ज़ूम चालू रखें"</string>
@@ -2419,8 +2449,7 @@
     <string name="accessibility_toggle_high_text_contrast_preference_title" msgid="1830189632458752698">"टेक्स्ट का कंट्रास्ट बढ़ाएं"</string>
     <string name="accessibility_toggle_high_text_contrast_preference_summary" msgid="5286411556836346180">"टेक्स्ट का रंग बदलकर काला या सफ़ेद करें. इससे बैकग्राउंड के मुताबिक कंट्रास्ट बढ़ जाता है."</string>
     <string name="accessibility_notification_high_contrast_text_title" msgid="2297915407152953323">"टेक्स्ट का कंट्रास्ट बेहतर करें"</string>
-    <!-- no translation found for accessibility_notification_high_contrast_text_body_message (6846453833480117658) -->
-    <skip />
+    <string name="accessibility_notification_high_contrast_text_body_message" msgid="6846453833480117658">"ज़्यादा कंट्रास्ट वाले टेक्स्ट की जगह, आउटलाइन टेक्स्ट का इस्तेमाल किया गया है. <xliff:g id="SETTINGS">%1$s</xliff:g> में जाकर, यह सुविधा चालू की जा सकती है."</string>
     <string name="accessibility_notification_high_contrast_text_action_open_settings" msgid="5945069315472850294">"<xliff:g id="SETTINGS">%1$s</xliff:g> पर जाएं"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_title" msgid="8848579943445806659">"टेक्स्ट आउटलाइन करें"</string>
     <string name="accessibility_toggle_maximize_text_contrast_preference_summary" msgid="8200408691846666900">"कंट्रास्ट बढ़ाने के लिए, टेक्स्ट के चारों ओर काले या सफ़ेद रंग का बैकग्राउंड जोड़ें"</string>
@@ -2844,12 +2873,9 @@
     <string name="battery_usage_timestamps_hyphen" msgid="7401188432989043905">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> - <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_timestamps_content_description" msgid="1927748134271595985">"<xliff:g id="FROM_TIMESTAMP">%1$s</xliff:g> से <xliff:g id="TO_TIMESTAMP">%2$s</xliff:g>"</string>
     <string name="battery_usage_day_and_hour" msgid="1417890420844950881">"<xliff:g id="DAY">%1$s</xliff:g> <xliff:g id="HOUR">%2$s</xliff:g>⁠"</string>
-    <!-- no translation found for battery_usage_status_time_info_and_battery_level (5158088815445378555) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_selected (4196580689444438148) -->
-    <skip />
-    <!-- no translation found for battery_chart_slot_status_unselected (6930198843537021396) -->
-    <skip />
+    <string name="battery_usage_status_time_info_and_battery_level" msgid="5158088815445378555">"<xliff:g id="SELECTED_STATUS">%1$s</xliff:g>, <xliff:g id="TIME_INFO">%2$s</xliff:g> <xliff:g id="BATTERY_LEVEL">%3$s</xliff:g>"</string>
+    <string name="battery_chart_slot_status_selected" msgid="4196580689444438148">"चुना गया"</string>
+    <string name="battery_chart_slot_status_unselected" msgid="6930198843537021396">"चुने हुए का निशान हटाया गया"</string>
     <string name="battery_usage_chart" msgid="4114747521432440017">"बैटरी खर्च दिखाने वाला चार्ट"</string>
     <string name="daily_battery_usage_chart" msgid="4176059567682992686">"हर दिन का बैटरी खर्च दिखाने वाला चार्ट"</string>
     <string name="hourly_battery_usage_chart" msgid="3098314511076561272">"हर घंटे का बैटरी खर्च दिखाने वाला चार्ट"</string>
@@ -3121,34 +3147,25 @@
     <string name="data_usage_uninstalled_apps_users" msgid="1262228664057122983">"ऐप्लिकेशन  और उपयोगकर्ताओं को निकालें"</string>
     <string name="wifi_metered_title" msgid="6623732965268033931">"नेटवर्क का इस्तेमाल"</string>
     <string name="data_usage_metered_yes" msgid="4262598072030135223">"सीमित डेटा वाला नेटवर्क"</string>
-    <!-- no translation found for vpn_name (1119885022967213297) -->
-    <skip />
+    <string name="vpn_name" msgid="1119885022967213297">"नाम*"</string>
     <string name="vpn_type" msgid="5533202873260826663">"टाइप"</string>
-    <!-- no translation found for vpn_server (5771717512763639505) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_identifier (6976476088030400883) -->
-    <skip />
-    <!-- no translation found for vpn_ipsec_secret (3110033645671775202) -->
-    <skip />
+    <string name="vpn_server" msgid="5771717512763639505">"सर्वर का पता*"</string>
+    <string name="vpn_ipsec_identifier" msgid="6976476088030400883">"आईपी सिक्योरिटी आइडेंटिफ़ायर*"</string>
+    <string name="vpn_ipsec_secret" msgid="3110033645671775202">"पहले शेयर किया गया आईपी सिक्योरिटी कोड*"</string>
     <string name="vpn_ipsec_user_cert" msgid="2714372103705048405">"IPSec उपयोगकर्ता प्रमाणपत्र"</string>
     <string name="vpn_ipsec_ca_cert" msgid="5558498943577474987">"IPSec CA प्रमाणपत्र"</string>
     <string name="vpn_ipsec_server_cert" msgid="1411390470454731396">"IPSec सर्वर प्रमाणपत्र"</string>
     <string name="vpn_show_options" msgid="6105437733943318667">"बेहतर विकल्प दिखाएं"</string>
-    <!-- no translation found for vpn_username_optional (8564310631984689947) -->
-    <skip />
-    <!-- no translation found for vpn_password_optional (1255147723869461543) -->
-    <skip />
-    <!-- no translation found for vpn_username_required (1808631251331232149) -->
-    <skip />
-    <!-- no translation found for vpn_password_required (1916107706318825437) -->
-    <skip />
+    <string name="vpn_username_optional" msgid="8564310631984689947">"उपयोगकर्ता नाम (ज़रूरी नहीं)"</string>
+    <string name="vpn_password_optional" msgid="1255147723869461543">"पासवर्ड (ज़रूरी नहीं)"</string>
+    <string name="vpn_username_required" msgid="1808631251331232149">"उपयोगकर्ता नाम*"</string>
+    <string name="vpn_password_required" msgid="1916107706318825437">"पासवर्ड*"</string>
     <string name="vpn_save_login" msgid="5986762519977472618">"खाते की जानकारी सेव करें"</string>
     <string name="vpn_not_used" msgid="7229312881336083354">"(इस्तेमाल नहीं किया)"</string>
     <string name="vpn_no_ca_cert" msgid="3687379414088677735">"(सर्वर की पुष्टि न करें)"</string>
     <string name="vpn_no_server_cert" msgid="8106540968643125407">"(सर्वर से मिला)"</string>
     <string name="vpn_always_on_invalid_reason_other" msgid="4571905303713233321">"डाली गई जानकारी \'वीपीएन हमेशा चालू रखें\' से मेल नहीं खाती"</string>
-    <!-- no translation found for vpn_field_required (582849543970781302) -->
-    <skip />
+    <string name="vpn_field_required" msgid="582849543970781302">"*ज़रूरी है"</string>
     <string name="vpn_cancel" msgid="5929410618112404383">"रद्द करें"</string>
     <string name="vpn_done" msgid="5137858784289564985">"खारिज करें"</string>
     <string name="vpn_save" msgid="683868204634860888">"सेव करें"</string>
@@ -3379,8 +3396,7 @@
     <string name="color_orange" msgid="216547825489739010">"नारंगी"</string>
     <string name="color_purple" msgid="6603701972079904843">"बैंगनी"</string>
     <string name="sim_status_title" msgid="6188770698037109774">"सिम स्थिति"</string>
-    <!-- no translation found for sim_status_title_sim_slot (5421926522479103027) -->
-    <skip />
+    <string name="sim_status_title_sim_slot" msgid="5421926522479103027">"सिम स्टेटस (सिम स्लॉट %1$d)"</string>
     <string name="sim_signal_strength" msgid="6351052821700294501">"<xliff:g id="DBM">%1$d</xliff:g> dBm <xliff:g id="ASU">%2$d</xliff:g> asu"</string>
     <string name="sim_notification_title" msgid="6839556577405929262">"आपका सिम बदल दिया गया है"</string>
     <string name="sim_notification_summary" msgid="5593339846307029991">"सेट करने के लिए टैप करें"</string>
@@ -4438,18 +4454,12 @@
     <string name="admin_profile_owner_user_message" msgid="4929926887231544950">"आपका एडमिन इस उपयोगकर्ता से जुड़े ऐप्लिकेशन और डेटा की निगरानी और उनका प्रबंधन कर सकता है, जिनमें सेटिंग, अनुमतियां, कॉर्पोरेट पहुंच, नेटवर्क गतिविधि और डिवाइस के जगह की जानकारी शामिल है."</string>
     <string name="admin_device_owner_message" msgid="5503131744126520590">"आपका एडमिन इस उपयोगकर्ता से जुड़े ऐप्लिकेशन और डेटा की निगरानी और उनका प्रबंधन कर सकता है, जिनमें सेटिंग, अनुमतियां, कॉर्पोरेट पहुंच, नेटवर्क गतिविधि और डिवाइस के जगह की जानकारी शामिल है."</string>
     <string name="admin_financed_message" msgid="1156197630834947884">"आपके डिवाइस का एडमिन, इस डिवाइस का डेटा ऐक्सेस कर सकता है, ऐप्लिकेशन मैनेज कर सकता है, और इसकी सेटिंग में बदलाव कर सकता है."</string>
-    <!-- no translation found for disabled_by_advanced_protection_title (9051476417559262469) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_on_message (4242986779932956593) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_setting_is_off_message (7777487013672230696) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_action_message (7164789633582857150) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_wep_action_message (239574547298386495) -->
-    <skip />
-    <!-- no translation found for disabled_by_advanced_protection_help_button_title (6539346613660731777) -->
-    <skip />
+    <string name="disabled_by_advanced_protection_title" msgid="9051476417559262469">"ऐडवांस सुरक्षा के ज़रिए इसे ब्लॉक किया गया है"</string>
+    <string name="disabled_by_advanced_protection_setting_is_on_message" msgid="4242986779932956593">"ऐडवांस सुरक्षा के लिए इस सेटिंग को चालू रखना ज़रूरी है, ताकि आपका डेटा सुरक्षित रहे"</string>
+    <string name="disabled_by_advanced_protection_setting_is_off_message" msgid="7777487013672230696">"ऐडवांस सुरक्षा के लिए इस सेटिंग को बंद रखना ज़रूरी है, ताकि आपका डेटा सुरक्षित रहे"</string>
+    <string name="disabled_by_advanced_protection_action_message" msgid="7164789633582857150">"ऐडवांस सुरक्षा की सेटिंग इस कार्रवाई को रोक देती है, ताकि आपका डेटा सुरक्षित रहे"</string>
+    <string name="disabled_by_advanced_protection_wep_action_message" msgid="239574547298386495">"यह नेटवर्क WEP का इस्तेमाल करता है. यह डिवाइस को एन्क्रिप्ट यानी सुरक्षित करने का पुराना तरीका है. इससे आपके डेटा की सुरक्षा को खतरा हो सकता है. ऐडवांस सुरक्षा की सेटिंग के ज़रिए, WEP कनेक्शन ब्लॉक कर दिए गए हैं."</string>
+    <string name="disabled_by_advanced_protection_help_button_title" msgid="6539346613660731777">"सेटिंग"</string>
     <string name="condition_turn_off" msgid="402707350778441939">"बंद करें"</string>
     <string name="condition_turn_on" msgid="3911077299444314791">"चालू करें"</string>
     <string name="condition_expand_show" msgid="1501084007540953213">"दिखाएं"</string>
@@ -5186,10 +5196,8 @@
     <string name="settings_panel_title" msgid="346363079938069215">"सेटिंग पैनल"</string>
     <string name="enable_desktop_mode" msgid="5644818402534562302">"फ़्रीफ़ॉर्म विंडो मोड चालू करें"</string>
     <string name="enable_desktop_experience_features" msgid="7389235241021706660">"डेस्कटॉप पर देखने की सुविधाएं चालू करें"</string>
-    <!-- no translation found for enable_desktop_experience_features_summary_with_desktop (8586716390362684564) -->
-    <skip />
-    <!-- no translation found for enable_desktop_experience_features_summary_without_desktop (7567963048658976895) -->
-    <skip />
+    <string name="enable_desktop_experience_features_summary_with_desktop" msgid="8586716390362684564">"डिवाइस और सेकंडरी डिसप्ले पर डेस्कटॉप विंडो चालू करें."</string>
+    <string name="enable_desktop_experience_features_summary_without_desktop" msgid="7567963048658976895">"सेकंडरी डिसप्ले पर डेस्कटॉप विंडो चालू करें."</string>
     <string name="enable_desktop_mode_on_secondary_display" msgid="2609567824593768780">"सेकंडरी डिसप्ले पर फ़्रीफ़ॉर्म विंडो मोड चालू करें"</string>
     <string name="enable_non_resizable_multi_window" msgid="6832903754625404477">"मल्टी-विंडो में, साइज़ न बदलने वाले ऐप्लिकेशन दिखाने दें"</string>
     <string name="enable_non_resizable_multi_window_summary" msgid="3275763753261901999">"साइज़ न बदलने वाले ऐप्लिकेशन को मल्टी-विंडो (एक से ज़्यादा ऐप्लिकेशन, एक साथ) में दिखाने की अनुमति दें"</string>
@@ -5424,8 +5432,10 @@
     <string name="smart_forwarding_input_mdn_dialog_title" msgid="7542216086697868415">"फ़ोन नंबर डालें"</string>
     <string name="smart_forwarding_missing_mdn_text" msgid="2907314684242542226">"फ़ोन नंबर नहीं डाला गया."</string>
     <string name="smart_forwarding_missing_alert_dialog_text" msgid="7870419247987316112">"ठीक है"</string>
-    <string name="enable_2g_title" msgid="8184757884636162942">"2G के इस्तेमाल की मंज़ूरी दें"</string>
-    <string name="enable_2g_summary" msgid="2794534052372565914">"2G नेटवर्क कम सुरक्षित होता है, लेकिन कुछ जगहों पर यह आपको बेहतर कनेक्शन दे सकता है. आपातकालीन कॉल के लिए, 2G नेटवर्क का हमेशा इस्तेमाल किया जा सकता है."</string>
+    <!-- no translation found for enable_2g_title (5657132300321750181) -->
+    <skip />
+    <!-- no translation found for enable_2g_summary (6317192326100541563) -->
+    <skip />
     <string name="enable_2g_summary_disabled_carrier" msgid="8141118453219482762">"<xliff:g id="CARRIER_NAME_2G">%1$s</xliff:g> के लिए 2G नेटवर्क होना ज़रूरी है"</string>
     <string name="require_cellular_encryption_title" msgid="6087085031703089235">"सुरक्षित किए गए नेटवर्क को ही अनुमति दें"</string>
     <string name="require_cellular_encryption_summary" msgid="6090569065420631457">"यह ज़्यादा सुरक्षित है, लेकिन इससे हो सकता है कि कुछ जगहों पर नेटवर्क कनेक्शन में समस्या आए. हालांकि, आपातकालीन कॉल हमेशा किए जा सकते हैं."</string>
@@ -5752,6 +5762,15 @@
     <string name="supervision_change_pin_preference_title" msgid="2288584039438231801">"पिन बदलें"</string>
     <string name="supervision_add_forgot_pin_preference_title" msgid="8939945404255748516">"पिन याद नहीं है"</string>
     <string name="supervision_web_content_filters_title" msgid="3653430162065686156">"वेब कॉन्टेंट के लिए फ़िल्टर"</string>
-    <!-- no translation found for accessibility_illustration_content_description (557376174860150903) -->
+    <!-- no translation found for supervision_web_content_filters_browser_title (979037187423952892) -->
     <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_title (7923982596891796260) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_block_explicit_sites_summary (1477766506765966613) -->
+    <skip />
+    <!-- no translation found for supervision_web_content_filters_browser_allow_all_sites_title (3909739592466381845) -->
+    <skip />
+    <!-- no translation found for supervision_full_screen_pin_verification_title (78513043528333399) -->
+    <skip />
+    <string name="accessibility_illustration_content_description" msgid="557376174860150903">"<xliff:g id="FEATURE">%1$s</xliff:g> ऐनिमेशन"</string>
 </resources>

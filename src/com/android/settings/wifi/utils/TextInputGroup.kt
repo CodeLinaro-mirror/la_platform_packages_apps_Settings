@@ -75,6 +75,7 @@ open class TextInputGroup(
         get() = layout.helperText?.toString() ?: ""
         set(value) {
             layout.setHelperText(value)
+            if (value.isEmpty()) layout.isHelperTextEnabled = false
         }
 
     var error: String
@@ -85,6 +86,8 @@ open class TextInputGroup(
         }
 
     open fun validate(): Boolean {
+        if (!editText.isShown) return true
+
         val isValid = text.isNotEmpty()
         if (!isValid) {
             Log.w(TAG, "validate failed in ${layout.hint ?: "unknown"}")

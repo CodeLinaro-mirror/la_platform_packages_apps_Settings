@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"기기 블루투스 주소: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 블루투스 기기에 내 태블릿이 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 블루투스 기기에 내 휴대전화가 표시되도록 설정하려고 합니다."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 블루투스 기기에 내 기기가 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"앱에서 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 블루투스 기기에 내 태블릿이 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"앱에서 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 블루투스 기기에 내 휴대전화가 표시되도록 설정하려고 합니다."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"앱에서 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 블루투스 기기에 내 기기가 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 다른 블루투스 기기에 내 태블릿이 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 다른 블루투스 기기에 내 휴대전화가 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 다른 블루투스 기기에 내 기기가 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"앱에서 다른 블루투스 기기에 내 기기가 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 기기에 내 태블릿이 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 기기에 내 휴대전화가 표시되도록 설정하려고 합니다."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%2$d</xliff:g>초 동안 다른 기기에 내 기기가 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"앱에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 기기에 내 태블릿이 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"앱에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 기기에 내 휴대전화가 표시되도록 설정하려고 합니다."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"앱에서 블루투스를 사용 설정하고 <xliff:g id="TIMEOUT">%1$d</xliff:g>초 동안 다른 기기에 내 기기가 표시되도록 설정하려고 합니다."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 다른 기기에 내 태블릿이 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 다른 기기에 내 휴대전화가 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"<xliff:g id="APP_NAME">%1$s</xliff:g>에서 블루투스를 사용 설정하고 다른 기기에 내 기기가 표시되도록 설정하려고 합니다. 나중에 블루투스 설정에서 변경할 수 있습니다."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"지문 센서는 전원 버튼에 있습니다. 태블릿 테두리에 있는 튀어나온 볼륨 버튼 옆의 평평한 버튼입니다."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"지문 센서는 전원 버튼에 있습니다. 기기 테두리에 있는 튀어나온 볼륨 버튼 옆의 평평한 버튼입니다."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"지문 센서는 전원 버튼에 있습니다. 휴대전화 테두리에 있는 튀어나온 볼륨 버튼 옆의 평평한 버튼입니다."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"지문 센서는 전원 버튼에 있습니다. 데스크톱 옆면에 있는 튀어나온 볼륨 버튼 옆의 평평한 버튼입니다."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"이제 지문을 사용하여 태블릿을 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"이제 지문을 사용하여 기기를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"이제 지문을 사용하여 휴대전화를 잠금 해제하거나 앱 로그인, 구매 승인 등을 위해 본인 인증을 진행할 수 있습니다."</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"얼굴 인식 또는 지문을 사용하여 기기를 잠금 해제할 수 있습니다. 이 옵션을 사용하려면 보안을 위해 백업 화면 잠금이 필요합니다."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"태블릿 암호화"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"휴대전화 암호화"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"기기 암호화"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"화면 잠금을 설정하여 태블릿 보호"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"화면 잠금을 설정하여 기기 보호"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"화면 잠금을 설정하여 휴대전화 보호"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"화면이 잠금 해제되어 있을 때만 NFC 사용을 허용합니다."</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 네트워크를 휴대전화에 저장하려고 합니다."</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 네트워크를 태블릿에 저장하려고 합니다."</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 네트워크를 기기에 저장하려고 합니다."</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 이 네트워크를 휴대전화에 저장하려고 합니다."</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 네트워크를 태블릿에 저장하려고 합니다."</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g>에서 네트워크를 기기에 저장하려고 합니다."</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"휴대전화를 가로 또는 세로로 움직이면 화면 방향이 자동으로 전환됩니다."</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"태블릿을 가로 또는 세로로 움직이면 화면 방향이 자동으로 전환됩니다."</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"기기를 가로 또는 세로로 움직이면 화면 방향이 자동으로 전환됩니다."</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"태블릿을 사용하려면 PIN 필요"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"휴대전화를 사용하려면 PIN 필요"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"기기를 사용하려면 PIN 필요"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"태블릿을 사용하려면 PIN 필요"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"휴대전화를 사용하려면 PIN 필요"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"기기를 사용하려면 PIN 필요"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"전화번호"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN(SIM 슬롯 %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"전화번호(SIM 슬롯 %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"SIM의 MDN"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"SIM의 전화번호"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"SD 카드를 내부 저장소로 포맷"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"이 휴대전화에서만 사용할 앱과 미디어를 저장하세요. &lt;a href=https://support.google.com/android/answer/12153449&gt;SD 카드 설정 자세히 알아보기&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"포맷"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"SD 카드를 내부 저장소로 포맷"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"이 기기에서만 사용할 앱과 미디어를 저장하세요. &lt;a href=https://support.google.com/android/answer/12153449&gt;SD 카드 설정 자세히 알아보기&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"포맷"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"파일, 미디어, 일부 앱을 <xliff:g id="NAME">^1</xliff:g>에 옮길 수 있습니다. \n\n이를 통해 태블릿 저장용량 <xliff:g id="SIZE">^2</xliff:g>가 확보되며, <xliff:g id="DURATION">^3</xliff:g> 정도 소요됩니다."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"파일, 미디어, 일부 앱을 <xliff:g id="NAME">^1</xliff:g>에 옮길 수 있습니다. \n\n이를 통해 휴대전화 저장용량 <xliff:g id="SIZE">^2</xliff:g>가 확보되며, <xliff:g id="DURATION">^3</xliff:g> 정도 소요됩니다."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"파일, 미디어, 일부 앱을 <xliff:g id="NAME">^1</xliff:g>에 옮길 수 있습니다. \n\n이를 통해 <xliff:g id="SIZE">^2</xliff:g>의 기기 저장용량이 확보되며, <xliff:g id="DURATION">^3</xliff:g> 정도 소요됩니다."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"태블릿을 계속해서 충전하세요."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"휴대전화를 계속해서 충전하세요."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"기기를 충전 상태로 유지하세요."</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"초기화하면 다음을 포함한 태블릿 "<b>"내부 저장소"</b>"의 모든 데이터가 삭제됩니다.\n\n"<li>"Google 계정"</li>\n<li>"시스템과 앱의 데이터 및 설정"</li>\n<li>"다운로드된 앱"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"초기화하면 다음을 포함한 휴대전화 "<b>"내부 저장소"</b>"의 모든 데이터가 삭제됩니다.\n\n"<li>"Google 계정"</li>\n<li>"시스템과 앱의 데이터 및 설정"</li>\n<li>"다운로드된 앱"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"초기화하면 기기의 "<b>"내부 저장소"</b>"(\n\n"<li>"Google 계정"</li>\n<li>"시스템과 앱 데이터 및 설정"</li>\n<li>"다운로드된 앱"</li>" 포함)에서 모든 데이터가 삭제됩니다."</string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"현재 로그인한 계정:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"이 기기에 다른 사용자가 있습니다.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"음악이나 사진, 기타 사용자 데이터를 지우려면 "<b>"USB 저장소"</b>"를 삭제해야 합니다."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"이 서비스를 중지하면 전원을 껐다가 다시 켤 때까지 기기의 일부 기능이 제대로 작동하지 않을 수도 있습니다."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"태블릿 정보"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"휴대전화 정보"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"기기 정보"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"디스플레이 크기와 텍스트 설정이 휴대전화의 원래 설정으로 초기화됩니다."</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"디스플레이 크기와 텍스트 설정이 태블릿의 원래 설정으로 초기화됩니다."</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"디스플레이 크기와 텍스트 환경설정이 기기의 원래 설정으로 초기화됩니다."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"휴대전화에서 색상이 표시되는 방식을 조정합니다."</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"태블릿에 색상이 표시되는 방식을 조정합니다."</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"기기에 색상이 표시되는 방식을 조정합니다."</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"휴대전화의 최소 밝기보다 화면 어둡게 하기"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"태블릿의 최소 밝기보다 화면 어둡게 하기"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"화면을 기기의 최소 밝기보다 더 어둡게 하세요."</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"더 어둡게는 다음의 경우에 도움이 됩니다. &lt;ol&gt; &lt;li&gt; 휴대전화를 기본 최소 밝기로 설정해도 여전히 너무 밝을 때&lt;/li&gt; &lt;li&gt; 한밤중 또는 자기 전 어두운 실내 등 어두운 곳에서 휴대전화를 사용할 때&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"더 어둡게는 다음의 경우에 도움이 됩니다. &lt;ol&gt; &lt;li&gt; 태블릿을 기본 최소 밝기로 설정해도 여전히 너무 밝을 때&lt;/li&gt; &lt;li&gt; 한밤중 또는 자기 전 어두운 실내 등 어두운 곳에서 태블릿을 사용할 때&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"더 어둡게는 다음의 경우에 도움이 됩니다. &lt;ol&gt; &lt;li&gt; 기기를 기본 최소 밝기로 설정해도 여전히 너무 밝을 때&lt;/li&gt; &lt;li&gt; 한밤중 또는 자기 전 어두운 실내 등 어두운 곳에서 기기를 사용할 때&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"배터리 사용량이 평소와 같습니다."</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"태블릿의 배터리 사용량이 평소와 같습니다."</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"기기의 배터리 사용량이 평소와 같습니다."</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"기기의 배터리 사용량이 평소와 같습니다."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"온도가 높거나 충전 시간이 긴 경우 등 특정한 상황에서는 배터리 보호를 위해 <xliff:g id="PERCENT">%1$s</xliff:g>까지만 충전될 수 있습니다.\n\n상태가 개선되면 휴대전화가 다시 자동으로 정상 충전됩니다."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"온도가 높거나 충전 시간이 긴 경우 등 특정한 상황에서는 배터리 보호를 위해 <xliff:g id="PERCENT">%1$s</xliff:g>까지만 충전될 수 있습니다.\n\n상태가 완화되면 태블릿이 다시 자동으로 정상 충전됩니다."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"온도가 높거나 충전 시간이 긴 경우 등 특정한 상황에서는 배터리 성능 상태 보호를 위해 <xliff:g id="PERCENT">%1$s</xliff:g>까지만 충전될 수 있습니다.\n\n상태가 개선되면 기기가 다시 자동으로 정상 충전됩니다."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"휴대전화를 평소보다 더 많이 사용했기 때문에 배터리가 평소보다 더 빨리 소진될 수 있습니다.\n\n배터리 사용량이 가장 많은 앱:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"태블릿을 평소보다 더 많이 사용했기 때문에 배터리가 평소보다 더 빨리 소진될 수 있습니다.\n\n배터리 사용량이 가장 많은 앱:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"기기를 평소보다 더 많이 사용했기 때문에 배터리가 평소보다 더 빨리 소진될 수 있습니다.\n\n배터리 사용량이 가장 많은 앱:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"계정을 삭제하면 기기의 메시지, 연락처 및 다른 데이터가 모두 지워집니다."</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"웹에서 변경한 계정 정보가 모두 태블릿에 자동으로 복사됩니다.\n\n또한 일부 계정은 태블릿의 변경사항을 웹에 자동으로 복사할 수 있습니다. Google 계정은 이러한 자동 동기화를 지원합니다."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"웹에서 변경한 계정 정보가 모두 휴대전화에 자동으로 복사됩니다.\n\n또한 일부 계정은 휴대전화의 변경사항을 웹에 자동으로 복사할 수 있습니다. Google 계정은 이러한 자동 동기화를 지원합니다."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"웹에서 변경한 계정 정보가 모두 기기에 자동으로 복사됩니다.\n\n또한 일부 계정은 기기의 변경 사항을 웹에 자동으로 복사할 수 있습니다. Google 계정은 이러한 자동 동기화를 지원합니다."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"설정한 모바일 데이터 한도에 도달하면 태블릿에서 모바일 데이터를 사용 중지합니다.\n\n데이터 사용량은 태블릿에서 측정되며 이동통신사에서 사용량을 다르게 계산할 수 있으므로 한도를 낮게 설정해 보세요."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"설정한 모바일 데이터 한도에 도달하면 휴대전화에서 모바일 데이터를 사용 중지합니다.\n\n데이터 사용량은 휴대전화에서 측정되며 이동통신사에서 사용량을 다르게 계산할 수 있으므로 한도를 낮게 설정해 보세요."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"설정한 모바일 데이터 한도에 도달하면 기기에서 모바일 데이터를 사용 중지합니다.\n\n데이터 사용량은 기기에서 측정되며 이동통신사에서 사용량을 다르게 계산할 수 있으므로 한도를 낮게 설정해 보세요."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"새 사용자를 추가하여 기기를 공유합니다. 사용자마다 기기에서 맞춤 홈 화면, 계정, 앱, 설정 등을 이용할 수 있는 자신만의 공간을 갖게 됩니다."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"새 사용자를 추가하여 태블릿을 공유합니다. 사용자마다 태블릿에서 맞춤 홈 화면, 계정, 앱, 설정 등을 이용할 수 있는 자신만의 공간을 갖게 됩니다."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"새 사용자를 추가하여 휴대전화를 공유합니다. 사용자마다 휴대전화에서 맞춤 홈 화면, 계정, 앱, 설정 등을 이용할 수 있는 개인 프로필을 갖게 됩니다."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"기기가 느리게 충전되거나 충전이 되지 않을 수 있습니다. 더 빠르게 충전하려면 권장되는 케이블과 어댑터를 사용하세요."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"휴대전화를 잠금 해제하지 않은 채 사용"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"태블릿을 잠금 해제하지 않은 채 사용"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"기기를 잠금 해제하지 않고 사용"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"휴대전화를 가로 또는 세로로 움직이면 자동으로 방향 전환"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"태블릿을 가로 또는 세로로 움직이면 자동으로 방향 전환"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"기기를 가로 또는 세로로 움직이면 자동으로 방향을 전환합니다."</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"휴대전화에서 색상이 표시되는 방식을 조정합니다."</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"태블릿에서 색상이 표시되는 방식을 조정합니다."</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"기기에 색상이 표시되는 방식을 조정합니다."</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"휴대전화 스피커"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"태블릿 스피커"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"기기 스피커"</string>

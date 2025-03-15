@@ -27,12 +27,10 @@
     <string name="bluetooth_footer_mac_message" product="desktop" msgid="8944917742814573320">"Διεύθυνση Bluetooth συσκευής: <xliff:g id="BLUETOOTH_MAC_ADDRESS">%1$s</xliff:g>"</string>
     <string name="bluetooth_ask_discovery" product="tablet" msgid="7430581669309228387">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει το tablet σας ορατό σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_discovery" product="default" msgid="3947027393224406367">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει το τηλέφωνό σας ορατό σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
-    <!-- no translation found for bluetooth_ask_discovery (5960803243956876943) -->
-    <skip />
+    <string name="bluetooth_ask_discovery" product="desktop" msgid="5960803243956876943">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει τις συσκευές σας ορατές σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_discovery_no_name" product="tablet" msgid="440976482246291783">"Μια εφαρμογή θέλει να κάνει ορατό το tablet σας σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_discovery_no_name" product="default" msgid="5164413774312648842">"Μια εφαρμογή θέλει να κάνει ορατό το τηλέφωνό σας σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
-    <!-- no translation found for bluetooth_ask_discovery_no_name (3353426051482286017) -->
-    <skip />
+    <string name="bluetooth_ask_discovery_no_name" product="desktop" msgid="3353426051482286017">"Μια εφαρμογή θέλει να κάνει τη συσκευή σας ορατή σε άλλες συσκευές Bluetooth για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_lasting_discovery" product="tablet" msgid="750347558570909906">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει το tablet σας ορατό σε άλλες συσκευές Bluetooth. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="default" msgid="5844129004156080891">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει το τηλέφωνό σας ορατό σε άλλες συσκευές Bluetooth. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
     <string name="bluetooth_ask_lasting_discovery" product="desktop" msgid="3887794644497572519">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να κάνει τη συσκευή σας ορατή σε άλλες συσκευές Bluetooth. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
@@ -41,12 +39,10 @@
     <string name="bluetooth_ask_lasting_discovery_no_name" product="desktop" msgid="6517618973665289643">"Μια εφαρμογή θέλει να κάνει τη συσκευή σας ορατή σε άλλες συσκευές Bluetooth. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="tablet" msgid="6187874232925632790">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει το tablet σας ορατό σε άλλες συσκευές για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_enablement_and_discovery" product="default" msgid="1018495685727482700">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει το τηλέφωνό σας ορατό σε άλλες συσκευές για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery (4841837610815256531) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery" product="desktop" msgid="4841837610815256531">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει τη συσκευή σας ορατή σε άλλες συσκευές για <xliff:g id="TIMEOUT">%2$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="tablet" msgid="3469927640700478737">"Μια εφαρμογή θέλει να ενεργοποιήσει το Bluetooth και να κάνει το tablet σας ορατό σε άλλες συσκευές για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_enablement_and_discovery_no_name" product="default" msgid="4847493437698663706">"Μια εφαρμογή θέλει να ενεργοποιήσει το Bluetooth και να κάνει το τηλέφωνό σας ορατό σε άλλες συσκευές για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
-    <!-- no translation found for bluetooth_ask_enablement_and_discovery_no_name (2660699995682598369) -->
-    <skip />
+    <string name="bluetooth_ask_enablement_and_discovery_no_name" product="desktop" msgid="2660699995682598369">"Μια εφαρμογή θέλει να ενεργοποιήσει το Bluetooth και να κάνει τη συσκευή σας ορατή σε άλλες συσκευές για <xliff:g id="TIMEOUT">%1$d</xliff:g> δευτερόλεπτα."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="tablet" msgid="487436507630570730">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει το tablet σας ορατό σε άλλες συσκευές. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="default" msgid="5169934906530139494">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει το τηλέφωνό σας ορατό σε άλλες συσκευές. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
     <string name="bluetooth_ask_enablement_and_lasting_discovery" product="desktop" msgid="2790161567276762264">"Η εφαρμογή <xliff:g id="APP_NAME">%1$s</xliff:g> θέλει να ενεργοποιήσει το Bluetooth και να κάνει τη συσκευή σας ορατή σε άλλες συσκευές. Μπορείτε να αλλάξετε αυτή την επιλογή αργότερα, από τις ρυθμίσεις Bluetooth."</string>
@@ -195,8 +191,7 @@
     <string name="security_settings_sfps_enroll_find_sensor_message" product="tablet" msgid="2006739081527422127">"Ο αισθητήρας δακτυλικών αποτυπωμάτων βρίσκεται στο κουμπί λειτουργίας. Είναι το επίπεδο κουμπί δίπλα στο ανυψωμένο κουμπί έντασης ήχου στο άκρο του tablet."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="device" msgid="1209233633252372907">"Ο αισθητήρας δακτυλικών αποτυπωμάτων βρίσκεται στο κουμπί λειτουργίας. Είναι το επίπεδο κουμπί δίπλα στο ανυψωμένο κουμπί έντασης ήχου στο άκρο της συσκευής."</string>
     <string name="security_settings_sfps_enroll_find_sensor_message" product="default" msgid="6862493139500275821">"Ο αισθητήρας δακτυλικών αποτυπωμάτων βρίσκεται στο κουμπί λειτουργίας. Είναι το επίπεδο κουμπί δίπλα στο ανυψωμένο κουμπί έντασης ήχου στο άκρο του τηλεφώνου."</string>
-    <!-- no translation found for security_settings_sfps_enroll_find_sensor_message (6270657720916140548) -->
-    <skip />
+    <string name="security_settings_sfps_enroll_find_sensor_message" product="desktop" msgid="6270657720916140548">"Ο αισθητήρας δακτυλικών αποτυπωμάτων βρίσκεται στο κουμπί λειτουργίας. Είναι το επίπεδο κουμπί δίπλα στο ανυψωμένο κουμπί έντασης ήχου στο άκρο του υπολογιστή."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="tablet" msgid="2012126789397819713">"Μπορείτε πλέον να χρησιμοποιείτε το δακτυλικό σας αποτύπωμα για να ξεκλειδώνετε το tablet σας ή για να επαληθεύετε την ταυτότητά σας, για παράδειγμα, όταν συνδέεστε σε εφαρμογές ή εγκρίνετε μια αγορά."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="device" msgid="7119860465479161782">"Μπορείτε πλέον να χρησιμοποιείτε το δακτυλικό σας αποτύπωμα για να ξεκλειδώνετε τη συσκευή σας ή για να επαληθεύετε την ταυτότητά σας, για παράδειγμα, όταν συνδέεστε σε εφαρμογές ή εγκρίνετε μια αγορά."</string>
     <string name="security_settings_fingerprint_enroll_finish_v2_message" product="default" msgid="8255422287180693200">"Μπορείτε πλέον να χρησιμοποιείτε το δακτυλικό σας αποτύπωμα για να ξεκλειδώνετε το τηλέφωνό σας ή για να επαληθεύετε την ταυτότητά σας, για παράδειγμα, όταν συνδέεστε σε εφαρμογές ή εγκρίνετε μια αγορά."</string>
@@ -275,8 +270,7 @@
     <string name="biometrics_unlock_title" product="desktop" msgid="3342994085226864170">"Μπορείτε να ξεκλειδώνετε τη συσκευή σας χρησιμοποιώντας το πρόσωπο ή το δακτυλικό αποτύπωμά σας. Για λόγους ασφάλειας, αυτή η επιλογή απαιτεί εφεδρικό κλείδωμα οθόνης."</string>
     <string name="encrypt_title" product="tablet" msgid="8915795247786124547">"Κρυπτογράφηση tablet"</string>
     <string name="encrypt_title" product="default" msgid="511146128799853404">"Κρυπτογράφηση τηλεφώνου"</string>
-    <!-- no translation found for encrypt_title (7536236095337188236) -->
-    <skip />
+    <string name="encrypt_title" product="desktop" msgid="7536236095337188236">"Κρυπτογράφηση συσκευής"</string>
     <string name="suggested_lock_settings_summary" product="tablet" msgid="8821254377043173267">"Ρύθμιση κλειδώματος οθόνης για προστασία του tablet"</string>
     <string name="suggested_lock_settings_summary" product="device" msgid="4863929838844014122">"Ρύθμιση κλειδώματος οθόνης για προστασία της συσκευής"</string>
     <string name="suggested_lock_settings_summary" product="default" msgid="8050809409337082738">"Ρύθμιση κλειδώματος οθόνης για προστασία του τηλεφώνου"</string>
@@ -312,30 +306,23 @@
     <string name="nfc_secure_toggle_summary" product="default" msgid="3515508978581011683">"Να επιτρέπεται η χρήση NFC μόνο όταν η οθόνη είναι ξεκλειδωμένη"</string>
     <string name="wifi_add_app_single_network_summary" product="default" msgid="7742934005022827107">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει ένα δίκτυο στο τηλέφωνό σας."</string>
     <string name="wifi_add_app_single_network_summary" product="tablet" msgid="93466057231937113">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει ένα δίκτυο στο tablet σας"</string>
-    <!-- no translation found for wifi_add_app_single_network_summary (2116663141004049983) -->
-    <skip />
+    <string name="wifi_add_app_single_network_summary" product="desktop" msgid="2116663141004049983">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει ένα δίκτυο στη συσκευή σας"</string>
     <string name="wifi_add_app_networks_summary" product="default" msgid="7014504084783236696">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει αυτά τα δίκτυα στο τηλέφωνό σας."</string>
     <string name="wifi_add_app_networks_summary" product="tablet" msgid="6433255556506891439">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει αυτά τα δίκτυα στο tablet σας"</string>
-    <!-- no translation found for wifi_add_app_networks_summary (4238956725252527159) -->
-    <skip />
+    <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"Η εφαρμογή <xliff:g id="APPNAME">%1$s</xliff:g> θέλει να αποθηκεύσει αυτά τα δίκτυα στη συσκευή σας"</string>
     <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Αυτόματη προσαρμογή του προσανατολισμού της οθόνης όταν γυρνάτε το τηλέφωνο σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
     <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Αυτόματη προσαρμογή του προσανατολισμού της οθόνης όταν γυρνάτε το tablet σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
-    <!-- no translation found for auto_rotate_screen_summary (3805199344834364732) -->
-    <skip />
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Αυτόματη προσαρμογή του προσανατολισμού της οθόνης, όταν μετακινείτε τη συσκευή σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"Απαιτείται PIN για τη χρήση του tablet"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"Απαιτείται PIN για τη χρήση του τηλεφώνου"</string>
-    <!-- no translation found for sim_lock_on (5734697047766184447) -->
-    <skip />
+    <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"Απαιτείται PIN για τη χρήση της συσκευής"</string>
     <string name="sim_lock_off" product="tablet" msgid="4619320846576958981">"Απαιτείται PIN για τη χρήση του tablet"</string>
     <string name="sim_lock_off" product="default" msgid="2064502270875375541">"Απαιτείται PIN για τη χρήση του τηλεφώνου"</string>
-    <!-- no translation found for sim_lock_off (903164661366964150) -->
-    <skip />
+    <string name="sim_lock_off" product="desktop" msgid="903164661366964150">"Απαιτείται PIN για τη χρήση της συσκευής"</string>
     <string name="status_number" product="tablet" msgid="6746773328312218158">"MDN"</string>
     <string name="status_number" product="default" msgid="2333455505912871374">"Αριθμός τηλεφώνου"</string>
-    <!-- no translation found for status_number_sim_slot (2595836594107617972) -->
-    <skip />
-    <!-- no translation found for status_number_sim_slot (7154930998382872847) -->
-    <skip />
+    <string name="status_number_sim_slot" product="tablet" msgid="2595836594107617972">"MDN (υποδοχή SIM %1$d)"</string>
+    <string name="status_number_sim_slot" product="default" msgid="7154930998382872847">"Αριθμός τηλεφώνου (υποδοχή SIM %1$d)"</string>
     <string name="status_number_sim_status" product="tablet" msgid="9003886361856568694">"MDN στη SIM"</string>
     <string name="status_number_sim_status" product="default" msgid="7536755538266735352">"Αριθμός τηλεφώνου στη SIM"</string>
     <string name="storage_wizard_init_v2_internal_title" product="tablet" msgid="2049551739429034707">"Μορφοπ. κάρτας SD για χρήση ως εσωτερ. αποθ. χώρο"</string>
@@ -345,21 +332,17 @@
     <string name="storage_wizard_init_v2_internal_summary" product="default" msgid="4395040788668914783">"Αποθηκεύστε εφαρμογές και μέσα για χρήση μόνο σε αυτό το τηλέφωνο. &lt;a href=https://support.google.com/android/answer/12153449&gt;Μάθετε περισσότερα σχετικά με τη ρύθμιση μιας κάρτας SD&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="default" msgid="560506072518373839">"Μορφοποίηση"</string>
     <string name="storage_wizard_init_v2_internal_title" product="desktop" msgid="2049551739429034707">"Μορφοπ. κάρτας SD για χρήση ως εσωτερ. αποθ. χώρο"</string>
-    <!-- no translation found for storage_wizard_init_v2_internal_summary (2799974050149438211) -->
-    <skip />
+    <string name="storage_wizard_init_v2_internal_summary" product="desktop" msgid="2799974050149438211">"Αποθηκεύστε εφαρμογές και μέσα για χρήση μόνο σε αυτή τη συσκευή. &lt;a href=https://support.google.com/android/answer/12153449&gt;Μάθετε περισσότερα σχετικά με τη ρύθμιση μιας κάρτας SD&lt;/a&gt;."</string>
     <string name="storage_wizard_init_v2_internal_action" product="desktop" msgid="560506072518373839">"Μορφοποίηση"</string>
     <string name="storage_wizard_migrate_v2_body" product="tablet" msgid="7539293889421540797">"Μπορείτε να μετακινήσετε αρχεία, μέσα και ορισμένες εφαρμογές στο <xliff:g id="NAME">^1</xliff:g>\n\nΜε αυτή την ενέργεια, θα απελευθερωθούν <xliff:g id="SIZE">^2</xliff:g> αποθηκευτικού χώρου στο tablet σας. Η διαδικασία θα διαρκέσει περίπου <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_body" product="default" msgid="3807501187945770401">"Μπορείτε να μετακινήσετε αρχεία, μέσα και ορισμένες εφαρμογές στο <xliff:g id="NAME">^1</xliff:g>. \n\nΜε αυτή την ενέργεια, θα απελευθερωθούν <xliff:g id="SIZE">^2</xliff:g> αποθηκευτικού χώρου στο τηλέφωνό σας. Η διαδικασία θα διαρκέσει περίπου <xliff:g id="DURATION">^3</xliff:g>."</string>
-    <!-- no translation found for storage_wizard_migrate_v2_body (9118680108596764093) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_body" product="desktop" msgid="9118680108596764093">"Μπορείτε να μετακινήσετε αρχεία, μέσα και ορισμένες εφαρμογές σε <xliff:g id="NAME">^1</xliff:g>. \n\nΜε αυτή την ενέργεια, θα απελευθερωθούν <xliff:g id="SIZE">^2</xliff:g> αποθηκευτικού χώρου στη συσκευή σας. Η διαδικασία θα διαρκέσει περίπου <xliff:g id="DURATION">^3</xliff:g>."</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="tablet" msgid="5326017162943304749">"Διατηρείτε το tablet φορτισμένο"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"Διατηρείτε το τηλέφωνο φορτισμένο"</string>
-    <!-- no translation found for storage_wizard_migrate_v2_checklist_battery (3166603241842968388) -->
-    <skip />
+    <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"Διατηρείτε αυτή τη συσκευή φορτισμένη"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"Με αυτόν τον τρόπο, θα διαγραφούν όλα τα δεδομένα από τον εσωτερικό αποθηκευτικό χώρο "<b>"του tablet"</b>", συμπεριλαμβανομένων:\n\n"<li>"Του Λογαριασμού σας Google"</li>\n<li>"Των δεδομένων και των ρυθμίσεων συστήματος και εφαρμογών"</li>\n<li>"Των εφαρμογών που ελήφθησαν"</li></string>
     <string name="main_clear_desc" product="default" msgid="1888412491866186706">"Με αυτόν τον τρόπο, θα διαγραφούν όλα τα δεδομένα από τον εσωτερικό αποθηκευτικό χώρο "<b>"του τηλεφώνου σας"</b>", συμπεριλαμβανομένων:\n\n"<li>"Του Λογαριασμού σας Google"</li>\n<li>"Των δεδομένων και των ρυθμίσεων συστήματος και εφαρμογών"</li>\n<li>"Των εφαρμογών που ελήφθησαν"</li></string>
-    <!-- no translation found for main_clear_desc (405802272460355609) -->
-    <skip />
+    <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"Με αυτόν τον τρόπο, θα διαγραφούν όλα τα δεδομένα από τον "<b>"εσωτερικό αποθηκευτικό χώρο"</b>" της συσκευής σας tablet, συμπεριλαμβανομένων:\n\n"<li>"Του Λογαριασμού σας Google"</li>\n<li>"Των δεδομένων και των ρυθμίσεων συστήματος και εφαρμογών"</li>\n<li>"Των εφαρμογών που κατεβάσατε"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"Αυτή τη στιγμή είστε συνδεδεμένοι στους παρακάτω λογαριασμούς:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"Υπάρχουν άλλοι χρήστες σε αυτήν τη συσκευή.\n"</string>
     <string name="main_clear_desc_erase_external_storage" product="nosdcard" msgid="5834269984459195918">\n\n"Πρέπει να γίνει διαγραφή του "<b>"αποθηκευτικού χώρου USB"</b>" για να γίνει, επίσης, διαγραφή της μουσικής, των φωτογραφιών και άλλων δεδομένων χρήστη."</string>
@@ -396,32 +379,26 @@
     <string name="runningservicedetails_stop_dlg_text" product="deskktop" msgid="7348478178049461009">"Αν διακόψετε τη λειτουργία αυτής της υπηρεσίας, ενδέχεται να σταματήσει η σωστή εκτέλεση ορισμένων λειτουργιών της συσκευής σας, μέχρι να την απενεργοποιήσετε και να την ενεργοποιήσετε ξανά."</string>
     <string name="testing_phone_info" product="tablet" msgid="8267746802132630741">"Πληροφορίες tablet"</string>
     <string name="testing_phone_info" product="default" msgid="7507506297352160191">"Πληροφορίες τηλεφώνου"</string>
-    <!-- no translation found for testing_phone_info (3607717850300762272) -->
-    <skip />
+    <string name="testing_phone_info" product="desktop" msgid="3607717850300762272">"Πληροφορίες συσκευής"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="default" msgid="1773409172676594981">"Θα γίνει επαναφορά των προτιμήσεων μεγέθους οθόνης και κειμένου στις αρχικές ρυθμίσεις του τηλεφώνου σας"</string>
     <string name="accessibility_text_reading_confirm_dialog_message" product="tablet" msgid="2547948891207211388">"Θα γίνει επαναφορά των προτιμήσεων μεγέθους οθόνης και κειμένου στις αρχικές ρυθμίσεις του tablet σας"</string>
-    <!-- no translation found for accessibility_text_reading_confirm_dialog_message (4248088107680338580) -->
-    <skip />
+    <string name="accessibility_text_reading_confirm_dialog_message" product="desktop" msgid="4248088107680338580">"Θα γίνει επαναφορά των προτιμήσεων μεγέθους προβολής και κειμένου στις αρχικές ρυθμίσεις της συσκευής σας"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="default" msgid="5234458848997942613">"Προσαρμόστε τα χρώματα στο τηλέφωνό σας"</string>
     <string name="accessibility_daltonizer_about_intro_text" product="tablet" msgid="5300401841391736534">"Προσαρμόστε πώς θα εμφανίζονται τα χρώματα στη συσκευή σας"</string>
-    <!-- no translation found for accessibility_daltonizer_about_intro_text (8908526728447739478) -->
-    <skip />
+    <string name="accessibility_daltonizer_about_intro_text" product="desktop" msgid="8908526728447739478">"Προσαρμογή εμφάνισης των χρωμάτων στη συσκευή σας"</string>
     <string name="reduce_bright_colors_preference_summary" product="default" msgid="2025941326724094318">"Μειώστε τη φωτεινότητα της οθόνης κάτω από το ελάχιστο επίπεδο φωτεινότητας του τηλεφώνου"</string>
     <string name="reduce_bright_colors_preference_summary" product="tablet" msgid="3106979202311807559">"Μειώστε τη φωτεινότητα της οθόνης κάτω από το ελάχιστο επίπεδο φωτεινότητας του tablet"</string>
-    <!-- no translation found for reduce_bright_colors_preference_summary (7810358416215416035) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_summary" product="desktop" msgid="7810358416215416035">"Μείωση φωτεινότητας της οθόνης κάτω από το ελάχιστο επίπεδο φωτεινότητας της συσκευής"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="default" msgid="9162440023310121356">"Η επιπλέον μείωση φωτεινότητας μπορεί να βοηθήσει: &lt;ol&gt; &lt;li&gt; Όταν η προεπιλεγμένη ελάχιστη φωτεινότητα του τηλεφώνου σας δεν είναι αρκετά σκοτεινή&lt;/li&gt; &lt;li&gt; Όταν χρησιμοποιείτε το τηλέφωνό σας σε συνθήκες χαμηλού φωτισμού, όπως κατά τη διάρκεια της νύχτας ή σε ένα σκοτεινό δωμάτιο πριν κοιμηθείτε&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="reduce_bright_colors_preference_subtitle" product="tablet" msgid="5747242697890472822">"Η επιπλέον μείωση φωτεινότητας μπορεί να βοηθήσει: &lt;ol&gt; &lt;li&gt; Όταν η προεπιλεγμένη ελάχιστη φωτεινότητα του tablet δεν είναι αρκετά σκοτεινή&lt;/li&gt; &lt;li&gt; Όταν χρησιμοποιείτε το tablet σε συνθήκες χαμηλού φωτισμού, όπως κατά τη διάρκεια της νύχτας ή σε ένα σκοτεινό δωμάτιο πριν κοιμηθείτε&lt;/li&gt; &lt;/ol&gt;"</string>
-    <!-- no translation found for reduce_bright_colors_preference_subtitle (3114657547062643684) -->
-    <skip />
+    <string name="reduce_bright_colors_preference_subtitle" product="desktop" msgid="3114657547062643684">"Η επιπλέον μείωση φωτεινότητας μπορεί να βοηθήσει: &lt;ol&gt; &lt;li&gt; Όταν η προεπιλεγμένη ελάχιστη φωτεινότητα της συσκευής δεν είναι αρκετά σκοτεινή&lt;/li&gt; &lt;li&gt; Όταν χρησιμοποιείτε τη συσκευή σε συνθήκες χαμηλού φωτισμού, όπως κατά τη διάρκεια της νύχτας ή σε ένα σκοτεινό δωμάτιο πριν κοιμηθείτε&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="battery_tip_summary_summary" product="default" msgid="1880496476760792933">"Το τηλέφωνο παρουσιάζει τυπική χρήση μπαταρίας στο παρασκήνιο"</string>
     <string name="battery_tip_summary_summary" product="tablet" msgid="865695079664997057">"Το tablet παρουσιάζει τυπική χρήση μπαταρίας στο παρασκήνιο"</string>
     <string name="battery_tip_summary_summary" product="device" msgid="45436555475195632">"Η συσκευή παρουσιάζει τυπική χρήση μπαταρίας στο παρασκήνιο"</string>
     <string name="battery_tip_summary_summary" product="desktop" msgid="45436555475195632">"Η συσκευή παρουσιάζει τυπική χρήση μπαταρίας στο παρασκήνιο"</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="default" msgid="4134817691837413711">"Υπό συγκεκριμένες συνθήκες, όπως σε υψηλές θερμοκρασίες και κατά περιόδους φόρτισης μεγάλης διάρκειας, η φόρτιση μπορεί να περιορίζεται στο <xliff:g id="PERCENT">%1$s</xliff:g> για να διατηρηθεί η εύρυθμη λειτουργία της μπαταρίας.\n\nΌταν αυτές οι συνθήκες πάψουν να υφίστανται, το τηλέφωνό σας θα φορτιστεί αυτόματα φυσιολογικά."</string>
     <string name="battery_tip_limited_temporarily_dialog_msg" product="tablet" msgid="9123428127699951337">"Υπό συγκεκριμένες συνθήκες, όπως σε υψηλές θερμοκρασίες και κατά περιόδους φόρτισης μεγάλης διάρκειας, η φόρτιση μπορεί να περιορίζεται στο <xliff:g id="PERCENT">%1$s</xliff:g> για να διατηρηθεί η εύρυθμη λειτουργία της μπαταρίας.\n\nΌταν αυτές οι συνθήκες πάψουν να υφίστανται, το tablet σας θα φορτιστεί αυτόματα φυσιολογικά."</string>
-    <!-- no translation found for battery_tip_limited_temporarily_dialog_msg (4894543675965624780) -->
-    <skip />
+    <string name="battery_tip_limited_temporarily_dialog_msg" product="desktop" msgid="4894543675965624780">"Υπό συγκεκριμένες συνθήκες, όπως σε υψηλές θερμοκρασίες και κατά περιόδους φόρτισης μεγάλης διάρκειας, η φόρτιση μπορεί να περιορίζεται στο <xliff:g id="PERCENT">%1$s</xliff:g>, για να διατηρηθεί η εύρυθμη λειτουργία της υγείας μπαταρίας.\n\nΌταν αυτές οι συνθήκες πάψουν να υφίστανται, η συσκευή σας θα φορτιστεί αυτόματα φυσιολογικά."</string>
     <string name="battery_tip_dialog_message" product="default" msgid="7183790460600610222">"Επειδή έχετε χρησιμοποιήσει το τηλέφωνό σας περισσότερο από ό,τι συνήθως, η μπαταρία σας μπορεί να εξαντληθεί νωρίτερα από ό,τι συνήθως.\n\nΕφαρμογές που καταναλώνουν περισσότερη μπαταρία:"</string>
     <string name="battery_tip_dialog_message" product="tablet" msgid="2702706858728966181">"Επειδή έχετε χρησιμοποιήσει το tablet σας περισσότερο από ό,τι συνήθως, η μπαταρία σας μπορεί να εξαντληθεί νωρίτερα από ό,τι συνήθως.\n\nΕφαρμογές που καταναλώνουν περισσότερη μπαταρία:"</string>
     <string name="battery_tip_dialog_message" product="device" msgid="6488208467377974021">"Επειδή έχετε χρησιμοποιήσει τη συσκευή σας περισσότερο από ό,τι συνήθως, η μπαταρία σας μπορεί να εξαντληθεί νωρίτερα από ό,τι συνήθως.\n\nΕφαρμογές που καταναλώνουν περισσότερη μπαταρία:"</string>
@@ -444,12 +421,10 @@
     <string name="really_remove_account_message" product="desktop" msgid="1482438683708606820">"Η κατάργηση αυτού του λογαριασμού θα έχει σαν αποτέλεσμα τη διαγραφή όλων των μηνυμάτων, των επαφών και άλλων δεδομένων του από τη συσκευή!"</string>
     <string name="data_usage_auto_sync_on_dialog" product="tablet" msgid="7137933271689383781">"Τυχόν αλλαγές που πραγματοποιείτε στους λογαριασμούς σας στον ιστό θα αντιγραφούν αυτόματα στο tablet σας.\n\nΟρισμένοι λογαριασμοί ενδέχεται επίσης να αντιγράψουν αυτόματα τυχόν αλλαγές που πραγματοποιείτε στο tablet σας στον ιστό. Ο Λογαριασμός Google λειτουργεί με αυτόν τον τρόπο."</string>
     <string name="data_usage_auto_sync_on_dialog" product="default" msgid="7207326473052484970">"Τυχόν αλλαγές που πραγματοποιείτε στους λογαριασμούς σας στον ιστό θα αντιγραφούν αυτόματα στο τηλέφωνό σας.\n\nΟρισμένοι λογαριασμοί ενδέχεται επίσης να αντιγράψουν αυτόματα τυχόν αλλαγές που πραγματοποιείτε στο τηλέφωνό σας στον ιστό. Ο Λογαριασμός Google λειτουργεί με αυτόν τον τρόπο."</string>
-    <!-- no translation found for data_usage_auto_sync_on_dialog (7386532649309389029) -->
-    <skip />
+    <string name="data_usage_auto_sync_on_dialog" product="desktop" msgid="7386532649309389029">"Τυχόν αλλαγές που πραγματοποιείτε στους λογαριασμούς σας στον ιστό θα αντιγραφούν αυτόματα στη συσκευή σας.\n\nΟρισμένοι λογαριασμοί ενδέχεται επίσης να αντιγράψουν αυτόματα τυχόν αλλαγές που πραγματοποιείτε στη συσκευή σας στον ιστό. Ένας Λογαριασμός Google λειτουργεί με αυτόν τον τρόπο."</string>
     <string name="data_usage_limit_dialog_mobile" product="tablet" msgid="5609616352941038118">"Τα δεδομένα κινητής τηλεφωνίας θα απενεργοποιηθούν στο tablet σας μόλις συμπληρωθεί το καθορισμένο όριο.\n\nΕπειδή η χρήση δεδομένων μετράται από το tablet σας και ενδέχεται η εταιρεία κινητής τηλεφωνίας να την υπολογίζει με διαφορετικό τρόπο, σκεφτείτε το ενδεχόμενο να ορίσετε ένα συντηρητικό όριο."</string>
     <string name="data_usage_limit_dialog_mobile" product="default" msgid="4552449053646826676">"Τα δεδομένα κινητής τηλεφωνίας θα απενεργοποιηθούν στο τηλέφωνό σας μόλις συμπληρωθεί το καθορισμένο όριο.\n\nΕπειδή η χρήση δεδομένων μετράται από το τηλέφωνό σας και ενδέχεται η εταιρεία κινητής τηλεφωνίας να την υπολογίζει με διαφορετικό τρόπο, σκεφτείτε το ενδεχόμενο να ορίσετε ένα συντηρητικό όριο."</string>
-    <!-- no translation found for data_usage_limit_dialog_mobile (407387299340649944) -->
-    <skip />
+    <string name="data_usage_limit_dialog_mobile" product="desktop" msgid="407387299340649944">"Τα δεδομένα κινητής τηλεφωνίας θα απενεργοποιηθούν στη συσκευή σας μόλις συμπληρωθεί το καθορισμένο όριο.\n\nΚαθώς η χρήση δεδομένων μετράται από τη συσκευή σας και ενδέχεται η εταιρεία κινητής τηλεφωνίας να την υπολογίζει με διαφορετικό τρόπο, σκεφτείτε το ενδεχόμενο να ορίσετε ένα συντηρητικό όριο."</string>
     <string name="user_settings_footer_text" product="device" msgid="8543171604218174424">"Μοιραστείτε τη συσκευή σας προσθέτοντας νέους χρήστες. Κάθε χρήστης έχει έναν προσωπικό χώρο στη συσκευή σας για προσαρμοσμένες αρχικές οθόνες, λογαριασμούς, εφαρμογές, ρυθμίσεις και άλλα."</string>
     <string name="user_settings_footer_text" product="tablet" msgid="4749331578207116797">"Μοιραστείτε το tablet σας προσθέτοντας νέους χρήστες. Κάθε χρήστης έχει έναν προσωπικό χώρο στο tablet σας για προσαρμοσμένες αρχικές οθόνες, λογαριασμούς, εφαρμογές, ρυθμίσεις και άλλα."</string>
     <string name="user_settings_footer_text" product="default" msgid="5440172971747221370">"Μοιραστείτε το τηλέφωνό σας προσθέτοντας νέους χρήστες. Κάθε χρήστης έχει έναν προσωπικό χώρο στο τηλέφωνό σας για προσαρμοσμένες αρχικές οθόνες, λογαριασμούς, εφαρμογές, ρυθμίσεις και άλλα."</string>
@@ -508,16 +483,13 @@
     <string name="battery_tip_incompatible_charging_message" product="desktop" msgid="4208335872169818919">"Η συσκευή σας μπορεί να φορτίζει αργά ή να μην φορτίζει. Για πιο γρήγορη φόρτιση, χρησιμοποιήστε ένα προτεινόμενο καλώδιο και μετασχηματιστή."</string>
     <string name="lockscreen_trivial_controls_summary" product="default" msgid="42562533085885152">"Χωρίς να ξεκλειδώσετε το τηλέφωνό σας"</string>
     <string name="lockscreen_trivial_controls_summary" product="tablet" msgid="9052068482124729345">"Χωρίς να ξεκλειδώσετε το tablet σας"</string>
-    <!-- no translation found for lockscreen_trivial_controls_summary (8183513643394359332) -->
-    <skip />
+    <string name="lockscreen_trivial_controls_summary" product="desktop" msgid="8183513643394359332">"Χωρίς να ξεκλειδώσετε τη συσκευή σας"</string>
     <string name="auto_rotate_summary_a11y" product="default" msgid="2813368383309985185">"Όταν μετακινείτε το τηλέφωνο σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
     <string name="auto_rotate_summary_a11y" product="tablet" msgid="4708833814245913981">"Όταν μετακινείτε το tablet σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
-    <!-- no translation found for auto_rotate_summary_a11y (1342493478927297535) -->
-    <skip />
+    <string name="auto_rotate_summary_a11y" product="desktop" msgid="1342493478927297535">"Όταν μετακινείτε τη συσκευή σε κατακόρυφο ή οριζόντιο προσανατολισμό"</string>
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"Προσαρμόστε πώς θα εμφανίζονται τα χρώματα στο τηλέφωνό σας"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"Προσαρμόστε πώς θα εμφανίζονται τα χρώματα στο tablet σας"</string>
-    <!-- no translation found for daltonizer_feature_summary (7614721768727080567) -->
-    <skip />
+    <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"Προσαρμογή εμφάνισης των χρωμάτων στη συσκευή σας"</string>
     <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"Ηχεία τηλεφώνου"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"Ηχεία tablet"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"Ηχεία συσκευής"</string>

@@ -606,10 +606,10 @@
     <string name="regional_pref_footer_learn_more_link" translatable="false">https://support.google.com/android?p=regional_preferences</string>
     <!-- The title of metric for preference of measurement system. [CHAR LIMIT=50] -->
     <string name="metric_measurement_system">Metric</string>
-    <!-- The title of imperial US for preference of measurement system. [CHAR LIMIT=50] -->
-    <string name="us_measurement_system">Imperial (US)</string>
-    <!-- The title of imperial UK for preference of measurement system. [CHAR LIMIT=50] -->
-    <string name="uk_measurement_system">Imperial (UK)</string>
+    <!-- The title of the measurement system used in the US, for example temperature is in Fahrenheit, and wind speed is mph. [CHAR LIMIT=50] -->
+    <string name="us_measurement_system">US</string>
+    <!-- The title of the measurement system used in the UK, for example temperature is in Celsius, and wind speed is mph. [CHAR LIMIT=50] -->
+    <string name="uk_measurement_system">UK</string>
 
     <!-- Category for the terms of address. [CHAR LIMIT=NONE]-->
     <string name="category_title_terms_of_address">Additional preferences</string>
@@ -2088,13 +2088,17 @@
     <string name="bluetooth_scan_change">Change</string>
 
     <!-- Dialog title when key is missing in a Bluetooth device -->
-    <string name="bluetooth_key_missing_title"><xliff:g id="device_name">%1$s</xliff:g> not connected</string>
+    <string name="bluetooth_key_missing_title">Can’t connect <xliff:g id="device_name">%1$s</xliff:g></string>
     <!-- Dialog content when key is missing in a Bluetooth device -->
-    <string name="bluetooth_key_missing_message">For your security, forget this device, then pair it again</string>
+    <string name="bluetooth_key_missing_message">For more details, go to device settings</string>
     <!-- Button text to forget device when bluetooth key is missing -->
     <string name="bluetooth_key_missing_forget">Forget device</string>
     <!-- Button text to cancel when bluetooth key is missing-->
     <string name="bluetooth_key_missing_cancel">Cancel</string>
+    <!-- Button text to go to device settings when bluetooth key is missing -->
+    <string name="bluetooth_key_missing_device_settings">Device settings</string>
+    <!-- Button text to close the bluetooth key missing dialog-->
+    <string name="bluetooth_key_missing_close">Close</string>
 
     <!-- Title of device details screen [CHAR LIMIT=28]-->
     <string name="device_details_title">Device details</string>
@@ -2124,6 +2128,8 @@
     <string name="device_details_battery">Battery</string>
     <!-- Content Description for battery charging icon in device details screen [CHAR LIMIT=NONE]-->
     <string name="device_details_battery_charging">Battery, charging</string>
+    <!-- Title of item to let user know the bluetooth key is missing [CHAR LIMIT=NONE]-->
+    <string name="device_details_key_missing_title">Try restarting <xliff:g id="device_name">%1$s</xliff:g>. If that doesn’t work, forget the device. For your security, only pair it again when you aren’t in a public space.\n\nIf this device isn’t nearby, you don’t need to do anything.</string>
 
 
     <!--  Bluetooth device details. In the confirmation dialog for unpairing a paired device, this is the label on the button that will complete the unpairing action. -->
@@ -2442,6 +2448,8 @@
     <string name="wifi_eap_anonymous">Anonymous identity</string>
     <!-- Label for the password of the secured network -->
     <string name="wifi_password">Password*</string>
+    <!-- Label for the optional password of the secured network -->
+    <string name="wifi_password_optional">Password (optional)</string>
     <!-- Label for the password of the secured network -->
     <string name="wifi_password_invalid">The password is invalid</string>
     <!-- Label for the check box to show password -->
@@ -10906,7 +10914,7 @@ Data usage charges may apply.</string>
     <string name="apps_summary"><xliff:g id="count" example="24">%1$d</xliff:g> apps installed</string>
 
     <!-- Summary of storage usage [CHAR LIMIT=NONE] -->
-    <string name="storage_summary"><xliff:g id="percentage" example="54%">%1$s</xliff:g> used - <xliff:g id="free_space_value" example="32">%2$s</xliff:g> <xliff:g id="free_space_units" example="GB">%3$s</xliff:g> free</string>
+    <string name="storage_summary"><xliff:g id="percentage" example="54%">%1$s</xliff:g> used - <xliff:g id="free_space" example="32GB">%2$s</xliff:g> free</string>
 
     <!-- Summary for Display settings, explaining a few important settings under it [CHAR LIMIT=NONE]-->
     <string name="display_dashboard_summary">Dark theme, font size, brightness</string>
@@ -12689,10 +12697,10 @@ Data usage charges may apply.</string>
     <string name="satellite_setting_summary_without_entitlement">Send and receive text messages by satellite. Contact your carrier for details.</string>
     <!-- Search keywords for "_satellite_setting_preference_layout" [CHAR_LIMIT=NONE] -->
     <string name="keywords_satellite_setting">Satellite messaging, satellite connectivity</string>
-    <!-- Category name "About satellite messaging" [CHAR_LIMIT=NONE] -->
-    <string name="category_name_about_satellite_messaging">About <xliff:g id="subject" example="satellite messaging">%1$s</xliff:g></string>
-    <!-- Summary for category "About satellite messaging" [CHAR_LIMIT=NONE] -->
-    <string name="title_about_satellite_setting">You can send and receive text messages by satellite with an eligible <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
+    <!-- Category name "About satellite connectivity" [CHAR_LIMIT=NONE] -->
+    <string name="category_name_about_satellite_connectivity">About satellite connectivity</string>
+    <!-- Description for category "About satellite connectivity" [CHAR_LIMIT=NONE] -->
+    <string name="description_about_satellite_setting">You can send and receive text messages and use some apps by satellite with an eligible <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
     <!-- Category title "Your mobile plan" [CHAR_LIMIT=NONE] -->
     <string name="category_title_your_satellite_plan">Your <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> account</string>
     <!-- Title for category "Your mobile plan when satellite is included in plan" [CHAR_LIMIT=NONE] -->
@@ -13591,9 +13599,9 @@ Data usage charges may apply.</string>
     <string name="smart_forwarding_missing_alert_dialog_text">OK</string>
 
     <!-- Title for toggle if user wants to enable 2G [CHAR LIMIT=40] -->
-    <string name="enable_2g_title">Allow 2G</string>
+    <string name="enable_2g_title">2G network protection</string>
     <!-- Title for toggle if user wants to enable 2G [CHAR LIMIT=NONE] -->
-    <string name="enable_2g_summary">2G is less secure, but may improve your connection in some locations. For emergency calls, 2G is always allowed.</string>
+    <string name="enable_2g_summary">Avoids 2G networks, which are less secure. This may limit connectivity in some places. Emergency calling is always allowed.</string>
     <!-- Title for if toggle access is disabled by carrier [CHAR LIMIT=NONE] -->
     <string name="enable_2g_summary_disabled_carrier"><xliff:g id="carrier_name_2g" example="Google Fi">%1$s</xliff:g> requires 2G to be available</string>
 
