@@ -54,6 +54,7 @@ import androidx.annotation.VisibleForTesting;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceCategory;
 import androidx.preference.PreferenceScreen;
+import androidx.preference.PreferenceViewHolder;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.internal.accessibility.common.ShortcutConstants;
@@ -71,6 +72,7 @@ import com.android.settingslib.widget.IllustrationPreference;
 import com.android.settingslib.widget.TopIntroPreference;
 
 import com.google.android.setupcompat.util.WizardManagerHelper;
+import com.google.android.setupdesign.util.ThemeHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -426,7 +428,19 @@ public abstract class ToggleFeaturePreferenceFragment extends DashboardFragment
         return drawable;
     }
     private void initAnimatedImagePreference() {
-        initAnimatedImagePreference(mImageUri, new IllustrationPreference(getPrefContext()));
+        initAnimatedImagePreference(mImageUri, new IllustrationPreference(getPrefContext()) {
+            @Override
+            public void onBindViewHolder(PreferenceViewHolder holder) {
+                super.onBindViewHolder(holder);
+                if (ThemeHelper.shouldApplyGlifExpressiveStyle(getContext())
+                        && isAnySetupWizard()) {
+                    View illustrationFrame = holder.findViewById(R.id.illustration_frame);
+                    final ViewGroup.LayoutParams lp = illustrationFrame.getLayoutParams();
+                    lp.width = ViewGroup.LayoutParams.MATCH_PARENT;
+                    illustrationFrame.setLayoutParams(lp);
+                }
+            }
+        });
     }
 
     @VisibleForTesting
