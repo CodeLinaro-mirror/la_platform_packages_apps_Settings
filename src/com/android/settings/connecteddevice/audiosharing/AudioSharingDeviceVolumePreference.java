@@ -46,6 +46,7 @@ public class AudioSharingDeviceVolumePreference extends SeekBarPreference {
 
     private final Context mContext;
     private final CachedBluetoothDevice mCachedDevice;
+    @Nullable private final LocalBluetoothManager mBtManager;
     @Nullable protected SeekBar mSeekBar;
     private Boolean mTrackingTouch = false;
     private MetricsFeatureProvider mMetricsFeatureProvider =
@@ -57,6 +58,7 @@ public class AudioSharingDeviceVolumePreference extends SeekBarPreference {
         setLayoutResource(R.layout.preference_volume_slider);
         mContext = context;
         mCachedDevice = device;
+        mBtManager = Utils.getLocalBtManager(mContext);
     }
 
     @NonNull
@@ -110,7 +112,7 @@ public class AudioSharingDeviceVolumePreference extends SeekBarPreference {
                             if (groupId != BluetoothCsipSetCoordinator.GROUP_ID_INVALID
                                     && groupId
                                             == BluetoothUtils.getPrimaryGroupIdForBroadcast(
-                                                    mContext.getContentResolver())) {
+                                                    mContext.getContentResolver(), mBtManager)) {
                                 // Set media stream volume for primary buds, audio manager will
                                 // update all buds volume in the audio sharing.
                                 setAudioManagerStreamVolume(progress);
@@ -126,9 +128,8 @@ public class AudioSharingDeviceVolumePreference extends SeekBarPreference {
             Log.d(TAG, "Skip set device volume, device is null");
             return;
         }
-        LocalBluetoothManager btManager = Utils.getLocalBtManager(mContext);
-        VolumeControlProfile vc =
-                btManager == null ? null : btManager.getProfileManager().getVolumeControlProfile();
+        VolumeControlProfile vc = mBtManager == null ? null
+                : mBtManager.getProfileManager().getVolumeControlProfile();
         if (vc != null) {
             vc.setDeviceVolume(device, progress, /* isGroupOp= */ true);
             mMetricsFeatureProvider.action(

@@ -31,6 +31,9 @@ import android.app.settings.SettingsEnums;
 import android.bluetooth.BluetoothDevice;
 import android.content.Context;
 import android.media.AudioManager;
+import android.platform.test.annotations.DisableFlags;
+import android.platform.test.annotations.EnableFlags;
+import android.platform.test.flag.junit.SetFlagsRule;
 import android.provider.Settings;
 import android.widget.SeekBar;
 
@@ -41,9 +44,11 @@ import com.android.settings.testutils.FakeFeatureFactory;
 import com.android.settings.testutils.shadow.ShadowBluetoothUtils;
 import com.android.settingslib.bluetooth.BluetoothUtils;
 import com.android.settingslib.bluetooth.CachedBluetoothDevice;
+import com.android.settingslib.bluetooth.LeAudioProfile;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 import com.android.settingslib.bluetooth.LocalBluetoothProfileManager;
 import com.android.settingslib.bluetooth.VolumeControlProfile;
+import com.android.settingslib.flags.Flags;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -64,9 +69,11 @@ public class AudioSharingDeviceVolumePreferenceTest {
     private static final int TEST_MIN_STREAM_VALUE = 0;
 
     @Rule public final MockitoRule mMockitoRule = MockitoJUnit.rule();
+    @Rule public final SetFlagsRule mSetFlagsRule = new SetFlagsRule();
 
     @Mock private LocalBluetoothManager mLocalBtManager;
     @Mock private LocalBluetoothProfileManager mLocalBtProfileManager;
+    @Mock private LeAudioProfile mLeAudioProfile;
     @Mock private VolumeControlProfile mVolumeControl;
     @Mock private CachedBluetoothDevice mCachedDevice;
     @Mock private BluetoothDevice mDevice;
@@ -84,6 +91,7 @@ public class AudioSharingDeviceVolumePreferenceTest {
         mFeatureFactory = FakeFeatureFactory.setupForTest();
         when(mLocalBtManager.getProfileManager()).thenReturn(mLocalBtProfileManager);
         when(mLocalBtProfileManager.getVolumeControlProfile()).thenReturn(mVolumeControl);
+        when(mLocalBtProfileManager.getLeAudioProfile()).thenReturn(mLeAudioProfile);
         when(mContext.getSystemService(AudioManager.class)).thenReturn(mAudioManager);
         when(mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC))
                 .thenReturn(TEST_MAX_STREAM_VALUE);
@@ -161,6 +169,70 @@ public class AudioSharingDeviceVolumePreferenceTest {
     }
 
     @Test
+    @EnableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
+    public void onStopTrackingTouch_adoptApi_fallbackDevice_setDeviceVolume() {
+        when(mLeAudioProfile.getBroadcastToUnicastFallbackGroup()).thenReturn(TEST_DEVICE_GROUP_ID);
+        mPreference.onStopTrackingTouch(mSeekBar);
+
+        verifyNoInteractions(mVolumeControl);
+        verify(mAudioManager)
+                .setStreamVolume(AudioManager.STREAM_MUSIC, TEST_MAX_STREAM_VALUE, /* flags= */ 0);
+        verify(mFeatureFactory.metricsFeatureProvider)
+                .action(
+                        mContext,
+                        SettingsEnums.ACTION_AUDIO_SHARING_CHANGE_MEDIA_DEVICE_VOLUME,
+                        /* isPrimary= */ true);
+    }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
+    public void onProgressChanged_adoptApi_fallbackDevice_fromUserNotInTouch_setDeviceVolume() {
+        when(mLeAudioProfile.getBroadcastToUnicastFallbackGroup()).thenReturn(TEST_DEVICE_GROUP_ID);
+        mPreference.onProgressChanged(mSeekBar, TEST_VOLUME_VALUE, /* fromUser= */ true);
+
+        verifyNoInteractions(mVolumeControl);
+        verify(mAudioManager)
+                .setStreamVolume(AudioManager.STREAM_MUSIC, TEST_MAX_STREAM_VALUE, /* flags= */ 0);
+        verify(mFeatureFactory.metricsFeatureProvider)
+                .action(
+                        mContext,
+                        SettingsEnums.ACTION_AUDIO_SHARING_CHANGE_MEDIA_DEVICE_VOLUME,
+                        /* isPrimary= */ true);
+    }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
+    public void onProgressChanged_adoptApi_fallbackDevice_fromUserInTouch_doNothing() {
+        when(mLeAudioProfile.getBroadcastToUnicastFallbackGroup()).thenReturn(TEST_DEVICE_GROUP_ID);
+        mPreference.onStartTrackingTouch(mSeekBar);
+        mPreference.onProgressChanged(mSeekBar, TEST_VOLUME_VALUE, /* fromUser= */ true);
+
+        verifyNoInteractions(mVolumeControl);
+        verifyNoInteractions(mAudioManager);
+        verify(mFeatureFactory.metricsFeatureProvider, never())
+                .action(
+                        any(Context.class),
+                        eq(SettingsEnums.ACTION_AUDIO_SHARING_CHANGE_MEDIA_DEVICE_VOLUME),
+                        anyBoolean());
+    }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
+    public void onProgressChanged_adoptApi_fallbackDevice_notFromUserNotInTouch_doNothing() {
+        when(mLeAudioProfile.getBroadcastToUnicastFallbackGroup()).thenReturn(TEST_DEVICE_GROUP_ID);
+        mPreference.onProgressChanged(mSeekBar, TEST_VOLUME_VALUE, /* fromUser= */ false);
+
+        verifyNoInteractions(mVolumeControl);
+        verifyNoInteractions(mAudioManager);
+        verify(mFeatureFactory.metricsFeatureProvider, never())
+                .action(
+                        any(Context.class),
+                        eq(SettingsEnums.ACTION_AUDIO_SHARING_CHANGE_MEDIA_DEVICE_VOLUME),
+                        anyBoolean());
+    }
+
+    @Test
+    @DisableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
     public void onStopTrackingTouch_fallbackDevice_setDeviceVolume() {
         Settings.Secure.putInt(
                 mContext.getContentResolver(),
@@ -179,6 +251,7 @@ public class AudioSharingDeviceVolumePreferenceTest {
     }
 
     @Test
+    @DisableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
     public void onProgressChanged_fallbackDevice_fromUserNotInTouch_setDeviceVolume() {
         Settings.Secure.putInt(
                 mContext.getContentResolver(),
@@ -197,6 +270,7 @@ public class AudioSharingDeviceVolumePreferenceTest {
     }
 
     @Test
+    @DisableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
     public void onProgressChanged_fallbackDevice_fromUserInTouch_doNothing() {
         Settings.Secure.putInt(
                 mContext.getContentResolver(),
@@ -215,6 +289,7 @@ public class AudioSharingDeviceVolumePreferenceTest {
     }
 
     @Test
+    @DisableFlags(Flags.FLAG_ADOPT_PRIMARY_GROUP_MANAGEMENT_API_V2)
     public void onProgressChanged_fallbackDevice_notFromUserNotInTouch_doNothing() {
         Settings.Secure.putInt(
                 mContext.getContentResolver(),

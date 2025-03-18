@@ -84,8 +84,6 @@
     <color name="homepage_location_background">@color/homepage_cyan_bg</color>
     <color name="homepage_accounts_foreground">@color/homepage_cyan_fg</color>
     <color name="homepage_accounts_background">@color/homepage_cyan_bg</color>
-    <color name="homepage_wellbeing_foreground">@color/homepage_cyan_fg</color>
-    <color name="homepage_wellbeing_background">@color/homepage_cyan_bg</color>
     <color name="homepage_supervision_foreground">@color/homepage_cyan_fg</color>
     <color name="homepage_supervision_background">@color/homepage_cyan_bg</color>
     <color name="homepage_safety_foreground">@color/homepage_red_fg</color>

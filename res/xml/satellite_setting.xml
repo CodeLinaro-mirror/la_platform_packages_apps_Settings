@@ -32,7 +32,8 @@
 
     <PreferenceCategory
         android:key="key_category_your_satellite_plan"
-        android:title="@string/category_title_your_satellite_plan">
+        android:title="@string/category_title_your_satellite_plan"
+        settings:controller="com.android.settings.network.telephony.satellite.SatelliteSettingAccountInfoController">
 
         <Preference
             android:key="key_your_satellite_plan"
