@@ -16,7 +16,6 @@
 
 package com.android.settings.safetycenter;
 
-import static com.android.settings.biometrics.BiometricEnrollActivity.EXTRA_LAUNCH_FACE_ENROLL_FIRST;
 import static com.android.settings.safetycenter.BiometricSourcesUtils.REQUEST_CODE_FACE_SETTING;
 
 import android.content.Context;
@@ -28,7 +27,6 @@ import android.os.UserManager;
 import android.safetycenter.SafetyEvent;
 
 import com.android.settings.Utils;
-import com.android.settings.biometrics.BiometricEnrollActivity;
 import com.android.settings.biometrics.BiometricNavigationUtils;
 import com.android.settings.biometrics.face.FaceStatusUtils;
 import com.android.settings.flags.Flags;
@@ -75,16 +73,6 @@ public final class FaceSafetySource {
         Context profileParentContext = context.createContextAsUser(profileParentUserHandle, 0);
 
         if (Utils.hasFaceHardware(context)) {
-            boolean isMultipleBiometricsEnrollmentNeeded =
-                    BiometricSourcesUtils.isMultipleBiometricsEnrollmentNeeded(context, userId);
-            String settingClassName = isMultipleBiometricsEnrollmentNeeded
-                    ? BiometricEnrollActivity.class.getName()
-                    : faceStatusUtils.getSettingsClassName();
-            Bundle bundle = new Bundle();
-            if (isMultipleBiometricsEnrollmentNeeded) {
-                // Launch face enrollment first then fingerprint enrollment.
-                bundle.putBoolean(EXTRA_LAUNCH_FACE_ENROLL_FIRST, true);
-            }
             RestrictedLockUtils.EnforcedAdmin disablingAdmin = faceStatusUtils.getDisablingAdmin();
             BiometricSourcesUtils.setBiometricSafetySourceData(
                     SAFETY_SOURCE_ID,
@@ -96,9 +84,9 @@ public final class FaceSafetySource {
                             biometricNavigationUtils
                                     .getBiometricSettingsIntent(
                                             context,
-                                            settingClassName,
+                                            faceStatusUtils.getSettingsClassName(),
                                             disablingAdmin,
-                                            bundle)
+                                            Bundle.EMPTY)
                                     .setIdentifier(Integer.toString(userId)),
                             REQUEST_CODE_FACE_SETTING),
                     disablingAdmin == null /* enabled */,
