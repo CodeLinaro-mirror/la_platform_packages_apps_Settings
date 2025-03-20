@@ -14360,6 +14360,16 @@ Data usage charges may apply.</string>
     <string name="supervision_web_content_filters_browser_block_explicit_sites_summary">No filter is perfect, but this should help hide sexually explicit sites</string>
     <!-- Title for web content filters browser category allow all sites option [CHAR LIMIT=60] -->
     <string name="supervision_web_content_filters_browser_allow_all_sites_title">Allow all sites</string>
+    <!-- Title for web content filters search category [CHAR LIMIT=60] -->
+    <string name="supervision_web_content_filters_search_title">Google Search</string>
+    <!-- Title for web content filters search category filter on option [CHAR LIMIT=60] -->
+    <string name="supervision_web_content_filters_search_filter_on_title">SafeSearch filtering ON</string>
+    <!-- Summary for web content filters search category filter on option [CHAR LIMIT=None] -->
+    <string name="supervision_web_content_filters_search_filter_on_summary">Helps filter out explicit images, text, and links from search results on this device</string>
+    <!-- Title for web content filters search category filter off option [CHAR LIMIT=60] -->
+    <string name="supervision_web_content_filters_search_filter_off_title">SafeSearch filtering OFF</string>
+    <!-- Summary for web content filters search category filter off option [CHAR LIMIT=None] -->
+    <string name="supervision_web_content_filters_search_filter_off_summary">Account settings may still filter or blur explicit results</string>
     <!-- Generic content description that is attached to the preview illustration at the top of an Accessibility feature toggle page. [CHAR LIMIT=NONE] -->
     <!-- Title for supervision PIN verification screen [CHAR LIMIT=60] -->
     <string name="supervision_full_screen_pin_verification_title">Enter supervision PIN</string>

@@ -127,6 +127,7 @@ public class BluetoothKeyMissingReceiverTest {
     public void broadcastReceiver_background_showNotification() {
         Intent intent = spy(new Intent(BluetoothDevice.ACTION_KEY_MISSING));
         when(intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)).thenReturn(mBluetoothDevice);
+        when(mBluetoothDevice.getBondState()).thenReturn(BluetoothDevice.BOND_BONDED);
         BluetoothKeyMissingReceiver bluetoothKeyMissingReceiver = getReceiver(intent);
         bluetoothKeyMissingReceiver.onReceive(mContext, intent);
 
@@ -141,6 +142,7 @@ public class BluetoothKeyMissingReceiverTest {
         when(mLocalBtManager.isForegroundActivity()).thenReturn(true);
         Intent intent = spy(new Intent(BluetoothDevice.ACTION_KEY_MISSING));
         when(intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE)).thenReturn(mBluetoothDevice);
+        when(mBluetoothDevice.getBondState()).thenReturn(BluetoothDevice.BOND_BONDED);
         BluetoothKeyMissingReceiver bluetoothKeyMissingReceiver = getReceiver(intent);
         bluetoothKeyMissingReceiver.onReceive(mContext, intent);
 

@@ -18,7 +18,9 @@ package com.android.settings.supervision
 import android.content.Context
 import androidx.preference.Preference
 import com.android.settings.R
+import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.Permissions
+import com.android.settingslib.datastore.SettingsSecureStore
 import com.android.settingslib.metadata.BooleanValuePreference
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.ReadWritePermit
@@ -27,11 +29,10 @@ import com.android.settingslib.preference.PreferenceBinding
 import com.android.settingslib.preference.forEachRecursively
 import com.android.settingslib.widget.SelectorWithWidgetPreference
 
-/** Base class of web content filters Safe sites preferences. */
-sealed class SupervisionSafeSitesPreference(
-    protected val dataStore: SupervisionSafeSitesDataStore
-) : BooleanValuePreference, SelectorWithWidgetPreference.OnClickListener, PreferenceBinding {
-    override fun storage(context: Context) = dataStore
+/** Base class of web content filters SafeSearch preferences. */
+sealed class SupervisionSafeSearchPreference :
+    BooleanValuePreference, SelectorWithWidgetPreference.OnClickListener, PreferenceBinding {
+    override fun storage(context: Context): KeyValueStore = SettingsSecureStore.get(context)
 
     override fun getReadPermissions(context: Context) = Permissions.EMPTY
 
@@ -63,41 +64,43 @@ sealed class SupervisionSafeSitesPreference(
     override fun bind(preference: Preference, metadata: PreferenceMetadata) {
         super.bind(preference, metadata)
         (preference as SelectorWithWidgetPreference).also {
-            it.isChecked = (dataStore.getBoolean(it.key) == true)
+            // TODO(b/401568995): Set the isChecked value using stored values.
+            it.isChecked = (it.key == SupervisionSearchFilterOffPreference.KEY)
             it.setOnClickListener(this)
         }
     }
 }
 
-/** The "Try to block explicit sites" preference. */
-class SupervisionBlockExplicitSitesPreference(dataStore: SupervisionSafeSitesDataStore) :
-    SupervisionSafeSitesPreference(dataStore) {
+/** The SafeSearch filter on preference. */
+class SupervisionSearchFilterOnPreference : SupervisionSafeSearchPreference() {
 
     override val key
         get() = KEY
 
     override val title
-        get() = R.string.supervision_web_content_filters_browser_block_explicit_sites_title
+        get() = R.string.supervision_web_content_filters_search_filter_on_title
 
     override val summary
-        get() = R.string.supervision_web_content_filters_browser_block_explicit_sites_summary
+        get() = R.string.supervision_web_content_filters_search_filter_on_summary
 
     companion object {
-        const val KEY = "web_content_filters_browser_block_explicit_sites"
+        const val KEY = "web_content_filters_search_filter_on"
     }
 }
 
-/** The "Allow all sites" preference. */
-class SupervisionAllowAllSitesPreference(dataStore: SupervisionSafeSitesDataStore) :
-    SupervisionSafeSitesPreference(dataStore) {
+/** The SafeSearch filter off preference. */
+class SupervisionSearchFilterOffPreference : SupervisionSafeSearchPreference() {
 
     override val key
         get() = KEY
 
     override val title
-        get() = R.string.supervision_web_content_filters_browser_allow_all_sites_title
+        get() = R.string.supervision_web_content_filters_search_filter_off_title
+
+    override val summary
+        get() = R.string.supervision_web_content_filters_search_filter_off_summary
 
     companion object {
-        const val KEY = "web_content_filters_browser_allow_all_sites"
+        const val KEY = "web_content_filters_search_filter_off"
     }
 }

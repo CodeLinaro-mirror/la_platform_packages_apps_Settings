@@ -55,9 +55,18 @@ public final class BluetoothKeyMissingReceiver extends BroadcastReceiver {
         }
 
         BluetoothDevice device = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+        if (device == null) {
+            return;
+        }
         PowerManager powerManager = context.getSystemService(PowerManager.class);
         if (TextUtils.equals(action, BluetoothDevice.ACTION_KEY_MISSING)) {
             Log.d(TAG, "Receive ACTION_KEY_MISSING");
+            if (device.getBondState() == BluetoothDevice.BOND_NONE) {
+                Log.d(
+                        TAG,
+                        "Device " + device.getAnonymizedAddress() + " is already unbonded, skip.");
+                return;
+            }
             Integer keyMissingCount = BluetoothUtils.getKeyMissingCount(device);
             if (keyMissingCount != null && keyMissingCount != 1) {
                 Log.d(TAG, "Key missing count is " + keyMissingCount  + ", skip.");
