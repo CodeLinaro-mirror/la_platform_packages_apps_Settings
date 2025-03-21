@@ -28,6 +28,7 @@ import android.os.PowerManager;
 import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Log;
+import android.widget.Toast;
 
 import androidx.core.app.NotificationCompat;
 
@@ -68,15 +69,23 @@ public final class BluetoothKeyMissingReceiver extends BroadcastReceiver {
                 return;
             }
             Integer keyMissingCount = BluetoothUtils.getKeyMissingCount(device);
-            if (keyMissingCount != null && keyMissingCount != 1) {
-                Log.d(TAG, "Key missing count is " + keyMissingCount  + ", skip.");
-                return;
-            }
+            boolean keyMissingFirstTime = keyMissingCount == null || keyMissingCount == 1;
             if (shouldShowDialog(context, device, powerManager)) {
-                Intent pairingIntent = getKeyMissingDialogIntent(context, device);
-                Log.d(TAG, "Show key missing dialog:" + device);
-                context.startActivityAsUser(pairingIntent, UserHandle.CURRENT);
-            } else {
+                if (keyMissingFirstTime) {
+                    Intent pairingIntent = getKeyMissingDialogIntent(context, device);
+                    Log.d(TAG, "Show key missing dialog:" + device);
+                    context.startActivityAsUser(pairingIntent, UserHandle.CURRENT);
+                } else {
+                    Log.d(TAG, "Show key missing toast:" + device);
+                    Toast.makeText(
+                                    context,
+                                    context.getString(
+                                            R.string.bluetooth_key_missing_toast,
+                                            device.getAlias()),
+                                    Toast.LENGTH_SHORT)
+                            .show();
+                }
+            } else if (keyMissingFirstTime) {
                 Log.d(TAG, "Show key missing notification: " + device);
                 showNotification(context, device);
             }
@@ -123,7 +132,7 @@ public final class BluetoothKeyMissingReceiver extends BroadcastReceiver {
                 .setLocalOnly(true);
         builder.setContentTitle(
                         context.getString(
-                                R.string.bluetooth_key_missing_title, bluetoothDevice.getName()))
+                                R.string.bluetooth_key_missing_title, bluetoothDevice.getAlias()))
                 .setContentText(context.getString(R.string.bluetooth_key_missing_message))
                 .setContentIntent(pairIntent)
                 .setAutoCancel(true)

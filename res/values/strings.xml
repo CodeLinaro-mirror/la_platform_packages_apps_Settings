@@ -2099,6 +2099,8 @@
     <string name="bluetooth_key_missing_device_settings">Device settings</string>
     <!-- Button text to close the bluetooth key missing dialog-->
     <string name="bluetooth_key_missing_close">Close</string>
+    <!-- Toast text to when bluetooth key is missing -->
+    <string name="bluetooth_key_missing_toast"><xliff:g id="device_name">%1$s</xliff:g> failed to connect</string>
 
     <!-- Title of device details screen [CHAR LIMIT=28]-->
     <string name="device_details_title">Device details</string>
@@ -12225,9 +12227,6 @@ Data usage charges may apply.</string>
     <!-- Help URI, action disabled by restricted settings [DO NOT TRANSLATE] -->
     <string name="help_url_action_disabled_by_restricted_settings" translatable="false"></string>
 
-    <!-- Help URI, action disabled by advanced protection [DO NOT TRANSLATE] -->
-    <string name="help_url_action_disabled_by_advanced_protection" translatable="false"></string>
-
     <!-- Title label for dnd suggestion, which is displayed in Settings homepage [CHAR LIMIT=100] -->
     <string name="zen_suggestion_title">Update Do Not Disturb</string>
 
@@ -12725,12 +12724,24 @@ Data usage charges may apply.</string>
     <string name="summary_supported_service">You can text anyone, including emergency services. Your phone will reconnect to a mobile network when available.</string>
     <!-- Summary for satellite supported service for NTN manual connection type. [CHAR_LIMIT=NONE] -->
     <string name="summary_supported_service_for_manual_type">After your phone is connected, you can text anyone, including emergency services.</string>
-    <!-- learn more text - more about satellite messaging [CHAR_LIMIT=NONE] -->
-    <string name="satellite_setting_summary_more_information">A satellite connection may be slower and is available only in some areas. Weather and certain structures may affect the connection. Calling by satellite isn\u2019t available. Emergency calls may still connect.\n\nIt may take some time for account changes to show in Settings. Contact <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> for details.</string>
-    <!-- learn more text - more about satellite messaging without emergency messaging support. [CHAR_LIMIT=NONE] -->
-    <string name="satellite_setting_summary_more_information_no_emergency_messaging">A satellite connection may be slower and is available only in some areas. Weather and certain structures may affect the connection. Calling by satellite isn\u2019t available. Emergency calls may still connect. Texting with emergency services may not be available in all areas.\n\nIt may take some time for account changes to show in Settings. Contact <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> for details.</string>
-    <!-- more about satellite connectivity [CHAR_LIMIT=NONE] -->
-    <string name="more_about_satellite_messaging">More about satellite connectivity</string>
+    <!-- learn more text - title of disclaimer of satellite connectivity  [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_0">Keep in mind</string>
+    <!-- learn more text - part 1 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_1">Satellite connectivity may take longer and is available only in some areas.</string>
+    <!-- learn more text - part 2 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_2">Weather and certain structures may affect your satellite connection.</string>
+    <!-- learn more text - part 3 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_3">Calling by satellite isn\u2019t available.</string>
+    <!-- learn more text - part 4 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_4">Emergency calls may still connect.</string>
+    <!-- learn more text - part 5 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_5">Mobile or Wi\u2011Fi network required to view external links.</string>
+    <!-- learn more text - part 6 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_6">Texting with emergency services may not be available in all areas.</string>
+    <!-- learn more text - part 7 of disclaimer of satellite connectivity [CHAR_LIMIT=NONE] -->
+    <string name="satellite_footer_content_section_7">It may take some time for account changes to show in Settings. Contact <xliff:g id="carrier_name" example="T-Mobile">%1$s</xliff:g> for details.</string>
+    <!-- more about satellite connectivity with link resource [CHAR_LIMIT=NONE] -->
+    <string name="more_about_satellite_connectivity">More about satellite connectivity</string>
     <!-- Title for satellite warning dialog to avoid user using wifi/bluetooth/airplane mode [CHAR_LIMIT=NONE] -->
     <string name="satellite_warning_dialog_title">Can’t turn on <xliff:g id="function" example="bluetooth">%1$s</xliff:g></string>
     <!-- Content for satellite warning dialog to avoid user using wifi/bluetooth/airplane mode [CHAR_LIMIT=NONE] -->

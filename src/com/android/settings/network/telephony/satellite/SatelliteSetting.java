@@ -23,17 +23,16 @@ import static android.telephony.CarrierConfigManager.KEY_EMERGENCY_MESSAGING_SUP
 import static android.telephony.CarrierConfigManager.KEY_SATELLITE_ATTACH_SUPPORTED_BOOL;
 import static android.telephony.CarrierConfigManager.KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL;
 import static android.telephony.CarrierConfigManager.KEY_SATELLITE_INFORMATION_REDIRECT_URL_STRING;
+import static android.telephony.CarrierConfigManager.SATELLITE_DATA_SUPPORT_ONLY_RESTRICTED;
 
 import android.app.Activity;
 import android.app.settings.SettingsEnums;
 import android.content.Context;
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.os.UserManager;
 import android.telephony.CarrierConfigManager;
 import android.telephony.SubscriptionManager;
-import android.telephony.TelephonyManager;
 import android.telephony.satellite.SatelliteManager;
 import android.util.Log;
 import android.view.View;
@@ -45,8 +44,6 @@ import androidx.preference.PreferenceCategory;
 
 import com.android.settings.R;
 import com.android.settings.dashboard.RestrictedDashboardFragment;
-import com.android.settingslib.HelpUtils;
-import com.android.settingslib.widget.FooterPreference;
 
 import java.util.Set;
 
@@ -54,7 +51,6 @@ import java.util.Set;
 public class SatelliteSetting extends RestrictedDashboardFragment {
     private static final String TAG = "SatelliteSetting";
     private static final String PREF_KEY_CATEGORY_HOW_IT_WORKS = "key_category_how_it_works";
-    private static final String KEY_FOOTER_PREFERENCE = "satellite_setting_extra_info_footer_pref";
     private static final String KEY_SATELLITE_CONNECTION_GUIDE = "key_satellite_connection_guide";
     private static final String KEY_SUPPORTED_SERVICE = "key_supported_service";
 
@@ -67,7 +63,6 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
     private SatelliteManager mSatelliteManager;
     private PersistableBundle mConfigBundle;
     private int mSubId = SubscriptionManager.INVALID_SUBSCRIPTION_ID;
-    private String mSimOperatorName = "";
     private boolean mIsServiceDataType = false;
     private boolean mIsSmsAvailableForManualType = false;
 
@@ -84,37 +79,30 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
     public void onAttach(Context context) {
         super.onAttach(context);
         mActivity = getActivity();
-        mSubId = mActivity.getIntent().getIntExtra(SUB_ID,
-                SubscriptionManager.INVALID_SUBSCRIPTION_ID);
-        mConfigBundle = fetchCarrierConfigData(mSubId);
-        mIsServiceDataType = getIntent().getBooleanExtra(EXTRA_IS_SERVICE_DATA_TYPE, false);
-        mIsSmsAvailableForManualType = getIntent().getBooleanExtra(
-                EXTRA_IS_SMS_AVAILABLE_FOR_MANUAL_TYPE, false);
-
-        use(SatelliteAppListCategoryController.class).init();
-        use(SatelliteSettingAboutContentController.class).init(mSubId);
-        use(SatelliteSettingAccountInfoController.class).init(mSubId, mConfigBundle,
-                mIsSmsAvailableForManualType, mIsServiceDataType);
-    }
-
-    @Override
-    public void onCreate(@NonNull Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
         mSatelliteManager = mActivity.getSystemService(SatelliteManager.class);
         if (mSatelliteManager == null) {
             Log.d(TAG, "SatelliteManager is null, do nothing.");
             finish();
             return;
         }
-
-        if (!isSatelliteAttachSupported(mSubId)) {
+        mSubId = mActivity.getIntent().getIntExtra(SUB_ID,
+                SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+        mConfigBundle = fetchCarrierConfigData(mSubId);
+        if (!isSatelliteAttachSupported()) {
             Log.d(TAG, "SatelliteSettings: KEY_SATELLITE_ATTACH_SUPPORTED_BOOL is false, "
                     + "do nothing.");
             finish();
-            return;
         }
-
-        mSimOperatorName = getSystemService(TelephonyManager.class).getSimOperatorName(mSubId);
+        mIsServiceDataType = getIntent().getBooleanExtra(EXTRA_IS_SERVICE_DATA_TYPE, false);
+        mIsSmsAvailableForManualType = getIntent().getBooleanExtra(
+                EXTRA_IS_SMS_AVAILABLE_FOR_MANUAL_TYPE, false);
+        boolean isDataAvailableAndNotRestricted = isDataAvailableAndNotRestricted();
+        use(SatelliteAppListCategoryController.class).init(mSubId, mConfigBundle,
+                mIsSmsAvailableForManualType, isDataAvailableAndNotRestricted);
+        use(SatelliteSettingAboutContentController.class).init(mSubId);
+        use(SatelliteSettingAccountInfoController.class).init(mSubId, mConfigBundle,
+                mIsSmsAvailableForManualType, isDataAvailableAndNotRestricted);
+        use(SatelliteSettingFooterController.class).init(mSubId, mConfigBundle);
     }
 
     @Override
@@ -122,7 +110,6 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
         super.onViewCreated(view, savedInstanceState);
         boolean isSatelliteEligible = isSatelliteEligible();
         updateHowItWorksContent(isSatelliteEligible);
-        updateFooterContent();
     }
 
     @Override
@@ -154,34 +141,6 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
         supportedService.setSummary(R.string.summary_supported_service_for_manual_type);
     }
 
-    private void updateFooterContent() {
-        // More about satellite messaging
-        FooterPreference footerPreference = findPreference(KEY_FOOTER_PREFERENCE);
-        if (footerPreference != null) {
-            int summary = mConfigBundle.getBoolean(KEY_EMERGENCY_MESSAGING_SUPPORTED_BOOL)
-                    ? R.string.satellite_setting_summary_more_information
-                    : R.string.satellite_setting_summary_more_information_no_emergency_messaging;
-            footerPreference.setSummary(getResources().getString(summary, mSimOperatorName));
-
-            final String[] link = new String[1];
-            link[0] = readSatelliteMoreInfoString();
-            if (link[0] != null && !link[0].isEmpty()) {
-                footerPreference.setLearnMoreAction(view -> {
-                    if (!link[0].isEmpty()) {
-                        Intent helpIntent = HelpUtils.getHelpIntent(mActivity, link[0],
-                                this.getClass().getName());
-                        if (helpIntent != null) {
-                            mActivity.startActivityForResult(helpIntent, /*requestCode=*/ 0);
-                        }
-                    }
-                });
-
-                footerPreference.setLearnMoreText(
-                        getString(R.string.more_about_satellite_messaging));
-            }
-        }
-    }
-
     private boolean isSatelliteEligible() {
         if (isCarrierRoamingNtnConnectedTypeManual()) {
             return mIsSmsAvailableForManualType;
@@ -189,6 +148,7 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
         try {
             Set<Integer> restrictionReason =
                     mSatelliteManager.getAttachRestrictionReasonsForCarrier(mSubId);
+            Log.d(TAG, "Restriction reason : " + restrictionReason);
             return !restrictionReason.contains(
                     SatelliteManager.SATELLITE_COMMUNICATION_RESTRICTION_REASON_ENTITLEMENT);
         } catch (SecurityException | IllegalStateException | IllegalArgumentException ex) {
@@ -218,17 +178,29 @@ public class SatelliteSetting extends RestrictedDashboardFragment {
         return bundle;
     }
 
-    private String readSatelliteMoreInfoString() {
-        return mConfigBundle.getString(KEY_SATELLITE_INFORMATION_REDIRECT_URL_STRING, "");
-    }
-
     private boolean isCarrierRoamingNtnConnectedTypeManual() {
         return CARRIER_ROAMING_NTN_CONNECT_MANUAL == mConfigBundle.getInt(
                 KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT, CARRIER_ROAMING_NTN_CONNECT_AUTOMATIC);
     }
 
-    private boolean isSatelliteAttachSupported(int subId) {
+    private boolean isSatelliteAttachSupported() {
         return mConfigBundle.getBoolean(KEY_SATELLITE_ATTACH_SUPPORTED_BOOL, false);
+    }
+
+    private boolean isDataAvailableAndNotRestricted() {
+        return getIntent().getBooleanExtra(EXTRA_IS_SERVICE_DATA_TYPE, false)
+                && !isDataRestricted();
+    }
+
+    private boolean isDataRestricted() {
+        int dataMode = SATELLITE_DATA_SUPPORT_ONLY_RESTRICTED;
+        try {
+            dataMode = mSatelliteManager.getSatelliteDataSupportMode(mSubId);
+            Log.d(TAG, "Data mode : " + dataMode);
+        } catch (IllegalStateException e) {
+            Log.d(TAG, "Failed to get data mode : " + e);
+        }
+        return dataMode <= SATELLITE_DATA_SUPPORT_ONLY_RESTRICTED;
     }
 
     private static void loge(String message) {
