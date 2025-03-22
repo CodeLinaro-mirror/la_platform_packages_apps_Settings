@@ -56,8 +56,9 @@ class SupervisionWebContentFiltersScreen : PreferenceScreenCreator {
                 R.string.supervision_web_content_filters_search_title,
             ) +=
                 {
-                    +SupervisionSearchFilterOnPreference()
-                    +SupervisionSearchFilterOffPreference()
+                    val dataStore = SupervisionSafeSearchDataStore(context)
+                    +SupervisionSearchFilterOnPreference(dataStore)
+                    +SupervisionSearchFilterOffPreference(dataStore)
                 }
         }
 

@@ -89,4 +89,28 @@ class SupervisionWebContentFiltersScreenTest {
                 assertThat(allowAllSitesPreference.isChecked).isFalse()
             }
     }
+
+    @Test
+    @EnableFlags(Flags.FLAG_ENABLE_WEB_CONTENT_FILTERS_SCREEN)
+    fun switchSafeSearchPreferences() {
+        FragmentScenario.launchInContainer(supervisionWebContentFiltersScreen.fragmentClass())
+            .onFragment { fragment ->
+                val searchFilterOffPreference =
+                    fragment.findPreference<SelectorWithWidgetPreference>(
+                        SupervisionSearchFilterOffPreference.KEY
+                    )!!
+                val searchFilterOnPreference =
+                    fragment.findPreference<SelectorWithWidgetPreference>(
+                        SupervisionSearchFilterOnPreference.KEY
+                    )!!
+
+                assertThat(searchFilterOffPreference.isChecked).isTrue()
+                assertThat(searchFilterOnPreference.isChecked).isFalse()
+
+                searchFilterOnPreference.performClick()
+
+                assertThat(searchFilterOnPreference.isChecked).isTrue()
+                assertThat(searchFilterOffPreference.isChecked).isFalse()
+            }
+    }
 }

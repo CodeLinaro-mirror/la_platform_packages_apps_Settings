@@ -94,6 +94,7 @@ class ActionDisabledByAdvancedProtectionDialog : SpaDialogWindowTypeActivity() {
             )
             val helpIntent = Intent.parseUri(helpIntentUri, Intent.URI_INTENT_SCHEME)
             if (helpIntent == null) return null
+            helpIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             val helpActivityInfo = packageManager.resolveActivity(helpIntent, /* flags */ 0)
                 ?.activityInfo
             if (helpActivityInfo == null) return null

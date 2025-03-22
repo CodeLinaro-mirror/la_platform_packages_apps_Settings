@@ -37,6 +37,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.face.FaceManager;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.UserHandle;
 import android.platform.test.annotations.DisableFlags;
 import android.platform.test.annotations.EnableFlags;
@@ -52,6 +53,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 
 import com.android.internal.widget.LockPatternUtils;
 import com.android.settings.Settings;
+import com.android.settings.biometrics.BiometricEnrollActivity;
 import com.android.settings.biometrics.face.FaceEnrollIntroductionInternal;
 import com.android.settings.flags.Flags;
 import com.android.settings.testutils.FakeFeatureFactory;
@@ -83,6 +85,7 @@ public class FaceSafetySourceTest {
     @Mock private PackageManager mPackageManager;
     @Mock private DevicePolicyManager mDevicePolicyManager;
     @Mock private FaceManager mFaceManager;
+    @Mock private FingerprintManager mFingerprintManager;
     @Mock private LockPatternUtils mLockPatternUtils;
     @Mock private SafetyCenterManagerWrapper mSafetyCenterManagerWrapper;
     @Mock private SupervisionManager mSupervisionManager;
@@ -97,6 +100,8 @@ public class FaceSafetySourceTest {
         when(mApplicationContext.getSystemService(Context.DEVICE_POLICY_SERVICE))
                 .thenReturn(mDevicePolicyManager);
         when(mApplicationContext.getSystemService(Context.FACE_SERVICE)).thenReturn(mFaceManager);
+        when(mApplicationContext.getSystemService(Context.FINGERPRINT_SERVICE))
+                .thenReturn(mFingerprintManager);
         when(mApplicationContext.getSystemService(Context.SUPERVISION_SERVICE))
                 .thenReturn(mSupervisionManager);
         FakeFeatureFactory featureFactory = FakeFeatureFactory.setupForTest();
@@ -211,10 +216,12 @@ public class FaceSafetySourceTest {
 
     @Test
     @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
-    public void setSafetySourceData_withFaceNotEnrolled_whenNotDisabledByAdmin_setsData() {
+    public void setSafetySourceData_onlyFaceNotEnrolled_whenNotDisabledByAdmin_setsData() {
         when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
         when(mFaceManager.isHardwareDetected()).thenReturn(true);
         when(mFaceManager.hasEnrolledTemplates(anyInt())).thenReturn(false);
+        when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
+        when(mFingerprintManager.hasEnrolledFingerprints(anyInt())).thenReturn(true);
         when(mDevicePolicyManager.getKeyguardDisabledFeatures(COMPONENT_NAME)).thenReturn(0);
 
         FaceSafetySource.setSafetySourceData(mApplicationContext, EVENT_SOURCE_STATE_CHANGED);
@@ -223,6 +230,24 @@ public class FaceSafetySourceTest {
                 "security_settings_face_preference_title_new",
                 "security_settings_face_preference_summary_none_new",
                 FaceEnrollIntroductionInternal.class.getName());
+    }
+
+    @Test
+    @RequiresFlagsEnabled(Flags.FLAG_BIOMETRICS_ONBOARDING_EDUCATION)
+    public void setSafetySourceData_noBiometricEnrolled_whenNotDisabledByAdmin_setsData() {
+        when(mSafetyCenterManagerWrapper.isEnabled(mApplicationContext)).thenReturn(true);
+        when(mFaceManager.isHardwareDetected()).thenReturn(true);
+        when(mFaceManager.hasEnrolledTemplates(anyInt())).thenReturn(false);
+        when(mFingerprintManager.isHardwareDetected()).thenReturn(true);
+        when(mFingerprintManager.hasEnrolledFingerprints(anyInt())).thenReturn(false);
+        when(mDevicePolicyManager.getKeyguardDisabledFeatures(COMPONENT_NAME)).thenReturn(0);
+
+        FaceSafetySource.setSafetySourceData(mApplicationContext, EVENT_SOURCE_STATE_CHANGED);
+
+        assertSafetySourceEnabledDataSetWithSingularSummary(
+                "security_settings_face_preference_title_new",
+                "security_settings_face_preference_summary_none_new",
+                BiometricEnrollActivity.InternalActivity.class.getName());
     }
 
     @Test

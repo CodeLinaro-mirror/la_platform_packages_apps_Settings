@@ -139,15 +139,16 @@ public class RegionDialogFragment extends InstrumentedDialogFragment {
                             mContext,
                             SettingsEnums.ACTION_CHANGE_REGION_DIALOG_POSITIVE_BTN_CLICKED);
                     // TODO: add new metrics for DIALOG_CHANGE_PREFERRED_LOCALE_REGION
+                    dismiss();
+                    if (getActivity() != null) {
+                        getActivity().finish();
+                    }
                 } else {
                     mMetricsFeatureProvider.action(
                             mContext,
                             SettingsEnums.ACTION_CHANGE_REGION_DIALOG_NEGATIVE_BTN_CLICKED);
                     // TODO: add new metrics for DIALOG_CHANGE_PREFERRED_LOCALE_REGION
-                }
-                dismiss();
-                if (getActivity() != null) {
-                    getActivity().finish();
+                    dismiss();
                 }
             }
         }

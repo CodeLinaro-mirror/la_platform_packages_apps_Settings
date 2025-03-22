@@ -104,6 +104,39 @@ public class AudioSharingDeviceVolumePreference extends SeekBarPreference {
         handleProgressChange(seekBar.getProgress());
     }
 
+    @Override
+    public boolean equals(@Nullable Object o) {
+        if ((o == null) || !(o instanceof AudioSharingDeviceVolumePreference)) {
+            return false;
+        }
+        return mCachedDevice.equals(
+                ((AudioSharingDeviceVolumePreference) o).mCachedDevice);
+    }
+
+    @Override
+    public int hashCode() {
+        return mCachedDevice.hashCode();
+    }
+
+    @Override
+    @NonNull
+    public String toString() {
+        StringBuilder builder = new StringBuilder("Preference{");
+        builder.append("preference=").append(super.toString());
+        if (mCachedDevice.getDevice() != null) {
+            builder.append(", device=").append(mCachedDevice.getDevice().getAnonymizedAddress());
+        }
+        builder.append("}");
+        return builder.toString();
+    }
+
+    void onPreferenceAttributesChanged() {
+        var unused = ThreadUtils.postOnBackgroundThread(() -> {
+            String name = mCachedDevice.getName();
+            AudioSharingUtils.postOnMainThread(mContext, () -> setTitle(name));
+        });
+    }
+
     private void handleProgressChange(int progress) {
         var unused =
                 ThreadUtils.postOnBackgroundThread(

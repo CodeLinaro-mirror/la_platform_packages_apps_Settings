@@ -59,6 +59,10 @@ public final class BluetoothKeyMissingReceiver extends BroadcastReceiver {
         if (device == null) {
             return;
         }
+        if (BluetoothUtils.isExclusivelyManagedBluetoothDevice(context, device)) {
+            Log.d(TAG, "Exclusively managed device " + device + ", skip");
+            return;
+        }
         PowerManager powerManager = context.getSystemService(PowerManager.class);
         if (TextUtils.equals(action, BluetoothDevice.ACTION_KEY_MISSING)) {
             Log.d(TAG, "Receive ACTION_KEY_MISSING");

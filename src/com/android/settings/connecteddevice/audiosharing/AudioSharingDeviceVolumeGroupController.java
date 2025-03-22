@@ -368,6 +368,7 @@ public class AudioSharingDeviceVolumeGroupController extends AudioSharingBasePre
             mAssistant.registerServiceCallBack(mExecutor, mBroadcastAssistantCallback);
             mVolumeControl.registerCallback(mExecutor, mVolumeControlCallback);
             mBluetoothDeviceUpdater.registerCallback();
+            mBluetoothDeviceUpdater.refreshPreference();
             mContentResolver.registerContentObserver(
                     Settings.Secure.getUriFor(BluetoothUtils.getPrimaryGroupIdUriForBroadcast()),
                     false,

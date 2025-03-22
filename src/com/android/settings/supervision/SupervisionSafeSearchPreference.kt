@@ -18,9 +18,7 @@ package com.android.settings.supervision
 import android.content.Context
 import androidx.preference.Preference
 import com.android.settings.R
-import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.Permissions
-import com.android.settingslib.datastore.SettingsSecureStore
 import com.android.settingslib.metadata.BooleanValuePreference
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.ReadWritePermit
@@ -30,9 +28,10 @@ import com.android.settingslib.preference.forEachRecursively
 import com.android.settingslib.widget.SelectorWithWidgetPreference
 
 /** Base class of web content filters SafeSearch preferences. */
-sealed class SupervisionSafeSearchPreference :
-    BooleanValuePreference, SelectorWithWidgetPreference.OnClickListener, PreferenceBinding {
-    override fun storage(context: Context): KeyValueStore = SettingsSecureStore.get(context)
+sealed class SupervisionSafeSearchPreference(
+    protected val dataStore: SupervisionSafeSearchDataStore
+) : BooleanValuePreference, SelectorWithWidgetPreference.OnClickListener, PreferenceBinding {
+    override fun storage(context: Context) = dataStore
 
     override fun getReadPermissions(context: Context) = Permissions.EMPTY
 
@@ -64,15 +63,15 @@ sealed class SupervisionSafeSearchPreference :
     override fun bind(preference: Preference, metadata: PreferenceMetadata) {
         super.bind(preference, metadata)
         (preference as SelectorWithWidgetPreference).also {
-            // TODO(b/401568995): Set the isChecked value using stored values.
-            it.isChecked = (it.key == SupervisionSearchFilterOffPreference.KEY)
+            it.isChecked = (dataStore.getBoolean(it.key) == true)
             it.setOnClickListener(this)
         }
     }
 }
 
 /** The SafeSearch filter on preference. */
-class SupervisionSearchFilterOnPreference : SupervisionSafeSearchPreference() {
+class SupervisionSearchFilterOnPreference(dataStore: SupervisionSafeSearchDataStore) :
+    SupervisionSafeSearchPreference(dataStore) {
 
     override val key
         get() = KEY
@@ -89,7 +88,8 @@ class SupervisionSearchFilterOnPreference : SupervisionSafeSearchPreference() {
 }
 
 /** The SafeSearch filter off preference. */
-class SupervisionSearchFilterOffPreference : SupervisionSafeSearchPreference() {
+class SupervisionSearchFilterOffPreference(dataStore: SupervisionSafeSearchDataStore) :
+    SupervisionSafeSearchPreference(dataStore) {
 
     override val key
         get() = KEY
