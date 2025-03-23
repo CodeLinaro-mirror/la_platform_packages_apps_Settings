@@ -16,6 +16,9 @@
 
 package com.android.settings.network.telephony.satellite;
 
+import static android.telephony.CarrierConfigManager.CARRIER_ROAMING_NTN_CONNECT_AUTOMATIC;
+import static android.telephony.CarrierConfigManager.CARRIER_ROAMING_NTN_CONNECT_MANUAL;
+import static android.telephony.CarrierConfigManager.KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT;
 import static android.telephony.CarrierConfigManager.KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL;
 
 import static com.android.settings.core.BasePreferenceController.AVAILABLE;
@@ -81,6 +84,8 @@ public class SatelliteSettingAccountInfoControllerTest {
 
     @Test
     public void getAvailabilityStatus_entitlementNotSupport_returnConditionalUnavailable() {
+        mPersistableBundle.putInt(KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT,
+                CARRIER_ROAMING_NTN_CONNECT_AUTOMATIC);
         when(mContext.getSystemService(SatelliteManager.class)).thenReturn(null);
         mController.init(TEST_SUB_ID, mPersistableBundle, false, false);
 
@@ -91,7 +96,20 @@ public class SatelliteSettingAccountInfoControllerTest {
 
     @Test
     public void getAvailabilityStatus_entitlementIsSupported_returnConditionalUnavailable() {
+        mPersistableBundle.putInt(KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT,
+                CARRIER_ROAMING_NTN_CONNECT_AUTOMATIC);
         mPersistableBundle.putBoolean(KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL, true);
+        mController.init(TEST_SUB_ID, mPersistableBundle, false, false);
+
+        int result = mController.getAvailabilityStatus(TEST_SUB_ID);
+
+        assertThat(result).isEqualTo(AVAILABLE);
+    }
+
+    @Test
+    public void getAvailabilityStatus_connectionTypeISManual_returnAvailable() {
+        mPersistableBundle.putInt(KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT,
+                CARRIER_ROAMING_NTN_CONNECT_MANUAL);
         mController.init(TEST_SUB_ID, mPersistableBundle, false, false);
 
         int result = mController.getAvailabilityStatus(TEST_SUB_ID);

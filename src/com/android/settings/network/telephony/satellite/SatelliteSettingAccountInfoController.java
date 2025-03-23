@@ -101,6 +101,10 @@ public class SatelliteSettingAccountInfoController extends TelephonyBasePreferen
 
     @Override
     public int getAvailabilityStatus(int subId) {
+        if (mConfigBundle.getInt(KEY_CARRIER_ROAMING_NTN_CONNECT_TYPE_INT)
+                == CARRIER_ROAMING_NTN_CONNECT_MANUAL) {
+            return AVAILABLE;
+        }
         return mConfigBundle.getBoolean(KEY_SATELLITE_ENTITLEMENT_SUPPORTED_BOOL)
                 ? AVAILABLE
                 : CONDITIONALLY_UNAVAILABLE;

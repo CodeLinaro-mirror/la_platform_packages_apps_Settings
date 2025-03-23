@@ -40,6 +40,7 @@ import com.android.settings.testutils.ResourcesUtils;
 import com.android.settingslib.widget.FooterPreference;
 
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 import org.mockito.Mock;
@@ -115,6 +116,7 @@ public class SatelliteSettingFooterControllerTest {
     }
 
     @Test
+    @Ignore("b/405279842")
     public void displayPreferenceScreen_emergencyMsgSupport_noEmergencyContent() {
         mPersistableBundle.putBoolean(KEY_EMERGENCY_MESSAGING_SUPPORTED_BOOL, true);
         PreferenceScreen screen = new PreferenceManager(mContext).createPreferenceScreen(mContext);

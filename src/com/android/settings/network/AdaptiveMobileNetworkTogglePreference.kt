@@ -16,11 +16,11 @@
 
 package com.android.settings.network
 
-import android.app.settings.SettingsEnums.ACTION_ADAPTIVE_CONNECTIVITY
+import android.app.settings.SettingsEnums.ACTION_ADAPTIVE_MOBILE_NETWORK
 import android.content.Context
 import android.provider.Settings.Secure.ADAPTIVE_CONNECTIVITY_MOBILE_NETWORK_ENABLED
 import com.android.settings.R
-import com.android.settings.contract.KEY_ADAPTIVE_CONNECTIVITY
+import com.android.settings.contract.KEY_ADAPTIVE_MOBILE_NETWORK
 import com.android.settings.metrics.PreferenceActionMetricsProvider
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyValueStoreDelegate
@@ -38,12 +38,12 @@ class AdaptiveMobileNetworkTogglePreference() :
     PreferenceActionMetricsProvider {
 
     override val preferenceActionMetrics: Int
-        get() = ACTION_ADAPTIVE_CONNECTIVITY
+        get() = ACTION_ADAPTIVE_MOBILE_NETWORK
 
     override val key: String
         get() = KEY
 
-    override fun tags(context: Context) = arrayOf(KEY_ADAPTIVE_CONNECTIVITY)
+    override fun tags(context: Context) = arrayOf(KEY_ADAPTIVE_MOBILE_NETWORK)
 
     override fun storage(context: Context): KeyValueStore =
         AdaptiveMobileNetworkToggleStorage(context)

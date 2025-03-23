@@ -1358,6 +1358,10 @@
     <string name="lock_screen_pattern_skip_fingerprint_title">Skip setup for pattern and fingerprint?</string>
     <!-- Title of dialog shown when the user tries to skip setting up a pattern, warning them of potential consequences of not doing so [CHAR LIMIT=48]-->
     <string name="lock_screen_pattern_skip_biometrics_title">Skip setup for pattern, face, and fingerprint?</string>
+    <!-- Accessibility action label for resuming animation -->
+    <string name="resume_animation">Resume animation</string>
+    <!-- Accessibility action label for pausing animation -->
+    <string name="pause_animation">Pause animation</string>
 
     <!-- Button text to setup screen lock in onboard dialog [CHAR LIMIT=34] -->
     <string name="security_settings_fingerprint_enroll_setup_screen_lock">Set up screen lock</string>
@@ -5934,6 +5938,10 @@
     <string name="accessibility_hearing_device_pairing_page_title">Pair hearing device</string>
     <!-- Subtitle for the pair hearing device page. [CHAR LIMIT=NONE] -->
     <string name="accessibility_hearing_device_pairing_intro">You can pair ASHA and LE Audio hearing devices on this page. Make sure your hearing device is turned on and ready to pair.</string>
+    <!-- Subtitle for the pair hearing device page. This string is for device that only supports ASHA hearing aids. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_pairing_asha_only_intro">You can pair ASHA hearing devices on this page. Make sure your hearing device is turned on and ready to pair.</string>
+    <!-- Subtitle for the pair hearing device page. This string is for device that only supports LE Audio hearing aids. [CHAR LIMIT=NONE] -->
+    <string name="accessibility_hearing_device_pairing_hap_only_intro">You can pair LE Audio hearing devices on this page. Make sure your hearing device is turned on and ready to pair.</string>
     <!-- Title for the preference category containing the list of the available hearing during and after bluetooth scanning devices. [CHAR LIMIT=30] -->
     <string name="accessibility_found_hearing_devices">Available hearing devices</string>
     <!-- Title for the preference category containing the all bluetooth devices during and after bluetooth scanning devices. Used when people can not find their hearing device in hearing device pairing list. [CHAR LIMIT=45] -->
@@ -12764,6 +12772,10 @@ Data usage charges may apply.</string>
     <string name="title_satellite_supported_app_list_entry">see all apps</string>
     <!-- Title for a page of apps list page with Satellite service supported.  [CHAR LIMIT=60] -->
     <string name="title_satellite_supported_app_list_page">Supported apps on your phone</string>
+    <!-- Title for showing a dialog to notify user sim restriction.  [CHAR LIMIT=60] -->
+    <string name="title_satellite_dialog_for_sim_restriction">Can\u2019t add a SIM</string>
+    <!-- Description for showing a dialog to notify user sim restriction.  [CHAR LIMIT=NONE] -->
+    <string name="description_satellite_dialog_for_sim_restriction">End the satellite connection before you add a SIM</string>
 
     <!-- Title for Apn settings in mobile network settings [CHAR LIMIT=60] -->
     <string name="mobile_network_apn_title">Access Point Names</string>

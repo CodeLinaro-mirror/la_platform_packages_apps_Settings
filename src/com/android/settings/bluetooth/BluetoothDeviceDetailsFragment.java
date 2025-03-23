@@ -60,6 +60,8 @@ import com.android.settingslib.core.AbstractPreferenceController;
 import com.android.settingslib.core.instrumentation.MetricsFeatureProvider;
 import com.android.settingslib.core.lifecycle.Lifecycle;
 
+import com.google.common.collect.ImmutableList;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.function.Consumer;
@@ -417,13 +419,17 @@ public class BluetoothDeviceDetailsFragment extends BluetoothDetailsConfigurable
     @Nullable
     private List<String> generateDisplayedPreferenceKeys(boolean bondingLoss) {
         if (bondingLoss) {
-            return List.of(
-                    use(BluetoothDetailsBannerController.class).getPreferenceKey(),
-                    use(AdvancedBluetoothDetailsHeaderController.class).getPreferenceKey(),
-                    use(BluetoothDetailsHeaderController.class).getPreferenceKey(),
-                    use(LeAudioBluetoothDetailsHeaderController.class).getPreferenceKey(),
-                    use(BluetoothDetailsButtonsController.class).getPreferenceKey(),
-                    use(BluetoothDetailsMacAddressController.class).getPreferenceKey());
+            ImmutableList.Builder<String> visibleKeys = new ImmutableList.Builder<>();
+            visibleKeys
+                    .add(use(BluetoothDetailsBannerController.class).getPreferenceKey())
+                    .add(use(AdvancedBluetoothDetailsHeaderController.class).getPreferenceKey())
+                    .add(use(BluetoothDetailsHeaderController.class).getPreferenceKey())
+                    .add(use(LeAudioBluetoothDetailsHeaderController.class).getPreferenceKey())
+                    .add(use(BluetoothDetailsButtonsController.class).getPreferenceKey());
+            if (!BluetoothUtils.isHeadset(mCachedDevice.getDevice())) {
+                visibleKeys.add(use(BluetoothDetailsMacAddressController.class).getPreferenceKey());
+            }
+            return visibleKeys.build();
         }
         return null;
     }
