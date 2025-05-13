@@ -13,11 +13,10 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Changes from Qualcomm Innovation Center are provided under the
- * following license:
- *
- * Copyright (c) 2023, 2025 Qualcomm Innovation Center, Inc. All rights reserved.
+ * Changes from Qualcomm Technologies, Inc. are provided under the following license:
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
  * SPDX-License-Identifier: BSD-3-Clause-Clear
+ *
  */
 
 package com.android.settings.development;
@@ -52,13 +51,21 @@ public class BluetoothAudioRoleSwitch extends
             "persist.vendor.service.bt.a2dp.sink";
 
     @VisibleForTesting
+    static final String BLUETOOTH_PROFILES_SOURCE_ROLE_PROPERTY =
+            "persist.vendor.service.bt.source.role.enabled";
+
+    @VisibleForTesting
+    static final String BLUETOOTH_PROFILES_SINK_ROLE_PROPERTY =
+            "persist.vendor.service.bt.sink.role.enabled";
+
+    @VisibleForTesting
     static final String HFP_CLIENT_ROLE_PROPERTY =
             "persist.vendor.service.bt.hfp.client";
 
     @VisibleForTesting
-    static final String SINK_ROLE_ENABLED = "true";
+    static final String ROLE_ENABLED = "true";
     @VisibleForTesting
-    static final String SINK_ROLE_DISABLED = "false";
+    static final String ROLE_DISABLED = "false";
 
     @VisibleForTesting
     boolean mChanged = false;
@@ -92,7 +99,7 @@ public class BluetoothAudioRoleSwitch extends
     public void updateState(Preference preference) {
         super.updateState(preference);
         final boolean currentValue =
-                 SystemProperties.getBoolean(A2DP_SINK_ROLE_PROPERTY, true);
+                 SystemProperties.getBoolean(A2DP_SINK_ROLE_PROPERTY, false);
         ((SwitchPreference) mPreference).setChecked(!currentValue);
     }
 
@@ -101,8 +108,10 @@ public class BluetoothAudioRoleSwitch extends
     protected void onDeveloperOptionsSwitchDisabled() {
         super.onDeveloperOptionsSwitchDisabled();
         try {
-            SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
-            SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_ENABLED);
+            SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, ROLE_ENABLED);
+            SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, ROLE_ENABLED);
+            SystemProperties.set(BLUETOOTH_PROFILES_SINK_ROLE_PROPERTY, ROLE_ENABLED);
+            SystemProperties.set(BLUETOOTH_PROFILES_SOURCE_ROLE_PROPERTY, ROLE_DISABLED);
             ((SwitchPreference) mPreference).setChecked(false);
         } catch (RuntimeException e) {
             Log.e(TAG, "Fail to set A2DP sink and HFP Client system property: " + e.getMessage());
@@ -116,7 +125,7 @@ public class BluetoothAudioRoleSwitch extends
     public boolean isDefaultValue() {
        try {
             final String currentValue = SystemProperties.get(A2DP_SINK_ROLE_PROPERTY);
-            return !currentValue.equals(SINK_ROLE_ENABLED);
+            return !currentValue.equals(ROLE_ENABLED);
         } catch (RuntimeException e) {
             Log.e(TAG, "Fail to get A2DP sink system property: " + e.getMessage());
         }
@@ -131,14 +140,33 @@ public class BluetoothAudioRoleSwitch extends
             return;
         }
         try {
-            final String currentValue = SystemProperties
-                    .get(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
-            if (currentValue.equals(SINK_ROLE_DISABLED)) {
-                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_ENABLED);
-                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_ENABLED);
+            final String currentA2dpSinkValue = SystemProperties
+                    .get(A2DP_SINK_ROLE_PROPERTY, ROLE_DISABLED);
+            if (currentA2dpSinkValue.equals(ROLE_DISABLED)) {
+                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, ROLE_ENABLED);
             } else {
-                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, SINK_ROLE_DISABLED);
-                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, SINK_ROLE_DISABLED);
+                SystemProperties.set(A2DP_SINK_ROLE_PROPERTY, ROLE_DISABLED);
+            }
+            final String currentHFPValue = SystemProperties
+                    .get(HFP_CLIENT_ROLE_PROPERTY, ROLE_DISABLED);
+            if (currentHFPValue.equals(ROLE_DISABLED)) {
+                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, ROLE_ENABLED);
+            } else {
+                SystemProperties.set(HFP_CLIENT_ROLE_PROPERTY, ROLE_DISABLED);
+            }
+            final String currentSinkValue = SystemProperties
+                    .get(BLUETOOTH_PROFILES_SINK_ROLE_PROPERTY, ROLE_DISABLED);
+            if (currentSinkValue.equals(ROLE_DISABLED)) {
+                SystemProperties.set(BLUETOOTH_PROFILES_SINK_ROLE_PROPERTY, ROLE_ENABLED);
+            } else {
+                SystemProperties.set(BLUETOOTH_PROFILES_SINK_ROLE_PROPERTY, ROLE_DISABLED);
+            }
+            final String currentSourceValue = SystemProperties
+                    .get(BLUETOOTH_PROFILES_SOURCE_ROLE_PROPERTY, ROLE_DISABLED);
+            if (currentSourceValue.equals(ROLE_DISABLED)) {
+                SystemProperties.set(BLUETOOTH_PROFILES_SOURCE_ROLE_PROPERTY, ROLE_ENABLED);
+            } else {
+                SystemProperties.set(BLUETOOTH_PROFILES_SOURCE_ROLE_PROPERTY, ROLE_DISABLED);
             }
             updateState(mPreference);
         } catch (RuntimeException e) {
