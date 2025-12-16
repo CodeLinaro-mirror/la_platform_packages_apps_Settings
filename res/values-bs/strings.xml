@@ -943,7 +943,7 @@
     <string name="bluetooth_pairing_shares_phonebook" msgid="4329325125260724843">"Dozvoli pristup kontaktima i historiji poziva"</string>
     <string name="bluetooth_pairing_phonebook_toggle_text" msgid="2474015367387690034">"Također dozvoli pristup kontaktima i historiji poziva"</string>
     <string name="bluetooth_pairing_phonebook_toggle_details" msgid="1367197978487212581">"Podaci će se koristiti za obavještenja o pozivu i drugo"</string>
-    <string name="bluetooth_pairing_confirmation_title" msgid="3359642089708714808">"Provjerite kôd za uparivanje"</string>
+    <string name="bluetooth_pairing_confirmation_title" msgid="3359642089708714808">"Provjerite kodove za uparivanje"</string>
     <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"Provjerite podudara li se ovaj kôd s kodom na uređaju <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.\n\nRadi sigurnosti nemojte unositi ovaj kôd nigdje."</string>
     <string name="bluetooth_error_title" msgid="2284738188253690278"></string>
     <string name="bluetooth_connecting_error_message" msgid="3941893154784152112">"Nije uspjelo povezivanje sa uređajem <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
@@ -2526,7 +2526,7 @@
     <string name="accessibility_tutorial_dialog_message_triple" msgid="5219991116201165146">"Da pokrenete i zaustavite uvećavanje, triput dodirnite bilo gdje na ekranu."</string>
     <string name="accessibility_tutorial_dialog_tripletap_instruction" msgid="7549293553589934">"Da pokrenete i zaustavite uvećavanje, brzo dodirnite ekran %1$d puta"</string>
     <string name="accessibility_tutorial_dialog_twofinger_doubletap_instruction" msgid="1007756360115974649">"Da pokrenete i zaustavite uvećavanje, brzo dodirnite ekran dvaput s %1$d prsta"</string>
-    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje. Zatim pronađite karticu {featureName}.}one{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje s # prstom. Zatim pronađite karticu {featureName}.}few{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje sa # prsta. Zatim pronađite karticu {featureName}.}other{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje sa # prstiju. Zatim pronađite karticu {featureName}.}}"</string>
+    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje. Zatim pronađite pločicu {featureName}.}one{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje s # prstom. Zatim pronađite pločicu {featureName}.}few{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje sa # prsta. Zatim pronađite pločicu {featureName}.}other{Da koristite ovu funkciju, prevucite s vrha ekrana nadolje sa # prstiju. Zatim pronađite pločicu {featureName}.}}"</string>
     <string name="accessibility_tutorial_dialog_shortcut_unavailable_in_suw" msgid="3847728530771929959">"Ova prečica će biti dostupna kada završite postavljanje uređaja."</string>
     <string name="accessibility_tutorial_dialog_message_gesture" msgid="4148062210755434854">"Da koristite ovu funkciju, prevucite s 2 prsta nagore s dna ekrana.\n\nDa prebacujete između funkcija, prevucite s 2 prsta nagore i zadržite."</string>
     <string name="accessibility_tutorial_dialog_gesture_shortcut_instruction" msgid="7349950768250852308">"{count,plural, =1{Da koristite ovu funkciju, prevucite s dna ekrana nagore}one{Da koristite ovu funkciju, prevucite s dna ekrana nagore s # prstom}few{Da koristite ovu funkciju, prevucite s dna ekrana nagore sa # prsta}other{Da koristite ovu funkciju, prevucite s dna ekrana nagore sa # prstiju}}"</string>
@@ -2629,7 +2629,7 @@
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"Koristi inverziju boja"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"Prečica za inverziju boja"</string>
     <string name="accessibility_display_inversion_preference_intro_text" msgid="1159663288481145318">"Inverzija boja mijenja svijetle ekrane u tamne, kao i tamne u svijetle."</string>
-    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Imajte na umu&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; Boje u medijskim fajlovima i slikama će se promijeniti&lt;/li&gt; &lt;li&gt; Inverzija boja funkcionira u svim aplikacijama&lt;/li&gt; &lt;li&gt; Za prikazivanje tamne pozadine se može koristiti tamna tema&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Imajte na umu&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt;&amp;nbsp;Boje u medijskim fajlovima i slikama će se promijeniti&lt;/li&gt; &lt;li&gt;&amp;nbsp;Inverzija boja funkcionira u svim aplikacijama&lt;/li&gt; &lt;li&gt;&amp;nbsp;Za prikazivanje tamne pozadine se može koristiti tamna tema&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"ulazak u postavke"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"Automatski klik (vrijeme zadržavanja)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"Automatski klik (vrijeme zadržavanja)"</string>
@@ -2659,7 +2659,7 @@
     <string name="autoclick_cursor_area_size_dialog_option_small" msgid="3987901922883658043">"Malo"</string>
     <string name="autoclick_cursor_area_size_dialog_option_extra_small" msgid="6056674574040448864">"Veoma malo"</string>
     <string name="autoclick_ignore_minor_cursor_movement_title" msgid="5038721995720529808">"Zanemari manje pomjeranje kursora"</string>
-    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Koristite lijevi klik kao zadanu radnju"</string>
+    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Korištenje lijevog klika kao zadane radnje"</string>
     <string name="autoclick_revert_to_left_click_summary" msgid="9207568192335942225">"Kada koristite drugu radnju, automatski klik će se automatski vratiti na lijevi klik"</string>
     <string name="accessibility_autoclick_navigation_title" msgid="1577786826651016069">"Automatski klik najbolje funkcionira s navigacijom pomoću 3 dugmeta"</string>
     <string name="accessibility_autoclick_navigation_message" msgid="4985375526457764240">"Da se lako vratite, odete na početni ekran i prebacujete između aplikacija kada koristite automatski klik, koristite navigaciju pomoću 3 dugmeta umjesto navigacije pokretima"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Postavke navigacije"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Vibracija i haptika"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Kontrola jačine vibracije za različite upotrebe"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Uključeno / upravljanje nivoima vibracije za pozive, obavještenja i alarme"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Uključeno / Upravljanje nivoima vibracije za pozive, obavještenja i alarme"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Isključeno / upravljanje nivoima vibracije za pozive, obavještenja i alarme"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Postavka je onemogućena jer je uređaj postavljen na nečujno"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Pozivi"</string>
@@ -4564,7 +4564,7 @@
     <string name="filter_install_sources_apps" msgid="6930762738519588431">"Mogu instalirati druge aplikacije"</string>
     <string name="filter_write_settings_apps" msgid="4754994984909024093">"Mogu mijenjati postavke sistema"</string>
     <string name="write_settings_title" msgid="3011034187823288557">"Mogu mijenjati postavke sistema"</string>
-    <string name="write_system_settings" msgid="5555707701419757421">"Izmijeni postavke sistema"</string>
+    <string name="write_system_settings" msgid="5555707701419757421">"Izmjena postavki sistema"</string>
     <string name="permit_write_settings" msgid="3113056800709924871">"Dozvoli izmjenu postavki sistema"</string>
     <string name="write_settings_description" msgid="1474881759793261146">"Ovo odobrenje omogućava aplikaciji da izmijeni postavke sistema."</string>
     <string name="external_source_switch_title" msgid="101571983954849473">"Dozvoli iz ovog izvora"</string>
@@ -5725,7 +5725,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Senzor za otisak prsta"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Obavještenja blicanjem"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Informacije o obavještenjima blicanjem"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Isključeno / dobijajte obavještenja putem blicanja kamere ili ekrana za obavještenja i alarme"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Isključeno / Dobijajte obavještenja putem blicanja kamere ili ekrana za obavještenja i alarme"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Uključeno / dobijajte obavještenja putem blicanja kamere ili ekrana za obavještenja i alarme"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"Kamera ili ekran blicaju kada primite obavještenje ili se alarm oglasi"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Ekran blica kada primite obavještenje ili se alarm oglasi"</string>
@@ -5764,7 +5764,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Mijenja svijetle ekrane u tamne i tamne ekrane u svijetle"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Uvećajte da sadržaj na ekranu prikažete većim"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Isključeno"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Isključeno / prilagođavanje veličine i stila titlova"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Isključeno / Prilagođavanje veličine i stila titlova"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Uključeno / prilagođavanje veličine i stila titlova"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Isključeno"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Uključeno"</string>

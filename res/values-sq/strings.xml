@@ -158,7 +158,7 @@
     <string name="connected_device_add_device_summary" msgid="8671009879957120802">"Bluetooth-i do të aktivizohet për çiftimin"</string>
     <string name="connected_device_connections_title" msgid="4164120115341579170">"Preferencat e lidhjes"</string>
     <string name="connected_device_previously_connected_screen_title" msgid="8823331744788100605">"Të lidhura më parë"</string>
-    <string name="connected_device_bluetooth_turned_on_toast" msgid="144664089794199928">"Bluetooth-i është i aktivizuar"</string>
+    <string name="connected_device_bluetooth_turned_on_toast" msgid="144664089794199928">"Bluetooth-i u aktivizua"</string>
     <string name="previous_connected_see_all" msgid="7759413145713251328">"Shiko të gjitha"</string>
     <string name="connected_device_fast_pair_device_see_all" msgid="4898279230458128620">"Shiko të gjitha"</string>
     <string name="stylus_device_details_title" msgid="7618295136015480864">"Stilolapsi"</string>
@@ -2288,7 +2288,7 @@
     <string name="action_corner_top_left_title" msgid="4633975226092344210">"Këndi i sipërm majtas"</string>
     <string name="action_corner_top_right_title" msgid="4995999693840776032">"Këndi i sipërm djathtas"</string>
     <string name="action_corner_action_none" msgid="5203163099950649999">"Asnjë"</string>
-    <string name="action_corner_action_home" msgid="6779642573582379579">"Faqja e parë"</string>
+    <string name="action_corner_action_home" msgid="6779642573582379579">"Ekrani bazë"</string>
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"Aplikacionet e fundit"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"Njoftimet"</string>
     <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"Cilësimet e shpejta"</string>
@@ -2558,7 +2558,7 @@
     <string name="accessibility_shortcut_edit_screen_title_triple_tap" msgid="3314488747597058942">"Trokit tri herë"</string>
     <string name="accessibility_shortcut_edit_screen_summary_triple_tap" msgid="4839204951599629871">"Trokit me shpejtësi tek ekrani %1$d herë. Kjo mund ta ngadalësojë pajisjen."</string>
     <string name="accessibility_shortcut_two_finger_double_tap_keyword" msgid="6271718715836961167">"Trokit dy herë me %1$d gishta"</string>
-    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"trokit tri herë"</string>
+    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"trokitja tri herë"</string>
     <string name="accessibility_shortcut_edit_dialog_title_advance" msgid="4567868630655591506">"Të përparuara"</string>
     <string name="accessibility_screen_magnification_navbar_configuration_warning" msgid="266736851606791552">"Butoni i \"Qasshmërisë\" është caktuar te <xliff:g id="SERVICE">%1$s</xliff:g>. Për të përdorur zmadhimin, prek dhe mbaj butonin e \"Qasshmërisë\" dhe më pas zgjidh zmadhimin."</string>
     <string name="accessibility_screen_magnification_gesture_navigation_warning" msgid="991017769735632046">"Gjesti i qasshmërisë është caktuar në <xliff:g id="SERVICE">%1$s</xliff:g>. Për të përdorur zmadhimin, rrëshqit lart me dy gishta nga fundi i ekranit dhe mbaje. Më pas zgjidh zmadhimin."</string>
@@ -3133,7 +3133,7 @@
     <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Kalo automatikisht në rrjetin celular"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"Siguron lidhshmërinë kur lidhja Wi-Fi është e dobët ose nuk ofrohet. Mund të zbatohen tarifa për të dhënat."</string>
     <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Optimizo rrjetin për kohëzgjatjen e baterisë"</string>
-    <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Zgjedh automatikisht lidhjen më të mirë të rrjetit për të zgjatur kohëzgjatjen e baterisë"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Zgjedh automatikisht lidhjen më të mirë të rrjetit për të rritur kohëzgjatjen e baterisë"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Siguria e rrjetit celular"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Lloji i rrjetit, enkriptimi, kontrollet e njoftimeve"</string>
     <string name="cellular_security_top_intro" msgid="6749166804080092892">"Këto cilësime ndihmojnë për t\'i mbrojtur telefonatat, mesazhet dhe të dhënat e tua nga rrjetet e papërditësuara ose të paenkriptuara që mund të të ekspozojnë ndaj mbikëqyrjes ose vjedhjes së të dhënave"</string>

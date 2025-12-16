@@ -1510,7 +1510,7 @@
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Բարձրացնել՝ միանալու համար"</string>
     <string name="screensaver_restrict_to_wireless_charging_title" msgid="8016059995446029358">"Միայն անլար լիցքավորման ժամանակ"</string>
     <string name="blur_switch" msgid="1391073945502754948">"Անջատել շաղման էֆեկտները"</string>
-    <string name="blur_switch_summary" msgid="5025895302219948597">"Ֆոնային տարրերն ու վահանակներն ավելի տեսանելի դարձրեք"</string>
+    <string name="blur_switch_summary" msgid="5025895302219948597">"Ֆոնային տարրերն ու վահանակներն ավելի տեսանելի դարձնել"</string>
     <string name="blur_switch_disabled_summary" msgid="4664341513589412290">"Ժամանակավորապես անջատվել է մարտկոցի տնտեսման համար"</string>
     <string name="low_light_display_behavior_main_switch_title" msgid="7138165032358139627">"Օգտագործել թույլ լուսավորության ռեժիմը"</string>
     <string name="low_light_display_behavior_subtitle" msgid="1833984014035605413">"Ընտրեք, թե ինչ պետք է ցուցադրվի թույլ լուսավորության ռեժիմում"</string>
@@ -2659,7 +2659,7 @@
     <string name="autoclick_cursor_area_size_dialog_option_small" msgid="3987901922883658043">"Փոքր"</string>
     <string name="autoclick_cursor_area_size_dialog_option_extra_small" msgid="6056674574040448864">"Շատ փոքր"</string>
     <string name="autoclick_ignore_minor_cursor_movement_title" msgid="5038721995720529808">"Անտեսել նշորդի փոքր շարժումը"</string>
-    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Օգտագործեք ձախ կոճակի սեղմման ռեժիմը որպես կանխադրված գործողություն"</string>
+    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Օգտագործել ձախ կոճակի սեղմման ռեժիմը որպես կանխադրված գործողություն"</string>
     <string name="autoclick_revert_to_left_click_summary" msgid="9207568192335942225">"Երբ այլ գործողություն եք օգտագործում, ավտոմատ սեղմման գործառույթն ավտոմատ կանցնի ձախ կոճակի սեղմման ռեժիմին"</string>
     <string name="accessibility_autoclick_navigation_title" msgid="1577786826651016069">"Ավտոմատ սեղմումը եռակոճակ նավիգացիայով ավելի լավ է աշխատում"</string>
     <string name="accessibility_autoclick_navigation_message" msgid="4985375526457764240">"Ավտոմատ սեղմման միջոցով հեշտությամբ վերադառնալու, հիմնական էկրանը բացելու և մեկ հավելվածից մյուսն անցնելու համար ժեստերով նավիգացիայի փոխարեն օգտագործեք եռակոճակ նավիգացիան"</string>

@@ -252,7 +252,7 @@
     <string name="regional_preferences_title" msgid="4304567374498629528">"Regionální preference"</string>
     <string name="regional_preferences_summary" msgid="1189876997389469650">"Nastavení předvoleb jednotek a čísel"</string>
     <string name="regional_preferences_main_page_sub_title" msgid="4237109940015254725">"Sdělte aplikacím své regionální preference, aby vám mohly přizpůsobit prostředí."</string>
-    <string name="regional_preferences_option_page_sub_title" msgid="8303661099255197036">"Aplikace použijí vaše regionální preference kdykoliv to bude možné."</string>
+    <string name="regional_preferences_option_page_sub_title" msgid="8303661099255197036">"Aplikace použijí vaše regionální preference, kdykoliv to bude možné."</string>
     <string name="regional_preferences_category_title" msgid="6754667410178749022">"Regionální preference"</string>
     <string name="temperature_preferences_title" msgid="5009881556503629058">"Teplota"</string>
     <string name="first_day_of_week_preferences_title" msgid="1971850087589599553">"První den týdne"</string>
@@ -418,7 +418,7 @@
     <string name="security_settings_face_enroll_should_re_enroll_subtitle" msgid="7055780282999744813">"Nastavte odemknutí obličejem znovu"</string>
     <string name="security_settings_face_enroll_must_re_enroll_title" msgid="4421818770682557621">"Nastavte odemknutí obličejem znovu"</string>
     <string name="security_settings_face_enroll_must_re_enroll_subtitle" msgid="3584740139535177961">"Vylepšení zabezpečení a výkonu"</string>
-    <string name="security_settings_face_enroll_improve_face_alert_title" msgid="6194184776580066012">"Nastavte odemknutí obličejem"</string>
+    <string name="security_settings_face_enroll_improve_face_alert_title" msgid="6194184776580066012">"Nastavte si odemykání obličejem"</string>
     <string name="security_settings_face_enroll_improve_face_alert_body" msgid="2670118180411127323">"Pokud chcete odemknutí obličejem nastavit znovu, smažte stávající model obličeje.\n\nModel obličeje bude trvale a bezpečně smazán.\n\nPo smazání budete k odemykání telefonu a ověřování v aplikacích používat PIN, gesto nebo heslo."</string>
     <string name="security_settings_face_enroll_improve_face_alert_body_fingerprint" msgid="2469599074650327489">"Pokud chcete odemknutí obličejem nastavit znovu, smažte stávající model obličeje.\n\nModel obličeje bude trvale a bezpečně smazán.\n\nPo smazání budete k odemykání telefonu a ověřování v aplikacích používat otisk prstu, PIN, gesto nebo heslo."</string>
     <string name="security_settings_face_settings_use_face_category" msgid="1638314154119800188">"Pomocí odemknutí obličejem"</string>
@@ -739,7 +739,7 @@
     <string name="private_space_error_description" msgid="6591005734266923120">"Soukromý prostor není k dispozici.\nZobrazit možné příčiny"</string>
     <string name="private_space_error_causes_text" msgid="1649162505129365620">"Zobrazit možné příčiny"</string>
     <string name="private_space_lockscreen_title" msgid="5785259588888586366">"Zvolit nový zámek pro soukromý prostor?"</string>
-    <string name="private_space_lockscreen_summary" msgid="3053836076639653805">"Můžete si nastavit nový zámek pouze pro soukromý prostor, nebo použít stejný zámek, jaký používáte k odemykání zařízení."</string>
+    <string name="private_space_lockscreen_summary" msgid="3053836076639653805">"Můžete si nastavit nový zámek pouze pro soukromý prostor nebo použít stejný zámek, jaký používáte k odemykání zařízení."</string>
     <string name="private_space_use_screenlock_label" msgid="9182153443192032782">"Používat zámek obrazovky"</string>
     <string name="private_space_set_lock_label" msgid="1790408277477408475">"Zvolit nový zámek"</string>
     <string name="private_space_wait_screen_title" msgid="1535431437075585381">"Chviličku…"</string>
@@ -815,7 +815,7 @@
     <string name="face_unlock_skip_face" msgid="189695556498300008">"Pokračovat bez odemknutí obličejem"</string>
     <string name="biometrics_unlock_skip_biometrics" msgid="7399882488272450182">"Pokračovat bez otisku prstu nebo obličeje"</string>
     <string name="unlock_set_unlock_mode_off" msgid="4632139864722236359">"Bez zabezpečení"</string>
-    <string name="unlock_set_unlock_mode_off_new" msgid="865396805830816266">"Přidejte PIN, gesto, heslo nebo přejetí prstem"</string>
+    <string name="unlock_set_unlock_mode_off_new" msgid="865396805830816266">"Přidat PIN, gesto, heslo nebo přejetí prstem"</string>
     <string name="unlock_set_unlock_mode_none" msgid="5596049938457028214">"Přejetí prstem"</string>
     <string name="unlock_set_unlock_mode_pattern" msgid="1926480143883094896">"Gesto"</string>
     <string name="unlock_set_unlock_mode_pin" msgid="9028659554829888373">"PIN"</string>
@@ -1918,8 +1918,8 @@
     <string name="lockpassword_forgot_pattern" msgid="1196116549051927516">"Zapomněli jste gesto?"</string>
     <string name="lockpassword_forgot_pin" msgid="7164232234705747672">"Zapomněli jste PIN?"</string>
     <string name="lockpassword_confirm_your_pattern_generic" msgid="4983618652824112610">"Gestem se ověřuje vaše totožnost."</string>
-    <string name="lockpassword_confirm_your_pin_generic" msgid="45398445305933355">"Kódem PIN se ověřuje vaše totožnost"</string>
-    <string name="lockpassword_confirm_your_password_generic" msgid="1263500907003586594">"Heslem se ověřuje vaše totožnost"</string>
+    <string name="lockpassword_confirm_your_pin_generic" msgid="45398445305933355">"Kódem PIN se ověřuje vaše totožnost."</string>
+    <string name="lockpassword_confirm_your_password_generic" msgid="1263500907003586594">"Heslem se ověřuje vaše totožnost."</string>
     <string name="lockpassword_confirm_your_pattern_generic_profile" msgid="2552062474449423029">"Pracovním gestem se ověřuje vaše totožnost"</string>
     <string name="lockpassword_confirm_your_pin_generic_profile" msgid="6556640367641079244">"Pracovním kódem PIN se ověřuje vaše totožnost"</string>
     <string name="lockpassword_confirm_your_password_generic_profile" msgid="5700270644291633820">"Pracovním heslem se ověřuje vaše totožnost"</string>
@@ -2281,7 +2281,7 @@
     <string name="gesture_button_restart" msgid="1895850891992530133">"Restartovat"</string>
     <string name="gesture_button_done" msgid="6387900351203032188">"Hotovo"</string>
     <string name="action_corner_title" msgid="7411160165577367757">"Přizpůsobení rohových zkratek"</string>
-    <string name="action_corner_summary" msgid="695618538930535335">"Používat k procházení systému kurzory"</string>
+    <string name="action_corner_summary" msgid="695618538930535335">"K procházení systému používat kurzory"</string>
     <string name="action_corner_intro" msgid="2170609118659718140">"Vyberte následující oblasti pro přizpůsobení rohových zkratek"</string>
     <string name="action_corner_bottom_left_title" msgid="2857258272736432174">"Levý dolní roh"</string>
     <string name="action_corner_bottom_right_title" msgid="7222233500548465684">"Pravý dolní roh"</string>
@@ -2396,7 +2396,7 @@
     <string name="accessibility_pointer_title" msgid="7427650233669997010">"Kurzor"</string>
     <string name="accessibility_touchpad_title" msgid="5798458334122685642">"Touchpad"</string>
     <string name="accessibility_touchpad_system_gestures_enable_title" msgid="1867179109603472062">"Používat gesta třemi nebo čtyřmi prsty"</string>
-    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"Když je tato možnost vypnutá, ignoruje touchpad gesta třemi nebo čtyřmi prsty"</string>
+    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"Když je tato možnost vypnutá, touchpad ignoruje gesta třemi nebo čtyřmi prsty"</string>
     <string name="keywords_accessibility_touchpad_system_gestures_enable" msgid="4406441971607855466">"touchpad, trackpad, přejetí prstem"</string>
     <string name="accessibility_color_contrast_title" msgid="5757724357142452378">"Barevný kontrast"</string>
     <string name="accessibility_color_contrast_intro" msgid="7795090401101214930">"Text, tlačítka a ikony při vyšším kontrastu více vyniknou. Vyberte kontrast, který vám nejvíc vyhovuje."</string>
@@ -2750,7 +2750,7 @@
     <string name="accessibility_hearing_device_pairing_asha_only_intro" msgid="5679230908462987522">"Na této stránce můžete spárovat sluchadla ASHA. Ujistěte se, že je sluchadlo zapnuté a připravené ke spárování."</string>
     <string name="accessibility_hearing_device_pairing_hap_only_intro" msgid="2233661046254311681">"Na této stránce můžete spárovat sluchadla LE Audio. Ujistěte se, že je sluchadlo zapnuté a připravené ke spárování."</string>
     <string name="accessibility_found_hearing_devices" msgid="637407580358386553">"Dostupné sluchové pomůcky"</string>
-    <string name="accessibility_found_all_devices" msgid="7817834722148556520">"Nevidíte svou sluchovou pomůcku?"</string>
+    <string name="accessibility_found_all_devices" msgid="7817834722148556520">"Nevidíte svoji sluchovou pomůcku?"</string>
     <string name="accessibility_list_all_devices_title" msgid="161495343959211216">"Zobrazit další zařízení"</string>
     <string name="accessibility_audio_adjustment_title" msgid="1332113739136802997">"Úprava zvuku"</string>
     <string name="accessibility_audio_adjustment_subtext" msgid="2190523175597700025">"Mono zvuk, vyvážení zvuku"</string>

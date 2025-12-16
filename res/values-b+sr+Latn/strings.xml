@@ -794,7 +794,7 @@
     <string name="auto_pin_confirm_opt_in_security_message" msgid="580773976736184893">"Potvrda PIN-a dodirom na Enter je bezbednija nego automatska potvrda"</string>
     <string name="auto_confirm_on_pin_verify_description" msgid="2052240431173223502">"Unesite PIN uređaja da biste omogućili automatsku potvrdu"</string>
     <string name="auto_confirm_off_pin_verify_description" msgid="4256219155659760047">"Unesite PIN uređaja da biste onemogućili automatsku potvrdu"</string>
-    <string name="unlock_set_unlock_launch_picker_title" msgid="4981063601772605609">"Zaključavanje ekrana"</string>
+    <string name="unlock_set_unlock_launch_picker_title" msgid="4981063601772605609">"Otključavanje ekrana"</string>
     <string name="unlock_set_unlock_launch_picker_title_profile" msgid="7631371082326055429">"Zaključavanje poslovnog profila"</string>
     <string name="unlock_set_unlock_off_title" msgid="2831957685685921667">"Ništa"</string>
     <string name="unlock_set_unlock_none_title" msgid="2844029875174409728">"Prevlačenje"</string>
@@ -1094,7 +1094,7 @@
     <string name="wifi_menu_p2p" msgid="5234165837732940385">"WiFi Direct"</string>
     <string name="wifi_empty_list_wifi_off" msgid="7697422506708419298">"Da biste videli dostupne mreže, uključite WiFi."</string>
     <string name="wifi_empty_list_wifi_on" msgid="2448010040478321376">"Traže se mreže…"</string>
-    <string name="wifi_empty_list_user_restricted" msgid="454861411536708709">"Nemate dozvolu da menjate Wi‑Fi mrežu."</string>
+    <string name="wifi_empty_list_user_restricted" msgid="454861411536708709">"Nemate dozvolu da menjate WiFi mrežu."</string>
     <string name="wifi_settings_scanning_required_title" msgid="1088663325396007484">"Želite da uključite WiFi skeniranje?"</string>
     <string name="wifi_settings_scanning_required_summary" msgid="4770243653675416569">"Da bi se automatski uključivao WiFi, prvo treba da uključite WiFi skeniranje."</string>
     <string name="wifi_settings_scanning_required_info" msgid="1473411566072565789">"WiFi skeniranje omogućava aplikacijama i uslugama da traže WiFi mreže u bilo kom trenutku, čak i kada je WiFi isključen. Ovo, na primer, može da se koristi za poboljšanje funkcija i usluga zasnovanih na lokaciji."</string>
@@ -1153,7 +1153,7 @@
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Centrirajte QR kôd ispod da biste dodali uređaj na mrežu <xliff:g id="SSID">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"Skenirajte QR kôd"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"Postavite QR kôd u nastavku da biste dodali uređaj na mrežu „<xliff:g id="SSID">%1$s</xliff:g>“"</string>
-    <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Povežite se na Wi‑Fi mrežu tako što ćete skenirati QR kôd"</string>
+    <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Povežite se na WiFi mrežu tako što ćete skenirati QR kôd"</string>
     <string name="wifi_dpp_share_wifi" msgid="2431744447544057866">"Delite WiFi"</string>
     <string name="wifi_dpp_scan_qr_code_with_another_device" msgid="6967364080214325016">"Skenirajte ovaj QR kôd pomoću drugog uređaja da biste se povezali na: <xliff:g id="SSID">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_scan_open_network_qr_code_with_another_device" msgid="5398619697898444311">"Skenirajte ovaj QR kôd da biste se povezali sa <xliff:g id="SSID">%1$s</xliff:g>"</string>
@@ -2088,7 +2088,7 @@
     <string name="app_disable_dlg_text" msgid="2449382902751908916">"Ako onemogućite ovu aplikaciju, Android i druge aplikacije možda više neće raditi ispravno. Imajte na umu da ne možete da izbrišete ovu aplikaciju jer je bila unapred instalirana na uređaju. Ako je onemogućite, isključićete ovu aplikaciju i sakrićete je na uređaju."</string>
     <string name="app_install_details_group_title" msgid="1172114479073704677">"Prodavnica"</string>
     <string name="app_install_details_title" msgid="7783556181897142187">"Detalji o aplikaciji"</string>
-    <string name="app_install_details_summary" msgid="2013043219249992373">"Aplikacija je instalirana iz prodavnice <xliff:g id="APP_STORE">%1$s</xliff:g>"</string>
+    <string name="app_install_details_summary" msgid="2013043219249992373">"Aplikacija je instalirana iz: <xliff:g id="APP_STORE">%1$s</xliff:g>"</string>
     <string name="app_install_details_different_initiating_package_summary" msgid="6093306593167176688">"Aplikacija je instalirana iz „<xliff:g id="APP_STORE1">%1$s</xliff:g>“ (posredstvom: <xliff:g id="APP_STORE2">%2$s</xliff:g>)"</string>
     <string name="instant_app_details_summary" msgid="417197491598208216">"Više informacija na <xliff:g id="APP_STORE">%1$s</xliff:g>"</string>
     <string name="app_ops_running" msgid="6127474473137428721">"Aktivno"</string>
@@ -2442,8 +2442,8 @@
     <string name="talkback_summary" msgid="5820927220378864281">"Čitač ekrana prvenstveno namenjen slepim i slabovidim osobama"</string>
     <string name="select_to_speak_summary" msgid="1995285446766920925">"Dodirnite stavke na ekranu da biste ih čuli"</string>
     <string name="accessibility_captioning_title" msgid="4561871958958925225">"Podešavanja titla"</string>
-    <string name="accessibility_captioning_about_title" msgid="3542171637334191563">"O podešavanjima titlova"</string>
-    <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Saznajte više o podešavanjima titlova"</string>
+    <string name="accessibility_captioning_about_title" msgid="3542171637334191563">"O podešavanjima titla"</string>
+    <string name="accessibility_captioning_footer_learn_more_content_description" msgid="5730040700677017706">"Saznajte više o podešavanjima titla"</string>
     <string name="accessibility_screen_magnification_title" msgid="1211169976144629087">"Uvećanje"</string>
     <string name="accessibility_screen_magnification_shortcut_title" msgid="2387963646377987780">"Prečica za uvećanje"</string>
     <string name="accessibility_magnification_cursor_following_title" msgid="29531257984012743">"Praćenje kursora"</string>
@@ -2634,8 +2634,8 @@
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"Automatski klik (vreme zadržavanja)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"Automatski klik (vreme zadržavanja)"</string>
     <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"Saznajte više o automatskom kliku (vreme zadržavanja)"</string>
-    <string name="accessibility_autoclick_intro_text" msgid="8959680635470639347">"Možete da podesite automatske klikove povezanog miša kada kursor prestane da se kreće posle određenog perioda"</string>
-    <string name="accessibility_autoclick_description" msgid="6695732131412361101">"Automatski klik može da bude koristan ako su vam klikovi pomoću miša otežani"</string>
+    <string name="accessibility_autoclick_intro_text" msgid="8959680635470639347">"Možete da podesite da povezani miš automatski klikne kada kursor prestane da se kreće neko vreme"</string>
+    <string name="accessibility_autoclick_description" msgid="6695732131412361101">"Automatski klik može da bude koristan ako vamje teško da klikćete mišem"</string>
     <string name="accessibility_autoclick_default_title" msgid="2024730028293793490">"Automatski klik je isključen"</string>
     <string name="accessibility_autoclick_short_title" msgid="7938302504358912984">"Kratko"</string>
     <string name="accessibility_autoclick_short_summary" msgid="4106953930081213514">"0,2 sekunde"</string>
@@ -2650,7 +2650,7 @@
     <string name="accessibility_autoclick_main_switch_title" msgid="1968409462935503999">"Koristi automatski klik (vreme zadržavanja)"</string>
     <string name="accessibility_autoclick_shortcut_title" msgid="5337438503429302081">"Prečica za automatski klik"</string>
     <string name="autoclick_delay_before_click_title" msgid="4625722241966706931">"Odlaganje pre klika"</string>
-    <string name="autoclick_delay_before_click_summary" msgid="3685183305849901339">"Podesite koliko vremena treba da prođe do ostvarivanja klika pošto se kursor zaustavi"</string>
+    <string name="autoclick_delay_before_click_summary" msgid="3685183305849901339">"Podesite koliko vremena treba da prođe do klika pošto se kursor zaustavi"</string>
     <string name="autoclick_cursor_area_size_title" msgid="8988239939645854279">"Oblast za klik"</string>
     <string name="autoclick_cursor_area_size_summary" msgid="6993249143332791469">"Ako se kursor pomeri izvan oblasti za klik, automatski klik se otkazuje"</string>
     <string name="autoclick_cursor_area_size_dialog_option_extra_large" msgid="3802014133363801617">"Veoma velika"</string>
@@ -3815,7 +3815,7 @@
     <string name="zen_mode_rule_name_edit" msgid="1053237022416700481">"Izmeni"</string>
     <string name="zen_mode_automation_settings_page_title" msgid="6217433860514433311">"Rasporedi"</string>
     <string name="zen_mode_automatic_rule_settings_page_title" msgid="5264835276518295033">"Raspored"</string>
-    <string name="zen_mode_automatic_trigger_title" msgid="6223547583969661361">"Kada se uključuje automatski"</string>
+    <string name="zen_mode_automatic_trigger_title" msgid="6223547583969661361">"Kada da se uključuje automatski"</string>
     <string name="zen_mode_set_calendar_title" msgid="609741570346510347">"Raspored događaja"</string>
     <string name="zen_mode_set_calendar_which_calendar" msgid="7520289688350942687">"Uključite tokom događaja za"</string>
     <string name="zen_mode_set_calendar_which_reply" msgid="3136872740890390233">"Kada je odgovor na poziv"</string>
@@ -4379,7 +4379,7 @@
     <string name="storage_summary_format" msgid="5721782272185284276">"U upotrebi je <xliff:g id="SIZE">%1$s</xliff:g> u: <xliff:g id="STORAGE_TYPE">%2$s</xliff:g>"</string>
     <string name="storage_type_internal" msgid="979243131665635278">"interna memorija"</string>
     <string name="storage_type_external" msgid="125078274000280821">"spoljna memorija"</string>
-    <string name="data_summary_format" msgid="8802057788950096650">"<xliff:g id="SIZE">%1$s</xliff:g> se koristi od <xliff:g id="DATE">%2$s</xliff:g>"</string>
+    <string name="data_summary_format" msgid="8802057788950096650">"<xliff:g id="SIZE">%1$s</xliff:g> je potrošeno od <xliff:g id="DATE">%2$s</xliff:g>"</string>
     <string name="storage_used" msgid="2591194906751432725">"Memorijski prostor u upotrebi"</string>
     <string name="change" msgid="273206077375322595">"Promeni"</string>
     <string name="change_storage" msgid="8773820275624113401">"Promenite memoriju"</string>
@@ -4640,7 +4640,7 @@
     <string name="condition_grayscale_summary" msgid="1306034149271251292">"Prikazuje se samo u sivoj boji"</string>
     <string name="homepage_condition_footer_content_description" msgid="1568313430995646108">"Skupi"</string>
     <string name="homepage_unnumbered_alert_description" msgid="8393737409248958672">"Ova stavka ima obaveštenje"</string>
-    <string name="homepage_numbered_alert_description" msgid="4965963469296900322">"Ova stavka ima <xliff:g id="ALERT_COUNT">%1$s</xliff:g> obaveštenje/a"</string>
+    <string name="homepage_numbered_alert_description" msgid="4965963469296900322">"Ova stavka ima <xliff:g id="ALERT_COUNT">%1$s</xliff:g> upozorenje/a"</string>
     <string name="color_temperature" msgid="8256912135746305176">"Hladna temperatura boje"</string>
     <string name="color_temperature_desc" msgid="6713259535885669622">"Koristi hladnije boje ekrana"</string>
     <string name="color_temperature_toast" msgid="7611532183532407342">"Da biste primenili promenu boje, isključite ekran"</string>
@@ -5359,7 +5359,7 @@
     <string name="wifi_warning_continue_button" msgid="8171574741789688214">"Ipak obriši"</string>
     <string name="wifi_warning_return_button" msgid="6226063181583906340">"Važi"</string>
     <string name="network_connection_request_dialog_title" msgid="1896186380874289434">"Povežite sa uređajem"</string>
-    <string name="network_connection_request_dialog_summary" msgid="7693038309792726170">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi da koristi privremenu Wi‑Fi mrežu da bi se povezala sa uređajem"</string>
+    <string name="network_connection_request_dialog_summary" msgid="7693038309792726170">"Aplikacija <xliff:g id="APPNAME">%1$s</xliff:g> želi da koristi privremenu WiFi mrežu da bi se povezala sa uređajem"</string>
     <string name="network_connection_timeout_dialog_message" msgid="598509083077743772">"Nije pronađen nijedan uređaj Proverite da li je uređaj uključen i dostupan za povezivanje."</string>
     <string name="network_connection_timeout_dialog_ok" msgid="6022675321823723755">"Probaj ponovo"</string>
     <string name="network_connection_errorstate_dialog_message" msgid="3360714322047603239">"Došlo je do nekog problema. Aplikacija je otkazala zahtev za izbor uređaja."</string>

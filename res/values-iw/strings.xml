@@ -687,7 +687,7 @@
     <string name="private_space_screen_lock_summary" msgid="394837965365561070">"זהה לנעילת המסך במכשיר"</string>
     <string name="private_space_new_lock_title" msgid="9056139964133004094">"רוצה לבחור שיטת נעילה חדשה למרחב הפרטי?"</string>
     <string name="private_space_new_lock_message" msgid="3117703578905489206">"במסך הבא יהיה עליך להזין את קוד האימות, קו פתיחת הנעילה או הסיסמה של המכשיר שלך"</string>
-    <string name="private_space_auto_lock_title" msgid="8663409382910601261">"נעילת המרחב הפרטי באופן אוטומטי"</string>
+    <string name="private_space_auto_lock_title" msgid="8663409382910601261">"נעילת המרחב הפרטי אוטומטית"</string>
     <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"אפשר לנעול את המרחב הפרטי באופן אוטומטי אם לא משתמשים במכשיר במשך פרק זמן מסוים"</string>
     <string name="private_space_auto_lock_every_time" msgid="1215061855836002830">"בכל פעם שהמכשיר ננעל"</string>
     <string name="private_space_auto_lock_after_inactivity" msgid="7107814517866649733">"‫5 דקות אחרי הזמן הקצוב לכיבוי המסך"</string>
@@ -1150,7 +1150,7 @@
     <string name="wifi_subscription_summary" msgid="18802471063384598">"הצגה או שינוי של מינוי"</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"‏כתובת MAC אקראית"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"הוספת מכשיר"</string>
-    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"‏יש להציב את קוד ה-QR במרכז החלון שלמטה כדי להוסיף את המכשיר אל “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
+    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"‏צריך להציב את קוד ה-QR במרכז הריבוע כדי להוסיף את המכשיר אל “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"‏סריקת קוד QR"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"‏יש להציב את קוד ה-QR במרכז החלון שלמטה כדי להתחבר אל “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"‏כדי להצטרף לרשת Wi-Fi, צריך לסרוק את קוד ה-QR שלה במסך הזה"</string>
@@ -1226,7 +1226,7 @@
     <string name="lost_internet_access_cancel" msgid="1981171269794585284">"‏הישאר ברשת Wi-Fi"</string>
     <string name="lost_internet_access_persist" msgid="6813604557672782197">"אל תציג שוב אף פעם"</string>
     <string name="wifi_connect" msgid="2481467560349907397">"התחברות"</string>
-    <string name="wifi_connected_to_message" msgid="8976048616505112896">"יש חיבור אל <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</string>
+    <string name="wifi_connected_to_message" msgid="8976048616505112896">"המכשיר מחובר אל <xliff:g id="NETWORK_NAME">%1$s</xliff:g>"</string>
     <string name="wifi_connecting" msgid="7450277833386859724">"מתבצע חיבור…"</string>
     <string name="wifi_failed_connect_message" msgid="8538000546604347894">"נכשל הניסיון להתחבר לרשת"</string>
     <string name="wifi_not_in_range_message" msgid="3885327464037574739">"הרשת לא בטווח"</string>
@@ -1458,7 +1458,7 @@
     <string name="dark_ui_activation_off_auto" msgid="9136717444658505208">"כיבוי עד השקיעה"</string>
     <string name="dark_ui_title" msgid="3373976268671557416">"מצב כהה"</string>
     <string name="dark_ui_auto_mode_title" msgid="9027528859262295099">"לוח זמנים"</string>
-    <string name="dark_ui_auto_mode_never" msgid="3980412582267787662">"לא להפעיל"</string>
+    <string name="dark_ui_auto_mode_never" msgid="3980412582267787662">"אין"</string>
     <string name="dark_ui_auto_mode_auto" msgid="6658909029498623375">"מהשקיעה עד הזריחה"</string>
     <string name="dark_ui_auto_mode_custom" msgid="3800138185265182170">"בשעה שאני אקבע"</string>
     <string name="dark_ui_auto_mode_custom_bedtime" msgid="8465023741946439266">"מופעל בשעת השינה"</string>
@@ -1597,7 +1597,7 @@
     <string name="meid_multi_sim" msgid="5076814185188481456">"‏‫MEID (חריץ SIM ‏<xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
     <string name="meid_multi_sim_primary" msgid="6269908735700854437">"‏‫MEID (חריץ <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>, ה-SIM ראשי)"</string>
     <string name="scanning_status_text_on" msgid="3846571210578042940">"פועל"</string>
-    <string name="scanning_status_text_off" msgid="4002352668313705132">"כבוי"</string>
+    <string name="scanning_status_text_off" msgid="4002352668313705132">"כבויה"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
     <string name="status_icc_id" msgid="7995690631650006970">"ICCID"</string>
     <string name="status_data_network_type" msgid="3689772955330665876">"סוג הרשת של חבילת הגלישה"</string>
@@ -1771,7 +1771,7 @@
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"מחיקת הנתונים לא תבטל את תוכנית השירות הסלולרי שלך."</string>
     <string name="main_clear_final_desc" msgid="5800877928569039580">"כל המידע האישי שלך והאפליקציות שהורדת יימחקו. לא ניתן לבטל את הפעולה הזו."</string>
     <string name="main_clear_final_desc_esim" msgid="6592404057237813989">"‏כל המידע האישי שלך יימחק, כולל אפליקציות וכרטיסי eSIM שהורדת. אי אפשר לבטל את הפעולה הזו."</string>
-    <string name="main_clear_confirm_title" msgid="6577071819657853713">"האם למחוק את כל הנתונים?"</string>
+    <string name="main_clear_confirm_title" msgid="6577071819657853713">"למחוק את כל הנתונים?"</string>
     <string name="main_clear_not_available" msgid="3433795327146684827">"איפוס להגדרות המקוריות אינו זמין עבור המשתמש הזה"</string>
     <string name="main_clear_progress_title" msgid="7239741132015617719">"מתבצעת מחיקה"</string>
     <string name="main_clear_progress_text" msgid="4636695115176327972">"יש להמתין…"</string>
@@ -2292,7 +2292,7 @@
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"האפליקציות האחרונות"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"התראות"</string>
     <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"הגדרות מהירות"</string>
-    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"בחירת קיצור דרך ל<xliff:g id="CORNER">%1$s</xliff:g>"</string>
+    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"בחירת קיצור דרך בשביל <xliff:g id="CORNER">%1$s</xliff:g>"</string>
     <string name="action_corner_bottom_left_name" msgid="9193788067022476544">"הפינה השמאלית התחתונה"</string>
     <string name="action_corner_bottom_right_name" msgid="1031603363418505375">"הפינה הימנית התחתונה"</string>
     <string name="action_corner_top_left_name" msgid="8077670910600032291">"פינה הימנית העליונה"</string>
@@ -2307,7 +2307,7 @@
     <string name="modifier_keys_reset" msgid="551170906710422041">"איפוס"</string>
     <string name="modifier_keys_picker_title" msgid="244545904150587851">"בחירת מקש צירוף"</string>
     <string name="modifier_keys_picker_summary" msgid="739397232249560785">"יש לבחור מפתח חדש עבור <xliff:g id="MODIFIER_KEY_DEFAULT_NAME">%1$s</xliff:g>:"</string>
-    <string name="keyboard_a11y_settings" msgid="2564659018555385728">"תכונות נגישות שפועלות באמצעות מקלדת פיזית"</string>
+    <string name="keyboard_a11y_settings" msgid="2564659018555385728">"נגישות במקלדת פיזית"</string>
     <string name="keyboard_a11y_settings_summary" msgid="1698531156574098722">"מקשים \"דביקים\", סינון הקשות חוזרות, שליטה בעכבר מהמקלדת"</string>
     <string name="keyboard_repeat_keys_title" msgid="6346877755243280735">"חזרה על מקשים"</string>
     <string name="keyboard_repeat_keys_timeout_title" msgid="3411871149974652293">"השהיה לפני חזרה"</string>
@@ -2390,7 +2390,7 @@
     <string name="display_category_title" msgid="6638191682294461408">"תצוגה"</string>
     <string name="accessibility_color_and_motion_title" msgid="1085072332445818494">"צבע ותנועה"</string>
     <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"עיצוב כהה, תיקון צבע, הסרת אנימציות"</string>
-    <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"הגדרות הנגישות של הסמן ולוח המגע"</string>
+    <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"נגישות הסמן ולוח המגע"</string>
     <string name="accessibility_pointer_and_touchpad_summary" msgid="8588221231953604340">"גודל, צבע, סוג"</string>
     <string name="accessibility_pointer_color_customization_title" msgid="2841888132681075999">"צבע הסמן"</string>
     <string name="accessibility_pointer_title" msgid="7427650233669997010">"סמן"</string>
@@ -2457,7 +2457,7 @@
     <string name="accessibility_screen_magnification_follow_keyboard_title" msgid="3412060515554192262">"מעקב אחר מיקוד המקלדת"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_summary" msgid="2379353603675828805">"זכוכית המגדלת עוקבת אחרי הפריט שבו מתמקדים בזמן הניווט בין באמצעות המקלדת"</string>
     <string name="accessibility_screen_magnification_nav_ime_title" msgid="8804501318161774285">"הגדלת המקלדת"</string>
-    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"כשההגדלה מופעלת במסך מלא, זום לתוך המקדלת יאפשר לך לראות  סמלי אמוג\'י ואותיות"</string>
+    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"כשההגדלה מופעלת במסך מלא, זום לתוך המקדלת יאפשר לך לראות סמלי אמוג\'י ואותיות"</string>
     <string name="accessibility_screen_magnification_nav_ime_unavailable_summary" msgid="2248787024685382054">"האפשרות לא זמינה כשמגדילים רק חלק מהמסך"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"ההגדלה פועלת גם כשעוברים בין אפליקציות"</string>
     <string name="accessibility_screen_magnification_always_on_summary" msgid="642275893256862796">"כשעוברים בין אפליקציות, הזכוכית המגדלת תמשיך לפעול ותקטין את התצוגה"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"הגדרות ניווט"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"רטט ומשוב פיזי"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"שליטה בעוצמת הרטט לשימושים שונים"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"התכונה מופעלת / אפשר לקבוע את רמות הרטט של שיחות, התראות ושעונים מעוררים"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"התכונה מופעלת / שליטה ברמות הרטט של שיחות, התראות ושעונים מעוררים"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"התכונה מושבתת / אפשר לקבוע את רמות הרטט של שיחות, התראות ושעונים מעוררים"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"ההגדרה הושבתה מפני שהמכשיר מוגדר למצב שקט"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"שיחות"</string>
@@ -2688,7 +2688,7 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"אפשר להוסיף את \'תיקון צבע\' להגדרות המהירות גם מהחלק העליון של המסך"</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"התכונה \'היפוך צבעים\' נוספה להגדרות המהירות. כדי להפעיל או להשבית אותה מתי שרוצים, מחליקים למטה."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"אפשר להוסיף את \'היפוך צבעים\' להגדרות המהירות גם מהחלק העליון של המסך"</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"אפשר לעמעם את המסך מעבר לבהירות המינימלית"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"עמעום של המסך מעבר לבהירות המינימלית"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"התכונה \'מעומעם במיוחד\' נוספה להגדרות המהירות. כדי להפעיל או להשבית אותה מתי שרוצים, מחליקים למטה."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"אפשר להוסיף את \'מעומעם במיוחד\' להגדרות המהירות גם מהחלק העליון של המסך"</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"התכונה \'מצב שימוש ביד אחת\' נוספה להגדרות המהירות. כדי להפעיל או להשבית אותה מתי שרוצים, מחליקים למטה."</string>
@@ -2771,7 +2771,7 @@
     <string name="daltonizer_mode_tritanomaly_title" msgid="2278786218762602022">"כחול-צהוב"</string>
     <string name="daltonizer_mode_grayscale_title" msgid="152005391387952588">"גווני אפור"</string>
     <string name="daltonizer_saturation_title" msgid="2999486412114963068">"עוצמה"</string>
-    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"לא זמין במצב גווני אפור או כשתיקון הצבע מושבת"</string>
+    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"אי אפשר לשלוט בעוצמה במצב \"גווני אפור\" או כשתיקון הצבע מושבת"</string>
     <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"דוטרנומליה"</string>
     <string name="daltonizer_mode_protanomaly_summary" msgid="877971556622350648">"פרוטנומליה"</string>
     <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"טריטנומליה"</string>
@@ -2783,7 +2783,7 @@
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"עוצמה"</string>
     <string name="brightness_intensity_start_label" msgid="5156578219206443637">"עמום"</string>
     <string name="brightness_intensity_end_label" msgid="2697495729534414164">"בהיר"</string>
-    <string name="reduce_bright_colors_persist_preference_title" msgid="4368829654993343354">"שמירת ההגדרה לאחר הפעלה מחדש של המכשיר"</string>
+    <string name="reduce_bright_colors_persist_preference_title" msgid="4368829654993343354">"ההגדרה תישמר גם אחרי שהמכשיר יופעל מחדש"</string>
     <string name="accessibilty_autoclick_preference_subtitle_short_delay" msgid="2981206111858937724">"{count,plural, =1{השהיה קצרה (שנייה אחת, {time})}one{השהיה קצרה ({time} שניות)}two{השהיה קצרה ({time} שניות)}other{השהיה קצרה ({time} שניות)}}"</string>
     <string name="accessibilty_autoclick_preference_subtitle_medium_delay" msgid="6867395206533459204">"{count,plural, =1{השהיה בינונית (שנייה אחת, {time})}one{השהיה בינונית ({time} שניות)}two{השהיה בינונית ({time} שניות)}other{השהיה בינונית ({time} שניות)}}"</string>
     <string name="accessibilty_autoclick_preference_subtitle_long_delay" msgid="4079139970819335593">"{count,plural, =1{השהיה ארוכה (שנייה אחת, {time})}one{השהיה ארוכה ({time} שניות)}two{השהיה ארוכה ({time} שניות)}other{השהיה ארוכה ({time} שניות)}}"</string>
@@ -3131,8 +3131,8 @@
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"כיבוי"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"שימוש בקישוריות דינמית"</string>
     <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"מעבר אוטומטי לרשת סלולרית"</string>
-    <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"‏האפשרות הזו מבטיחה קישוריות כשה-Wi-Fi חלש או לא זמין. יכולים לחול חיובים על שימוש בחבילת הגלישה."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"מתבצעת אופטימיזציה של הרשת כדי להאריך את חיי הסוללה"</string>
+    <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"‏יעיל כשה-Wi-Fi חלש או לא זמין. יכולים לחול חיובים על שימוש בחבילת הגלישה."</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"אופטימיזציה של הרשת לחיי סוללה ארוכים יותר"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"המערכת בוחרת באופן אוטומטי את החיבור הטוב ביותר לרשת כדי להאריך את חיי הסוללה"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"אבטחת הרשת הסלולרית"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"סוג הרשת, הצפנה, ניהול התראות"</string>
@@ -3783,7 +3783,7 @@
     <string name="zen_mode_settings_schedules_summary" msgid="2047688589286811617">"{count,plural, =0{אין}=1{הוגדר לוח זמנים אחד}one{הוגדרו # לוחות זמנים}two{הוגדרו # לוחות זמנים}other{הוגדרו # לוחות זמנים}}"</string>
     <string name="zen_mode_settings_title" msgid="682676757791334259">"נא לא להפריע"</string>
     <string name="zen_modes_list_title" msgid="4796033710444068729">"מצבים"</string>
-    <string name="zen_modes_list_intro" msgid="1879511587535247228">"התכונה מאפשרת לצמצם הסחות דעת ולהתמקד במה שחשוב בעזרת מצבים לשינה, עבודה, נהיגה ועוד"</string>
+    <string name="zen_modes_list_intro" msgid="1879511587535247228">"התכונה מאפשרת לצמצם הסחות דעת ולהגדיר מצבים לשינה, עבודה, נהיגה ועוד"</string>
     <string name="zen_modes_add_mode" msgid="5926457160307593664">"יצירת מצב"</string>
     <string name="zen_mode_settings_summary" msgid="6040862775514495191">"קבלת התראות רק מאפליקציות ומאנשים חשובים"</string>
     <string name="zen_mode_select_schedule" msgid="663163931596092952">"הגדרת לוח זמנים"</string>
@@ -5729,7 +5729,7 @@
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"מופעלת / קבלת התראה באמצעות הבהוב של המצלמה או המסך בהתראות ובשעונים מעוררים"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"המסך או הפלאש יהבהבו כשיתקבלו התראות או יצלצלו שעונים מעוררים"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"המסך יהבהב כשיתקבלו התראות או יצלצלו שעונים מעוררים"</string>
-    <string name="flash_notifications_note" msgid="2426125248448055075">"אם יש לך רגישות לאור, כדאי להשתמש בהתראות הבהוב בזהירות"</string>
+    <string name="flash_notifications_note" msgid="2426125248448055075">"אם יש לך רגישות לאור, לא בטוח שהתכונה הזאת מתאימה לך"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"פלאש, אור, כבד שמיעה, אובדן שמיעה"</string>
     <string name="flash_notifications_preview" msgid="5320176885050440874">"תצוגה מקדימה"</string>
     <string name="camera_flash_notification_title" msgid="2475084876382922732">"הבהוב פלאש"</string>
@@ -5764,8 +5764,8 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"התכונה משנה את הצבעים של מסכים בהירים לצבעים כהים ולהפך"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"אפשר להתקרב כדי להגדיל את התוכן במסך"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"מושבת"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"התכונה מושבתת / אפשר להתאים אישית את הגודל והסגנון של הכתוביות"</string>
-    <string name="show_captions_enabled" msgid="3495595825041704052">"התכונה מופעלת / אפשר להתאים אישית את הגודל והסגנון של הכתוביות"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"התכונה מושבתת / התאמה אישית של הגודל והסגנון של הכתוביות"</string>
+    <string name="show_captions_enabled" msgid="3495595825041704052">"התכונה מופעלת / התאמה אישית של הגודל והסגנון של הכתוביות"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"מושבתות"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"מופעלות"</string>
     <string name="audio_seek_bar_state_left_first" msgid="1641359989891833888">"אודיו אוזן שמאל <xliff:g id="PERCENT_LEFT">%1$s</xliff:g>, אוזן ימין <xliff:g id="PERCENT_RIGHT">%2$s</xliff:g>"</string>
@@ -5900,7 +5900,7 @@
     <string name="audio_streams_preference_subtitle" msgid="4098552511880220046">"‏האזנה לשידורי Auracast"</string>
     <string name="audio_streams_preference_subtitle_audio_sharing_on" msgid="2382924714414148028">"כדי למצוא שידורי אודיו, צריך להשבית את שיתוף האודיו"</string>
     <string name="audio_streams_main_page_title" msgid="1838380471076527639">"איך למצוא שידור אודיו"</string>
-    <string name="audio_streams_main_page_subtitle" msgid="3251995732921981539">"‏רוצה להאזין למכשיר שמשתף אודיו או לשידור Auracast בקרבת מקום"</string>
+    <string name="audio_streams_main_page_subtitle" msgid="3251995732921981539">"‏רוצה להאזין למכשיר שמשתף אודיו או לשידור Auracast בקרבת מקום?"</string>
     <string name="audio_streams_main_page_device_title" msgid="2635744035523908253">"מכשיר האודיו שלך"</string>
     <string name="audio_streams_main_page_no_device_summary" msgid="2936000845397406389">"חיבור אוזניות תואמות"</string>
     <string name="audio_streams_main_page_scan_section_title" msgid="2778235929304061163">"שידורי אודיו בקרבת מקום"</string>

@@ -268,7 +268,7 @@
     <string name="thursday_first_day_of_week" msgid="3035885630945594833">"गुरुवार"</string>
     <string name="friday_first_day_of_week" msgid="7074795061812083541">"शुक्रवार"</string>
     <string name="saturday_first_day_of_week" msgid="3702282590450322727">"शनिवार"</string>
-    <string name="title_regional_pref_footer" msgid="7450438024324794380">"अगर कोई ऐप्लिकेशन जगह के हिसाब से तय की गई प्राथमिकताओं के साथ काम नहीं करता, तो वह डिफ़ॉल्ट सेटिंग का इस्तेमाल करेगा."</string>
+    <string name="title_regional_pref_footer" msgid="7450438024324794380">"अगर कोई ऐप्लिकेशन जगह के हिसाब से तय की गई प्राथमिकताओं के साथ काम नहीं करता, तो वह डिफ़ॉल्ट सेटिंग इस्तेमाल करेगा."</string>
     <string name="desc_regional_pref_footer_learn_more" msgid="4401708653329230081">"भाषा की प्राथमिकताएं चुनने के बारे में ज़्यादा जानें."</string>
     <string name="metric_measurement_system" msgid="7489725697268321541">"मेट्रिक"</string>
     <string name="us_measurement_system" msgid="8406695347890345490">"अमेरिका"</string>
@@ -941,10 +941,10 @@
     <string name="bluetooth_enter_passkey_other_device" msgid="8270426446247344709">"आपको अन्‍य डिवाइस पर भी यह पासकी लिखनी होगी."</string>
     <string name="bluetooth_paring_group_msg" msgid="2455293929036668131">"ऑडियो डिवाइस से जोड़ने के लिए पुष्टि करें"</string>
     <string name="bluetooth_pairing_shares_phonebook" msgid="4329325125260724843">"अपने संपर्क और कॉल इतिहास देखने की मंज़ूरी दें"</string>
-    <string name="bluetooth_pairing_phonebook_toggle_text" msgid="2474015367387690034">"संपर्क और कॉल इतिहास को ऐक्सेस करने की भी अनुमति दें"</string>
+    <string name="bluetooth_pairing_phonebook_toggle_text" msgid="2474015367387690034">"संपर्कों और कॉल इतिहास को ऐक्सेस करने की भी अनुमति दें"</string>
     <string name="bluetooth_pairing_phonebook_toggle_details" msgid="1367197978487212581">"इस जानकारी का इस्तेमाल, कॉल की सूचना देने वगैरह के लिए किया जाएगा"</string>
     <string name="bluetooth_pairing_confirmation_title" msgid="3359642089708714808">"जोड़ने के कोड का मिलान करें"</string>
-    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"देखें कि यह कोड, <xliff:g id="DEVICE_NAME">%1$s</xliff:g> के कोड से मेल खाता है या नहीं.\n\nसुरक्षा को ध्यान में रखते हुए, इस कोड को कहीं और इस्तेमाल न करें."</string>
+    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"देखें कि क्या यह कोड <xliff:g id="DEVICE_NAME">%1$s</xliff:g> के कोड से मेल खाता है.\n\nसुरक्षा को ध्यान में रखते हुए, इस कोड को कहीं और इस्तेमाल न करें."</string>
     <string name="bluetooth_error_title" msgid="2284738188253690278"></string>
     <string name="bluetooth_connecting_error_message" msgid="3941893154784152112">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> से कनेक्‍ट नहीं किया जा सका."</string>
     <string name="bluetooth_preference_found_media_devices" msgid="830061195998352840">"उपलब्ध ब्लूटूथ डिवाइस"</string>
@@ -1155,7 +1155,7 @@
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"डिवाइस को “<xliff:g id="SSID">%1$s</xliff:g>” से जोड़ने के लिए QR कोड को नीचे मौजूद कैमरा विंडो के बीच में लाएं"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"क्यूआर कोड स्कैन करके वाई-फ़ाई से कनेक्ट करें"</string>
     <string name="wifi_dpp_share_wifi" msgid="2431744447544057866">"वाई-फ़ाई शेयर करें"</string>
-    <string name="wifi_dpp_scan_qr_code_with_another_device" msgid="6967364080214325016">"“<xliff:g id="SSID">%1$s</xliff:g>” से कनेक्ट करने के लिए, किसी दूसरे डिवाइस से इस क्यूआर कोड को स्कैन करें"</string>
+    <string name="wifi_dpp_scan_qr_code_with_another_device" msgid="6967364080214325016">"किसी दूसरे डिवाइस को “<xliff:g id="SSID">%1$s</xliff:g>” से कनेक्ट करने के लिए, उससे इस क्यूआर कोड को स्कैन करें"</string>
     <string name="wifi_dpp_scan_open_network_qr_code_with_another_device" msgid="5398619697898444311">"“<xliff:g id="SSID">%1$s</xliff:g>” से जुड़ने के लिए इस QR कोड को स्कैन करें"</string>
     <string name="wifi_dpp_failure_authentication_or_configuration" msgid="847551626830740204">"फिर से कोशिश करें. अगर समस्या ठीक नहीं होती है, तो डिवाइस बनाने वाली कंपनी से संपर्क करें"</string>
     <string name="wifi_dpp_failure_not_compatible" msgid="4453775826337805825">"काेई गड़बड़ी हुई"</string>
@@ -1504,7 +1504,7 @@
     <string name="screensaver_settings_summary_postured" msgid="6346392320858994892">"टैबलेट सीधा रखने पर"</string>
     <string name="screensaver_settings_summary_postured_and_charging" msgid="5111797042509819055">"जब डिवाइस सीधा रखा हो और चार्ज हो रहा हो"</string>
     <string name="screensaver_settings_summary_on" msgid="4210827304351483645">"चालू है / <xliff:g id="SCREEN_SAVER">%1$s</xliff:g>"</string>
-    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"बंद"</string>
+    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"बंद है"</string>
     <string name="screensaver_settings_when_to_dream" msgid="7756170756065029160">"कब दिखाना है"</string>
     <string name="screensaver_settings_low_light_mode" msgid="271972828076673743">"कम रोशनी वाला मोड"</string>
     <string name="lift_to_wake_title" msgid="8994218158737714046">"सक्रिय करने के लिए उठाएं"</string>
@@ -1764,7 +1764,7 @@
     <string name="reset_esim_error_msg" msgid="8459527827897797168">"कोई गड़बड़ी हुई है. इसकी वजह से, आपका ई-सिम नहीं मिटाया जा सका.\n\nअपने डिवाइस को रीस्टार्ट करके फिर से कोशिश करें."</string>
     <string name="reset_private_space_delete_title" msgid="2555885198282572990">"प्राइवेट स्पेस मिटाएं"</string>
     <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"अगर आपके डिवाइस में प्राइवेट स्पेस है, तो उसे हमेशा के लिए मिटा दिया जाएगा और उससे जुड़ा Google खाता भी हटा दिया जाएगा. \n\nआपके फ़ोन के "<b>"स्टोरेज"</b>" से, स्पेस के सभी ऐप्लिकेशन और उनसे जुड़ा डेटा भी हमेशा के लिए मिटा दिया जाएगा."</string>
-    <string name="main_clear_title" msgid="277664302144837723">"हमेशा के लिए पूरा डेटा मिटाएं (फ़ैक्ट्री रीसेट)"</string>
+    <string name="main_clear_title" msgid="277664302144837723">"पूरा डेटा हमेशा के लिए मिटाएं (फ़ैक्ट्री रीसेट करें)"</string>
     <string name="main_clear_short_title" msgid="4752094765533020696">"पूरा डेटा मिटाएं (फ़ैक्ट्री रीसेट)"</string>
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"संगीत"</li>\n<li>"फ़ोटो"</li>\n<li>"उपयोगकर्ता का अन्य डेटा"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"eSIM"</li></string>
@@ -2058,7 +2058,7 @@
     <string name="filter_apps_running" msgid="535465683273284141">"चल रहे ऐप्लिकेशन"</string>
     <string name="not_installed" msgid="5074606858798519449">"इस उपयोगकर्ता के लिए इंस्‍टॉल नहीं किया गया"</string>
     <string name="installed" msgid="2837449358488825884">"इंस्‍टॉल किया गया"</string>
-    <string name="no_applications" msgid="5471491608902031500">"मिलता-जुलता कोई ऐप्लिकेशन नहीं मिला"</string>
+    <string name="no_applications" msgid="5471491608902031500">"कोई ऐप्लिकेशन नहीं मिला"</string>
     <string name="internal_storage" msgid="999496851424448809">"मोबाइल मेमोरी"</string>
     <string name="recompute_size" msgid="1098091228370999128">"आकार फिर से परिकलित कर रहा है…"</string>
     <string name="clear_data_dlg_title" msgid="180446967743732410">"ऐप्लिकेशन का डेटा मिटाना है?"</string>
@@ -2412,7 +2412,7 @@
     <string name="accessibility_turn_screen_darker_title" msgid="5986223133285858349">"स्क्रीन की चमक को कम करें"</string>
     <string name="interaction_control_category_title" msgid="2696474616743882372">"इंटरैक्शन कंट्रोल"</string>
     <string name="accessibility_tap_assistance_title" msgid="1058913033421048284">"समय से जुड़े कंट्रोल"</string>
-    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"स्क्रीन को दबाकर रखने की अवधि, कार्रवाई करने से जुड़ी अवधि"</string>
+    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"स्क्रीन दबाकर रखने की अवधि, कार्रवाई करने की अवधि"</string>
     <string name="accessibility_system_controls_title" msgid="6403287349518987624">"सिस्टम से जुड़े कंट्रोल"</string>
     <string name="accessibility_system_controls_subtext" msgid="2722046038429586174">"नेविगेशन मोड, एक हाथ से इस्तेमाल करने की सुविधा, स्क्रीन घुमाने की सुविधा"</string>
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"नेविगेशन मोड, स्क्रीन घुमाने की सुविधा"</string>
@@ -2470,7 +2470,7 @@
     <string name="accessibility_magnification_area_settings_message" msgid="8498648925928109462">"स्क्रीन के कुछ हिस्से या पूरी स्क्रीन को ज़ूम करें या फिर इन दोनों विकल्पों के बीच स्विच करें"</string>
     <string name="accessibility_magnification_area_settings_full_screen_summary" msgid="2728962784113713010">"फ़ुल स्क्रीन"</string>
     <string name="accessibility_magnification_area_settings_window_screen_summary" msgid="9191632962955877019">"स्क्रीन का कुछ हिस्सा"</string>
-    <string name="accessibility_magnification_area_settings_all_summary" msgid="8107511976748799455">"पूरी स्क्रीन या स्क्रीन के कुछ हिस्से को ज़ूम करें"</string>
+    <string name="accessibility_magnification_area_settings_all_summary" msgid="8107511976748799455">"पूरी स्क्रीन या कुछ हिस्से को ज़ूम करें"</string>
     <string name="accessibility_magnification_mode_dialog_title" msgid="9151027667059878578">"ज़ूम करने का तरीका चुनें"</string>
     <string name="accessibility_magnification_mode_dialog_option_full_screen" msgid="4892487869954032029">"पूरी स्क्रीन को ज़ूम करें"</string>
     <string name="accessibility_magnification_mode_dialog_option_window" msgid="4492443201099153362">"स्क्रीन के किसी हिस्से को ज़ूम करें"</string>
@@ -2506,7 +2506,7 @@
     <string name="accessibility_screen_magnification_short_summary" msgid="2207048420669939150">"ज़ूम करने के लिए तीन बार टैप करें"</string>
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"ज़ूम करने के लिए किसी बटन पर टैप करें"</string>
     <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"कॉन्टेंट को बड़े साइज़ में देखने के लिए, स्क्रीन पर तेज़ी से ज़ूम इन करें"</string>
-    <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"&lt;b&gt;ज़ूम इन करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {1,number,integer}. स्क्रीन पर टैप करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर इधर-उधर जाने के लिए, दो उंगलियों से खींचें और छोड़ें&lt;br/&gt; {3,number,integer}. ज़ूम को कम या ज़्यादा करने के लिए, दो उंगलियों से पिंच करें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt;&lt;br/&gt; &lt;b&gt;कुछ समय तक ज़ूम इन करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. पक्का करें कि आपके डिवाइस पर, फ़ुल स्क्रीन में ज़ूम करने का विकल्प चुना गया हो&lt;br/&gt; {1,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर कहीं भी उंगली से दबाकर रखें&lt;br/&gt; {3,number,integer}. स्क्रीन पर इधर-उधर जाने के लिए, उंगली से खींचें और छोड़ें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा बंद करने के लिए, स्क्रीन से अपनी उंगली हटाएं"</string>
+    <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"&lt;b&gt;ज़ूम इन करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {1,number,integer}. स्क्रीन पर टैप करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर इधर-उधर जाने के लिए, 2 उंगलियों से खींचें और छोड़ें&lt;br/&gt; {3,number,integer}. ज़ूम को कम या ज़्यादा करने के लिए, 2 उंगलियों से पिंच करें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt;&lt;br/&gt; &lt;b&gt;कुछ समय तक ज़ूम इन करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. पक्का करें कि आपके डिवाइस पर, फ़ुल स्क्रीन में ज़ूम करने का विकल्प चुना गया हो&lt;br/&gt; {1,number,integer}. ज़ूम करने की सुविधा शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर कहीं भी उंगली से दबाकर रखें&lt;br/&gt; {3,number,integer}. स्क्रीन पर इधर-उधर जाने के लिए, उंगली से खींचें और छोड़ें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा बंद करने के लिए, स्क्रीन से अपनी उंगली हटाएं"</string>
     <string name="accessibility_screen_magnification_keyboard_summary" msgid="5376202602229533488">"&lt;b&gt;ज़ूम करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें या &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + M को दबाएं&lt;br/&gt; {1,number,integer}. स्क्रीन पर किसी एक विकल्प से दूसरे विकल्प पर जाने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + ऐरो बटन दबाएं&lt;br/&gt; {2,number,integer}. ज़ूम को अडजस्ट करने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; and \"+\" या \"-\" को दबाएं&lt;br/&gt; {3,number,integer}. ज़ूम करने की सुविधा बंद करने के लिए शॉर्टकट इस्तेमाल करें या &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + M को दबाएं"</string>
     <string name="accessibility_screen_magnification_keyboard_shortcuts_flag_off_summary" msgid="4390658165464462006">"&lt;b&gt;ज़ूम करने के लिए:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {1,number,integer}. स्क्रीन पर किसी एक विकल्प से दूसरे विकल्प पर जाने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + ऐरो बटन दबाएं&lt;br/&gt; {2,number,integer}. ज़ूम को अडजस्ट करने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; and \"+\" या \"-\" को दबाएं&lt;br/&gt; {3,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए शॉर्टकट का इस्तेमाल करें"</string>
     <string name="accessibility_screen_magnification_keyboard_touch_summary" msgid="7623681880843239997">"&lt;b&gt;कीबोर्ड&lt;/b&gt;&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें या &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + M को दबाएं&lt;br/&gt; {1,number,integer}. स्क्रीन पर किसी एक विकल्प से दूसरे विकल्प पर जाने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + ऐरो बटन दबाएं&lt;br/&gt; {2,number,integer}. ज़ूम को अडजस्ट करने के लिए, &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; and \"+\" या \"-\" को दबाएं&lt;br/&gt; {3,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए शॉर्टकट इस्तेमाल करें या &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + M को दबाएं&lt;br/&gt;&lt;br/&gt; &lt;b&gt;टचस्क्रीन&lt;/b&gt;&lt;br/&gt; ज़ूम इन करने के लिए:&lt;br/&gt; {0,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {1,number,integer}. स्क्रीन पर टैप करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर किसी एक विकल्प से दूसरे विकल्प पर जाने के लिए, दो उंगलियों से खींचें और छोड़ें&lt;br/&gt; {3,number,integer}. ज़ूम को अडजस्ट करने के लिए, दो उंगलियों से पिंच करें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt;&lt;br/&gt; कुछ समय के लिए ज़ूम इन करने के लिए:&lt;br/&gt; {0,number,integer}. पक्का करें कि आपके डिवाइस पर ज़ूम करने की सुविधा के टाइप को \'फ़ुल स्क्रीन\' के तौर पर सेट किया गया हो&lt;br/&gt; {1,number,integer}. ज़ूम करने की सुविधा को शुरू करने के लिए, शॉर्टकट का इस्तेमाल करें&lt;br/&gt; {2,number,integer}. स्क्रीन पर कहीं भी उंगली से दबाकर रखें&lt;br/&gt; {3,number,integer}. स्क्रीन पर किसी एक विकल्प से दूसरे विकल्प पर जाने के लिए, उंगली से खींचें और छोड़ें&lt;br/&gt; {4,number,integer}. ज़ूम करने की सुविधा को बंद करने के लिए, स्क्रीन से अपनी उंगली हटाएं"</string>
@@ -2543,7 +2543,7 @@
     <string name="accessibility_shortcut_edit_dialog_summary_floating_button" msgid="6266489864614886247">"फ़्लोटिंग बटन पर टैप करें"</string>
     <string name="accessibility_shortcut_edit_dialog_title_software_by_gesture" msgid="4775049370625630546">"सुलभता से जुड़े हाथ के जेस्चर"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software" msgid="8315934725362849788">"स्क्रीन पर सबसे नीचे मौजूद, सुलभता बटन <xliff:g id="ACCESSIBILITY_ICON">%s</xliff:g> पर टैप करें. सुविधाओं के बीच स्विच करने के लिए, सुलभता बटन को दबाकर रखें."</string>
-    <string name="accessibility_shortcut_edit_dialog_summary_gesture" msgid="2081123009255579884">"{count,plural, =1{स्क्रीन पर नीचे से ऊपर की ओर स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, ऊपर की ओर स्वाइप करें और दबाकर रखें.}one{स्क्रीन पर नीचे से ऊपर की ओर # उंगली से स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, स्क्रीन पर # उंगली से ऊपर की ओर स्वाइप करें और दबाकर रखें.}other{स्क्रीन पर # उंगलियों से नीचे से ऊपर की ओर स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, स्क्रीन पर # उंगलियों से ऊपर की ओर स्वाइप करें और दबाकर रखें.}}"</string>
+    <string name="accessibility_shortcut_edit_dialog_summary_gesture" msgid="2081123009255579884">"{count,plural, =1{स्क्रीन पर नीचे से ऊपर की ओर स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, ऊपर की ओर स्वाइप करें और दबाकर रखें.}one{स्क्रीन पर नीचे से ऊपर की ओर # उंगली से स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, स्क्रीन पर ऊपर की ओर # उंगली से स्वाइप करें और दबाकर रखें.}other{स्क्रीन पर नीचे से ऊपर की ओर # उंगलियों से स्वाइप करें. एक से दूसरी सुविधा पर जाने के लिए, स्क्रीन पर ऊपर की ओर # उंगलियों से स्वाइप करें और दबाकर रखें.}}"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software_floating" msgid="4459254227203203324"><annotation id="link">"और विकल्प"</annotation></string>
     <string name="footer_learn_more_content_description" msgid="8843798273152131341">"\'<xliff:g id="SERVICE">%1$s</xliff:g>\' सुविधा के बारे में ज़्यादा जानें"</string>
     <string name="accessibility_shortcut_edit_dialog_title_quick_settings" msgid="140959604014177304">"क्विक सेटिंग"</string>
@@ -2558,7 +2558,7 @@
     <string name="accessibility_shortcut_edit_screen_title_triple_tap" msgid="3314488747597058942">"तीन बार टैप करें"</string>
     <string name="accessibility_shortcut_edit_screen_summary_triple_tap" msgid="4839204951599629871">"स्क्रीन पर फटाफट %1$d बार टैप करें. ऐसा करने से, हो सकता है कि आपका डिवाइस थोड़ा धीरे काम करे."</string>
     <string name="accessibility_shortcut_two_finger_double_tap_keyword" msgid="6271718715836961167">"%1$d-उंगलियों से दो बार टैप करें"</string>
-    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"तीन बार टैप करें"</string>
+    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"तीन बार टैप"</string>
     <string name="accessibility_shortcut_edit_dialog_title_advance" msgid="4567868630655591506">"ऐडवांस"</string>
     <string name="accessibility_screen_magnification_navbar_configuration_warning" msgid="266736851606791552">"सुलभता बटन <xliff:g id="SERVICE">%1$s</xliff:g> पर सेट है. बड़ा करने के लिए, सुलभता बटन को दबाकर रखें, फिर बड़ा करना चुनें."</string>
     <string name="accessibility_screen_magnification_gesture_navigation_warning" msgid="991017769735632046">"सुलभता जेस्चर को <xliff:g id="SERVICE">%1$s</xliff:g> के लिए सेट किया गया है. बड़ा करने के लिए, दो उंगलियों से स्क्रीन के सबसे निचले हिस्से से ऊपर की ओर स्वाइप करें और रुके रहें. फिर \'बड़ा करना\' चुनें."</string>
@@ -2649,7 +2649,7 @@
     <string name="accessibility_autoclick_seekbar_desc" msgid="8363959277814621118">"अपने-आप क्लिक होने में लगने वाला समय"</string>
     <string name="accessibility_autoclick_main_switch_title" msgid="1968409462935503999">"अपने-आप क्लिक होने की सुविधा (जब कर्सर तय समय तक रुके) का इस्तेमाल करें"</string>
     <string name="accessibility_autoclick_shortcut_title" msgid="5337438503429302081">"अपने-आप क्लिक होने की सुविधा का शॉर्टकट"</string>
-    <string name="autoclick_delay_before_click_title" msgid="4625722241966706931">"क्लिक होने से पहले लगने वाला समय"</string>
+    <string name="autoclick_delay_before_click_title" msgid="4625722241966706931">"कर्सर इतनी देर रुकने पर अपने-आप क्लिक हो जाए"</string>
     <string name="autoclick_delay_before_click_summary" msgid="3685183305849901339">"यह सेट करें कि कर्सर रुकने के कितनी देर बाद क्लिक होगा"</string>
     <string name="autoclick_cursor_area_size_title" msgid="8988239939645854279">"क्लिक एरिया"</string>
     <string name="autoclick_cursor_area_size_summary" msgid="6993249143332791469">"क्लिक एरिया से कर्सर बाहर जाने पर, अपने-आप क्लिक होने की सुविधा काम नहीं करती"</string>
@@ -2660,7 +2660,7 @@
     <string name="autoclick_cursor_area_size_dialog_option_extra_small" msgid="6056674574040448864">"ज़्यादा छोटा"</string>
     <string name="autoclick_ignore_minor_cursor_movement_title" msgid="5038721995720529808">"कर्सर की हल्की-फुल्की हलचल को नज़रअंदाज़ करें"</string>
     <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"डिफ़ॉल्ट ऐक्शन के तौर पर, लेफ़्ट क्लिक का इस्तेमाल करें"</string>
-    <string name="autoclick_revert_to_left_click_summary" msgid="9207568192335942225">"कोई दूसरी कार्रवाई करने पर, अपने-आप क्लिक होने की सुविधा, ऑटोमैटिक तरीके से लेफ़्ट क्लिक पर सेट हो जाएगी"</string>
+    <string name="autoclick_revert_to_left_click_summary" msgid="9207568192335942225">"कोई दूसरी कार्रवाई करने के बाद, अपने-आप क्लिक होने की सुविधा, ऑटोमैटिक तरीके से लेफ़्ट क्लिक पर सेट हो जाएगी"</string>
     <string name="accessibility_autoclick_navigation_title" msgid="1577786826651016069">"अपने-आप क्लिक होने की सुविधा, तीन बटन वाले नेविगेशन के साथ बेहतर तरीके से काम करती है"</string>
     <string name="accessibility_autoclick_navigation_message" msgid="4985375526457764240">"अपने-आप क्लिक होने की सुविधा इस्तेमाल करने के दौरान आसानी से पीछे जाने, होम पेज पर जाने, और ऐप्लिकेशन स्विच करने के लिए, जेस्चर वाले नेविगेशन के बजाय तीन बटन वाले नेविगेशन का इस्तेमाल करें"</string>
     <string name="accessibility_autoclick_keep_gesture_navigation" msgid="5403212927837555942">"जेस्चर वाला नेविगेशन जारी रखें"</string>
@@ -2688,7 +2688,7 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"स्क्रीन के सबसे ऊपरी हिस्से से भी, रंग में सुधार करने की सुविधा को \'फटाफट सेटिंग\' में जोड़ा जा सकता है"</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"रंग बदलने की सुविधा को \'फटाफट सेटिंग\' में जोड़ा गया. इसे कभी भी चालू या बंद करने के लिए, स्क्रीन पर नीचे की ओर स्वाइप करें."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"स्क्रीन के सबसे ऊपरी हिस्से से भी, रंग बदलने की सुविधा को \'फटाफट सेटिंग\' में जोड़ा जा सकता है"</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"स्क्रीन की रोशनी को सामान्य सेटिंग के सबसे कम लेवल से भी कम करें"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"स्क्रीन की रोशनी को सामान्य लेवल से भी कम करें"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करने की सुविधा को \'फटाफट सेटिंग\' में जोड़ा गया. इसे कभी भी चालू या बंद करने के लिए, स्क्रीन पर नीचे की ओर स्वाइप करें."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"स्क्रीन के सबसे ऊपरी हिस्से से भी, स्क्रीन की रोशनी को सामान्य लेवल से और कम करने की सुविधा को \'फटाफट सेटिंग\' में जोड़ा जा सकता है"</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"वन-हैंडेड मोड को क्विक सेटिंग में जोड़ा गया. नीचे की ओर स्वाइप करके, इसे कभी भी चालू या बंद करें."</string>
@@ -2775,11 +2775,11 @@
     <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"लाल-हरे रंग की पहचान न कर पाने की समस्या"</string>
     <string name="daltonizer_mode_protanomaly_summary" msgid="877971556622350648">"हरे-लाल रंग की पहचान न कर पाने की समस्या"</string>
     <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"नीला-हरा और पीला-लाल रंग न पहचान पाने की समस्या"</string>
-    <string name="reduce_bright_colors_preference_title" msgid="2249314004651574997">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करने की सुविधा"</string>
+    <string name="reduce_bright_colors_preference_title" msgid="2249314004651574997">"स्क्रीन की रोशनी सामान्य लेवल से भी कम करने की सुविधा"</string>
     <string name="reduce_bright_colors_switch_title" msgid="1751678397884065312">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करें"</string>
     <string name="reduce_bright_colors_shortcut_title" msgid="495648157059202745">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करने का शॉर्टकट"</string>
     <string name="reduce_bright_colors_about_title" msgid="503655452544934393">"स्क्रीन की रोशनी को सामान्य लेवल से और कम करने की सुविधा के बारे में जानकारी"</string>
-    <string name="reduce_bright_colors_preference_intro_text" msgid="3502290826747650566">"स्क्रीन की रोशनी को और कम करें, ताकि कॉन्टेंट ज़्यादा आसानी से पढ़ा जा सके"</string>
+    <string name="reduce_bright_colors_preference_intro_text" msgid="3502290826747650566">"स्क्रीन की रोशनी को सामान्य लेवल से भी कम करें, ताकि कॉन्टेंट ज़्यादा आसानी से पढ़ा जा सके"</string>
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"स्क्रीन की रोशनी"</string>
     <string name="brightness_intensity_start_label" msgid="5156578219206443637">"हल्की रोशनी"</string>
     <string name="brightness_intensity_end_label" msgid="2697495729534414164">"ज़्यादा रोशनी"</string>
@@ -2904,10 +2904,10 @@
     <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"बैटरी के इस्तेमाल को ऑप्टिमाइज़ करें"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"पाबंदी लगी है"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"बैकग्राउंड में बिना किसी पाबंदी के बैटरी इस्तेमाल किए जाने की अनुमति दें. इससे बैटरी ज़्यादा खर्च हो सकती है."</string>
-    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"बैकग्राउंड में बैटरी खर्च की अनुमति दें. ज़्यादा बैटरी खर्च हो सकती है."</string>
-    <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"बैटरी की सेटिंग को अपने इस्तेमाल के हिसाब से ऑप्टिमाइज़ करें. ज़्यादातर ऐप्लिकेशन के लिए, इस सेटिंग को ऑप्टिमाइज़ करने का सुझाव दिया जाता है."</string>
+    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"बैकग्राउंड में बैटरी खर्च की अनुमति दें. ऐसा करने पर ज़्यादा बैटरी खर्च हो सकती है."</string>
+    <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"बैटरी की सेटिंग को ऐप्लिकेशन के हिसाब से ऑप्टिमाइज़ करें. ज़्यादातर ऐप्लिकेशन के लिए, ऑप्टिमाइज़ करने का सुझाव दिया जाता है."</string>
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"बैकग्राउंड में बैटरी खर्च को सीमित करें. हो सकता है कि ऐप्लिकेशन ठीक से काम न करे. सूचनाएं मिलने में देरी हो सकती है."</string>
-    <string name="manager_battery_usage_footer" msgid="2635906573922553766">"किसी ऐप्लिकेशन के लिए बैटरी इस्तेमाल करने का तरीका बदलने पर, उस ऐप की परफ़ॉर्मेंस पर असर पड़ सकता है."</string>
+    <string name="manager_battery_usage_footer" msgid="2635906573922553766">"ऐप्लिकेशन के लिए बैटरी के इस्तेमाल का तरीका बदलने पर, उनकी परफ़ॉर्मेंस पर असर पड़ सकता है."</string>
     <string name="manager_battery_usage_footer_limited" msgid="5180776148877306780">"इस ऐप्लिकेशन का इस्तेमाल करने के लिए, आपको बैटरी खर्च को <xliff:g id="STATE">%1$s</xliff:g> मोड पर सेट करना होगा."</string>
     <string name="manager_battery_usage_unrestricted_only" msgid="3646162131339418216">"कोई पाबंदी नहीं"</string>
     <string name="manager_battery_usage_optimized_only" msgid="7121785281913056432">"ऑप्टिमाइज़"</string>
@@ -3305,7 +3305,7 @@
     <string name="data_usage_background_label" msgid="5363718469293175279">"पृष्ठभूमि:"</string>
     <string name="data_usage_app_settings" msgid="5693524672522122485">"ऐप्लिकेशन सेटिंग"</string>
     <string name="data_usage_app_restrict_background" msgid="5728840276368097276">"बैकग्राउंड डेटा"</string>
-    <string name="data_usage_app_restrict_background_summary" msgid="2997942775999602794">"बैकग्राउंड में मोबाइल डेटा के इस्तेमाल को चालू करें"</string>
+    <string name="data_usage_app_restrict_background_summary" msgid="2997942775999602794">"बैकग्राउंड में मोबाइल डेटा इस्तेमाल होने की सुविधा चालू करें"</string>
     <string name="data_usage_app_restrict_background_summary_disabled" msgid="8213268097024597864">"इस एप्‍लि. के लिए पृष्ठभूमि डेटा प्रतिबंधित करने के लिए, पहले मो. डेटा सीमा सेट करें."</string>
     <string name="data_usage_app_restrict_dialog_title" msgid="5383874438677899255">"पृष्ठभूमि डेटा प्रतिबंधित करें?"</string>
     <string name="data_usage_app_restrict_dialog" msgid="5534272311979978297">"यह सुविधा सिर्फ़ मोबाइल नेटवर्क उपलब्ध होने पर उस ऐप को काम करने से रोक सकती है जो बैकग्राउंड डेटा पर निर्भर है.\n\nआप ऐप में उपलब्ध सेटिंग में ज़्यादा उचित डेटा खर्च नियंत्रण पा सकते हैं."</string>
@@ -3796,7 +3796,7 @@
     <string name="zen_mode_active_text" msgid="5002406772481439437">"चालू है"</string>
     <string name="zen_mode_disabled_needs_setup" msgid="389269759040103728">"सेट नहीं है"</string>
     <string name="zen_mode_disabled_by_user" msgid="138592173630683253">"बंद है"</string>
-    <string name="zen_mode_new_title" msgid="4934720193004330740">"कोई मोड बनाएं"</string>
+    <string name="zen_mode_new_title" msgid="4934720193004330740">"अपना कोई मोड बनाएं"</string>
     <string name="zen_mode_new_option_custom" msgid="1060993879440003341">"कस्टम मोड"</string>
     <string name="zen_mode_action_activate" msgid="4832626715234966484">"अभी चालू करें"</string>
     <string name="zen_mode_action_deactivate" msgid="5922468877447186921">"बंद करें"</string>
@@ -3962,7 +3962,7 @@
     <string name="unseen_notifs_lock_screen" msgid="6910701117021324612">"लॉक स्क्रीन पर सिर्फ़ नई सूचनाएं दिखाएं"</string>
     <string name="unseen_notifs_lock_screen_summary" msgid="5996722793868021391">"देखी जा चुकी सूचनाएं लॉक स्क्रीन से अपने-आप हट जाएंगी"</string>
     <string name="lock_screen_notifs_show_full_list" msgid="6767009263807771108">"पूरी सूची"</string>
-    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"संक्षिप्त"</string>
+    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"कंपैक्ट व्यू"</string>
     <string name="lock_screen_notifs_title" msgid="3412042692317304449">"लॉक स्क्रीन पर सूचनाएं"</string>
     <string name="lock_screen_notifs_show_all_summary" msgid="4226586018375762117">"डिफ़ॉल्ट और साइलेंट, दोनों मोड वाली सूचनाएं और बातचीत दिखाएं"</string>
     <string name="lock_screen_notifs_show_all" msgid="1300418674456749664">"बातचीत, डिफ़ॉल्ट, और साइलेंट मोड पर सेट की गई सूचनाएं दिखाएं"</string>
@@ -3981,10 +3981,10 @@
     <string name="lock_screen_notifications_summary_hide_profile" msgid="2183455323048921579">"ऑफ़िस के काम से जुड़ी संवेदनशील सूचनाएं छिपाएं"</string>
     <string name="lock_screen_notifications_interstitial_message_profile" msgid="1456262034599029028">"जब आपका डिवाइस लॉक हो, तो आप प्रोफ़ाइल सूचना को किस तरह दिखाया जाना चाहेंगे?"</string>
     <string name="lockscreen_notification_show_switch" msgid="7324668881962101312">"लॉक स्क्रीन पर दिखाएं"</string>
-    <string name="lockscreen_notification_what_to_show_title" msgid="707880305538256400">"लॉक स्क्रीन पर कौनसी सूचनाएं दिखें"</string>
+    <string name="lockscreen_notification_what_to_show_title" msgid="707880305538256400">"लॉक स्क्रीन पर क्या दिखे"</string>
     <string name="lock_screen_notification_show_viewed_notifs" msgid="4104703346314965171">"देखी गई सूचनाएं"</string>
     <string name="lock_screen_notification_show_viewed_notif_icons" msgid="1197681203638927375">"देखी गई सूचनाओं के आइकॉन"</string>
-    <string name="lock_screen_notification_show_silent_title" msgid="9177971841517814916">"साइलेंट मोड वाली सूचनाएं दिखाएं"</string>
+    <string name="lock_screen_notification_show_silent_title" msgid="9177971841517814916">"साइलेंट मोड वाली सूचनाएं"</string>
     <string name="lock_screen_notification_show_sensitive_content_title" msgid="3184973371036065258">"संवेदनशील कॉन्टेंट"</string>
     <string name="lock_screen_notification_show_sensitive_work_content_title" msgid="532300440507441426">"वर्क प्रोफ़ाइल से जुड़ा संवेदनशील कॉन्टेंट"</string>
     <string name="lock_screen_notifications_interstitial_title_profile" msgid="6950124772255324448">"प्रोफ़ाइल सूचना"</string>
@@ -4037,7 +4037,7 @@
     <string name="manage_notification_access_title" msgid="4154723216570646451">"सूचनाएं पढ़ने, जवाब देने, और कंट्रोल से जुड़ी सेटिंग"</string>
     <string name="manage_notification_access_summary" msgid="2907135226478903997">"यह कंट्रोल करें कि कौनसे ऐप्लिकेशन और डिवाइस, सूचनाएं पढ़ सकते हैं"</string>
     <string name="work_profile_notification_access_blocked_summary" msgid="8643809206612366067">"वर्क प्रोफ़ाइल सूचना की पहुंच रोक दी गई है"</string>
-    <string name="notification_assistant_title" msgid="5889201903272393099">"सूचनाओं में सुझाव पाएं"</string>
+    <string name="notification_assistant_title" msgid="5889201903272393099">"स्मार्ट नोटिफ़िकेशन"</string>
     <string name="notification_assistant_summary" msgid="1957783114840908887">"कार्रवाई, जवाब वगैरह के लिए सुझाव पाएं"</string>
     <string name="no_notification_assistant" msgid="2533323397091834096">"कोई नहीं"</string>
     <string name="no_notification_listeners" msgid="2839354157349636000">"इंस्टॉल किए गए किसी भी ऐप्लिकेशन ने सूचना के ऐक्सेस का अनुरोध नहीं किया है."</string>
@@ -4141,7 +4141,7 @@
     <string name="notification_content_block_summary" msgid="329171999992248925">"सूचना कभी भी शेड में या पेरिफ़ेरल डिवाइस पर ना दिखाएं"</string>
     <string name="app_notification_fsi_permission_title" msgid="2260977598430154428">"फ़ुल-स्क्रीन पर सूचनाएं दिखाने की अनुमति दें"</string>
     <string name="app_notification_fsi_permission_summary" msgid="7673487977631068039">"डिवाइस के लॉक होने पर, सूचनाओं को फ़ुल स्क्रीन पर दिखाने की अनुमति दें"</string>
-    <string name="notification_badge_title" msgid="6854537463548411313">"सूचनाएं बताने वाला डॉट चालू करें"</string>
+    <string name="notification_badge_title" msgid="6854537463548411313">"\'सूचनाएं बताने वाला डॉट\' सुविधा चालू करें"</string>
     <string name="notification_channel_badge_title" msgid="6505542437385640049">"सूचनाओं वाला डॉट दिखाएं"</string>
     <string name="app_notification_override_dnd_title" msgid="3769539356442226691">"\'परेशान न करें\' मोड को बायपास करें"</string>
     <string name="app_notification_override_dnd_summary" msgid="4894641191397562920">"\'परेशान न करें\' मोड चालू होने पर भी ये सूचनाएं दिखाना जारी रखें"</string>
@@ -4251,7 +4251,7 @@
     <string name="zen_mode_bypassing_apps_header" msgid="60083006963906906">"ऐसे ऐप्लिकेशन जो \'परेशान न करें\' मोड को बायपास कर सकते हैं"</string>
     <string name="zen_mode_bypassing_apps_add_header" msgid="3201829605075172536">"और ऐप्लिकेशन चुनें"</string>
     <string name="zen_mode_bypassing_apps_none" msgid="7944221631721778096">"कोई ऐप्लिकेशन नहीं चुना गया"</string>
-    <string name="zen_mode_bypassing_apps_subtext_none" msgid="5128770411598722200">"कोई भी ऐप्लिकेशन \'परेशान न करें\' मोड को बायपास नहीं कर सकता"</string>
+    <string name="zen_mode_bypassing_apps_subtext_none" msgid="5128770411598722200">"कोई भी ऐप्लिकेशन, \'परेशान न करें\' मोड को बायपास नहीं कर सकता"</string>
     <string name="zen_mode_bypassing_apps_add" msgid="5031919618521327102">"ऐप्लिकेशन जोड़ें"</string>
     <string name="zen_mode_bypassing_apps_summary_all" msgid="4684544706511555744">"सभी सूचनाएं"</string>
     <string name="zen_mode_bypassing_apps_summary_some" msgid="5315750826830358230">"कुछ सूचनाएं"</string>
@@ -4294,7 +4294,7 @@
     <string name="zen_mode_trigger_title_bedtime" msgid="3287241454965736913">"बेडटाइम रूटीन"</string>
     <string name="zen_mode_trigger_title_driving" msgid="7890990983453164403">"गाड़ी चलाते समय"</string>
     <string name="zen_mode_trigger_title_generic" msgid="1347753445938095789">"ऐप्लिकेशन की सेटिंग"</string>
-    <string name="zen_mode_trigger_summary_settings_in_app" msgid="4860667191183702601">"जानकारी और सेटिंग <xliff:g id="APP_NAME">%1$s</xliff:g> में दिखेंगी"</string>
+    <string name="zen_mode_trigger_summary_settings_in_app" msgid="4860667191183702601">"<xliff:g id="APP_NAME">%1$s</xliff:g> में जानकारी और सेटिंग दिखेंगी"</string>
     <string name="zen_mode_trigger_summary_managed_by_app" msgid="8631011868193102098">"इन्हें <xliff:g id="APP_NAME">%1$s</xliff:g> मैनेज कर रहा है"</string>
     <string name="zen_mode_confirm_disable_mode_title" msgid="7314998098582325018">"<xliff:g id="MODE_NAME">%1$s</xliff:g> को बंद करना है?"</string>
     <string name="zen_mode_confirm_disable_message" msgid="2703882646066764140">"यह मोड बंद करने पर दोबारा कभी चालू नहीं होगा"</string>
@@ -4376,7 +4376,7 @@
     <string name="app_launch_supported_links_title" msgid="2457931321701095763">"{count,plural, =1{# सहायता लिंक}one{# सहायता लिंक}other{# सहायता लिंक}}"</string>
     <string name="app_launch_supported_links_add" msgid="3271247750388016131">"जोड़ें"</string>
     <string name="app_launch_supported_links_subtext" msgid="4268004019469184113">"<xliff:g id="APP_LABEL">%s</xliff:g> में खुलता है"</string>
-    <string name="storage_summary_format" msgid="5721782272185284276">"<xliff:g id="STORAGE_TYPE">%2$s</xliff:g> में से <xliff:g id="SIZE">%1$s</xliff:g> का इस्तेमाल किया गया"</string>
+    <string name="storage_summary_format" msgid="5721782272185284276">"<xliff:g id="STORAGE_TYPE">%2$s</xliff:g> का <xliff:g id="SIZE">%1$s</xliff:g> स्पेस इस्तेमाल किया गया"</string>
     <string name="storage_type_internal" msgid="979243131665635278">"डिवाइस स्टोरेज"</string>
     <string name="storage_type_external" msgid="125078274000280821">"बाहरी मेमोरी"</string>
     <string name="data_summary_format" msgid="8802057788950096650">"<xliff:g id="DATE">%2$s</xliff:g> से <xliff:g id="SIZE">%1$s</xliff:g> इस्तेमाल हुआ"</string>
@@ -4499,7 +4499,7 @@
     <string name="assist_access_screenshot_summary" msgid="5276593070956201863">"डिजिटल असिस्टेंट ऐप्लिकेशन को स्क्रीन पर मौजूद इमेज को ऐक्सेस करने की अनुमति दें"</string>
     <string name="assist_flash_title" msgid="5449512572885550108">"स्क्रीन फ़्लैश करे"</string>
     <string name="assist_flash_summary" msgid="3032289860177784594">"डिजिटल असिस्टेंट ऐप्लिकेशन जब स्क्रीन पर मौजूद टेक्स्ट या स्क्रीनशॉट को ऐक्सेस करे, तब स्क्रीन के किनारे फ़्लैश हों"</string>
-    <string name="assist_footer" msgid="8248015363806299068">"स्क्रीन पर मौजूद जानकारी के आधार पर, डिजिटल असिस्टेंट ऐप्लिकेशन आपकी मदद कर सकते हैं. कुछ ऐप्लिकेशन आपकी मदद करने के लिए, लॉन्चर और फ़ोन को बोलकर निर्देश देने वाली सेवाओं, दोनों के साथ काम करते हैं."</string>
+    <string name="assist_footer" msgid="8248015363806299068">"डिजिटल असिस्टेंट ऐप्लिकेशन, स्क्रीन पर मौजूद जानकारी के आधार पर आपकी मदद कर सकते हैं. कुछ ऐप्लिकेशन, लॉन्चर और फ़ोन को बोलकर निर्देश देने वाली सेवाओं, दोनों के साथ काम करते हैं."</string>
     <string name="average_memory_use" msgid="717313706368825388">"औसत मेमोरी उपयोग"</string>
     <string name="maximum_memory_use" msgid="2171779724001152933">"अधिकतम मेमोरी उपयोग"</string>
     <string name="memory_usage" msgid="5594133403819880617">"मेमोरी का उपयोग"</string>
@@ -4547,8 +4547,8 @@
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"इस ऐप्लिकेशन को पूरी स्क्रीन पर सूचनाएं दिखाने की अनुमति दें"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"डिवाइस लॉक रहने पर, इस ऐप्लिकेशन को सूचनाएं पूरी स्क्रीन पर दिखाने की अनुमति दें. ऐसा करने पर, अलार्म, इनकमिंग कॉल या अन्य ज़रूरी सूचनाएं पूरी स्क्रीन पर दिखाई जा सकती हैं."</string>
     <string name="write_system_preferences_page_title" msgid="4775435310385611055">"सिस्टम की सेटिंग में बदलाव करने की अनुमति"</string>
-    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"इस ऐप्लिकेशन को अपनी ओर से सिस्टम की सेटिंग में बदलाव करने की अनुमति दें"</string>
-    <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"किसी ऐप्लिकेशन को यह अनुमति देने पर, वह सिस्टम की मुख्य सेटिंग में बदलाव कर सकता है."</string>
+    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"इस ऐप्लिकेशन को आपकी ओर से सिस्टम की सेटिंग में बदलाव करने की अनुमति दें"</string>
+    <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"ऐप्लिकेशन यह अनुमति मिलने पर सिस्टम की मुख्य सेटिंग में बदलाव कर सकता है."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"मीडिया मैनेजमेंट ऐप्लिकेशन"</string>
     <string name="media_management_apps_toggle_label" msgid="166724270857067456">"ऐप्लिकेशन को मीडिया मैनेज करने की अनुमति दें"</string>
     <string name="media_management_apps_description" msgid="8000565658455268524">"अनुमति देने पर, यह दूसरे ऐप्लिकेशन का इस्तेमाल करके बनाई गई मीडिया फ़ाइलों में बदलाव कर सकेगा या उन्हें मिटा सकेगा. यह ऐप्लिकेशन ये काम आपसे बिना पूछे कर सकता है. इसके लिए, इसके पास मीडिया और अन्य फाइलों को ऐक्सेस करने की अनुमति होनी चाहिए."</string>
@@ -4567,7 +4567,7 @@
     <string name="write_system_settings" msgid="5555707701419757421">"सिस्‍टम की सेटिंग को बदलें"</string>
     <string name="permit_write_settings" msgid="3113056800709924871">"सिस्टम की सेटिंग में बदलाव करने की अनुमति दें"</string>
     <string name="write_settings_description" msgid="1474881759793261146">"इससे कोई ऐप्लिकेशन, सिस्टम की सेटिंग में बदलाव कर सकता है."</string>
-    <string name="external_source_switch_title" msgid="101571983954849473">"इस सोर्स से अनुमति दें"</string>
+    <string name="external_source_switch_title" msgid="101571983954849473">"इस सोर्स से इंस्टॉल करने की अनुमति दें"</string>
     <string name="camera_gesture_title" msgid="5559439253128696180">"कैमरे के लिए दो बार मोड़ना"</string>
     <string name="camera_gesture_desc" msgid="7557645057320805328">"अपनी कलाई को दो बार मोड़कर कैमरा ऐप खोलें"</string>
     <string name="screen_zoom_title" msgid="6928045302654960559">"डिसप्ले साइज़"</string>
@@ -4582,7 +4582,7 @@
     <string name="storage_toplevel_summary" msgid="6708203706751754934">"<xliff:g id="PERCENTAGE">%1$s</xliff:g> स्टोरेज का इस्तेमाल किया गया - <xliff:g id="FREE_SPACE">%2$s</xliff:g> खाली है"</string>
     <string name="display_dashboard_summary" msgid="1599453894989339454">"गहरे रंग वाली थीम, फ़ॉन्ट का साइज़, स्क्रीन की रोशनी"</string>
     <string name="memory_summary" msgid="8221954450951651735">"<xliff:g id="TOTAL_MEMORY">%2$s</xliff:g> में से <xliff:g id="USED_MEMORY">%1$s</xliff:g> स्टोरेज का औसत इस्तेमाल किया गया"</string>
-    <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> के रूप में साइन इन किया हुआ है"</string>
+    <string name="users_summary" msgid="8473589474976307510">"<xliff:g id="USER_NAME">%1$s</xliff:g> के तौर पर साइन इन किया है"</string>
     <string name="android_version_summary" msgid="7818952662015042768">"Android <xliff:g id="VERSION">%1$s</xliff:g> में अपडेट किया गया"</string>
     <string name="android_version_pending_update_summary" msgid="5404532347171027730">"अपडेट उपलब्ध है"</string>
     <string name="disabled_by_policy_title" msgid="6852347040813204503">"ऑफ़िस की नीति के तहत ब्लॉक है"</string>
@@ -4706,7 +4706,7 @@
     <string name="battery_saver_off_scheduled_summary" msgid="2193875981740829819">"<xliff:g id="BATTERY_PERCENTAGE">%1$s</xliff:g> बैटरी बचने पर बैटरी सेवर चालू हो जाएगा"</string>
     <string name="battery_saver_off_summary" msgid="4411561435493109261">"बंद है"</string>
     <string name="app_battery_usage_title" msgid="346558380609793334">"ऐप्लिकेशन का बैटरी खर्च"</string>
-    <string name="app_battery_usage_summary" msgid="6349965904306339539">"ऐप्लिकेशन के इस्तेमाल के लिए बैटरी खर्च सेट करें"</string>
+    <string name="app_battery_usage_summary" msgid="6349965904306339539">"ऐप्लिकेशन के लिए बैटरी खर्च सेट करें"</string>
     <string name="battery_tips_card_action_button" msgid="4897793527424711648">"सेटिंग देखें"</string>
     <string name="battery_tips_card_action_button_check" msgid="1535140204105479318">"जांच करें"</string>
     <string name="battery_tips_card_dismiss_button" msgid="1885756985544936618">"ठीक है"</string>
@@ -4729,7 +4729,7 @@
     <string name="filter_battery_restricted_title" msgid="5886859505802563232">"पाबंदी है"</string>
     <string name="default_spell_checker" msgid="7108373288347014351">"डिफ़ॉल्ट स्पेल-चेकर"</string>
     <string name="choose_spell_checker" msgid="7402513404783243675">"स्पेल-चेकर चुनें"</string>
-    <string name="spell_checker_primary_switch_title" msgid="529240542284039243">"स्पेलिंग जांचने वाली सुविधा का इस्तेमाल करें"</string>
+    <string name="spell_checker_primary_switch_title" msgid="529240542284039243">"स्पेल चेकर इस्तेमाल करें"</string>
     <string name="spell_checker_not_selected" msgid="8818618543474481451">"नहीं चुना गया"</string>
     <string name="notification_log_details_delimiter" msgid="2475986465985309821">": "</string>
     <string name="notification_log_details_package" msgid="3205243985502010202">"पैकेज"</string>
@@ -4901,7 +4901,7 @@
     <string name="automatic_storage_manager_activation_warning" msgid="170508173207142665">"आपकी जगह का प्रबंधन अब जगह मैनेजर द्वारा किया जा रहा है"</string>
     <string name="account_for_section_header" msgid="7466759342105251096">"<xliff:g id="USER_NAME">%1$s</xliff:g> के खाते"</string>
     <string name="auto_sync_account_title" msgid="1070908045600374254">"ऐप्लिकेशन का डेटा अपने-आप सिंक हो"</string>
-    <string name="auto_sync_account_summary" msgid="7580352130028957346">"ऐप्लिकेशन को डेटा अपने-आप रीफ्रे़श करने दें"</string>
+    <string name="auto_sync_account_summary" msgid="7580352130028957346">"इससे ऐप्लिकेशन अपने-आप डेटा रीफ़्रेश कर पाएंगे"</string>
     <string name="account_sync_title" msgid="7036067017433297574">"खाता सिंक करने की सुविधा"</string>
     <string name="account_sync_summary_some_on" msgid="911460286297968724">"<xliff:g id="ID_2">%2$d</xliff:g> में से <xliff:g id="ID_1">%1$d</xliff:g> आइटम के लिए सिंक करने की सुविधा चालू है"</string>
     <string name="account_sync_summary_all_on" msgid="2953682111836599841">"सभी आइटम के लिए सिंक करने की सुविधा चालू है"</string>
@@ -5594,7 +5594,7 @@
     <string name="app_pinning_main_switch_title" msgid="5465506660064032876">"ऐप्लिकेशन पिन करने की सुविधा का इस्तेमाल करें"</string>
     <string name="developer_options_main_switch_title" msgid="1720074589554152501">"डेवलपर के लिए सेटिंग और टूल का इस्तेमाल करें"</string>
     <string name="default_print_service_main_switch_title" msgid="4697133737128324036">"प्रिंट से जुड़ी सेवा का इस्तेमाल करें"</string>
-    <string name="multiple_users_main_switch_title" msgid="9158796544835843201">"प्रोफ़ाइलें जोड़ने और उनके बीच स्विच करने की अनुमति"</string>
+    <string name="multiple_users_main_switch_title" msgid="9158796544835843201">"प्रोफ़ाइलें जोड़ने और स्विच करने की अनुमति दें"</string>
     <string name="multiple_users_main_switch_keywords" msgid="4845954458094134356">"अनुमति दें, कई, इस्तेमाल करने वाले, मंज़ूरी दें, कई सारे"</string>
     <string name="multiple_users_title_keywords" msgid="2395593167746225172">"कई, उपयोगकर्ता, प्रोफ़ाइलें, लोग, खाते, स्विच, बहुत"</string>
     <string name="wireless_debugging_main_switch_title" msgid="8463499572781441719">"वॉयरलेस डीबगिंग का इस्तेमाल करें"</string>
@@ -5724,11 +5724,11 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"फ़िंगरप्रिंट सेंसर"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"फ़्लैश के साथ मिलने वाली सूचनाएं"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"फ़्लैश के साथ मिलने वाली सूचनाओं की जानकारी"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"बंद है / सूचनाओं और अलार्म के लिए, स्क्रीन के फ़्लैश या कैमरे की मदद से सूचना पाएं"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"बंद है / सूचनाओं और अलार्म का अलर्ट, कैमरे या स्क्रीन के फ़्लैश से पाएं"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"चालू है / सूचनाओं और अलार्म के लिए, स्क्रीन के फ़्लैश या कैमरे की सुविधा चालू करें"</string>
-    <string name="flash_notifications_intro" msgid="8409873413480928249">"सूचनाएं मिलने या अलार्म बजने पर कैमरे या स्क्रीन का फ़्लैश चालू होने की सुविधा पाएं"</string>
+    <string name="flash_notifications_intro" msgid="8409873413480928249">"सूचनाएं मिलने या अलार्म बजने पर कैमरे की लाइट या स्क्रीन फ़्लैश होगी"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"सूचनाएं मिलने या अलार्म बजने पर स्क्रीन का फ़्लैश चालू होने की सुविधा पाएं"</string>
-    <string name="flash_notifications_note" msgid="2426125248448055075">"अगर आपको रोशनी से दिक्कत होती है, तो फ़्लैश के साथ मिलने वाली सूचनाओं की सुविधा का इस्तेमाल सावधानी से करें"</string>
+    <string name="flash_notifications_note" msgid="2426125248448055075">"अगर आपको रोशनी से दिक्कत होती है, तो फ़्लैश के साथ सूचना मिलने की सुविधा का इस्तेमाल सावधानी से करें"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"फ़्लैश, लाइट, कम सुनने वाला, सुनने में समस्या"</string>
     <string name="flash_notifications_preview" msgid="5320176885050440874">"झलक देखें"</string>
     <string name="camera_flash_notification_title" msgid="2475084876382922732">"कैमरे का फ़्लैश"</string>

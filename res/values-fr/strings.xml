@@ -1764,7 +1764,7 @@
     <string name="reset_esim_error_msg" msgid="8459527827897797168">"Une erreur est survenue et vos cartes eSIM n\'ont pas été effacées.\n\nRedémarrez votre appareil et réessayez."</string>
     <string name="reset_private_space_delete_title" msgid="2555885198282572990">"Supprimer l\'espace privé"</string>
     <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"Si vous disposez d\'un espace privé sur votre appareil, celui-ci sera définitivement supprimé et le compte Google ajouté à votre espace sera retiré. \n\nToutes les applis de votre espace et leurs données seront également définitivement supprimées de la "<b>"mémoire de stockage interne"</b>" de votre téléphone."</string>
-    <string name="main_clear_title" msgid="277664302144837723">"Effacer toutes les données (rétablir la configuration d\'usine)"</string>
+    <string name="main_clear_title" msgid="277664302144837723">"Effacer toutes les données (config. usine)"</string>
     <string name="main_clear_short_title" msgid="4752094765533020696">"Effacer données (rétablir config. d\'usine)"</string>
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"La musique"</li>\n<li>"Les photos"</li>\n<li>"Les autres données utilisateur"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"Les cartes eSIM"</li></string>
@@ -2086,7 +2086,7 @@
     <string name="force_stop_dlg_text" msgid="1527286468544457368">"L\'arrêt forcé d\'une application peut provoquer un fonctionnement instable."</string>
     <string name="app_disable_dlg_positive" msgid="1414218905322009505">"Désactiver l\'application"</string>
     <string name="app_disable_dlg_text" msgid="2449382902751908916">"Si vous désactivez cette application, il est possible qu\'Android et d\'autres applications ne fonctionnent plus comme prévu. N\'oubliez pas que vous ne pouvez pas supprimer cette application, car elle est préinstallée sur votre appareil. Si vous la désactivez, elle ne sera plus visible sur votre appareil."</string>
-    <string name="app_install_details_group_title" msgid="1172114479073704677">"Store"</string>
+    <string name="app_install_details_group_title" msgid="1172114479073704677">"Magasin d\'applications"</string>
     <string name="app_install_details_title" msgid="7783556181897142187">"Infos sur l\'appli"</string>
     <string name="app_install_details_summary" msgid="2013043219249992373">"Application installée depuis : <xliff:g id="APP_STORE">%1$s</xliff:g>"</string>
     <string name="app_install_details_different_initiating_package_summary" msgid="6093306593167176688">"Appli installée depuis la boutique <xliff:g id="APP_STORE1">%1$s</xliff:g> (via <xliff:g id="APP_STORE2">%2$s</xliff:g>)"</string>
@@ -2390,7 +2390,7 @@
     <string name="display_category_title" msgid="6638191682294461408">"Affichage"</string>
     <string name="accessibility_color_and_motion_title" msgid="1085072332445818494">"Couleur et mouvement"</string>
     <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"Thème sombre, correction des couleurs, suppression des animations"</string>
-    <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"Accessibilité du curseur et du pavé tactile"</string>
+    <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"Accessibilité curseur et pavé tactile"</string>
     <string name="accessibility_pointer_and_touchpad_summary" msgid="8588221231953604340">"Taille, couleur, type"</string>
     <string name="accessibility_pointer_color_customization_title" msgid="2841888132681075999">"Couleur du curseur"</string>
     <string name="accessibility_pointer_title" msgid="7427650233669997010">"Curseur"</string>
@@ -2526,7 +2526,7 @@
     <string name="accessibility_tutorial_dialog_message_triple" msgid="5219991116201165146">"Pour lancer ou arrêter l\'agrandissement, appuyez trois fois n\'importe où sur l\'écran."</string>
     <string name="accessibility_tutorial_dialog_tripletap_instruction" msgid="7549293553589934">"Pour lancer ou arrêter l\'agrandissement, appuyez rapidement %1$d fois sur votre écran."</string>
     <string name="accessibility_tutorial_dialog_twofinger_doubletap_instruction" msgid="1007756360115974649">"Pour lancer ou arrêter l\'agrandissement, appuyez rapidement 2 fois sur l\'écran avec %1$d doigts."</string>
-    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas. Recherchez ensuite le titre {featureName}.}one{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas avec # doigt. Recherchez ensuite le titre {featureName}.}other{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas avec # doigts. Recherchez ensuite le titre {featureName}.}}"</string>
+    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas. Recherchez ensuite le bloc {featureName}.}one{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas avec # doigt. Recherchez ensuite le bloc {featureName}.}other{Pour utiliser cette fonctionnalité, balayez votre écran depuis le bord supérieur vers le bas avec # doigts. Recherchez ensuite le bloc {featureName}.}}"</string>
     <string name="accessibility_tutorial_dialog_shortcut_unavailable_in_suw" msgid="3847728530771929959">"Ce raccourci sera disponible une fois que vous aurez fini de configurer votre appareil."</string>
     <string name="accessibility_tutorial_dialog_message_gesture" msgid="4148062210755434854">"Pour utiliser cette fonctionnalité, balayez vers le haut depuis le bas de l\'écran avec deux doigts.\n\nPour changer de fonctionnalité, balayez vers le haut avec deux doigts et maintenez l\'appui."</string>
     <string name="accessibility_tutorial_dialog_gesture_shortcut_instruction" msgid="7349950768250852308">"{count,plural, =1{Pour utiliser cette fonctionnalité, balayez vers le haut depuis le bas de l\'écran}one{Pour utiliser cette fonctionnalité, balayez vers le haut depuis le bas de l\'écran avec # doigt}other{Pour utiliser cette fonctionnalité, balayez vers le haut depuis le bas de l\'écran avec # doigts}}"</string>
@@ -2667,8 +2667,8 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Paramètres de navigation"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Vibreur et retour haptique"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Contrôler la force des vibrations pour différentes utilisations"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Activé / Contrôlez le niveau de vibration pour les appels, les notifications et les alarmes"</string>
-    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Désactivé / Contrôlez le niveau de vibration pour les appels, les notifications et les alarmes"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Activé / Contrôler le niveau de vibration pour les appels, les notifications et les alarmes"</string>
+    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Désactivé / Contrôler le niveau de vibration pour les appels, les notifications et les alarmes"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Ce paramètre est désactivé, car l\'appareil est mode silencieux"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Appels"</string>
     <string name="accessibility_notification_alarm_vibration_category_title" msgid="2683635252414849417">"Notifications et alarmes"</string>
@@ -2721,7 +2721,7 @@
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Configurez et gérez des appareils auditifs ASHA et LE Audio, des implants cochléaires ainsi que d\'autres amplificateurs auditifs"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Configurez et gérez les appareils auditifs ASHA, les implants cochléaires ainsi que d\'autres amplificateurs auditifs"</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Configurez et gérez les appareils auditifs LE Audio, les implants cochléaires ainsi que d\'autres amplificateurs auditifs"</string>
-    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"Configurez et gérez les appareils auditifs et autres amplificateurs sonores"</string>
+    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"Configurer et gérer les appareils auditifs et autres amplificateurs sonores"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Ajouter des appareils auditifs"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Associer les appareils"</string>
     <string name="accessibility_hearingaid_pair_instructions_message" msgid="581652489109350119">"Sur le prochain écran, appuyez sur vos appareils auditifs. Vous devrez peut-être associer séparément les appareils gauche et droit.\n\nAssurez-vous que vos appareils auditifs sont allumés et prêts pour l\'association."</string>
@@ -3108,7 +3108,7 @@
     <string name="on_device_recognition_settings" msgid="6503160369314598069">"Paramètres de reconnaissance sur l\'appareil"</string>
     <string name="on_device_recognition_settings_title" msgid="7137599722039096545">"Reconnaissance sur l\'appareil"</string>
     <string name="on_device_recognition_settings_summary" msgid="3292736423223499348">"Reconnaissance vocale sur l\'appareil"</string>
-    <string name="tts_subtext" msgid="8958790811881046789">"Ajustez la vitesse d\'élocution et le ton"</string>
+    <string name="tts_subtext" msgid="8958790811881046789">"Ajuster la vitesse d\'élocution et le ton"</string>
     <string name="tts_engine_preference_title" msgid="7808775764174571132">"Moteur préféré"</string>
     <string name="tts_engine_settings_title" msgid="1298093555056321577">"Paramètres du moteur"</string>
     <string name="tts_sliders_title" msgid="6901146958648426181">"Débit et ton"</string>
@@ -3767,8 +3767,8 @@
     <string name="work_profile_sound_category_title" msgid="1708926655170323454">"Son du profil professionnel"</string>
     <string name="live_caption_title" msgid="8617086825712756983">"Sous-titres instantanés"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Bénéficiez des sous-titres pour les appels, les vidéos et autres contenus multimédias"</string>
-    <string name="live_caption_on_summary" msgid="8921561021882989495">"Activé / Bénéficiez des sous-titres pour les appels, les vidéos et autres contenus multimédias"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Désactivé / Bénéficiez des sous-titres pour les appels, les vidéos et autres contenus multimédias"</string>
+    <string name="live_caption_on_summary" msgid="8921561021882989495">"Activé / Bénéficier des sous-titres pour les appels, les vidéos et autres contenus multimédias"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Désactivé / Bénéficier des sous-titres pour les appels, les vidéos et autres contenus multimédias"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Casque filaire"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Le son des appareils multimédias compatibles devient plus immersif"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Désactivé"</string>
@@ -5021,7 +5021,7 @@
     <string name="credman_autofill_confirmation_message" msgid="843829628024668466">"&lt;b&gt;Utilisez &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt;?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; Les nouveaux mots de passe, clés d\'accès et autres infos seront désormais enregistrés ici. &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt; peut utiliser ce qui est affiché à l\'écran pour déterminer ce qui peut être saisi automatiquement."</string>
     <string name="credman_picker_title" msgid="8442086614222006564">"Service préféré pour la gestion des mots de passe, des clés d\'accès et de la saisie automatique"</string>
     <string name="credman_picker_title_new" msgid="4292105803864397398">"Service préféré"</string>
-    <string name="credman_picker_page_summary" msgid="4633938046738617332">"Choisissez votre service préféré pour enregistrer les données de connexion et les suggestions de saisie automatique"</string>
+    <string name="credman_picker_page_summary" msgid="4633938046738617332">"Choisissez le service que vous préférez utiliser pour enregistrer les données de connexion et les suggestions de saisie automatique"</string>
     <string name="credman_confirmation_message_title" msgid="8847900085593880729">"Désactiver %1$s ?"</string>
     <string name="credman_confirmation_message" msgid="2357324543658635239">"&lt;b&gt;Désactiver ce service ?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; Les infos enregistrées telles que les mots de passe, clés d\'accès, modes de paiement et autres ne seront pas renseignées quand vous vous connecterez. Pour utiliser vos infos enregistrées, choisissez un mot de passe, une clé d\'accès ou un service de données."</string>
     <string name="account_dashboard_title_with_passkeys" msgid="648242372086733541">"Mots de passe, clés d\'accès et comptes"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Assombrir les écrans clairs et éclaircir les écrans sombres"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Faites un zoom avant pour agrandir le contenu à l\'écran"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Désactivé"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Désactivés / Personnalisez la taille et le style des sous-titres"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Désactivé / Personnaliser la taille et le style des sous-titres"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Activés / Personnalisez la taille et le style des sous-titres"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Désactivés"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Activés"</string>

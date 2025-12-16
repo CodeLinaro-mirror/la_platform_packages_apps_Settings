@@ -585,7 +585,7 @@
     <string name="security_settings_fingerprint_enroll_start_message" msgid="5010227772754175346">"Priložte prst k senzoru a zdvihnite ho, keď zacítite vibráciu"</string>
     <string name="security_settings_udfps_enroll_start_message" msgid="5032954588171487566">"Držte prst na senzore, kým nezacítite vibrovanie"</string>
     <string name="security_settings_sfps_enroll_start_message" msgid="9054672627477685212">"Tlačidlo nestláčajte, ale prst majte priložený k senzoru, dokým nezacítite vibráciu.\n\nPrstom zakaždým mierne pohýbte. Takto sa nasníma väčšia časť odtlačku vášho prsta."</string>
-    <string name="security_settings_fingerprint_enroll_udfps_title" msgid="6665610134560896895">"Pridržte senzor odtlačkov prstov"</string>
+    <string name="security_settings_fingerprint_enroll_udfps_title" msgid="6665610134560896895">"Priložte prst na senzor odtlačkov prstov"</string>
     <string name="security_settings_fingerprint_enroll_repeat_title" msgid="9172202128243545021">"Zdvihnite prst, potom sa opäť dotknite senzora"</string>
     <string name="security_settings_udfps_enroll_title_one_more_time" msgid="424937043843482410">"Ešte raz"</string>
     <string name="security_settings_udfps_enroll_repeat_title_touch_icon" msgid="4096344864386190335">"Sledujte ikonu odtlačku prsta"</string>
@@ -1149,11 +1149,11 @@
     <string name="wifi_subscription" msgid="4432423938285430113">"Odber"</string>
     <string name="wifi_subscription_summary" msgid="18802471063384598">"Zobrazenie alebo zmena odberu"</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Náhodná adresa MAC"</string>
-    <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Pridať zariadenie"</string>
+    <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Pridajte zariadenie"</string>
     <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Ak chcete pridať zariadenie do siete <xliff:g id="SSID">%1$s</xliff:g>, vycentrujte QR kód nižšie"</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"Naskenujte QR kód"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"Ak sa chcete pripojiť k sieti <xliff:g id="SSID">%1$s</xliff:g>, vycentrujte QR kód nižšie"</string>
-    <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Pripojte sa k sieti Wi‑Fi naskenovaním QR kódu."</string>
+    <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Pripojte sa k sieti Wi‑Fi naskenovaním QR kódu"</string>
     <string name="wifi_dpp_share_wifi" msgid="2431744447544057866">"Zdieľanie Wi‑Fi"</string>
     <string name="wifi_dpp_scan_qr_code_with_another_device" msgid="6967364080214325016">"Ak sa chcete pripojiť k sieti <xliff:g id="SSID">%1$s</xliff:g>, naskenujte tento QR kód iným zariadením"</string>
     <string name="wifi_dpp_scan_open_network_qr_code_with_another_device" msgid="5398619697898444311">"Ak sa chcete pripojiť k sieti <xliff:g id="SSID">%1$s</xliff:g>, naskenujte tento QR kód"</string>
@@ -1178,7 +1178,7 @@
     <string name="wifi_dpp_device_found" msgid="633646744759830603">"Našlo sa zariadenie"</string>
     <string name="wifi_dpp_sharing_wifi_with_this_device" msgid="7250369936882080107">"S týmto zariadením sa zdieľa pripojenie Wi‑Fi…"</string>
     <string name="wifi_dpp_connecting" msgid="2312769193202897589">"Pripája sa…"</string>
-    <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"Zdieľanie hotspotu"</string>
+    <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"Zdieľajte hotspot"</string>
     <string name="wifi_dpp_lockscreen_title" msgid="5246641326066972419">"Ste to vy?"</string>
     <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"Heslo siete Wi‑Fi: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_hotspot_password" msgid="688464342650820420">"Heslo hotspotu: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
@@ -1383,7 +1383,7 @@
     <string name="accessibility_personal_account_title" msgid="8535265881509557013">"Osobný účet – <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="search_settings" msgid="7573686516434589771">"Hľadať"</string>
     <string name="display_settings" msgid="7197750639709493852">"Obrazovka"</string>
-    <string name="accelerometer_title" msgid="7745991950833748909">"Automatické otáčanie obrazovky"</string>
+    <string name="accelerometer_title" msgid="7745991950833748909">"Automaticky otáčať obrazovku"</string>
     <string name="auto_rotate_option_off" msgid="2788096269396290731">"Vypnuté"</string>
     <string name="auto_rotate_option_on" msgid="5776678230808498171">"Zapnuté"</string>
     <string name="auto_rotate_option_face_based" msgid="3438645484087953174">"Zapnuté – podľa tváre"</string>
@@ -2518,7 +2518,7 @@
     <string name="accessibility_tutorial_dialog_title_volume" msgid="1032323517963429981">"Skratka tlačidiel hlasitosti"</string>
     <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"Skratka trojitého klepnutia"</string>
     <string name="accessibility_tutorial_dialog_title_two_finger_double" msgid="5749704453829390283">"Skratka dvojitého klepnutia %1$d prstami"</string>
-    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Odkaz v rýchlych nastaveniach"</string>
+    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Skratka rýchlych nastavení"</string>
     <string name="accessibility_tutorial_dialog_title_gesture" msgid="4541649734549409614">"Skratka gesta dostupnosti"</string>
     <string name="accessibility_tutorial_dialog_message_button" msgid="8977286776192770246">"Ak chcete použiť túto funkciu, klepnite na tlačidlo dostupnosti <xliff:g id="ACCESSIBILITY_ICON">%s</xliff:g> dole na obrazovke.\n\nFunkcie prepnete jeho pridržaním."</string>
     <string name="accessibility_tutorial_dialog_message_floating_button" msgid="6631371483819355514">"Ak chcete použiť túto funkciu, klepnite na tlačidlo dostupnosti na obrazovke"</string>
@@ -2667,8 +2667,8 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Nastavenia navigácie"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Vibrácie a hmatová odozva"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Ovládajte silu vibrácií pre rôzne spôsoby použitia"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Zapnuté / ovládanie úrovní vibrácií pre hovory, upozornenia a budíky"</string>
-    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Vypnuté / ovládanie úrovní vibrácií pre hovory, upozornenia a budíky"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Zapnuté / Ovládajte úrovne vibrácií pre hovory, upozornenia a budíky"</string>
+    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Vypnuté / Ovládajte úrovne vibrácií pre hovory, upozornenia a budíky"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Nastavenie je vypnuté, pretože v zariadení je zapnutý tichý režim"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Hovory"</string>
     <string name="accessibility_notification_alarm_vibration_category_title" msgid="2683635252414849417">"Upozornenia a budíky"</string>
@@ -2734,7 +2734,7 @@
     <string name="accessibility_hearing_device_connected_title" msgid="3785140037249487287">"Načúvacie zariadenia"</string>
     <string name="accessibility_hearing_device_saved_title" msgid="7573926212664909296">"Uložené zariadenia"</string>
     <string name="accessibility_hearing_device_control" msgid="2661965917013100611">"Ovládanie načúvacích zariadení"</string>
-    <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Aktivácia načúvacieho zariadenia"</string>
+    <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"Skratka načúvacieho zariadenia"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"Kompatibilita s načúvadlami"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"Zlepšuje kompatibilitu s telecievkami a znižuje úroveň nežiaduceho hluku"</string>
     <string name="hac_disclaimer_message" msgid="5279579026956312543"></string>
@@ -2777,7 +2777,7 @@
     <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"Tritanomália"</string>
     <string name="reduce_bright_colors_preference_title" msgid="2249314004651574997">"Mimoriadne stmavenie"</string>
     <string name="reduce_bright_colors_switch_title" msgid="1751678397884065312">"Mimoriadne stmaviť obrazovku"</string>
-    <string name="reduce_bright_colors_shortcut_title" msgid="495648157059202745">"Skratka mimoriadneho stmavenia"</string>
+    <string name="reduce_bright_colors_shortcut_title" msgid="495648157059202745">"Mimoriadne stmavenie – skratka"</string>
     <string name="reduce_bright_colors_about_title" msgid="503655452544934393">"Mimoriadne stmavenie"</string>
     <string name="reduce_bright_colors_preference_intro_text" msgid="3502290826747650566">"Stmavte si obrazovku, aby sa vám ľahšie čítalo"</string>
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"Intenzita"</string>
@@ -2904,7 +2904,7 @@
     <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"Optimalizované"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"Obmedzené"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"Povoliť spotrebu batérie na pozadí bez obmedzení. Môže sa spotrebúvať viac batérie."</string>
-    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"Povoľte spotrebu batérie na pozadí. Môže sa spotrebúvať viac batérie."</string>
+    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"Povoliť spotrebu batérie na pozadí. Môže sa spotrebúvať viac batérie."</string>
     <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"Optimalizovať na základe vášho používania. Odporúča sa pre väčšinu aplikácií."</string>
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"Obmedziť spotrebu batérie na pozadí. Aplikácia nemusí fungovať podľa očakávaní. Upozornenia môžu byť oneskorené."</string>
     <string name="manager_battery_usage_footer" msgid="2635906573922553766">"Zmena spôsobu využívania batérie môže ovplyvniť jej výkonnosť."</string>
@@ -3108,7 +3108,7 @@
     <string name="on_device_recognition_settings" msgid="6503160369314598069">"Nastavenia rozpoznávania v zariadení"</string>
     <string name="on_device_recognition_settings_title" msgid="7137599722039096545">"Rozpoznávanie v zariadení"</string>
     <string name="on_device_recognition_settings_summary" msgid="3292736423223499348">"Rozpoznávanie reči v zariadení"</string>
-    <string name="tts_subtext" msgid="8958790811881046789">"Upravte rýchlosť reči a výšku hlasu"</string>
+    <string name="tts_subtext" msgid="8958790811881046789">"Úprava rýchlosti reči a výšky hlasu"</string>
     <string name="tts_engine_preference_title" msgid="7808775764174571132">"Preferovaný nástroj"</string>
     <string name="tts_engine_settings_title" msgid="1298093555056321577">"Nastavenia nástroja"</string>
     <string name="tts_sliders_title" msgid="6901146958648426181">"Rýchlosť reči a výška hlasu"</string>
@@ -4140,7 +4140,7 @@
     <string name="notification_content_block_title" msgid="6689085826061361351">"Zobrazovať upozornenia"</string>
     <string name="notification_content_block_summary" msgid="329171999992248925">"Nikdy nezobrazovať upozornenia na paneli ani v periférnych zariadeniach"</string>
     <string name="app_notification_fsi_permission_title" msgid="2260977598430154428">"Povoliť upozornenia na celej obrazovke"</string>
-    <string name="app_notification_fsi_permission_summary" msgid="7673487977631068039">"Povoľte upozornenia na celú obrazovku, keď je zariadenie uzamknuté"</string>
+    <string name="app_notification_fsi_permission_summary" msgid="7673487977631068039">"Povoliť upozornenia na celú obrazovku, keď je zariadenie uzamknuté"</string>
     <string name="notification_badge_title" msgid="6854537463548411313">"Povoliť bodku upozornení"</string>
     <string name="notification_channel_badge_title" msgid="6505542437385640049">"Zobrazovať bodku upozornení"</string>
     <string name="app_notification_override_dnd_title" msgid="3769539356442226691">"Prekonať režim bez vyrušení"</string>
@@ -4361,7 +4361,7 @@
     <string name="app_launch_open_domain_urls_title" msgid="4805388403977096285">"Otvárať podporované odkazy"</string>
     <string name="app_launch_open_in_app" msgid="2208182888681699512">"V aplikácii"</string>
     <string name="app_launch_open_in_browser" msgid="766170191853009756">"V prehliadači"</string>
-    <string name="app_launch_top_intro_message" msgid="9037324384325518290">"Vyberte, ako sa majú v tejto aplikácii otvárať webové odkazy"</string>
+    <string name="app_launch_top_intro_message" msgid="9037324384325518290">"Vyberte, ako sa majú otvárať webové odkazy pre túto aplikáciu"</string>
     <string name="app_launch_links_category" msgid="2380467163878760037">"Odkazy na otvorenie v tejto aplikácii"</string>
     <string name="app_launch_supported_domain_urls_title" msgid="5088779668667217369">"Podporované odkazy"</string>
     <string name="app_launch_other_defaults_title" msgid="5674385877838735586">"Ďalšie predvolené predvoľby"</string>
@@ -4546,8 +4546,8 @@
     <string name="full_screen_intent_title" msgid="5888548315628268674">"Upozornenia na celej obrazovke"</string>
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"Povoliť zobrazovanie upozornení z tejto aplikácie na celej obrazovke"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"Povoľte tejto aplikácii zobrazovať upozornenia na celú obrazovku, keď bude zariadenie uzamknuté. Aplikácie vás môžu pomocou nich informovať o budíkoch, prichádzajúcich hovoroch a ďalších dôležitých upozorneniach."</string>
-    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Zápis do predvolieb systému"</string>
-    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Povoľte tejto aplikácii meniť predvoľby systému vo vašom mene"</string>
+    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Zmena predvolieb systému"</string>
+    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Povoliť tejto aplikácii meniť predvoľby systému vo vašom mene"</string>
     <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"Toto povolenie umožňuje aplikácii meniť základné predvoľby systému."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"Aplikácie na správu médií"</string>
     <string name="media_management_apps_toggle_label" msgid="166724270857067456">"Povoliť aplikácii spravovať médiá"</string>
@@ -4808,7 +4808,7 @@
     <string name="double_tap_power_enabled" msgid="7609935047996304482">"Používať dvojité stlačenie"</string>
     <string name="double_tap_power_target_action_category" msgid="2568741597095863728">"Dvojitým stlačením vypínača sa otvorí"</string>
     <string name="double_tap_power_camera_action_title" msgid="6641206739933181509">"Kamera"</string>
-    <string name="double_tap_power_camera_action_summary" msgid="4942585540579590444">"Otvoriť Fotoaparát"</string>
+    <string name="double_tap_power_camera_action_summary" msgid="4942585540579590444">"Otvoriť Kameru"</string>
     <string name="double_tap_power_wallet_action_title" msgid="2460162990983117189">"Peňaženka"</string>
     <string name="double_tap_power_wallet_action_summary" msgid="3463748484407928770">"Otvoriť Peňaženku"</string>
     <string name="double_tap_power_lockscreen_shortcut_tip_title" msgid="9210589521260265387">"Chcete zmeniť odkaz na uzamknutej obrazovke?"</string>
@@ -4833,7 +4833,7 @@
     <string name="emergency_settings_preference_title" msgid="6183455153241187148">"Bezpečnosť a tieseň"</string>
     <string name="emergency_dashboard_summary" msgid="401033951074039302">"Pomoc v tiesni, zdravotné údaje, upozornenia"</string>
     <string name="edge_to_edge_navigation_title" msgid="714427081306043819">"Navigácia gestami"</string>
-    <string name="edge_to_edge_navigation_summary" msgid="818109176611921504">"Na plochu prejdete potiahnutím z dolnej časti obrazovky smerom nahor. Aplikácie prepnete potiahnutím zdola nahor, podržaním a následným uvoľnením. Vrátite sa potiahnutím z ľavého alebo pravého okraja."</string>
+    <string name="edge_to_edge_navigation_summary" msgid="818109176611921504">"Na plochu prejdete potiahnutím z dolnej časti obrazovky smerom nahor. A­plikácie prepnete potiahnutím zdola nahor, podržaním a následným uvoľnením. Vrátite sa potiahnutím z ľavého alebo pravého okraja."</string>
     <string name="legacy_navigation_title" msgid="7877402855994423727">"Trojtlačidlová navigácia"</string>
     <string name="legacy_navigation_summary" msgid="5905301067778326433">"Na návrat späť, zobrazenie plochy a prepínanie aplikácií slúžia tlačidlá v dolnej časti obrazovky."</string>
     <string name="nav_tutorial_button_description" msgid="7195363082216233970">"Spustite návod na navigáciu gestami."</string>
@@ -5642,7 +5642,7 @@
     <string name="thread_network_settings_title" msgid="4212301030523859220">"Thread"</string>
     <string name="thread_network_settings_main_switch_title" msgid="3859168481929323474">"Používať Thread"</string>
     <string name="thread_network_settings_footer_title" msgid="7385600318850220927">"Thread vám pomáha pripájať sa k zariadeniam inteligentnej domácnosti a zvyšovať účinnosť aj výkon.\n\nKeď je táto možnosť zapnutá, toto zariadenie sa môže pripojiť k sieti Thread, čo vám umožní ovládať podporované zariadenia Matter týmto telefónom."</string>
-    <string name="thread_network_settings_learn_more" msgid="8278498005848565050">"Ďalšie informácie o sieti Thread"</string>
+    <string name="thread_network_settings_learn_more" msgid="8278498005848565050">"Ďalšie informácie o protokole Thread"</string>
     <string name="camera_toggle_title" msgid="8952668677727244992">"Prístup ku kamere"</string>
     <string name="mic_toggle_title" msgid="265145278323852547">"Prístup k mikrofónu"</string>
     <string name="perm_toggle_description" msgid="5754629581767319022">"Pre aplikácie a služby"</string>
@@ -5726,8 +5726,8 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Senzor odtlačkov prstov"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Svetelné upozornenia"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Svetelné upozornenia"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Vypnuté/nechajte si oznamovať upozornenia a budíky blikaním svetla kamery alebo obrazovky"</string>
-    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Zapnuté/nechajte si oznamovať upozornenia a budíky blikaním svetla kamery alebo obrazovky"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Vypnuté / Nechajte si oznamovať upozornenia a budíky blikaním svetla kamery alebo obrazovky"</string>
+    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Zapnuté / Nechajte si oznamovať upozornenia a budíky blikaním svetla kamery alebo obrazovky"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"Nastavte si, aby zasvietil blesk či obrazovka, keď dostanete upozornenie alebo zaznie budík"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Aktivujte si funkciu blikania obrazovky, keď dostanete upozornenie alebo zaznie budík"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"Ak patríte medzi osoby citlivé na svetlo, používajte svetelné upozornenia obozretne"</string>
@@ -5765,8 +5765,8 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Prepne svetlú obrazovku na tmavú a naopak"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Priblížením zväčšíte obsah na obrazovke"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Vypnuté"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Vypnuté / prispôsobenie veľkosti a štýlu titulkov"</string>
-    <string name="show_captions_enabled" msgid="3495595825041704052">"Zapnuté / prispôsobenie veľkosti a štýlu titulkov"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Vypnuté / Prispôsobte veľkosť a štýl titulkov"</string>
+    <string name="show_captions_enabled" msgid="3495595825041704052">"Zapnuté / Prispôsobte veľkosť a štýl titulkov"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Vypnuté"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Zapnuté"</string>
     <string name="audio_seek_bar_state_left_first" msgid="1641359989891833888">"Zvuk <xliff:g id="PERCENT_LEFT">%1$s</xliff:g> vľavo, <xliff:g id="PERCENT_RIGHT">%2$s</xliff:g> vpravo"</string>

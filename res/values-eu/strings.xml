@@ -4546,7 +4546,7 @@
     <string name="full_screen_intent_title" msgid="5888548315628268674">"Pantaila osoko jakinarazpenak"</string>
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"Eman pantaila osoko jakinarazpenak erakusteko baimena aplikazioari"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"Eman gailua blokeatuta dagoenean pantaila osoa hartzen duten jakinarazpenak erakusteko baimena aplikazioari. Alarmen, sarrerako deien edo bestelako premiazko jakinarazpenen berri emateko erabil dezakete aplikazioek."</string>
-    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Sistemaren hobespenak idatzi"</string>
+    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Idatzi sistemaren hobespenak"</string>
     <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Eman zure izenean sistemaren hobespenak aldatzeko baimena aplikazio honi"</string>
     <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"Baimen honekin, aplikazio batek sistemaren hobespen nagusiak alda ditzake."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"Multimedia-edukia kudeatzeko aplikazioak"</string>
@@ -5724,7 +5724,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Hatz-marken sentsorea"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Argi-jakinarazpenak"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Argi-jakinarazpenei buruz"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Desaktibatuta: izan alarmen eta jakinarazpenen berri kameraren flasha edo pantailako argi-jakinarazpenak erabilita"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Desaktibatuta / Izan alarmen eta jakinarazpenen berri kameraren flasha edo pantailako argi-jakinarazpenak erabilita"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Aktibatuta: izan alarmen eta jakinarazpenen berri kameraren flasha edo pantailako argi-jakinarazpenak erabilita"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"Jakinarazpenak jasotzean edo alarmek jotzean, kameraren flasha piztuko da, edo pantaila argituko"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Jakinarazpenak jasotzean edo alarmek jotzean, pantaila argituko da"</string>

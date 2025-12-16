@@ -1398,7 +1398,7 @@
     <string name="color_mode_option_natural" msgid="6192875655101283303">"Naturliga"</string>
     <string name="color_mode_option_boosted" msgid="4698797857766774289">"Förstärkta"</string>
     <string name="color_mode_option_saturated" msgid="3413853820158447300">"Mättade"</string>
-    <string name="color_mode_option_automatic" msgid="2281217686509980870">"Anpassade"</string>
+    <string name="color_mode_option_automatic" msgid="2281217686509980870">"Adaptiva"</string>
     <string name="brightness" msgid="6216871641021779698">"Ljusstyrka"</string>
     <string name="auto_brightness_title" msgid="4239324728760986697">"Anpassad ljusstyrka"</string>
     <string name="auto_brightness_description" msgid="6807117118142381193">"Skärmens ljusstyrka justeras automatiskt efter miljö och aktivitet. Du kan träna Anpassad ljusstyrka med dina egna inställningar genom att flytta reglaget manuellt."</string>
@@ -2477,7 +2477,7 @@
     <string name="accessibility_magnification_mode_dialog_option_switch" msgid="561043521011229424">"Växla mellan helskärm och delar av skärmen"</string>
     <string name="accessibility_magnification_area_settings_mode_switch_summary" msgid="2885238806099080966">"Tryck på knappen Byt om du vill bläddra mellan bägge alternativen"</string>
     <string name="accessibility_magnification_triple_tap_warning_title" msgid="8484669851397296597">"Tangentbordet kan bli långsammare"</string>
-    <string name="accessibility_magnification_triple_tap_warning_message" msgid="2008671502848936410">"När du förstorar delar av skärmen genom att trycka snabbt tre gånger kan det uppstå problem med tangentbordet.\n\nDu kan undvika detta genom att ändra genväg för förstoring till ett annat alternativ.\n"<annotation id="link">"Ändra inställning"</annotation></string>
+    <string name="accessibility_magnification_triple_tap_warning_message" msgid="2008671502848936410">"När du förstorar delar av skärmen genom att trippeltrycka kan det uppstå problem med tangentbordet.\n\nDu kan undvika detta genom att ändra genväg för förstoring till ett annat alternativ.\n"<annotation id="link">"Ändra inställning"</annotation></string>
     <string name="accessibility_magnification_triple_tap_warning_positive_button" msgid="8712304035901450010">"Fortsätt ändå"</string>
     <string name="accessibility_magnification_triple_tap_warning_negative_button" msgid="2028849736366584733">"Avbryt"</string>
     <string name="accessibility_magnification_service_settings_title" msgid="3531350704632316017">"Inställningar för förstoring"</string>
@@ -2516,7 +2516,7 @@
     <string name="accessibility_tutorial_pager" msgid="8461939455728454061">"Sida <xliff:g id="CURRENT_PAGE">%1$d</xliff:g> av <xliff:g id="NUM_PAGES">%2$d</xliff:g>"</string>
     <string name="accessibility_tutorial_dialog_title_button" msgid="1924337057649065884">"Kortkommando med tillgänglighetsknappen"</string>
     <string name="accessibility_tutorial_dialog_title_volume" msgid="1032323517963429981">"Kortkommando med volymknapparna"</string>
-    <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"Kortkommando med tre snabba tryck"</string>
+    <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"Kortkommando med trippeltryck"</string>
     <string name="accessibility_tutorial_dialog_title_two_finger_double" msgid="5749704453829390283">"Kortkommando med dubbeltryck med %1$d fingrar"</string>
     <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Genväg till Snabbinställningar"</string>
     <string name="accessibility_tutorial_dialog_title_gesture" msgid="4541649734549409614">"Kortkommando med tillgänglighetsrörelsen"</string>
@@ -2555,10 +2555,10 @@
     <string name="accessibility_shortcut_edit_dialog_summary_hardware" msgid="2503134386397991634">"Håll båda volymknapparna nedtryckta"</string>
     <string name="accessibility_shortcut_edit_screen_title_two_finger_double_tap" msgid="8952595692906527694">"Dubbeltryck med %1$d fingrar"</string>
     <string name="accessibility_shortcut_edit_screen_summary_two_finger_double_tap" msgid="385404127425496362">"Tryck snabbt två gånger med %1$d fingrar på skärmen"</string>
-    <string name="accessibility_shortcut_edit_screen_title_triple_tap" msgid="3314488747597058942">"Tryck snabbt tre gånger"</string>
+    <string name="accessibility_shortcut_edit_screen_title_triple_tap" msgid="3314488747597058942">"Trippeltryck"</string>
     <string name="accessibility_shortcut_edit_screen_summary_triple_tap" msgid="4839204951599629871">"Tryck snabbt %1$d gånger på skärmen. Detta kan göra enheten långsammare."</string>
     <string name="accessibility_shortcut_two_finger_double_tap_keyword" msgid="6271718715836961167">"Dubbeltryck med %1$d fingrar"</string>
-    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"tryck snabbt tre gånger"</string>
+    <string name="accessibility_shortcut_triple_tap_keyword" msgid="5359347130888464334">"trippeltryck"</string>
     <string name="accessibility_shortcut_edit_dialog_title_advance" msgid="4567868630655591506">"Avancerat"</string>
     <string name="accessibility_screen_magnification_navbar_configuration_warning" msgid="266736851606791552">"<xliff:g id="SERVICE">%1$s</xliff:g> har angetts för tillgänglighetsknappen. Om du vill använda förstoring trycker du länge på tillgänglighetsknappen och väljer förstoring."</string>
     <string name="accessibility_screen_magnification_gesture_navigation_warning" msgid="991017769735632046">"Tillgänglighetsrörelsen är inställd på <xliff:g id="SERVICE">%1$s</xliff:g>. Om du vill använda förstoring sveper du uppåt med två fingrar från skärmens nederkant och håller kvar fingret. Välj sedan Förstoring."</string>

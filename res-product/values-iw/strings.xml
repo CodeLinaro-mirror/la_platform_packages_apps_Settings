@@ -341,7 +341,7 @@
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"יש להשאיר את הטלפון בטעינה"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"המכשיר צריך להיות בטעינה"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"‏פעולה זו תמחק את כל הנתונים מ"<b>"האחסון הפנימי"</b>" של הטאבלט, כולל:\n\n"<li>"חשבון Google שלך"</li>\n<li>"הנתונים וההגדרות של המערכת והאפליקציות"</li>\n<li>"האפליקציות שהורדת"</li></string>
-    <string name="main_clear_desc" product="default" msgid="1888412491866186706">"‏הפעולה הזו תמחק את כל הנתונים מ"<b>"האחסון הפנימי"</b>" של הטלפון, כולל:\n\n"<li>"חשבון Google שלך"</li>\n<li>"הנתונים וההגדרות של המערכת והאפליקציות"</li>\n<li>"אפליקציות שהורדת"</li></string>
+    <string name="main_clear_desc" product="default" msgid="1888412491866186706">"‏הפעולה הזו תמחק את כל הנתונים מ"<b>"האחסון הפנימי"</b>" של הטלפון, כולל:\n\n"<li>"החשבון שלך ב-Google "</li>\n<li>"הנתונים וההגדרות של המערכת והאפליקציות"</li>\n<li>"אפליקציות שהורדת"</li></string>
     <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"‏בחרת למחוק את כל הנתונים מ"<b>"האחסון הפנימי"</b>", של המכשיר, כולל:\n\n"<li>"חשבון Google"</li>\n<li>"הנתונים וההגדרות של המערכת והאפליקציות"</li>\n<li>"אפליקציות שהורדת"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"החשבונות הבאים פעילים כרגע:\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"קיימים משתמשים אחרים במכשיר זה.\n"</string>

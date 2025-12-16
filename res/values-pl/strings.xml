@@ -2667,8 +2667,8 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Ustawienia nawigacji"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Wibracje i reakcje haptyczne"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Kontroluj siłę wibracji w różnych przypadkach użycia"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Włączone / zarządzaj poziomami wibracji przy połączeniach, powiadomieniach i alarmach"</string>
-    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Wyłączone / zarządzaj poziomami wibracji przy połączeniach, powiadomieniach i alarmach"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Włączono / Zarządzaj poziomami wibracji przy połączeniach, powiadomieniach i alarmach"</string>
+    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Wyłączono / Zarządzaj poziomami wibracji przy połączeniach, powiadomieniach i alarmach"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Ustawienie jest wyłączone, ponieważ urządzenie zostało wyciszone"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Połączenia"</string>
     <string name="accessibility_notification_alarm_vibration_category_title" msgid="2683635252414849417">"Powiadomienia i alarmy"</string>
@@ -5726,8 +5726,8 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Czytnik linii papilarnych"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Powiadomienia świetlne"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"O powiadomieniach świetlnych"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Wyłączone / otrzymuj alerty dotyczące powiadomień i alarmów sygnalizowane przez lampę błyskową aparatu lub błyski na ekranie"</string>
-    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Włączone / otrzymuj alerty dotyczące powiadomień i alarmów sygnalizowane przez lampę błyskową aparatu lub błyski na ekranie"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Wyłączono / Otrzymuj alerty dotyczące powiadomień i alarmów sygnalizowane przez lampę błyskową aparatu lub błyski na ekranie"</string>
+    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Włączono / Otrzymuj alerty dotyczące powiadomień i alarmów sygnalizowane przez lampę błyskową aparatu lub błyski na ekranie"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"Uruchamiaj lampę błyskową lub ekran, gdy otrzymasz powiadomienie lub włączy się alarm"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Uruchamiaj ekran, gdy otrzymasz powiadomienie lub włączy się alarm"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"W przypadku wrażliwości na światło ostrożnie korzystaj z powiadomień świetlnych"</string>
@@ -5765,8 +5765,8 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Zmienia jasne fragmenty ekranu na ciemne, a ciemne na jasne"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Powiększaj zawartość ekranu"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Wyłączono"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Wyłączone / dostosuj rozmiar i styl napisów"</string>
-    <string name="show_captions_enabled" msgid="3495595825041704052">"Włączone / dostosuj rozmiar i styl napisów"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Wyłączono / Dostosuj rozmiar i styl napisów"</string>
+    <string name="show_captions_enabled" msgid="3495595825041704052">"Włączono / Dostosuj rozmiar i styl napisów"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Wyłączono"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Włączono"</string>
     <string name="audio_seek_bar_state_left_first" msgid="1641359989891833888">"Dźwięk <xliff:g id="PERCENT_LEFT">%1$s</xliff:g> z lewej, <xliff:g id="PERCENT_RIGHT">%2$s</xliff:g> z prawej strony"</string>

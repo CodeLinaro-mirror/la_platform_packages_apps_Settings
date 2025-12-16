@@ -1383,7 +1383,7 @@
     <string name="accessibility_personal_account_title" msgid="8535265881509557013">"ವೈಯಕ್ತಿಕ ಖಾತೆ - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="search_settings" msgid="7573686516434589771">"ಹುಡುಕಿ"</string>
     <string name="display_settings" msgid="7197750639709493852">"ಡಿಸ್‌ಪ್ಲೇ"</string>
-    <string name="accelerometer_title" msgid="7745991950833748909">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಸ್ವಯಂ-ತಿರುಗಿಸಿ"</string>
+    <string name="accelerometer_title" msgid="7745991950833748909">"ಸ್ಕ್ರೀನ್‌ನ ಸ್ವಯಂ-ತಿರುಗುವಿಕೆ"</string>
     <string name="auto_rotate_option_off" msgid="2788096269396290731">"ಆಫ್"</string>
     <string name="auto_rotate_option_on" msgid="5776678230808498171">"ಆನ್"</string>
     <string name="auto_rotate_option_face_based" msgid="3438645484087953174">"ಆನ್ ಆಗಿದೆ - ಮುಖ-ಆಧಾರಿತ"</string>
@@ -2412,7 +2412,7 @@
     <string name="accessibility_turn_screen_darker_title" msgid="5986223133285858349">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಇನ್ನಷ್ಟು ಡಾರ್ಕ್ ಆಗಿಸಿ"</string>
     <string name="interaction_control_category_title" msgid="2696474616743882372">"ಸಂವಹನ ನಿಯಂತ್ರಣಗಳು"</string>
     <string name="accessibility_tap_assistance_title" msgid="1058913033421048284">"ಸಮಯ ನಿಯಂತ್ರಣಗಳು"</string>
-    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"ಸ್ಪರ್ಶಿಸಿ ಮತ್ತು ಹಿಡಿದುಕೊಳ್ಳುವ ವಿಳಂಬ, ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳುವ ಸಮಯ"</string>
+    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"ಸ್ಪರ್ಶಿಸಿ ಹಿಡಿದುಕೊಳ್ಳುವ ಸಮಯ, ಕ್ರಮ ತೆಗೆದುಕೊಳ್ಳುವ ಸಮಯ"</string>
     <string name="accessibility_system_controls_title" msgid="6403287349518987624">"ಸಿಸ್ಟಂ ನಿಯಂತ್ರಣಗಳು"</string>
     <string name="accessibility_system_controls_subtext" msgid="2722046038429586174">"ನ್ಯಾವಿಗೇಷನ್ ಮೋಡ್, ಒಂದು ಕೈ ಮೋಡ್, ಸ್ಕ್ರೀನ್ ತಿರುಗುವಿಕೆ"</string>
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"ನ್ಯಾವಿಗೇಷನ್ ಮೋಡ್, ಸ್ಕ್ರೀನ್ ತಿರುಗುವಿಕೆ"</string>
@@ -2601,7 +2601,7 @@
     <string name="accessibility_expanded_dark_theme_title_in_search" msgid="1504625269329894086">"ವಿಸ್ತೃತಗೊಳಿಸಲಾದ ಡಾರ್ಕ್ ಥೀಮ್"</string>
     <string name="accessibility_expanded_dark_theme_summary" msgid="6910183648769192345">"ಡಾರ್ಕ್ ಥೀಮ್ ಬೆಂಬಲಿಸದ ಆ್ಯಪ್‌ಗಳಿಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಅನ್ವಯಿಸುತ್ತದೆ. ಆ್ಯಕ್ಸೆಸಿಬಿಲಿಟಿ, ಓದುವಿಕೆಯನ್ನು ಸುಧಾರಿಸಬಲ್ಲದು, ಆದರೆ ಕೆಲವು ಆ್ಯಪ್‌ಗಳು ತಪ್ಪಾಗಿ ಪ್ರದರ್ಶಿಸಲು ಕಾರಣವಾಗಬಹುದು."</string>
     <string name="keywords_expanded_dark_theme" msgid="8366925785183600306">"ಫೋರ್ಸ್ ಇನ್‌ವರ್ಟ್, ಬಣ್ಣದ ವಿಲೋಮ, ಕಾಂಟ್ರಾಸ್ಟ್"</string>
-    <string name="accessibility_disable_animations" msgid="2993529829457179058">"ಅನಿಮೇಷನ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
+    <string name="accessibility_disable_animations" msgid="2993529829457179058">"ಆ್ಯನಿಮೇಷನ್‌ಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"</string>
     <string name="accessibility_disable_animations_summary" msgid="5828228669556554565">"ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಚಲನೆಗಳನ್ನು ಕಡಿಮೆಮಾಡಿ"</string>
     <string name="accessibility_text_cursor_blink_rate_title" msgid="2560387611012958520">"ಪಠ್ಯ ಕರ್ಸರ್ ಬ್ಲಿಂಕಿಂಗ್"</string>
     <string name="accessibility_text_cursor_blink_rate_summary" msgid="6629885087638846245">"ಪಠ್ಯ ಕರ್ಸರ್‌ನ ಬ್ಲಿಂಕಿಂಗ್ ವೇಗವನ್ನು ಅಡ್ಜಸ್ಟ್ ಮಾಡಿ ಅಥವಾ ಬ್ಲಿಂಕಿಂಗ್ ಅನ್ನು ಆಫ್ ಮಾಡಿ. ಎಲ್ಲಾ ಆ್ಯಪ್‌ಗಳು ಮತ್ತು ವೆಬ್‌ಸೈಟ್‌ಗಳಲ್ಲಿ ಬೆಂಬಲಿತವಲ್ಲದಿರಬಹುದು."</string>
@@ -2688,14 +2688,14 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ನ ಮೇಲ್ಭಾಗದಿಂದ ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಬಣ್ಣದ ತಿದ್ದುಪಡಿಯನ್ನು ಸಹ ನೀವು ಸೇರಿಸಬಹುದು"</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಬಣ್ಣದ ವಿಲೋಮವನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಯಾವಾಗ ಬೇಕಾದರೂ ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಲು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ನ ಮೇಲ್ಭಾಗದಿಂದ ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಬಣ್ಣದ ವಿಲೋಮವನ್ನು ಸಹ ನೀವು ಸೇರಿಸಬಹುದು"</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"ಕನಿಷ್ಠ ಪ್ರಖರತೆಯನ್ನು ಮೀರಿ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಮಬ್ಬುಗೊಳಿಸಿ"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"ಸ್ಕ್ರೀನ್ ಅನ್ನು ಕನಿಷ್ಠ ಪ್ರಖರತೆ ಮಟ್ಟಕ್ಕಿಂತಲೂ ಮಬ್ಬುಗೊಳಿಸಿ"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಇನ್ನಷ್ಟು ಮಬ್ಬನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಯಾವಾಗ ಬೇಕಾದರೂ ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಲು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ನ ಮೇಲ್ಭಾಗದಿಂದ ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಇನ್ನಷ್ಟು ಮಬ್ಬನ್ನು ಸಹ ನೀವು ಸೇರಿಸಬಹುದು"</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಒಂದು ಕೈ ಮೋಡ್ ಅನ್ನು ಸೇರಿಸಲಾಗಿದೆ. ಯಾವಾಗ ಬೇಕಾದರೂ ಆನ್ ಅಥವಾ ಆಫ್ ಮಾಡಲು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ."</string>
     <string name="accessibility_one_handed_mode_qs_tooltip_content" msgid="2754332083184384603">"ನಿಮ್ಮ ಸ್ಕ್ರೀನ್‌ನ ಮೇಲ್ಭಾಗದಿಂದ ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‍ಗಳಿಗೆ ಒಂದು ಕೈ ಮೋಡ್ ಅನ್ನು ಸಹ ನೀವು ಸೇರಿಸಬಹುದು"</string>
     <string name="accessibility_font_scaling_auto_added_qs_tooltip_content" msgid="7229921960884718332">"ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ತ್ವರಿತ ಸೆಟ್ಟಿಂಗ್‌ಗಳಿಗೆ ಸೇರಿಸಲಾಗಿದೆ. ಯಾವುದೇ ಸಮಯದಲ್ಲಿ ಫಾಂಟ್ ಗಾತ್ರವನ್ನು ಬದಲಾಯಿಸಲು ಕೆಳಕ್ಕೆ ಸ್ವೈಪ್ ಮಾಡಿ."</string>
     <string name="accessibility_quick_settings_tooltip_dismiss" msgid="3269120277643884190">"ವಜಾಗೊಳಿಸಿ"</string>
-    <string name="accessibility_daltonizer_primary_switch_title" msgid="32064721588910540">"ಬಣ್ಣ ತಿದ್ದುಪಡಿಯನ್ನು ಬಳಸಿ"</string>
+    <string name="accessibility_daltonizer_primary_switch_title" msgid="32064721588910540">"ಕಲರ್ ಕರೆಕ್ಷನ್ ಅನ್ನು ಬಳಸಿ"</string>
     <string name="accessibility_daltonizer_shortcut_title" msgid="7480360363995502369">"ಕಲರ್ ಕರೆಕ್ಷನ್ ಶಾರ್ಟ್‌ಕಟ್"</string>
     <string name="accessibility_daltonizer_about_title" msgid="6063650804116981287">"ಕಲರ್ ಕರೆಕ್ಷನ್ ಕುರಿತು"</string>
     <string name="accessibility_daltonizer_footer_learn_more_content_description" msgid="2091679253892040910">"ಕಲರ್ ಕರೆಕ್ಷನ್ ಕುರಿತು ಇನ್ನಷ್ಟು ತಿಳಿಯಿರಿ"</string>
@@ -2755,7 +2755,7 @@
     <string name="accessibility_audio_adjustment_title" msgid="1332113739136802997">"ಆಡಿಯೋ ಹೊಂದಾಣಿಕೆ"</string>
     <string name="accessibility_audio_adjustment_subtext" msgid="2190523175597700025">"ಮೊನೊ ಆಡಿಯೋ, ಆಡಿಯೋ ಬ್ಯಾಲೆನ್ಸ್"</string>
     <string name="accessibility_toggle_audio_description_preference_title" msgid="8916473886256061220">"ಆಡಿಯೋ ವಿವರಣೆ"</string>
-    <string name="accessibility_audio_description_summary" msgid="2554789094873781056">"ಬೆಂಬಲಿತ ಚಲನಚಿತ್ರಗಳು ಮತ್ತು ಶೋಗಳಲ್ಲಿ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಏನಾಗುತ್ತಿದೆ ಎಂಬುದರ ವಿವರಣೆಯನ್ನು ಕೇಳಿ"</string>
+    <string name="accessibility_audio_description_summary" msgid="2554789094873781056">"ಬೆಂಬಲಿತ ಚಲನಚಿತ್ರಗಳು ಮತ್ತು ಶೋಗಳಲ್ಲಿ ಸ್ಕ್ರೀನ್ ಮೇಲೆ ಏನಾಗುತ್ತಿದೆ ಎಂಬುದರ ವಿವರಣೆಯನ್ನು ಆಲಿಸಿ"</string>
     <string name="keywords_audio_description" msgid="6202816411593281252">"ಆಡಿಯೋ ವಿವರಣೆ, ಆಡಿಯೋ, ವಿವರಣೆ, ಕಡಿಮೆ ದೃಷ್ಟಿ,"</string>
     <string name="accessibility_summary_shortcut_enabled" msgid="4030427268146752644">"ಶಾರ್ಟ್‌ಕಟ್ ಆನ್‌ ಆಗಿದೆ"</string>
     <string name="accessibility_summary_shortcut_disabled" msgid="564005462092499068">"ಆಫ್"</string>
@@ -2901,7 +2901,7 @@
     <string name="manager_battery_usage_allow_background_usage_title" msgid="6294649996820358852">"ಹಿನ್ನೆಲೆ ಬಳಕೆಯನ್ನು ಅನುಮತಿಸಿ"</string>
     <string name="manager_battery_usage_allow_background_usage_summary" msgid="8021153755201340819">"ನೈಜ-ಸಮಯದ ಅಪ್‌ಡೇಟ್‌ಗಳಿಗಾಗಿ ಸಕ್ರಿಯಗೊಳಿಸಿ, ಬ್ಯಾಟರಿ ಸೇವ್ ಮಾಡಲು ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿ"</string>
     <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"ಮಿತಿ ಇಲ್ಲದ್ದು"</string>
-    <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"ಆಪ್ಟಿಮೈಸ್ ಮಾಡಲಾಗಿದೆ‌"</string>
+    <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"ಆಪ್ಟಿಮೈಸ್ ಮಾಡಿರುವುದು"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"ನಿರ್ಬಂಧಿಸಲಾಗಿದೆ"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"ನಿರ್ಬಂಧಗಳಿಲ್ಲದೆ ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಬ್ಯಾಟರಿ ಬಳಕೆಯನ್ನು ಅನುಮತಿಸಿ. ಹೆಚ್ಚಿನ ಬ್ಯಾಟರಿಯನ್ನು ಬಳಸಬಹುದು."</string>
     <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"ಹಿನ್ನೆಲೆಯಲ್ಲಿ ಬ್ಯಾಟರಿ ಬಳಕೆಗೆ ಅನುಮತಿ ನೀಡಿ. ಬ್ಯಾಟರಿ ಬಳಕೆ ಹೆಚ್ಚಾಗಬಹುದು."</string>
@@ -3353,7 +3353,7 @@
     <string name="vpn_forget" msgid="2913950864877236737">"ಮರೆತುಬಿಡು"</string>
     <string name="vpn_connect_to" msgid="216709261691085594">"<xliff:g id="PROFILE">%s</xliff:g> ಗೆ ಸಂಪರ್ಕಿಸಿ"</string>
     <string name="vpn_disconnect_confirm" msgid="6356789348816854539">"ಈ VPN ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸುವುದೇ?"</string>
-    <string name="vpn_disconnect" msgid="7753808961085867345">"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ"</string>
+    <string name="vpn_disconnect" msgid="7753808961085867345">"ಡಿಸ್‌ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
     <string name="vpn_version" msgid="6344167191984400976">"ಆವೃತ್ತಿ"</string>
     <string name="vpn_version_info" msgid="5717671228402924155">"ಆವೃತ್ತಿ <xliff:g id="VERSION">%s</xliff:g>"</string>
     <string name="vpn_forget_long" msgid="729132269203870205">"VPN ಮರೆತುಬಿಡು"</string>
@@ -4030,7 +4030,7 @@
     <string name="notification_channel_summary_default" msgid="1168420867670390611">"ಸಾಧನ ಸೆಟ್ಟಿಂಗ್‌ಗಳನ್ನು ಆಧರಿಸಿ ರಿಂಗ್ ಅಥವಾ ವೈಬ್ರೇಟ್ ಆಗಬಹುದು"</string>
     <string name="notification_channel_summary_high" msgid="3411637309360617621">"ಸಾಧನವನ್ನು ಅನ್‌ಲಾಕ್ ಮಾಡಿದಾಗ, ಅಧಿಸೂಚನೆಗಳನ್ನು ಪರದೆಯ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಬ್ಯಾನರ್‌ ಆಗಿ ತೋರಿಸಿ"</string>
     <string name="notification_switch_label" msgid="8029371325967501557">"ಎಲ್ಲಾ \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" ನೋಟಿಫಿಕೇಶನ್‌ಗಳು"</string>
-    <string name="notification_app_switch_label" msgid="4422902423925084193">"ಎಲ್ಲಾ <xliff:g id="APP_NAME">%1$s</xliff:g> ಅಧಿಸೂಚನೆಗಳು"</string>
+    <string name="notification_app_switch_label" msgid="4422902423925084193">"ಎಲ್ಲಾ <xliff:g id="APP_NAME">%1$s</xliff:g> ನೋಟಿಫಿಕೇಶನ್‌ಗಳು"</string>
     <string name="notifications_sent_daily" msgid="10274479224185437">"{count,plural, =1{ಪ್ರತಿ ದಿನಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್}one{ಪ್ರತಿ ದಿನಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್‌ಗಳು}other{ಪ್ರತಿ ದಿನಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್‌ಗಳು}}"</string>
     <string name="notifications_sent_weekly" msgid="7895656213187555346">"{count,plural, =1{ಪ್ರತಿ ವಾರಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್}one{ಪ್ರತಿ ವಾರಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್‌ಗಳು}other{ಪ್ರತಿ ವಾರಕ್ಕೆ ಸುಮಾರು # ನೋಟಿಫಿಕೇಶನ್‌ಗಳು}}"</string>
     <string name="notifications_sent_never" msgid="9081278709126812062">"ಎಂದೂ ಇಲ್ಲ"</string>
@@ -4294,7 +4294,7 @@
     <string name="zen_mode_trigger_title_bedtime" msgid="3287241454965736913">"ಬೆಡ್‌ಟೈಮ್ ದಿನಚರಿ"</string>
     <string name="zen_mode_trigger_title_driving" msgid="7890990983453164403">"ಡ್ರೈವಿಂಗ್ ಮಾಡುವಾಗ"</string>
     <string name="zen_mode_trigger_title_generic" msgid="1347753445938095789">"ಆ್ಯಪ್ ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
-    <string name="zen_mode_trigger_summary_settings_in_app" msgid="4860667191183702601">"<xliff:g id="APP_NAME">%1$s</xliff:g> ನಲ್ಲಿನ ಮಾಹಿತಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
+    <string name="zen_mode_trigger_summary_settings_in_app" msgid="4860667191183702601">"<xliff:g id="APP_NAME">%1$s</xliff:g> ದಲ್ಲಿನ ಮಾಹಿತಿ ಮತ್ತು ಸೆಟ್ಟಿಂಗ್‌ಗಳು"</string>
     <string name="zen_mode_trigger_summary_managed_by_app" msgid="8631011868193102098">"<xliff:g id="APP_NAME">%1$s</xliff:g> ಮೂಲಕ ನಿರ್ವಹಿಸಲಾಗಿದೆ"</string>
     <string name="zen_mode_confirm_disable_mode_title" msgid="7314998098582325018">"<xliff:g id="MODE_NAME">%1$s</xliff:g> ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಬೇಕೆ?"</string>
     <string name="zen_mode_confirm_disable_message" msgid="2703882646066764140">"ನಿಷ್ಕ್ರಿಯಗೊಳಿಸಿದಾಗ ಈ ಮೋಡ್ ಎಂದಿಗೂ ಆನ್ ಆಗುವುದಿಲ್ಲ"</string>
@@ -5425,7 +5425,7 @@
     <string name="error_capturing_system_heap_dump_message" msgid="2352983250048200052">"ಸಿಸ್ಟಂ ಹೀಪ್ ಡಂಪ್ ಕ್ಯಾಪ್ಚರ್ ಮಾಡಲು ಸಾಧ್ಯವಾಗಲಿಲ್ಲ"</string>
     <string name="automatic_system_heap_dump_title" msgid="4093306504711109479">"ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಸಿಸ್ಟ್ಂ ಹೀಪ್ ಡಂಪ್‌ಗಳನ್ನು ಕ್ಯಾಪ್ಚರ್ ಮಾಡಿ"</string>
     <string name="automatic_system_heap_dump_summary" msgid="4060846186592886986">"Android ಸಿಸ್ಟ್ಂ ಅತಿ ಹೆಚ್ಚು ಮೆಮೊರಿಯನ್ನು ಬಳಸಿದಾಗ, ಆ Android ಸಿಸ್ಟ್ಂಗಾಗಿ ಒಂದು ಹೀಪ್ ಡಂಪ್ ಅನ್ನು ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಕ್ಯಾಪ್ಚರ್ ಮಾಡಿ"</string>
-    <string name="wifi_disconnect_button_text" msgid="5698154296678571998">"ಸಂಪರ್ಕ ಕಡಿತಗೊಳಿಸಿ"</string>
+    <string name="wifi_disconnect_button_text" msgid="5698154296678571998">"ಡಿಸ್‌ಕನೆಕ್ಟ್ ಮಾಡಿ"</string>
     <string name="wfc_disclaimer_emergency_limitation_title_text" msgid="8276287227589397162">"ತುರ್ತು ಕರೆಗಳು"</string>
     <string name="wfc_disclaimer_emergency_limitation_desc_text" msgid="5503902001191552196">"ವೈ-ಫೈ ಕರೆ ಮಾಡುವಿಕೆ ಮೂಲಕ ಮಾಡಲಾಗುವ ತುರ್ತು ಕರೆಗಳನ್ನು ನಿಮ್ಮ ವಾಹಕವು ಬೆಂಬಲಿಸುವುದಿಲ್ಲ.\nತುರ್ತು ಕರೆ ಮಾಡಲು ಸಾಧನವು ಸೆಲ್ಯುಲರ್ ನೆಟ್‌ವರ್ಕ್‌ಗೆ ಸ್ವಯಂಚಾಲಿತವಾಗಿ ಬದಲಾಯಿಸುತ್ತದೆ.\nಸೆಲ್ಯುಲರ್ ಪ್ರಸಾರ ವ್ಯಾಪ್ತಿ ಇರುವ ಪ್ರದೇಶಗಳಲ್ಲಿ ಮಾತ್ರ ತುರ್ತು ಕರೆಗಳನ್ನು ಮಾಡಲು ಸಾಧ್ಯ."</string>
     <string name="wifi_calling_summary" msgid="8566648389959032967">"ಗುಣಮಟ್ಟವನ್ನು ಹೆಚ್ಚಿಸಲು ಕರೆಗಳನ್ನು ಮಾಡಲು ವೈ-ಫೈ ಬಳಸಿ"</string>
@@ -5726,7 +5726,7 @@
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"ಫ್ಲ್ಯಾಶ್ ನೋಟಿಫಿಕೇಶನ್‌ಗಳ ಕುರಿತು"</string>
     <string name="flash_notifications_summary_off" msgid="5425509923465184385">"ಆಫ್ / ನೋಟಿಫಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಅಲಾರಾಂಗಳಿಗಾಗಿ ಕ್ಯಾಮರಾ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಫ್ಲಾಶ್‌ ಮೂಲಕ ಎಚ್ಚರಿಕೆ ಪಡೆಯಿರಿ"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"ಆನ್ / ನೋಟಿಫಿಕೇಶನ್‌ಗಳು ಮತ್ತು ಅಲಾರಾಂಗಳಿಗಾಗಿ ಕ್ಯಾಮರಾ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಫ್ಲಾಶ್‌ ಮೂಲಕ ಎಚ್ಚರಿಕೆ ಪಡೆಯಿರಿ"</string>
-    <string name="flash_notifications_intro" msgid="8409873413480928249">"ನೀವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಅಥವಾ ಅಲಾರಾಂಗಳು ಸದ್ದು ಮಾಡಿದಾಗ ಕ್ಯಾಮರಾ ಲೈಟ್ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಫ್ಲ್ಯಾಶ್ ಮಾಡಿ"</string>
+    <string name="flash_notifications_intro" msgid="8409873413480928249">"ನೀವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಅಥವಾ ಅಲಾರಾಂಗಳು ಸದ್ದು ಮಾಡಿದಾಗ ಕ್ಯಾಮರಾ ಲೈಟ್ ಅಥವಾ ಸ್ಕ್ರೀನ್ ಫ್ಲ್ಯಾಶ್ ಆಗುತ್ತದೆ"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"ನೀವು ಅಧಿಸೂಚನೆಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಅಥವಾ ಅಲಾರಾಂಗಳು ಸದ್ದು ಮಾಡಿದಾಗ ಸ್ಕ್ರೀನ್ ಅನ್ನು ಫ್ಲ್ಯಾಶ್ ಮಾಡಿ"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"ನಿಮಗೆ ಬೆಳಕಿನಿಂದ ಕಿರಿಕಿರಿಯಾದರೆ, ಫ್ಲ್ಯಾಶ್ ನೋಟಿಫಿಕೇಶನ್‌ಗಳನ್ನು ಎಚ್ಚರಿಕೆಯಿಂದ ಬಳಸಿ"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"ಫ್ಲ್ಯಾಷ್, ಲೈಟ್, ಕಿವುಡುತನ, ಶ್ರವಣ ದೋಷ"</string>

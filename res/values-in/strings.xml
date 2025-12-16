@@ -1510,7 +1510,7 @@
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Angkat untuk membangunkan"</string>
     <string name="screensaver_restrict_to_wireless_charging_title" msgid="8016059995446029358">"Hanya saat mengisi daya secara nirkabel"</string>
     <string name="blur_switch" msgid="1391073945502754948">"Kurangi efek blur"</string>
-    <string name="blur_switch_summary" msgid="5025895302219948597">"Membuat latar belakang dan panel lebih mudah dilihat"</string>
+    <string name="blur_switch_summary" msgid="5025895302219948597">"Buat latar belakang dan panel lebih mudah dilihat"</string>
     <string name="blur_switch_disabled_summary" msgid="4664341513589412290">"Dinonaktifkan sementara karena fitur Penghemat Baterai"</string>
     <string name="low_light_display_behavior_main_switch_title" msgid="7138165032358139627">"Gunakan mode Cahaya Redup"</string>
     <string name="low_light_display_behavior_subtitle" msgid="1833984014035605413">"Pilih apa yang akan ditampilkan dalam mode Cahaya Redup"</string>
@@ -1766,7 +1766,7 @@
     <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"Jika Anda memiliki ruang privasi di perangkat, ruang tersebut akan dihapus secara permanen dan Akun Google yang sudah ditambahkan ke ruang tersebut akan dihapus. \n\nSemua aplikasi dan data di ruang privasi juga akan dihapus secara permanen dari "<b>"penyimpanan internal"</b>" ponsel."</string>
     <string name="main_clear_title" msgid="277664302144837723">"Hapus semua data (reset ke setelan pabrik)"</string>
     <string name="main_clear_short_title" msgid="4752094765533020696">"Hapus semua data"</string>
-    <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"Musik"</li>\n<li>"Foto"</li>\n<li>"Data pengguna lainnya"</li></string>
+    <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"Musik"</li>\n<li>"Foto"</li>\n<li>"Data lain milik pengguna"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"eSIM"</li></string>
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"Tindakan ini tidak akan membatalkan paket layanan seluler."</string>
     <string name="main_clear_final_desc" msgid="5800877928569039580">"Semua informasi pribadi dan aplikasi yang didownload akan dihapus. Anda tidak dapat mengurungkan tindakan ini."</string>
@@ -2779,7 +2779,7 @@
     <string name="reduce_bright_colors_switch_title" msgid="1751678397884065312">"Buat layar ekstra redup"</string>
     <string name="reduce_bright_colors_shortcut_title" msgid="495648157059202745">"Pintasan ekstra redup"</string>
     <string name="reduce_bright_colors_about_title" msgid="503655452544934393">"Tentang ekstra redup"</string>
-    <string name="reduce_bright_colors_preference_intro_text" msgid="3502290826747650566">"Membuat layar lebih redup agar Anda dapat membaca dengan lebih nyaman."</string>
+    <string name="reduce_bright_colors_preference_intro_text" msgid="3502290826747650566">"Buat layar lebih redup agar Anda dapat membaca dengan lebih nyaman."</string>
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"Intensitas"</string>
     <string name="brightness_intensity_start_label" msgid="5156578219206443637">"Lebih redup"</string>
     <string name="brightness_intensity_end_label" msgid="2697495729534414164">"Lebih cerah"</string>
@@ -3132,7 +3132,7 @@
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Gunakan konektivitas adaptif"</string>
     <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Beralih otomatis ke jaringan seluler"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"Memastikan konektivitas saat Wi-Fi lemah atau tidak tersedia. Biaya data mungkin berlaku."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Optimalkan jaringan untuk daya tahan baterai"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Optimalkan jaringan agar baterai daya tahan"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Secara otomatis memilih koneksi jaringan terbaik untuk memperpanjang daya tahan baterai"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Keamanan jaringan seluler"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Jenis jaringan, enkripsi, kontrol notifikasi"</string>
@@ -3962,7 +3962,7 @@
     <string name="unseen_notifs_lock_screen" msgid="6910701117021324612">"Tampilkan hanya notifikasi baru di layar kunci"</string>
     <string name="unseen_notifs_lock_screen_summary" msgid="5996722793868021391">"Otomatis hapus notifikasi yang telah dilihat sebelumnya dari layar kunci"</string>
     <string name="lock_screen_notifs_show_full_list" msgid="6767009263807771108">"Daftar lengkap"</string>
-    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"Rapat"</string>
+    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"Ringkas"</string>
     <string name="lock_screen_notifs_title" msgid="3412042692317304449">"Notifikasi di layar kunci"</string>
     <string name="lock_screen_notifs_show_all_summary" msgid="4226586018375762117">"Tampilkan percakapan, default, dan senyap"</string>
     <string name="lock_screen_notifs_show_all" msgid="1300418674456749664">"Tampilkan percakapan, default, dan senyap"</string>
@@ -4547,8 +4547,8 @@
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"Izinkan notifikasi layar penuh dari aplikasi ini"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"Mengizinkan aplikasi ini menampilkan notifikasi dalam layar penuh ketika perangkat terkunci. Aplikasi mungkin menggunakan tindakan ini untuk memperjelas alarm, panggilan masuk, atau notifikasi penting lainnya."</string>
     <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Tulis preferensi sistem"</string>
-    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Izinkan aplikasi ini mengubah preferensi sistem atas nama Anda"</string>
-    <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"Izin ini memungkinkan aplikasi mengubah preferensi sistem inti."</string>
+    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Izinkan aplikasi ini mengubah preferensi sistem bagi Anda"</string>
+    <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"Izin ini memungkinkan aplikasi mengubah preferensi inti sistem."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"Aplikasi pengelolaan media"</string>
     <string name="media_management_apps_toggle_label" msgid="166724270857067456">"Izinkan aplikasi mengelola media"</string>
     <string name="media_management_apps_description" msgid="8000565658455268524">"Jika diizinkan, aplikasi ini dapat mengubah atau menghapus file media yang dibuat dengan aplikasi lain tanpa bertanya kepada Anda. Aplikasi harus memiliki izin untuk mengakses file dan media."</string>

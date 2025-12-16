@@ -365,7 +365,7 @@
     <string name="encryption_and_credential_settings_title" msgid="5856216318961482983">"التشفير وبيانات الاعتماد"</string>
     <string name="lockscreen_settings_title" msgid="4086121748092341549">"شاشة القفل"</string>
     <string name="lockscreen_settings_what_to_show_category" msgid="9205490627927741254">"ما يتم عرضه"</string>
-    <string name="disabled_by_administrator_summary" msgid="5424846182313851124">"غير متاح"</string>
+    <string name="disabled_by_administrator_summary" msgid="5424846182313851124">"الإعداد غير متاح"</string>
     <string name="security_status_title" msgid="6958004275337618656">"حالة الأمان"</string>
     <string name="security_dashboard_summary" msgid="7571035662779425918">"\"قفل الشاشة\" و\"العثور على جهازي\" وأمان التطبيقات"</string>
     <string name="safety_center_title" msgid="7732397372178774777">"الأمان والخصوصية"</string>
@@ -474,7 +474,7 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_message_setup" msgid="6255210343107484206">"عندما يظهر لك هذا الرمز، استخدِم بصمة الإصبع للمصادقة، مثلاً عند تسجيل الدخول إلى التطبيقات أو الموافقة على عملية شراء"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_title_1" msgid="4360262371633254407">"تنبيه"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_title_2" msgid="2580899232734177771">"آلية العمل"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2" msgid="5909924864816776516">"تنشئ ميزة \"فتح الجهاز ببصمة الإصبع\" نموذجًا فريدًا من بصمة إصبعك لإثبات هويتك. لإنشاء نموذج بصمة الإصبع هذا أثناء عملية الإعداد، عليك تسجيل صور لبصمة إصبعك من جهات مختلفة."</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_2" msgid="5909924864816776516">"تنشئ ميزة \"فتح الجهاز ببصمة الإصبع\" نموذجًا فريدًا من بصمة إصبعك لإثبات هويتك. ولإنشاء هذا النموذج أثناء عملية الإعداد، عليك اتّخاذ صور لبصمة إصبعك من جهات مختلفة."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_2" msgid="3493356605815124807">"تنشئ ميزة \"فتح الجهاز ببصمة الإصبع\" نموذجًا فريدًا من بصمة إصبع طفلك لإثبات هويته. لإنشاء نموذج بصمة الإصبع هذا أثناء الإعداد، على طفلك تسجيل صور لبصمة إصبعه من جهات مختلفة."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_6" msgid="5314031490467481499">"‏للحصول على أفضل النتائج، استخدم واقي شاشة مُعتمَد ويحمل شعار Made for Google. قد لا تعمل بصمة إصبعك مع واقيات الشاشة الأخرى."</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_6" msgid="3563942520716110478">"‏للحصول على أفضل النتائج، استخدم واقي شاشة مُعتمَد ويحمل شعار Made for Google. قد لا تعمل بصمة إصبع طفلك مع واقيات الشاشة الأخرى."</string>
@@ -527,7 +527,7 @@
     <string name="security_settings_remoteauth_enroll_introduction_more" msgid="1644105894631257595">"المزيد"</string>
     <string name="security_settings_remoteauth_enroll_introduction_how_title" msgid="6604152528267830349">"طريقة العمل"</string>
     <string name="security_settings_remoteauth_enroll_introduction_info_lock_open" msgid="8570511335628725116">"يجب أن تكون ساعتك مفتوحة القفل وعلى معصمك وقريبة من هذا الهاتف. لن تحتاج إلى فتح قفل ساعتك مرة أخرى عندما تكون على معصمك."</string>
-    <string name="security_settings_remoteauth_enroll_introduction_info_notifications" msgid="4298855831154039694">"عندما يتم فتح قفل هذا الهاتف، ستتلقّى إشعارًا بذلك على ساعتك. وفي حال فتح قفل الهاتف بدون قصد، يمكنك النقر على الإشعار لقفله مرّة أخرى."</string>
+    <string name="security_settings_remoteauth_enroll_introduction_info_notifications" msgid="4298855831154039694">"عند فتح قفل هذا الهاتف، ستتلقّى إشعارًا بذلك على ساعتك. وفي حال فتح القفل بدون قصد، يمكنك النقر على الإشعار لقفله مرّة أخرى."</string>
     <string name="security_settings_remoteauth_enroll_introduction_youre_in_control_title" msgid="7974976673323638524">"القرار لك"</string>
     <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"يمكنك إزالة ساعتك من ميزة \"فتح الهاتف من الساعة\" في أي وقت من خلال \"الإعدادات\""</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_tap_notification" msgid="1597397399097952974">"انقر على أحد الإشعارات."</string>
@@ -585,7 +585,7 @@
     <string name="security_settings_fingerprint_enroll_start_message" msgid="5010227772754175346">"ضع إصبعك على زر الاستشعار ثمّ ارفعه بعد اهتزاز الجهاز"</string>
     <string name="security_settings_udfps_enroll_start_message" msgid="5032954588171487566">"ثبِّت بصمة إصبعك على أداة الاستشعار إلى أن يهتزّ الجهاز"</string>
     <string name="security_settings_sfps_enroll_start_message" msgid="9054672627477685212">"بدون الضغط على الزر، ثبِّت بصمة إصبعك على أداة الاستشعار إلى أن تشعر بالاهتزاز.\n\nحرِّك إصبعك قليلاً في كل مرة تشعر فيها بالاهتزاز. يساعد هذا على التقاط قدر أكبر من بصمة إصبعك."</string>
-    <string name="security_settings_fingerprint_enroll_udfps_title" msgid="6665610134560896895">"يُرجى لَمْس أداة استشعار بصمة الإصبع مع الاستمرار"</string>
+    <string name="security_settings_fingerprint_enroll_udfps_title" msgid="6665610134560896895">"المس أداة استشعار بصمة الإصبع مع الاستمرار"</string>
     <string name="security_settings_fingerprint_enroll_repeat_title" msgid="9172202128243545021">"ارفع إصبعك ثم المس أداة الاستشعار مرة أخرى"</string>
     <string name="security_settings_udfps_enroll_title_one_more_time" msgid="424937043843482410">"مرة أخرى"</string>
     <string name="security_settings_udfps_enroll_repeat_title_touch_icon" msgid="4096344864386190335">"اتّبِع رمز بصمة الإصبع"</string>
@@ -688,7 +688,7 @@
     <string name="private_space_new_lock_title" msgid="9056139964133004094">"هل تريد اختيار طريقة جديدة لقفل المساحة الخاصة؟"</string>
     <string name="private_space_new_lock_message" msgid="3117703578905489206">"يجب إدخال رقم التعريف الشخصي أو النقش أو كلمة المرور للجهاز في الشاشة التالية"</string>
     <string name="private_space_auto_lock_title" msgid="8663409382910601261">"قفل المساحة الخاصة تلقائيًا"</string>
-    <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"يمكنك قفل مساحتك الخاصة تلقائيًا إذا لم تستخدم جهازك لفترة زمنية"</string>
+    <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"يمكنك قفل مساحتك الخاصة تلقائيًا إذا لم تستخدم جهازك لبعض الوقت"</string>
     <string name="private_space_auto_lock_every_time" msgid="1215061855836002830">"في كل مرة يتم فيها قفل الجهاز"</string>
     <string name="private_space_auto_lock_after_inactivity" msgid="7107814517866649733">"‫5 دقائق بعد انقضاء مهلة غلق الشاشة"</string>
     <string name="private_space_auto_lock_after_device_restart" msgid="288755768725895029">"بعد إعادة تشغيل الجهاز فقط"</string>
@@ -1445,7 +1445,7 @@
     <string name="night_display_summary_off_auto_mode_never" msgid="7406899634169354142">"لن يتم تفعيل الميزة تلقائيًا على الإطلاق"</string>
     <string name="night_display_summary_off_auto_mode_custom" msgid="6667008039080687931">"سيتم التفعيل تلقائيًا في <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="night_display_summary_off_auto_mode_twilight" msgid="3669132200611324994">"التفعيل تلقائيًا عند غروب الشمس"</string>
-    <string name="night_display_summary_on_auto_mode_never" msgid="832333009202889350">"لن يتم إيقافه بشكل تلقائي مطلقًا"</string>
+    <string name="night_display_summary_on_auto_mode_never" msgid="832333009202889350">"لن يتوقّف أبدًا تلقائيًا"</string>
     <string name="night_display_summary_on_auto_mode_custom" msgid="2096677025343425755">"سيتم الإيقاف تلقائيًا عند الساعة <xliff:g id="ID_1">%1$s</xliff:g>"</string>
     <string name="night_display_summary_on_auto_mode_twilight" msgid="8070517472000680361">"سيتم الإيقاف تلقائيًا عند شروق الشمس"</string>
     <string name="night_display_not_currently_on" msgid="6600205753103093827">"الإضاءة الليلية غير مفعلة حاليًا"</string>
@@ -1468,7 +1468,7 @@
     <string name="dark_ui_summary_off_auto_mode_custom" msgid="1345906088326708376">"سيتم تفعيل الإعداد تلقائيًا في <xliff:g id="ID_1">%1$s</xliff:g>."</string>
     <string name="dark_ui_summary_off_auto_mode_custom_bedtime" msgid="7759826673214624622">"سيتم تفعيله تلقائيًا عند حلول وقت النوم."</string>
     <string name="dark_ui_summary_off_auto_mode_modes" msgid="2672694802103388896">"سيتم تفعيل هذا الوضع عندما تكون ميزة \"<xliff:g id="ID_1">%1$s</xliff:g>\" مفعَّلة"</string>
-    <string name="dark_ui_summary_on_auto_mode_never" msgid="2468597062391435521">"لن يتم مطلقًا إيقافه بشكل تلقائي"</string>
+    <string name="dark_ui_summary_on_auto_mode_never" msgid="2468597062391435521">"لن يتوقّف أبدًا تلقائيًا"</string>
     <string name="dark_ui_summary_on_auto_mode_auto" msgid="5553376115092648636">"سيتم إيقاف الوضع تلقائيًا عند شروق الشمس"</string>
     <string name="dark_ui_summary_on_auto_mode_custom" msgid="2526935680241734784">"سيتم إيقاف الإعداد تلقائيًا في <xliff:g id="ID_1">%1$s</xliff:g>."</string>
     <string name="dark_ui_summary_on_auto_mode_custom_bedtime" msgid="1976993025762551246">"سيتم إيقافه تلقائيًا بعد انتهاء وقت النوم."</string>
@@ -1769,7 +1769,7 @@
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"الموسيقى"</li>\n<li>"الصور"</li>\n<li>"بيانات المستخدم الأخرى"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729">"‏"<li>"شرائح eSIM"</li></string>
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"لن يؤدي هذا إلى إلغاء خطة خدمة الجوّال."</string>
-    <string name="main_clear_final_desc" msgid="5800877928569039580">"سيتم حذف جميع المعلومات الشخصية والتطبيقات التي تم تنزيلها. لا يمكنك التراجع عن هذا الإجراء."</string>
+    <string name="main_clear_final_desc" msgid="5800877928569039580">"سيتم حذف جميع معلوماتك الشخصية والتطبيقات التي نزّلتها. لا يمكنك التراجع عن هذا الإجراء."</string>
     <string name="main_clear_final_desc_esim" msgid="6592404057237813989">"‏سيتم حذف جميع المعلومات الشخصية، بما في ذلك التطبيقات وشرائح eSIM التي تم تنزيلها. لا يمكنك التراجع عن هذا الإجراء."</string>
     <string name="main_clear_confirm_title" msgid="6577071819657853713">"هل تريد محو جميع البيانات؟"</string>
     <string name="main_clear_not_available" msgid="3433795327146684827">"لا تتوفر إمكانية إعادة الضبط على الإعدادات الأصلية لهذا المستخدم"</string>
@@ -1891,13 +1891,13 @@
     <string name="lockpassword_choose_your_pattern_header_for_fingerprint" msgid="4707788269512303400">"لاستخدام بصمة الإصبع، يُرجى رسم نقش من ابتكارك"</string>
     <string name="lockpassword_choose_your_pin_message" msgid="7230665212172041837">"لتعزيز أمان الجهاز، يجب تحديد رقم تعريف شخصي"</string>
     <string name="lockpassword_choose_your_pin_header_for_fingerprint" msgid="2783879743691792556">"لاستخدام بصمة الإصبع، يُرجى إعداد رقم تعريف شخصي"</string>
-    <string name="lockpassword_confirm_your_password_header" msgid="4988519671035171367">"يُرجى إدخال كلمة مرور جهازك"</string>
+    <string name="lockpassword_confirm_your_password_header" msgid="4988519671035171367">"أدخلِ كلمة مرور جهازك"</string>
     <string name="lockpassword_reenter_your_password_header" msgid="7257189484651655897">"يُرجى إدخال كلمة المرور مرة أخرى"</string>
     <string name="lockpassword_reenter_your_profile_password_header" msgid="3812040127714827685">"أعِد إدخال كلمة مرور ملف العمل"</string>
     <string name="lockpassword_confirm_your_work_password_header" msgid="4647071231702288305">"أدخِل كلمة مرور ملف العمل"</string>
-    <string name="lockpassword_confirm_your_pattern_header" msgid="2473024535487015289">"يُرجى إدخال نقش جهازك"</string>
+    <string name="lockpassword_confirm_your_pattern_header" msgid="2473024535487015289">"أدخِل نقش جهازك"</string>
     <string name="lockpassword_confirm_your_work_pattern_header" msgid="2668883108969165844">"أدخِل نقش ملف العمل"</string>
-    <string name="lockpassword_confirm_your_pin_header" msgid="541025103892074808">"يُرجى إدخال رقم التعريف الشخصي لجهازك"</string>
+    <string name="lockpassword_confirm_your_pin_header" msgid="541025103892074808">"أدخِل رقم التعريف الشخصي لفتح قفل جهازك"</string>
     <string name="lockpassword_reenter_your_pin_header" msgid="373337443492549650">"يُرجى إدخال رقم التعريف الشخصي مرة أخرى"</string>
     <string name="lockpassword_reenter_your_profile_pin_header" msgid="2890233614560435538">"أعِد إدخال رقم التعريف الشخصي لملف العمل"</string>
     <string name="lockpassword_confirm_your_work_pin_header" msgid="4229765521391960255">"أدخِل رقم التعريف الشخصي لملف العمل"</string>
@@ -1994,7 +1994,7 @@
     <string name="applications_settings_header" msgid="3154670675856048015">"إعدادات التطبيقات"</string>
     <string name="install_applications" msgid="3921609656584369901">"مصادر غير معروفة"</string>
     <string name="install_applications_title" msgid="7890233747559108106">"السماح بكل مصادر التطبيقات"</string>
-    <string name="recent_app_category_title" msgid="189758417804427533">"التطبيقات التي تم فتحها مؤخرًا"</string>
+    <string name="recent_app_category_title" msgid="189758417804427533">"التطبيقات التي فتحتها مؤخرًا"</string>
     <string name="see_all_apps_title" msgid="1650653853942381797">"{count,plural, =1{عرض كل التطبيقات}zero{عرض كل التطبيقات الـ #}two{عرض التطبيقَين}few{عرض كل التطبيقات الـ #}many{عرض كل التطبيقات الـ #}other{عرض كل التطبيقات الـ #}}"</string>
     <string name="forgot_password_title" msgid="3967873480875239885">"تواصَل مع مشرف تكنولوجيا معلومات."</string>
     <string name="forgot_password_text" msgid="2583194470767613163">"يمكن أن يساعدك مشرف تكنولوجيا المعلومات في إعادة ضبط رقم التعريف الشخصي أو النقش أو كلمة المرور."</string>
@@ -2167,7 +2167,7 @@
     <string name="physical_keyboard_title" msgid="3328134097512350958">"لوحة المفاتيح الخارجية"</string>
     <string name="physical_keyboard_layout_picker_title" msgid="4526600767648916256">"أداة اختيار تخطيط لوحة المفاتيح الخارجية"</string>
     <string name="bounce_keys" msgid="7419450970351743904">"تجاهُل النقرات المتكرّرة"</string>
-    <string name="bounce_keys_summary" msgid="8890925059943636911">"يؤدي هذا الإعداد إلى تجاهُل الضغطات المتكرّرة بسرعة على المفتاح نفسه"</string>
+    <string name="bounce_keys_summary" msgid="8890925059943636911">"لتجاهُل الضغطات المتكرّرة بسرعة على المفتاح نفسه"</string>
     <string name="bounce_keys_dialog_title" msgid="1090578395028456023">"مهلة تجاهُل النقرات المتكرّرة"</string>
     <string name="bounce_keys_dialog_subtitle" msgid="6804676895876861863">"يُرجى اختيار المدة الزمنية التي تتجاهل خلالها لوحة المفاتيح الضغطات المتكرّرة"</string>
     <string name="input_setting_keys_dialog_option_200" msgid="2785528287150314940">"‫‫۰,۲ ثانية"</string>
@@ -2179,13 +2179,13 @@
     <string name="input_setting_bounce_keys_seekbar_desc" msgid="4575595566548124309">"المدة القصوى لتجاهل النقرات المتكررة قبل تسجيلها"</string>
     <string name="input_setting_slow_keys_seekbar_desc" msgid="2171726970136563995">"أقل وقت تأخير قبل تسجيل المفاتيح البطيئة"</string>
     <string name="slow_keys" msgid="2891452895499690837">"المفاتيح البطيئة"</string>
-    <string name="slow_keys_summary" msgid="3852534180402969185">"يمكنك تغيير المدة التي يجب خلالها الضغط مع الاستمرار على مفتاح معيّن قبل تسجيله"</string>
+    <string name="slow_keys_summary" msgid="3852534180402969185">"لتغيير مدة الضغط مع الاستمرار على مفتاح معيّن قبل تسجيله"</string>
     <string name="sticky_keys" msgid="7317317044898161747">"تثبيت المفاتيح"</string>
-    <string name="sticky_keys_summary" msgid="1844953803625480623">"اضغط على مفتاح واحد في كل مرة للحصول على الاختصارات بدلاً من الضغط باستمرار على المفاتيح معًا"</string>
+    <string name="sticky_keys_summary" msgid="1844953803625480623">"اضغط على مفتاح واحد في كل مرة لاستخدام الاختصارات بدلاً من الضغط باستمرار على كل المفاتيح معًا"</string>
     <string name="mouse_keys" msgid="6237254627808525540">"مفاتيح الماوس"</string>
     <string name="mouse_keys_main_title" msgid="3570638931365221460">"استخدام مفاتيح الماوس"</string>
     <string name="accessibility_mouse_keys_shortcut_title" msgid="7621635104533584115">"اختصار مفاتيح الماوس"</string>
-    <string name="mouse_keys_summary" msgid="6512910710030108693">"يمكنك استخدام لوحة المفاتيح للتحكّم في المؤشر"</string>
+    <string name="mouse_keys_summary" msgid="6512910710030108693">"لاستخدام لوحة المفاتيح للتحكّم في المؤشر"</string>
     <string name="mouse_keys_max_speed_title" msgid="2651688711606971145">"السرعة"</string>
     <string name="mouse_keys_seek_bar_decrease_button_description" msgid="9077624857206032509">"خفض"</string>
     <string name="mouse_keys_seek_bar_increase_button_description" msgid="2721662400858172203">"زيادة"</string>
@@ -2292,7 +2292,7 @@
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"التطبيقات المستخدَمة مؤخرًا"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"الإشعارات"</string>
     <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"الإعدادات السريعة"</string>
-    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"اختيار اختصار  <xliff:g id="CORNER">%1$s</xliff:g>"</string>
+    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"يُرجى اختيار اختصار  <xliff:g id="CORNER">%1$s</xliff:g>"</string>
     <string name="action_corner_bottom_left_name" msgid="9193788067022476544">"الزاوية السفلية اليمنى"</string>
     <string name="action_corner_bottom_right_name" msgid="1031603363418505375">"الزاوية السفلية اليسرى"</string>
     <string name="action_corner_top_left_name" msgid="8077670910600032291">"الزاوية العلوية اليمنى"</string>
@@ -2340,7 +2340,7 @@
     <string name="keyboard_layout_picker_category_title" msgid="2369473692906329772">"تنسيقات لوحة المفاتيح الخارجية"</string>
     <string name="user_dict_settings_title" msgid="680410651924276991">"القاموس الشخصي"</string>
     <string name="user_dict_settings_for_work_title" msgid="1245315720684961770">"المعجم الشخصي للعمل"</string>
-    <string name="user_dict_settings_summary" msgid="4939694372338975081">"يمكنك إضافة كلمات لاستخدامها في التطبيقات، مثلاً \"المدقق الإملائي\"."</string>
+    <string name="user_dict_settings_summary" msgid="4939694372338975081">"إضافة كلمات لاستخدامها في التطبيقات، مثلاً \"المدقق الإملائي\""</string>
     <string name="user_dict_settings_add_menu_title" msgid="8046882347281382968">"إضافة"</string>
     <string name="user_dict_settings_add_dialog_title" msgid="3485845465134083084">"إضافة إلى القاموس"</string>
     <string name="user_dict_settings_add_screen_title" msgid="1866408024073475379">"عبارة"</string>
@@ -2452,12 +2452,12 @@
     <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"تحريك الشاشة باستمرار حسب حركة مؤشر الماوس"</string>
     <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"تحريك الشاشة مع الإبقاء على مؤشر الماوس في منتصف الشاشة"</string>
     <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"تحريك الشاشة عند وصول مؤشر الماوس إلى حواف الشاشة"</string>
-    <string name="accessibility_screen_magnification_follow_typing_title" msgid="494025442124701045">"اتّباع النص أثناء للكتابة"</string>
+    <string name="accessibility_screen_magnification_follow_typing_title" msgid="494025442124701045">"اتّباع النص أثناء الكتابة"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2678347754211619662">"يتَّبِع المكبِّر النص أثناء الكتابة"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_title" msgid="3412060515554192262">"تتبُّع تركيز لوحة المفاتيح"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_summary" msgid="2379353603675828805">"يتتبّع المكبّر العنصر الذي يتم التركيز عليه أثناء تنقّلك باستخدام لوحة المفاتيح"</string>
     <string name="accessibility_screen_magnification_nav_ime_title" msgid="8804501318161774285">"تكبير لوحة المفاتيح"</string>
-    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"يمكن تكبير الأزرار لرؤية الحروف ورموز الإيموجي عند استخدام وضع التكبير بملء الشاشة"</string>
+    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"تكبير الأزرار لرؤية الحروف ورموز الإيموجي عند استخدام وضع التكبير بملء الشاشة"</string>
     <string name="accessibility_screen_magnification_nav_ime_unavailable_summary" msgid="2248787024685382054">"لا تتوفّر هذه الميزة عند تكبير جزء من الشاشة فقط"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"الإبقاء مفعّلاً عند تبديل التطبيقات"</string>
     <string name="accessibility_screen_magnification_always_on_summary" msgid="642275893256862796">"يظل المكبِّر مفعّلاً ويتم تصغيره عند التبديل بين التطبيقات"</string>
@@ -2467,10 +2467,10 @@
     <string name="accessibility_screen_magnification_about_title" msgid="8857919020223505415">"لمحة عن التكبير"</string>
     <string name="accessibility_screen_magnification_footer_learn_more_content_description" msgid="924848332575978463">"مزيد من المعلومات حول التكبير"</string>
     <string name="accessibility_magnification_mode_title" msgid="8446475127807168063">"نوع التكبير"</string>
-    <string name="accessibility_magnification_area_settings_message" msgid="8498648925928109462">"يمكنك تكبير الشاشة كلها أو جزء معيّن منها أو التبديل بين الخيارين"</string>
+    <string name="accessibility_magnification_area_settings_message" msgid="8498648925928109462">"تكبير الشاشة كلها أو جزء معيّن منها أو التبديل بين الخيارين"</string>
     <string name="accessibility_magnification_area_settings_full_screen_summary" msgid="2728962784113713010">"ملء الشاشة"</string>
     <string name="accessibility_magnification_area_settings_window_screen_summary" msgid="9191632962955877019">"جزء من الشاشة"</string>
-    <string name="accessibility_magnification_area_settings_all_summary" msgid="8107511976748799455">"يمكنك التبديل بين تكبير الشاشة كلها أو تكبير جزء منها"</string>
+    <string name="accessibility_magnification_area_settings_all_summary" msgid="8107511976748799455">"التبديل بين تكبير الشاشة كلها أو تكبير جزء منها"</string>
     <string name="accessibility_magnification_mode_dialog_title" msgid="9151027667059878578">"اختَر كيفية تكبير الشاشة"</string>
     <string name="accessibility_magnification_mode_dialog_option_full_screen" msgid="4892487869954032029">"تكبير الشاشة كلها"</string>
     <string name="accessibility_magnification_mode_dialog_option_window" msgid="4492443201099153362">"تكبير جزء من الشاشة"</string>
@@ -2505,7 +2505,7 @@
     <string name="accessibility_preference_magnification_summary" msgid="2875518904115896888">"التكبير على الشاشة"</string>
     <string name="accessibility_screen_magnification_short_summary" msgid="2207048420669939150">"انقر ٣ مرات للتكبير."</string>
     <string name="accessibility_screen_magnification_navbar_short_summary" msgid="4885018322430052037">"انقر على أحد الأزرار للتكبير"</string>
-    <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"يمكنك تكبير الشاشة بسرعة لتكبير المحتوى"</string>
+    <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"يمكنك تكبير الشاشة بسرعة ليظهر المحتوى بحجم أكبر"</string>
     <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"‏&lt;b&gt;لتكبير الشاشة:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. استخدِم الاختصار المخصّص لبدء تكبير المحتوى&lt;br/&gt; {1,number,integer}. انقر على الشاشة&lt;br/&gt; {2,number,integer}. اسحب بإصبعين للتنقّل على الشاشة&lt;br/&gt; {3,number,integer}. باعِد أو قارِب بإصبعين لتعديل مستوى التكبير/التصغير&lt;br/&gt; {4,number,integer}. استخدِم الاختصار المخصّص لإيقاف تكبير المحتوى&lt;br/&gt;&lt;br/&gt;&lt;b&gt;لتكبير المحتوى مؤقتًا:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. تأكّد من ضبط نوع التكبير على وضع ملء الشاشة&lt;br/&gt; {1,number,integer}. استخدِم الاختصار المخصّص لبدء تكبير المحتوى&lt;br/&gt; {2,number,integer}. انقر مع الاستمرار على أي مكان على الشاشة&lt;br/&gt; {3,number,integer}. اسحب بإصبعك للتنقّل على الشاشة&lt;br/&gt; {4,number,integer}. ارفع إصبعك لإيقاف تكبير الشاشة"</string>
     <string name="accessibility_screen_magnification_keyboard_summary" msgid="5376202602229533488">"‏&lt;b&gt;لتكبير الشاشة:&lt;/b&gt;&lt;br/&gt; ‫{0,number,integer}. يُرجى استخدام الاختصار أو الضغط على &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; وحرف M لبدء تكبير الشاشة، ثمّ&lt;br/&gt; ‫{1,number,integer}. الضغط على &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; ومفاتيح الأسهم للتنقّل في الشاشة&lt;br/&gt; ‫{2,number,integer}. الضغط على &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; ورمز \"+\" أو \"-\" لتعديل مستوى التكبير أو التصغير&lt;br/&gt; ‫{3,number,integer}. استخدام الاختصار أو &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; وحرف M لإيقاف تكبير الشاشة"</string>
     <string name="accessibility_screen_magnification_keyboard_shortcuts_flag_off_summary" msgid="4390658165464462006">"‏&lt;b&gt;لتكبير الشاشة:&lt;/b&gt;&lt;br/&gt; ‫{0,number,integer}. يُرجى استخدام الاختصار المخصّص لبدء تكبير الشاشة، ثم&lt;br/&gt; ‫{1,number,integer}. الضغط على &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; ومفاتيح الأسهم للتنقّل في الشاشة&lt;br/&gt; ‫{2,number,integer}. الضغط على &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; و&lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; ورمز \"+\" أو \"-\" لتعديل مستوى التكبير أو التصغير&lt;br/&gt; ‫{3,number,integer}. استخدام الاختصار لإيقاف تكبير الشاشة"</string>
@@ -2526,7 +2526,7 @@
     <string name="accessibility_tutorial_dialog_message_triple" msgid="5219991116201165146">"لبدء استخدام ميزة التكبير أو إيقافها، انقر ثلاث مرات في أي مكان على الشاشة."</string>
     <string name="accessibility_tutorial_dialog_tripletap_instruction" msgid="7549293553589934">"‏لبدء استخدام ميزة التكبير أو إيقافها، انقر سريعًا على الشاشة %1$d مرّات"</string>
     <string name="accessibility_tutorial_dialog_twofinger_doubletap_instruction" msgid="1007756360115974649">"لبدء استخدام ميزة التكبير أو إيقافها، انقر سريعًا على الشاشة مرّتين باستخدام إصبعين"</string>
-    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها. ثم ابحث عن مربّع ميزة \"{featureName}\".}zero{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبع. ثم ابحث عن مربّع ميزة \"{featureName}\".}two{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام إصبعين. ثم ابحث عن مربّع ميزة \"{featureName}\".}few{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # أصابع. ثم ابحث عن مربّع ميزة \"{featureName}\".}many{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبعًا. ثم ابحث عن مربّع ميزة \"{featureName}\".}other{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبع. ثم ابحث عن مربّع ميزة \"{featureName}\".}}"</string>
+    <string name="accessibility_tutorial_dialog_message_quick_setting" msgid="3715446725334547432">"{count,plural, =1{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها. ثم ابحث عن مربّع {featureName}.}zero{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبع. ثم ابحث عن مربّع {featureName}.}two{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام إصبعين. ثم ابحث عن مربّع {featureName}.}few{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # أصابع. ثم ابحث عن مربّع {featureName}.}many{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبعًا. ثم ابحث عن مربّع {featureName}.}other{لاستخدام هذه الميزة، مرِّر سريعًا من أعلى الشاشة إلى أسفلها باستخدام # إصبع. ثم ابحث عن مربّع {featureName}.}}"</string>
     <string name="accessibility_tutorial_dialog_shortcut_unavailable_in_suw" msgid="3847728530771929959">"سيكون هذا الاختصار متاحًا بعد الانتهاء من عملية إعداد الجهاز."</string>
     <string name="accessibility_tutorial_dialog_message_gesture" msgid="4148062210755434854">"لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة للأعلى بإصبعين.\n\nللتبديل بين الميزات، مرِّر سريعًا للأعلى بإصبعين مع تثبيتهما."</string>
     <string name="accessibility_tutorial_dialog_gesture_shortcut_instruction" msgid="7349950768250852308">"{count,plural, =1{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها}zero{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها باستخدام # إصبع}two{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها باستخدام إصبعين}few{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها باستخدام # أصابع}many{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها باستخدام # إصبعًا}other{لاستخدام هذه الميزة، مرِّر سريعًا من أسفل الشاشة إلى أعلاها باستخدام # إصبع}}"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"إعدادات التنقل"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"الاهتزاز واللمس"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"التحكّم في قوة الاهتزاز للاستخدامات المختلفة"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"مفعّل: التحكم في مستويات الاهتزاز للمكالمات والإشعارات والمنبّهات"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"مفعّل/ التحكم في مستويات الاهتزاز للمكالمات والإشعارات والمنبّهات"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"غير مفعّل: التحكّم في مستويات الاهتزاز للمكالمات والإشعارات والمنبّهات"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"تم إيقاف الخيار بسبب ضبط الجهاز على وضع كتم الصوت."</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"المكالمات"</string>
@@ -2688,7 +2688,7 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"يمكنك أيضًا إضافة ميزة \"تصحيح الألوان\" إلى قائمة \"الإعدادات السريعة\" من أعلى الشاشة."</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"تمت إضافة ميزة \"قلب الألوان\" إلى قائمة \"الإعدادات السريعة\". مرِّر سريعًا للأسفل لتفعيلها أو إيقافها في أي وقت."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"يمكنك أيضًا إضافة ميزة \"قلب الألوان\" إلى قائمة \"الإعدادات السريعة\" من أعلى الشاشة."</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"يمكنك تعتيم الشاشة إلى مستوى أقلّ من الحد الأدنى للسطوع"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"تعتيم الشاشة إلى مستوى أقلّ من الحد الأدنى للسطوع"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"تمت إضافة ميزة \"زيادة تعتيم الشاشة\" إلى قائمة \"الإعدادات السريعة\". مرِّر سريعًا للأسفل لتفعيلها أو إيقافها في أي وقت."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"يمكنك أيضًا إضافة ميزة \"زيادة تعتيم الشاشة\" إلى قائمة \"الإعدادات السريعة\" من أعلى الشاشة."</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"تمت إضافة وضع \"التصفح بيد واحدة\" إلى قائمة \"الإعدادات السريعة\". مرِّر سريعًا للأسفل لتفعيله أو إيقافه في أي وقت."</string>
@@ -2700,7 +2700,7 @@
     <string name="accessibility_daltonizer_about_title" msgid="6063650804116981287">"لمحة عن تصحيح الألوان"</string>
     <string name="accessibility_daltonizer_footer_learn_more_content_description" msgid="2091679253892040910">"معرفة المزيد عن تصحيح الألوان"</string>
     <string name="accessibility_color_inversion_about_title" msgid="8275754480247040136">"لمحة عن قلب الألوان"</string>
-    <string name="accessibility_color_inversion_footer_learn_more_content_description" msgid="5382579548498952445">"تعرّف على مزيد من المعلومات حول قلب الألوان"</string>
+    <string name="accessibility_color_inversion_footer_learn_more_content_description" msgid="5382579548498952445">"مزيد من المعلومات حول قلب الألوان"</string>
     <string name="accessibility_dark_theme_footer_learn_more_helper_link" msgid="6728089199404860746">"مزيد من المعلومات حول وضع \"المظهر الداكن\""</string>
     <string name="accessibility_captioning_primary_switch_title" msgid="3663677340286206100">"عرض الشرح"</string>
     <string name="accessibility_captioning_primary_switch_summary" msgid="2544094070306830218">"للتطبيقات المتوافقة فقط"</string>
@@ -2771,8 +2771,8 @@
     <string name="daltonizer_mode_tritanomaly_title" msgid="2278786218762602022">"الصعوبة في تمييز الأزرق من الأصفر"</string>
     <string name="daltonizer_mode_grayscale_title" msgid="152005391387952588">"تدرّج الرمادي"</string>
     <string name="daltonizer_saturation_title" msgid="2999486412114963068">"كثافة اللون"</string>
-    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"لا يتوفر خيار ضبط مستوى الكثافة في وضع \"تدرّج الرمادي\" أو في حال إيقاف ميزة \"تصحيح الألوان\""</string>
-    <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"العجز في رؤية اللونين الأخضر والأحمر"</string>
+    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"هذا الخيار ليس متاحًا في وضع \"تدرّج الرمادي\" أو عند إيقاف ميزة \"تصحيح الألوان\""</string>
+    <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"العجز عن رؤية بعض درجات الأخضر"</string>
     <string name="daltonizer_mode_protanomaly_summary" msgid="877971556622350648">"العجز عن رؤية بعض درجات الأحمر"</string>
     <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"العجز عن رؤية بعض درجات الأزرق والأصفر"</string>
     <string name="reduce_bright_colors_preference_title" msgid="2249314004651574997">"زيادة تعتيم الشاشة"</string>
@@ -2900,16 +2900,16 @@
     <string name="manager_battery_usage_allow_background_usage_settings_title" msgid="8150026934645052635">"السماح بالاستخدام في الخلفية"</string>
     <string name="manager_battery_usage_allow_background_usage_title" msgid="6294649996820358852">"السماح بالاستخدام في الخلفية"</string>
     <string name="manager_battery_usage_allow_background_usage_summary" msgid="8021153755201340819">"يمكن تفعيل هذا الإعداد للحصول على المعلومات في الوقت الفعلي، أو إيقافه لتوفير شحن البطارية"</string>
-    <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"الاستخدام غير المحدّد بقيود"</string>
+    <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"الاستخدام بلا قيود"</string>
     <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"الاستخدام المحسَّن"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"الاستخدام المحدّد بقيود"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"يتم السماح باستخدام البطارية في الخلفية بدون قيود. قد يؤدي هذا الخيار إلى استخدام المزيد من شحن البطارية."</string>
-    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"يسمح هذا الإعداد باستخدام البطارية في الخلفية، وقد يؤدي إلى استهلاك المزيد من الطاقة."</string>
+    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"السماح باستخدام البطارية في الخلفية (قد تستهلك المزيد من الطاقة)"</string>
     <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"تحسين الإعدادات بناءً على الاستخدام (مقترح لمعظم التطبيقات)"</string>
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"يتم حظر استخدام البطارية أثناء العمل في الخلفية. وبالتالي، قد لا يعمل التطبيق على النحو المتوقع. وقد تتأخر الإشعارات."</string>
-    <string name="manager_battery_usage_footer" msgid="2635906573922553766">"يمكن لتغيير طريقة استخدام التطبيق للبطارية أن يؤثر في أدائها."</string>
+    <string name="manager_battery_usage_footer" msgid="2635906573922553766">"قد يتأثّر أداء البطارية عند تغيير طريقة استخدام أحد التطبيقات لها."</string>
     <string name="manager_battery_usage_footer_limited" msgid="5180776148877306780">"يتطلّب هذا التطبيق أن يكون استخدام البطارية <xliff:g id="STATE">%1$s</xliff:g>."</string>
-    <string name="manager_battery_usage_unrestricted_only" msgid="3646162131339418216">"غير محدّد بقيود"</string>
+    <string name="manager_battery_usage_unrestricted_only" msgid="3646162131339418216">"غير مُقيّد"</string>
     <string name="manager_battery_usage_optimized_only" msgid="7121785281913056432">"محسَّنًا"</string>
     <string name="manager_battery_usage_link_a11y" msgid="374918091821438564">"مزيد من المعلومات حول خيارات استخدام البطارية"</string>
     <string name="device_screen_usage" msgid="1011630249648289909">"استخدام الشاشة منذ اكتمال الشحن"</string>
@@ -3768,7 +3768,7 @@
     <string name="live_caption_title" msgid="8617086825712756983">"النسخ النصي التلقائي"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"الحصول على الترجمة والشرح للمكالمات والفيديوهات والوسائط الأخرى"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"مفعَّلة / الحصول على الترجمة والشرح للمكالمات والفيديوهات والوسائط الأخرى"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"غير مفعَّلة / الحصول على الترجمة والشرح للمكالمات والفيديوهات والوسائط الأخرى"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"غير مفعَّل / الحصول على الترجمة والشرح للمكالمات والفيديوهات والوسائط الأخرى"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"سماعات الرأس السلكية"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"يصبح الصوت الصادر من الوسائط المتوافقة أكثر غمرًا"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"غير مفعّل"</string>
@@ -3983,7 +3983,7 @@
     <string name="lockscreen_notification_show_switch" msgid="7324668881962101312">"إظهار على شاشة القفل"</string>
     <string name="lockscreen_notification_what_to_show_title" msgid="707880305538256400">"الإشعارات التي ستظهر على شاشة القفل"</string>
     <string name="lock_screen_notification_show_viewed_notifs" msgid="4104703346314965171">"إظهار الإشعارات التي تم الاطّلاع عليها"</string>
-    <string name="lock_screen_notification_show_viewed_notif_icons" msgid="1197681203638927375">"إظهار رموز الإشعارات التي تم الاطّلاع عليها"</string>
+    <string name="lock_screen_notification_show_viewed_notif_icons" msgid="1197681203638927375">"إظهار رموز الإشعارات التي اطّلعت عليها"</string>
     <string name="lock_screen_notification_show_silent_title" msgid="9177971841517814916">"إظهار الإشعارات الصامتة"</string>
     <string name="lock_screen_notification_show_sensitive_content_title" msgid="3184973371036065258">"إظهار المحتوى الحسّاس"</string>
     <string name="lock_screen_notification_show_sensitive_work_content_title" msgid="532300440507441426">"إظهار المحتوى الحسّاس بملف العمل"</string>
@@ -4864,7 +4864,7 @@
     <string name="keywords_one_handed" msgid="969440592493034101">"قابلية الوصول"</string>
     <string name="one_handed_mode_swipe_down_category" msgid="110178629274462484">"مرِّر للأسفل من أجل"</string>
     <string name="one_handed_mode_use_shortcut_category" msgid="1414714099339147711">"استخدام الاختصار من أجل"</string>
-    <string name="one_handed_mode_intro_text" msgid="7921988617828924342">"اسحب النصف العلوي من شاشتك لأسفل كي تتمكن من الوصول إليه بيد واحدة"</string>
+    <string name="one_handed_mode_intro_text" msgid="7921988617828924342">"اسحب النصف العلوي من شاشتك للأسفل للوصول إليه بيد واحدة"</string>
     <string name="one_handed_mode_footer_text" msgid="6336209800330679840">" "<b>"كيفية استخدام وضع \"التصفح بيد واحدة\""</b>\n" • تأكّد من اختيار نظام التنقُّل بالإيماءات في إعدادات النتقُّل داخل النظام\n • مرِّر سريعًا للأسفل بالقرب من الحافة السفلى للشاشة"</string>
     <string name="one_handed_action_pull_down_screen_title" msgid="9187194533815438150">"سحب الشاشة لتكون في المتناول"</string>
     <string name="one_handed_action_pull_down_screen_summary" msgid="7582432473450036628">"سيتم نقل الجزء العلوي من الشاشة ليكون في متناول الإبهام."</string>
@@ -5728,9 +5728,9 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"أداة استشعار بصمة الإصبع"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"الإشعارات المصحوبة بوميض"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"لمحة عن الإشعارات المصحوبة بوميض"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"غير مفعَّلة / يمكنك تلقّي تنبيهات مصحوبة بوميض من الشاشة أو فلاش الكاميرا للإشعارات والمنبّهات"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"غير مفعَّلة / تلقّي تنبيهات مصحوبة بوميض من الشاشة أو فلاش الكاميرا للإشعارات والمنبّهات"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"مفعَّلة / يمكنك تلقّي تنبيهات مصحوبة بوميض من الشاشة أو فلاش الكاميرا للإشعارات والمنبّهات"</string>
-    <string name="flash_notifications_intro" msgid="8409873413480928249">"وميض فلاش الكاميرا أو الشاشة عند تلقّي إشعارات أو عندما تبدأ المنبّهات"</string>
+    <string name="flash_notifications_intro" msgid="8409873413480928249">"يومض فلاش الكاميرا أو الشاشة عند تلقّي إشعارات أو عندما تبدأ المنبّهات"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"وميض الشاشة عند تلقّي إشعارات أو عندما تبدأ المنبّهات"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"يُرجى توخّي الحذر عند استخدام الإشعارات المصحوبة بوميض إذا كنت تعاني من حساسية الضوء"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"فلاش، ضوء، ضعيف السمع، فقدان السمع"</string>
@@ -5765,9 +5765,9 @@
     <string name="color_inversion_state_on" msgid="1160969033636440368">"الميزة مفعَّلة"</string>
     <string name="color_inversion_state_off" msgid="6925638668080451724">"الميزة غير مفعَّلة"</string>
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"تحوّل هذه الميزة الشاشات المضيئة إلى معتمة والشاشات المعتمة إلى مضيئة."</string>
-    <string name="magnification_feature_summary" msgid="4403387702011660253">"يمكنك تكبير حجم المحتوى المعروض على الشاشة"</string>
+    <string name="magnification_feature_summary" msgid="4403387702011660253">"تكبير حجم المحتوى المعروض على الشاشة"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"الميزة غير مفعَّلة"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"غير مفعّل: تخصيص حجم نص الشرح ونمطه"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"غير مفعّل/ تخصيص حجم نص الشرح ونمطه"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"مفعَّل: تخصيص حجم نص الشرح ونمطه"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"الميزة غير مفعَّلة"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"الميزة مفعَّلة"</string>

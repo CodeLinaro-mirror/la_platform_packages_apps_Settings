@@ -2288,11 +2288,11 @@
     <string name="action_corner_top_left_title" msgid="4633975226092344210">"Лівий верхній кут"</string>
     <string name="action_corner_top_right_title" msgid="4995999693840776032">"Правий верхній кут"</string>
     <string name="action_corner_action_none" msgid="5203163099950649999">"Немає"</string>
-    <string name="action_corner_action_home" msgid="6779642573582379579">"Головна"</string>
+    <string name="action_corner_action_home" msgid="6779642573582379579">"Головний екран"</string>
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"Нещодавні додатки"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"Сповіщення"</string>
     <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"Швидкі налаштування"</string>
-    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"Виберіть комбінацію клавіш: <xliff:g id="CORNER">%1$s</xliff:g>"</string>
+    <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"Виберіть швидку команду: <xliff:g id="CORNER">%1$s</xliff:g>"</string>
     <string name="action_corner_bottom_left_name" msgid="9193788067022476544">"лівий нижній кут"</string>
     <string name="action_corner_bottom_right_name" msgid="1031603363418505375">"правий нижній кут"</string>
     <string name="action_corner_top_left_name" msgid="8077670910600032291">"лівий верхній кут"</string>
@@ -2457,7 +2457,7 @@
     <string name="accessibility_screen_magnification_follow_keyboard_title" msgid="3412060515554192262">"Показувати елементи, вибрані за допомогою клавіатури"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_summary" msgid="2379353603675828805">"Лупа переміщуватиметься за елементами, які ви вибираєте за допомогою клавіатури"</string>
     <string name="accessibility_screen_magnification_nav_ime_title" msgid="8804501318161774285">"Збільшувати клавіатуру"</string>
-    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"Наближайте клавіатуру, щоб бачити смайли й літери під час збільшення в повноекранному режимі"</string>
+    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"Наблизити клавіатуру, щоб бачити смайли й літери під час збільшення в повноекранному режимі"</string>
     <string name="accessibility_screen_magnification_nav_ime_unavailable_summary" msgid="2248787024685382054">"Недоступно, коли збільшено лише частину екрана"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Не вимикати під час зміни додатків"</string>
     <string name="accessibility_screen_magnification_always_on_summary" msgid="642275893256862796">"Лупа залишатиметься активною (у зменшеному вигляді), коли ви перемикатиметеся між додатками"</string>
@@ -2518,7 +2518,7 @@
     <string name="accessibility_tutorial_dialog_title_volume" msgid="1032323517963429981">"Швидка дія клавішами гучності"</string>
     <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"Швидка дія потрійним дотиком"</string>
     <string name="accessibility_tutorial_dialog_title_two_finger_double" msgid="5749704453829390283">"Швидка дія подвійним дотиком %1$d пальцями"</string>
-    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Ярлик швидких налаштувань"</string>
+    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Виклик швидких налаштувань"</string>
     <string name="accessibility_tutorial_dialog_title_gesture" msgid="4541649734549409614">"Швидка дія жестом функцій доступності"</string>
     <string name="accessibility_tutorial_dialog_message_button" msgid="8977286776192770246">"Щоб використовувати цю функцію, натисніть кнопку функцій доступності <xliff:g id="ACCESSIBILITY_ICON">%s</xliff:g> унизу екрана.\n\nЩоб переключитися між функціями, натисніть і утримуйте цю кнопку."</string>
     <string name="accessibility_tutorial_dialog_message_floating_button" msgid="6631371483819355514">"Щоб використовувати цю функцію, натисніть кнопку функцій доступності на екрані"</string>
@@ -2688,7 +2688,7 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"Додати корекцію кольору до Швидких налаштувань також можна вгорі екрана"</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"Інверсію кольорів додано до Швидких налаштувань. Щоб будь-коли ввімкнути або вимкнути її, проведіть пальцем по екрану вниз."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"Додати інверсію кольорів до Швидких налаштувань також можна вгорі екрана"</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"Зменште яскравість екрана нижче за мінімальний рівень"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"Зменшити яскравість екрана нижче за мінімальний рівень"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"Додаткове зменшення яскравості додано до Швидких налаштувань. Щоб будь-коли ввімкнути або вимкнути його, проведіть пальцем по екрану вниз."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"Додати додаткове зменшення яскравості до Швидких налаштувань також можна вгорі екрана"</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"Режим керування однією рукою додано до Швидких налаштувань. Щоб будь-коли ввімкнути або вимкнути його, проведіть пальцем по екрану вниз."</string>
@@ -2721,7 +2721,7 @@
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Налаштовуйте слухові апарати з підтримкою ASHA і LE Audio, кохлеарні імплантати й інші пристрої для підсилення звуку."</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Налаштовуйте слухові апарати з підтримкою ASHA, кохлеарні імплантати й інші пристрої для підсилення звуку."</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Налаштовуйте слухові апарати з підтримкою LE Audio, кохлеарні імплантати й інші пристрої для підсилення звуку."</string>
-    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"Налаштовуйте слухові апарати й інші пристрої для підсилення звуку"</string>
+    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"Налаштувати слухові апарати й інші пристрої для підсилення звуку"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"Додати слухові апарати"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"Підключіть слух. апарати"</string>
     <string name="accessibility_hearingaid_pair_instructions_message" msgid="581652489109350119">"Виберіть слухові апарати на наступному екрані. Можливо, вам знадобиться підключити слухові апарати для лівого та правого вух окремо.\n\nПереконайтеся, що слухові апарати ввімкнені й готові до підключення."</string>
@@ -3132,7 +3132,7 @@
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Використовувати адаптивне підключення"</string>
     <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Автоматично перемикатися на мобільну мережу"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"Забезпечує з’єднання, коли Wi-Fi не працює або має поганий сигнал. Може стягуватися плата за мобільний трафік."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Оптимізуйте мережу для довшої роботи акумулятора"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Оптимізувати мережу для довшої роботи акумулятора"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Автоматично вибирає найкраще з’єднання з мережею, щоб подовжити час роботи акумулятора"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Безпека мобільної мережі"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Тип мережі, шифрування, налаштування сповіщень"</string>
@@ -3769,7 +3769,7 @@
     <string name="live_caption_summary" msgid="7290150167089515457">"Відображати субтитри для дзвінків, відео й інших медіафайлів"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Увімкнено / Відображати субтитри для дзвінків, відео й інших медіафайлів"</string>
     <string name="live_caption_off_summary" msgid="6761535729357010911">"Вимкнено / Відображати субтитри для дзвінків, відео й інших медіафайлів"</string>
-    <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Дротові навушники"</string>
+    <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"дротові навушники"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Звук стає реалістичнішим (якщо контент підтримує цю функцію)"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Вимкнено"</string>
     <string name="spatial_summary_on_one" msgid="6239933399496282994">"Увімкнено / <xliff:g id="OUTPUT_DEVICE">%1$s</xliff:g>"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_state_on" msgid="1160969033636440368">"Увімкнено"</string>
     <string name="color_inversion_state_off" msgid="6925638668080451724">"Вимкнено"</string>
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Перетворює світлі кольори на темні й навпаки"</string>
-    <string name="magnification_feature_summary" msgid="4403387702011660253">"Наблизьте вміст екрана, щоб краще його роздивитися"</string>
+    <string name="magnification_feature_summary" msgid="4403387702011660253">"Наблизити вміст екрана, щоб краще його роздивитися"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Вимкнено"</string>
     <string name="show_captions_disabled" msgid="924366862253349790">"Вимкнено / Налаштувати розмір і стиль субтитрів"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Увімкнено / Налаштувати розмір і стиль субтитрів"</string>

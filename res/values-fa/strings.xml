@@ -1180,7 +1180,7 @@
     <string name="wifi_dpp_connecting" msgid="2312769193202897589">"درحال اتصال…"</string>
     <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"هم‌رسانی نقطه اتصال"</string>
     <string name="wifi_dpp_lockscreen_title" msgid="5246641326066972419">"هویتتان را درستی‌سنجی کنید"</string>
-    <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"‏گذرواژه Wi-Fi: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
+    <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"‏گذرواژه Wi-Fi: ‏<xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_hotspot_password" msgid="688464342650820420">"گذرواژه نقطه اتصال: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_auto_connect_title" msgid="1890342051674657892">"اتصال خودکار"</string>
     <string name="wifi_auto_connect_summary" msgid="1707702705345670370">"مجاز کردن اتصال به این شبکه (وقتی در محدوده باشد)"</string>
@@ -1701,7 +1701,7 @@
     <string name="apn_settings" msgid="4295467389400441299">"نام‌های نقاط دستیابی"</string>
     <string name="apn_edit" msgid="2003683641840248741">"ویرایش نقطه دستیابی"</string>
     <string name="apn_add" msgid="9069613192201630934">"افزودن نقطه دسترسی"</string>
-    <string name="apn_not_set" msgid="8246646433109750293">"تنظیم نشده است"</string>
+    <string name="apn_not_set" msgid="8246646433109750293">"تنظیم نشده"</string>
     <string name="apn_not_set_for_mvno" msgid="1141490067313964640">"تنظیم‌نشده"</string>
     <string name="apn_name" msgid="6677695784108157953">"نام"</string>
     <string name="apn_apn" msgid="5812828833797458602">"نام نقطه دستیابی"</string>
@@ -2014,7 +2014,7 @@
     <string name="controls_label" msgid="8671492254263626383">"کنترل ها"</string>
     <string name="force_stop" msgid="2681771622136916280">"توقف اجباری"</string>
     <string name="archive" msgid="9074663845068632127">"بایگانی کردن"</string>
-    <string name="restore" msgid="7622486640713967157">"بازیابی"</string>
+    <string name="restore" msgid="7622486640713967157">"بازگرداندن"</string>
     <string name="restoring_step_one" msgid="3465050101254272874">"درحال بازیابی"</string>
     <string name="restoring_step_two" msgid="140484846432595108">"درحال بازیابی."</string>
     <string name="restoring_step_three" msgid="3712883580876329811">"درحال بازیابی.."</string>
@@ -3797,7 +3797,7 @@
     <string name="zen_modes_summary_some_active" msgid="4780578487747956559">"{count,plural,offset:2 =0{}=1{‫{mode_1} فعال است}=2{‫{mode_1} و {mode_2} فعال هستند}=3{‫{mode_1}، {mode_2}، و {mode_3} فعال هستند}one{‫{mode_1}، {mode_2}، و # حالت دیگر فعال هستند}other{‫{mode_1}، {mode_2}، و # حالت دیگر فعال هستند}}"</string>
     <string name="zen_modes_summary" msgid="2576893588489258390">"{count,plural, =0{مزاحم نشوید}=1{{mode_1}}=2{{mode_1}، {mode_2}}one{{mode_1}، {mode_2}، {mode_3}}other{{mode_1}، {mode_2}، {mode_3}}}"</string>
     <string name="zen_mode_active_text" msgid="5002406772481439437">"روشن"</string>
-    <string name="zen_mode_disabled_needs_setup" msgid="389269759040103728">"تنظیم نشده است"</string>
+    <string name="zen_mode_disabled_needs_setup" msgid="389269759040103728">"تنظیم نشده"</string>
     <string name="zen_mode_disabled_by_user" msgid="138592173630683253">"غیرفعال شده"</string>
     <string name="zen_mode_new_title" msgid="4934720193004330740">"ایجاد حالت"</string>
     <string name="zen_mode_new_option_custom" msgid="1060993879440003341">"سفارشی"</string>
@@ -4066,7 +4066,7 @@
     <string name="notif_type_alerting_summary" msgid="4681068287836313604">"بسته به تنظیمات ممکن است زنگ بزند یا بلرزد"</string>
     <string name="notif_type_silent" msgid="6273951794420331010">"بی‌صدا"</string>
     <string name="notif_type_silent_summary" msgid="7820923063105060844">"اعلان‌هایی که همیشه بی‌صدا هستند و نمی‌لرزند"</string>
-    <string name="notification_listener_allowed" msgid="5536962633536318551">"مجاز است"</string>
+    <string name="notification_listener_allowed" msgid="5536962633536318551">"اجازه داشتن"</string>
     <string name="notification_listener_not_allowed" msgid="3352962779597846538">"اجازه نداشتن"</string>
     <string name="notif_listener_excluded_app_title" msgid="6679316209330349730">"دیدن همه برنامه‌ها"</string>
     <string name="notif_listener_excluded_app_summary" msgid="2914567678047195396">"تغییر دادن تنظیمات هر برنامه‌ای که اعلان ارسال می‌کند"</string>
@@ -4559,8 +4559,8 @@
     <string name="keywords_vr_listener" msgid="902737490270081131">"‏vr واقعیت مجازی شنونده استریو یاور خدمات"</string>
     <string name="overlay_settings" msgid="2030836934139139469">"نمایش روی سایر برنامه‌ها"</string>
     <string name="filter_overlay_apps" msgid="2483998217116789206">"برنامه‌های دارای مجوز"</string>
-    <string name="app_permission_summary_allowed" msgid="1155115629167757278">"مجاز"</string>
-    <string name="app_permission_summary_not_allowed" msgid="2673793662439097900">"مجاز نبودن"</string>
+    <string name="app_permission_summary_allowed" msgid="1155115629167757278">"اجازه داشتن"</string>
+    <string name="app_permission_summary_not_allowed" msgid="2673793662439097900">"اجازه نداشتن"</string>
     <string name="keywords_install_other_apps" msgid="563895867658775580">"نصب برنامه‌ از منابع ناشناس"</string>
     <string name="write_settings" msgid="6864794401614425894">"تغییر تنظیمات سیستم"</string>
     <string name="keywords_write_settings" msgid="6908708078855507813">"نوشتن تغییر تنظیمات سیستم"</string>
@@ -5734,7 +5734,7 @@
     <string name="flash_notifications_note" msgid="2426125248448055075">"اگر نسبت به نور حساسیت دارید، از اعلان‌های چشمک‌زن بااحتیاط استفاده کنید"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"چشمک‌زن، نور، کم‌شنوا، ناشنوا"</string>
     <string name="flash_notifications_preview" msgid="5320176885050440874">"پیش‌دید کردن"</string>
-    <string name="camera_flash_notification_title" msgid="2475084876382922732">"چشمک زدن دوربین"</string>
+    <string name="camera_flash_notification_title" msgid="2475084876382922732">"چشمک‌زنی دوربین"</string>
     <string name="screen_flash_notification_title" msgid="3773100725793316708">"چشمک‌زنی صفحه"</string>
     <string name="screen_flash_notification_color_title" msgid="7213407653340970790">"رنگ چشمک زدن صفحه‌نمایش"</string>
     <string name="screen_flash_color_blue" msgid="3585766657607931371">"آبی"</string>

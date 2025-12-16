@@ -3770,7 +3770,7 @@
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Kveikt/ Fáðu skjátexta fyrir símtöl, vídeó og annað efni"</string>
     <string name="live_caption_off_summary" msgid="6761535729357010911">"Slökkt/ Fáðu skjátexta fyrir símtöl, vídeó og annað efni"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Heyrnartól með snúru"</string>
-    <string name="spatial_audio_text" msgid="8201387855375146000">"Hljómgæði samhæfs efnis verða betri"</string>
+    <string name="spatial_audio_text" msgid="8201387855375146000">"Hljómgæði samhæfs efnis verða meiri"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Slökkt"</string>
     <string name="spatial_summary_on_one" msgid="6239933399496282994">"Kveikt / <xliff:g id="OUTPUT_DEVICE">%1$s</xliff:g>"</string>
     <string name="spatial_summary_on_two" msgid="4526919818832483883">"Kveikt / <xliff:g id="OUTPUT_DEVICE_0">%1$s</xliff:g> og <xliff:g id="OUTPUT_DEVICE_1">%2$s</xliff:g>"</string>
@@ -5675,7 +5675,7 @@
     <string name="reboot_dialog_reboot_now" msgid="235616015988522355">"Endurræsa núna"</string>
     <string name="reboot_dialog_reboot_later" msgid="4261717094186904568">"Endurræsa seinna"</string>
     <string name="bluetooth_details_spatial_audio_title" msgid="1368071116994002707">"Rýmishljóð"</string>
-    <string name="bluetooth_details_spatial_audio_summary" msgid="5026859623681482668">"Hljómgæði samhæfs efnis verða betri"</string>
+    <string name="bluetooth_details_spatial_audio_summary" msgid="5026859623681482668">"Hljómgæði samhæfs efnis verða meiri"</string>
     <string name="bluetooth_details_head_tracking_title" msgid="5416972521040337799">"Rakning höfuðs"</string>
     <string name="bluetooth_details_head_tracking_summary" msgid="3942238746595985395">"Hljóðið aðlagast höfuðhreyfingum til að allt hljómi sem eðlilegast"</string>
     <string name="bluetooth_details_permissions_sync_title" msgid="7277580382321003521">"Samstilla heimildir úr síma"</string>

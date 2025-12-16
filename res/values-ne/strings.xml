@@ -377,7 +377,7 @@
     <string name="security_settings_face_profile_preference_title_new" msgid="685550153608106166">"कामका लागि फेस अनलक"</string>
     <string name="private_space_face_unlock_title_new" msgid="2079622608951402509">"निजी स्पेसका लागि फेस अनलक"</string>
     <string name="security_settings_face_preference_title" msgid="2126625155005348417">"फेस अनलक"</string>
-    <string name="security_settings_face_profile_preference_title" msgid="7519527436266375005">"कार्य प्रोफाइलका लागि फेस अनलक"</string>
+    <string name="security_settings_face_profile_preference_title" msgid="7519527436266375005">"वर्क प्रोफाइलका लागि फेस अनलक"</string>
     <string name="security_settings_face_enroll_education_title" msgid="6448806884597691208">"फेस अनलक सेटअप गर्ने तरिका"</string>
     <string name="security_settings_face_enroll_education_title_accessibility" msgid="3701874093226957891">"फेस अनलक सेटअप गर्नुहोस्"</string>
     <string name="security_settings_face_enroll_education_title_unlock_disabled" msgid="8810954233979716906">"प्रमाणित गर्न आफ्नो अनुहार प्रयोग गर्नु…"</string>
@@ -449,7 +449,7 @@
     <string name="security_settings_category_use_fingerprint" msgid="4273932435979772330">"निम्न कार्य गर्न फिंगरप्रिन्ट प्रयोग गर्नुहोस्:"</string>
     <string name="security_settings_fingerprint_preference_title" msgid="2484965173528415458">"फिंगरप्रिन्ट"</string>
     <string name="security_settings_fingerprint_settings_preferences_category" msgid="8975029409126780752">"फिंगरप्रिन्ट अनलक प्रयोग गर्दा"</string>
-    <string name="security_settings_work_fingerprint_preference_title" msgid="2076006873519745979">"कार्य प्रोफाइलका लागि फिंगरप्रिन्ट"</string>
+    <string name="security_settings_work_fingerprint_preference_title" msgid="2076006873519745979">"वर्क प्रोफाइलका लागि फिंगरप्रिन्ट"</string>
     <string name="security_settings_work_fingerprint_preference_title_new" msgid="8967333987631878868">"कामका लागि फिंगरप्रिन्ट"</string>
     <string name="fingerprint_check_enrolled_title" msgid="1007921571704991108">"दर्ता गरिएका फिंगरप्रिन्ट हेर्नुहोस्"</string>
     <string name="fingerprint_add_title" msgid="1837610443487902050">"फिंगरप्रिन्ट हाल्नुहोस्"</string>
@@ -546,7 +546,7 @@
     <string name="security_settings_remoteauth_settings_register_new_authenticator" msgid="9191331738306527887">"स्मार्ट वाच कनेक्ट गर्नुहोस्"</string>
     <string name="security_settings_remoteauth_settings_remove_device" msgid="2436226120578851282">"स्मार्ट वाच डिस्कनेक्ट गर्नुहोस्"</string>
     <string name="security_settings_biometric_preference_title" msgid="298146483579539448">"फेस र फिंगरप्रिन्ट अनलक"</string>
-    <string name="security_settings_work_biometric_preference_title" msgid="3121755615533533585">"कार्य प्रोफाइलका लागि फेस र फिंगरप्रिन्ट अनलक"</string>
+    <string name="security_settings_work_biometric_preference_title" msgid="3121755615533533585">"वर्क प्रोफाइलका लागि फेस र फिंगरप्रिन्ट अनलक"</string>
     <string name="security_settings_biometric_preference_summary_none_enrolled" msgid="213377753727694575">"सेटअप गर्नु पर्ने हुन्छ"</string>
     <string name="security_settings_biometric_preference_summary_both_fp_multiple" msgid="4821859306609955966">"फेस तथा फिंगरप्रिन्टहरू थपिए"</string>
     <string name="security_settings_biometric_preference_summary_both_fp_single" msgid="684409535278676426">"फेस तथा फिंगरप्रिन्ट हालिए"</string>
@@ -783,7 +783,7 @@
     <string name="lock_settings_picker_biometrics_added_security_message" msgid="1105247657304421299">"थप सुरक्षाका लागि, कुनै ब्याकअप स्क्रिन लक सेट गर्नुहोस्"</string>
     <string name="lock_settings_picker_biometric_message" msgid="2609666443527262781">"आफ्नो डिभाइसको स्क्रिन लक गर्ने वैकल्पिक विधि छनौट गर्नुहोस्"</string>
     <string name="lock_settings_picker_admin_restricted_personal_message" msgid="3532653662159888328">"तपाईंले स्क्रिन लक बिर्सनुभयो भने तपाईंका IT एड्मिन यसलाई रिसेट गर्न सक्नुहुन्न।"</string>
-    <string name="lock_settings_picker_admin_restricted_personal_message_action" msgid="5956615234246626264">"कार्य प्रोफाइलका लागि छुट्टै लक सेट गर्नुहोस्"</string>
+    <string name="lock_settings_picker_admin_restricted_personal_message_action" msgid="5956615234246626264">"वर्क प्रोफाइलका लागि छुट्टै लक सेट गर्नुहोस्"</string>
     <string name="lock_settings_picker_profile_message" msgid="9142379549980873478">"यो लक बिर्सिएको खण्डमा आफ्ना IT एडमिनलाई यो लक रिसेट गरिदिन आग्रह गर्नुहोस्"</string>
     <string name="lock_settings_screen_lock_settings_title" msgid="738577630596146754">"स्क्रिन लकसम्बन्धी सेटिङ"</string>
     <string name="setup_lock_settings_options_button_label" msgid="6098297461618298505">"स्क्रिन लकका विकल्पहरू"</string>
@@ -2389,7 +2389,7 @@
     <string name="general_category_title" msgid="6298579528716834157">"सामान्य"</string>
     <string name="display_category_title" msgid="6638191682294461408">"डिस्प्ले"</string>
     <string name="accessibility_color_and_motion_title" msgid="1085072332445818494">"रङ र मोसन"</string>
-    <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"अँध्यारो थिम, रङ सच्याउने कार्य, एनिमेसनहरू हटाउनुहोस्"</string>
+    <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"अँध्यारो थिम, कलर करेक्सन, एनिमेसनहरू हटाउनुहोस्"</string>
     <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"कर्सर र टचप्याडको एक्सेसिबिलिटी"</string>
     <string name="accessibility_pointer_and_touchpad_summary" msgid="8588221231953604340">"आकार, रङ, प्रकार"</string>
     <string name="accessibility_pointer_color_customization_title" msgid="2841888132681075999">"कर्सरको रङ"</string>
@@ -2513,7 +2513,7 @@
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off" msgid="1779959623535122324">"&lt;b&gt;जुम इन गर्न:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. जुम इन गर्न थाल्न सर्टकट प्रयोग गर्नुहोस्&lt;br/&gt; {1,number,integer}. स्क्रिनमा ट्याप गर्नुहोस्&lt;br/&gt; {2,number,integer}. स्क्रिनमा यताउता सार्न २ वटा औँलाले ड्र्याग गर्नुहोस्&lt;br/&gt; {3,number,integer}. जुमको स्तर मिलाउन २ वटा औँलाले पिन्च गर्नुहोस्&lt;br/&gt; {4,number,integer}. जुम इन गर्न छाड्न सर्टकट प्रयोग गर्नुहोस्&lt;br/&gt;&lt;br/&gt; तपाईं केही समयका लागि जुम इन गर्नेलगायतका अन्य कार्यहरू गर्न पनि सक्नुहुन्छ।"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_on" msgid="7323930759240678965">"&lt;b&gt;जुम इन गर्न:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. जुम इन गर्न थाल्न सर्टकट प्रयोग गर्नुहोस्&lt;br/&gt; {1,number,integer}. स्क्रिनमा ट्याप गर्नुहोस्&lt;br/&gt; {2,number,integer}. स्क्रिनमा यताउता सार्न एउटा वा २ वटा औँलाले ड्र्याग गर्नुहोस्&lt;br/&gt; {3,number,integer}. जुमको स्तर मिलाउन २ वटा औँलाले पिन्च गर्नुहोस्&lt;br/&gt; {4,number,integer}. जुम इन गर्न छाड्न सर्टकट प्रयोग गर्नुहोस्&lt;br/&gt;&lt;br/&gt; तपाईं केही समयका लागि जुम इन गर्नेलगायतका अन्य कार्यहरू गर्न पनि सक्नुहुन्छ।"</string>
     <string name="accessibility_screen_magnification_navbar_summary" msgid="807985499898802296">"म्याग्निफिकेसन सुविधा सक्रिय गरेपछि, तपाईं आफ्नो स्क्रिनमा जुम इन गर्न सक्नुहुन्छ।\n\n"<b>"जुम गर्न"</b>", म्याग्निफिकेसन सुविधा सुरु गर्नुहोस्, त्यसपछि स्क्रिनको कुनै पनि भागमा ट्याप गर्नुहोस्।\n"<ul><li>"स्क्रोल गर्न २ वा सोभन्दा बढी औँलाले ड्र्याग गर्नुहोस्"</li>\n<li>"जुम समायोजन गर्न २ वा सोभन्दा बढी औँलाले पिन्च गर्नुहोस्"</li></ul>\n\n<b>"केहीबेरका लागि जुम गर्न"</b>", म्याग्निफिकेसन सुविधा सुरु गर्नुहोस्, त्यसपछि स्क्रिनको कुनै पनि भागमा केहीबेर छोइरहनुहोस्।\n"<ul><li>"स्क्रिनमा यताउता जान ड्र्याग गर्नुहोस्"</li>\n<li>"जुम आउट गर्न औँला उचाल्नुहोस्"</li></ul>\n\n"तपाईं किबोर्ड वा नेभिगेसन पट्टीमा जुम इन गर्न सक्नुहुन्न।"</string>
-    <string name="accessibility_tutorial_pager" msgid="8461939455728454061">"<xliff:g id="NUM_PAGES">%2$d</xliff:g> मध्ये <xliff:g id="CURRENT_PAGE">%1$d</xliff:g> औँ पृष्ठ"</string>
+    <string name="accessibility_tutorial_pager" msgid="8461939455728454061">"पेज <xliff:g id="NUM_PAGES">%2$d</xliff:g> मध्ये <xliff:g id="CURRENT_PAGE">%1$d</xliff:g>"</string>
     <string name="accessibility_tutorial_dialog_title_button" msgid="1924337057649065884">"एक्सेसिबिलिटी बटनको सर्टकट"</string>
     <string name="accessibility_tutorial_dialog_title_volume" msgid="1032323517963429981">"भोल्युम बटनको सर्टकट"</string>
     <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"ट्रिपल ट्याप गर्ने सर्टकट"</string>
@@ -2534,7 +2534,7 @@
     <string name="accessibility_tutorial_dialog_button" msgid="2031773187678948436">"बुझेँ"</string>
     <string name="accessibility_tutorial_dialog_link_button" msgid="13364319079385020">"कस्टमाइज बटन"</string>
     <string name="accessibility_tutorial_dialog_configure_software_shortcut_type" msgid="8041105223988170653">"थप विकल्पहरू"</string>
-    <string name="accessibility_shortcut_title" msgid="8125867833704517463">"<xliff:g id="SERVICE">%1$s</xliff:g>को सर्टकट"</string>
+    <string name="accessibility_shortcut_title" msgid="8125867833704517463">"<xliff:g id="SERVICE">%1$s</xliff:g> को सर्टकट"</string>
     <string name="accessibility_shortcut_edit_summary_software" msgid="48978719406821294">"एक्सेसिबिलिटी बटन"</string>
     <string name="accessibility_shortcut_edit_summary_software_gesture" msgid="7346399253904683940">"एक्सेसिबिलिटी जेस्चर"</string>
     <string name="accessibility_shortcut_edit_dialog_title_software_gesture" msgid="8078659880723370597">"२ वटा औँलाले माथितिर स्वाइप गर्नुहोस्"</string>
@@ -2621,7 +2621,7 @@
     <string name="accessibility_setting_item_control_timeout_title" msgid="1600516937989217899">"कारबाही गर्न लाग्ने समय (एक्सेसिबिलिटी टाइमआउट)"</string>
     <string name="accessibility_control_timeout_about_title" msgid="813588002683460837">"कारबाही गर्न लाग्ने समय (एक्सेसिबिलिटी टाइमआउट) का बारेमा"</string>
     <string name="accessibility_control_timeout_footer_learn_more_content_description" msgid="8118584413220542193">"कारबाही गर्न लाग्ने समय (एक्सेसिबिलिटी टाइमआउट) का बारेमा थप जान्नुहोस्"</string>
-    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"कारबाही गर्ने समय"</string>
+    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"कारबाही गर्न लाग्ने समय"</string>
     <string name="accessibility_control_timeout_preference_summary" msgid="4037051091059316310">"सबै एपहरूमा समयावधिसम्बन्धी यो प्राथमिकता लागू गर्न मिल्दैन"</string>
     <string name="accessibility_control_timeout_preference_intro_text" msgid="1398116710556762245">"तपाईंलाई कारबाही गर्न अनुरोध गरिने अस्थायी म्यासेजहरू कति समयसम्म देखाउने भन्ने कुरा छनौट गर्नुहोस्"</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"टच एण्ड होल्डको ढिलाइ"</string>
@@ -2721,7 +2721,7 @@
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"ASHA र LE अडियो प्रयोग गरिएका हियरिङ डिभाइस, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"ASHA प्रयोग गरिएका हियरिङ डिभाइस, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"LE अडियो प्रयोग गरिएका हियरिङ डिभाइस, कक्लियर इम्प्लान्ट र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
-    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"श्रवण यन्त्र र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
+    <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"हियरिङ डिभाइस र अन्य एम्प्लिफिकेसन डिभाइसहरू सेटअप तथा व्यवस्थापन गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_adding_summary" msgid="999051610528600783">"हियरिङ डिभाइसहरू थप्नुहोस्"</string>
     <string name="accessibility_hearingaid_pair_instructions_title" msgid="2357706801112207624">"हियरिङ डिभाइस कनेक्ट गर्नुहोस्"</string>
     <string name="accessibility_hearingaid_pair_instructions_message" msgid="581652489109350119">"अर्को स्क्रिनमा गई हियरिङ डिभाइसमा ट्याप गर्नुहोस् तपाईंले बायाँ र दायाँ कानका डिभाइसहरू छुट्टा छुट्टै कनेक्ट गर्नु पर्ने हुन्छ।\n\nतपाईंका हियरिङ डिभाइस अन छन् र कनेक्ट गर्नका निम्ति तयार छन् भन्ने कुरा सुनिश्चित गर्नुहोस्।"</string>
@@ -2897,7 +2897,7 @@
     <string name="background_activity_warning_dialog_text" msgid="8202776985767701095">"तपाईंले कुनै एपको पृष्ठभूमिको गतिविधिलाई सीमित गर्नुभयो भने यसले सही तरिकाले काम नगर्न सक्छ"</string>
     <string name="background_activity_disabled_dialog_text" msgid="4053170297325882494">"यो एपलाई ब्याट्री अप्टिमाइज गर्न भनी सेट नगरिएको हुनाले तपाईं यसमा बन्देज लगाउन सक्नुहुन्न।\n\nएपमा बन्देज लगाउन पहिले ब्याट्री अप्टिमाइजेसन सुविधा अन गर्नुहोस्।"</string>
     <string name="manager_battery_usage_category_title" msgid="1493303237531629961">"ब्याट्रीको खपत व्यवस्थापन गर्नुहोस्"</string>
-    <string name="manager_battery_usage_allow_background_usage_settings_title" msgid="8150026934645052635">"ब्याकग्राउन्डमा प्रयोग गर्ने अनुमति दिनुहोस्"</string>
+    <string name="manager_battery_usage_allow_background_usage_settings_title" msgid="8150026934645052635">"ब्याकग्राउन्डमा प्रयोग गर्न दिनुहोस्"</string>
     <string name="manager_battery_usage_allow_background_usage_title" msgid="6294649996820358852">"ब्याकग्राउन्डमा प्रयोग गर्न दिनुहोस्"</string>
     <string name="manager_battery_usage_allow_background_usage_summary" msgid="8021153755201340819">"रियल टाइममा अपडेट प्राप्त गर्न अन गर्नुहोस्, ब्याट्री बढी टिकाउन अफ गर्नुहोस्"</string>
     <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"असीमित"</string>
@@ -3229,7 +3229,7 @@
     <string name="notification_history_today" msgid="6081829638548808795">"गत %d घण्टा"</string>
     <string name="notification_history_snooze" msgid="3980568893290512257">"स्नुज गरियो"</string>
     <string name="notification_history_dismiss" msgid="6180321217375722918">"हालसालै खारेज गरिएको"</string>
-    <string name="notification_history_count" msgid="885305572972482838">"{count,plural, =1{# वटा सूचना}other{# वटा सूचना}}"</string>
+    <string name="notification_history_count" msgid="885305572972482838">"{count,plural, =1{# वटा नोटिफिकेसन}other{# वटा नोटिफिकेसन}}"</string>
     <string name="sound_category_call_ringtone_vibrate_title" msgid="9090693401915654528">"रिङटोन कल र भाइब्रेट"</string>
     <string name="wifi_setup_detail" msgid="2012898800571616422">"नेटवर्कको विवरण"</string>
     <string name="accessibility_sync_enabled" msgid="5308864640407050209">"सिंक सक्षम छ"</string>
@@ -3603,7 +3603,7 @@
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC अफ भएकाले उपलब्ध नभएको"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"यो सुवधा प्रयोग गर्न सर्वप्रथम भुक्तानी एप इन्स्टल गर्नुहोस्"</string>
     <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"हालैका एपहरू, डिफल्ट एपहरू"</string>
-    <string name="notification_settings_work_profile" msgid="6076211850526353975">"कार्य प्रोफाइलका एपहरूको सूचनामाथि पहुँच छैन।"</string>
+    <string name="notification_settings_work_profile" msgid="6076211850526353975">"वर्क प्रोफाइलका एपहरूको सूचनामाथि पहुँच छैन।"</string>
     <string name="account_dashboard_title" msgid="8228773251948253914">"पासवर्ड र खाताहरू"</string>
     <string name="account_dashboard_default_summary" msgid="7976899924144356939">"साइन इन र अटोफिलसम्बन्धी सुझावहरू"</string>
     <string name="app_default_dashboard_title" msgid="4071015747629103216">"डिफल्ट एपहरू"</string>
@@ -3986,7 +3986,7 @@
     <string name="lock_screen_notification_show_viewed_notif_icons" msgid="1197681203638927375">"हेरिएको नोटिफिकेसनका आइकनहरू देखाउनुहोस्"</string>
     <string name="lock_screen_notification_show_silent_title" msgid="9177971841517814916">"साइलेन्ट नोटिफिकेसनहरू देखाउनुहोस्"</string>
     <string name="lock_screen_notification_show_sensitive_content_title" msgid="3184973371036065258">"संवेदनशील सामग्री देखाउनुहोस्"</string>
-    <string name="lock_screen_notification_show_sensitive_work_content_title" msgid="532300440507441426">"कार्य प्रोफाइलका संवेदनशील सामग्री देखाउनुहोस्"</string>
+    <string name="lock_screen_notification_show_sensitive_work_content_title" msgid="532300440507441426">"वर्क प्रोफाइलका संवेदनशील सामग्री देखाउनुहोस्"</string>
     <string name="lock_screen_notifications_interstitial_title_profile" msgid="6950124772255324448">"प्रोफाइल सूचनाहरू"</string>
     <string name="notifications_title" msgid="4221655533193721131">"नोटिफिकेसनहरू"</string>
     <string name="app_notifications_title" msgid="248374669037385148">"एपसम्बन्धी नोटिफिकेसनहरू"</string>
@@ -4031,8 +4031,8 @@
     <string name="notification_channel_summary_high" msgid="3411637309360617621">"डिभाइस अनलक गरिएका बेला नोटिफिकेसन देखाउँदा स्क्रिनको सिरानमा ब्यानरका रूपमा देखाउनुहोस्"</string>
     <string name="notification_switch_label" msgid="8029371325967501557">"\"<xliff:g id="APP_NAME">%1$s</xliff:g>\" का सबै सूचनाहरू"</string>
     <string name="notification_app_switch_label" msgid="4422902423925084193">"<xliff:g id="APP_NAME">%1$s</xliff:g>  सम्बन्धी सबै नोटिफिकेसनहरू"</string>
-    <string name="notifications_sent_daily" msgid="10274479224185437">"{count,plural, =1{हरेक दिन लगभग # वटा सूचना}other{हरेक दिन लगभग # वटा सूचना}}"</string>
-    <string name="notifications_sent_weekly" msgid="7895656213187555346">"{count,plural, =1{हरेक हप्ता लगभग # वटा सूचना}other{हरेक हप्ता लगभग # वटा सूचना}}"</string>
+    <string name="notifications_sent_daily" msgid="10274479224185437">"{count,plural, =1{हरेक दिन लगभग # वटा नोटिफिकेसन}other{हरेक दिन लगभग # वटा नोटिफिकेसन}}"</string>
+    <string name="notifications_sent_weekly" msgid="7895656213187555346">"{count,plural, =1{हरेक हप्ता लगभग # वटा नोटिफिकेसन}other{हरेक हप्ता लगभग # वटा नोटिफिकेसन}}"</string>
     <string name="notifications_sent_never" msgid="9081278709126812062">"कहिल्यै होइन"</string>
     <string name="manage_notification_access_title" msgid="4154723216570646451">"नोटिफिकेसन पढ्ने, जवाफ दिने तथा नियन्त्रण गर्ने"</string>
     <string name="manage_notification_access_summary" msgid="2907135226478903997">"कुन कुन एप र डिभाइसले नोटिफिकेसनहरू पढ्न पाउँछन् भन्ने कुरा नियन्त्रण गर्नुहोस्"</string>
@@ -4075,7 +4075,7 @@
     <string name="notification_polite_main_control_title" msgid="5812529809151927149">"नोटिफिकेसन कुलडाउन प्रयोग गर्नुहोस्"</string>
     <string name="notification_polite_description" msgid="6137533404978878957">"तपाईंले छोटो समयमा धेरै नोटिफिकेसन प्राप्त गर्नुभयो भने तपाईंको डिभाइसले बढीमा १ मिनेटसम्म ती नोटिफिकेसनको साउन्डको भोल्युम घटाउँछ र कम अलर्टहरू देखाउँछ। कल, अलार्म र महत्त्वपूर्ण वार्तालापहरू भने प्रभावित हुँदैनन्। \n\nडिभाइसको स्क्रिनको सिरानबाट तलतिर स्वाइप गरेर कुलडाउनका बेला प्राप्त भएका नोटिफिकेसनहरू हेर्न सकिन्छ।"</string>
     <string name="notification_polite_work" msgid="8823596456640216391">"कार्य प्रोफाइलहरूमा लागू गर्नुहोस्"</string>
-    <string name="notification_polite_work_summary" msgid="5014189280132951378">"कार्य प्रोफाइलका एपहरूमा लागू गर्नुहोस्"</string>
+    <string name="notification_polite_work_summary" msgid="5014189280132951378">"वर्क प्रोफाइलका एपहरूमा लागू गर्नुहोस्"</string>
     <string name="notification_bundle_title" msgid="6679586974995981433">"नोटिफिकेसन व्यवस्थित गर्ने सुविधा"</string>
     <string name="notification_bundle_summary" msgid="8924550009829960969">"खासै महत्त्वपूर्ण नभएका नोटिफिकेसनहरू गाभ्नुहोस् र साइलेन्ट पार्नुहोस्"</string>
     <string name="notification_bundle_main_control_title" msgid="6413211155343788835">"नोटिफिकेसन व्यवस्थित गर्ने सुविधा प्रयोग गर्नुहोस्"</string>
@@ -4084,7 +4084,7 @@
     <string name="notification_app_level_bundle_subtext" msgid="8652218688050450291">"खासै महत्त्वपूर्ण नभएका नोटिफिकेसनहरू गाभ्नुहोस् र साइलेन्ट पार्नुहोस्"</string>
     <string name="notification_bundle_manage_excluded_apps_title" msgid="6825808714530730009">"नोटिफिकेसन व्यवस्थित गर्ने सुविधा प्रयोग गरिने एपहरू व्यवस्थापन गर्नुहोस्"</string>
     <string name="notification_bundle_expand_always_title" msgid="3647586646644565332">"बन्डलहरू सधैँ एक्स्पान्ड गर्नुहोस्"</string>
-    <string name="notification_adjustment_work_switch_title" msgid="5858034709870660002">"कार्य प्रोफाइलका एपहरूमा लागू गर्नुहोस्"</string>
+    <string name="notification_adjustment_work_switch_title" msgid="5858034709870660002">"वर्क प्रोफाइलका एपहरूमा लागू गर्नुहोस्"</string>
     <string name="vr_listeners_title" msgid="4960357292472540964">"VR का सहायक सेवाहरू"</string>
     <string name="no_vr_listeners" msgid="8442646085375949755">"इन्स्टल गरिएका कुनै पनि एपहरूले VR का सहायक सेवाहरूको रूपमा चल्ने अनुरोध गरेका छैनन्।"</string>
     <string name="vr_listener_security_warning_title" msgid="7026351795627615177">"<xliff:g id="SERVICE">%1$s</xliff:g> लाई VR सेवा चलाउने अनुमति दिने हो?"</string>
@@ -4398,9 +4398,9 @@
     <string name="unused_apps_summary" msgid="4236371818881973021">"{count,plural, =1{प्रयोग नगरिएको # वटा एप}other{प्रयोग नगरिएका # वटा एप}}"</string>
     <string name="unused_apps_category" msgid="8954930958175500851">"प्रयोग नगरिएको एपसम्बन्धी सेटिङ"</string>
     <string name="unused_apps_switch" msgid="7595419855882245772">"एप प्रयोग नगरिएको अवस्थामा उक्त एपमा गरिएको गतिविधि रेकर्ड नगर्नुहोस्"</string>
-    <string name="unused_apps_switch_summary" msgid="2171098908014596802">"अनुमतिहरू रद्द गर्नुहोस्, अस्थायी फाइलहरू मेटाउनुहोस् र एपसम्बन्धी सूचना नपठाउनुहोस्"</string>
+    <string name="unused_apps_switch_summary" msgid="2171098908014596802">"अनुमतिहरू रद्द गर्नुहोस्, अस्थायी फाइलहरू मेटाउनुहोस् र एपसम्बन्धी नोटिफिकेसन नपठाउनुहोस्"</string>
     <string name="unused_apps_switch_v2" msgid="7464060328451454469">"एप प्रयोग गरिएको छैन भने व्यवस्थापन गर्नुहोस्"</string>
-    <string name="unused_apps_switch_summary_v2" msgid="3182898279622036805">"अनुमति रद्द गर्नुहोस्, अस्थायी फाइलहरू मेटाउनुहोस्, सूचना नपठाउनुहोस् र एप अर्काइभमा राख्नुहोस्"</string>
+    <string name="unused_apps_switch_summary_v2" msgid="3182898279622036805">"अनुमति रद्द गर्नुहोस्, अस्थायी फाइलहरू मेटाउनुहोस्, नोटिफिकेसन नपठाउनुहोस् र एप अर्काइभमा राख्नुहोस्"</string>
     <string name="filter_all_apps" msgid="6645539744080251371">"सबै एपहरू"</string>
     <string name="filter_enabled_apps" msgid="8868356616126759124">"इन्स्टल गरिएका एपहरू"</string>
     <string name="filter_instant_apps" msgid="2292108467020380068">"तात्कालिक एपहरू"</string>
@@ -4493,13 +4493,13 @@
     <string name="usb_summary_MIDI_power" msgid="1184681982025435815">"MIDI र विद्युत् आपूर्ति"</string>
     <string name="usb_summary_UVC_power" msgid="226810354412154061">"वेबक्याम र विद्युत आपूर्ति"</string>
     <string name="background_check_pref" msgid="5304564658578987535">"ब्याकग्राउन्डको जाँच"</string>
-    <string name="assist_access_context_title" msgid="5201495523514096201">"स्क्रिनको पाठ प्रयोग गर्नुहोस्"</string>
-    <string name="assist_access_context_summary" msgid="6951814413185646275">"सहायक एपलाई स्क्रिनको सामग्री पाठको रूपमा प्रयोग गर्ने अनुमति दिनुहोस्"</string>
+    <string name="assist_access_context_title" msgid="5201495523514096201">"स्क्रिनको टेक्स्ट प्रयोग गर्नुहोस्"</string>
+    <string name="assist_access_context_summary" msgid="6951814413185646275">"एसिस्ट एपलाई स्क्रिनको सामग्री टेक्स्ट रूपमा प्रयोग गर्ने अनुमति दिनुहोस्"</string>
     <string name="assist_access_screenshot_title" msgid="4395902231753643633">"स्क्रिनसट प्रयोग गर्नुहोस्"</string>
     <string name="assist_access_screenshot_summary" msgid="5276593070956201863">"सहायक एपलाई स्क्रिनको फोटो प्रयोग गर्ने अनुमति दिनुहोस्"</string>
     <string name="assist_flash_title" msgid="5449512572885550108">"स्क्रिन फ्ल्यास गर्नुहोस्"</string>
-    <string name="assist_flash_summary" msgid="3032289860177784594">"सहायक एपले स्क्रिन वा स्क्रिनसटबाट पाठ प्रयोग गर्दा स्क्रिनका किनाराहरू फ्ल्यास गर्नुहोस्"</string>
-    <string name="assist_footer" msgid="8248015363806299068">"तपाईंले हेरिरहनुभएको स्क्रिनको जानकारीको आधारमा सहायक एपहरूले तपाईंलाई मद्दत गर्न सक्छन्। तपाईंलाई एकीकृत सहायता दिने प्रयोजनका लागि केही एपहरूमा लन्चर र आवाज इनपुट दुवै सेवाहरू प्रयोग गर्न मिल्छ।"</string>
+    <string name="assist_flash_summary" msgid="3032289860177784594">"एसिस्ट एपले स्क्रिन वा स्क्रिनसटको टेक्स्ट प्रयोग गर्दा स्क्रिनका किनाराहरू फ्ल्यास गर्नुहोस्"</string>
+    <string name="assist_footer" msgid="8248015363806299068">"तपाईंले हेरिरहनुभएको स्क्रिनको जानकारीको आधारमा एसिस्ट एपहरूले तपाईंलाई मद्दत गर्न सक्छन्। तपाईंलाई एकीकृत सहायता दिने प्रयोजनका लागि केही एपहरूमा लन्चर र भ्वाइस इनपुट दुवै सेवाहरू प्रयोग गर्न मिल्छ।"</string>
     <string name="average_memory_use" msgid="717313706368825388">"औसत मेमोरी प्रयोग"</string>
     <string name="maximum_memory_use" msgid="2171779724001152933">"अधिकतम मेमोरी प्रयोग"</string>
     <string name="memory_usage" msgid="5594133403819880617">"मेमोरी प्रयोग"</string>

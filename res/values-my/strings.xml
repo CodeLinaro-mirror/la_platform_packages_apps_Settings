@@ -268,7 +268,7 @@
     <string name="thursday_first_day_of_week" msgid="3035885630945594833">"ကြာသပတေး"</string>
     <string name="friday_first_day_of_week" msgid="7074795061812083541">"သောကြာ"</string>
     <string name="saturday_first_day_of_week" msgid="3702282590450322727">"စနေ"</string>
-    <string name="title_regional_pref_footer" msgid="7450438024324794380">"အက်ပ်သည် ဒေသဆိုင်ရာ သတ်မှတ်ချက်များကို မပံ့ပိုးပါက ၎င်း၏ မူလဘာသာစကားဆက်တင်များကို သုံးပါမည်။"</string>
+    <string name="title_regional_pref_footer" msgid="7450438024324794380">"အက်ပ်သည် ဒေသဆိုင်ရာ သတ်မှတ်ချက်များကို မပံ့ပိုးပါက ၎င်း၏ မူရင်းဘာသာစကားဆက်တင်များကို သုံးပါမည်။"</string>
     <string name="desc_regional_pref_footer_learn_more" msgid="4401708653329230081">"ဦးစားပေး ဘာသာစကားများအကြောင်း ပိုမိုလေ့လာပါ။"</string>
     <string name="metric_measurement_system" msgid="7489725697268321541">"မက်ထရစ်"</string>
     <string name="us_measurement_system" msgid="8406695347890345490">"ယူအက်စ်"</string>
@@ -685,7 +685,7 @@
     <string name="private_space_face_settings_require_confirmation_details" msgid="5406498664903812249">"‘မျက်နှာပြ လော့ခ်ဖွင့်ခြင်း’ သုံးလျှင် အတည်ပြုရန် အမြဲလိုအပ်သည်"</string>
     <string name="private_space_category_ways_to_unlock" msgid="4356631225316950046">"လော့ခ်ဖွင့်ရန် နည်းလမ်းများ"</string>
     <string name="private_space_screen_lock_summary" msgid="394837965365561070">"စက်ဖန်သားပြင်လော့ခ်နှင့် အတူတူပင်ဖြစ်သည်"</string>
-    <string name="private_space_new_lock_title" msgid="9056139964133004094">"သီးသန့်နေရာအတွက် လော့ခ်အသစ် ရွေးမလား။"</string>
+    <string name="private_space_new_lock_title" msgid="9056139964133004094">"သီးသန့်နေရာအတွက် လော့ခ်အသစ် ရွေးမလား"</string>
     <string name="private_space_new_lock_message" msgid="3117703578905489206">"လာမည့်စခရင်တွင် သင့်စက်ပင်နံပါတ်၊ ပုံဖော်ခြင်း (သို့) စကားဝှက် ထည့်ရပါမည်"</string>
     <string name="private_space_auto_lock_title" msgid="8663409382910601261">"သီးသန့်နေရာကို အလိုအလျောက် လော့ခ်ချခြင်း"</string>
     <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"သင့်စက်ပစ္စည်းကို အချိန်ကြာမြင့်စွာ အသုံးမပြုပါက သီးသန့်နေရာကို အလိုအလျောက် လော့ခ်ချနိုင်သည်"</string>
@@ -738,7 +738,7 @@
     <string name="private_space_exit_label" msgid="2358175237993013881">"ထွက်ရန်"</string>
     <string name="private_space_error_description" msgid="6591005734266923120">"သီးသန့်နေရာ မရနိုင်ပါ။\nဖြစ်နိုင်သော အကြောင်းရင်းများကို ကြည့်ပါ"</string>
     <string name="private_space_error_causes_text" msgid="1649162505129365620">"ဖြစ်နိုင်သော အကြောင်းရင်းများကို ကြည့်ပါ"</string>
-    <string name="private_space_lockscreen_title" msgid="5785259588888586366">"သီးသန့်နေရာအတွက် လော့ခ်အသစ် ရွေးမလား။"</string>
+    <string name="private_space_lockscreen_title" msgid="5785259588888586366">"သီးသန့်နေရာအတွက် လော့ခ်အသစ် ရွေးမလား"</string>
     <string name="private_space_lockscreen_summary" msgid="3053836076639653805">"သီးသန့်နေရာအတွက် လော့ခ်အသစ် သတ်မှတ်နိုင်သည် (သို့) သင့်စက်ဖွင့်ရန်သုံးသည့် တူညီသော လော့ခ်ကို အသုံးပြုနိုင်သည်"</string>
     <string name="private_space_use_screenlock_label" msgid="9182153443192032782">"ဖန်သားပြင်လော့ခ် သုံးရန်"</string>
     <string name="private_space_set_lock_label" msgid="1790408277477408475">"လော့ခ်အသစ် ရွေးရန်"</string>
@@ -1744,9 +1744,9 @@
     <string name="menu_restore" msgid="4310539620115151551">"မူရင်းသို့ ပြန်လည်သတ်မှတ်ရန်"</string>
     <string name="restore_default_apn_completed" msgid="5167505087078340256">"APN မူရင်းဆက်တင်သို့ ပြန်လည်သတ်မှတ်ပြီးပါပြီ။"</string>
     <string name="reset_dashboard_title" msgid="7423200250697886918">"ပြင်ဆင်သတ်မှတ်ရန် ရွေးစရာများ"</string>
-    <string name="reset_mobile_network_settings_title" msgid="5616713931258506842">"မိုဘိုင်းကွန်ရက်ဆက်တင်များ ပြင်ဆင်သတ်မှတ်ရန်"</string>
+    <string name="reset_mobile_network_settings_title" msgid="5616713931258506842">"မိုဘိုင်းကွန်ရက်ပြင်ဆင်ရန်"</string>
     <string name="reset_mobile_network_settings_desc" msgid="7292636387692165727">"၎င်းက မိုဘိုင်းကွန်ရက်ဆက်တင် အားလုံးကို ပြင်ဆင်သတ်မှတ်မည်"</string>
-    <string name="reset_mobile_network_settings_confirm_title" msgid="7510965634669511241">"ဆက်တင် ပြင်ဆင်သတ်မှတ်မလား။"</string>
+    <string name="reset_mobile_network_settings_confirm_title" msgid="7510965634669511241">"မိုဘိုင်းကွန်ရက် ပြင်ဆင်မလား"</string>
     <string name="reset_bluetooth_wifi_title" msgid="4113071322344697317">"ဘလူးတုသ်နှင့် Wi‑Fi ပြင်ဆင်သတ်မှတ်ရန်"</string>
     <string name="reset_bluetooth_wifi_desc" msgid="4030295669083059711">"၎င်းက Wi‑Fi နှင့် ဘလူးတုသ်ဆက်တင် အားလုံးကို ပြင်ဆင်သတ်မှတ်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍ မရပါ။"</string>
     <string name="reset_bluetooth_wifi_button_text" msgid="3974098137045963639">"ပြင်ဆင်သတ်မှတ်ရန်"</string>
@@ -1771,7 +1771,7 @@
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"၎င်းက သင်၏ မိုဘိုင်းဝန်ဆောင်မှုအစီအစဉ်ကို ပယ်ဖျက်မည်မဟုတ်ပါ။"</string>
     <string name="main_clear_final_desc" msgid="5800877928569039580">"သင့်ကိုယ်ရေးအချက်အလက်များနှင့် ဒေါင်းလုဒ်လုပ်ထားသော အက်ပ်အားလုံးကို ဖျက်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို ပြန်ပြင်၍ မရပါ။"</string>
     <string name="main_clear_final_desc_esim" msgid="6592404057237813989">"ဒေါင်းလုဒ်လုပ်ထားသော အက်ပ်နှင့် eSIM များ အပါအဝင် သင်၏ ကိုယ်ရေးအချက်အလက်များအားလုံးကို ဖျက်ပါမည်။ ဤလုပ်ဆောင်ချက်ကို နောက်ပြန်၍ မရပါ။"</string>
-    <string name="main_clear_confirm_title" msgid="6577071819657853713">"ဒေတာအားလုံးကို ဖျက်မလား။"</string>
+    <string name="main_clear_confirm_title" msgid="6577071819657853713">"ဒေတာအားလုံးကို ဖျက်မလား"</string>
     <string name="main_clear_not_available" msgid="3433795327146684827">"ဤအသုံးပြုသူအတွက် စက်ရုံထုတ်အတိုင်း ပြန်လည်သတ်မှတ်မှု မရပါ"</string>
     <string name="main_clear_progress_title" msgid="7239741132015617719">"ဖျက်နေသည်"</string>
     <string name="main_clear_progress_text" msgid="4636695115176327972">"ခေတ္တစောင့်ပါ…"</string>
@@ -2340,7 +2340,7 @@
     <string name="keyboard_layout_picker_category_title" msgid="2369473692906329772">"ပကတိကီးဘုတ် လက်ကွက်များ"</string>
     <string name="user_dict_settings_title" msgid="680410651924276991">"ကိုယ်ပိုင် အဘိဓာန်"</string>
     <string name="user_dict_settings_for_work_title" msgid="1245315720684961770">"အလုပ်အတွက် ကိုယ်ပိုင်အဘိဓာန်"</string>
-    <string name="user_dict_settings_summary" msgid="4939694372338975081">"‘စာလုံးပေါင်းစစ်စနစ်’ ကဲ့သို့ အက်ပ်များတွင် သုံးရန် စကားလုံးများ ထည့်ပါ"</string>
+    <string name="user_dict_settings_summary" msgid="4939694372338975081">"‘သတ်ပုံစစ်စနစ်’ ကဲ့သို့ အက်ပ်များတွင် သုံးရန် စကားလုံးများ ထည့်ပါ"</string>
     <string name="user_dict_settings_add_menu_title" msgid="8046882347281382968">"ထပ်ထည့်ရန်"</string>
     <string name="user_dict_settings_add_dialog_title" msgid="3485845465134083084">"အဘိဓာန်ထဲ ထည့်ပါ"</string>
     <string name="user_dict_settings_add_screen_title" msgid="1866408024073475379">"စကားစု"</string>
@@ -2633,7 +2633,7 @@
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"ဆက်တင်များသို့ ဝင်ရန်"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"အော်တိုနှိပ်ခြင်း (စောင့်ဆိုင်းချိန်)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"အော်တိုနှိပ်ခြင်း (စောင့်ဆိုင်းချိန်) အကြောင်း"</string>
-    <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"အော်တိုနှိပ်ခြင်း (စောင့်ဆိုင်းချိန်) အကြောင်း ပိုမိုလေ့လာရန်"</string>
+    <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"အော်တိုနှိပ်ခြင်း (စောင့်ဆိုင်းချိန်) အကြောင်း ပိုလေ့လာရန်"</string>
     <string name="accessibility_autoclick_intro_text" msgid="8959680635470639347">"ကာဆာလှုပ်ရှားမှုရပ်သည့် အချိန်အပိုင်းအခြားတစ်ခုတွင် ချိတ်ဆက်ထားသည့်မောက်စ်ကို အလိုအလျောက်နှိပ်ရန် သတ်မှတ်နိုင်သည်"</string>
     <string name="accessibility_autoclick_description" msgid="6695732131412361101">"အော်တိုနှိပ်ခြင်းသည် မောက်စ်နှိပ်ရန် အခက်တွေ့ချိန်၌ အသုံးဝင်နိုင်သည်"</string>
     <string name="accessibility_autoclick_default_title" msgid="2024730028293793490">"အော်တိုနှိပ်ခြင်း ပိတ်ထားသည်"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"လမ်းညွှန်မှု ဆက်တင်များ"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"တုန်ခါမှုနှင့် ထိတွေ့တုံ့ပြန်မှုများ"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"အသုံးပြုပုံအမျိုးမျိုးအတွက် တုန်ခါမှုအားကို ထိန်းချုပ်နိုင်သည်"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"ဖွင့် / ခေါ်ဆိုမှု၊ အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် တုန်ခါမှုအဆင့်များ ထိန်းချုပ်ခြင်း"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"ဖွင့် / ခေါ်ဆိုမှု၊ အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် တုန်ခါမှုအဆင့်များ ထိန်းချုပ်နိုင်သည်"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"ပိတ် / ခေါ်ဆိုမှု၊ အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် တုန်ခါမှုအဆင့်များ ထိန်းချုပ်ခြင်း"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"စက်အသံတိတ်ရန် သတ်မှတ်ထားသောကြောင့် ဆက်တင်ကို ပိတ်ထားသည်"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"ခေါ်ဆိုမှုများ"</string>
@@ -3407,7 +3407,7 @@
     <string name="user_credential_title" msgid="4686178602575567298">"အထောက်အထား အသေးစိတ်များ"</string>
     <string name="user_credential_removed" msgid="4087675887725394743">"ဖယ်ရှားလိုက်မည့် အထောက်အထား − <xliff:g id="CREDENTIAL_NAME">%s</xliff:g>"</string>
     <string name="user_credential_none_installed" msgid="918620912366836994">"မည်သည့် အသုံးပြုသူအထောက်အထားကိုမျှ ထည့်သွင်းမထားပါ"</string>
-    <string name="spellcheckers_settings_title" msgid="2799021700580591443">"စာလုံးပေါင်းစစ်ခြင်း"</string>
+    <string name="spellcheckers_settings_title" msgid="2799021700580591443">"သတ်ပုံစစ်ခြင်း"</string>
     <string name="spellcheckers_settings_for_work_title" msgid="6471603934176062893">"အလုပ်အတွက် စာလုံးပေါင်းစစ်စနစ်"</string>
     <string name="current_backup_pw_prompt" msgid="4962276598546381140">"အရန်သိမ်းဆည်းမှုအတွက် သင်၏လက်ရှိစကားဝှက် အပြည့်အစုံကို ရေးပါ။"</string>
     <string name="new_backup_pw_prompt" msgid="4884439230209419503">"အရန်သိမ်းဆည်းရန်အတွက် ဤနေရာတွင်စကားဝှက်အသစ်ကို ရိုက်ထည့်ပါ"</string>
@@ -3961,8 +3961,8 @@
     <string name="lock_screen_notif_minimalism_summary" msgid="4607237285421814421">"လော့ခ်မျက်နှာပြင်တွင် အကြောင်းကြားချက် နည်းနည်းသာ ပြပါ"</string>
     <string name="unseen_notifs_lock_screen" msgid="6910701117021324612">"လော့ခ်မျက်နှာပြင်ပေါ်တွင် အကြောင်းကြားချက်အသစ်များသာ ပြပါ"</string>
     <string name="unseen_notifs_lock_screen_summary" msgid="5996722793868021391">"ယခင်ကြည့်ထားသော အကြောင်းကြားချက်များကို လော့ခ်မျက်နှာပြင်မှ အလိုအလျောက် ဖယ်ရှားသည်"</string>
-    <string name="lock_screen_notifs_show_full_list" msgid="6767009263807771108">"စာရင်းအပြည့်အစုံ"</string>
-    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"ကျစ်ကျစ်လျစ်လျစ်"</string>
+    <string name="lock_screen_notifs_show_full_list" msgid="6767009263807771108">"စာရင်းပြည့်"</string>
+    <string name="lock_screen_notifs_show_compact" msgid="1133598661314460528">"ကျစ်လျစ်"</string>
     <string name="lock_screen_notifs_title" msgid="3412042692317304449">"လော့ခ်ချချိန် အကြောင်းကြားချက်"</string>
     <string name="lock_screen_notifs_show_all_summary" msgid="4226586018375762117">"စကားဝိုင်း၊ မူရင်း၊ အသံတိတ်များ ပြသည်"</string>
     <string name="lock_screen_notifs_show_all" msgid="1300418674456749664">"စကားဝိုင်း၊ မူရင်း၊ အသံတိတ်များ ပြရန်"</string>
@@ -4547,7 +4547,7 @@
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"ဤအက်ပ်မှ ဖန်သားပြင်အပြည့် အကြောင်းကြားချက် ခွင့်ပြုရန်"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"စက်ပစ္စည်းလော့ခ်ချထားစဉ် ဖန်သားပြင်အပြည့် နေရာယူမည့် အကြောင်းကြားချက်များကို ဤအက်ပ်အား ပြသခွင့်ပြုနိုင်သည်။ နှိုးစက်၊ အဝင်ခေါ်ဆိုမှု (သို့) အခြားအရေးတကြီး အကြောင်းကြားချက်များကို မြင်သာအောင်လုပ်ရန် အက်ပ်များက ၎င်းတို့ကို သုံးနိုင်သည်။"</string>
     <string name="write_system_preferences_page_title" msgid="4775435310385611055">"စနစ်ဆက်တင်များ သတ်မှတ်ခြင်း"</string>
-    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"ဤအက်ပ်ကို သင့်ကိုယ်စား စနစ်သတ်မှတ်ချက်များ မွမ်းမံခွင့်ပြုခြင်း"</string>
+    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"ဤအက်ပ်ကို သင့်ကိုယ်စား စနစ်သတ်မှတ်ချက်များ မွမ်းမံခွင့်ပြုရန်"</string>
     <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"ဤခွင့်ပြုချက်က အက်ပ်ကို ပင်မစနစ်သတ်မှတ်ချက်များ မွမ်းမံခွင့်ပြုသည်။"</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"မီဒီယာစီမံခန့်ခွဲမှု အက်ပ်များ"</string>
     <string name="media_management_apps_toggle_label" msgid="166724270857067456">"မီဒီယာကို စီမံရန်အတွက် အက်ပ်ကိုခွင့်ပြုရန်"</string>
@@ -5105,7 +5105,7 @@
     <string name="change_nfc_tag_apps_detail_summary" msgid="3338220223868942195">"NFC တဂ်ကို စကင်ဖတ်ပြီးသောအခါ ဤအက်ပ်ကို စတင်ခွင့်ပြုသည်။\nဤခွင့်ပြုချက် ဖွင့်ထားပါက တဂ်တွေ့သည့်အခါတိုင်း အက်ပ်ကို ရွေးစရာအဖြစ် ရနိုင်သည်။"</string>
     <string name="media_output_title" msgid="8283629315159510680">"မီဒီယာကို အောက်ပါစက်တွင် ဖွင့်ရန်"</string>
     <string name="media_output_label_title" msgid="4139048973886819148">"အောက်ပါတွင် <xliff:g id="LABEL">%s</xliff:g> ကို ဖွင့်ရန်"</string>
-    <string name="media_output_title_without_playing" msgid="3339321669132875821">"အောက်ပါတွင် အသံဖွင့်ပါမည်"</string>
+    <string name="media_output_title_without_playing" msgid="3339321669132875821">"အသံဖွင့်မည့်နေရာ"</string>
     <string name="media_output_default_summary" msgid="4200343059396412376">"ဤစက်"</string>
     <string name="media_output_audio_sharing" msgid="8169294522817470115">"အသံမျှဝေနေသည်"</string>
     <string name="media_out_summary_ongoing_call_state" msgid="475188726850090363">"ဖုန်းခေါ်ဆိုနေချိန် မရနိုင်ပါ"</string>
@@ -5724,7 +5724,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"လက်ဗွေ အာရုံခံကိရိယာ"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"အလင်းရောင်ဖြင့် အကြောင်းကြားချက်"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"အလင်းရောင်ဖြင့် အကြောင်းကြားချက်များအကြောင်း"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"ပိတ် / အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် ကင်မရာ (သို့) ဖန်သားပြင် အလင်းရောင်ဖြင့် သတိပေးချက်ရယူပါ"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"ပိတ် / အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် ကင်မရာ (သို့) ဖန်သားပြင် အလင်းရောင်ဖြင့် သတိပေးချက်ရယူနိုင်သည်"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"ဖွင့် / အကြောင်းကြားချက်နှင့် နှိုးစက်များအတွက် ကင်မရာ (သို့) ဖန်သားပြင် အလင်းရောင်ဖြင့် သတိပေးချက်ရယူပါ"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"အကြောင်းကြားချက်များရပါက သို့မဟုတ် နှိုးစက်သံမြည်ပါက ကင်မရာမီး (သို့) စခရင်တွင် အလင်းရောင်ဖြင့် ပြမည်"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"အကြောင်းကြားချက်များရပါက (သို့) နှိုးစက်သံမြည်ပါက အလင်းရောင်ဖြင့် ပြမည်"</string>
@@ -5885,7 +5885,7 @@
     <string name="audio_streams_listening_now" msgid="4205614429222949176">"ယခုနားထောင်ရန်"</string>
     <string name="audio_streams_present_now" msgid="7519818719382756366">"ထုတ်လွှင့်မှု ခဏရပ်သွားသည်"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"နားထောင်ခြင်း ရပ်ရန်"</string>
-    <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"တွဲသုံးနိုင်သော နားကြပ်ကို ချိတ်ဆက်ခြင်း"</string>
+    <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"တွဲသုံးနိုင်သော နားကြပ်ကို ချိတ်ဆက်ပါ"</string>
     <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"Talkback ကို ယာယီပိတ်ခြင်း"</string>
     <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"အသံထုတ်လွှင့်မှုများ နားထောင်ချိန်တွင် Talkback သုံး၍မရပါ။ စတင်နားထောင်ရန် Talkback ကို ပိတ်ပါ။"</string>
     <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"ပိတ်ရန်"</string>
@@ -5919,7 +5919,7 @@
     <string name="contacts_storage_device_only_preference_summary" msgid="8585284581093336284">"အဆက်အသွယ်များကို စင့်ခ်မလုပ်နိုင်ပါ (သို့) သင်၏အခြားစက်များတွင် မရနိုင်ပါ"</string>
     <string name="contacts_storage_selection_message" msgid="8082077300632059003">"မူရင်းသတ်မှတ်ချက်အရ အဆက်အသွယ်များကို သင့်စက်တွင်သိမ်းပြီး အကောင့်နှင့် စင့်ခ်လုပ်ပါမည်"</string>
     <string name="contacts_storage_set_default_account_error_message" msgid="849847649756411393">"မူလအကောင့်ကို သတ်မှတ်ရာတွင် အမှားရှိသည်"</string>
-    <string name="contacts_storage_no_account_set_summary" msgid="7454973781666475276">"မူလအကောင့် သတ်မှတ်မထားပါ"</string>
+    <string name="contacts_storage_no_account_set_summary" msgid="7454973781666475276">"မူရင်းအကောင့် သတ်မှတ်မထားပါ"</string>
     <string name="contacts_storage_local_account_summary" msgid="5034805108128685712">"စက်ပစ္စည်းသီးသန့်"</string>
     <string name="contacts_storage_account_title" msgid="7334522539665856395">"စက်ပစ္စည်းနှင့် %1$s"</string>
     <string name="contacts_storage_first_time_add_account_message" msgid="5161093169928132323">"စတင်ရန် အကောင့်ထည့်ပါ"</string>

@@ -158,7 +158,7 @@
     <string name="connected_device_add_device_summary" msgid="8671009879957120802">"Bluetooth itawaka ili iunganishe"</string>
     <string name="connected_device_connections_title" msgid="4164120115341579170">"Mapendeleo ya miunganisho"</string>
     <string name="connected_device_previously_connected_screen_title" msgid="8823331744788100605">"Vilivyounganishwa awali"</string>
-    <string name="connected_device_bluetooth_turned_on_toast" msgid="144664089794199928">"Imewasha Bluetooth"</string>
+    <string name="connected_device_bluetooth_turned_on_toast" msgid="144664089794199928">"Bluetooth imewashwa"</string>
     <string name="previous_connected_see_all" msgid="7759413145713251328">"Angalia vyote"</string>
     <string name="connected_device_fast_pair_device_see_all" msgid="4898279230458128620">"Angalia vyote"</string>
     <string name="stylus_device_details_title" msgid="7618295136015480864">"Stylus"</string>
@@ -529,7 +529,7 @@
     <string name="security_settings_remoteauth_enroll_introduction_info_lock_open" msgid="8570511335628725116">"Lazima uwe umefungua saa yako, umeivaa na iwe karibu na simu hii. Hutahitaji kufungua tena saa yako ukiwa umeivaa."</string>
     <string name="security_settings_remoteauth_enroll_introduction_info_notifications" msgid="4298855831154039694">"Ukifungua simu hii, utaarifiwa kwenye saa yako. Ikiwa umeifungua bila kukusudia, gusa arifa ili ufunge simu tena."</string>
     <string name="security_settings_remoteauth_enroll_introduction_youre_in_control_title" msgid="7974976673323638524">"Uamuzi ni wako"</string>
-    <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"Unaweza kuondoa saa yako kwenye kipengele cha Kufungua kupitia Saa wakati wowote katika Mipangilio"</string>
+    <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"Unaweza kuondoa saa yako kwenye kipengele cha Kufungua kwa Saa wakati wowote katika Mipangilio"</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_tap_notification" msgid="1597397399097952974">"Gusa arifa"</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_swipe_up" msgid="2129230804324634653">"Unapitisha mkono juu kwenye skrini iliyofungwa"</string>
     <string name="security_settings_remoteauth_enroll_enrolling_title" msgid="313016997943607675">"Chagua saa yako"</string>
@@ -3130,9 +3130,9 @@
     <string name="adaptive_connectivity_switch_on" msgid="3653067561620745493">"Imewashwa"</string>
     <string name="adaptive_connectivity_switch_off" msgid="5076172560836115265">"Imezimwa"</string>
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Tumia muunganisho unaojirekebisha"</string>
-    <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Kubadilisha kiotomatiki utumie mtandao wa simu"</string>
+    <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Badilisha kiotomatiki utumie mtandao wa simu"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"Huhakikisha umeunganishwa iwapo muunganisho wa Wi-Fi ni hafifu au haupatikani. Huenda ukatozwa gharama za data."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Kuboresha mtandao ili kuongeza muda wa matumizi ya betri"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Mtandao bora ili kuongeza muda wa betri"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Huchagua kiotomatiki muunganisho bora zaidi wa mtandao ili kuongeza muda wa matumizi ya betri yako"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Usalama wa mtandao wa simu"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Aina ya mtandao, usimbaji fiche, vidhibiti vya arifa"</string>
@@ -3240,7 +3240,7 @@
     <string name="sync_active" msgid="5787407579281739975">"Usawazishaji amilifu"</string>
     <string name="account_sync_settings_title" msgid="2684888109902800966">"Sawazisha"</string>
     <string name="sync_is_failing" msgid="6738004111400633331">"Kwa sasa usawazishaji una tatizo. Utarudi baada ya muda mfupi."</string>
-    <string name="add_account_label" msgid="7134707140831385869">"Weka akaunti"</string>
+    <string name="add_account_label" msgid="7134707140831385869">"Ongeza akaunti"</string>
     <string name="managed_profile_not_available_label" msgid="7500578232182547365">"Wasifu wa kazini bado haupatikani"</string>
     <string name="work_mode_label" msgid="4687734487641548872">"Programu za kazini"</string>
     <string name="remove_managed_profile_label" msgid="1294933737673830431">"Ondoa wasifu wa kazini"</string>

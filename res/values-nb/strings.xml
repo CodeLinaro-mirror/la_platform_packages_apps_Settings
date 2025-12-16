@@ -3815,7 +3815,7 @@
     <string name="zen_mode_rule_name_edit" msgid="1053237022416700481">"Endre"</string>
     <string name="zen_mode_automation_settings_page_title" msgid="6217433860514433311">"Tidsplaner"</string>
     <string name="zen_mode_automatic_rule_settings_page_title" msgid="5264835276518295033">"Tidsplan"</string>
-    <string name="zen_mode_automatic_trigger_title" msgid="6223547583969661361">"Tidspunkt for auto-påslåing"</string>
+    <string name="zen_mode_automatic_trigger_title" msgid="6223547583969661361">"Når skal den aktiveres automatisk?"</string>
     <string name="zen_mode_set_calendar_title" msgid="609741570346510347">"Aktivitetsoversikt"</string>
     <string name="zen_mode_set_calendar_which_calendar" msgid="7520289688350942687">"Slå på under aktiviteter for"</string>
     <string name="zen_mode_set_calendar_which_reply" msgid="3136872740890390233">"Der invitasjonssvaret er"</string>

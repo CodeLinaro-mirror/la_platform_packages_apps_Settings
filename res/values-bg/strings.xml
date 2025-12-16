@@ -2551,7 +2551,7 @@
     <string name="accessibility_shortcut_edit_dialog_summary_quick_settings_suw" msgid="4216628328191609785">"{count,plural, =1{Плъзнете пръст надолу от горната част на екрана. Този пряк път ще бъде налице, след като завършите настройването на устройството.}other{Плъзнете # пръста надолу от горната част на екрана. Този пряк път ще бъде налице, след като завършите настройването на устройството.}}"</string>
     <string name="accessibility_feature_shortcut_setting_summary_quick_settings" msgid="7006526933552889373">"Бързи настройки"</string>
     <string name="accessibility_shortcut_edit_dialog_title_hardware" msgid="844089763968552142">"Бутони за силата на звука"</string>
-    <string name="accessibility_shortcut_hardware_keyword" msgid="2483152542320987022">"бутони за силата на звука."</string>
+    <string name="accessibility_shortcut_hardware_keyword" msgid="2483152542320987022">"бутони за силата на звука"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_hardware" msgid="2503134386397991634">"Натиснете и задръжте двата бутона за силата на звука"</string>
     <string name="accessibility_shortcut_edit_screen_title_two_finger_double_tap" msgid="8952595692906527694">"Двукратно докосване с %1$d пръста"</string>
     <string name="accessibility_shortcut_edit_screen_summary_two_finger_double_tap" msgid="385404127425496362">"Докоснете бързо екрана два пъти с %1$d пръста"</string>

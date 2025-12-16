@@ -418,7 +418,7 @@
     <string name="security_settings_face_enroll_should_re_enroll_subtitle" msgid="7055780282999744813">"Yüz Tanıma Kilidi\'ni tekrar kurun"</string>
     <string name="security_settings_face_enroll_must_re_enroll_title" msgid="4421818770682557621">"Yüz Tanıma Kilidi\'ni tekrar kurun"</string>
     <string name="security_settings_face_enroll_must_re_enroll_subtitle" msgid="3584740139535177961">"Güvenliği ve performansı iyileştirin"</string>
-    <string name="security_settings_face_enroll_improve_face_alert_title" msgid="6194184776580066012">"Yüz Tanıma Kilidi\'ni ayarla"</string>
+    <string name="security_settings_face_enroll_improve_face_alert_title" msgid="6194184776580066012">"Yüz Tanıma Kilidi\'ni ayarlayın"</string>
     <string name="security_settings_face_enroll_improve_face_alert_body" msgid="2670118180411127323">"Yüz Tanıma Kilidi\'ni tekrar kurmak için mevcut yüz modelinizi silin.\n\nYüz modeliniz güvenli bir şekilde kalıcı olarak silinir.\n\nSilme işleminden sonra, telefonunuzun kilidini açmak veya uygulamalarda kimliğinizi doğrulamak için PIN kodunuz, deseniniz veya şifreniz gerekir."</string>
     <string name="security_settings_face_enroll_improve_face_alert_body_fingerprint" msgid="2469599074650327489">"Yüz Tanıma Kilidi\'ni tekrar kurmak için mevcut yüz modelinizi silin.\n\nYüz modeliniz güvenli bir şekilde kalıcı olarak silinir.\n\nSilme işleminden sonra, telefonunuzun kilidini açmak veya uygulamalarda kimliğinizi doğrulamak için parmak iziniz, PIN kodunuz, deseniniz veya şifreniz gerekir."</string>
     <string name="security_settings_face_settings_use_face_category" msgid="1638314154119800188">"Yüz Tanıma Kilidi kullan:"</string>
@@ -1744,7 +1744,7 @@
     <string name="menu_restore" msgid="4310539620115151551">"Varsayılana sıfırla"</string>
     <string name="restore_default_apn_completed" msgid="5167505087078340256">"Varsayılan APN ayarlarına sıfırlama tamamlandı."</string>
     <string name="reset_dashboard_title" msgid="7423200250697886918">"Sıfırlama seçenekleri"</string>
-    <string name="reset_mobile_network_settings_title" msgid="5616713931258506842">"Mobil Ağ Ayarlarını sıfırla"</string>
+    <string name="reset_mobile_network_settings_title" msgid="5616713931258506842">"Mobil ağ ayarlarını sıfırla"</string>
     <string name="reset_mobile_network_settings_desc" msgid="7292636387692165727">"Bu işlem tüm mobil ağ ayarlarını sıfırlar"</string>
     <string name="reset_mobile_network_settings_confirm_title" msgid="7510965634669511241">"Mobil Ağ Ayarları sıfırlansın mı?"</string>
     <string name="reset_bluetooth_wifi_title" msgid="4113071322344697317">"Bluetooth ve kablosuzu sıfırla"</string>
@@ -2659,7 +2659,7 @@
     <string name="autoclick_cursor_area_size_dialog_option_small" msgid="3987901922883658043">"Küçük"</string>
     <string name="autoclick_cursor_area_size_dialog_option_extra_small" msgid="6056674574040448864">"Çok küçük"</string>
     <string name="autoclick_ignore_minor_cursor_movement_title" msgid="5038721995720529808">"Küçük imleç hareketini yoksay"</string>
-    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Varsayılan işlem olarak sol tıklamayı kullanın"</string>
+    <string name="autoclick_revert_to_left_click_title" msgid="6868866422993461739">"Varsayılan işlem olarak sol tıklamayı kullan"</string>
     <string name="autoclick_revert_to_left_click_summary" msgid="9207568192335942225">"Otomatik tıklama, başka bir işlem kullandığınızda otomatik olarak sol tıklamaya geri döner"</string>
     <string name="accessibility_autoclick_navigation_title" msgid="1577786826651016069">"Otomatik tıklama 3 düğmeli gezinme ile daha iyi çalışır"</string>
     <string name="accessibility_autoclick_navigation_message" msgid="4985375526457764240">"Otomatik tıklamayı kullanırken kolayca geri gitmek, ana ekrana gitmek ve uygulamalar arasında geçiş yapmak için hareketle gezinme yerine 3 düğmeli gezinmeyi kullanın"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Gezinme ayarları"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Titreşim ve dokunma teknolojisi"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Farklı kullanımlar için titreşim gücünü kontrol edin"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Açık/Aramalar, bildirimler ve alarmlar için titreşim düzeylerini kontrol et"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Açık / Aramalar, bildirimler ve alarmlar için titreşim düzeylerini kontrol edin"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Kapalı/Aramalar, bildirimler ve alarmlar için titreşim düzeylerini kontrol et"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Cihaz sessize alındığından ayar devre dışı bırakıldı"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Aramalar"</string>
@@ -3769,7 +3769,7 @@
     <string name="live_caption_title" msgid="8617086825712756983">"Canlı Altyazı"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Aramalar, videolar ve diğer medyalarda altyazı kullanın"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Açık/Aramalar, videolar ve diğer medyalarda altyazı kullanın"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Kapalı/Aramalar, videolar ve diğer medyalarda altyazı kullanın"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Kapalı / Aramalar, videolar ve diğer medyalarda altyazı kullanın"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Kablolu kulaklık"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Uyumlu medyadaki sesler daha yoğun hale gelir"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Kapalı"</string>
@@ -4547,7 +4547,7 @@
     <string name="full_screen_intent_title" msgid="5888548315628268674">"Tam ekran bildirimler"</string>
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"Bu uygulamanın tam ekran bildirim göstermesine izin ver"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"Cihaz kilitliyken bu uygulamanın tüm ekranı kaplayan bildirimler göstermesine izin verin. Uygulamalar bunu alarmları, gelen aramaları ve diğer acil bildirimleri göstermek için kullanabilir."</string>
-    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Sistem tercihlerini kaydetme"</string>
+    <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Sistem tercihlerini kaydet"</string>
     <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Bu uygulamanın sizin adınıza sistem tercihlerini değiştirmesine izin verin"</string>
     <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"Bu izin, bir uygulamanın temel sistem tercihlerini değiştirmesine olanak sağlar."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"Medya yönetimi uygulamaları"</string>
@@ -5764,7 +5764,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Açık renkli ekranları koyu renk yapar, koyu renkli ekranları da açık renk yapar"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Ekranınızdaki içerikleri büyütmek için yakınlaştırın"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Kapalı"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Kapalı/Altyazı boyutunu ve stilini özelleştirin"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Kapalı / Altyazı boyutunu ve stilini özelleştirin"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Açık/Altyazı boyutunu ve stilini özelleştirin"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Kapalı"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Açık"</string>

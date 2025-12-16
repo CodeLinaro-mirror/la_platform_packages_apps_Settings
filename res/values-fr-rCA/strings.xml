@@ -691,7 +691,7 @@
     <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"Vous pouvez verrouiller automatiquement votre espace privé si vous n\'avez pas utilisé votre appareil pendant un certain temps"</string>
     <string name="private_space_auto_lock_every_time" msgid="1215061855836002830">"Chaque fois que l\'appareil se verrouille"</string>
     <string name="private_space_auto_lock_after_inactivity" msgid="7107814517866649733">"5 min après la mise veille de l\'écran"</string>
-    <string name="private_space_auto_lock_after_device_restart" msgid="288755768725895029">"Seul. après le redémarrage de l\'appareil"</string>
+    <string name="private_space_auto_lock_after_device_restart" msgid="288755768725895029">"Seulement après le redémarrage de l\'appareil"</string>
     <string name="private_space_hide_page_title" msgid="3364639176511877414">"Masquer l\'espace privé"</string>
     <string name="private_space_hide_when_locked" msgid="6219472348124151797">"Masquer l\'espace privé lorsqu\'il est verrouillé"</string>
     <string name="private_space_hide_page_summary" msgid="6247773353685839242">"Pour empêcher les autres personnes de savoir que vous avez un espace privé sur votre appareil, vous pouvez le masquer à partir de votre liste d\'applis"</string>
@@ -944,7 +944,7 @@
     <string name="bluetooth_pairing_phonebook_toggle_text" msgid="2474015367387690034">"Autoriser également l\'accès aux contacts et à l\'historique des appels"</string>
     <string name="bluetooth_pairing_phonebook_toggle_details" msgid="1367197978487212581">"Ces informations seront utilisées pour les annonces d\'appels et plus"</string>
     <string name="bluetooth_pairing_confirmation_title" msgid="3359642089708714808">"Vérifier les codes d\'association"</string>
-    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"Vérifiez si ce code correspond à celui de <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.\n\nPour votre sécurité, n\'entrez ce code nulle part."</string>
+    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"Vérifiez si ce code correspond à celui de l\'appareil suivant : <xliff:g id="DEVICE_NAME">%1$s</xliff:g>.\n\nPour votre sécurité, n\'entrez ce code nulle part."</string>
     <string name="bluetooth_error_title" msgid="2284738188253690278"></string>
     <string name="bluetooth_connecting_error_message" msgid="3941893154784152112">"Impossible de se connecter à <xliff:g id="DEVICE_NAME">%1$s</xliff:g>."</string>
     <string name="bluetooth_preference_found_media_devices" msgid="830061195998352840">"Appareils détectés"</string>
@@ -1178,7 +1178,7 @@
     <string name="wifi_dpp_device_found" msgid="633646744759830603">"Appareil trouvé"</string>
     <string name="wifi_dpp_sharing_wifi_with_this_device" msgid="7250369936882080107">"Partage du Wi‑Fi avec cet appareil en cours…"</string>
     <string name="wifi_dpp_connecting" msgid="2312769193202897589">"Connexion en cours…"</string>
-    <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"Partager le point d\'accès"</string>
+    <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"Partager le point d\'accès sans fil"</string>
     <string name="wifi_dpp_lockscreen_title" msgid="5246641326066972419">"Confirmer que c\'est bien vous"</string>
     <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"Mot de passe Wi-Fi : <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_hotspot_password" msgid="688464342650820420">"Mot de passe du point d\'accès : <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
@@ -1300,7 +1300,7 @@
     <string name="wifi_hotspot_off_subtext" msgid="2751383134504362078">"Ne partagez pas la connexion ni le contenu avec d\'autres appareils"</string>
     <string name="wifi_hotspot_no_password_subtext" msgid="3685689196772398783">"Aucun mot de passe défini"</string>
     <string name="wifi_hotspot_name_title" msgid="6633480190014369846">"Nom du point d\'accès sans fil"</string>
-    <string name="wifi_hotspot_password_title" msgid="9096340919454296786">"Mot de passe du point d\'accès"</string>
+    <string name="wifi_hotspot_password_title" msgid="9096340919454296786">"Mot de passe du point d\'accès sans fil"</string>
     <string name="wifi_hotspot_auto_off_title" msgid="8855711787485504882">"Désactiver automatiquement le point d\'accès Wi‑Fi"</string>
     <string name="wifi_hotspot_auto_off_summary" msgid="8283656069997871354">"Lorsqu\'aucun appareil n\'est connecté"</string>
     <string name="wifi_hotspot_maximize_compatibility" msgid="6494125684420024058">"Prolonger la compatibilité"</string>
@@ -1381,7 +1381,7 @@
     <string name="accessibility_category_clone" msgid="7893383448944567885">"Comptes du profil cloné"</string>
     <string name="accessibility_work_account_title" msgid="7622485151217943839">"Compte professionnel - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="accessibility_personal_account_title" msgid="8535265881509557013">"Compte personnel - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
-    <string name="search_settings" msgid="7573686516434589771">"Rechercher"</string>
+    <string name="search_settings" msgid="7573686516434589771">"Recherchez"</string>
     <string name="display_settings" msgid="7197750639709493852">"Affichage"</string>
     <string name="accelerometer_title" msgid="7745991950833748909">"Rotation automatique de l\'écran"</string>
     <string name="auto_rotate_option_off" msgid="2788096269396290731">"Désactivée"</string>
@@ -1596,7 +1596,7 @@
     <string name="status_prl_version" msgid="9002131357502714281">"Version de la liste d\'itinérance préférée"</string>
     <string name="meid_multi_sim" msgid="5076814185188481456">"MEID (fente pour carte SIM <xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
     <string name="meid_multi_sim_primary" msgid="6269908735700854437">"MEID (fente pour carte SIM <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>) (principale)"</string>
-    <string name="scanning_status_text_on" msgid="3846571210578042940">"Activé"</string>
+    <string name="scanning_status_text_on" msgid="3846571210578042940">"Activée"</string>
     <string name="scanning_status_text_off" msgid="4002352668313705132">"Désactivée"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
     <string name="status_icc_id" msgid="7995690631650006970">"ICCID"</string>
@@ -1766,7 +1766,7 @@
     <string name="reset_private_space_delete_dialog" msgid="2325106559507364385">"Si vous disposez d\'un espace privé sur votre appareil, il sera définitivement supprimé, et le compte Google ajouté à cet espace sera retiré. \n\nToutes les applis de votre espace et leurs données seront définitivement supprimées de l\'"<b>"espace de stockage interne"</b>" de votre téléphone."</string>
     <string name="main_clear_title" msgid="277664302144837723">"Effacer toutes les données (réinitialisation aux paramètres par défaut)"</string>
     <string name="main_clear_short_title" msgid="4752094765533020696">"Effacer toutes les données"</string>
-    <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"Musique"</li>\n<li>"Photos"</li>\n<li>"Autres données de l\'utilisateur"</li></string>
+    <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"La musique"</li>\n<li>"Les photos"</li>\n<li>"Les autres données de l\'utilisateur"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"Modules eSIM"</li></string>
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"Cela n\'annulera pas votre forfait de services cellulaires."</string>
     <string name="main_clear_final_desc" msgid="5800877928569039580">"Tous vos renseignements personnels et les applis téléchargées seront supprimés. Vous ne pouvez pas annuler cette action."</string>
@@ -1871,7 +1871,7 @@
     <string name="license_title" msgid="8745742085916617540">"Licence"</string>
     <string name="module_license_title" msgid="8705484239826702828">"Licences des mises à jour système pour Google Play"</string>
     <string name="terms_title" msgid="2071742973672326073">"Conditions d\'utilisation"</string>
-    <string name="webview_license_title" msgid="5832692241345780517">"Licence WebView du système"</string>
+    <string name="webview_license_title" msgid="5832692241345780517">"Licence système WebView"</string>
     <string name="wallpaper_attributions" msgid="4323659759250650736">"À propos du fond d\'écran"</string>
     <string name="wallpaper_attributions_values" msgid="987277439026021925">"Fournisseurs d\'images satellite :\n© CNES/Astrium, DigitalGlobe, Bluesky 2014"</string>
     <string name="settings_manual_activity_title" msgid="1682978148920788484">"Manuel"</string>
@@ -2396,7 +2396,7 @@
     <string name="accessibility_pointer_title" msgid="7427650233669997010">"Curseur"</string>
     <string name="accessibility_touchpad_title" msgid="5798458334122685642">"Pavé tactile"</string>
     <string name="accessibility_touchpad_system_gestures_enable_title" msgid="1867179109603472062">"Utiliser les gestes à trois ou quatre doigts"</string>
-    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"Lorsque votre pavé tactile est désactivé, il ignorera les gestes à trois ou quatre doigts"</string>
+    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"Lorsque ce paramètre est désactivé, votre pavé tactile ignore les gestes à trois ou quatre doigts"</string>
     <string name="keywords_accessibility_touchpad_system_gestures_enable" msgid="4406441971607855466">"pavé tactile, balayer"</string>
     <string name="accessibility_color_contrast_title" msgid="5757724357142452378">"Contraste des couleurs"</string>
     <string name="accessibility_color_contrast_intro" msgid="7795090401101214930">"Un contraste plus élevé fait ressortir davantage le texte, les boutons et les icônes. Choisissez le contraste qui vous convient le mieux."</string>
@@ -2457,7 +2457,7 @@
     <string name="accessibility_screen_magnification_follow_keyboard_title" msgid="3412060515554192262">"Suivre la cible du clavier"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_summary" msgid="2379353603675828805">"La loupe suit l\'élément sélectionné lorsque vous naviguez avec votre clavier"</string>
     <string name="accessibility_screen_magnification_nav_ime_title" msgid="8804501318161774285">"Agrandir le clavier"</string>
-    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"Zoomez sur le clavier pour agrandir"</string>
+    <string name="accessibility_screen_magnification_nav_ime_summary" msgid="2102651227079047801">"Zoomez sur le clavier pour voir les émojis et les lettres lorsque l\'agrandissement plein écran est activé"</string>
     <string name="accessibility_screen_magnification_nav_ime_unavailable_summary" msgid="2248787024685382054">"Non offert : agrandi partiellement"</string>
     <string name="accessibility_screen_magnification_always_on_title" msgid="3814297443759580936">"Garder activée lors du changement d\'appli"</string>
     <string name="accessibility_screen_magnification_always_on_summary" msgid="642275893256862796">"La loupe reste activée et dézoome lorsque vous changez d\'appli"</string>
@@ -2609,7 +2609,7 @@
     <string name="accessibility_text_cursor_blink_rate_faster_desc" msgid="5236406089575390876">"Augmenter la vitesse de clignotement"</string>
     <string name="accessibility_text_cursor_blink_rate_reset_button_label" msgid="393679766407314372">"Réinitialiser"</string>
     <string name="accessibility_toggle_primary_mono_title" msgid="7587152099472946571">"Audio mono"</string>
-    <string name="accessibility_toggle_primary_mono_summary" msgid="1935283927319407303">"Combiner les canaux lors de la lecture audio"</string>
+    <string name="accessibility_toggle_primary_mono_summary" msgid="1935283927319407303">"Combinez les canaux lors de la lecture audio"</string>
     <string name="accessibility_toggle_primary_balance_title" msgid="7332275200153366714">"Équilibre sonore"</string>
     <string name="accessibility_toggle_primary_balance_left_label" msgid="6415750010517682014">"Gauche"</string>
     <string name="accessibility_toggle_primary_balance_right_label" msgid="2987443495390104935">"Droite"</string>
@@ -2667,8 +2667,8 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Paramètres de navigation"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Vibrations et effets tactiles"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Contrôler la force des vibrations pour différentes utilisations"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Activé/Contrôlez les niveaux de vibration pour les appels, les notifications et les alarmes"</string>
-    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Désactivé/Contrôlez les niveaux de vibration pour les appels, les notifications et les alarmes"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Activés – Contrôlez les niveaux de vibration pour les appels, les notifications et les alarmes"</string>
+    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Désactivés – Contrôlez les niveaux de vibration pour les appels, les notifications et les alarmes"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Le paramètre est désactivé parce que l\'appareil est en mode silencieux"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Appels"</string>
     <string name="accessibility_notification_alarm_vibration_category_title" msgid="2683635252414849417">"Notifications et alarmes"</string>
@@ -2783,7 +2783,7 @@
     <string name="reduce_bright_colors_intensity_preference_title" msgid="7455443033955118267">"Intensité"</string>
     <string name="brightness_intensity_start_label" msgid="5156578219206443637">"Diminuer"</string>
     <string name="brightness_intensity_end_label" msgid="2697495729534414164">"Augmenter"</string>
-    <string name="reduce_bright_colors_persist_preference_title" msgid="4368829654993343354">"Laisser activé après le redémarrage de l\'appareil"</string>
+    <string name="reduce_bright_colors_persist_preference_title" msgid="4368829654993343354">"Laisser activée après le redémarrage de l\'appareil"</string>
     <string name="accessibilty_autoclick_preference_subtitle_short_delay" msgid="2981206111858937724">"{count,plural, =1{Court ({time} seconde)}one{Court ({time} seconde)}other{Court ({time} secondes)}}"</string>
     <string name="accessibilty_autoclick_preference_subtitle_medium_delay" msgid="6867395206533459204">"{count,plural, =1{Moyen ({time} seconde)}one{Moyen ({time} seconde)}other{Moyen ({time} secondes)}}"</string>
     <string name="accessibilty_autoclick_preference_subtitle_long_delay" msgid="4079139970819335593">"{count,plural, =1{Long ({time} seconde)}one{Long ({time} seconde)}other{Long ({time} secondes)}}"</string>
@@ -3768,13 +3768,13 @@
     <string name="live_caption_title" msgid="8617086825712756983">"Sous-titres instantanés"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Obtenir des sous-titres pour les appels, les vidéos et d\'autres contenus multimédias"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Activé/Obtenir des sous-titres pour les appels, les vidéos et d\'autres contenus multimédias"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Désactivé/Obtenir des sous-titres pour les appels, les vidéos et d\'autres contenus multimédias"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Désactivés – Obtenez des sous-titres pour les appels, les vidéos et d\'autres contenus multimédias"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Écouteurs filaires"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Le son des appareils multimédias compatibles devient plus immersif"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Désactivé"</string>
     <string name="spatial_summary_on_one" msgid="6239933399496282994">"Activé : <xliff:g id="OUTPUT_DEVICE">%1$s</xliff:g>"</string>
     <string name="spatial_summary_on_two" msgid="4526919818832483883">"Activé : <xliff:g id="OUTPUT_DEVICE_0">%1$s</xliff:g> et <xliff:g id="OUTPUT_DEVICE_1">%2$s</xliff:g>"</string>
-    <string name="spatial_audio_footer_title" msgid="8775010547623606088">"Vous pouvez également activer le Son spatial pour les appareils Bluetooth."</string>
+    <string name="spatial_audio_footer_title" msgid="8775010547623606088">"Vous pouvez également activer le son spatial pour les appareils Bluetooth."</string>
     <string name="spatial_audio_footer_learn_more_text" msgid="3826811708094366301">"Paramètres des appareils connectés"</string>
     <string name="spatial_audio_multi_toggle_title" msgid="6175786400035541273">"Son spatial"</string>
     <string name="spatial_audio_multi_toggle_off" msgid="2086359413991193164">"Désactivé"</string>
@@ -3938,7 +3938,7 @@
     <string name="bubbles_feature_disabled_dialog_text" msgid="5275666953364031055">"L\'activation des bulles pour cette appli activera aussi les bulles pour votre appareil.\n\nCela a un impact sur les autres applis ou les conversations qui peuvent s\'afficher en bulles."</string>
     <string name="bubbles_feature_disabled_button_approve" msgid="2042628067101419871">"Activer"</string>
     <string name="bubbles_feature_disabled_button_cancel" msgid="8963409459448350600">"Annuler"</string>
-    <string name="notifications_bubble_setting_on_summary" msgid="4641572377430901196">"Activées : les conversations peuvent s\'afficher sous forme d\'icônes flottantes"</string>
+    <string name="notifications_bubble_setting_on_summary" msgid="4641572377430901196">"Activées/Les conversations peuvent s\'afficher sous forme d\'icônes flottantes"</string>
     <string name="notifications_bubble_setting_title" msgid="8287649393774855268">"Autoriser les applis à afficher des bulles"</string>
     <string name="notifications_bubble_setting_description" msgid="7336770088735025981">"Certaines conversations s\'afficheront sous forme d\'icônes flottantes superposées aux autres applis"</string>
     <string name="bubble_app_setting_all" msgid="312524752846978277">"Toutes les conversations peuvent s\'afficher dans des bulles"</string>
@@ -4377,7 +4377,7 @@
     <string name="app_launch_supported_links_add" msgid="3271247750388016131">"Ajouter"</string>
     <string name="app_launch_supported_links_subtext" msgid="4268004019469184113">"S\'ouvre dans <xliff:g id="APP_LABEL">%s</xliff:g>"</string>
     <string name="storage_summary_format" msgid="5721782272185284276">"<xliff:g id="SIZE">%1$s</xliff:g> utilisé(s) dans : <xliff:g id="STORAGE_TYPE">%2$s</xliff:g>"</string>
-    <string name="storage_type_internal" msgid="979243131665635278">"stockage interne"</string>
+    <string name="storage_type_internal" msgid="979243131665635278">"mémoire interne"</string>
     <string name="storage_type_external" msgid="125078274000280821">"stockage externe"</string>
     <string name="data_summary_format" msgid="8802057788950096650">"<xliff:g id="SIZE">%1$s</xliff:g> utilisés depuis le <xliff:g id="DATE">%2$s</xliff:g>"</string>
     <string name="storage_used" msgid="2591194906751432725">"Espace de stockage utilisé"</string>
@@ -4394,7 +4394,7 @@
     <string name="runtime_permissions_summary_control_app_access" msgid="3744591396348990500">"Gérez l\'accès des applis à vos données"</string>
     <string name="permissions_usage_title" msgid="2942741460679049132">"Tableau de bord de confidentialité"</string>
     <string name="permissions_usage_summary" msgid="6784310472062516454">"Affichez les applis qui ont récemment utilisé les autorisations"</string>
-    <string name="unused_apps" msgid="4566272194756830656">"Applis inutilisées"</string>
+    <string name="unused_apps" msgid="4566272194756830656">"Applis non utilisées"</string>
     <string name="unused_apps_summary" msgid="4236371818881973021">"{count,plural, =1{# appli non utilisée}one{# appli non utilisée}other{# applis non utilisées}}"</string>
     <string name="unused_apps_category" msgid="8954930958175500851">"Paramètres des applis inutilisées"</string>
     <string name="unused_apps_switch" msgid="7595419855882245772">"Suspendre l\'activité appli si inutilisée"</string>
@@ -5021,7 +5021,7 @@
     <string name="credman_autofill_confirmation_message" msgid="843829628024668466">"&lt;b&gt;Use &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt;?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; Les nouveaux mots de passe, clés d\'accès et autres renseignements seront désormais enregistrés ici. &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt; peut utiliser ce qui se trouve à l\'écran pour déterminer les données qui peuvent être remplies automatiquement."</string>
     <string name="credman_picker_title" msgid="8442086614222006564">"Préf. de service pour mots de passe, clés d\'accès et remp. aut."</string>
     <string name="credman_picker_title_new" msgid="4292105803864397398">"Service préféré"</string>
-    <string name="credman_picker_page_summary" msgid="4633938046738617332">"Choisir votre service préféré pour enregistrer les données de connexion et les suggestions de remplissage automatique"</string>
+    <string name="credman_picker_page_summary" msgid="4633938046738617332">"Choisissez votre service préféré pour enregistrer les données de connexion et les suggestions de remplissage automatique"</string>
     <string name="credman_confirmation_message_title" msgid="8847900085593880729">"Désactiver %1$s?"</string>
     <string name="credman_confirmation_message" msgid="2357324543658635239">"&lt;b&gt;Désactiver ce service?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; Lorsque vous vous connectez, les renseignements enregistrés, comme les mots de passe, les clés d\'accès, les modes de paiement, ou tout autre renseignement, ne seront pas remplis. Pour utiliser vos renseignements enregistrés, choisissez un mot de passe, une clé d\'accès ou un service de données."</string>
     <string name="account_dashboard_title_with_passkeys" msgid="648242372086733541">"Mots de passe, clés d\'accès et comptes"</string>
@@ -5724,7 +5724,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Capteur d\'empreintes digitales"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Notifications lumineuses"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"À propos des notifications lumineuses"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Désactivées/Recevez une alerte avec un flash d\'appareil photo ou un clignotement d\'écran pour les notifications et les alarmes"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Désactivées – Recevez une alerte avec un flash d\'appareil photo ou un clignotement d\'écran pour les notifications et les alarmes"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Activées/Recevez une alerte avec un flash d\'appareil photo ou un clignotement d\'écran pour les notifications et les alarmes"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"L\'écran ou la lumière de l\'appareil photo clignotent lorsque vous recevez des notifications ou lorsque des alarmes retentissent"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"L\'écran clignote lorsque vous recevez des notifications ou lorsque des alarmes retentissent"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Les écrans clairs deviennent sombres et vice-versa"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Zoomez pour agrandir le contenu sur l\'écran"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Désactivé"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Désactivé/Personnalisez la taille et le style des sous-titres"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Désactivées – Personnalisez la taille et le style des sous-titres"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Activé/Personnalisez la taille et le style des sous-titres"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Désactivée"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Activés"</string>
@@ -5901,7 +5901,7 @@
     <string name="audio_streams_main_page_title" msgid="1838380471076527639">"Trouver un flux audio"</string>
     <string name="audio_streams_main_page_subtitle" msgid="3251995732921981539">"Écoutez un appareil qui partage de l\'audio ou une diffusion Auracast à proximité"</string>
     <string name="audio_streams_main_page_device_title" msgid="2635744035523908253">"Votre appareil audio"</string>
-    <string name="audio_streams_main_page_no_device_summary" msgid="2936000845397406389">"Connecter des écouteurs compatibles"</string>
+    <string name="audio_streams_main_page_no_device_summary" msgid="2936000845397406389">"Connectez des écouteurs compatibles"</string>
     <string name="audio_streams_main_page_scan_section_title" msgid="2778235929304061163">"Flux audio à proximité"</string>
     <string name="audio_streams_main_page_scan_qr_code_title" msgid="8337270277392468895">"Balayer le code QR"</string>
     <string name="audio_streams_main_page_scan_qr_code_summary" msgid="1991792283368249499">"Commencez à écouter en balayant le code QR d\'un flux"</string>

@@ -1154,7 +1154,7 @@
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"I-scan ang QR code"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"Igitna ang QR code sa ibaba para makakonekta sa “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Sumali sa Wi‑Fi sa pamamagitan ng pag-scan ng QR code"</string>
-    <string name="wifi_dpp_share_wifi" msgid="2431744447544057866">"Ibahagi ang Wi‑Fi"</string>
+    <string name="wifi_dpp_share_wifi" msgid="2431744447544057866">"I-share ang Wi‑Fi"</string>
     <string name="wifi_dpp_scan_qr_code_with_another_device" msgid="6967364080214325016">"I-scan ang QR code na ito gamit ang isa pang device para makasali sa “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
     <string name="wifi_dpp_scan_open_network_qr_code_with_another_device" msgid="5398619697898444311">"I-scan ang QR code na ito para kumonekta sa “<xliff:g id="SSID">%1$s</xliff:g>”"</string>
     <string name="wifi_dpp_failure_authentication_or_configuration" msgid="847551626830740204">"Subukang muli. Kung magpatuloy ang isyu, makipag-ugnayan sa manufacturer ng device"</string>

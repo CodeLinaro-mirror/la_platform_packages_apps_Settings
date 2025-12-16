@@ -1231,7 +1231,7 @@
     <string name="wifi_failed_connect_message" msgid="8538000546604347894">"Не успеа да се поврзе со мрежата"</string>
     <string name="wifi_not_in_range_message" msgid="3885327464037574739">"Мрежата не е во опсег"</string>
     <string name="wifi_forget" msgid="3485573280364015620">"Заборави"</string>
-    <string name="wifi_modify" msgid="5127926476383659412">"Измени"</string>
+    <string name="wifi_modify" msgid="5127926476383659412">"Изменете"</string>
     <string name="wifi_save" msgid="2312643132472226807">"Зачувај"</string>
     <string name="wifi_failed_save_message" msgid="1830279872341387120">"Не успеа да се зачува мрежата"</string>
     <string name="wifi_cancel" msgid="6698897376888935410">"Откажи"</string>
@@ -1510,7 +1510,7 @@
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Подигнете да се активира"</string>
     <string name="screensaver_restrict_to_wireless_charging_title" msgid="8016059995446029358">"Ограничи на безжично полнење"</string>
     <string name="blur_switch" msgid="1391073945502754948">"Намали ги ефектите на замаглување"</string>
-    <string name="blur_switch_summary" msgid="5025895302219948597">"Направете ги заднините и таблите полесни за гледање"</string>
+    <string name="blur_switch_summary" msgid="5025895302219948597">"Ги прави заднините и таблите полесни за гледање"</string>
     <string name="blur_switch_disabled_summary" msgid="4664341513589412290">"Привремено оневозможено поради „Штедачот на батерија“"</string>
     <string name="low_light_display_behavior_main_switch_title" msgid="7138165032358139627">"Користи „Режим за слаба светлина“"</string>
     <string name="low_light_display_behavior_subtitle" msgid="1833984014035605413">"Изберете што да се прикажува во „Режим за слаба светлина“"</string>
@@ -1961,7 +1961,7 @@
     <string name="lockpattern_need_to_confirm" msgid="6489499109451714360">"Нацртајте ја шемата повторно за потврда"</string>
     <string name="lockpattern_pattern_confirmed_header" msgid="2969990617475456153">"Вашата нова шема за отклучување"</string>
     <string name="lockpattern_confirm_button_text" msgid="6122815520373044089">"Потврдете"</string>
-    <string name="lockpattern_restart_button_text" msgid="255339375151895998">"Измени"</string>
+    <string name="lockpattern_restart_button_text" msgid="255339375151895998">"Изменете"</string>
     <string name="lockpattern_retry_button_text" msgid="4229668933251849760">"Избриши"</string>
     <string name="lockpattern_continue_button_text" msgid="5253269556259503537">"Продолжи"</string>
     <string name="lockpattern_settings_title" msgid="9223165804553269083">"Шема за отклучување"</string>
@@ -2353,7 +2353,7 @@
     <string name="user_dict_settings_add_word_hint" msgid="4560494723256242785">"Напишете збор"</string>
     <string name="user_dict_settings_add_shortcut_hint" msgid="6209624157217434640">"Изборна кратенка"</string>
     <string name="user_dict_settings_edit_dialog_title" msgid="316493656442362284">"Измени збор"</string>
-    <string name="user_dict_settings_context_menu_edit_title" msgid="4909198741914531509">"Измени"</string>
+    <string name="user_dict_settings_context_menu_edit_title" msgid="4909198741914531509">"Изменете"</string>
     <string name="user_dict_settings_context_menu_delete_title" msgid="651550824433043545">"Избриши"</string>
     <string name="user_dict_settings_empty_text" msgid="86562873609647919">"Немате зборови во корисничкиот речник. За да додадете збор, допрете го копчето Додај (+)."</string>
     <string name="user_dict_settings_all_languages" msgid="8563387437755363526">"За сите јазици"</string>
@@ -2629,7 +2629,7 @@
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"Користи „Инверзија на боите“"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"Кратенка за „Инверзија на боите“"</string>
     <string name="accessibility_display_inversion_preference_intro_text" msgid="1159663288481145318">"Инверзијата на боите ги затемнува светлите екрани. Исто така, таа ги осветлува темните екрани."</string>
-    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Имајте предвид&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; боите ќе се променат во аудиовизуелните содржини и сликите&lt;/li&gt; &lt;li&gt; инверзијата на боите функционира во сите апликации&lt;/li&gt; &lt;li&gt; за да се прикаже темна заднина, наместо тоа, може да ја користите „Темната тема“&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Имајте предвид&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; Боите ќе се променат во аудиовизуелните содржини и сликите&lt;/li&gt; &lt;li&gt; Инверзијата на боите функционира во сите апликации&lt;/li&gt; &lt;li&gt; За да се прикаже темна заднина, наместо тоа, може да ја користите „Темната тема“&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"внесете поставки"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"Автоматско кликнување (време на задржување)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"За автоматско кликнување (време на задржување)"</string>
@@ -2688,7 +2688,7 @@
     <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"Може да додадете „Корекција на боите“ во „Брзи поставки“ и од врвот на екранот"</string>
     <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"„Инверзија на боите“ е додадена во „Брзи поставки“. Повлечете надолу за да ја вклучите или исклучите кога сакате."</string>
     <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"Може да додадете „Инверзија на боите“ во „Брзи поставки“ и од врвот на екранот"</string>
-    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"Затемнете го екранот повеќе од минималната осветленост"</string>
+    <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"Го затемнува екранот повеќе од минималната осветленост"</string>
     <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"Дополнително затемнување е додадено во „Брзи поставки“. Повлечете надолу за да ја вклучите или исклучите кога сакате."</string>
     <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"Може да додадете дополнително затемнување во „Брзи поставки“ и од врвот на екранот"</string>
     <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"Функцијата „Режим со една рака“ е додадена во „Брзи поставки“. Повлечете надолу за да ја вклучите или исклучите."</string>
@@ -3132,7 +3132,7 @@
     <string name="adaptive_connectivity_main_switch_title" msgid="261045483524512420">"Користи „Адаптивно поврзување“"</string>
     <string name="adaptive_connectivity_wifi_switch_title" msgid="8534819376336827298">"Автоматско префрлање на мобилна мрежа"</string>
     <string name="adaptive_connectivity_wifi_switch_summary" msgid="827122572213043364">"Обезбедува поврзливост кога Wi-Fi е слаба или недостапна. Може да ви се наплати за потрошениот мобилен интернет."</string>
-    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Оптимизирајте ја мрежата за траење на батеријата"</string>
+    <string name="adaptive_connectivity_mobile_network_switch_title" msgid="1852172801040818123">"Оптимизирај ја мрежата за траење на батеријата"</string>
     <string name="adaptive_connectivity_mobile_network_switch_summary" msgid="8336459750352233615">"Автоматски ја избира најдобрата мрежна врска за да го продолжи траењето на батеријата"</string>
     <string name="cellular_security_title" msgid="5562899485544677941">"Безбедност на мобилната мрежа"</string>
     <string name="cellular_security_summary" msgid="1893770670709928113">"Тип мрежа, шифрирање, контроли за известувања"</string>
@@ -3812,7 +3812,7 @@
     <string name="zen_mode_menu_rename_mode" msgid="4681802125016390837">"Преименувај"</string>
     <string name="zen_mode_menu_delete_mode" msgid="5380084696402157428">"Избриши"</string>
     <string name="zen_mode_delete_mode_confirmation" msgid="7594340592051947392">"Да се избрише режимот „<xliff:g id="MODE">%1$s</xliff:g>“?"</string>
-    <string name="zen_mode_rule_name_edit" msgid="1053237022416700481">"Измени"</string>
+    <string name="zen_mode_rule_name_edit" msgid="1053237022416700481">"Изменете"</string>
     <string name="zen_mode_automation_settings_page_title" msgid="6217433860514433311">"Распореди"</string>
     <string name="zen_mode_automatic_rule_settings_page_title" msgid="5264835276518295033">"Распоред"</string>
     <string name="zen_mode_automatic_trigger_title" msgid="6223547583969661361">"Кога да се вклучува автоматски"</string>

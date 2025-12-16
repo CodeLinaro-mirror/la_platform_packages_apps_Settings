@@ -1504,7 +1504,7 @@
     <string name="screensaver_settings_summary_postured" msgid="6346392320858994892">"Na vertical"</string>
     <string name="screensaver_settings_summary_postured_and_charging" msgid="5111797042509819055">"Durante o carregamento e na vertical"</string>
     <string name="screensaver_settings_summary_on" msgid="4210827304351483645">"Ativada/<xliff:g id="SCREEN_SAVER">%1$s</xliff:g>"</string>
-    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"Desligado"</string>
+    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"Desativada"</string>
     <string name="screensaver_settings_when_to_dream" msgid="7756170756065029160">"Quando apresentar"</string>
     <string name="screensaver_settings_low_light_mode" msgid="271972828076673743">"Modo de baixa luminosidade"</string>
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Ativar ao levantar"</string>

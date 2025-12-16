@@ -2909,7 +2909,7 @@
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"Limitează utilizarea bateriei în timpul funcționării în fundal. Este posibil ca aplicația să nu funcționeze conform așteptărilor. Este posibil ca notificările să fie amânate."</string>
     <string name="manager_battery_usage_footer" msgid="2635906573922553766">"Dacă modifici modul în care o aplicație îți folosește bateria, îi poți afecta performanța."</string>
     <string name="manager_battery_usage_footer_limited" msgid="5180776148877306780">"Această aplicație necesită utilizare <xliff:g id="STATE">%1$s</xliff:g> a bateriei."</string>
-    <string name="manager_battery_usage_unrestricted_only" msgid="3646162131339418216">"Fără restricții"</string>
+    <string name="manager_battery_usage_unrestricted_only" msgid="3646162131339418216">"fără restricții"</string>
     <string name="manager_battery_usage_optimized_only" msgid="7121785281913056432">"Optimizată"</string>
     <string name="manager_battery_usage_link_a11y" msgid="374918091821438564">"Află mai multe despre opțiunile de utilizare a bateriei"</string>
     <string name="device_screen_usage" msgid="1011630249648289909">"Utilizarea ecranului de la încărcare"</string>

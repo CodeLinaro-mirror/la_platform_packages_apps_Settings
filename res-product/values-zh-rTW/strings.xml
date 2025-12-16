@@ -164,7 +164,7 @@
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="tablet" msgid="8772005555323461143">"你和孩子隨時可以前往「設定」刪除指紋圖像和模型，或關閉指紋解鎖功能。指紋圖像和模型會儲存在平板電腦上，直到你或孩子刪除為止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="device" msgid="7254955922685507093">"你和孩子隨時可以前往「設定」刪除指紋圖像和模型，或關閉指紋解鎖功能。指紋圖像和模型會儲存在裝置上，直到你或孩子刪除為止。"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_consent_4" product="desktop" msgid="7254955922685507093">"你和孩子隨時可以前往「設定」刪除指紋圖像和模型，或關閉指紋解鎖功能。指紋圖像和模型會儲存在裝置上，直到你或孩子刪除為止。"</string>
-    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_5" product="default" msgid="6838578698434849838">"手機有可能會意外解鎖，例如有人讓你的手指觸碰到手機"</string>
+    <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_5" product="default" msgid="6838578698434849838">"手機有可能會在你未預期的狀況下解鎖，例如有人讓你的手指觸碰到手機"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_5" product="tablet" msgid="7796353046744228477">"平板電腦有可能會意外解鎖，例如有人讓你的手指觸碰到平板電腦"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_5" product="device" msgid="5075445491909690772">"裝置有可能會意外解鎖，例如有人讓你的手指觸碰到裝置"</string>
     <string name="security_settings_fingerprint_v2_enroll_introduction_footer_message_5" product="desktop" msgid="5075445491909690772">"裝置有可能會意外解鎖，例如有人讓你的手指觸碰到裝置"</string>
@@ -371,7 +371,7 @@
     <string name="about_settings" product="desktop" msgid="7595574154492383452">"關於裝置"</string>
     <string name="about_settings" product="emulator" msgid="1099246296173401003">"關於模擬裝置"</string>
     <string name="install_all_warning" product="tablet" msgid="1732116924846572063">"來歷不明的應用程式可能會損害你的平板電腦和個人資料。安裝這個來源提供的應用程式集表示你同意，如因使用這些應用程式導致你的平板電腦受損或資料遺失，須自行負責。"</string>
-    <string name="install_all_warning" product="default" msgid="4597256179485325694">"不明應用程式較可能導致手機和個人資料遭到攻擊。如果安裝此來源提供的應用程式，即表示你同意自行承擔後續發生的手機受損或資料遺失。"</string>
+    <string name="install_all_warning" product="default" msgid="4597256179485325694">"不明應用程式較可能導致手機和個人資料遭到攻擊。如果安裝此來源提供的應用程式，即表示你同意自行承擔後續可能發生的手機損害或資料遺失。"</string>
     <string name="install_all_warning" product="device" msgid="6293002353591632851">"來歷不明的應用程式可能會損害你的裝置和個人資料。安裝這個來源提供的應用程式即表示你同意，如因使用這些應用程式導致你的裝置受損或資料遺失，須自行負責。"</string>
     <string name="install_all_warning" product="desktop" msgid="6293002353591632851">"來歷不明的應用程式可能會損害你的裝置和個人資料。安裝這個來源提供的應用程式即表示你同意，如因使用這些應用程式導致你的裝置受損或資料遺失，須自行負責。"</string>
     <string name="runningservicedetails_stop_dlg_text" product="tablet" msgid="6321057186549848774">"如果你停用這項服務，你的平板電腦上的某些功能可能無法正常運作，待你重新開機後才會恢復正常。"</string>

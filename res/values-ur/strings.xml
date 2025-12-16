@@ -2900,7 +2900,7 @@
     <string name="manager_battery_usage_allow_background_usage_settings_title" msgid="8150026934645052635">"پس منظر کے استعمال کی اجازت دیں"</string>
     <string name="manager_battery_usage_allow_background_usage_title" msgid="6294649996820358852">"پس منظر کے استعمال کی اجازت دیں"</string>
     <string name="manager_battery_usage_allow_background_usage_summary" msgid="8021153755201340819">"ریئل ٹائم اپ ڈیٹس کے لیے فعال کریں، بیٹری بچانے کے لیے غیر فعال کریں"</string>
-    <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"(پابندی کے بغیر)"</string>
+    <string name="manager_battery_usage_unrestricted_title" msgid="2426486290463258032">"پابندی کے بغیر"</string>
     <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"بہتر کردہ"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"محدود کردہ"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"بغیر کسی پابندی کے پس منظر میں بیٹری کے استعمال کی اجازت دیں۔ بیٹری کا زیادہ استعمال کیا جا سکتا ہے۔"</string>

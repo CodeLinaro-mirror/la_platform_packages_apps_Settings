@@ -2905,7 +2905,7 @@
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"ຈຳກັດ"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"ອະນຸຍາດໃຫ້ມີການໃຊ້ແບັດເຕີຣີໃນພື້ນຫຼັງໂດຍບໍ່ມີການຈຳກັດ. ອາດໃຊ້ແບັດເຕີຣີຫຼາຍຂຶ້ນ."</string>
     <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"ອະນຸຍາດໃຫ້ມີການໃຊ້ແບັດເຕີຣີໃນພື້ນຫຼັງ. ອາດໃຊ້ແບັດເຕີຣີຫຼາຍຂຶ້ນ."</string>
-    <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"ປັບໃຫ້ເໝາະໂດຍອ້າງອີງການໃຊ້ຂອງທ່ານ. ແນະນຳສຳລັບແອັບສ່ວນໃຫຍ່."</string>
+    <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"ປັບການໃຊ້ແບັດເຕີຣີໃຫ້ເໝາະສົມໂດຍອ້າງຕາມການນຳໃຊ້ຂອງທ່ານ. ແນະນຳສຳລັບແອັບສ່ວນໃຫຍ່."</string>
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"ຈຳກັດການໃຊ້ແບັດເຕີຣີໃນຂະນະທີ່ຢູ່ໃນພື້ນຫຼັງ. ແອັບອາດບໍ່ເຮັດວຽກຕາມທີ່ຄາດໄວ້. ການແຈ້ງເຕືອນອາດຫຼ້າຊ້າ."</string>
     <string name="manager_battery_usage_footer" msgid="2635906573922553766">"ການປ່ຽນແປງວິທີທີ່ແອັບໃຊ້ແບັດເຕີຣີຂອງທ່ານສາມາດກະທົບປະສິດທິພາບຂອງມັນໄດ້."</string>
     <string name="manager_battery_usage_footer_limited" msgid="5180776148877306780">"ແອັບນີ້ຕ້ອງການການໃຊ້ແບັດເຕີຣີແບບ <xliff:g id="STATE">%1$s</xliff:g>."</string>

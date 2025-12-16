@@ -341,7 +341,7 @@
     <string name="storage_wizard_migrate_v2_checklist_battery" product="default" msgid="8041162611685970218">"ይህ ስልክ ኃይል መሙላቱን ይቀጥሉ"</string>
     <string name="storage_wizard_migrate_v2_checklist_battery" product="desktop" msgid="3166603241842968388">"ይህን መሣሪያ ኃይል ሞልተው ይቆዩ"</string>
     <string name="main_clear_desc" product="tablet" msgid="5778614597513856716">"ይህ የሚከተሉትንም ጨምሮ ሁሉንም ውሂብ ከእርስዎ ጡባዊ "<b>"ውስጣዊ ማከማቻ"</b>" ይሰርዛል፦\n\n"<li>"የእርስዎ Google መለያ"</li>\n<li>"የሥርዓት እና መተግበሪያ ውሂብ እና ቅንብሮች"</li>\n<li>"የወረዱ መተግበሪያዎች"</li></string>
-    <string name="main_clear_desc" product="default" msgid="1888412491866186706">"ይሄ የሚከተሉትንም ጨምሮ ሁሉንም ውሂብ ከስልክዎ "<b>"ውስጣዊ ማከማቻ"</b>" ይደመስሰዋል፦\n\n"<li>"የእርስዎ Google መለያ"</li>\n<li>"የስርዓት እና መተግበሪያ ውሂብና ቅንብሮች"</li>\n<li>"የወረዱ መተግበሪያዎች"</li></string>
+    <string name="main_clear_desc" product="default" msgid="1888412491866186706">"ይሄ የሚከተሉትንም ጨምሮ ሁሉንም ውሂብ ከስልክዎ "<b>"ውስጣዊ ማከማቻ"</b>" ይደመስሰዋል፦\n\n"<li>"የእርስዎ Google መለያ"</li>\n<li>"የሥርዓት እና መተግበሪያ ውሂብና ቅንብሮች"</li>\n<li>"የወረዱ መተግበሪያዎች"</li></string>
     <string name="main_clear_desc" product="desktop" msgid="405802272460355609">"ይህ የሚከተሉትን ጨምሮ ሁሉንም ውሂብ ከመሣሪያዎ "<b>"ውስጣዊ ማህደረ ትውስታ"</b>" ይደመስሳል፦\n\n"<li>"የእርስዎ Google መለያ"</li>\n<li>"የሥርዓት እና መተግበሪያ ውሂብ እና ቅንብሮች"</li>\n<li>"የወረዱ መተግበሪያዎች"</li></string>
     <string name="main_clear_accounts" product="default" msgid="3604029744509330786">\n\n"እርስዎ በአሁኑ ጊዜ ወደሚከተሉት መለያዎች ገብተዋል፦\n"</string>
     <string name="main_clear_other_users_present" product="default" msgid="7750368595882863399">\n\n"በዚህ መሣሪያ ላይ ያሉ ሌሎች ተጠቃሚዎች አሉ።\n"</string>

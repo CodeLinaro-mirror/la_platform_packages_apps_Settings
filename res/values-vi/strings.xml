@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Cài đặt điều hướng"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Chế độ rung và phản hồi xúc giác"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Kiểm soát cường độ rung cho các mục đích sử dụng khác nhau"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Bật/Kiểm soát mức độ rung cho cuộc gọi, thông báo và chuông báo"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Đang bật / Kiểm soát mức độ rung cho cuộc gọi, thông báo và chuông báo"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Tắt/Kiểm soát mức độ rung cho cuộc gọi, thông báo và chuông báo"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Chế độ cài đặt này bị tắt do thiết bị được đặt ở chế độ im lặng"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Cuộc gọi"</string>
@@ -3768,7 +3768,7 @@
     <string name="live_caption_title" msgid="8617086825712756983">"Phụ đề trực tiếp"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Tạo phụ đề cho cuộc gọi, video và nội dung nghe nhìn khác"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Bật/Tạo phụ đề cho cuộc gọi, video và nội dung nghe nhìn khác"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Tắt/Tạo phụ đề cho cuộc gọi, video và nội dung nghe nhìn khác"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Đang tắt / Tạo phụ đề cho cuộc gọi, video và nội dung nghe nhìn khác"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Tai nghe có dây"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Âm thanh của nội dung nghe nhìn tương thích sẽ trở nên sống động hơn"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Đang tắt"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Chuyển màn hình sáng thành tối và màn hình tối thành sáng"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Phóng to để tăng cỡ chữ nội dung trên màn hình"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Đang tắt"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Tắt/Tuỳ chỉnh cỡ chữ và kiểu chữ của phụ đề"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Đang tắt / Tuỳ chỉnh cỡ chữ và kiểu chữ của phụ đề"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Bật/Tuỳ chỉnh cỡ chữ và kiểu chữ của phụ đề"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Đang tắt"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Đang bật"</string>

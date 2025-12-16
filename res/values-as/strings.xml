@@ -905,7 +905,7 @@
     <string name="lockpassword_password_too_long" msgid="1940345313260498308">"{count,plural, =1{# টা বৰ্ণতকৈ কম হ’বই লাগিব}one{# টা বৰ্ণতকৈ কম হ’বই লাগিব}other{# টা বৰ্ণতকৈ কম হ’বই লাগিব}}"</string>
     <string name="lockpassword_pin_too_long" msgid="1678212054564388576">"{count,plural, =1{# টা সংখ্যাতকৈ কম হ’বই লাগিব}one{# টা সংখ্যাতকৈ কম হ’বই লাগিব}other{# টা সংখ্যাতকৈ কম হ’বই লাগিব}}"</string>
     <string name="lockpassword_pin_recently_used" msgid="6650277060998923465">"ডিভাইচ এডমিনে আপুনি ব্যৱহাৰ কৰা অন্তিমটো পিন আকৌ ব্যৱহাৰ কৰিবলৈ অনুমতি দিয়া নাই"</string>
-    <string name="lockpassword_illegal_character" msgid="3434031212215886433">"কেৱল বৈধ বৰ্ণহে দিয়ক"</string>
+    <string name="lockpassword_illegal_character" msgid="3434031212215886433">"ইয়াত অমান্য বৰ্ণসংখ্যা থাকিব নোৱাৰিব"</string>
     <string name="lockpassword_password_requires_letters" msgid="7058340182953750553">"{count,plural, =1{অতি কমেও ১ টা বৰ্ণ থাকিবই লাগিব}one{অতি কমেও # টা বৰ্ণ থাকিবই লাগিব}other{অতি কমেও # টা বৰ্ণ থাকিবই লাগিব}}"</string>
     <string name="lockpassword_password_requires_lowercase" msgid="3286121470522077547">"{count,plural, =1{অতি কমেও ১ টা সৰুফলা বৰ্ণ থাকিবই লাগিব}one{অতি কমেও # টা সৰুফলা বৰ্ণ থাকিবই লাগিব}other{অতি কমেও # টা সৰুফলা বৰ্ণ থাকিবই লাগিব}}"</string>
     <string name="lockpassword_password_requires_uppercase" msgid="720312543910397772">"{count,plural, =1{অতি কমেও ১ টা বৰফলা বৰ্ণ থাকিবই লাগিব}one{অতি কমেও # টা বৰফলা বৰ্ণ থাকিবই লাগিব}other{অতি কমেও # টা বৰফলা বৰ্ণ থাকিবই লাগিব}}"</string>
@@ -2287,7 +2287,7 @@
     <string name="action_corner_bottom_right_title" msgid="7222233500548465684">"একেবাৰে তলৰ সোঁফালৰ কোণ"</string>
     <string name="action_corner_top_left_title" msgid="4633975226092344210">"একেবাৰে ওপৰৰ বাওঁফালৰ কোণ"</string>
     <string name="action_corner_top_right_title" msgid="4995999693840776032">"একেবাৰে ওপৰৰ সোঁফালৰ কোণ"</string>
-    <string name="action_corner_action_none" msgid="5203163099950649999">"নাই"</string>
+    <string name="action_corner_action_none" msgid="5203163099950649999">"একো নাই"</string>
     <string name="action_corner_action_home" msgid="6779642573582379579">"গৃহপৃষ্ঠা"</string>
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"শেহতীয়া এপ্‌"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"জাননী"</string>
@@ -2621,7 +2621,7 @@
     <string name="accessibility_setting_item_control_timeout_title" msgid="1600516937989217899">"কার্য কৰাৰ সময় (সাধ্য সুবিধা সময় উকলিব)"</string>
     <string name="accessibility_control_timeout_about_title" msgid="813588002683460837">"কার্যব্যৱস্থা ল’বলৈ লগা সময় (সাধ্য সুবিধাৰ সময় ওকলা)ৰ বিষয়ে"</string>
     <string name="accessibility_control_timeout_footer_learn_more_content_description" msgid="8118584413220542193">"কার্যব্যৱস্থা ল’বলৈ লগা সময় (সাধ্য সুবিধাৰ সময় ওকলা)ৰ বিষয়ে অধিক জানক"</string>
-    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"কার্যপন্থা লোৱাৰ সময়"</string>
+    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"কাৰ্যব্যৱস্থা লোৱাৰ সময়"</string>
     <string name="accessibility_control_timeout_preference_summary" msgid="4037051091059316310">"এই সময়ৰ অগ্ৰাধিকাৰসমূহ আটাইবোৰ মিডিয়া এপে সমৰ্থন নকৰে"</string>
     <string name="accessibility_control_timeout_preference_intro_text" msgid="1398116710556762245">"আপোনাক কোনো কাৰ্যপন্থা গ্ৰহণ কৰিবলৈ কোৱা অস্থায়ী বাৰ্তা কিমান সময় প্ৰদৰ্শন কৰিব খোজে সেয়া বাছনি কৰক"</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"স্পৰ্শ কৰি হেঁচি ধৰি থকাৰ সময়"</string>
@@ -4530,7 +4530,7 @@
     <string name="ignore_optimizations_off" msgid="9186557038453586295">"Optimize"</string>
     <string name="ignore_optimizations_on_desc" msgid="1280043916460939932">"আপোনাৰ বেটাৰী খৰকৈ শেষ কৰিব পাৰে। এপ্‌টোক নেপথ্যত বেটাৰী ব্যৱহাৰ কৰাত আৰু বাধা দিয়া নহ’ব।"</string>
     <string name="ignore_optimizations_off_desc" msgid="3324571675983286177">"বেটাৰীৰ অৱস্থা উন্নত কৰাৰ বাবে পৰামৰ্শ দিয়া হৈছে"</string>
-    <string name="app_list_preference_none" msgid="1635406344616653756">"এটাও নহয়"</string>
+    <string name="app_list_preference_none" msgid="1635406344616653756">"এটাও নাই"</string>
     <string name="work_profile_usage_access_warning" msgid="7579246573371327219">"এই এপৰ বাবে এপে ব্যৱহাৰ কৰা ডেটা অফ কৰিলেও আপোনাৰ প্ৰশাসকক আপোনাৰ কৰ্মস্থানৰ প্ৰ’ফাইলত থকা এপ্‌সমূহৰ ডেটা ব্যৱহাৰ ট্ৰেক কৰাত বাধা নিদিয়ে"</string>
     <string name="draw_overlay" msgid="7902083260500573027">"অন্য এপ্‌সমূহত দেখুৱাওক"</string>
     <string name="system_alert_window_settings" msgid="6458633954424862521">"অন্য এপ্‌সমূহত দেখুৱাওক"</string>

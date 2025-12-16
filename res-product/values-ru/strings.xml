@@ -351,8 +351,8 @@
     <string name="erase_external_storage" product="default" msgid="645024170825543458">"Очистить SD-карту"</string>
     <string name="erase_external_storage_description" product="nosdcard" msgid="6285187323873212966">"Удалить с USB-накопителя музыку, фотографии и все остальные данные."</string>
     <string name="erase_external_storage_description" product="default" msgid="3294267929524578503">"Удалить с SD-карты все данные, в том числе музыку и фотографии"</string>
-    <string name="main_clear_button_text" product="tablet" msgid="3763748694468489783">"Удалить"</string>
-    <string name="main_clear_button_text" product="default" msgid="3763748694468489783">"Удалить"</string>
+    <string name="main_clear_button_text" product="tablet" msgid="3763748694468489783">"Удалить все данные"</string>
+    <string name="main_clear_button_text" product="default" msgid="3763748694468489783">"Удалить все данные"</string>
     <string name="usb_tethering_subtext" product="default" msgid="5969806206311342779">"Открыть доступ к интернет-подключению телефона через USB"</string>
     <string name="usb_tethering_subtext" product="tablet" msgid="4550828946207155142">"Открыть доступ к интернет-подключению планшета через USB"</string>
     <string name="usb_tethering_subtext" product="device" msgid="6586391707794559573">"Делиться интернетом с устройства через USB"</string>
@@ -517,7 +517,7 @@
     <string name="audio_sharing_dialog_share_more_content" product="tablet" msgid="7742344946644657414">"Музыка и видео на этом планшете будут воспроизводиться через подключенные наушники."</string>
     <string name="audio_sharing_dialog_share_more_content" product="device" msgid="3409470560712324580">"Музыка и видео на этом устройстве будут воспроизводиться через подключенные наушники."</string>
     <string name="audio_sharing_dialog_share_more_content" product="desktop" msgid="3409470560712324580">"Музыка и видео на этом устройстве будут воспроизводиться через подключенные наушники."</string>
-    <string name="audio_streams_dialog_no_le_device_subtitle" product="default" msgid="1388450179345665604">"Для воспроизведения аудиопотока подключите к телефону наушники с поддержкой LE Audio."</string>
+    <string name="audio_streams_dialog_no_le_device_subtitle" product="default" msgid="1388450179345665604">"Сначала подключите к телефону наушники с поддержкой LE Audio."</string>
     <string name="audio_streams_dialog_no_le_device_subtitle" product="tablet" msgid="6577207951269720001">"Для воспроизведения аудиопотока подключите к планшету наушники с поддержкой LE Audio."</string>
     <string name="audio_streams_dialog_no_le_device_subtitle" product="device" msgid="6192141045820029654">"Для воспроизведения аудиопотока подключите к устройству наушники с поддержкой LE Audio."</string>
     <string name="audio_streams_dialog_no_le_device_subtitle" product="desktop" msgid="6192141045820029654">"Для воспроизведения аудиопотока подключите к устройству наушники с поддержкой LE Audio."</string>

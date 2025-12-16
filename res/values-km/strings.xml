@@ -2774,7 +2774,7 @@
     <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"មិនមានសម្រាប់មុខងារមាត្រដ្ឋាន​ពណ៌ប្រផេះ ឬនៅពេលការ​កែតម្រូវ​ពណ៌ត្រូវបានបិទ"</string>
     <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"អ្នកមើល​មិនឃើញ​ពណ៌បៃតង"</string>
     <string name="daltonizer_mode_protanomaly_summary" msgid="877971556622350648">"អ្នកមើល​មិនឃើញ​ពណ៌ក្រហម"</string>
-    <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"ខ្វាក់ពណ៌ខៀវ"</string>
+    <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"អ្នកមើល​មិនឃើញ​ពណ៌ខៀវ"</string>
     <string name="reduce_bright_colors_preference_title" msgid="2249314004651574997">"ងងឹតខ្លាំង"</string>
     <string name="reduce_bright_colors_switch_title" msgid="1751678397884065312">"ធ្វើឱ្យ​អេក្រង់ងងឹតខ្លាំង"</string>
     <string name="reduce_bright_colors_shortcut_title" msgid="495648157059202745">"ផ្លូវកាត់នៃមុខងារងងឹតខ្លាំង"</string>

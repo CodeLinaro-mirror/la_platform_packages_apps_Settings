@@ -1510,7 +1510,7 @@
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Optillen om te activeren"</string>
     <string name="screensaver_restrict_to_wireless_charging_title" msgid="8016059995446029358">"Beperken tot draadloos opladen"</string>
     <string name="blur_switch" msgid="1391073945502754948">"Vervagingseffecten verminderen"</string>
-    <string name="blur_switch_summary" msgid="5025895302219948597">"Achtergronden en deelvensters beter zichtbaar maken"</string>
+    <string name="blur_switch_summary" msgid="5025895302219948597">"Maak achtergronden en deelvensters beter zichtbaar"</string>
     <string name="blur_switch_disabled_summary" msgid="4664341513589412290">"Tijdelijk uit vanwege Batterijbesparing"</string>
     <string name="low_light_display_behavior_main_switch_title" msgid="7138165032358139627">"Modus voor weinig licht gebruiken"</string>
     <string name="low_light_display_behavior_subtitle" msgid="1833984014035605413">"Kies wat je wilt bekijken in de modus voor weinig licht"</string>
@@ -1869,7 +1869,7 @@
     <string name="safety_and_regulatory_info" msgid="8285048080439298528">"Handleiding voor veiligheid/regelgeving"</string>
     <string name="copyright_title" msgid="83245306827757857">"Auteursrecht"</string>
     <string name="license_title" msgid="8745742085916617540">"Licentie"</string>
-    <string name="module_license_title" msgid="8705484239826702828">"Licenties voor systeemupdates van Google Play"</string>
+    <string name="module_license_title" msgid="8705484239826702828">"Licenties voor systeemupdates van Google Play"</string>
     <string name="terms_title" msgid="2071742973672326073">"Algemene voorwaarden"</string>
     <string name="webview_license_title" msgid="5832692241345780517">"Systeemlicentie voor WebView"</string>
     <string name="wallpaper_attributions" msgid="4323659759250650736">"Credits voor achtergrond"</string>
@@ -1891,7 +1891,7 @@
     <string name="lockpassword_choose_your_pattern_header_for_fingerprint" msgid="4707788269512303400">"Patroon bij gebruik van vingerafdruk"</string>
     <string name="lockpassword_choose_your_pin_message" msgid="7230665212172041837">"Stel een pincode in voor betere beveiliging"</string>
     <string name="lockpassword_choose_your_pin_header_for_fingerprint" msgid="2783879743691792556">"Pincode bij gebruik van vingerafdruk"</string>
-    <string name="lockpassword_confirm_your_password_header" msgid="4988519671035171367">"Voer je apparaatwachtwoord in"</string>
+    <string name="lockpassword_confirm_your_password_header" msgid="4988519671035171367">"Voer je apparaat­wachtwoord in"</string>
     <string name="lockpassword_reenter_your_password_header" msgid="7257189484651655897">"Geef je wachtwoord opnieuw op"</string>
     <string name="lockpassword_reenter_your_profile_password_header" msgid="3812040127714827685">"Voer wachtwoord werkprofiel opnieuw in"</string>
     <string name="lockpassword_confirm_your_work_password_header" msgid="4647071231702288305">"Voer het wachtwoord van je werkprofiel in"</string>
@@ -2389,7 +2389,7 @@
     <string name="general_category_title" msgid="6298579528716834157">"Algemeen"</string>
     <string name="display_category_title" msgid="6638191682294461408">"Scherm"</string>
     <string name="accessibility_color_and_motion_title" msgid="1085072332445818494">"Kleur en beweging"</string>
-    <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"Donker thema, kleurcorrectie, animaties verwijderen"</string>
+    <string name="accessibility_color_and_motion_subtext" msgid="1150281881647191503">"Verwijder donker thema, kleurcorrectie, animaties"</string>
     <string name="accessibility_pointer_and_touchpad_title" msgid="5703454643194245909">"Toegankelijkheid van cursor en touchpad"</string>
     <string name="accessibility_pointer_and_touchpad_summary" msgid="8588221231953604340">"Grootte, kleur, type"</string>
     <string name="accessibility_pointer_color_customization_title" msgid="2841888132681075999">"Kleur van cursor"</string>
@@ -2564,7 +2564,7 @@
     <string name="accessibility_screen_magnification_gesture_navigation_warning" msgid="991017769735632046">"Het toegankelijkheidsgebaar is ingesteld op <xliff:g id="SERVICE">%1$s</xliff:g>. Als je vergroting wilt gebruiken, swipe je met twee vingers omhoog vanaf het onderkant van het scherm en houd je vast. Selecteer vervolgens Vergroting."</string>
     <string name="accessibility_global_gesture_preference_title" msgid="8866765674372344850">"Snelkoppeling met volumeknoppen"</string>
     <string name="accessibility_shortcut_settings" msgid="836783442658447995">"Instellingen voor snelkoppelingen"</string>
-    <string name="accessibility_shortcut_service_on_lock_screen_title" msgid="2301019277262462426">"Snelkoppeling met volumetoetsen vanaf vergrendelscherm"</string>
+    <string name="accessibility_shortcut_service_on_lock_screen_title" msgid="2301019277262462426">"Snelkoppeling met volumeknoppen vanaf vergrendelscherm"</string>
     <string name="accessibility_shortcut_description" msgid="2184693606202133549">"Sta toe dat de functiesnelkoppeling wordt aangezet vanaf het vergrendelscherm. Houd beide volumeknoppen een paar seconden ingedrukt."</string>
     <string name="accessibility_button_title" msgid="5251235485581552614">"Toegankelijkheidsknop"</string>
     <string name="accessibility_button_intro_text" msgid="80993874471745687">"Krijg snel vanaf elk scherm toegang tot toegankelijkheidsfuncties"</string>
@@ -2667,8 +2667,8 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Navigatie-instellingen"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Trillen en haptische technologie"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"De trillingssterkte beheren voor verschillende typen gebruik"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Aan / Trillingsniveaus voor gesprekken, meldingen en wekkers beheren"</string>
-    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Uit / Trillingsniveaus voor gesprekken, meldingen en wekkers beheren"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Aan/Beheer trillingsniveaus voor gesprekken, meldingen en wekkers"</string>
+    <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Uit/Beheer trillingsniveaus voor gesprekken, meldingen en wekkers"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Instelling staat uit omdat het apparaat op stil staat"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Gesprekken"</string>
     <string name="accessibility_notification_alarm_vibration_category_title" msgid="2683635252414849417">"Meldingen en wekkers"</string>
@@ -2718,7 +2718,7 @@
     <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"Als je dit wilt gebruiken, zet je de snelkoppeling %1$s aan op de pagina van een toegankelijkheidsfunctie"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Doorgaan"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Hoortoestellen"</string>
-    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Stel ASHA- en LE Audio-hoortoestellen, cochleaire implantaten en andere versterkingsapparaten in en beheer die"</string>
+    <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Stel ASHA- en LE Audio-hoortoestellen, cochleaire implantaten en andere versterkingsapparaten in en bedien die"</string>
     <string name="accessibility_hearingaid_asha_only_intro" msgid="7402419984664822832">"Stel ASHA-hoortoestellen, cochleaire implantaten en andere versterkingsapparaten in en beheer die"</string>
     <string name="accessibility_hearingaid_hap_only_intro" msgid="3332144138443825311">"Stel LE Audio-hoortoestellen, cochleaire implantaten en andere versterkingsapparaten in en beheer die"</string>
     <string name="accessibility_hearingaid_not_connected_summary" msgid="3534747218670001784">"Stel hoortoestellen en andere versterkingsapparaten in en beheer deze"</string>
@@ -2904,7 +2904,7 @@
     <string name="manager_battery_usage_optimized_title" msgid="8080765739761921817">"Geoptimaliseerd"</string>
     <string name="manager_battery_usage_restricted_title" msgid="7702863764130323118">"Beperkt"</string>
     <string name="manager_battery_usage_unrestricted_summary" msgid="6819279865465667692">"Sta batterijgebruik op de achtergrond toe zonder beperkingen. Dit kan meer batterijlading verbruiken."</string>
-    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"Batterijgebruik op de achtergrond toestaan. Dit kan meer batterijlading verbruiken."</string>
+    <string name="manager_battery_usage_unrestricted_summary_v2" msgid="7857049686332197528">"Sta batterijgebruik op de achtergrond toe. Dit kan meer batterijlading verbruiken."</string>
     <string name="manager_battery_usage_optimized_summary" msgid="1332545476428039900">"Optimaliseer op basis van je gebruik. Aanbevolen voor de meeste apps."</string>
     <string name="manager_battery_usage_restricted_summary" msgid="8324695640704416905">"Beperk batterijgebruik op de achtergrond. De app werkt misschien niet zoals verwacht. Meldingen kunnen vertraagd zijn."</string>
     <string name="manager_battery_usage_footer" msgid="2635906573922553766">"Als je aanpast hoe een app de batterij gebruikt, kan dit de prestaties van die app beïnvloeden."</string>
@@ -3108,7 +3108,7 @@
     <string name="on_device_recognition_settings" msgid="6503160369314598069">"Instellingen voor herkenning op het apparaat"</string>
     <string name="on_device_recognition_settings_title" msgid="7137599722039096545">"Herkenning op het apparaat"</string>
     <string name="on_device_recognition_settings_summary" msgid="3292736423223499348">"Spraakherkenning op het apparaat"</string>
-    <string name="tts_subtext" msgid="8958790811881046789">"Spreeksnelheid en toonhoogte aanpassen"</string>
+    <string name="tts_subtext" msgid="8958790811881046789">"Pas spreeksnelheid en toonhoogte aan"</string>
     <string name="tts_engine_preference_title" msgid="7808775764174571132">"Voorkeursengine"</string>
     <string name="tts_engine_settings_title" msgid="1298093555056321577">"Engine-instellingen"</string>
     <string name="tts_sliders_title" msgid="6901146958648426181">"Spreeksnelheid en toonhoogte"</string>
@@ -3767,8 +3767,8 @@
     <string name="work_profile_sound_category_title" msgid="1708926655170323454">"Geluid voor werkprofiel"</string>
     <string name="live_caption_title" msgid="8617086825712756983">"Live ondertiteling"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Ondertiteling voor doven en slechthorenden krijgen voor gesprekken, video\'s en andere media"</string>
-    <string name="live_caption_on_summary" msgid="8921561021882989495">"Aan / Ondertiteling voor doven en slechthorenden krijgen voor gesprekken, video\'s en andere media"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Uit / Ondertiteling voor doven en slechthorenden krijgen voor gesprekken, video\'s en andere media"</string>
+    <string name="live_caption_on_summary" msgid="8921561021882989495">"Aan/Krijg ondertiteling voor doven en slechthorenden voor gesprekken, video\'s en andere media"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Uit/Krijg ondertiteling voor doven en slechthorenden voor gesprekken, video\'s en andere media"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Bedrade koptelefoon"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"Compatibele media leveren een royaler geluid"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Uit"</string>
@@ -4140,7 +4140,7 @@
     <string name="notification_content_block_title" msgid="6689085826061361351">"Meldingen tonen"</string>
     <string name="notification_content_block_summary" msgid="329171999992248925">"Nooit meldingen tonen in het meldingenpaneel of op randapparaten"</string>
     <string name="app_notification_fsi_permission_title" msgid="2260977598430154428">"Meldingen op volledig scherm toestaan"</string>
-    <string name="app_notification_fsi_permission_summary" msgid="7673487977631068039">"Meldingen op volledig scherm toestaan als het apparaat is vergrendeld"</string>
+    <string name="app_notification_fsi_permission_summary" msgid="7673487977631068039">"Sta meldingen op volledig scherm toe als het apparaat is vergrendeld"</string>
     <string name="notification_badge_title" msgid="6854537463548411313">"Meldingsstipje toestaan"</string>
     <string name="notification_channel_badge_title" msgid="6505542437385640049">"Meldingsstipje tonen"</string>
     <string name="app_notification_override_dnd_title" msgid="3769539356442226691">"Niet storen negeren"</string>
@@ -5724,8 +5724,8 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Vingerafdruksensor"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Meldingen met flits"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Over meldingen met flits"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Uit: krijg een melding met een camera- of schermflits voor meldingen en alarmen"</string>
-    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Aan: krijg een melding met een camera- of schermflits voor meldingen en alarmen"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Uit/Krijg een melding met een camera- of schermflits voor meldingen en alarmen"</string>
+    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Aan/Krijg een melding met een camera- of schermflits voor meldingen en alarmen"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"Laat de camera of het scherm flitsen als je meldingen krijgt of als er alarmen afgaan"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Laat het scherm flitsen als je meldingen krijgt of als er alarmen klinken"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"Wees voorzichtig met het gebruik van meldingen met flits als je gevoelig bent voor licht"</string>
@@ -5763,8 +5763,8 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Maakt lichte schermen donker en donkere schermen licht"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Zoom in om content groter te maken op je scherm"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Uit"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Uit / Grootte en stijl van ondertiteling aanpassen"</string>
-    <string name="show_captions_enabled" msgid="3495595825041704052">"Aan / Grootte en stijl van ondertiteling aanpassen"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Uit/Pas de grootte en stijl van ondertiteling aan"</string>
+    <string name="show_captions_enabled" msgid="3495595825041704052">"Aan/Pas de grootte en stijl van ondertiteling aan"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Uit"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Aan"</string>
     <string name="audio_seek_bar_state_left_first" msgid="1641359989891833888">"Audio <xliff:g id="PERCENT_LEFT">%1$s</xliff:g> links, <xliff:g id="PERCENT_RIGHT">%2$s</xliff:g> rechts"</string>
@@ -5885,7 +5885,7 @@
     <string name="audio_streams_listening_now" msgid="4205614429222949176">"Nu luisteren"</string>
     <string name="audio_streams_present_now" msgid="7519818719382756366">"Streamen onderbroken"</string>
     <string name="audio_streams_media_service_notification_leave_broadcast_text" msgid="4938656134300913647">"Stoppen met luisteren"</string>
-    <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"Een geschikte koptelefoon verbinden"</string>
+    <string name="audio_streams_dialog_no_le_device_title" msgid="3931163990976742282">"Verbind een geschikte koptelefoon"</string>
     <string name="audio_streams_dialog_turn_off_talkback_title" msgid="6824585115302786690">"TalkBack tijdelijk uitzetten"</string>
     <string name="audio_streams_dialog_turn_off_talkback_subtitle" msgid="2394295776096273919">"TalkBack kan niet worden gebruikt als je naar audiostreams luistert. Zet TalkBack uit om te beginnen met luisteren."</string>
     <string name="audio_streams_dialog_turn_off_talkback_button" msgid="8049097689955037626">"Uitzetten"</string>

@@ -531,7 +531,7 @@
     <string name="security_settings_remoteauth_enroll_introduction_youre_in_control_title" msgid="7974976673323638524">"ଆପଣଙ୍କ ନିୟନ୍ତ୍ରଣରେ ଅଛି"</string>
     <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"ଆପଣ ସେଟିଂସରେ ଯେ କୌଣସି ସମୟରେ ୱାଚ ଅନଲକରୁ ଆପଣଙ୍କ ୱାଚକୁ କାଢ଼ି ଦେଇପାରିବେ"</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_tap_notification" msgid="1597397399097952974">"ଏକ ବିଜ୍ଞପ୍ତିରେ ଟାପ କରନ୍ତୁ"</string>
-    <string name="security_settings_remoteauth_enroll_introduction_animation_swipe_up" msgid="2129230804324634653">"ଲକ ସ୍କ୍ରିନରେ ଉପରକୁ ସ୍ୱାଇପ କରନ୍ତୁ"</string>
+    <string name="security_settings_remoteauth_enroll_introduction_animation_swipe_up" msgid="2129230804324634653">"ଲକ ସ୍କ୍ରିନରେ ଉପରକୁ ସ୍ୱାଇପ କରନ୍ତି"</string>
     <string name="security_settings_remoteauth_enroll_enrolling_title" msgid="313016997943607675">"ଆପଣଙ୍କ ୱାଚ ବାଛନ୍ତୁ"</string>
     <string name="security_settings_remoteauth_enroll_enrolling_list_heading" msgid="8227585438932911013">"ଉପଲବ୍ଧ ୱାଚଗୁଡ଼ିକ"</string>
     <string name="security_settings_remoteauth_enroll_enrolling_disagree" msgid="1670201454188049863">"ବାତିଲ କରନ୍ତୁ"</string>
@@ -1743,7 +1743,7 @@
     <string name="restore_default_apn" msgid="6596048535642130689">"ଡିଫଲ୍ଟ APN ସେଟିଂସ ରିଷ୍ଟୋର ହେଉଛି"</string>
     <string name="menu_restore" msgid="4310539620115151551">"ଡିଫଲ୍ଟରେ ରିସେଟ୍‌ କରନ୍ତୁ"</string>
     <string name="restore_default_apn_completed" msgid="5167505087078340256">"ଡିଫଲ୍ଟ APN ସେଟିଂସ ରିସେଟ ସରିଯାଇଛି।"</string>
-    <string name="reset_dashboard_title" msgid="7423200250697886918">"ବିକଳ୍ପଗୁଡ଼ିକ ରିସେଟ କରନ୍ତୁ"</string>
+    <string name="reset_dashboard_title" msgid="7423200250697886918">"ରିସେଟ ବିକଳ୍ପ"</string>
     <string name="reset_mobile_network_settings_title" msgid="5616713931258506842">"ମୋବାଇଲ ନେଟୱାର୍କ ସେଟିଂସ ରିସେଟ କରନ୍ତୁ"</string>
     <string name="reset_mobile_network_settings_desc" msgid="7292636387692165727">"ଏହା ସମସ୍ତ ମୋବାଇଲ ନେଟୱାର୍କ ସେଟିଂସକୁ ରିସେଟ କରିବ"</string>
     <string name="reset_mobile_network_settings_confirm_title" msgid="7510965634669511241">"ମୋବାଇଲ ନେଟୱାର୍କ ସେଟିଂସ ରିସେଟ କରିବେ?"</string>
@@ -1859,7 +1859,7 @@
     <string name="location_time_zone_detection_not_allowed" msgid="8264525161514617051">"ଲୋକେସନ୍ ଟାଇମ୍ ଜୋନ୍ ଚିହ୍ନଟକରଣ ପରିବର୍ତ୍ତନଗୁଡ଼ିକୁ ଅନୁମତି ଦିଆଯାଇନାହିଁ"</string>
     <string name="location_time_zone_detection_auto_is_on" msgid="1837317773761632655">"ଯଦି ଆପଣଙ୍କ ଡିଭାଇସ ଲୋକେସନ ଉପଲବ୍ଧ ଅଛି, ତେବେ ଏହାକୁ ଆପଣଙ୍କ ଟାଇମ ଜୋନ ସେଟ କରିବା ପାଇଁ ବ୍ୟବହାର କରାଯାଇପାରେ"</string>
     <string name="time_notifications_title" msgid="8654754577463543558">"ବିଜ୍ଞପ୍ତି"</string>
-    <string name="time_zone_change_notifications_toggle_title" msgid="1043535997768918630">"ଟାଇମ ଜୋନ ପରିବର୍ତ୍ତନ କରନ୍ତୁ"</string>
+    <string name="time_zone_change_notifications_toggle_title" msgid="1043535997768918630">"ଟାଇମ ଜୋନ ପରିବର୍ତ୍ତନ"</string>
     <string name="time_zone_change_notifications_toggle_summary" msgid="3262043415408639456">"ଆପଣଙ୍କର ଟାଇମ ଜୋନ ସ୍ୱତଃ ଅପଡେଟ ହେଲେ ଏକ ବିଜ୍ଞପ୍ତି ପାଇବେ"</string>
     <string name="keywords_time_notification_category" msgid="2835103450233237372">"ବିଜ୍ଞପ୍ତି, ଟାଇମ, ଜୋନ, ଟାଇମଜୋନ"</string>
     <string name="about_settings_summary" msgid="4831942939227432513">"ଆଇନଗତ ସୂଚନା, ଷ୍ଟେଟସ୍, ସଫ୍ଟୱେର୍‌ ଭର୍ସନ୍‌ ଦେଖନ୍ତୁ"</string>
@@ -2452,7 +2452,7 @@
     <string name="accessibility_magnification_cursor_following_continuous" msgid="1119319218662522794">"ମାଉସକୁ ମୁଭ କରିବା ସମୟରେ ସ୍କ୍ରିନକୁ କ୍ରମାଗତ ଭାବେ ମୁଭ କରନ୍ତୁ"</string>
     <string name="accessibility_magnification_cursor_following_center" msgid="3504798009192014460">"ମାଉସକୁ ସ୍କ୍ରିନର କେନ୍ଦ୍ରରେ ରଖି ସ୍କ୍ରିନକୁ ମୁଭ କରନ୍ତୁ"</string>
     <string name="accessibility_magnification_cursor_following_edge" msgid="8675207762416655758">"ମାଉସ ସ୍କ୍ରିନର ଧାରଗୁଡ଼ିକୁ ସ୍ପର୍ଶ କରିବା ସମୟରେ ସ୍କ୍ରିନକୁ ମୁଭ କରନ୍ତୁ"</string>
-    <string name="accessibility_screen_magnification_follow_typing_title" msgid="494025442124701045">"ଟାଇପିଂକୁ ଅନୁସରଣ କରନ୍ତୁ"</string>
+    <string name="accessibility_screen_magnification_follow_typing_title" msgid="494025442124701045">"ଟାଇପିଂକୁ ଫଲୋ କରନ୍ତୁ"</string>
     <string name="accessibility_screen_magnification_follow_typing_summary" msgid="2678347754211619662">"ଆପଣ ଟାଇପ କରିବା ବେଳେ ମେଗ୍ନିଫାୟର ଟେକ୍ସଟକୁ ଫଲୋ କରେ"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_title" msgid="3412060515554192262">"କୀବୋର୍ଡ ଫୋକସକୁ ଫଲୋ କରନ୍ତୁ"</string>
     <string name="accessibility_screen_magnification_follow_keyboard_summary" msgid="2379353603675828805">"ଆପଣ ଆପଣଙ୍କ କୀବୋର୍ଡ ମାଧ୍ୟମରେ ନାଭିଗେଟ କରିବା ସମୟରେ ମେଗ୍ନିଫାୟର ଫୋକସ କରାଯାଇଥିବା ଆଇଟମକୁ ଫଲୋ କରେ"</string>
@@ -2624,7 +2624,7 @@
     <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"ପଦକ୍ଷେପ ନେବାର ସମୟ"</string>
     <string name="accessibility_control_timeout_preference_summary" msgid="4037051091059316310">"ଏହି ଟାଇମିଂ ପସନ୍ଦ ସମସ୍ତ ଆପ ଦ୍ୱାରା ସମର୍ଥିତ ନୁହେଁ"</string>
     <string name="accessibility_control_timeout_preference_intro_text" msgid="1398116710556762245">"ଆପଣଙ୍କୁ ପଦକ୍ଷେପ ନେବା ପାଇଁ କହୁଥିବା ଅସ୍ଥାୟୀ ମେସେଜଗୁଡ଼ିକ କେତେ ସମୟ ଦେଖାଯିବ ତାହା ବାଛନ୍ତୁ"</string>
-    <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"ସ୍ପର୍ଶକରି ଦବାଇ ରଖିବା"</string>
+    <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"ସ୍ପର୍ଶକରି ଦବାଇ ରଖିବା ବିଳମ୍ବ"</string>
     <string name="accessibility_display_inversion_preference_title" msgid="5476133104746207952">"ରଙ୍ଗ ଇନଭର୍ସନ"</string>
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"କଲର ଇନଭର୍ସନ ବ୍ୟବହାର କରନ୍ତୁ"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"କଲର ଇନଭର୍ସନ ପାଇଁ ସର୍ଟକଟ"</string>
@@ -3297,7 +3297,7 @@
     <string name="data_usage_tab_3g" msgid="6111070409752123049">"2G-3G"</string>
     <string name="data_usage_list_mobile" msgid="3738130489722964291">"ମୋବାଇଲ୍‌"</string>
     <string name="data_usage_list_none" msgid="2091924522549134855">"କିଛି ନୁହେଁ"</string>
-    <string name="data_usage_enable_mobile" msgid="1996943748103310201">"ମୋବାଇଲ୍‌ ଡାଟା"</string>
+    <string name="data_usage_enable_mobile" msgid="1996943748103310201">"ମୋବାଇଲ ଡାଟା"</string>
     <string name="data_usage_enable_3g" msgid="2818189799905446932">"2G-3G ଡାଟା"</string>
     <string name="data_usage_enable_4g" msgid="1526584080251993023">"4G ଡାଟା"</string>
     <string name="data_roaming_enable_mobile" msgid="5745287603577995977">"ରୋମିଙ୍ଗ"</string>
@@ -5519,7 +5519,7 @@
     <string name="disable_screen_share_protections_for_apps_and_notifications" msgid="4987116103699222633">"ସ୍କ୍ରିନ ସେୟାର ସୁରକ୍ଷାଗୁଡ଼ିକୁ ଅକ୍ଷମ କରନ୍ତୁ"</string>
     <string name="disable_screen_share_protections_for_apps_and_notifications_summary" msgid="5379583403909210858">"ଆଗାମୀ ସ୍କ୍ରିନ ସେୟାର ସେସନଗୁଡ଼ିକ ପାଇଁ ସମ୍ବେଦନଶୀଳ ଆପର ବିଷୟବସ୍ତୁ ପାଇଁ ସିଷ୍ଟମ ସୁରକ୍ଷାକୁ ବନ୍ଦ କରନ୍ତୁ"</string>
     <string name="media_controls_title" msgid="403271085636252597">"ମିଡିଆ"</string>
-    <string name="media_controls_resume_title" msgid="855076860336652370">"ମିଡିଆ ପ୍ଲେୟାରରେ ପିନ୍ କରନ୍ତୁ"</string>
+    <string name="media_controls_resume_title" msgid="855076860336652370">"ମିଡିଆ ପ୍ଲେୟାର ପିନ କରନ୍ତୁ"</string>
     <string name="media_controls_resume_description" msgid="3163482266454802097">"ଶୀଘ୍ର ପ୍ଲେବ୍ୟାକ ପୁଣି ଆରମ୍ଭ କରିବାକୁ କ୍ୱିକ୍ ସେଟିଂସରେ ମିଡିଆ ପ୍ଲେୟାର ଖୋଲା ରହିଥାଏ"</string>
     <string name="media_controls_lockscreen_title" msgid="2188311721857512510">"ଲକ ସ୍କ୍ରିନରେ ମିଡିଆ ଦେଖାନ୍ତୁ"</string>
     <string name="media_controls_lockscreen_description" msgid="3320333660404439510">"ଶୀଘ୍ର ପ୍ଲେବେକକୁ ରିଜ୍ୟୁମ କରିବା ପାଇଁ ଲକ ସ୍କ୍ରିନରେ ମିଡିଆ ପ୍ଲେୟାର ଖୋଲା ରହିଥାଏ"</string>

@@ -944,7 +944,7 @@
     <string name="bluetooth_pairing_phonebook_toggle_text" msgid="2474015367387690034">"संपर्क आणि कॉल इतिहासाच्या अ‍ॅक्सेसचीदेखील अनुमती द्या"</string>
     <string name="bluetooth_pairing_phonebook_toggle_details" msgid="1367197978487212581">"कॉल घोषणा आणि आणखी बऱ्याच गोष्टींसाठी माहिती वापरली जाईल"</string>
     <string name="bluetooth_pairing_confirmation_title" msgid="3359642089708714808">"पेअरिंग कोड तपासणे"</string>
-    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"हा कोड <xliff:g id="DEVICE_NAME">%1$s</xliff:g> वर असणाऱ्या कोडशी जुळतो की नाही ते तपासा.\n\nतुमच्या सुरक्षिततेसाठी, हा कोड कुठेही टाकू नका."</string>
+    <string name="bluetooth_pairing_confirmation_msg" msgid="8204761740738350792">"हा कोड <xliff:g id="DEVICE_NAME">%1$s</xliff:g> वर असणाऱ्या कोडशी जुळतो की नाही ते तपासा.\n\nतुमच्या सुरक्षिततेसाठी, हा कोड कुठेही एंटर करू नका."</string>
     <string name="bluetooth_error_title" msgid="2284738188253690278"></string>
     <string name="bluetooth_connecting_error_message" msgid="3941893154784152112">"<xliff:g id="DEVICE_NAME">%1$s</xliff:g> सह कनेक्ट करणे शक्य झाले नाही."</string>
     <string name="bluetooth_preference_found_media_devices" msgid="830061195998352840">"उपलब्ध डिव्हाइस"</string>
@@ -2179,7 +2179,7 @@
     <string name="input_setting_bounce_keys_seekbar_desc" msgid="4575595566548124309">"बाउन्स की मर्यादा वेळ"</string>
     <string name="input_setting_slow_keys_seekbar_desc" msgid="2171726970136563995">"स्लो की मर्यादा वेळ"</string>
     <string name="slow_keys" msgid="2891452895499690837">"स्लो की"</string>
-    <string name="slow_keys_summary" msgid="3852534180402969185">"कीची नोंदणी करण्यापूर्वी तुम्हाला ती किती काळ धरून ठेवायची आहे हे बदला"</string>
+    <string name="slow_keys_summary" msgid="3852534180402969185">"की नोंदण्यापूर्वी तुम्हाला ती किती काळ धरून ठेवायची आहे हे बदला"</string>
     <string name="sticky_keys" msgid="7317317044898161747">"स्टिकी की"</string>
     <string name="sticky_keys_summary" msgid="1844953803625480623">"की एकत्र धरून ठेवण्याऐवजी शॉर्टकटसाठी एकावेळी एक की प्रेस करा"</string>
     <string name="mouse_keys" msgid="6237254627808525540">"माउस की"</string>

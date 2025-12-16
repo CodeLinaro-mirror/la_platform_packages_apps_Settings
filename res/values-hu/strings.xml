@@ -2629,7 +2629,7 @@
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"Színinvertálás használata"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"Színek invertálásának gyorsparancsa"</string>
     <string name="accessibility_display_inversion_preference_intro_text" msgid="1159663288481145318">"A színek invertálása sötétebbé teszi a világos képernyőket. Emellett világosabbá teszi a sötét képernyőket."</string>
-    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Vegye figyelembe a következőket:y&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; A színek látványa médiatartalmaktól és képektől függően változhat.&lt;/li&gt; &lt;li&gt; A színek invertálása minden alkalmazásra kihat.&lt;/li&gt; &lt;li&gt; Sötét háttér megjelenítéséhez inkább a Sötét témát érdemes beállítani.&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;Vegye figyelembe a következőket:&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; A színek látványa médiatartalmaktól és képektől függően változhat.&lt;/li&gt; &lt;li&gt; A színek invertálása minden alkalmazásra kihat.&lt;/li&gt; &lt;li&gt; Sötét háttér megjelenítéséhez inkább a Sötét témát érdemes beállítani.&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"adja meg a beállításokat."</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"Automatikus kattintás (tartózkodási idő)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"Az automatikus kattintásról"</string>
@@ -3297,7 +3297,7 @@
     <string name="data_usage_tab_3g" msgid="6111070409752123049">"2G-3G"</string>
     <string name="data_usage_list_mobile" msgid="3738130489722964291">"Mobil"</string>
     <string name="data_usage_list_none" msgid="2091924522549134855">"Nincs"</string>
-    <string name="data_usage_enable_mobile" msgid="1996943748103310201">"Mobiladatok"</string>
+    <string name="data_usage_enable_mobile" msgid="1996943748103310201">"Mobiladat"</string>
     <string name="data_usage_enable_3g" msgid="2818189799905446932">"2G-3G adatforgalom"</string>
     <string name="data_usage_enable_4g" msgid="1526584080251993023">"4G adatforgalom"</string>
     <string name="data_roaming_enable_mobile" msgid="5745287603577995977">"Roaming"</string>
@@ -4826,7 +4826,7 @@
     <string name="keywords_shade_panels" msgid="6181844937287087945">"árnyék, panelek, értesítések, gyorsbeállítások, qs, különálló, kombinált, kettős, egységes"</string>
     <string name="shade_panels_category" msgid="3262351355390846546">"Panelek"</string>
     <string name="shade_panels_separate_title" msgid="7839124123668116363">"Szétválasztás"</string>
-    <string name="shade_panels_separate_summary" msgid="4879360492042964895">"A gyorsbeállítások megnyitásához csúsztasson gyorsan lefelé a jobb felső saroktól. Az értesítések megnyitásához csúsztasson gyorsan lefelé a bal felső saroktól."</string>
+    <string name="shade_panels_separate_summary" msgid="4879360492042964895">"A gyorsbeállítások megnyitásához csúsztasson lefelé a jobb felső saroktól. Az értesítések megnyitásához csúsztasson lefelé a bal felső saroktól."</string>
     <string name="shade_panels_combined_title" msgid="2812149031368941984">"Kombinált (klasszikus)"</string>
     <string name="shade_panels_combined_summary" msgid="5884627562590432068">"Csúsztasson a képernyő tetejéről a klasszikus panel eléréséhez, amely kombinálja az értesítéseket és a gyorsbeállításokat."</string>
     <string name="shade_panels_foldables_footer_message" msgid="3974376428811063936">"A Kombinált (klasszikus) nézet az összehajtható eszköz külső képernyőjére korlátozódik"</string>
@@ -5724,7 +5724,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Ujjlenyomat-érzékelő"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Villogó értesítések"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"A villogó értesítésekről"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Ki/Kérheti a vaku- vagy a képernyő-villogtatást értesítések és riasztások esetén"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Ki / Kérheti a vaku- vagy a képernyő-villogtatást értesítések és riasztások esetén"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Be/Kérheti a vaku- vagy a képernyő-villogtatást értesítések és riasztások esetén"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"A kamera vakuja vagy a kijelző felvillan értesítés érkezésekor vagy ébresztés megszólalásakor"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Értesítés érkezésekor vagy ébresztés megszólalásakor felvillan a képernyő."</string>

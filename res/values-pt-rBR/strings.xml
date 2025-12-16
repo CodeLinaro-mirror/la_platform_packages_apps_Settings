@@ -483,9 +483,9 @@
     <string name="fingerprint_check_enroll_not_recognized" msgid="2779520550437394431">"Impressão digital não reconhecida"</string>
     <string name="security_settings_activeunlock_preference_title" msgid="4257580421087062228">"Desbloqueio do relógio"</string>
     <string name="security_settings_activeunlock" msgid="8922823742770802651">"Relógio"</string>
-    <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Quando o desbloqueio facial e por impressão digital forem configurados, a impressão será solicitada para desbloquear o smartphone sempre que você estiver em uma área escura ou usando uma máscara.\n\nO desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando seus dedos estiverem molhados ou seu rosto não for reconhecido."</string>
-    <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"O Desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando sua impressão digital não for reconhecida."</string>
-    <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"O Desbloqueio do relógio é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando seu rosto não for reconhecido."</string>
+    <string name="biometric_settings_intro_with_activeunlock" msgid="5032953826653108646">"Quando o desbloqueio facial e por impressão digital forem configurados, a impressão será solicitada para desbloquear o celular sempre que você estiver em uma área escura ou usando uma máscara.\n\nO desbloqueio do relógio é outra maneira conveniente de desbloquear o celular, por exemplo, quando seus dedos estiverem molhados ou seu rosto não for reconhecido."</string>
+    <string name="biometric_settings_intro_with_fingerprint" msgid="5881355884547769337">"O desbloqueio do relógio é outra maneira conveniente de desbloquear o celular, por exemplo, quando sua impressão digital não for reconhecida."</string>
+    <string name="biometric_settings_intro_with_face" msgid="7671919122230588521">"O desbloqueio do relógio é outra maneira conveniente de desbloquear o celular, por exemplo, quando seu rosto não for reconhecido."</string>
     <string name="biometric_settings_use_fingerprint_or_watch_for" msgid="1160830065613858095">"Use a impressão digital ou o relógio para"</string>
     <string name="biometric_settings_use_face_or_watch_for" msgid="1507077107150278532">"Use o rosto ou o relógio para"</string>
     <string name="biometric_settings_use_face_fingerprint_or_watch_for" msgid="7495835723072020641">"Use o rosto, a impressão digital ou o relógio para"</string>
@@ -521,7 +521,7 @@
     <string name="security_settings_remoteauth_preference_title" msgid="8319680328086089533">"Desbloqueio do Remote Authenticator"</string>
     <string name="security_settings_remoteauth_preference_summary" msgid="1507004469316635196">"Relógio adicionado"</string>
     <string name="security_settings_remoteauth_enroll_introduction_title" msgid="2151004795778999671">"Configurar o relógio"</string>
-    <string name="security_settings_remoteauth_enroll_introduction_message" msgid="8737276885766036074">"O \"Desbloqueio do relógio\" é outra maneira conveniente de desbloquear o smartphone, por exemplo, quando os dedos estiverem molhados ou o rosto não for reconhecido.\n\nVocê pode usar o relógio para desbloquear o smartphone quando:"</string>
+    <string name="security_settings_remoteauth_enroll_introduction_message" msgid="8737276885766036074">"O desbloqueio do relógio é outra maneira conveniente de desbloquear o celular, por exemplo, quando os dedos estiverem molhados ou o rosto não for reconhecido.\n\nVocê pode usar o relógio para desbloquear o celular quando:"</string>
     <string name="security_settings_remoteauth_enroll_introduction_disagree" msgid="7639258097401796028">"Agora não"</string>
     <string name="security_settings_remoteauth_enroll_introduction_agree" msgid="5271119227172049339">"Continuar"</string>
     <string name="security_settings_remoteauth_enroll_introduction_more" msgid="1644105894631257595">"Mais"</string>
@@ -529,7 +529,7 @@
     <string name="security_settings_remoteauth_enroll_introduction_info_lock_open" msgid="8570511335628725116">"O relógio precisa estar desbloqueado, no pulso e perto do smartphone. Não é necessário desbloquear o relógio novamente enquanto ele está no seu pulso."</string>
     <string name="security_settings_remoteauth_enroll_introduction_info_notifications" msgid="4298855831154039694">"Quando este smartphone for desbloqueado, você vai receber uma notificação no relógio. Se ele foi desbloqueado sem querer, toque na notificação para bloquear o dispositivo de novo."</string>
     <string name="security_settings_remoteauth_enroll_introduction_youre_in_control_title" msgid="7974976673323638524">"Você no controle"</string>
-    <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"Você pode remover seu relógio do recurso \"Desbloqueio do relógio\" a qualquer momento nas Configurações."</string>
+    <string name="security_settings_remoteauth_enroll_introduction_info_remove_watch" msgid="1888318677088986801">"Você pode remover seu relógio do recurso de desbloqueio do relógio a qualquer momento em \"Configurações\"."</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_tap_notification" msgid="1597397399097952974">"Toque em uma notificação"</string>
     <string name="security_settings_remoteauth_enroll_introduction_animation_swipe_up" msgid="2129230804324634653">"Deslize para cima na tela de bloqueio"</string>
     <string name="security_settings_remoteauth_enroll_enrolling_title" msgid="313016997943607675">"Escolha seu relógio"</string>
@@ -541,8 +541,8 @@
     <string name="security_settings_remoteauth_enroll_finish_btn_next" msgid="8072138423143889592">"Concluído"</string>
     <string name="security_settings_remoteauth_settings_title" msgid="1564912618737165129">"Desbloqueio do relógio"</string>
     <string name="security_settings_remoteauth_settings_description" msgid="2758239650119457964">"Você pode usar o relógio para desbloquear o smartphone ao deslizar para cima na tela de bloqueio ou tocar em uma notificação."</string>
-    <string name="security_settings_remoteauth_settings_info_footer" msgid="795894033901478120">"Para usar o \"Desbloqueio do relógio\", é necessário que o relógio esteja desbloqueado, no pulso, perto de você e conectado a este smartphone. Se a conexão for interrompida, você precisará desbloquear o smartphone antes de usar o recurso.\n\nNão se esqueça:\nSó é possível configurar um relógio por vez. Para adicionar outro, remova o atual."</string>
-    <string name="security_settings_remoteauth_settings_learn_more" msgid="5653556124819260050">"Saiba mais sobre o \"Desbloqueio do relógio\""</string>
+    <string name="security_settings_remoteauth_settings_info_footer" msgid="795894033901478120">"Para usar o desbloqueio do relógio, é necessário que o relógio esteja desbloqueado, no pulso, perto de você e conectado a este celular. Se a conexão for interrompida, você precisará desbloquear o celular antes de usar o recurso.\n\nNão se esqueça:\nSó é possível configurar um relógio por vez. Para adicionar outro, remova o atual."</string>
+    <string name="security_settings_remoteauth_settings_learn_more" msgid="5653556124819260050">"Saiba mais sobre o desbloqueio do relógio"</string>
     <string name="security_settings_remoteauth_settings_register_new_authenticator" msgid="9191331738306527887">"Adicionar relógio"</string>
     <string name="security_settings_remoteauth_settings_remove_device" msgid="2436226120578851282">"Remover relógio"</string>
     <string name="security_settings_biometric_preference_title" msgid="298146483579539448">"Desbloqueio facial e por impressão digital"</string>
@@ -687,7 +687,7 @@
     <string name="private_space_screen_lock_summary" msgid="394837965365561070">"Igual ao bloqueio de tela do dispositivo"</string>
     <string name="private_space_new_lock_title" msgid="9056139964133004094">"Escolher outro bloqueio para o espaço privado?"</string>
     <string name="private_space_new_lock_message" msgid="3117703578905489206">"Insira o PIN, o padrão ou a senha do dispositivo na próxima tela"</string>
-    <string name="private_space_auto_lock_title" msgid="8663409382910601261">"Bloquear o espaço privado automaticamente"</string>
+    <string name="private_space_auto_lock_title" msgid="8663409382910601261">"Bloqueio automático"</string>
     <string name="private_space_auto_lock_page_summary" msgid="8679844515655838654">"Você poderá bloquear seu espaço privado automaticamente se não usar o dispositivo por um período de tempo"</string>
     <string name="private_space_auto_lock_every_time" msgid="1215061855836002830">"Sempre que o dispositivo for bloqueado"</string>
     <string name="private_space_auto_lock_after_inactivity" msgid="7107814517866649733">"5 minutos depois do tempo limite da tela"</string>
@@ -2272,7 +2272,7 @@
     <string name="gesture_summary_go_back" msgid="4981604277892236888">"Deslize da esquerda ou direita com três dedos"</string>
     <string name="gesture_title_recent_apps" msgid="6082688963233208761">"Ver os apps recentes"</string>
     <string name="gesture_summary_recent_apps" msgid="6643179135202417509">"Deslize para cima com três dedos, segure e depois solte"</string>
-    <string name="gesture_title_notifications" msgid="791717222472350194">"Abrir notificações e Configurações rápidas"</string>
+    <string name="gesture_title_notifications" msgid="791717222472350194">"Abrir notificações e Configurações Rápidas"</string>
     <string name="gesture_summary_notifications" msgid="8419514601638387255">"Deslize para baixo com três dedos na tela inicial"</string>
     <string name="gesture_title_switch_apps" msgid="5840994412037872157">"Mudar de app"</string>
     <string name="gesture_summary_switch_apps" msgid="6842648062151413042">"Deslize para a esquerda ou direita com quatro dedos"</string>
@@ -2291,7 +2291,7 @@
     <string name="action_corner_action_home" msgid="6779642573582379579">"Início"</string>
     <string name="action_corner_action_recent_apps" msgid="7450480676812648813">"Apps recentes"</string>
     <string name="action_corner_action_notifications" msgid="3779353356349774469">"Notificações"</string>
-    <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"Configurações rápidas"</string>
+    <string name="action_corner_action_quick_settings" msgid="4660901117283653069">"Configurações Rápidas"</string>
     <string name="action_corner_action_dialog_title" msgid="8253240813317885237">"Escolha um atalho para o <xliff:g id="CORNER">%1$s</xliff:g>"</string>
     <string name="action_corner_bottom_left_name" msgid="9193788067022476544">"canto inferior esquerdo"</string>
     <string name="action_corner_bottom_right_name" msgid="1031603363418505375">"canto inferior direito"</string>
@@ -2518,7 +2518,7 @@
     <string name="accessibility_tutorial_dialog_title_volume" msgid="1032323517963429981">"Atalho para teclas de volume"</string>
     <string name="accessibility_tutorial_dialog_title_triple" msgid="5529704884360240365">"Atalho para tocar três vezes"</string>
     <string name="accessibility_tutorial_dialog_title_two_finger_double" msgid="5749704453829390283">"Atalho para tocar duas vezes com %1$d dedos"</string>
-    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Atalho para Configurações rápidas"</string>
+    <string name="accessibility_tutorial_dialog_title_quick_setting" msgid="2905083277641794558">"Atalho para Configurações Rápidas"</string>
     <string name="accessibility_tutorial_dialog_title_gesture" msgid="4541649734549409614">"Atalho para o gesto de acessibilidade"</string>
     <string name="accessibility_tutorial_dialog_message_button" msgid="8977286776192770246">"Para usar esse recurso, toque no botão de acessibilidade <xliff:g id="ACCESSIBILITY_ICON">%s</xliff:g> na parte de baixo da tela.\n\nPara mudar de recurso, toque no botão de acessibilidade e mantenha-o pressionado."</string>
     <string name="accessibility_tutorial_dialog_message_floating_button" msgid="6631371483819355514">"Para usar esse recurso, toque no botão de acessibilidade na tela"</string>
@@ -2546,10 +2546,10 @@
     <string name="accessibility_shortcut_edit_dialog_summary_gesture" msgid="2081123009255579884">"{count,plural, =1{Deslize de baixo para cima na tela. Para trocar de recurso, deslize de baixo para cima e mantenha a tela pressionada.}one{Deslize com # dedo de baixo para cima na tela. Para trocar de recurso, deslize de baixo para cima com # dedo e mantenha a tela pressionada.}other{Deslize com # dedos de baixo para cima na tela. Para trocar de recurso, deslize de baixo para cima com # dedos e mantenha a tela pressionada.}}"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_software_floating" msgid="4459254227203203324"><annotation id="link">"Mais opções"</annotation></string>
     <string name="footer_learn_more_content_description" msgid="8843798273152131341">"Saiba mais sobre <xliff:g id="SERVICE">%1$s</xliff:g>"</string>
-    <string name="accessibility_shortcut_edit_dialog_title_quick_settings" msgid="140959604014177304">"Configurações rápidas"</string>
+    <string name="accessibility_shortcut_edit_dialog_title_quick_settings" msgid="140959604014177304">"Configurações Rápidas"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_quick_settings" msgid="739883998754165940">"{count,plural, =1{Deslize de cima para baixo na tela}one{Deslize com # dedo de cima para baixo na tela}other{Deslize com # dedos de cima para baixo na tela}}"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_quick_settings_suw" msgid="4216628328191609785">"{count,plural, =1{Deslizar de cima para baixo na tela. Esse atalho vai estar disponível depois que você concluir a configuração do dispositivo.}one{Deslizar com # dedo de cima para baixo na tela. Esse atalho vai estar disponível depois que você concluir a configuração do dispositivo.}other{Deslizar com # dedos de cima para baixo na tela. Esse atalho vai estar disponível depois que você concluir a configuração do dispositivo.}}"</string>
-    <string name="accessibility_feature_shortcut_setting_summary_quick_settings" msgid="7006526933552889373">"Configurações rápidas"</string>
+    <string name="accessibility_feature_shortcut_setting_summary_quick_settings" msgid="7006526933552889373">"Configurações Rápidas"</string>
     <string name="accessibility_shortcut_edit_dialog_title_hardware" msgid="844089763968552142">"Teclas de volume"</string>
     <string name="accessibility_shortcut_hardware_keyword" msgid="2483152542320987022">"teclas de volume"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_hardware" msgid="2503134386397991634">"Toque e mantenha as duas teclas de volume pressionadas."</string>
@@ -2633,9 +2633,9 @@
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"acessar as configurações"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"Clique automático (tempo de permanência)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"Sobre o clique automático (tempo de permanência)"</string>
-    <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"Saiba mais sobre o clique automático (tempo de permanência)"</string>
+    <string name="accessibility_autoclick_footer_learn_more_content_description" msgid="7056189627042350691">"Saiba mais sobre o clique automático (tempo de permanência)."</string>
     <string name="accessibility_autoclick_intro_text" msgid="8959680635470639347">"É possível configurar um mouse para clicar automaticamente quando o cursor parar de se mover por um determinado período."</string>
-    <string name="accessibility_autoclick_description" msgid="6695732131412361101">"O clique automático pode ser útil em caso de dificuldade para clicar com o mouse"</string>
+    <string name="accessibility_autoclick_description" msgid="6695732131412361101">"O clique automático pode ser útil em caso de dificuldade para clicar com o mouse."</string>
     <string name="accessibility_autoclick_default_title" msgid="2024730028293793490">"Clique automático desativado"</string>
     <string name="accessibility_autoclick_short_title" msgid="7938302504358912984">"Curto"</string>
     <string name="accessibility_autoclick_short_summary" msgid="4106953930081213514">"0,2 segundos"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"Configurações de navegação"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"Vibração e retorno tátil"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"Controle a intensidade da vibração para diferentes usos"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Ativado / Controlar os níveis de vibração para ligações, notificações e alarmes"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"Recurso ativado / Controlar os níveis de vibração para ligações, notificações e alarmes"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"Desativado / Controlar os níveis de vibração para ligações, notificações e alarmes"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"Configuração desativada porque o dispositivo está no modo silencioso"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"Chamadas"</string>
@@ -2682,18 +2682,18 @@
     <string name="accessibility_touch_vibration_title" msgid="533931451319110741">"Feedback por toque"</string>
     <string name="accessibility_service_primary_switch_title" msgid="437610853412159406">"Usar <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
     <string name="accessibility_service_primary_open_title" msgid="8655108684769091154">"Abrir <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g>"</string>
-    <string name="accessibility_service_auto_added_qs_tooltip_content" msgid="2941824314912928072">"O app <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> foi adicionado às Configurações rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
-    <string name="accessibility_service_qs_tooltip_content" msgid="6002493441414967868">"Também é possível adicionar o app <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> às Configurações rápidas na parte de cima da tela"</string>
-    <string name="accessibility_color_correction_auto_added_qs_tooltip_content" msgid="9092661358437404374">"A correção de cor foi adicionada às Configurações rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
-    <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"Também é possível adicionar a correção de cor às Configurações rápidas na parte de cima da tela"</string>
-    <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"A inversão de cores foi adicionada às Configurações rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
-    <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"Também é possível adicionar a inversão de cores às Configurações rápidas na parte de cima da tela"</string>
+    <string name="accessibility_service_auto_added_qs_tooltip_content" msgid="2941824314912928072">"O app <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> foi adicionado às Configurações Rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
+    <string name="accessibility_service_qs_tooltip_content" msgid="6002493441414967868">"Também é possível adicionar o app <xliff:g id="ACCESSIBILITY_APP_NAME">%1$s</xliff:g> às Configurações Rápidas na parte de cima da tela"</string>
+    <string name="accessibility_color_correction_auto_added_qs_tooltip_content" msgid="9092661358437404374">"A correção de cor foi adicionada às Configurações Rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
+    <string name="accessibility_color_correction_qs_tooltip_content" msgid="3258628434235475205">"Também é possível adicionar a correção de cor às Configurações Rápidas na parte de cima da tela"</string>
+    <string name="accessibility_color_inversion_auto_added_qs_tooltip_content" msgid="7267618234972101725">"A inversão de cores foi adicionada às Configurações Rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
+    <string name="accessibility_color_inversion_qs_tooltip_content" msgid="5046332142185711869">"Também é possível adicionar a inversão de cores às Configurações Rápidas na parte de cima da tela"</string>
     <string name="reduce_bright_colors_preference_summary" msgid="8112736110942731246">"Deixar a tela mais escura do que o brilho mínimo"</string>
-    <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"O recurso Mais escuro foi adicionado às Configurações rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
-    <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"Também é possível adicionar o recurso Mais escuro às Configurações rápidas na parte de cima da tela"</string>
-    <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"O modo uma mão foi adicionado às Configurações rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
-    <string name="accessibility_one_handed_mode_qs_tooltip_content" msgid="2754332083184384603">"Também é possível adicionar o modo para uma mão às Configurações rápidas na parte de cima da tela"</string>
-    <string name="accessibility_font_scaling_auto_added_qs_tooltip_content" msgid="7229921960884718332">"Tamanho da fonte adicionado às Configurações rápidas. Mude o tamanho da fonte a qualquer momento deslizando para baixo."</string>
+    <string name="accessibility_reduce_bright_colors_auto_added_qs_tooltip_content" msgid="1906588335786328512">"O recurso Mais escuro foi adicionado às Configurações Rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
+    <string name="accessibility_reduce_bright_colors_qs_tooltip_content" msgid="7522121299176176785">"Também é possível adicionar o recurso Mais escuro às Configurações Rápidas na parte de cima da tela"</string>
+    <string name="accessibility_one_handed_mode_auto_added_qs_tooltip_content" msgid="7914554254280416532">"O modo uma mão foi adicionado às Configurações Rápidas. Deslize para baixo para ativar ou desativar a qualquer momento."</string>
+    <string name="accessibility_one_handed_mode_qs_tooltip_content" msgid="2754332083184384603">"Também é possível adicionar o modo para uma mão às Configurações Rápidas na parte de cima da tela"</string>
+    <string name="accessibility_font_scaling_auto_added_qs_tooltip_content" msgid="7229921960884718332">"Tamanho da fonte adicionado às Configurações Rápidas. Mude o tamanho da fonte a qualquer momento deslizando para baixo."</string>
     <string name="accessibility_quick_settings_tooltip_dismiss" msgid="3269120277643884190">"Dispensar"</string>
     <string name="accessibility_daltonizer_primary_switch_title" msgid="32064721588910540">"Usar correção de cor"</string>
     <string name="accessibility_daltonizer_shortcut_title" msgid="7480360363995502369">"Atalho para correção de cor"</string>
@@ -2765,7 +2765,7 @@
     <string name="accessibility_description_state_stopped" msgid="5364752492861199133">"Este serviço está com problemas."</string>
     <string name="accessibility_shortcuts_settings_title" msgid="974740249671825145">"Atalhos de acessibilidade"</string>
     <string name="accessibility_shortcuts_settings_subtext" msgid="3870836550836457943">"Botão de acessibilidade, atalho das teclas de vol."</string>
-    <string name="enable_quick_setting" msgid="6648073323202243604">"Mostrar em \"Configurações rápidas\""</string>
+    <string name="enable_quick_setting" msgid="6648073323202243604">"Mostrar em \"Configurações Rápidas\""</string>
     <string name="daltonizer_mode_deuteranomaly_title" msgid="3229433065035047931">"Vermelho e verde, dificuldade com a cor verde"</string>
     <string name="daltonizer_mode_protanomaly_title" msgid="2572040492905945405">"Vermelho e verde, dificuldade com a cor vermelha"</string>
     <string name="daltonizer_mode_tritanomaly_title" msgid="2278786218762602022">"Azul-amarelo"</string>
@@ -3588,7 +3588,7 @@
     <string name="sim_selection_required_pref" msgid="231437651041498359">"Seleção necessária"</string>
     <string name="sim_selection_channel_title" msgid="3193666315607572484">"Seleção de chip"</string>
     <string name="dashboard_title" msgid="5660733037244683387">"Configurações"</string>
-    <string name="network_dashboard_title" msgid="788543070557731240">"Rede e Internet"</string>
+    <string name="network_dashboard_title" msgid="788543070557731240">"Rede e internet"</string>
     <string name="network_dashboard_summary_no_mobile" msgid="4022575916334910790">"Wi‑Fi, ponto de acesso"</string>
     <string name="connected_devices_dashboard_title" msgid="19868275519754895">"Dispositivos conectados"</string>
     <string name="connected_devices_dashboard_default_summary" msgid="7211769956193710397">"Bluetooth, pareamento"</string>
@@ -3768,7 +3768,7 @@
     <string name="live_caption_title" msgid="8617086825712756983">"Legenda Instantânea"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"Ver legendas em ligações, vídeos e outras mídias"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"Ativado / Ver legendas em ligações, vídeos e outras mídias"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"Desativado / Ver legendas em ligações, vídeos e outras mídias"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"Recurso desativado / Veja legendas em ligações, vídeos e outras mídias"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"Fones de ouvido com fio"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"O áudio de dispositivos de mídia compatíveis fica mais imersivo"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"Desativado"</string>
@@ -4498,7 +4498,7 @@
     <string name="assist_access_screenshot_title" msgid="4395902231753643633">"Usar captura de tela"</string>
     <string name="assist_access_screenshot_summary" msgid="5276593070956201863">"Permite que o app assistivo acesse uma imagem da tela"</string>
     <string name="assist_flash_title" msgid="5449512572885550108">"Piscar tela"</string>
-    <string name="assist_flash_summary" msgid="3032289860177784594">"Pisca as bordas da tela quando o app assistivo acessar textos da tela ou fizer uma captura de tela"</string>
+    <string name="assist_flash_summary" msgid="3032289860177784594">"Pisca as bordas da tela quando o app assistivo acessa textos da tela ou faz uma captura de tela"</string>
     <string name="assist_footer" msgid="8248015363806299068">"Apps assistivos podem ajudar com base nas informações da tela que você vê no momento. Alguns apps são compatíveis com a tela de início e com serviços de entrada de texto por voz para fornecer assistência integrada."</string>
     <string name="average_memory_use" msgid="717313706368825388">"Uso médio de memória"</string>
     <string name="maximum_memory_use" msgid="2171779724001152933">"Uso máximo de memória"</string>
@@ -4706,7 +4706,7 @@
     <string name="battery_saver_off_scheduled_summary" msgid="2193875981740829819">"Será ativada em <xliff:g id="BATTERY_PERCENTAGE">%1$s</xliff:g>"</string>
     <string name="battery_saver_off_summary" msgid="4411561435493109261">"Desativada"</string>
     <string name="app_battery_usage_title" msgid="346558380609793334">"Uso da bateria por apps"</string>
-    <string name="app_battery_usage_summary" msgid="6349965904306339539">"Definir o uso da bateria para apps"</string>
+    <string name="app_battery_usage_summary" msgid="6349965904306339539">"Defina o uso da bateria para apps"</string>
     <string name="battery_tips_card_action_button" msgid="4897793527424711648">"Mostrar configurações"</string>
     <string name="battery_tips_card_action_button_check" msgid="1535140204105479318">"Conferir"</string>
     <string name="battery_tips_card_dismiss_button" msgid="1885756985544936618">"Entendi"</string>
@@ -5519,7 +5519,7 @@
     <string name="disable_screen_share_protections_for_apps_and_notifications_summary" msgid="5379583403909210858">"Desativa as proteções do sistema para conteúdo sensível de apps nas próximas sessões de compartilhamento de tela"</string>
     <string name="media_controls_title" msgid="403271085636252597">"Mídia"</string>
     <string name="media_controls_resume_title" msgid="855076860336652370">"Fixar player de mídia"</string>
-    <string name="media_controls_resume_description" msgid="3163482266454802097">"Para retomar a reprodução rapidamente, o player de mídia fica aberto nas Configurações rápidas"</string>
+    <string name="media_controls_resume_description" msgid="3163482266454802097">"Para retomar a reprodução rapidamente, o player de mídia fica aberto nas Configurações Rápidas"</string>
     <string name="media_controls_lockscreen_title" msgid="2188311721857512510">"Mostrar mídia na tela de bloqueio"</string>
     <string name="media_controls_lockscreen_description" msgid="3320333660404439510">"Para retomar a reprodução rapidamente, o player de mídia fica aberto na tela de bloqueio"</string>
     <string name="media_controls_hide_player" msgid="2751439192580884015">"Ocultar player"</string>
@@ -5724,9 +5724,9 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"Sensor de impressão digital"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"Notificações com flash"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"Sobre as notificação com flash"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Desativado / Receba alertas de notificações e alarmes com um flash da tela ou da câmera"</string>
-    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Ativado / Receba alertas de notificações e alarmes com um flash da tela ou da câmera"</string>
-    <string name="flash_notifications_intro" msgid="8409873413480928249">"O flash da câmera ou a tela piscam ao receber notificações ou soar alarmes"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"Recurso desativado / Receba alertas de notificações e alarmes com um flash da tela ou da câmera"</string>
+    <string name="flash_notifications_summary_on" msgid="7750683903778104666">"Ativadas / Receba alertas de notificações e alarmes com um flash da tela ou da câmera"</string>
+    <string name="flash_notifications_intro" msgid="8409873413480928249">"Quando o celular recebe uma notificação ou toca um alarme, o flash da câmera ou a tela piscam."</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"Piscar a tela ao receber notificações ou soar alarmes"</string>
     <string name="flash_notifications_note" msgid="2426125248448055075">"Tenha cuidado com as notificações com flash se você tiver sensibilidade à luz"</string>
     <string name="flash_notifications_keywords" msgid="2458759275318514836">"flash, luz, deficiência auditiva, perda auditiva"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"Transforma as telas claras em escuras e vice-versa"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"Aumente o zoom para ampliar o conteúdo na tela"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"Desativado"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"Desativado / Personalizar o tamanho e o estilo das legendas"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"Recurso desativado / Personalize o tamanho e o estilo das legendas"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"Ativado / Personalizar o tamanho e o estilo das legendas"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"Desativada"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"Ativada"</string>

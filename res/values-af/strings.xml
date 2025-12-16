@@ -1030,7 +1030,7 @@
     <string name="wifi_display_settings_title" msgid="2622548133505158832">"Google Cast"</string>
     <string name="keywords_wifi_display_settings" msgid="5753883229564422679">"weerspieël"</string>
     <string name="wifi_display_enable_menu_item" msgid="7391841780777318134">"Aktiveer draadlose skermdeling"</string>
-    <string name="wifi_display_no_devices_found" msgid="7904877793677102805">"Geen nabygeleë toestelle is gekry nie."</string>
+    <string name="wifi_display_no_devices_found" msgid="7904877793677102805">"Geen toestelle is in die omtrek gekry nie."</string>
     <string name="wifi_display_status_connecting" msgid="530880182560077334">"Koppel tans"</string>
     <string name="wifi_display_status_connected" msgid="2189925211258519539">"Gekoppel"</string>
     <string name="wifi_display_status_in_use" msgid="5904009697167947449">"In gebruik"</string>
@@ -1150,7 +1150,7 @@
     <string name="wifi_subscription_summary" msgid="18802471063384598">"Bekyk of verander intekening"</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Ewekansige MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Voeg \'n toestel by"</string>
-    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Sentreer die QR-kode hieronder om die toestel by “<xliff:g id="SSID">%1$s</xliff:g>” te voeg"</string>
+    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Sentreer die QR-kode hier onder om die toestel by “<xliff:g id="SSID">%1$s</xliff:g>” te voeg"</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"Skandeer QR-kode"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"Sentreer die QR-kode hieronder om aan “<xliff:g id="SSID">%1$s</xliff:g>” te koppel"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Skandeer \'n QR-kode om by wi-fi aan te sluit"</string>
@@ -1180,7 +1180,7 @@
     <string name="wifi_dpp_connecting" msgid="2312769193202897589">"Koppel tans …"</string>
     <string name="wifi_dpp_share_hotspot" msgid="6186452780604755316">"Deel warmkol"</string>
     <string name="wifi_dpp_lockscreen_title" msgid="5246641326066972419">"Verifieer dat dit jy is"</string>
-    <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"Wi-Fi-wagwoord: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
+    <string name="wifi_dpp_wifi_password" msgid="4992986319806934381">"Wi-fi-wagwoord: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_dpp_hotspot_password" msgid="688464342650820420">"Warmkolwagwoord: <xliff:g id="PASSWORD">%1$s</xliff:g>"</string>
     <string name="wifi_auto_connect_title" msgid="1890342051674657892">"Outokoppel"</string>
     <string name="wifi_auto_connect_summary" msgid="1707702705345670370">"Laat aansluiting aan hierdie netwerk toe wanneer dit binne bereik is"</string>
@@ -1769,7 +1769,7 @@
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"Musiek"</li>\n<li>"Foto\'s"</li>\n<li>"Ander gebruikerdata"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"e-SIM-kaarte"</li></string>
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"Dit sal nie jou mobiele diensplan kanselleer nie."</string>
-    <string name="main_clear_final_desc" msgid="5800877928569039580">"Al jou persoonlike inligting en afgelaaide programme sal uitgevee word. Jy kan nie hierdie handeling ontdoen nie."</string>
+    <string name="main_clear_final_desc" msgid="5800877928569039580">"Al jou persoonlike inligting en afgelaaide apps sal uitgevee word. Jy kan nie hierdie handeling ontdoen nie."</string>
     <string name="main_clear_final_desc_esim" msgid="6592404057237813989">"Al jou persoonlike inligting, insluitend afgelaaide apps en e-SIM’s, sal uitgevee word. Jy kan nie hierdie handeling ontdoen nie."</string>
     <string name="main_clear_confirm_title" msgid="6577071819657853713">"Vee alle data uit?"</string>
     <string name="main_clear_not_available" msgid="3433795327146684827">"Fabriekterugstelling is nie vir hierdie gebruiker beskikbaar nie"</string>
@@ -2307,7 +2307,7 @@
     <string name="modifier_keys_reset" msgid="551170906710422041">"Stel terug"</string>
     <string name="modifier_keys_picker_title" msgid="244545904150587851">"Kies wysigersleutel"</string>
     <string name="modifier_keys_picker_summary" msgid="739397232249560785">"Kies ’n nuwe sleutel vir <xliff:g id="MODIFIER_KEY_DEFAULT_NAME">%1$s</xliff:g>:"</string>
-    <string name="keyboard_a11y_settings" msgid="2564659018555385728">"Toeganklikheid vir fisieke sleutelbord"</string>
+    <string name="keyboard_a11y_settings" msgid="2564659018555385728">"Toeganklikheid vir fisiese sleutelbord"</string>
     <string name="keyboard_a11y_settings_summary" msgid="1698531156574098722">"Taaisleutels, bonssleutels, muissleutels"</string>
     <string name="keyboard_repeat_keys_title" msgid="6346877755243280735">"Herhaalsleutels"</string>
     <string name="keyboard_repeat_keys_timeout_title" msgid="3411871149974652293">"Vertraging voor herhaling"</string>
@@ -2324,7 +2324,7 @@
     <string name="speech_category_title" msgid="5995161659186229742">"Spraak"</string>
     <string name="speech_preference_title" msgid="5080497338234779098">"Spraak"</string>
     <string name="speech_preference_summary" msgid="5190362663352347487">"Beheer spraakherkenning en -uitset"</string>
-    <string name="pointer_speed" msgid="7398649279282675718">"Wyserspoed"</string>
+    <string name="pointer_speed" msgid="7398649279282675718">"Skermpyltjiespoed"</string>
     <string name="pointer_scale" msgid="3170694549809691557">"Skermpyltjiegrootte"</string>
     <string name="pointer_scale_decrease_content_description" msgid="4479646756230008068">"Verklein wyserskaal"</string>
     <string name="pointer_scale_increase_content_description" msgid="1049632123702664450">"Vergroot wyserskaal"</string>
@@ -2551,7 +2551,7 @@
     <string name="accessibility_shortcut_edit_dialog_summary_quick_settings_suw" msgid="4216628328191609785">"{count,plural, =1{Swiep van die bokant van jou skerm af ondertoe Die kortpad sal beskikbaar wees na jy die toestel opgestel het.}other{Swiep met # vingers van die bokant van jou skerm af ondertoe Die kortpad sal beskikbaar wees na jy die toestel opgestel het.}}"</string>
     <string name="accessibility_feature_shortcut_setting_summary_quick_settings" msgid="7006526933552889373">"Kitsinstellings"</string>
     <string name="accessibility_shortcut_edit_dialog_title_hardware" msgid="844089763968552142">"Volumesleutels"</string>
-    <string name="accessibility_shortcut_hardware_keyword" msgid="2483152542320987022">"Volumesleutels"</string>
+    <string name="accessibility_shortcut_hardware_keyword" msgid="2483152542320987022">"volumesleutels"</string>
     <string name="accessibility_shortcut_edit_dialog_summary_hardware" msgid="2503134386397991634">"Druk en hou albei volumesleutels"</string>
     <string name="accessibility_shortcut_edit_screen_title_two_finger_double_tap" msgid="8952595692906527694">"%1$d-vinger-dubbeltik"</string>
     <string name="accessibility_shortcut_edit_screen_summary_two_finger_double_tap" msgid="385404127425496362">"Tik vinnig twee keer op die skerm met %1$d vingers."</string>
@@ -2715,7 +2715,7 @@
     <string name="accessibility_shortcut_type_triple_tap" msgid="7717524216825494543">"Tripeltik op skerm"</string>
     <string name="accessibility_shortcut_edit_screen_title" msgid="4494142067760961499">"Wysig toeganklikheidkortpaaie"</string>
     <string name="accessibility_shortcut_edit_screen_prompt" msgid="5966054283114856682">"Kies jou kortpad vir %1$s"</string>
-    <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"Om dit te gebruik, moet jy die %1$s-kortpad op ’n toeganklikheidskenmerk se bladsy aanskakel"</string>
+    <string name="accessibility_shortcut_unassigned_setting_unavailable_summary" msgid="993486098872935043">"Om dit te gebruik, moet jy die %1$skortpad op ’n toeganklikheidskenmerk se bladsy aanskakel"</string>
     <string name="accessibility_hearingaid_instruction_continue_button" msgid="3367260988024430722">"Gaan voort"</string>
     <string name="accessibility_hearingaid_title" msgid="1263619711863375614">"Gehoortoestelle"</string>
     <string name="accessibility_hearingaid_intro" msgid="6686620444104350629">"Stel ASHA- en LE-oudio-gehoortoestelle, kogleêre inplantings en ander klankversterkingtoestelle op en bestuur hulle"</string>

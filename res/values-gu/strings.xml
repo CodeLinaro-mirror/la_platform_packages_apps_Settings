@@ -320,7 +320,7 @@
     <string name="zone_auto_title_summary" msgid="6540356783943375071">"તમારી નજીકના મોબાઇલ નેટવર્કના આધારે ઑટોમૅટિક રીતે સેટ કરો"</string>
     <string name="auto_zone_requires_location_summary" msgid="2366567167956530124">"ઉપલબ્ધ હોવા પર ડિવાઇસના લોકેશન વડે ઑટોમૅટિક રીતે સેટ કરો"</string>
     <string name="date_time_24hour_auto" msgid="6583078135067804252">"ડિફૉલ્ટ લોકેલનો ઉપયોગ કરો"</string>
-    <string name="date_time_24hour" msgid="286679379105653406">"24-કલાક ફોર્મેટનો ઉપયોગ કરો"</string>
+    <string name="date_time_24hour" msgid="286679379105653406">"24-કલાક ફૉર્મેટનો ઉપયોગ કરો"</string>
     <string name="date_time_set_time_title" msgid="2870083415922991906">"સમય"</string>
     <string name="time_format_category_title" msgid="7108616745509689991">"સમયનું ફૉર્મેટ"</string>
     <string name="date_time_set_timezone_title" msgid="790404320569600222">"ટાઇમ ઝોન"</string>
@@ -1150,7 +1150,7 @@
     <string name="wifi_subscription_summary" msgid="18802471063384598">"સબ્સ્ક્રિપ્શન જુઓ અથવા બદલો"</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"રેન્ડમ કરેલ MAC"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"ડિવાઇસ ઉમેરો"</string>
-    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"ડિવાઇસને “<xliff:g id="SSID">%1$s</xliff:g>” પર ઉમેરવા માટે QR કોડને નીચેની બાજુએ વચ્ચે રાખો"</string>
+    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"ડિવાઇસને “<xliff:g id="SSID">%1$s</xliff:g>” પર ઉમેરવા માટે QR કોડને નીચેની કૅમેરા વિન્ડોના મધ્યમાં રાખો"</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"QR કોડ સ્કૅન કરો"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"“<xliff:g id="SSID">%1$s</xliff:g>” સાથે કનેક્ટ કરવા માટે QR કોડને નીચેની બાજુએ વચ્ચે રાખો"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"QR કોડ સ્કૅન કરીને વાઇ-ફાઇ સાથે જોડાઓ"</string>
@@ -1597,7 +1597,7 @@
     <string name="meid_multi_sim" msgid="5076814185188481456">"MEID (સિમ કાર્ડનો સ્લૉટ <xliff:g id="MEID_SLOT_ID">%1$d</xliff:g>)"</string>
     <string name="meid_multi_sim_primary" msgid="6269908735700854437">"MEID (સિમ કાર્ડનો સ્લૉટ <xliff:g id="MEID_SLOT_ID_PRIMARY">%1$d</xliff:g>) (પ્રાથમિક)"</string>
     <string name="scanning_status_text_on" msgid="3846571210578042940">"ચાલુ"</string>
-    <string name="scanning_status_text_off" msgid="4002352668313705132">"બંધ"</string>
+    <string name="scanning_status_text_off" msgid="4002352668313705132">"બંધ છે"</string>
     <string name="status_meid_number" msgid="6040380838489162650">"MEID"</string>
     <string name="status_icc_id" msgid="7995690631650006970">"ICCID"</string>
     <string name="status_data_network_type" msgid="3689772955330665876">"મોબાઇલ ડેટા નેટવર્કનો પ્રકાર"</string>
@@ -1754,7 +1754,7 @@
     <string name="reset_esim_title" msgid="4194570573425902754">"ઇ-સિમ કાઢી નાખો"</string>
     <string name="reset_esim_desc" msgid="6125192435907740751">"આમ કરવાથી તમારો મોબાઇલ સર્વિસ પ્લાન રદ થશે નહીં. બદલેલું સિમ કાર્ડ મેળવવા માટે તમારા મોબાઇલ ઑપરેટરનો સંપર્ક કરો."</string>
     <string name="reset_network_button_text" msgid="2281476496459610071">"સેટિંગ રીસેટ કરો"</string>
-    <string name="reset_network_final_desc" msgid="5304365082065278425">"બધાં નેટવર્ક સેટિંગ રીસેટ કરીએ? તમે આ ઍક્શન માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
+    <string name="reset_network_final_desc" msgid="5304365082065278425">"બધાં નેટવર્કના સેટિંગ રીસેટ કરીએ? તમે આ ઍક્શન માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
     <string name="reset_network_final_desc_esim" msgid="1129251284212847939">"બધા નેટવર્ક સેટિંગ રીસેટ કરીએ અને ઇ-સિમ કાઢી નાખીએ? તમે આ ક્રિયા માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
     <string name="reset_network_final_button_text" msgid="2433867118414000462">"સેટિંગ રીસેટ કરો"</string>
     <string name="reset_network_confirm_title" msgid="913014422184481270">"ફરીથી સેટ કરીએ?"</string>
@@ -1769,7 +1769,7 @@
     <string name="main_clear_desc_also_erases_external" msgid="3687911419628956693"><li>"મ્યુઝિક"</li>\n<li>"ફોટા"</li>\n<li>"અન્ય વપરાશકર્તા ડેટા"</li></string>
     <string name="main_clear_desc_also_erases_esim" msgid="4553469876411831729"><li>"ઇ-સિમ"</li></string>
     <string name="main_clear_desc_no_cancel_mobile_plan" msgid="369883568059127035">\n\n"આનાથી તમારો મોબાઇલ સેવા પ્લાન રદ થશે નહીં."</string>
-    <string name="main_clear_final_desc" msgid="5800877928569039580">"તમારી બધી વ્યક્તિગત માહિતી અને ડાઉનલોડ કરેલી ઍપ ડિલીટ કરવામાં આવશે. તમે આ ક્રિયા માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
+    <string name="main_clear_final_desc" msgid="5800877928569039580">"તમારી બધી વ્યક્તિગત માહિતી અને ડાઉનલોડ કરેલી ઍપ ડિલીટ કરવામાં આવશે. તમે આ ઍક્શન માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
     <string name="main_clear_final_desc_esim" msgid="6592404057237813989">"ડાઉનલોડ કરેલી ઍપ અને ઇ-સિમ સહિતની તમારી બધી વ્યક્તિગત માહિતી ડિલીટ કરવામાં આવશે. તમે આ ક્રિયા માટે કરેલો છેલ્લો ફેરફાર રદ કરી શકશો નહીં."</string>
     <string name="main_clear_confirm_title" msgid="6577071819657853713">"બધો ડેટા કાઢી નાખીએ?"</string>
     <string name="main_clear_not_available" msgid="3433795327146684827">"આ વપરાશકર્તા માટે ફેક્ટરી રીસેટ ઉપલબ્ધ નથી"</string>
@@ -2396,7 +2396,7 @@
     <string name="accessibility_pointer_title" msgid="7427650233669997010">"કર્સર"</string>
     <string name="accessibility_touchpad_title" msgid="5798458334122685642">"ટચપૅડ"</string>
     <string name="accessibility_touchpad_system_gestures_enable_title" msgid="1867179109603472062">"3 કે 4 આંગળીના સંકેતોનો ઉપયોગ કરો"</string>
-    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"જ્યારે આ સેટિંગ બંધ કરવામાં આવશે, ત્યારે તમારું ટચપૅડ 3- કે 4-આંગળીના સંકેતોને અવગણશે"</string>
+    <string name="accessibility_touchpad_system_gestures_enable_summary" msgid="7076378989016181266">"જ્યારે આ સેટિંગ બંધ કરવામાં આવશે, ત્યારે તમારું ટચપૅડ 3 કે 4 આંગળીના સંકેતોને અવગણશે"</string>
     <string name="keywords_accessibility_touchpad_system_gestures_enable" msgid="4406441971607855466">"ટચપૅડ, ટ્રૅકપૅડ, સ્વાઇપ"</string>
     <string name="accessibility_color_contrast_title" msgid="5757724357142452378">"કલર કૉન્ટ્રાસ્ટ"</string>
     <string name="accessibility_color_contrast_intro" msgid="7795090401101214930">"ઉચ્ચ કૉન્ટ્રાસ્ટ એ ટેક્સ્ટ, બટન અને આઇકનને વધુ સ્પષ્ટ રીતે જોઈ શકવા માટે યોગ્ય બનાવે છે. તમારા માટે શ્રેષ્ઠતમ દેખાતો કૉન્ટ્રાસ્ટ પસંદ કરો."</string>
@@ -2412,7 +2412,7 @@
     <string name="accessibility_turn_screen_darker_title" msgid="5986223133285858349">"સ્ક્રીનને વધુ ઘેરી બનાવો"</string>
     <string name="interaction_control_category_title" msgid="2696474616743882372">"ક્રિયાપ્રતિક્રિયાના નિયંત્રણો"</string>
     <string name="accessibility_tap_assistance_title" msgid="1058913033421048284">"સમયના નિયંત્રણો"</string>
-    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"વિલંબ બટનને ટચ કરીને થોડીવાર દબાવી રાખો, પગલું લેવામાં લાગતો સમય"</string>
+    <string name="accessibility_tap_assistance_subtext" msgid="1805279944665087799">"બટનને ટચ કરીને થોડીવાર દબાવી રાખવા માટેનો વિલંબ, પગલું લેવામાં લાગતો સમય"</string>
     <string name="accessibility_system_controls_title" msgid="6403287349518987624">"સિસ્ટમના નિયંત્રણો"</string>
     <string name="accessibility_system_controls_subtext" msgid="2722046038429586174">"નૅવિગેશન મોડ, એક-હાથે વાપરો મોડ, સ્ક્રીન રોટેશન"</string>
     <string name="accessibility_system_controls_subtext_one_handed_not_supported" msgid="4973507525360793402">"નૅવિગેશન મોડ, સ્ક્રીન રોટેશન"</string>
@@ -2618,10 +2618,10 @@
     <string name="accessibility_timeout_30secs" msgid="7814673496724760684">"30 સેકન્ડ"</string>
     <string name="accessibility_timeout_1min" msgid="4804644263166961262">"1 મિનિટ"</string>
     <string name="accessibility_timeout_2mins" msgid="7901692984522708679">"2 મિનિટ"</string>
-    <string name="accessibility_setting_item_control_timeout_title" msgid="1600516937989217899">"પગલાં લેવાનો સમય (ઍક્સેસિબિલિટીની સમયસમાપ્તિ)"</string>
+    <string name="accessibility_setting_item_control_timeout_title" msgid="1600516937989217899">"ઍક્શન લેવાનો સમય (ઍક્સેસિબિલિટીની સમયસમાપ્તિ)"</string>
     <string name="accessibility_control_timeout_about_title" msgid="813588002683460837">"પગલાં લેવાના સમય (ઍક્સેસિબિલિટીની સમયસમાપ્તિ) વિશે"</string>
     <string name="accessibility_control_timeout_footer_learn_more_content_description" msgid="8118584413220542193">"પગલાં લેવાના સમય (ઍક્સેસિબિલિટીની સમયસમાપ્તિ) વિશે વધુ જાણો"</string>
-    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"પગલાં લેવાનો સમય"</string>
+    <string name="accessibility_control_timeout_preference_title" msgid="1443940538597464758">"ઍક્શન લેવાનો સમય"</string>
     <string name="accessibility_control_timeout_preference_summary" msgid="4037051091059316310">"સમયની આ પસંદગીઓને બધી ઍપ દ્વારા સપોર્ટ આપવામાં આવતો નથી"</string>
     <string name="accessibility_control_timeout_preference_intro_text" msgid="1398116710556762245">"તમને ઍક્શન લેવાનું કહેતા હોય, તેવા હંગામી રીતે દેખાતા મેસેજને કેટલા સમય સુધી બતાવવા તે પસંદ કરો"</string>
     <string name="accessibility_long_press_timeout_preference_title" msgid="5237764682976688855">"ટચ કરીને થોડીવાર દબાવી રાખવા પર વિલંબ"</string>
@@ -2629,7 +2629,7 @@
     <string name="accessibility_display_inversion_switch_title" msgid="7458595722552743503">"વિપરીત રંગમાં બદલવાનો ઉપયોગ કરો"</string>
     <string name="accessibility_display_inversion_shortcut_title" msgid="6889624526691513462">"વિપરીત રંગમાં બદલવાનો શૉર્ટકટ"</string>
     <string name="accessibility_display_inversion_preference_intro_text" msgid="1159663288481145318">"વિપરીત રંગમાં બદલવાની સુવિધાથી લાઇટ સ્ક્રીન ઘેરી બની જાય છે. તે ઘેરી સ્ક્રીનને લાઇટ પણ બનાવે છે."</string>
-    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;ધ્યાનમાં રાખો&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; મીડિયા અને છબીઓમાં રંગ બદલાશે&lt;/li&gt; &lt;li&gt; વિપરીત રંગમાં બદલવાની સુવિધા બધી ઍપ પર કામ કરે છે&lt;/li&gt; &lt;li&gt; ડાર્ક બૅકગ્રાઉન્ડ બતાવવા માટે તેના બદલે ડાર્ક થીમનો ઉપયોગ કરી શકાય છે&lt;/li&gt; &lt;/ol&gt;"</string>
+    <string name="accessibility_display_inversion_preference_subtitle" msgid="8748527808247125417">"&lt;b&gt;ધ્યાનમાં રાખો&lt;/b&gt;&lt;br/&gt; &lt;ol&gt; &lt;li&gt; મીડિયા અને છબીઓમાં રંગ બદલાશે&lt;/li&gt; &lt;li&gt; વિપરીત રંગમાં બદલવાની સુવિધા બધી ઍપ પર કામ કરે છે&lt;/li&gt; &lt;li&gt; ડાર્ક બૅકગ્રાઉન્ડ બૅકગ્રાઉન્ડ ડિસ્પ્લે કરવા માટે તેના બદલે ડાર્ક થીમનો ઉપયોગ કરી શકાય છે&lt;/li&gt; &lt;/ol&gt;"</string>
     <string name="accessibility_action_label_panel_slice" msgid="1313725957071602932">"સેટિંગ દાખલ કરો"</string>
     <string name="accessibility_autoclick_preference_title" msgid="6755104969672994014">"ઑટોક્લિક (કર્સર અટક્યાનો સમયગાળો)"</string>
     <string name="accessibility_autoclick_about_title" msgid="152923024405552594">"ઑટોક્લિક (જોવાયાનો સમયગાળો) વિશે"</string>
@@ -2667,7 +2667,7 @@
     <string name="accessibility_autoclick_navigation_settings" msgid="26376319288642658">"નૅવિગેશન સેટિંગ"</string>
     <string name="accessibility_vibration_settings_title" msgid="936301142478631993">"વાઇબ્રેશન અને હેપ્ટિક"</string>
     <string name="accessibility_vibration_settings_summary" msgid="3690308537483465527">"વિવિધ પ્રકારના વપરાશ માટે વાઇબ્રેશનની તીવ્રતા નિયંત્રિત કરો"</string>
-    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"ચાલુ / કૉલ, નોટિફિકેશન અને અલાર્મ માટે વાઇબ્રેશન લેવલ નિયંત્રિત કરો"</string>
+    <string name="accessibility_vibration_settings_state_on" msgid="3316037269092584284">"ચાલુ છે / કૉલ, નોટિફિકેશન અને અલાર્મ માટે વાઇબ્રેશન લેવલ નિયંત્રિત કરો"</string>
     <string name="accessibility_vibration_settings_state_off" msgid="113565506991847845">"બંધ / કૉલ, નોટિફિકેશન અને અલાર્મ માટે વાઇબ્રેશન લેવલ નિયંત્રિત કરો"</string>
     <string name="accessibility_vibration_setting_disabled_for_silent_mode_summary" msgid="3982701772953323190">"ડિવાઇસ સાઇલન્ટ મોડ પર સેટ કરેલું હોવાથી સેટિંગ બંધ કરવામાં આવ્યું છે"</string>
     <string name="accessibility_call_vibration_category_title" msgid="2545607568768192318">"કૉલ"</string>
@@ -3768,7 +3768,7 @@
     <string name="live_caption_title" msgid="8617086825712756983">"લાઇવ કૅપ્શન"</string>
     <string name="live_caption_summary" msgid="7290150167089515457">"કૉલ, વીડિયો અને અન્ય મીડિયા માટે કૅપ્શન મેળવો"</string>
     <string name="live_caption_on_summary" msgid="8921561021882989495">"ચાલુ / કૉલ, વીડિયો અને અન્ય મીડિયા માટે કૅપ્શન મેળવો"</string>
-    <string name="live_caption_off_summary" msgid="6761535729357010911">"બંધ / કૉલ, વીડિયો અને અન્ય મીડિયા માટે કૅપ્શન મેળવો"</string>
+    <string name="live_caption_off_summary" msgid="6761535729357010911">"બંધ છે / કૉલ, વીડિયો અને અન્ય મીડિયા માટે કૅપ્શન મેળવો"</string>
     <string name="spatial_audio_wired_headphones" msgid="2237355789145828648">"વાયર્ડ હૅડફોન"</string>
     <string name="spatial_audio_text" msgid="8201387855375146000">"સુસંગત મીડિયાનો ઑડિયો વધુ ઇમર્સિવ બને છે"</string>
     <string name="spatial_summary_off" msgid="8272678804629774378">"બંધ"</string>
@@ -3938,13 +3938,13 @@
     <string name="bubbles_feature_disabled_dialog_text" msgid="5275666953364031055">"આ ઍપ માટે બબલ ચાલુ કરવાથી તમારા ડિવાઇસ માટે પણ બબલ ચાલુ થઈ જશે.\n\nઆનાથી બબલને મંજૂરી આપતી અન્ય ઍપ કે વાતચીતને અસર થઈ શકે છે."</string>
     <string name="bubbles_feature_disabled_button_approve" msgid="2042628067101419871">"ચાલુ કરો"</string>
     <string name="bubbles_feature_disabled_button_cancel" msgid="8963409459448350600">"રદ કરો"</string>
-    <string name="notifications_bubble_setting_on_summary" msgid="4641572377430901196">"ચાલુ કરો / વાતચીત ફ્લોટિંગ આઇકનની જેમ દેખાઈ શકે છે"</string>
+    <string name="notifications_bubble_setting_on_summary" msgid="4641572377430901196">"ચાલુ છે / વાતચીતો ફ્લોટિંગ આઇકનની જેમ દેખાઈ શકે છે"</string>
     <string name="notifications_bubble_setting_title" msgid="8287649393774855268">"ઍપને બબલ બતાવવાની મંજૂરી આપો"</string>
     <string name="notifications_bubble_setting_description" msgid="7336770088735025981">"કેટલીક વાતચીત અન્ય ઍપની ટોચ પર ફ્લોટિંગ આઇકનની જેમ દેખાઈ શકે છે"</string>
     <string name="bubble_app_setting_all" msgid="312524752846978277">"બધી વાતચીત બબલ થઈ શકે છે"</string>
     <string name="bubble_app_setting_selected" msgid="4324386074198040675">"પસંદ કરેલી વાતચીત બબલ થઈ શકે છે"</string>
     <string name="bubble_app_setting_none" msgid="8643594711863996418">"કોઈ વાતચીત બબલ થઈ શકતી નથી"</string>
-    <string name="bubble_app_setting_selected_conversation_title" msgid="3060958976857529933">"વાતચીત"</string>
+    <string name="bubble_app_setting_selected_conversation_title" msgid="3060958976857529933">"વાતચીતો"</string>
     <string name="bubble_app_setting_excluded_conversation_title" msgid="324818960338773945">"આના સિવાય બધી વાતચીત બબલ કરી શકાય છે"</string>
     <string name="bubble_app_setting_unbubble_conversation" msgid="1769789500566080427">"આ વાતચીત માટે બબલ બંધ કરો"</string>
     <string name="bubble_app_setting_bubble_conversation" msgid="1461981680982964285">"આ વાતચીત માટે બબલ ચાલુ કરો"</string>
@@ -5021,7 +5021,7 @@
     <string name="credman_autofill_confirmation_message" msgid="843829628024668466">"&lt;b&gt;Use &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt;?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; હવેથી નવા પાસવર્ડ, પાસકી તેમજ અન્ય માહિતી અહીં સાચવવામાં આવશે. &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt; દ્વારા ઑટોમૅટિક રીતે ભરવાની માહિતી નક્કી કરવા માટે તમારી સ્ક્રીન પરની માહિતીનો ઉપયોગ કરવામાં આવી શકે છે."</string>
     <string name="credman_picker_title" msgid="8442086614222006564">"પાસવર્ડ માટે પસંદગીની સેવા, પાસકી અને ઑટોમૅટિક રીતે ભરવાની સુવિધા"</string>
     <string name="credman_picker_title_new" msgid="4292105803864397398">"પસંદગીની સેવા"</string>
-    <string name="credman_picker_page_summary" msgid="4633938046738617332">"સાઇન-ઇન અને ઑટોમૅટિક રીતે ભરવાની સુવિધાના સૂચનો માટે ડેટા બચાવવા તમારી પસંદગીની સેવા પસંદ કરો"</string>
+    <string name="credman_picker_page_summary" msgid="4633938046738617332">"સાઇન-ઇન અને ઑટોમૅટિક રીતે ભરવાની સુવિધાના સૂચનો માટે ડેટા સાચવવા તમારી પસંદગીની સેવા પસંદ કરો"</string>
     <string name="credman_confirmation_message_title" msgid="8847900085593880729">"%1$sને બંધ કરીએ?"</string>
     <string name="credman_confirmation_message" msgid="2357324543658635239">"&lt;b&gt;શું આ સેવા બંધ કરીએ?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; જ્યારે તમે સાઇન ઇન કરશો ત્યારે પાસવર્ડ, પાસકી, ચુકવણી પદ્ધતિઓ અને અન્ય માહિતી જેવી સાચવેલી માહિતી ભરવામાં આવશે નહીં. તમારી સાચવેલી માહિતીનો ઉપયોગ કરવા માટે, કોઈ પાસવર્ડ, પાસકી કે ડેટા સેવા પસંદ કરો."</string>
     <string name="account_dashboard_title_with_passkeys" msgid="648242372086733541">"પાસવર્ડ, પાસકી અને એકાઉન્ટ"</string>
@@ -5033,7 +5033,7 @@
     <string name="credman_confirmation_change_provider_positive_button" msgid="7732302992885116967">"બદલો"</string>
     <string name="credman_limit_error_msg_title" msgid="1525814645803612135">"તમે ફક્ત 5 સેવા ચાલુ રાખી શકો છો"</string>
     <string name="credman_limit_error_msg" msgid="2521803280130310063">"અન્ય સેવા ઉમેરવા માટે ઓછામાં ઓછી 1 સેવા બંધ કરો"</string>
-    <string name="credman_main_settings_intro_text" msgid="4981603639240772620">"સાઇન-ઇન અને ઑટોમૅટિક રીતે ભરવાની સુવિધાના સૂચનો માટે ડેટા બચાવવા તમારી પસંદગીની સેવા પસંદ કરો. જો તમે ઇચ્છતા હો કે તેઓ સૂચનો પણ આપે, તો વધારાની સેવાઓ ચાલુ કરો."</string>
+    <string name="credman_main_settings_intro_text" msgid="4981603639240772620">"સાઇન-ઇન અને ઑટોમૅટિક રીતે ભરવાની સુવિધાના સૂચનો માટે ડેટા સાચવવા તમારી પસંદગીની સેવા પસંદ કરો. જો તમે ઇચ્છતા હો કે તેઓ સૂચનો પણ આપે, તો વધારાની સેવાઓ ચાલુ કરો."</string>
     <string name="credman_enable_confirmation_message" msgid="8407841892310870169">"ઑટોમૅટિક રીતે શું ભરી શકાય તે નક્કી કરવા માટે %1$s તમારી સ્ક્રીન પર જે છે તેનો ઉપયોગ કરે છે."</string>
     <string name="credman_error_message_title" msgid="4099557206946333568">"પાસવર્ડ, પાસકી, અને ડેટા સંબંધિત સેવાઓની મર્યાદા"</string>
     <string name="credman_error_message" msgid="8334797097200415449">"તમે એક જ સમયે 5 પાસવર્ડ, પાસકી, અને ડેટા સંબંધિત સેવાઓ સક્રિય રાખી શકો છો. વધુ સેવા ઉમેરવા માટે, કોઈ સેવાને બંધ કરો."</string>
@@ -5724,7 +5724,7 @@
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"ફિંગરપ્રિન્ટ સેન્સર"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"ફ્લૅશ નોટિફિકેશન"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"ફ્લૅશ નોટિફિકેશન વિશે"</string>
-    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"બંધ / નોટિફિકેશન અને અલાર્મ માટે, કૅમેરા અથવા સ્ક્રીન ફ્લૅશ વડે અલર્ટ મેળવો"</string>
+    <string name="flash_notifications_summary_off" msgid="5425509923465184385">"બંધ છે / નોટિફિકેશન અને અલાર્મ માટે, કૅમેરા અથવા સ્ક્રીન ફ્લૅશ વડે અલર્ટ મેળવો"</string>
     <string name="flash_notifications_summary_on" msgid="7750683903778104666">"ચાલુ / નોટિફિકેશન અને અલાર્મ માટે, કૅમેરા અથવા સ્ક્રીન ફ્લૅશ વડે અલર્ટ મેળવો"</string>
     <string name="flash_notifications_intro" msgid="8409873413480928249">"જ્યારે તમને નોટિફિકેશન મળે કે અલાર્મ વાગે, ત્યારે કૅમેરાની લાઇટ કે સ્ક્રીન ફ્લૅશ કરો"</string>
     <string name="flash_notifications_intro_without_camera_flash" msgid="6297337174487793891">"જ્યારે તમને નોટિફિકેશન મળે કે અલાર્મ વાગે, ત્યારે સ્ક્રીન ફ્લૅશ કરો"</string>
@@ -5763,7 +5763,7 @@
     <string name="color_inversion_feature_summary" msgid="1199876648549627647">"લાઇટ સ્ક્રીનને ઘેરી અને ઘેરી સ્ક્રીનને લાઇટ કરે છે"</string>
     <string name="magnification_feature_summary" msgid="4403387702011660253">"કન્ટેન્ટને તમારી સ્ક્રીન પર વધુ મોટું કરવા માટે મોટું કરો"</string>
     <string name="autoclick_disabled" msgid="3213396804955002120">"બંધ"</string>
-    <string name="show_captions_disabled" msgid="924366862253349790">"બંધ / કૅપ્શનનું કદ અને શૈલી કસ્ટમાઇઝ કરો"</string>
+    <string name="show_captions_disabled" msgid="924366862253349790">"બંધ છે / કૅપ્શનનું કદ અને શૈલી કસ્ટમાઇઝ કરો"</string>
     <string name="show_captions_enabled" msgid="3495595825041704052">"ચાલુ / કૅપ્શનનું કદ અને શૈલી કસ્ટમાઇઝ કરો"</string>
     <string name="live_caption_disabled" msgid="3562035026547887366">"બંધ"</string>
     <string name="live_caption_enabled" msgid="5269360946200718949">"ચાલુ"</string>

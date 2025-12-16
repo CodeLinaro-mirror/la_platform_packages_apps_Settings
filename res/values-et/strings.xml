@@ -1150,7 +1150,7 @@
     <string name="wifi_subscription_summary" msgid="18802471063384598">"Tellimuse vaatamine või muutmine"</string>
     <string name="wifi_privacy_settings_ephemeral_summary" msgid="8502084692297249372">"Juhuslikustatud MAC-aadress"</string>
     <string name="wifi_dpp_add_device_to_network" msgid="6141246783457722976">"Seadme lisamine"</string>
-    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Seadme võrku „<xliff:g id="SSID">%1$s</xliff:g>” lisamiseks paigutage QR-kood allolevas aknas keskele"</string>
+    <string name="wifi_dpp_center_qr_code" msgid="5270782275746178104">"Seadme võrku „<xliff:g id="SSID">%1$s</xliff:g>” lisamiseks paigutage QR-kood allolevas aknas keskele."</string>
     <string name="wifi_dpp_scan_qr_code" msgid="3543923817779444434">"QR-koodi skannimine"</string>
     <string name="wifi_dpp_scan_qr_code_join_network" msgid="969985020363459133">"Võrguga „<xliff:g id="SSID">%1$s</xliff:g>” ühenduse oomiseks paigutage QR-kood allolevas aknas keskele"</string>
     <string name="wifi_dpp_scan_qr_code_join_unknown_network" msgid="3180020429793614145">"Liituge WiFi-võrguga, skannides QR-koodi."</string>
@@ -1504,7 +1504,7 @@
     <string name="screensaver_settings_summary_postured" msgid="6346392320858994892">"Kui on püsti"</string>
     <string name="screensaver_settings_summary_postured_and_charging" msgid="5111797042509819055">"Kui on püsti ja laeb"</string>
     <string name="screensaver_settings_summary_on" msgid="4210827304351483645">"Sees / <xliff:g id="SCREEN_SAVER">%1$s</xliff:g>"</string>
-    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"Välja"</string>
+    <string name="screensaver_settings_summary_off" msgid="8720357504939106923">"Väljas"</string>
     <string name="screensaver_settings_when_to_dream" msgid="7756170756065029160">"Millal kuvada?"</string>
     <string name="screensaver_settings_low_light_mode" msgid="271972828076673743">"Vähese valguse režiim"</string>
     <string name="lift_to_wake_title" msgid="8994218158737714046">"Tõstke äratamiseks"</string>
@@ -1918,11 +1918,11 @@
     <string name="lockpassword_forgot_pattern" msgid="1196116549051927516">"Kas unustasite mustri?"</string>
     <string name="lockpassword_forgot_pin" msgid="7164232234705747672">"Kas unustasite PIN-koodi?"</string>
     <string name="lockpassword_confirm_your_pattern_generic" msgid="4983618652824112610">"Teie muster kinnitab teie isikut."</string>
-    <string name="lockpassword_confirm_your_pin_generic" msgid="45398445305933355">"Teie PIN-kood kinnitab teie isikut"</string>
-    <string name="lockpassword_confirm_your_password_generic" msgid="1263500907003586594">"Teie parool kinnitab teie isikut"</string>
+    <string name="lockpassword_confirm_your_pin_generic" msgid="45398445305933355">"Teie PIN-kood kinnitab teie isikut."</string>
+    <string name="lockpassword_confirm_your_password_generic" msgid="1263500907003586594">"Teie parool kinnitab teie isikut."</string>
     <string name="lockpassword_confirm_your_pattern_generic_profile" msgid="2552062474449423029">"Teie töökoha muster kinnitab teie isikut."</string>
-    <string name="lockpassword_confirm_your_pin_generic_profile" msgid="6556640367641079244">"Teie töökoha PIN-kood kinnitab teie isikut"</string>
-    <string name="lockpassword_confirm_your_password_generic_profile" msgid="5700270644291633820">"Teie töökoha parool kinnitab teie isikut"</string>
+    <string name="lockpassword_confirm_your_pin_generic_profile" msgid="6556640367641079244">"Teie töökoha PIN-kood kinnitab teie isikut."</string>
+    <string name="lockpassword_confirm_your_password_generic_profile" msgid="5700270644291633820">"Teie töökoha parool kinnitab teie isikut."</string>
     <string name="lockpassword_strong_auth_required_device_pattern" msgid="113817518413715557">"Lisaturvalisuse jaoks kasutage seadme mustrit"</string>
     <string name="lockpassword_strong_auth_required_device_pin" msgid="9163822166411129815">"Lisaturvalisuse jaoks sisestage oma seadme PIN-kood"</string>
     <string name="lockpassword_strong_auth_required_device_password" msgid="8310047427464299337">"Lisaturvalisuse jaoks sisestage oma seadme parool"</string>
@@ -2058,7 +2058,7 @@
     <string name="filter_apps_running" msgid="535465683273284141">"Töös"</string>
     <string name="not_installed" msgid="5074606858798519449">"Pole selle kasutaja jaoks installitud"</string>
     <string name="installed" msgid="2837449358488825884">"Installitud"</string>
-    <string name="no_applications" msgid="5471491608902031500">"Ühtivaid rakendusi ei ole"</string>
+    <string name="no_applications" msgid="5471491608902031500">"Ühtivaid rakendusi ei ole."</string>
     <string name="internal_storage" msgid="999496851424448809">"Sisemälu"</string>
     <string name="recompute_size" msgid="1098091228370999128">"Suuruse ümberarvutamine ..."</string>
     <string name="clear_data_dlg_title" msgid="180446967743732410">"Kas kustutada rakenduse andmed?"</string>
@@ -2771,7 +2771,7 @@
     <string name="daltonizer_mode_tritanomaly_title" msgid="2278786218762602022">"Sinine-kollane"</string>
     <string name="daltonizer_mode_grayscale_title" msgid="152005391387952588">"Halltoonid"</string>
     <string name="daltonizer_saturation_title" msgid="2999486412114963068">"Intensiivsus"</string>
-    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"Pole saadaval halltoonide reziimis ega siis, kui värvide korrigeerimine on keelatud"</string>
+    <string name="daltonizer_saturation_unavailable_summary" msgid="8319753055567798775">"Pole saadaval halltoonide režiimis ega siis, kui värvide korrigeerimine on keelatud."</string>
     <string name="daltonizer_mode_deuteranomaly_summary" msgid="391621040826073327">"Deuteranomaalia"</string>
     <string name="daltonizer_mode_protanomaly_summary" msgid="877971556622350648">"Protanomaalia"</string>
     <string name="daltonizer_mode_tritanomaly_summary" msgid="2428218320118180070">"Tritanomaalia"</string>
@@ -4547,7 +4547,7 @@
     <string name="permit_full_screen_intent" msgid="2414307667550523630">"Selle rakenduse kogu ekraani katvate märguannete lubamine"</string>
     <string name="footer_description_full_screen_intent" msgid="7716518411349225528">"Lubage sellel rakendusel kuvada kogu ekraani katvaid märguandeid, kui seade on lukustatud. Rakendused võivad selle abil tõsta esile alarme, sissetulevaid kõnesid või muid pakilisi märguandeid."</string>
     <string name="write_system_preferences_page_title" msgid="4775435310385611055">"Süsteemieelistuste kirjutamine"</string>
-    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Lubage sellel rakendusel teie nimel süsteemieelistusi muuta"</string>
+    <string name="write_system_preferences_switch_title" msgid="213522354119233085">"Luba sellel rakendusel teie nimel süsteemieelistusi muuta"</string>
     <string name="write_system_preferences_footer_description" msgid="8645052087619752514">"See luba võimaldab rakendusel muuta põhisüsteemi eelistusi."</string>
     <string name="media_management_apps_title" msgid="8222942355578724582">"Meediahalduse rakendused"</string>
     <string name="media_management_apps_toggle_label" msgid="166724270857067456">"Rakendusel meedia haldamise lubamine"</string>
