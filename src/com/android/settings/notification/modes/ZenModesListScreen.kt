@@ -22,6 +22,7 @@ import android.os.UserManager.DISALLOW_ADJUST_VOLUME
 import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.ModesSettingsActivity
+import com.android.settings.Utils
 import com.android.settings.contract.TAG_DEVICE_STATE_PREFERENCE
 import com.android.settings.contract.TAG_DEVICE_STATE_SCREEN
 import com.android.settings.core.PreferenceScreenMixin
@@ -37,6 +38,7 @@ import com.android.settingslib.metadata.preferenceHierarchy
 import com.android.settingslib.notification.modes.ZenModesBackend
 import com.android.settingslib.widget.SettingsThemeHelper.isExpressiveTheme
 import kotlinx.coroutines.CoroutineScope
+import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_NOTIFICATIONS
 
 // LINT.IfChange
 @ProvidePreferenceScreen(ZenModesListScreen.KEY)
@@ -46,6 +48,8 @@ open class ZenModesListScreen :
     PreferenceIconProvider,
     PreferenceSummaryProvider,
     PreferenceLifecycleProvider {
+    override fun tags(context: Context) = arrayOf(APP_FUNCTION_NOTIFICATIONS, TAG_DEVICE_STATE_SCREEN, TAG_DEVICE_STATE_PREFERENCE)
+
 
     private var zenSettingsObserver: ZenSettingsObserver? = null
 
@@ -79,14 +83,18 @@ open class ZenModesListScreen :
             else -> com.android.internal.R.drawable.ic_zen_priority_modes
         }
 
-    override fun isEnabled(context: Context) = super<PreferenceRestrictionMixin>.isEnabled(context)
+    override fun isEnabled(context: Context): Boolean {
+        if (Utils.shouldHideModesInDemoMode(context)) {
+            return false
+        }
+        return super<PreferenceRestrictionMixin>.isEnabled(context)
+    }
 
     override val restrictionKeys: Array<String> = arrayOf(DISALLOW_ADJUST_VOLUME)
 
     override fun getMetricsCategory(): Int = SettingsEnums.ZEN_PRIORITY_MODES_LIST
 
-    override fun tags(context: Context) =
-        arrayOf(TAG_DEVICE_STATE_SCREEN, TAG_DEVICE_STATE_PREFERENCE)
+
 
     override fun hasCompleteHierarchy() = false
 

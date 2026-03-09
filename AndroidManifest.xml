@@ -2989,7 +2989,7 @@
         </activity>
 
         <activity
-            android:name=".supervision.SupervisionPinManagementActivity"
+            android:name=".supervision.credentialmanagement.SupervisionPinManagementActivity"
             android:label="@string/supervision_pin_management_preference_title"
             android:exported="true">
             <meta-data
@@ -3046,6 +3046,7 @@
 
         <activity
             android:name=".supervision.credentialmanagement.SupervisionPinRecoveryActivity"
+            android:theme="@style/Transparent"
             android:excludeFromRecents="true"
             android:exported="false" />
 
@@ -5360,7 +5361,7 @@
         </service>
 
         <service
-            android:name=".development.qstile.DevelopmentTiles$WirelessDebugging"
+            android:name=".development.qstile.AdbWirelessDebuggingDevelopmentTile"
             android:label="@string/enable_adb_wireless"
             android:icon="@drawable/tile_icon_debugging_wireless"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
@@ -6126,6 +6127,11 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
+
+        <service
+            android:name="com.android.settings.safetycenter.WatchRangingJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="false" />
 
         <activity android:name="com.android.settings.biometrics.IdentityCheckNotificationPromoCardActivity"
             android:enabled="true"

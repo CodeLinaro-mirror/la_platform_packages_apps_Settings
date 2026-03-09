@@ -35,15 +35,21 @@ import com.android.extensions.appfunctions.ExecuteAppFunctionResponse
 import com.android.settings.appfunctions.executors.AndroidApiStateMetadataProviderExecutor
 import com.android.settings.appfunctions.executors.AndroidApiStateProviderExecutor
 import com.android.settings.appfunctions.executors.AndroidApiStateSetterExecutor
+import com.android.settings.appfunctions.executors.CatalystStateGetterExecutor
 import com.android.settings.appfunctions.executors.CatalystStateMetadataProviderExecutor
 import com.android.settings.appfunctions.executors.CatalystStateProviderExecutor
 import com.android.settings.appfunctions.executors.CatalystStateSetterExecutor
 import com.android.settings.appfunctions.executors.DeviceStateExecutor
 import com.android.settings.metrics.AppFunctionMetricsLogger
+import com.android.settings.metrics.toMetricsId
 import com.android.settings.utils.getLocale
+import com.android.settingslib.metadata.AppFunctionMetricsLoggerInterface
 import java.util.Locale
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.NonCancellable
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 /**
@@ -54,10 +60,12 @@ import kotlinx.coroutines.withContext
  */
 @Keep
 abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
-    open val metricsLogger = AppFunctionMetricsLogger()
+    open val metricsLogger: AppFunctionMetricsLoggerInterface = AppFunctionMetricsLogger()
 
     protected lateinit var englishContext: Context
         private set
+
+    private val backgroundScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 
     open val deviceStateProviderExecutors: List<DeviceStateExecutor> by lazy {
         listOf(
@@ -71,6 +79,13 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
     }
     val deviceStateProviderAggregator by lazy {
         DeviceStateProviderAggregator(deviceStateProviderExecutors)
+    }
+
+    open val deviceStateItemProviderExecutors: List<DeviceStateExecutor> by lazy {
+        listOf(CatalystStateGetterExecutor(applicationContext))
+    }
+    val deviceStateItemProviderAggregator by lazy {
+        DeviceStateItemProviderAggregator(deviceStateItemProviderExecutors)
     }
 
     open val deviceStateMetadataProviderExecutors: List<DeviceStateExecutor> by lazy {
@@ -103,6 +118,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
             DeviceStateAppFunctionType.GET_NOTIFICATIONS to deviceStateProviderAggregator,
             DeviceStateAppFunctionType.GET_APPS to deviceStateProviderAggregator,
             DeviceStateAppFunctionType.GET_METADATA to deviceStateMetadataProviderAggregator,
+            DeviceStateAppFunctionType.GET_DEVICE_STATE to deviceStateItemProviderAggregator,
             DeviceStateAppFunctionType.SET_DEVICE_STATE to deviceStateSetterAggregator,
             DeviceStateAppFunctionType.ADJUST_DEVICE_STATE_BY_PERCENTAGE to
                 deviceStateSetterAggregator,
@@ -128,6 +144,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
                 callingPackage,
                 ERROR_FUNCTION_NOT_FOUND,
                 applicationContext,
+                null,
             )
             callback.onError(
                 AppFunctionException(
@@ -146,7 +163,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
                 callingPackage,
                 ERROR_DENIED,
                 applicationContext,
-                appFunctionType,
+                appFunctionType.toMetricsId(),
             )
             callback.onError(
                 AppFunctionException(
@@ -157,7 +174,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
             )
         }
 
-        runBlocking {
+        backgroundScope.launch(NonCancellable) {
             withContext(Dispatchers.IO) {
                 SettingsPreferenceServiceClientManager.awaitInitialized()
             }
@@ -169,7 +186,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
                     callingPackage,
                     ERROR_FUNCTION_NOT_FOUND,
                     applicationContext,
-                    appFunctionType,
+                    appFunctionType.toMetricsId(),
                 )
                 callback.onError(
                     AppFunctionException(
@@ -193,7 +210,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
             Trace.endSection()
 
             metricsLogger.logAppFunction(
-                appFunctionType,
+                appFunctionType.toMetricsId(),
                 callingPackage,
                 executeDurationMs,
                 applicationContext,

@@ -17,6 +17,7 @@
 package com.android.settings
 
 import android.app.Activity
+import android.content.Intent
 import android.content.Intent.FLAG_ACTIVITY_FORWARD_RESULT
 import android.content.Intent.FLAG_ACTIVITY_NEW_TASK
 import android.os.Bundle
@@ -26,6 +27,7 @@ import com.android.settings.activityembedding.ActivityEmbeddingUtils
 import com.android.settings.activityembedding.EmbeddedDeepLinkUtils.getTrampolineIntent
 import com.android.settings.core.PreferenceScreenMixin
 import com.android.settings.core.SubSettingLauncher
+import com.android.settings.spa.SpaActivity.Companion.getSpaActivityIntent
 import com.android.settings.spa.SpaActivity.Companion.startSpaActivity
 import com.android.settingslib.core.instrumentation.Instrumentable.METRICS_CATEGORY_UNKNOWN
 import com.android.settingslib.metadata.CatalystFlagProviderFactory
@@ -39,6 +41,7 @@ import com.android.settingslib.metadata.PreferenceScreenRegistry
 import com.android.settingslib.metadata.PreferenceSearchIndexablesProvider
 import com.android.settingslib.metadata.ValidatedKeyParameters
 import com.android.settingslib.metadata.preferencesapi.ApiOperationContext
+import com.android.settingslib.metadata.preferencesapi.FlagContext
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen
 import com.android.settingslib.metadata.preferencesapi.preconditions.Allowed
 import com.android.settingslib.metadata.preferencesapi.preconditions.Disallowed
@@ -119,12 +122,9 @@ class SettingsLaunchpadActivity : Activity() {
                 }
 
         if (screenMetadata is PreferencesApiScreen) {
-            val checkScreenFlag = screenMetadata.flag?.check() ?: true
+            val checkScreenFlag = screenMetadata.flag?.check(FlagContext(this)) ?: true
             if (!checkScreenFlag) { // Do not launch the screen if flag is disabled.
-                Log.w(
-                    TAG,
-                    "Screen flag is disabled for key '$screenKey'. Aborting launch.",
-                )
+                Log.w(TAG, "Screen flag is disabled for key '$screenKey'. Aborting launch.")
                 return
             }
 
@@ -139,7 +139,9 @@ class SettingsLaunchpadActivity : Activity() {
             // the precondition checks are fast and won't cause ANRs.
             val screenPreconditionsCheck =
                 runBlocking { screenMetadata.screenPreconditions?.check(opContext) } ?: Allowed
-            if (screenPreconditionsCheck != Allowed) { // Do not launch the screen if preconditions are not met.
+            if (
+                screenPreconditionsCheck != Allowed
+            ) { // Do not launch the screen if preconditions are not met.
                 val reason = (screenPreconditionsCheck as Disallowed).getReason(opContext.context)
                 Log.w(
                     TAG,
@@ -148,21 +150,31 @@ class SettingsLaunchpadActivity : Activity() {
                 return
             }
 
-            val spaRoutePrefix = screenMetadata.spaRoutePrefix
-            if (!spaRoutePrefix.isNullOrEmpty()) {
-                startSpaActivity(spaRoutePrefix, screenMetadata.topLevelSettingsCategory.value)
+            val spaRoute = screenMetadata.getSpaRoute()
+            if (!spaRoute.isNullOrEmpty()) {
+                startScreen(
+                    screenMetadata,
+                    { getSpaActivityIntent(spaRoute) },
+                    { startSpaActivity(spaRoute) },
+                )
                 return
             }
         }
 
-        val fragmentClassName =
-            screenMetadata.fragmentClass()?.name
-                ?: run {
-                    Log.e(TAG, "Fragment class name is null for key: $screenKey")
-                    return
-                }
+        val fragmentClass =
+            try {
+                screenMetadata.fragmentClass()
+            } catch (e: IllegalStateException) {
+                Log.e(TAG, "Invalid screen implementation for key: $screenKey", e)
+                null
+            }
 
-        launchFragment(fragmentClassName, screenKey, screenArgsBundle, screenMetadata)
+        if (fragmentClass == null) {
+            Log.e(TAG, "Fragment class name is null for key: $screenKey")
+            return
+        }
+
+        launchFragment(fragmentClass.name, screenKey, screenArgsBundle, screenMetadata)
     }
 
     private fun launchFragment(
@@ -194,13 +206,25 @@ class SettingsLaunchpadActivity : Activity() {
                     METRICS_CATEGORY_UNKNOWN
                 ) // TODO(b/465855195): set a meaningful metrics category
 
+        startScreen(
+            metadata,
+            { launcher.toIntent() },
+            { launcher.addFlags(FLAG_ACTIVITY_NEW_TASK).launch() },
+        )
+    }
+
+    private fun startScreen(
+        metadata: PreferenceScreenMetadata,
+        intent: () -> Intent,
+        launch: () -> Unit,
+    ) {
         if (shouldLaunchDeepLinkTrampoline()) {
             val menuKey = resolveMenuKey(metadata)
             val deepLinkIntent =
-                getTrampolineIntent(launcher.toIntent(), menuKey).addFlags(FLAG_ACTIVITY_NEW_TASK)
+                getTrampolineIntent(intent(), menuKey).addFlags(FLAG_ACTIVITY_NEW_TASK)
             startActivity(deepLinkIntent)
         } else {
-            launcher.addFlags(FLAG_ACTIVITY_NEW_TASK).launch()
+            launch()
         }
     }
 

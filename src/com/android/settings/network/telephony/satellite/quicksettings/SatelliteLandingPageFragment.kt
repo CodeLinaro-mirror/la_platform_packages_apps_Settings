@@ -16,17 +16,27 @@
 
 package com.android.settings.network.telephony.satellite.quicksettings
 
+import android.app.settings.SettingsEnums
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.content.pm.PackageManager
 import android.os.Bundle
-import android.telephony.SubscriptionManager
 import android.util.Log
 import android.view.View
 import androidx.annotation.VisibleForTesting
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.size
+import androidx.compose.material3.Icon
+import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -34,7 +44,11 @@ import androidx.lifecycle.repeatOnLifecycle
 import androidx.preference.Preference
 import com.android.internal.telephony.flags.Flags
 import com.android.settings.R
+import com.android.settings.overlay.FeatureFactory
 import com.android.settings.spa.preference.ComposePreference
+import com.android.settingslib.spa.framework.theme.SettingsDimension
+import com.android.settingslib.spa.widget.preference.Preference as SpaPreference
+import com.android.settingslib.spa.widget.preference.PreferenceModel
 import com.android.settingslib.spaprivileged.template.app.AppListItemModel
 import com.android.settingslib.widget.FooterPreference
 import com.android.settingslib.widget.IllustrationPreference
@@ -54,6 +68,7 @@ import kotlinx.coroutines.launch
 class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
 
     private lateinit var packageManager: PackageManager
+    private var isVariantMetricLogged = false
 
     private var appsRepository: SatelliteAppsRepository? = null
     private var backgroundDispatcher: CoroutineDispatcher = Dispatchers.Default
@@ -90,8 +105,6 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
 
     constructor() : super()
 
-    private var activeSubId: Int = SubscriptionManager.INVALID_SUBSCRIPTION_ID
-
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         if (!::packageManager.isInitialized) {
             packageManager = requireContext().packageManager
@@ -101,8 +114,6 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        updateActiveSubId()
-        Log.d(TAG, "onViewCreated: activeSubId: $activeSubId")
 
         bannerController =
             SatelliteBannerController(
@@ -118,12 +129,13 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
 
     override fun onResume() {
         super.onResume()
-        updateActiveSubId()
+        FeatureFactory.featureFactory.metricsFeatureProvider.visible(
+            context,
+            FeatureFactory.featureFactory.metricsFeatureProvider.getAttribution(activity),
+            SettingsEnums.SATELLITE_LANDING_PAGE,
+            0, // latency
+        )
         updateLandingPageContent()
-    }
-
-    private fun updateActiveSubId() {
-        activeSubId = SubscriptionManager.getActiveDataSubscriptionId()
     }
 
     private fun observeViewModel() {
@@ -132,6 +144,15 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
                 launch {
                     viewModel.isLteBasedNtnSupported.collectLatest { isLte ->
                         if (isLte != null) {
+                            if (!isVariantMetricLogged) {
+                                val subType = if (isLte) 2 else 1 // 2 for LTE, 1 for NB-NTN
+                                FeatureFactory.featureFactory.metricsFeatureProvider.action(
+                                    requireContext(),
+                                    SettingsEnums.ACTION_SATELLITE_LANDING_PAGE_VARIANT,
+                                    subType,
+                                )
+                                isVariantMetricLogged = true
+                            }
                             addIllustrationPreference(isLte)
                             updateTryADemoButtonVisibility(isLte)
                             setUpFooterPreference(isLte)
@@ -161,11 +182,10 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
      * Updates the content of the landing page.
      *
      * This method triggers a refresh in the ViewModel, which in turn updates the satellite app list
-     * and support status. It should be called when the fragment becomes visible or when the
-     * subscription ID might have changed.
+     * and support status. It should be called when the fragment becomes visible.
      */
     private fun updateLandingPageContent() {
-        viewModel.refresh(activeSubId)
+        viewModel.refresh()
     }
 
     /**
@@ -185,6 +205,10 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
     private fun setUpTryADemoButtonListener() {
         val demoButtonPreference = findPreference<Preference>(KEY_TRY_A_DEMO_BUTTON) ?: return
         demoButtonPreference.setOnPreferenceClickListener {
+            FeatureFactory.featureFactory.metricsFeatureProvider.action(
+                requireContext(),
+                SettingsEnums.ACTION_SATELLITE_DEMO_CLICK,
+            )
             val action =
                 getString(
                     com.android.internal.R.string.config_satellite_demo_mode_sos_intent_action
@@ -228,23 +252,77 @@ class SatelliteLandingPageFragment : SettingsBasePreferenceFragment {
         composePreference?.setContent {
             val satelliteAppItems by viewModel.satelliteAppItems.collectAsState()
             val areAppsEnabled by viewModel.areAppsEnabled.collectAsState()
+            var isExpanded by rememberSaveable { mutableStateOf(false) }
+            val maxVisible = 8
 
             composePreference.isVisible = satelliteAppItems.isNotEmpty()
+
+            // Optimization: If only 1 extra app exists, just show it instead of a button.
+            val showExpandButton = satelliteAppItems.size > maxVisible + 1
+            val visibleItems =
+                if (isExpanded || !showExpandButton) {
+                    satelliteAppItems
+                } else {
+                    satelliteAppItems.take(maxVisible)
+                }
+
             Column {
-                satelliteAppItems.forEach { item ->
+                visibleItems.forEach { item ->
                     val appListItemModel =
                         AppListItemModel(
                             record = item,
                             label = item.getAppLabel(packageManager),
-                            summary = { "" },
+                            summary = { item.summary ?: "" },
                         )
                     appListItemModel.SatelliteAppListItem(
                         enabled = areAppsEnabled,
-                        onClick = { item.intent?.let { startActivitySafely(it) } },
+                        onClick = { handleSatelliteAppClick(item) },
+                    )
+                }
+
+                if (showExpandButton) {
+                    val seeAllTitle =
+                        stringResource(R.string.satellite_apps_see_all_supported_apps_text)
+                    val seeLessTitle = stringResource(R.string.satellite_apps_see_less_text)
+                    SpaPreference(
+                        remember(isExpanded, seeAllTitle, seeLessTitle) {
+                            object : PreferenceModel {
+                                override val title = if (isExpanded) seeLessTitle else seeAllTitle
+                                override val icon =
+                                    @Composable {
+                                        Icon(
+                                            painter =
+                                                if (isExpanded)
+                                                    painterResource(
+                                                        R.drawable.ic_settings_expand_less
+                                                    )
+                                                else
+                                                    painterResource(
+                                                        R.drawable.ic_settings_expand_more
+                                                    ),
+                                            contentDescription = null,
+                                            modifier = Modifier.size(SettingsDimension.itemIconSize),
+                                        )
+                                    }
+                                override val onClick = { isExpanded = !isExpanded }
+                            }
+                        }
                     )
                 }
             }
         }
+    }
+
+    private fun handleSatelliteAppClick(item: SatelliteAppItem) {
+        // Log the package name of the app that was clicked. No sensitive
+        // data is logged as this is only for satellite optimized apps.
+        val payload = item.app.packageName
+        FeatureFactory.featureFactory.metricsFeatureProvider.action(
+            requireContext(),
+            SettingsEnums.ACTION_SATELLITE_APP_CLICK,
+            payload,
+        )
+        item.intent?.let { startActivitySafely(it) }
     }
 
     /** Sets up the footer preference based on the NTN type. */

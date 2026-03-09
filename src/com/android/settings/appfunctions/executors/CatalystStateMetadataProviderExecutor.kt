@@ -21,6 +21,7 @@ import android.content.Context
 import android.content.Intent
 import android.content.res.Resources
 import android.os.Binder
+import android.provider.Settings
 import android.util.Log
 import com.android.settings.appfunctions.CatalystConfig
 import com.android.settings.appfunctions.DeviceStateAppFunctionType
@@ -34,8 +35,11 @@ import com.android.settingslib.metadata.PreferenceScreenMetadata
 import com.android.settingslib.metadata.PreferenceScreenRegistry
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
+import com.android.settingslib.metadata.getPreferencePurpose
 import com.android.settingslib.metadata.getPreferenceScreenTitle
 import com.android.settingslib.metadata.getPreferenceTitle
+import com.android.settingslib.metadata.isUiOnlyPreference
+import com.android.settingslib.utils.applications.AppUtils
 import com.google.android.appfunctions.schema.common.v1.devicestate.DeviceStateItemMetadata
 import com.google.android.appfunctions.schema.common.v1.devicestate.LocalizedString
 import com.google.android.appfunctions.schema.common.v1.devicestate.PerScreenMetadata
@@ -127,6 +131,9 @@ class CatalystStateMetadataProviderExecutor(
         preferencesHierarchy.forEach {
             val metadata = it.metadata
             val config = settingConfigMap[metadata.key]
+            // skip over UI-only preferences
+            if(metadata.isUiOnlyPreference(context))
+                return@forEach
             // skip over explicitly disabled preferences
             val metadataProto =
                 metadata.toProto(
@@ -167,17 +174,35 @@ class CatalystStateMetadataProviderExecutor(
 
         val launchingIntent = screenMetaData.getLaunchIntent(context, null)
         return PerScreenMetadata(
-            // This is a hack to remove the title from parametrised screens as it may contain
-            // some text referring to that specific parameter which could confuse the agent.
-            description =
-                if (isParameterized) ""
-                else screenMetaData.getPreferenceScreenTitle(context)?.toString() ?: "",
+            description = (
+                    listOfNotNull(
+                        if (shouldIncludeScreenKey()) "[key=${screenMetaData.key}]" else "",
+                        // This is a hack to remove the title from parametrised screens as it may contain
+                        // some text referring to that specific parameter which could confuse the agent.
+                        if (isParameterized) ""
+                            else screenMetaData.getPreferenceScreenTitle(context)?.toString() ?: "",
+                        screenMetaData.getPreferencePurpose(context)
+                    ).filter{it.isNotBlank()}.joinToString(". ")
+                ),
             deviceStateItemsMetadata = deviceStateItemMetadataList,
             intentUri = launchingIntent?.toUri(Intent.URI_INTENT_SCHEME),
             // This is a temporary hack to indicate to the agent that the screen is itemized, it
             // should eventually state the type of itemization (e.g. package, sim, etc)
             itemizationType = if (isParameterized) "ITEMIZED SCREEN" else null,
         )
+    }
+
+    /**
+     * Returns true if the screen key should be included in the description for debugging.
+     *
+     * This should never be used in production.
+     */
+    private fun shouldIncludeScreenKey(): Boolean {
+        return AppUtils.isDebuggable() && Settings.Global.getInt(
+            context.contentResolver,
+            "com.android.settings.APP_FUNCTION_INCLUDE_SCREEN_KEY_IN_DESCRIPTION",
+            0
+        ) == 1
     }
 
     private fun PreferenceProto.getPurposeString(): String =

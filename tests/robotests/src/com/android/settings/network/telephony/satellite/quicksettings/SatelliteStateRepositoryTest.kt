@@ -20,7 +20,11 @@ import android.content.Context
 import android.net.ConnectivityManager
 import android.net.Network
 import android.net.NetworkCapabilities
+import android.os.PersistableBundle
+import android.provider.Settings
+import android.telephony.CarrierConfigManager
 import android.telephony.ServiceState
+import android.telephony.SubscriptionManager
 import android.telephony.TelephonyCallback
 import android.telephony.TelephonyManager
 import android.telephony.satellite.SatelliteDisallowedReasonsCallback
@@ -47,6 +51,10 @@ import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.Shadows.shadowOf
+import org.robolectric.shadows.ShadowCarrierConfigManager
+import org.robolectric.shadows.ShadowLooper
+import org.robolectric.shadows.ShadowSubscriptionManager
 
 @OptIn(ExperimentalCoroutinesApi::class)
 @RunWith(RobolectricTestRunner::class)
@@ -58,6 +66,9 @@ class SatelliteStateRepositoryTest {
     @Mock private lateinit var satelliteManager: SatelliteManager
     @Mock private lateinit var connectivityManager: ConnectivityManager
 
+    private lateinit var shadowSubscriptionManager: ShadowSubscriptionManager
+    private lateinit var shadowCarrierConfigManager: ShadowCarrierConfigManager
+
     // UnconfinedTestDispatcher executes coroutines eagerly (synchronously) when they are launched.
     // This ensures that when launchIn(backgroundScope) is called, the entire chain (subscription ->
     // stateIn -> combine -> upstream flows) executes immediately up to the first suspension point.
@@ -68,6 +79,10 @@ class SatelliteStateRepositoryTest {
     @Before
     fun setUp() {
         MockitoAnnotations.initMocks(this)
+        shadowCarrierConfigManager =
+            shadowOf(context.getSystemService(CarrierConfigManager::class.java))
+        shadowSubscriptionManager =
+            shadowOf(context.getSystemService(SubscriptionManager::class.java))
     }
 
     private fun createRepository(
@@ -125,8 +140,30 @@ class SatelliteStateRepositoryTest {
         }
 
     @Test
+    fun activeSubIdFlow_whenSubscriptionChanges_emitsNewSubId() =
+        testScope.runTest {
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(1)
+            repository = createRepository(backgroundScope)
+            val values = mutableListOf<Int>()
+            repository.activeSubIdFlow.onEach { values.add(it) }.launchIn(backgroundScope)
+            advanceUntilIdle()
+
+            assertThat(values.last()).isEqualTo(1)
+
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(2)
+            // Trigger the listener by updating the subscription info list
+            shadowSubscriptionManager.setActiveSubscriptionInfoList(emptyList())
+            advanceUntilIdle()
+
+            assertThat(values.last()).isEqualTo(2)
+        }
+
+    @Test
     fun satelliteStatus_whenCarrierEligibleAndNoTerrestrial_returnsAvailable() =
         testScope.runTest {
+            val subId = 1
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(subId)
+            setCarrierSupported(subId, true)
             repository = createRepository(backgroundScope)
             val values = mutableListOf<SatelliteStatus>()
             repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
@@ -163,6 +200,9 @@ class SatelliteStateRepositoryTest {
     @Test
     fun satelliteStatus_whenCarrierEligibleButCellularAvailable_returnsNotAvailable() =
         testScope.runTest {
+            val subId = 1
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(subId)
+            setCarrierSupported(subId, true)
             repository = createRepository(backgroundScope)
             val values = mutableListOf<SatelliteStatus>()
             repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
@@ -199,6 +239,9 @@ class SatelliteStateRepositoryTest {
     @Test
     fun satelliteStatus_whenActive_overridesAvailable() =
         testScope.runTest {
+            val subId = 1
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(subId)
+            setCarrierSupported(subId, true)
             repository = createRepository(backgroundScope)
             val values = mutableListOf<SatelliteStatus>()
             repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
@@ -224,12 +267,15 @@ class SatelliteStateRepositoryTest {
     @Test
     fun satelliteStatus_whenLteNtnSupported_returnsNotAvailable() =
         testScope.runTest {
+            val subId = 1
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(subId)
+            setCarrierSupported(subId, true)
             repository = createRepository(backgroundScope, isLteNtnSupported = true)
             val values = mutableListOf<SatelliteStatus>()
             repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
             advanceUntilIdle()
 
-            // Set Carrier Eligible (would be Available)
+            // Set Carrier Eligible (would be Available, but since LTE NTN is supported, it is not)
             val telephonyCallback = captureCarrierRoamingNtnListener()
             telephonyCallback?.onCarrierRoamingNtnEligibleStateChanged(true)
             setCellularAvailable(false)
@@ -239,7 +285,60 @@ class SatelliteStateRepositoryTest {
             assertThat(values.last()).isEqualTo(SatelliteStatus.NOT_AVAILABLE)
         }
 
+    @Test
+    fun satelliteStatus_whenAirplaneModeOn_returnsNotAvailable() =
+        testScope.runTest {
+            val subId = 1
+            ShadowSubscriptionManager.setActiveDataSubscriptionId(subId)
+            setCarrierSupported(subId, true)
+            repository = createRepository(backgroundScope)
+            val values = mutableListOf<SatelliteStatus>()
+            repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
+            advanceUntilIdle()
+
+            // Set conditions for AVAILABLE state
+            setCellularAvailable(false)
+            setInternetConnected(false)
+            val callback = captureCarrierRoamingNtnListener()
+            callback?.onCarrierRoamingNtnEligibleStateChanged(true)
+            advanceUntilIdle()
+            assertThat(values.last()).isEqualTo(SatelliteStatus.AVAILABLE)
+
+            // Turn on Airplane Mode
+            setAirplaneMode(true)
+            advanceUntilIdle()
+
+            assertThat(values.last()).isEqualTo(SatelliteStatus.NOT_AVAILABLE)
+
+            // Turn off Airplane Mode
+            setAirplaneMode(false)
+            advanceUntilIdle()
+
+            assertThat(values.last()).isEqualTo(SatelliteStatus.AVAILABLE)
+        }
+
     // Helpers to capture callbacks and trigger updates
+
+    private fun setCarrierSupported(subId: Int, supported: Boolean) {
+        val config =
+            PersistableBundle().apply {
+                putBoolean(CarrierConfigManager.KEY_SATELLITE_ATTACH_SUPPORTED_BOOL, supported)
+            }
+        shadowCarrierConfigManager.setConfigForSubId(subId, config)
+    }
+
+    private fun setAirplaneMode(airplaneModeOn: Boolean) {
+        Settings.Global.putInt(
+            context.contentResolver,
+            Settings.Global.AIRPLANE_MODE_ON,
+            if (airplaneModeOn) 1 else 0,
+        )
+        context.contentResolver.notifyChange(
+            Settings.Global.getUriFor(Settings.Global.AIRPLANE_MODE_ON),
+            null,
+        )
+        ShadowLooper.idleMainLooper()
+    }
 
     private fun captureCarrierRoamingNtnListener(): TelephonyCallback.CarrierRoamingNtnListener? {
         val captor = ArgumentCaptor.forClass(TelephonyCallback::class.java)

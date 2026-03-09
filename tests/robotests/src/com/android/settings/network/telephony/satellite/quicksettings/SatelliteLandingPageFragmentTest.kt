@@ -17,6 +17,7 @@
 package com.android.settings.network.telephony.satellite.quicksettings
 
 import android.app.Application
+import android.app.settings.SettingsEnums
 import android.content.Intent
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
@@ -27,9 +28,14 @@ import android.provider.Settings
 import android.telephony.CarrierConfigManager
 import android.telephony.SubscriptionInfo
 import android.telephony.SubscriptionManager
-import android.telephony.satellite.SatelliteManager
 import android.view.View
 import android.widget.TextView
+import androidx.compose.ui.test.assertIsDisplayed
+import androidx.compose.ui.test.junit4.v2.createComposeRule
+import androidx.compose.ui.test.onAllNodesWithText
+import androidx.compose.ui.test.onFirst
+import androidx.compose.ui.test.onNodeWithText
+import androidx.compose.ui.test.performClick
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentFactory
 import androidx.fragment.app.testing.FragmentScenario
@@ -38,6 +44,7 @@ import androidx.lifecycle.Lifecycle
 import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.spa.preference.ComposePreference
+import com.android.settings.testutils.MetricsRule
 import com.android.settings.testutils.inflateViewHolder
 import com.android.settingslib.widget.BannerMessagePreference
 import com.android.settingslib.widget.FooterPreference
@@ -50,27 +57,33 @@ import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.mockito.ArgumentMatchers.any
+import org.mockito.ArgumentMatchers.eq
 import org.mockito.Mock
 import org.mockito.Mockito.doReturn
 import org.mockito.Mockito.mock
+import org.mockito.Mockito.never
+import org.mockito.Mockito.times
+import org.mockito.Mockito.verify
 import org.mockito.Mockito.`when`
 import org.mockito.junit.MockitoJUnit
 import org.mockito.junit.MockitoRule
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.RuntimeEnvironment
 import org.robolectric.Shadows.shadowOf
-import org.robolectric.shadow.api.Shadow
-import org.robolectric.shadows.ShadowSatelliteManager
+import org.robolectric.annotation.Config
 import org.robolectric.shadows.ShadowSubscriptionManager
 import org.robolectric.util.ReflectionHelpers
 
 @RunWith(RobolectricTestRunner::class)
+@Config(qualifiers = "w400dp-h2000dp")
 class SatelliteLandingPageFragmentTest {
 
     @get:Rule val mockitoRule: MockitoRule = MockitoJUnit.rule()
+    @get:Rule val composeTestRule = createComposeRule()
+    @get:Rule val metricsRule = MetricsRule()
 
     private lateinit var context: Application
-    private lateinit var shadowSatelliteManager: ShadowSatelliteManager
     private val SUB_ID = 1
     private val APP1_PACKAGE = "com.app1"
     private val APP1_NAME = "App1"
@@ -91,6 +104,9 @@ class SatelliteLandingPageFragmentTest {
 
     private lateinit var fragmentFactory: FragmentFactory
     private val satelliteStatusFlow = MutableStateFlow(SatelliteStatus.NOT_AVAILABLE)
+    private val activeSubIdFlow = MutableStateFlow(SUB_ID)
+    private val isTerrestrialConnectedFlow = MutableStateFlow(false)
+    private val satelliteDisallowedReasonsFlow = MutableStateFlow<IntArray>(intArrayOf())
 
     @Before
     fun setUp() {
@@ -98,8 +114,6 @@ class SatelliteLandingPageFragmentTest {
         context.setTheme(R.style.Theme_Settings)
 
         // Mock System Services
-        shadowSatelliteManager =
-            Shadow.extract(context.getSystemService(SatelliteManager::class.java))
         ShadowSubscriptionManager.setActiveDataSubscriptionId(SUB_ID)
         `when`(subInfo.subscriptionId).thenReturn(SUB_ID)
         val subscriptionManager = context.getSystemService(SubscriptionManager::class.java)
@@ -110,12 +124,18 @@ class SatelliteLandingPageFragmentTest {
         // Mock Apps Repository
         `when`(appsRepository.getAppsPackagesForLteLandingPage()).thenReturn(listOf())
         `when`(appsRepository.getAppsPackagesForNbNtnLandingPage()).thenReturn(listOf())
-        `when`(appsRepository.getEmergencySosIntent()).thenReturn(null)
+        `when`(appsRepository.getDialerIntent()).thenReturn(null)
         `when`(appsRepository.getSettingsIntent(org.mockito.ArgumentMatchers.anyBoolean()))
             .thenReturn(null)
 
         // Mock State Repository
         `when`(satelliteStateRepository.satelliteStatus).thenReturn(satelliteStatusFlow)
+        `when`(satelliteStateRepository.activeSubIdFlow).thenReturn(activeSubIdFlow)
+        `when`(satelliteStateRepository.isTerrestrialConnected)
+            .thenReturn(isTerrestrialConnectedFlow)
+        `when`(satelliteStateRepository.satelliteDisallowedReasons)
+            .thenReturn(satelliteDisallowedReasonsFlow)
+        `when`(satelliteStateRepository.getAttachRestrictionReasons(SUB_ID)).thenReturn(emptySet())
         SatelliteStateRepository.setInstance(satelliteStateRepository)
 
         fragmentFactory =
@@ -288,11 +308,76 @@ class SatelliteLandingPageFragmentTest {
         setupPackageManagerForApp(APP1_PACKAGE, APP1_NAME, Intent(APP1_INTENT_ACTION))
 
         val scenario = launchFragment()
+        composeTestRule.waitForIdle()
 
         scenario.onFragment { fragment ->
             val composePref = fragment.findPreference<ComposePreference>("satellite_apps_list")
             assertThat(composePref?.isVisible).isTrue()
         }
+    }
+
+    @Test
+    fun satelliteApps_when9Apps_showsAllAndNoExpandButton() {
+        setLteNtnSupported(true)
+        val apps = (1..9).map { "com.app$it" }
+        `when`(appsRepository.getAppsPackagesForLteLandingPage()).thenReturn(apps)
+        apps.forEachIndexed { index, pkg ->
+            setupPackageManagerForApp(pkg, "App${index + 1}", Intent("action${index + 1}"))
+        }
+
+        val scenario = launchFragment()
+
+        // Verify all 9 apps are displayed
+        (1..9).forEach {
+            composeTestRule.onAllNodesWithText("App$it").onFirst().assertIsDisplayed()
+        }
+
+        // Verify "See all" button is NOT displayed
+        val seeAllText = context.getString(R.string.satellite_apps_see_all_supported_apps_text)
+        composeTestRule.onNodeWithText(seeAllText).assertDoesNotExist()
+    }
+
+    @Test
+    fun satelliteApps_when10Apps_showsCollapsedAndExpandButton() {
+        setLteNtnSupported(true)
+        val apps = (1..10).map { "com.app$it" }
+        `when`(appsRepository.getAppsPackagesForLteLandingPage()).thenReturn(apps)
+        apps.forEachIndexed { index, pkg ->
+            setupPackageManagerForApp(pkg, "App${index + 1}", Intent("action${index + 1}"))
+        }
+
+        val scenario = launchFragment()
+
+        // Verify first 8 apps are displayed
+        (1..8).forEach {
+            composeTestRule.onAllNodesWithText("App$it").onFirst().assertIsDisplayed()
+        }
+        // Verify 9th and 10th apps are NOT displayed initially
+        composeTestRule.onNodeWithText("App9").assertDoesNotExist()
+        composeTestRule.onNodeWithText("App10").assertDoesNotExist()
+
+        // Verify "See all" button is displayed
+        val seeAllText = context.getString(R.string.satellite_apps_see_all_supported_apps_text)
+        composeTestRule.onAllNodesWithText(seeAllText).onFirst().assertIsDisplayed()
+
+        // Click "See all"
+        composeTestRule.onAllNodesWithText(seeAllText).onFirst().performClick()
+
+        // Verify all 10 apps are displayed
+        (1..10).forEach {
+            composeTestRule.onAllNodesWithText("App$it").onFirst().assertIsDisplayed()
+        }
+
+        // Verify "See less" button is displayed
+        val seeLessText = context.getString(R.string.satellite_apps_see_less_text)
+        composeTestRule.onAllNodesWithText(seeLessText).onFirst().assertIsDisplayed()
+
+        // Click "See less"
+        composeTestRule.onAllNodesWithText(seeLessText).onFirst().performClick()
+
+        // Verify we are back to collapsed state
+        composeTestRule.onNodeWithText("App9").assertDoesNotExist()
+        composeTestRule.onAllNodesWithText(seeAllText).onFirst().assertIsDisplayed()
     }
 
     @Test
@@ -416,6 +501,106 @@ class SatelliteLandingPageFragmentTest {
         }
     }
 
+    @Test
+    fun onResume_logsPageVisible() {
+        val scenario = launchFragment()
+        scenario.moveToState(Lifecycle.State.RESUMED)
+
+        scenario.onFragment { fragment ->
+            verify(metricsRule.metricsFeatureProvider)
+                .visible(
+                    fragment.requireContext(),
+                    metricsRule.metricsFeatureProvider.getAttribution(fragment.activity),
+                    SettingsEnums.SATELLITE_LANDING_PAGE,
+                    0, // latency
+                )
+        }
+    }
+
+    @Test
+    fun onLteNtnSupportChanged_whenFalse_logsNbiotVariant() {
+        setLteNtnSupported(false)
+        val scenario = launchFragment()
+
+        scenario.onFragment { fragment -> fragment.viewModel.refresh() }
+        waitForAsync()
+
+        verify(metricsRule.metricsFeatureProvider)
+            .action(
+                any(),
+                eq(SettingsEnums.ACTION_SATELLITE_LANDING_PAGE_VARIANT),
+                eq(1),
+            ) // Nb-IoT variant 1, LTE variant 2
+    }
+
+    @Test
+    fun onLteNtnSupportChanged_whenTrue_logsLTEVariant() {
+        setLteNtnSupported(true)
+        val scenario = launchFragment()
+
+        scenario.onFragment { fragment -> fragment.viewModel.refresh() }
+        waitForAsync()
+
+        verify(metricsRule.metricsFeatureProvider)
+            .action(any(), eq(SettingsEnums.ACTION_SATELLITE_LANDING_PAGE_VARIANT), eq(2))
+    }
+
+    @Test
+    fun onLteNtnSupportChanged_logsVariantOnlyOnce() {
+        setLteNtnSupported(false)
+        val scenario = launchFragment()
+        scenario.onFragment { fragment ->
+            val viewModel = fragment.viewModel
+            val isLteBasedNtnSupportedFlow =
+                ReflectionHelpers.getField<MutableStateFlow<Boolean>>(
+                    viewModel,
+                    "_isLteBasedNtnSupported",
+                )
+
+            // Trigger a state change to LTE variant
+            isLteBasedNtnSupportedFlow.value = false
+            isLteBasedNtnSupportedFlow.value = true
+        }
+        waitForAsync()
+
+        verify(metricsRule.metricsFeatureProvider, times(1))
+            .action(any(), eq(SettingsEnums.ACTION_SATELLITE_LANDING_PAGE_VARIANT), eq(1))
+        verify(metricsRule.metricsFeatureProvider, never())
+            .action(any(), eq(SettingsEnums.ACTION_SATELLITE_LANDING_PAGE_VARIANT), eq(2))
+    }
+
+    @Test
+    fun tryDemoButton_onClick_logsAction() {
+        setLteNtnSupported(false) // Make button visible
+        val scenario = launchFragment()
+
+        scenario.onFragment { fragment ->
+            val demoButton = fragment.findPreference<Preference>(KEY_TRY_A_DEMO_BUTTON)
+            demoButton!!.performClick()
+        }
+
+        verify(metricsRule.metricsFeatureProvider)
+            .action(any(), eq(SettingsEnums.ACTION_SATELLITE_DEMO_CLICK))
+    }
+
+    @Test
+    fun onAppClick_logsActionWithPackageName() {
+        setLteNtnSupported(true)
+        satelliteStatusFlow.value = SatelliteStatus.AVAILABLE
+        val messagingPackage = "com.google.android.apps.messaging"
+        `when`(appsRepository.getAppsPackagesForLteLandingPage())
+            .thenReturn(listOf(messagingPackage))
+        setupPackageManagerForApp(messagingPackage, "Messages", Intent("action"))
+        val scenario = launchFragment()
+        waitForAsync()
+
+        composeTestRule.onNodeWithText("Messages").performClick()
+        waitForAsync()
+
+        verify(metricsRule.metricsFeatureProvider)
+            .action(any(), eq(SettingsEnums.ACTION_SATELLITE_APP_CLICK), eq(messagingPackage))
+    }
+
     private fun waitForAsync() {
         shadowOf(Looper.getMainLooper()).idle()
     }
@@ -432,6 +617,7 @@ class SatelliteLandingPageFragmentTest {
 
     private fun setupPackageManagerForApp(packageName: String, appName: String, intent: Intent) {
         val appInfo = mock(ApplicationInfo::class.java)
+        appInfo.packageName = packageName
         `when`(appInfo.loadLabel(packageManager)).thenReturn(appName)
         `when`(appInfo.loadIcon(packageManager)).thenReturn(mock(Drawable::class.java))
         // Use doReturn for methods that can throw checked exceptions to avoid Mockito issues.
@@ -442,7 +628,6 @@ class SatelliteLandingPageFragmentTest {
 
     private fun setLteNtnSupported(isSupported: Boolean) {
         val reasons = if (isSupported) emptySet() else setOf(1)
-        shadowSatelliteManager.setAttachRestrictionReasonsForCarrier(SUB_ID, reasons)
         val config =
             PersistableBundle().apply {
                 putBoolean(CarrierConfigManager.KEY_SATELLITE_ATTACH_SUPPORTED_BOOL, isSupported)

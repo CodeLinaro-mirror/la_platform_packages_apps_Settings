@@ -19,6 +19,7 @@ package com.android.settings.network.telephony.satellite.quicksettings
 import android.app.Activity
 import android.app.NotificationManager
 import android.app.StatusBarManager
+import android.app.settings.SettingsEnums
 import android.content.ComponentName
 import android.graphics.drawable.Icon
 import android.os.Bundle
@@ -26,6 +27,7 @@ import android.util.Log
 import androidx.annotation.VisibleForTesting
 import androidx.core.graphics.drawable.toBitmap
 import com.android.settings.R
+import com.android.settings.overlay.FeatureFactory
 
 /**
  * An activity that is launched from a notification to prompt the user to add the satellite quick
@@ -70,11 +72,21 @@ class AddSatelliteTileActivity : Activity() {
             mainExecutor,
             { result ->
                 Log.d(TAG, "requestAddTileService result: $result")
+
+                // Log success only when the tile is actually added
+                if (result == StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED) {
+                    FeatureFactory.featureFactory.metricsFeatureProvider.action(
+                        this,
+                        SettingsEnums.ACTION_SATELLITE_NOTIFICATION_ADD_TILE,
+                    )
+                }
+
                 when (result) {
                     StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ADDED,
                     StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_NOT_ADDED,
                     StatusBarManager.TILE_ADD_REQUEST_RESULT_TILE_ALREADY_ADDED,
-                    StatusBarManager.TILE_ADD_REQUEST_RESULT_DIALOG_DISMISSED -> {
+                    StatusBarManager.TILE_ADD_REQUEST_RESULT_DIALOG_DISMISSED,
+                    StatusBarManager.TILE_ADD_REQUEST_ERROR_NOT_CURRENT_USER -> {
                         // 1. If the tile was added, the user was prompted and accepted, so we
                         // should mark as shown so we don't prompt again.
                         // 2. If the tile was not added, the user was prompted and declined, so we
@@ -83,7 +95,10 @@ class AddSatelliteTileActivity : Activity() {
                         // been shown.
                         // 4. If the dialog was dismissed, the user was prompted and dismissed it,
                         // so we should mark as shown so we don't potentially spam the user.
-                        satelliteTilePromptUtils.setAddTilePromptShown(this, true)
+                        // 5. If the user is not the current user, then we should mark as shown to
+                        // avoid potentially spamming the user (the user likely does not have
+                        // permissions to add the tile).
+                        satelliteTilePromptUtils.markAllPromptsShown(this)
                     }
                     else -> {
                         // An error occurred, so we don't mark the prompt as shown so that we can

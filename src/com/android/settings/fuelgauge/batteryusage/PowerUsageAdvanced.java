@@ -25,6 +25,7 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.os.UserHandle;
 import android.provider.SearchIndexableResource;
 import android.util.Log;
 import android.util.Pair;
@@ -37,6 +38,7 @@ import androidx.loader.content.Loader;
 import androidx.preference.PreferenceScreen;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.android.internal.content.PackageMonitor;
 import com.android.settings.R;
 import com.android.settings.SettingsActivity;
 import com.android.settings.fuelgauge.BatteryBroadcastReceiver;
@@ -88,11 +90,20 @@ public class PowerUsageAdvanced extends PowerUsageBase {
                     restartBatteryStatsLoader(BatteryBroadcastReceiver.BatteryUpdateType.MANUAL);
                 }
             };
+    private final PackageMonitor mPackageMonitor =
+            new PackageMonitor() {
+                @Override
+                public void onPackageRemoved(String packageName, int uid) {
+                    Log.d(TAG, "onPackageRemoved: " + packageName + ", uid = " + uid);
+                    BatteryDiffEntry.clearCacheForUid(uid);
+                }
+            };
 
     @VisibleForTesting BatteryTipsController mBatteryTipsController;
     @VisibleForTesting BatteryChartPreferenceController mBatteryChartPreferenceController;
     @VisibleForTesting ScreenOnTimeController mScreenOnTimeController;
     @VisibleForTesting BatteryUsageBreakdownController mBatteryUsageBreakdownController;
+    @VisibleForTesting @Nullable BatteryAdvanceInfoController mBatteryAdvanceInfoController;
     @VisibleForTesting Optional<BatteryLevelData> mBatteryLevelData;
     @VisibleForTesting Optional<AnomalyEventWrapper> mHighlightEventWrapper;
 
@@ -106,6 +117,8 @@ public class PowerUsageAdvanced extends PowerUsageBase {
                 BootBroadcastReceiver.invokeJobRecheck(getContext());
             }
         });
+        BatteryDiffEntry.clearCache();
+        mPackageMonitor.register(getContext(), Looper.getMainLooper(), UserHandle.ALL, false);
     }
 
     @Override
@@ -114,6 +127,7 @@ public class PowerUsageAdvanced extends PowerUsageBase {
         if (getActivity().isChangingConfigurations()) {
             BatteryEntry.clearUidCache();
         }
+        mPackageMonitor.unregister();
         mExecutor.shutdown();
     }
 
@@ -178,11 +192,19 @@ public class PowerUsageAdvanced extends PowerUsageBase {
         mBatteryUsageBreakdownController =
                 new BatteryUsageBreakdownController(
                         context, getSettingsLifecycle(), (SettingsActivity) getActivity(), this);
+        final PowerUsageFeatureProvider powerUsageFeatureProvider =
+                FeatureFactory.getFeatureFactory().getPowerUsageFeatureProvider();
+        mBatteryAdvanceInfoController =
+                powerUsageFeatureProvider.getBatteryAdvanceInfoController(
+                        context, getSettingsLifecycle(), /* fragment= */ this);
 
         controllers.add(mBatteryTipsController);
         controllers.add(mBatteryChartPreferenceController);
         controllers.add(mScreenOnTimeController);
         controllers.add(mBatteryUsageBreakdownController);
+        if (mBatteryAdvanceInfoController != null) {
+                controllers.add(mBatteryAdvanceInfoController);
+        }
         setBatteryChartPreferenceController();
         mBatteryChartPreferenceController.setOnSelectedIndexUpdatedListener(
                 this::onSelectedSlotDataUpdated);
@@ -246,6 +268,13 @@ public class PowerUsageAdvanced extends PowerUsageBase {
             DataProcessor.loadLabelAndIcon(mBatteryUsageMap);
             onSelectedSlotDataUpdated();
             detectAnomaly();
+            if (mBatteryChartPreferenceController != null) {
+                refreshBatteryAdvanceInfo(
+                    /* selectedDailyIndex= */
+                    mBatteryChartPreferenceController.getDailyChartIndex(),
+                    /* selectedSlotText= */
+                    mBatteryChartPreferenceController.getDailyInformation());
+            }
             logScreenUsageTime();
             if (mBatteryChartPreferenceController != null
                     && mBatteryLevelData.isEmpty()
@@ -287,6 +316,9 @@ public class PowerUsageAdvanced extends PowerUsageBase {
                 isBatteryUsageMapNullOrEmpty(),
                 isAppsAnomalyEventFocused(),
                 mHighlightEventWrapper);
+        refreshBatteryAdvanceInfo(
+                /* selectedDailyIndex= */ dailyIndex,
+                /* selectedSlotText= */ mBatteryChartPreferenceController.getDailyInformation());
         Log.d(
                 TAG,
                 String.format(
@@ -311,6 +343,18 @@ public class PowerUsageAdvanced extends PowerUsageBase {
                         /* displayDrain= */ 0,
                         DetectRequestSourceType.TYPE_USAGE_UI);
         mHandler.post(() -> onAnomalyDetected(anomalyEventList));
+    }
+
+    private void refreshBatteryAdvanceInfo(
+            int selectedDailyIndex, @Nullable String selectedSlotText) {
+        if (mBatteryAdvanceInfoController == null) {
+            Log.d(TAG, "refreshBatteryAdvanceInfo: mBatteryAdvanceInfoController is null");
+            return;
+        }
+        mBatteryAdvanceInfoController.onBatteryUsageUpdated(
+                /* batteryDiffDataMap= */ mBatteryUsageMap,
+                /* selectedDailyIndex= */ selectedDailyIndex,
+                /* description= */ selectedSlotText);
     }
 
     private void onAnomalyDetected(PowerAnomalyEventList anomalyEventList) {

@@ -23,6 +23,8 @@ import static com.google.common.truth.Truth.assertThat;
 
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.anyInt;
+import static org.mockito.Mockito.anyLong;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.spy;
@@ -30,8 +32,11 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import android.app.NotificationManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.res.Resources;
+import android.os.Bundle;
 import android.os.Looper;
 import android.os.PersistableBundle;
 import android.platform.test.annotations.EnableFlags;
@@ -43,12 +48,14 @@ import android.telephony.SubscriptionManager;
 import android.telephony.TelephonyManager;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.preference.Preference;
 import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 import androidx.test.core.app.ApplicationProvider;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 
+import com.android.internal.telephony.RILConstants;
 import com.android.internal.telephony.flags.Flags;
 import com.android.settings.R;
 import com.android.settingslib.RestrictedSwitchPreference;
@@ -78,6 +85,8 @@ public final class Enable2gPreferenceControllerTest {
     private SubscriptionManager mSubscriptionManager;
     @Mock
     private Fragment mFragment;
+    @Mock
+    private FragmentManager mFragmentManager;
     @Rule
     public final SetFlagsRule mSetFlagsRule = new SetFlagsRule();
 
@@ -87,7 +96,8 @@ public final class Enable2gPreferenceControllerTest {
     private Context mContext;
     @Mock
     private CarrierConfigManager mCarrierConfigManager;
-
+    @Mock
+    private NotificationManager mNotificationManager;
     private PersistableBundle mCarrierConfig;
 
     @Before
@@ -99,6 +109,9 @@ public final class Enable2gPreferenceControllerTest {
         MockitoAnnotations.initMocks(this);
 
         mContext = spy(ApplicationProvider.getApplicationContext());
+        when(mContext.getSystemService(Context.NOTIFICATION_SERVICE)).thenReturn(
+                mNotificationManager);
+        when(mContext.getSystemService(NotificationManager.class)).thenReturn(mNotificationManager);
         when(mContext.getSystemService(Context.TELEPHONY_SERVICE)).thenReturn(mTelephonyManager);
         when(mContext.getSystemService(TelephonyManager.class)).thenReturn(mTelephonyManager);
         when(mContext.getSystemService(CarrierConfigManager.class)).thenReturn(
@@ -232,6 +245,36 @@ public final class Enable2gPreferenceControllerTest {
     }
 
     @Test
+    public void isChecked_invalidSubId_returnsFalse() {
+        mController.init(mFragment, SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+        when2gIsDisabledByAdmin(false);
+
+        assertThat(mController.isChecked()).isFalse();
+    }
+
+    @Test
+    public void isChecked_corruptedNetworkType_resetsAndReturnsCorrectState() {
+        // When allowed network types for 2G is corrupted (i.e. 0), it should be reset to the
+        // default network types. The default includes 2G, so isChecked() should return false.
+        when2gIsDisabledByAdmin(false);
+        when(mTelephonyManager.getAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G)).thenReturn(0L);
+
+        // Action
+        boolean isChecked = mController.isChecked();
+
+        // Verify that the allowed network types are reset to default.
+        long defaultNetworkTypes = RadioAccessFamily.getRafFromNetworkType(
+                RILConstants.PREFERRED_NETWORK_MODE);
+        verify(mTelephonyManager).setAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G, defaultNetworkTypes);
+
+        // The default network mode includes 2G, so 2G is enabled.
+        // The "disable 2G" toggle should be OFF (isChecked() == false).
+        assertThat(isChecked).isFalse();
+    }
+
+    @Test
     public void userRestrictionInactivated_userToggleMaintainsState() {
         // Initially, 2g is enabled
         when2gIsEnabledForReasonEnable2g();
@@ -283,6 +326,33 @@ public final class Enable2gPreferenceControllerTest {
 
         assertThat(mPreference.getSummary().toString()).isEqualTo(
                 mContext.getString(R.string.enable_2g_summary));
+    }
+
+    @Test
+    public void onDialogResult_positiveButtonEvent() {
+        when2gIsDisabledByAdmin(false);
+        when(mTelephonyManager.getAllowedNetworkTypesForReason(
+                TelephonyManager.ALLOWED_NETWORK_TYPES_REASON_ENABLE_2G)).thenReturn(0L);
+        Bundle bundle = new Bundle();
+        bundle.putInt(Enable2gPreferenceController.REQUEST_KEY, DialogInterface.BUTTON_POSITIVE);
+        mPreference.setChecked(true);
+
+        mController.onDialogResult(bundle);
+
+        assertFalse(mPreference.isChecked());
+        verify(mNotificationManager).cancel(anyInt());
+        verify(mTelephonyManager).setAllowedNetworkTypesForReason(anyInt(), anyLong());
+    }
+    @Test
+    public void onDialogResult_NegariveButtonEvent() {
+        mController.displayPreference(mPreferenceScreen);
+        Bundle bundle = new Bundle();
+        bundle.putInt(Enable2gPreferenceController.REQUEST_KEY, DialogInterface.BUTTON_NEGATIVE);
+        mPreference.setChecked(false);
+
+        mController.onDialogResult(bundle);
+
+        assertTrue(mPreference.isChecked());
     }
 
     @Test

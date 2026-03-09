@@ -24,7 +24,6 @@ import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.WifiDisplaySettingsActivity
 import com.android.settings.core.PreferenceScreenMixin
-import com.android.settings.flags.Flags
 import com.android.settings.utils.makeLaunchIntent
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
@@ -34,6 +33,7 @@ import com.android.settingslib.metadata.PreferenceSummaryProvider
 import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.preferenceHierarchy
 import kotlinx.coroutines.CoroutineScope
+import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_UNCATEGORIZED
 
 /** The app detail catalyst screen for connections to remote displays */
 // LINT.IfChange
@@ -43,6 +43,8 @@ open class WifiDisplayScreen :
     PreferenceSummaryProvider,
     PreferenceLifecycleProvider,
     PreferenceAvailabilityProvider {
+    override fun tags(context: Context) = arrayOf(APP_FUNCTION_UNCATEGORIZED)
+
 
     private var router: MediaRouter? = null
     private lateinit var lifeCycleContext: PreferenceLifecycleContext
@@ -81,7 +83,7 @@ open class WifiDisplayScreen :
     override val key: String
         get() = KEY
 
-    //TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
+    // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.wifi_display_settings_purpose
 
@@ -103,8 +105,6 @@ open class WifiDisplayScreen :
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {}
-
-    override fun isFlagEnabled(context: Context) = Flags.deeplinkConnectedDevices25q4()
 
     override fun getMetricsCategory() = SettingsEnums.WFD_WIFI_DISPLAY
 

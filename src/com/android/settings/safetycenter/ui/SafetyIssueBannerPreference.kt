@@ -156,21 +156,26 @@ class SafetyIssueBannerPreference(
     private fun configureDismissButton(issue: SafetyCenterIssue, isDismissed: Boolean) {
         if (issue.isDismissible && !isDismissed) {
             setDismissButtonVisible(true)
-            setDismissButtonOnClickListener {
-                Log.d(TAG, "Dismiss button clicked for issue '${issue.id}'")
-                if (issue.shouldConfirmDismissal()) {
-                    Log.d(TAG, "Showing dismiss confirmation for issue '${issue.id}'")
-                    ConfirmDismissalDialogFragment.newInstance(issue)
-                        .showNow(fragmentManager, /* tag= */ null)
-                } else {
-                    viewModel.dismissIssue(issue)
-                    viewModel.interactionLogger.recordForIssue(
-                        Action.ISSUE_DISMISS_CLICKED,
-                        issue,
-                        isDismissed = false,
-                    )
-                }
-            }
+            setDismissButtonOnClickListener(
+                {
+                    Log.d(TAG, "Dismiss button clicked for issue '${issue.id}'")
+                    if (issue.shouldConfirmDismissal()) {
+                        Log.d(TAG, "Showing dismiss confirmation for issue '${issue.id}'")
+                        ConfirmDismissalDialogFragment.newInstance(issue, this.key)
+                            .showNow(fragmentManager, /* tag= */ null)
+                    } else {
+                        this.animateDismiss {
+                            viewModel.dismissIssue(issue)
+                            viewModel.interactionLogger.recordForIssue(
+                                Action.ISSUE_DISMISS_CLICKED,
+                                issue,
+                                isDismissed = false,
+                            )
+                        }
+                    }
+                },
+                /* autoCollapse= */ false,
+            )
         } else {
             setDismissButtonVisible(false)
             setDismissButtonOnClickListener(null)
@@ -242,7 +247,8 @@ class SafetyIssueBannerPreference(
                     banner.setPositiveButtonEnabled(false)
                     banner.setNegativeButtonEnabled(false)
                 }
-                viewModel.executeIssueAction(issue, action, activityTaskId)
+                val launchTaskId = calculateLaunchTaskId(issue.safetySourceIds, activityTaskId)
+                viewModel.executeIssueAction(issue, action, launchTaskId)
                 viewModel.interactionLogger.recordForIssue(
                     if (isPrimaryButton) {
                         Action.ISSUE_PRIMARY_ACTION_CLICKED
@@ -254,6 +260,12 @@ class SafetyIssueBannerPreference(
                 )
             }
         }
+
+        private fun calculateLaunchTaskId(safetySourceIds: Set<String>, activityTaskId: Int): Int? =
+            // If any of the related sources should be kept in the same task, use same task.
+            safetySourceIds
+                .map { PendingIntentSender.getTaskIdToSend(context, it, activityTaskId) }
+                .firstOrNull { it != null }
     }
 
     private companion object {

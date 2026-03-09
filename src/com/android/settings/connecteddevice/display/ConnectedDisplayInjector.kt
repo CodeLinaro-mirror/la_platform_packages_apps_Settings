@@ -31,7 +31,6 @@ import android.os.Handler
 import android.os.Looper
 import android.os.RemoteException
 import android.os.SystemProperties
-import android.util.DisplayMetrics
 import android.util.Log
 import android.util.Size
 import android.view.Display
@@ -65,6 +64,7 @@ import kotlinx.coroutines.coroutineScope
  */
 data class RevealedWallpaper(val displayId: Int, val revealer: View, val viewManager: ViewManager)
 
+// TODO(b/430493225): Clean up nullable context
 open class ConnectedDisplayInjector(open val context: Context?) {
 
     open val flags: DesktopExperienceFlags by lazy { DesktopExperienceFlags(FeatureFlagsImpl()) }
@@ -112,6 +112,7 @@ open class ConnectedDisplayInjector(open val context: Context?) {
         windowManager.addView(
             view,
             WindowManager.LayoutParams().also {
+                it.title = "display#$displayId show_wallpaper window"
                 it.width = 1
                 it.height = 1
                 it.type = WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
@@ -121,6 +122,7 @@ open class ConnectedDisplayInjector(open val context: Context?) {
                 it.format = PixelFormat.TRANSLUCENT
             },
         )
+        Log.d(TAG, "Added wallpaper window for display#$displayId")
         return RevealedWallpaper(display.displayId, view, windowManager)
     }
 
@@ -354,22 +356,6 @@ open class ConnectedDisplayInjector(open val context: Context?) {
         }
     }
 
-    /**
-     * This density is the density of the current display (showing the Settings app UI). It is
-     * necessary to use this density here because the topology pane coordinates are in physical
-     * pixels, and the display bounds and accessibility constraints are in density-independent
-     * pixels.
-     */
-    open val densityDpi: Int by lazy {
-        val c = context
-        val info = DisplayInfo()
-        if (c != null && c.display.getDisplayInfo(info)) {
-            info.logicalDensityDpi
-        } else {
-            DisplayMetrics.DENSITY_DEFAULT
-        }
-    }
-
     open fun getLogicalSize(displayId: Int): Size? {
         val display = displayManager?.getDisplay(displayId) ?: return null
         val displayInfo = DisplayInfo()
@@ -402,7 +388,8 @@ open class ConnectedDisplayInjector(open val context: Context?) {
                 com.android.graphics.surfaceflinger.flags.Flags
                     .forceSlowerFollowerGpuCompositionPlatform() &&
                 com.android.graphics.surfaceflinger.flags.Flags
-                    .followerDisplayBackpressurePlatform()
+                    .followerDisplayBackpressurePlatform() &&
+                com.android.graphics.surfaceflinger.flags.Flags.syncedResolutionSwitch()
 
         fun isUserPreferredHdrModeEnabled() =
             com.android.window.flags.Flags.enableUserPreferredHdrMode() &&

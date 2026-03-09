@@ -18,6 +18,7 @@ package com.android.settings.connecteddevice.display;
 import static android.app.ActivityManager.LOCK_TASK_MODE_LOCKED;
 import static android.app.ActivityManager.LOCK_TASK_MODE_NONE;
 import static android.hardware.display.DisplayManager.EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_ASK;
+import static android.hardware.display.DisplayManager.EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_DESKTOP;
 import static android.hardware.display.DisplayManager.EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_MIRROR;
 import static android.provider.Settings.Secure.INCLUDE_DEFAULT_DISPLAY_IN_TOPOLOGY;
 import static android.provider.Settings.Secure.MIRROR_BUILT_IN_DISPLAY;
@@ -47,6 +48,7 @@ import static org.mockito.Mockito.doAnswer;
 import static org.mockito.Mockito.doReturn;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
@@ -83,6 +85,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import com.android.settings.R;
 import com.android.settings.RestrictedListPreference;
 import com.android.settings.connecteddevice.display.ExternalDisplayPreferenceFragment.PrefBasics;
+import com.android.settings.testutils.shadow.ShadowDesktopSettingsUtils;
 import com.android.settingslib.search.Indexable;
 import com.android.settingslib.search.SearchIndexableRaw;
 import com.android.settingslib.widget.MainSwitchPreference;
@@ -94,12 +97,14 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.robolectric.annotation.Config;
 
 import java.util.List;
 import java.util.Locale;
 
 /** Unit tests for {@link ExternalDisplayPreferenceFragment}.  */
 @RunWith(AndroidJUnit4.class)
+@Config(shadows = {ShadowDesktopSettingsUtils.class})
 public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBase {
 
     @Rule
@@ -506,21 +511,9 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
     @Test
     @UiThreadTest
     @EnableFlags({FLAG_ENABLE_DISPLAY_CONTENT_MODE_MANAGEMENT})
-    public void testDisplayConnectionPreference() {
-        final int[] savedPreference = {EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_ASK};
-        doAnswer(invocation -> savedPreference[0])
-                .when(mMockedInjector).getDisplayConnectionPreference(anyString());
-        doAnswer(invocation -> {
-            savedPreference[0] = invocation.getArgument(1);
-            return Unit.INSTANCE;
-        }).when(mMockedInjector).updateDisplayConnectionPreference(anyString(), anyInt());
+    public void testDisplayConnectionPreference_initialState() {
+        RestrictedListPreference pref = setupDisplayConnectionPreferenceTest();
 
-        initFragment();
-        mHandler.flush();
-
-        var category = getExternalDisplayCategory(0);
-        RestrictedListPreference pref = category.findPreference(
-                PrefBasics.EXTERNAL_DISPLAY_CONNECTION.keyForNth(0));
         assertThat(pref.getTitle().toString()).isEqualTo(
                 getText(PrefBasics.EXTERNAL_DISPLAY_CONNECTION.titleResource));
         assertThat(pref.getEntries().length).isEqualTo(3);
@@ -532,16 +525,80 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
         assertThat(pref.getValue()).isEqualTo(CONNECTION_PREF_NONE);
         assertThat(pref.getOnPreferenceChangeListener()).isNotNull();
         assertThat(pref.isEnabled()).isTrue();
+    }
 
+    @Test
+    @UiThreadTest
+    @EnableFlags({FLAG_ENABLE_DISPLAY_CONTENT_MODE_MANAGEMENT})
+    public void testDisplayConnectionPreference_changeToMirror() {
+        RestrictedListPreference pref = setupDisplayConnectionPreferenceTest();
+
+        assertConnectionPreferenceChange(
+                pref,
+                CONNECTION_PREF_MIRROR,
+                EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_MIRROR,
+                2);
+    }
+
+    @Test
+    @UiThreadTest
+    @EnableFlags({FLAG_ENABLE_DISPLAY_CONTENT_MODE_MANAGEMENT})
+    public void testDisplayConnectionPreference_changeToDesktop() {
+        RestrictedListPreference pref = setupDisplayConnectionPreferenceTest();
+
+        assertConnectionPreferenceChange(
+                pref,
+                CONNECTION_PREF_DESKTOP,
+                EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_DESKTOP,
+                1);
+    }
+
+    @Test
+    @UiThreadTest
+    @EnableFlags({FLAG_ENABLE_DISPLAY_CONTENT_MODE_MANAGEMENT})
+    public void testDisplayConnectionPreference_changeToAsk() {
+        RestrictedListPreference pref = setupDisplayConnectionPreferenceTest();
+        // First, change to something else to verify the change back to ASK
+        pref.getOnPreferenceChangeListener().onPreferenceChange(pref, CONNECTION_PREF_MIRROR);
+        mHandler.flush();
+        reset(mMockedMetricsLogger); // Reset mock before the action we are testing
+
+        assertConnectionPreferenceChange(
+                pref,
+                CONNECTION_PREF_NONE,
+                EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_ASK,
+                0);
+    }
+
+    private RestrictedListPreference setupDisplayConnectionPreferenceTest() {
+        final int[] savedPreference = {EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_ASK};
+        doAnswer(invocation -> savedPreference[0])
+                .when(mMockedInjector).getDisplayConnectionPreference(anyString());
+        doAnswer(invocation -> {
+            savedPreference[0] = invocation.getArgument(1);
+            return Unit.INSTANCE;
+        }).when(mMockedInjector).updateDisplayConnectionPreference(anyString(), anyInt());
+        initFragment();
+        mHandler.flush();
+        var category = getExternalDisplayCategory(0);
+        return category.findPreference(
+                PrefBasics.EXTERNAL_DISPLAY_CONNECTION.keyForNth(0));
+    }
+
+    private void assertConnectionPreferenceChange(
+            RestrictedListPreference pref,
+            String preferenceValue,
+            int expectedInjectorValue,
+            int expectedSummaryIndex) {
         assertThat(pref.getOnPreferenceChangeListener()
-                .onPreferenceChange(pref, CONNECTION_PREF_MIRROR)).isTrue();
+                .onPreferenceChange(pref, preferenceValue)).isTrue();
         verify(mMockedInjector).updateDisplayConnectionPreference(
                 mDisplays.getFirst().getUniqueId(),
-                EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_MIRROR);
-
+                expectedInjectorValue);
         mHandler.flush(); // manually update UI since no display change has occurred
-        assertThat(pref.getValue()).isEqualTo(CONNECTION_PREF_MIRROR);
-        assertThat(pref.getSummary().toString()).isEqualTo(pref.getEntries()[2].toString());
+        assertThat(pref.getValue()).isEqualTo(preferenceValue);
+        assertThat(pref.getSummary().toString())
+                .isEqualTo(pref.getEntries()[expectedSummaryIndex].toString());
         verify(mMockedMetricsLogger).writePreferenceClickMetric(pref);
     }
 
@@ -801,6 +858,7 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
     @Test
     @DisableFlags({FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING})
     public void testSearchIndexProvider_getRawIndexData() {
+        ShadowDesktopSettingsUtils.setShouldShow(false);
         final Indexable.SearchIndexProvider provider =
                 ExternalDisplayPreferenceFragment.SEARCH_INDEX_DATA_PROVIDER;
 
@@ -809,6 +867,24 @@ public class ExternalDisplayPreferenceFragmentTest extends ExternalDisplayTestBa
         assertThat(indexData).hasSize(1);
         assertThat(indexData.getFirst().screenTitle).contains(
                 mContext.getString(R.string.connected_devices_dashboard_title));
+        assertThat(indexData.getFirst().keywords).isEqualTo(
+                mContext.getString(R.string.keywords_external_display_settings));
+        assertThat(indexData.getFirst().title).isEqualTo(
+                mContext.getString(EXTERNAL_DISPLAY_TITLE_RESOURCE));
+    }
+
+    @Test
+    @DisableFlags({FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING})
+    public void testSearchIndexProvider_getRawIndexData_topLevelDeviceEnabled() {
+        ShadowDesktopSettingsUtils.setShouldShow(true);
+        final Indexable.SearchIndexProvider provider =
+                ExternalDisplayPreferenceFragment.SEARCH_INDEX_DATA_PROVIDER;
+
+        final List<SearchIndexableRaw> indexData = provider.getRawDataToIndex(
+                mContext, /* enabled= */ true);
+        assertThat(indexData).hasSize(1);
+        assertThat(indexData.getFirst().screenTitle).contains(
+                mContext.getString(R.string.display_settings));
         assertThat(indexData.getFirst().keywords).isEqualTo(
                 mContext.getString(R.string.keywords_external_display_settings));
         assertThat(indexData.getFirst().title).isEqualTo(

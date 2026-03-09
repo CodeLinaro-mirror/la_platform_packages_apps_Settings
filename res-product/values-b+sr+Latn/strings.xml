@@ -425,9 +425,9 @@
     <string name="wifi_add_app_networks_summary" product="desktop" msgid="4238956725252527159">"<xliff:g id="APPNAME">%1$s</xliff:g> želi da sačuva ove mreže na uređaju"</string>
     <string name="wifi_hidden_network_warning" product="default" msgid="5069866459200615493">"Ako ruter ne emituje ID mreže, ali želite da ga povežete na mrežu u budućnosti, možete da podesite mrežu tako da bude sakrivena.\n\nTo može da dovede do bezbednosnog rizika jer telefon redovno emituje signal da bi pronašao mrežu.\n\nPodešavanje mreže tako da bude sakrivena ne menja podešavanja rutera."</string>
     <string name="wifi_hidden_network_warning" product="desktop" msgid="1145969827779463554">"Ako ruter ne emituje ID mreže, ali želite da ga povežete na mrežu u budućnosti, možete da podesite mrežu tako da bude sakrivena.\n\nTo može da dovede do bezbednosnog rizika jer uređaj redovno emituje signal da bi pronašao mrežu.\n\nPodešavanje mreže tako da bude sakrivena ne menja podešavanja rutera."</string>
-    <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Automatski prilagodite položaj ekrana kada okrećete uređaj između uspravnog i vodoravnog režima"</string>
-    <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Automatski prilagodite položaj ekrana kada prebacujete tablet između uspravnog i vodoravnog režima"</string>
-    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Automatski prilagodite položaj ekrana kada okrećete uređaj između uspravnog i vodoravnog režima"</string>
+    <string name="auto_rotate_screen_summary" product="default" msgid="5562937346878935483">"Automatski prilagodite položaj ekrana kada okrećete uređaj uspravno ili vodoravno"</string>
+    <string name="auto_rotate_screen_summary" product="tablet" msgid="3163709742477804994">"Automatski prilagodite položaj ekrana kada okrećete uređaj uspravno ili vodoravno"</string>
+    <string name="auto_rotate_screen_summary" product="desktop" msgid="3805199344834364732">"Automatski prilagodite položaj ekrana kada okrećete uređaj uspravno ili vodoravno"</string>
     <string name="sim_lock_on" product="tablet" msgid="227481196121403470">"Zahtevaj PIN radi upotrebe tableta"</string>
     <string name="sim_lock_on" product="default" msgid="6896034657274595838">"Zahtevaj PIN za upotrebu telefona"</string>
     <string name="sim_lock_on" product="desktop" msgid="5734697047766184447">"Potreban je PIN za korišćenje uređaja"</string>
@@ -710,4 +710,7 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"Pomaže u filtriranju eksplicitnog sadržaja u nekim aplikacijama i pregledačima na ovom uređaju. Eksplicitan sadržaj i dalje može da se prikazuje u drugim aplikacijama i pregledačima, kao i na drugim uređajima."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"Izaberite šta ćete videti na ekranu kada je tablet na baznoj stanici. Uređaj može da troši više energije kada se koristi čuvar ekrana."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"Izaberite šta ćete videti na ekranu kada je uređaj na baznoj stanici. Uređaj može da troši više energije kada se koristi čuvar ekrana."</string>
+    <string name="display_settings" product="default" msgid="3387606354749476666">"Ekran"</string>
+    <string name="sound_settings" product="default" msgid="1962377912191328861">"Zvuk i vibriranje"</string>
+    <string name="sound_settings" product="desktop" msgid="9077346630096747379">"Zvuk"</string>
 </resources>

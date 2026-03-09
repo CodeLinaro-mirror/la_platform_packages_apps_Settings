@@ -412,6 +412,8 @@
     <string name="security_settings_face_enroll_enrolling_skip" msgid="5568617401632528567">"এড়িয়ে যান"</string>
     <string name="face_intro_error_max" msgid="2474735057709291626">"আপনি অনুমোদিত সর্বোচ্চ সংখ্যক ফেস যোগ করেছেন"</string>
     <string name="face_intro_error_unknown" msgid="1626057493054989995">"এর বেশি ফেস যোগ করা যাবে না"</string>
+    <string name="security_settings_face_enroll_intro_timeout_dialog_title" msgid="2276422963933723362">"ফেস আনলক করার সুবিধা সেট-আপ করা যাচ্ছে না"</string>
+    <string name="security_settings_face_enroll_intro_timeout_dialog_message" msgid="2680132270879475080">"আপনি ইন্টারনেটের সাথে কানেক্টেড নন। ফিরে যান এবং ইন্টারনেটের সাথে কানেক্ট করুন অথবা পরে সেটিংস থেকে এটি সেট-আপ করুন।"</string>
     <string name="security_settings_face_enroll_error_dialog_title" msgid="2460820099922775936">"এনরোল করা যায়নি"</string>
     <string name="security_settings_face_enroll_dialog_ok" msgid="1674650455786434426">"ঠিক আছে"</string>
     <string name="security_settings_face_enroll_error_timeout_dialog_message" msgid="7768349698547951750">"ফেস নথিভুক্তের সময়সীমা শেষ হয়েছে। আবার চেষ্টা করুন৷"</string>
@@ -555,6 +557,14 @@
     <string name="security_settings_fingerprint_enroll_find_sensor_title" msgid="886085239313346000">"সেন্সর স্পর্শ করুন"</string>
     <string name="security_settings_sfps_enroll_find_sensor_title" msgid="8327884364635804363">"পাওয়ার বোতাম প্রেস না করেই এটি টাচ করুন"</string>
     <string name="security_settings_udfps_enroll_find_sensor_title" msgid="8077484429913330179">"আপনার ফিঙ্গারপ্রিন্ট কীভাবে সেট আপ করবেন"</string>
+    <string name="security_settings_enroll_find_sensor_standalone_default_title" msgid="2560358942286362136">"ফিঙ্গারপ্রিন্ট সেন্সর টাচ করুন"</string>
+    <string name="security_settings_enroll_find_sensor_standalone_default_message" msgid="1440652109953064598">"আপনার কীবোর্ড, পাওয়ার বোতাম বা ডিভাইসের পাশে সেন্সরটি আছে।"</string>
+    <string name="security_settings_enroll_find_sensor_keyboard_bottom_left_message" msgid="9114169763600792562">"আপনার কীবোর্ডের নিচে বাঁদিকের কোণে ফিঙ্গারপ্রিন্ট সেন্সর আছে"</string>
+    <string name="security_settings_enroll_find_sensor_keyboard_bottom_right_message" msgid="1259481399128590523">"আপনার কীবোর্ডের নিচে ডানদিকের কোণে ফিঙ্গারপ্রিন্ট সেন্সর আছে"</string>
+    <string name="security_settings_enroll_find_sensor_keyboard_top_right_message" msgid="3676793246782964274">"আপনার কীবোর্ডের উপরে ডানদিকের কোণে ফিঙ্গারপ্রিন্ট সেন্সর আছে"</string>
+    <string name="security_settings_enroll_find_sensor_right_side_message" msgid="4935349088172995426">"আপনার ডিভাইসের ডানদিকে ফিঙ্গারপ্রিন্ট সেন্সর আছে"</string>
+    <string name="security_settings_enroll_find_sensor_left_side_message" msgid="5826609754513683067">"আপনার ডিভাইসের বাঁদিকে ফিঙ্গারপ্রিন্ট সেন্সর আছে"</string>
+    <string name="security_settings_enroll_find_sensor_left_of_power_button_top_right_message" msgid="4384349514752161995">"ফিঙ্গারপ্রিন্ট সেন্সর আপনার কীবোর্ডের উপরে ডানদিকের কোণে, পাওয়ার বোতামের পাশে আছে"</string>
     <string name="security_settings_fingerprint_enroll_find_sensor_message" msgid="6160543980992596286">"এটি আপনার ফোনের পিছনে আছে। আপনার তর্জনী ব্যবহার করুন।"</string>
     <string name="security_settings_udfps_enroll_find_sensor_message" msgid="8383106460819519961">"আপনার স্ক্রিনে \'ফিঙ্গারপ্রিন্ট সেন্সর\' আছে। আপনি পরবর্তী স্ক্রিনে আপনার ফিঙ্গারপ্রিন্ট ক্যাপচার করতে পারবেন।"</string>
     <string name="security_settings_udfps_enroll_find_sensor_start_button" msgid="3172268783620336357">"শুরু করুন"</string>
@@ -957,6 +967,8 @@
     <string name="external_display_connection_preference_desktop" msgid="1132935527002697518">"আলাদা ডিসপ্লে হিসেবে ব্যবহার করুন"</string>
     <string name="external_display_connection_preference_mirroring" msgid="7389135903725596964">"বিল্ট-ইন ডিসপ্লে মিরর করুন"</string>
     <string name="external_display_connection_preference_show_dialog" msgid="6797743658612540027">"কানেকশন ডায়ালগ দেখুন"</string>
+    <string name="hdr_preference_title" msgid="1297374795868644828">"HDR ব্যবহার করুন"</string>
+    <string name="hdr_preference_summary" msgid="2557507660147446325">"আরও বেশি রঙের রেঞ্জ ও উজ্জ্বল হাইলাইট দেখায়"</string>
     <string name="external_display_not_found" msgid="1912355133386555798">"এক্সটার্নাল ডিসপ্লে ডিসকানেক্ট হয়ে গেছে"</string>
     <string name="external_display_rotation" msgid="7160062306817490204">"রোটেশন"</string>
     <string name="external_display_standard_rotation" msgid="545969032327487219">"স্ট্যান্ডার্ড"</string>
@@ -1145,14 +1157,14 @@
     <string name="wifi_dpp_connect_network_using_qr_code" msgid="6975258007798254937">"এই নেটওয়ার্কে কোনও ডিভাইস যোগ করার জন্য QR কোড ব্যবহার করুন"</string>
     <string name="wifi_dpp_qr_code_is_not_valid_format" msgid="5190689503019328279">"QR কোড ফর্ম্যাট ভুল"</string>
     <string name="retry" msgid="7542103800274026915">"আবার করুন"</string>
-    <string name="shared_message" msgid="2104244057926025072">"শেয়ার করা হয়েছে"</string>
-    <string name="private_message" msgid="5897966950396765392">"ব্যক্তিগত"</string>
     <string name="wifi_conflict_dialog_switch" msgid="5896926117413068886">"পাল্টান"</string>
     <string name="wifi_conflict_dialog_cancel" msgid="5200571850377525343">"বাতিল করুন"</string>
     <string name="wifi_share_preference_title" msgid="2000847347515149059">"নেটওয়ার্ক শেয়ার করুন"</string>
     <string name="wifi_share_preference_summary" msgid="3642772041628058748">"এই ডিভাইসের অন্যান্য ব্যবহারকারীরা এই নেটওয়ার্ক অ্যাক্সেস করতে পারবেন"</string>
-    <string name="wifi_conflict_dialog_title" msgid="2462232406209378294">"<xliff:g id="SHARED">%1$s</xliff:g> নেটওয়ার্কে পরিবর্তন করতে চান?"</string>
-    <string name="wifi_conflict_dialog_message" msgid="6900269406213437763">"\"<xliff:g id="NETWORK_NAME">%2$s</xliff:g>\" নামের একটি <xliff:g id="SHARED_0">%1$s</xliff:g> নেটওয়ার্ক আগে থেকেই রয়েছে। আপনি <xliff:g id="SHARED_1">%1$s</xliff:g> নেটওয়ার্কে পরিবর্তন করলে, <xliff:g id="PRIVATE">%3$s</xliff:g> নেটওয়ার্ক ছেড়ে বেরিয়ে আসবেন এবং সাময়িকভাবে আপনার ইন্টারনেট নাও থাকতে পারে।"</string>
+    <string name="wifi_share_conflict_dialog_title" msgid="3758584730708042014">"শেয়ার করা নেটওয়ার্কে বদলাবেন?"</string>
+    <string name="wifi_share_conflict_dialog_message" msgid="4614968368961927940">"\"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>\" নামের একটি শেয়ার করা নেটওয়ার্ক আগে থেকেই রয়েছে। আপনি শেয়ার করা নেটওয়ার্কে পরিবর্তন করলে, ব্যক্তিগত নেটওয়ার্ক ছেড়ে বেরিয়ে আসবেন এবং সাময়িকভাবে আপনার ইন্টারনেট নাও থাকতে পারে।"</string>
+    <string name="wifi_private_conflict_dialog_title" msgid="10940608988441770">"ব্যক্তিগত নেটওয়ার্কে বদলাবেন?"</string>
+    <string name="wifi_private_conflict_dialog_message" msgid="495022893355731972">"\"<xliff:g id="NETWORK_NAME">%1$s</xliff:g>\" নামের একটি ব্যক্তিগত নেটওয়ার্ক আগে থেকেই রয়েছে। ব্যক্তিগত নেটওয়ার্কে পরিবর্তন করলে, আপনি শেয়ার করা নেটওয়ার্ক ছেড়ে বেরিয়ে আসবেন এবং সাময়িকভাবে আপনার ইন্টারনেট নাও থাকতে পারে।"</string>
     <string name="wifi_unchanged" msgid="8026045290856150191">"(অপরিবর্তিত)"</string>
     <string name="wifi_allow_edit_configuration_title" msgid="701463165569293">"ব্যবহারকারীদের নেটওয়ার্ক এডিট করার অনুমতি দিন"</string>
     <string name="wifi_allow_edit_configuration_summary" msgid="2133654391010089827">"অন্যান্য ব্যবহারকারীরা এই নেটওয়ার্কে পরিবর্তন করতে পারবেন"</string>
@@ -1329,7 +1341,6 @@
     <string name="wifi_calling_settings_activation_instructions" msgid="3936067355828542266">"ওয়াই-ফাই দিয়ে কল করার সুবিধা অ্যাক্টিভেট করুন"</string>
     <string name="wifi_calling_turn_on" msgid="7687886259199428823">"ওয়াই-ফাই দিয়ে কল করার সুবিধা চালু করুন"</string>
     <string name="wifi_disconnected_from" msgid="5249576734324159708">"<xliff:g id="SSID">%1$s</xliff:g> থেকে ডিসকানেক্ট করা হয়েছে"</string>
-    <string name="sound_settings" msgid="7622986039384531304">"সাউন্ড ও ভাইব্রেশন"</string>
     <string name="account_settings" msgid="255404935489127404">"অ্যাকাউন্টগুলি"</string>
     <string name="accessibility_category_work" msgid="5133894487353964944">"কাজের প্রোফাইল অ্যাকাউন্টগুলি - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="accessibility_category_personal" msgid="2228088849803484780">"ব্যক্তিগত প্রোফাইল অ্যাকাউন্টগুলি"</string>
@@ -1337,7 +1348,6 @@
     <string name="accessibility_work_account_title" msgid="7622485151217943839">"কাজের অ্যাকাউন্ট - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="accessibility_personal_account_title" msgid="8535265881509557013">"ব্যক্তিগত অ্যাকাউন্ট - <xliff:g id="MANAGED_BY">%s</xliff:g>"</string>
     <string name="search_settings" msgid="7573686516434589771">"সার্চ"</string>
-    <string name="display_settings" msgid="7197750639709493852">"ডিসপ্লে"</string>
     <string name="accelerometer_title" msgid="7745991950833748909">"অটো-রোটেট স্ক্রিন"</string>
     <string name="auto_rotate_option_off" msgid="2788096269396290731">"বন্ধ আছে"</string>
     <string name="auto_rotate_option_on" msgid="5776678230808498171">"চালু আছে"</string>
@@ -1437,7 +1447,7 @@
     <string name="dark_ui_text_force_invert" msgid="3776487375947497387">"কিছু স্ক্রিনের ক্ষেত্রে, আরও সহজে স্ক্রিনের দিকে তাকাতে ও ব্যাটারির ব্যবহার কমানোর জন্য ডার্ক ব্যাকগ্রাউন্ড ব্যবহার করুন। যদি শিডিউল করে রাখেন তাহলে স্ক্রিন বন্ধ থাকলে, আপনার থিম পরিবর্তন হবে।"</string>
     <string name="dark_ui_bedtime_footer_summary" msgid="5576501833145170581">"ডার্ক থিম বর্তমানে আপনার বেডটাইম মোডের শিডিউল অনুযায়ী চালু বা বন্ধ হয়"</string>
     <string name="dark_ui_bedtime_footer_action" msgid="1493095487994054339">"বেডটাইম মোডের সেটিংস"</string>
-    <string name="dark_ui_modes_footer_summary" msgid="8005236983054795213">"{count,plural,offset:2 =0{এছাড়াও, মোডের মাধ্যমেও ডার্ক থিম চালু করা যায়}=1{এছাড়াও, {mode_1}-এর মাধ্যমেও ডার্ক থিম চালু করা হয়}=2{এছাড়াও, {mode_1} ও {mode_2}-এর মাধ্যমেও ডার্ক থিম চালু করা হয়}=3{এছাড়াও, {mode_1}, {mode_2} এবং {mode_3}-এর মাধ্যমেও ডার্ক থিম চালু করা হয়}one{এছাড়াও, {mode_1}, {mode_2} ও আরও #টির মাধ্যমেও ডার্ক থিম চালু করা হয়}other{এছাড়াও, {mode_1}, {mode_2} ও আরও #টির মাধ্যমেও ডার্ক থিম চালু করা হয়}}"</string>
+    <string name="dark_ui_modes_footer_summary" msgid="8510284128378660986">"{count,plural,offset:2 =0{মোডের মাধ্যমেও ডার্ক থিম চালু করা যায়।}=1{{mode_1}-এর মাধ্যমেও ডার্ক থিম চালু করা হয়।}=2{{mode_1} এবং {mode_2} এর মাধ্যমেও ডার্ক থিম চালু করা হয়।}=3{{mode_1}, {mode_2} এবং {mode_3}-এর মাধ্যমেও ডার্ক থিম চালু করা হয়।}one{{mode_1}, {mode_2} ও আরও #টির মাধ্যমেও ডার্ক থিম চালু করা হয়।}other{{mode_1}, {mode_2} ও আরও #টির মাধ্যমেও ডার্ক থিম চালু করা হয়।}}"</string>
     <string name="dark_ui_modes_footer_action" msgid="80671811848446248">"মোড সেটিংস"</string>
     <string name="hdr_brigtness_text" msgid="1912629316654528876">"উচ্চ মাত্রার ডায়নামিক রেঞ্জে (HDR) ছবি ও ভিডিও আরও উজ্জ্বল করুন, কালার রেঞ্জ আরও বাড়ান এবং আরও স্পষ্ট করে তুলুন। HDR কন্টেন্ট আরও উজ্জ্বলভাবে দেখা যাবে।"</string>
     <string name="screen_timeout" msgid="7709947617767439410">"স্ক্রিন টাইমআউট"</string>
@@ -1515,6 +1525,24 @@
     <string name="sim_pin_enable_failed" msgid="5156513975085380284">"পিন চালু করা যায়নি৷"</string>
     <string name="sim_enter_ok" msgid="3401715290135787531">"ঠিক আছে"</string>
     <string name="sim_enter_cancel" msgid="2001859323724961490">"বাতিল করুন"</string>
+    <string name="automatic_sim_lock_settings_title" msgid="744044872158962782">"সিম কার্ড সুরক্ষিত করুন"</string>
+    <string name="automatic_sim_lock_protection" msgid="9164867628046446829">"অটোমেটিক সিম লক সুরক্ষা"</string>
+    <string name="sim_auto_pin_management_toggle" msgid="277957283281408624">"অটোমেটিক পিন ম্যানেজ করার সুবিধা"</string>
+    <string name="sim_pin_auto_management_on" msgid="1839795195797452391">"Android ম্যানেজ করে"</string>
+    <string name="sim_pin_auto_management_off" msgid="8518118023400831852">"Android ম্যানেজ করে না"</string>
+    <string name="sim_enrollment_succeeded" msgid="3279720081300983303">"নথিভুক্ত করা সম্পূর্ণ হয়েছে"</string>
+    <string name="sim_enrollment_failed" msgid="342422651961251317">"নথিভুক্ত করা যায়নি"</string>
+    <string name="sim_display_platform_managed_pin_title" msgid="6889806433509624620">"Android-এর ম্যানেজ করা পিন দেখান"</string>
+    <string name="sim_display_platform_managed_pin" msgid="8315071204210521632">"Android-এর ম্যানেজ করা পিন"</string>
+    <string name="sim_platform_managed_pin_value" msgid="3041833119193596268">"Android-এর ম্যানেজ করা পিনের ভ্যালু:"</string>
+    <string name="sim_platform_managed_pin_failure" msgid="7724058239107026471">"পিন পাওয়া যায়নি"</string>
+    <string name="sim_choose_protection_mode_title" msgid="3844572414471399629">"সিম কার্ড চুরি হওয়া থেকে বাঁচান"</string>
+    <string name="sim_protection_mode_protected_by_platform" msgid="3411990756518847014">"Android-এর ম্যানেজ করা সিম কার্ড পিন"</string>
+    <string name="sim_protection_mode_manually_managed" msgid="1369031226210580996">"সিম কার্ড পিন ম্যানুয়ালি ম্যানেজ করা হয়েছে"</string>
+    <string name="sim_protection_mode_lskf_required" msgid="5942088143566182672">"সিম কার্ডের সুরক্ষা চালু করতে লকস্ক্রিন সেট-আপ করতেই হবে"</string>
+    <string name="provide_current_sim_pin_title" msgid="4164416887125189306">"বর্তমান সিম কার্ডের পিন লিখুন"</string>
+    <string name="provide_current_sim_pin" msgid="2805396981527525822">"সিম কার্ডের বর্তমান পিন লিখুন"</string>
+    <string name="use_carrier_default_pin" msgid="4777399918806287607">"ক্যারিয়ার ডিফল্ট পিন দিন"</string>
     <string name="sim_change_data_title" msgid="4663239438584588847">"ডেটার জন্য <xliff:g id="CARRIER">%1$s</xliff:g> ব্যবহার করবেন?"</string>
     <string name="sim_change_data_message" msgid="3046178883369645132">"মোবাইল ডেটার জন্য আপনি <xliff:g id="CARRIER2_0">%2$s</xliff:g> ব্যবহার করছেন। <xliff:g id="CARRIER1">%1$s</xliff:g>-এ পাল্টালে, মোবাইল ডেটার জন্য <xliff:g id="CARRIER2_1">%2$s</xliff:g> আর ব্যবহার করা হবে না।"</string>
     <string name="sim_change_data_ok" msgid="4922114750417276560">"<xliff:g id="CARRIER">%1$s</xliff:g> ব্যবহার করুন"</string>
@@ -1989,7 +2017,7 @@
     <string name="uninstall_all_users_text" msgid="5924715251087176474">"সকল ব্যবহারকারীদের জন্য আনইনস্টল করুন"</string>
     <string name="install_text" msgid="4558333621516996473">"ইনস্টল করুন"</string>
     <string name="disable_text" msgid="5146002260857428005">"বন্ধ করুন"</string>
-    <string name="enable_text" msgid="8570798764647110430">"সক্ষম করুন"</string>
+    <string name="enable_text" msgid="8570798764647110430">"চালু করুন"</string>
     <string name="clear_user_data_text" msgid="6773186434260397947">"স্টোরেজ খালি করুন"</string>
     <string name="app_factory_reset" msgid="8974044931667015201">"আপডেটগুলি আনইনস্টল করুন"</string>
     <string name="app_restricted_settings_lockscreen_title" msgid="5993061278264872648">"বিধিনিষেধযুক্ত সেটিংসের অনুমতি দিন"</string>
@@ -2116,6 +2144,10 @@
     <string name="auto_punctuate_summary" msgid="3549190848611386748">"\"।\" প্রবেশ করাতে দুইবার \'স্পেস\' কী টিপুন"</string>
     <string name="show_password" msgid="7101900779571040117">"পাসওয়ার্ড দেখুন"</string>
     <string name="show_password_summary" msgid="9025960283785111619">"টাইপ করার সময় অক্ষরগুলি কয়েক মুহূর্তের জন্য দেখুন"</string>
+    <string name="show_secrets_touch_title" msgid="84204071484216549">"টাচস্ক্রিনের জন্য পাসওয়ার্ড দেখুন"</string>
+    <string name="show_secrets_touch_summary" msgid="4533171516921235441">"টাচস্ক্রিনে টাইপ করার সময় অক্ষরগুলি কিছুক্ষণের জন্য দেখান"</string>
+    <string name="show_secrets_physical_title" msgid="3789582834699960816">"কীবোর্ডের জন্য পাসওয়ার্ড দেখুন"</string>
+    <string name="show_secrets_physical_summary" msgid="8230461852128151893">"কীবোর্ডে টাইপ করার সময় অক্ষরগুলি কয়েক মুহূর্তের জন্য দেখুন"</string>
     <string name="spellchecker_security_warning" msgid="2016059050608271820">"এই বানান পরীক্ষকটি হয়ত পাসওয়ার্ড এবং ক্রেডিট কার্ড নম্বর সহ আপনার টাইপ করা সমস্ত টেক্সট সংগ্রহ করতে সক্ষম হতে পারে। এটি <xliff:g id="SPELLCHECKER_APPLICATION_NAME">%1$s</xliff:g> অ্যাপ থেকে এসেছে। এই বানান পরীক্ষকটি ব্যবহার করবেন?"</string>
     <string name="spellchecker_quick_settings" msgid="6449414356743946577">"সেটিংস"</string>
     <string name="spellchecker_language" msgid="8905487366580285282">"ভাষা"</string>
@@ -2494,7 +2526,6 @@
     <string name="accessibility_screen_magnification_intro_text" msgid="3856180549393526339">"কন্টেন্ট আরও বড় সাইজে দেখার জন্য, স্ক্রিনে দ্রুত জুম-ইন করুন"</string>
     <string name="accessibility_screen_magnification_summary" msgid="8267672508057326959">"&lt;b&gt;জুম ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. \'বড় করে দেখা\' ফিচার চালু করার জন্য শর্টকাট ব্যবহার করুন&lt;br/&gt; {1,number,integer}। স্ক্রিনে ট্যাপ করুন&lt;br/&gt; {2,number,integer}। স্ক্রিনের চারদিকে ঘোরাতে ২টি আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {3,number,integer}। জুম অ্যাডজাস্ট করার জন্য ২টি আঙুল দিয়ে পিঞ্চ করুন&lt;br/&gt; {4,number,integer}। \'বড় করে দেখা\' ফিচার বন্ধ করার জন্য শর্টকাট ব্যবহার করুন&lt;br/&gt;&lt;br/&gt; &lt;b&gt;সাময়িকভাবে জুম ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}। আপনার \'বড় করে দেখা\' ফিচারের ধরন ফুল স্ক্রিনে সেট হয়েছে কিনা ভাল করে দেখে নিন&lt;br/&gt; {1,number,integer}। \'বড় করে দেখা\' ফিচার চালু করতে শর্টকাট ব্যবহার করুন&lt;br/&gt; {2,number,integer}। স্ক্রিনের যেকোনও জায়গা টাচ করে ধরে থাকুন&lt;br/&gt; {3,number,integer}। স্ক্রিনের চারদিকে ঘোরাতে আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {4,number,integer}। \'বড় করে দেখা\' ফিচার বন্ধ করতে স্ক্রিনের উপর থেকে আঙুল সরিয়ে নিন"</string>
     <string name="accessibility_screen_magnification_keyboard_summary" msgid="5376202602229533488">"&lt;b&gt;জুম-ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. বড় করে দেখা ফিচারটি চালু করতে শর্টকাট ব্যবহার করুন অথবা &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + \'M\' প্রেস করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনের মধ্যে কার্সর সরাতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + তীরচিহ্ন \'কী\' প্রেস করুন&lt;br/&gt; {2,number,integer}. জুম অ্যাডজাস্ট করতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; এবং \"+\" অথবা \"-\" প্রেস করুন&lt;br/&gt; {3,number,integer}. বড় করে দেখা ফিচারটি বন্ধ করতে শর্টকাট বা &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + \'M\' ব্যবহার করুন"</string>
-    <string name="accessibility_screen_magnification_keyboard_shortcuts_flag_off_summary" msgid="4390658165464462006">"&lt;b&gt;জুম-ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. বড় করে দেখা ফিচারটি চালু করার জন্য শর্টকাট ব্যবহার করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনের মধ্যে কার্সর সরাতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + তীরচিহ্ন \'কী\' প্রেস করুন&lt;br/&gt; {2,number,integer}. জুম অ্যাডজাস্ট করতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; এবং \"+\" অথবা \"-\" প্রেস করুন&lt;br/&gt; {3,number,integer}. বড় করে দেখা ফিচারটি বন্ধ করতে শর্টকাট ব্যবহার করুন"</string>
     <string name="accessibility_screen_magnification_keyboard_touch_summary" msgid="7623681880843239997">"&lt;b&gt;কীবোর্ড&lt;/b&gt;&lt;br/&gt; {0,number,integer}। বড় করে দেখা ফিচারটি চালু করতে শর্টকাট ব্যবহার করুন অথবা &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + \'M\' প্রেস করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনের মধ্যে কার্সর সরাতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + তীরচিহ্ন \'কী\' প্রেস করুন&lt;br/&gt; {2,number,integer}. জুম অ্যাডজাস্ট করতে &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; এবং \"+\" অথবা \"-\" প্রেস করুন&lt;br/&gt; {3,number,integer}. বড় করে দেখা বন্ধ করতে শর্টকাট বা &lt;xliff:g id=meta&gt;%1$s&lt;/xliff:g&gt; + &lt;xliff:g id=alt&gt;%2$s&lt;/xliff:g&gt; + \'M\' ব্যবহার করুন&lt;br/&gt;&lt;br/&gt; &lt;b&gt;টাচস্ক্রিন&lt;/b&gt;&lt;br/&gt; জুম-ইন করতে:&lt;br/&gt; {0,number,integer}. বড় করে দেখা ফিচারটি চালু করার জন্য শর্টকাট ব্যবহার করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনে ট্যাপ করুন&lt;br/&gt; {2,number,integer}. স্ক্রিনের চারদিকে ঘোরাতে ২টি আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {3,number,integer}. জুম অ্যাডজাস্ট করার জন্য ২টি আঙুল দিয়ে পিঞ্চ করুন zoom&lt;br/&gt; {4,number,integer}. বড় করে দেখা ফিচারটি বন্ধ করতে শর্টকাট ব্যবহার করুন&lt;br/&gt;&lt;br/&gt; সাময়িকভাবে জুম-ইন করতে:&lt;br/&gt; {0,number,integer}. আপনার বড় করে দেখা ফিচারের ধরন ফুল স্ক্রিনে সেট হয়েছে কিনা ভাল করে দেখে নিন&lt;br/&gt; {1,number,integer}. বড় করে দেখা ফিচারটি চালু করতে শর্টকাট ব্যবহার করুন&lt;br/&gt; {2,number,integer}. স্ক্রিনের যেকোনও জায়গা টাচ করে ধরে থাকুন&lt;br/&gt; {3,number,integer}. স্ক্রিনের চারদিকে ঘোরাতে আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {4,number,integer}. বড় করে দেখা ফিচারটি বন্ধ করতে চাইলে আঙুল সরিয়ে নিন"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_off" msgid="1779959623535122324">"&lt;b&gt;জুম-ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. \'বড় করে দেখা\' ফিচার চালু করতে শর্টকাট ব্যবহার করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনে ট্যাপ করুন&lt;br/&gt; {2,number,integer}. স্ক্রিনের মধ্যে যে কোনও জায়গায় সরাতে ২টি আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {3,number,integer}. জুম অ্যাডজাস্ট করার জন্য ২টি আঙুল দিয়ে পিঞ্চ করুন zoom&lt;br/&gt; {4,number,integer}. \'বড় করে দেখা\' ফিচার বন্ধ করতে শর্টকাট ব্যবহার করুন&lt;br/&gt;&lt;br/&gt; এছাড়াও সাময়িকভাবে জুম-ইন এবং আরও অনেক কিছু করুন।"</string>
     <string name="accessibility_screen_magnification_summary_one_finger_panning_on" msgid="7323930759240678965">"&lt;b&gt;জুম-ইন করতে:&lt;/b&gt;&lt;br/&gt; {0,number,integer}. \'বড় করে দেখা\' ফিচার চালু করতে শর্টকাট ব্যবহার করুন&lt;br/&gt; {1,number,integer}. স্ক্রিনে ট্যাপ করুন&lt;br/&gt; {2,number,integer}. স্ক্রিনের মধ্যে যে কোনও জায়গায় সরাতে ১টি অথবা ২টি আঙুল দিয়ে টেনে আনুন&lt;br/&gt; {3,number,integer}. জুম অ্যাডজাস্ট করার জন্য ২টি আঙুল দিয়ে পিঞ্চ করুন zoom&lt;br/&gt; {4,number,integer}. \'বড় করে দেখা\' ফিচার বন্ধ করতে শর্টকাট ব্যবহার করুন&lt;br/&gt;&lt;br/&gt; এছাড়াও সাময়িকভাবে জুম-ইন এবং আরও অনেক কিছু করুন।"</string>
@@ -2590,11 +2621,13 @@
     <string name="accessibility_standard_dark_theme_summary" msgid="5266722109397649822">"আপনার ডিভাইস ও ডার্ক থিম কাজ করে এমন অ্যাপের জন্য ডার্ক থিম চালু করা হয়"</string>
     <string name="accessibility_expanded_dark_theme_title" msgid="9221540446783335817">"এক্সপ্যান্ডেড"</string>
     <string name="accessibility_expanded_dark_theme_title_in_search" msgid="1504625269329894086">"বড় করা ডার্ক থিম"</string>
-    <string name="accessibility_expanded_dark_theme_summary" msgid="4726030053236818183">"ডার্ক থিম কাজ না করলেও বেশিরভাগ অ্যাপে এটি অটোমেটিক প্রয়োগ করা হয়, যা অ্যাক্সেসিবিলিটি উন্নত করতে সাহায্য করে।"</string>
+    <string name="accessibility_expanded_dark_theme_summary" msgid="6706822433218670699">"যে অ্যাপগুলিতে ডার্ক থিম কাজ করে না, তার বেশিরভাগ অ্যাপে এটি অটোমেটিক প্রয়োগ করা হয়, যা অ্যাক্সেসিবিলিটি উন্নত করতে সাহায্য করে"</string>
+    <string name="accessibility_expanded_dark_theme_footer" msgid="4015739338153140109">"বড় করা বিকল্পে সমস্যা হলে, স্ট্যান্ডার্ড বিকল্প ব্যবহার করুন।"</string>
     <string name="keywords_expanded_dark_theme" msgid="8366925785183600306">"জোর করে ইনভার্ট করা, কালার ইনভার্সন, কনট্রাস্ট"</string>
     <string name="accessibility_expanded_dark_theme_exceptions_title" msgid="6670371265342260529">"এক্সপ্যানডেড ডার্ক থিম"</string>
     <string name="accessibility_expanded_dark_theme_exceptions_gear_content_description" msgid="4279819951044961382">"এক্সপ্যানডেড ডার্ক থিমের সেটিংস"</string>
     <string name="accessibility_expanded_dark_theme_exceptions_gear_hint" msgid="5416622231409406588">"এক্সপ্যানডেড ডার্ক থিমের সেটিংস খুলুন"</string>
+    <string name="accessibility_expanded_dark_theme_exceptions_header_description" msgid="7641176818729300939">"এক্সপ্যান্ডেড ডার্ক থিম পঠনযোগ্যতা উন্নত করতে পারে, তবে এর ফলে কিছু অ্যাপ ভুলভাবে ডিসপ্লে হতে পারে।\n\nএই সেটিংস বন্ধ থাকা অ্যাপগুলি স্ট্যান্ডার্ড ডার্ক থিম বিকল্প ব্যবহার করবে।"</string>
     <string name="accessibility_disable_animations" msgid="2993529829457179058">"অ্যানিমেশন সরিয়ে দিন"</string>
     <string name="accessibility_disable_animations_summary" msgid="5828228669556554565">"স্ক্রিনের নড়াচড়া কমিয়ে দিন"</string>
     <string name="accessibility_text_cursor_blink_rate_title" msgid="2560387611012958520">"টেক্সটের কার্সর ব্লিঙ্ক করা"</string>
@@ -2732,6 +2765,12 @@
     <string name="accessibility_hearing_device_connected_title" msgid="3785140037249487287">"হিয়ারিং ডিভাইস"</string>
     <string name="accessibility_hearing_device_saved_title" msgid="7573926212664909296">"সেভ করা ডিভাইস"</string>
     <string name="accessibility_hearing_device_control" msgid="2661965917013100611">"হিয়ারিং ডিভাইস সংক্রান্ত কন্ট্রোল"</string>
+    <string name="accessibility_hearing_device_routing_title" msgid="6091797237224624114">"সাউন্ড"</string>
+    <string name="accessibility_hearing_device_notification_routing_title" msgid="793772286292835373">"বিজ্ঞপ্তি"</string>
+    <string name="accessibility_hearing_device_ringtone_alarm_routing_title" msgid="5073468437423245843">"রিংটোন ও অ্যালার্ম"</string>
+    <string name="accessibility_hearing_device_routing_hearing_device_summary" msgid="7245587063709607168">"হিয়ারিং ডিভাইসের মাধ্যমে সাউন্ড প্লে করা হবে"</string>
+    <string name="accessibility_hearing_device_routing_device_speaker_summary" msgid="6744745201076934510">"ডিভাইসের স্পিকারের মাধ্যমে সাউন্ড প্লে করা হবে"</string>
+    <string name="accessibility_hearing_device_routing_duplicate_both_summary" msgid="2013193345937386772">"হিয়ারিং ডিভাইস ও ডিভাইসের স্পিকারের মাধ্যমে সাউন্ড প্লে করা হবে"</string>
     <string name="accessibility_hearing_device_shortcut_title" msgid="7645100199603031360">"হিয়ারিং ডিভাইস শর্টকাট"</string>
     <string name="accessibility_hac_mode_title" msgid="2037950424429555652">"হিয়ারিং এইড কম্প্যাটিবিলিটি"</string>
     <string name="accessibility_hac_mode_summary" msgid="5198760061256669067">"টেলিকয়েলের সাহায্যে কম্প্যাটিবিলিটি উন্নত করে এবং অপ্রয়োজনীয় শব্দ কমিয়ে দেয়"</string>
@@ -2917,11 +2956,7 @@
     <string name="advanced_battery_preference_summary_with_hours" msgid="954091349133320955">"গত ২৪ ঘণ্টার ব্যবহারের তথ্য দেখুন"</string>
     <string name="advanced_battery_preference_summary" msgid="2372763700477268393">"শেষবার ফুল চার্জ হওয়া থেকে ব্যাটারির ব্যবহার দেখুন"</string>
     <string name="battery_advance_info" msgid="770292928851695973"></string>
-    <string name="battery_advance_preference_loading_summary" msgid="2966765023875926220"></string>
-    <string name="battery_advance_info_profile_result_1" msgid="8527469020691518802"></string>
-    <string name="battery_advance_info_profile_result_2" msgid="6414461321691827366"></string>
-    <string name="battery_advance_info_profile_result_3" msgid="6475242560818793292"></string>
-    <string name="battery_advance_info_profile_result_4" msgid="6389652594597864717"></string>
+    <string name="battery_advance_info_for_slot" msgid="7940946026908896969"></string>
     <string name="battery_advance_info_learn_more" msgid="4401302692578050024"></string>
     <string name="battery_details_title" msgid="3289680399291090588">"অ্যাপের জন্য ব্যাটারির ব্যবহার"</string>
     <string name="details_subtitle" msgid="2550872569652785527">"বিবরণ ব্যবহার করুন"</string>
@@ -3621,12 +3656,7 @@
     <string name="connected_devices_dashboard_android_auto_no_driving_mode_summary" msgid="6426996842202276640">"ব্লুটুথ, Android Auto, NFC"</string>
     <string name="connected_devices_dashboard_android_auto_no_nfc_no_driving_mode" msgid="1672426693308438634">"ব্লুটুথ, Android Auto"</string>
     <string name="device_dashboard_title" msgid="1176311605407079643">"ডিভাইস"</string>
-    <!-- no translation found for device_dashboard_summary (3847551449956082389) -->
-    <skip />
-    <!-- no translation found for device_dashboard_display_title (6053173876299389437) -->
-    <skip />
-    <!-- no translation found for device_dashboard_sound_title (1474805168827021884) -->
-    <skip />
+    <string name="device_dashboard_summary" msgid="3847551449956082389">"কীবোর্ড, টাচপ্যাড, ডিসপ্লে, সাউন্ড"</string>
     <string name="nfc_and_payment_settings_payment_off_nfc_off_summary" msgid="7132040463607801625">"NFC বন্ধ থাকার জন্য উপলভ্য নেই"</string>
     <string name="nfc_and_payment_settings_no_payment_installed_summary" msgid="4879818114908207465">"ব্যবহার করার জন্য প্রথমে কোনও পেমেন্ট অ্যাপ ইনস্টল করতে হবে"</string>
     <string name="app_and_notification_dashboard_summary" msgid="8047683010984186106">"সাম্প্রতিক অ্যাপ, ডিফল্ট অ্যাপ"</string>
@@ -3755,6 +3785,7 @@
     <string name="keywords_change_nfc_tag_apps_state" msgid="9032287964590554366">"NFC, ট্যাগ, রিডার"</string>
     <string name="keywords_keyboard_vibration" msgid="6485149510591654697">"কীবোর্ড, হ্যাপটিক, ভাইব্রেট,"</string>
     <string name="keywords_external_display_settings" msgid="4717990369488386495">"এক্সটার্নাল ডিসপ্লে, কানেক্টেড ডিসপ্লে, এক্সটেন্ডেড ডিসপ্লে, দ্বিতীয় ডিসপ্লে, বিল্ট-ইন ডিসপ্লে, ডিসপ্লে সাজান, মিরর, ডিসপ্লের সাইজ, রোটেশন, রেজোলিউশন, রিফ্রেশ রেট"</string>
+    <string name="keywords_text_cursor_blink_rate" msgid="7682963763334011148">"ক্যারেট, টেক্সট ক্যারেট, টেক্সট কার্সর, কার্সর, ব্লিঙ্কিং, ব্লিঙ্ক ইন্টার্ভাল, ব্লিঙ্ক রেট, অ্যানিমেশন, অ্যানিমেশন কমান, অ্যানিমেশন সরান"</string>
     <string name="sound_dashboard_summary" msgid="8254699132423665654">"ভলিউম ও ভাইব্রেশন"</string>
     <string name="media_volume_option_title" msgid="5966569685119475630">"মিডিয়া ভলিউম"</string>
     <string name="remote_media_volume_option_title" msgid="7907330631195715350">"Google Cast ভলিউম"</string>
@@ -4387,12 +4418,9 @@
     <string name="memtag_reboot_yes" msgid="5788896350697141429">"রিস্টার্ট করুন"</string>
     <string name="memtag_reboot_no" msgid="2860671356184849330">"এখন নয়"</string>
     <string name="memtag_learn_more" msgid="1596145970669119776">"\'উন্নত মেমরি সুরক্ষা\' সম্পর্কে আরও জানুন।"</string>
-    <!-- no translation found for binary_transparency_title (8669346926803868809) -->
-    <skip />
-    <!-- no translation found for binary_transparency_summary (6556263563122917101) -->
-    <skip />
-    <!-- no translation found for keywords_binary_transparency (4628341524132968893) -->
-    <skip />
+    <string name="binary_transparency_title" msgid="8669346926803868809">"Android OS ডায়াগনস্টিকস"</string>
+    <string name="binary_transparency_summary" msgid="6556263563122917101">"OS বিল্ড যাচাই করুন"</string>
+    <string name="keywords_binary_transparency" msgid="4628341524132968893">"ডায়াগনস্টিকস, স্বচ্ছতা, বাইনারি"</string>
     <string name="opening_paragraph_delete_profile_unknown_company" msgid="2951348192319498135">"এর দ্বারা এই অফিস প্রোফাইলটি পরিচালিত হয়:"</string>
     <string name="managing_admin" msgid="2633920317425356619">"<xliff:g id="ADMIN_APP_LABEL">%s</xliff:g> এর দ্বারা পরিচালিত"</string>
     <string name="launch_by_default" msgid="892824422067985734">"ডিফল্ট হিসেবে খোলে"</string>
@@ -4513,18 +4541,15 @@
     <string name="usb_default_label" msgid="3372838450371060750">"ডিফল্ট ইউএসবি কনফিগারেশন"</string>
     <string name="usb_power_title" msgid="5602112548385798646">"পাওয়ারের বিভিন্ন বিকল্প"</string>
     <string name="usb_file_transfer_title" msgid="2261577861371481478">"ফাইল ট্রান্সফার করার বিকল্প"</string>
-    <!-- no translation found for usb_pci_tunnel_title (3005345509895837923) -->
+    <!-- no translation found for usb_pci_tunnel_title (2748798863335212013) -->
     <skip />
-    <!-- no translation found for usb_pci_tunnel_control (6336380624215965491) -->
+    <!-- no translation found for usb_pci_tunnel_control (3567906081072788607) -->
     <skip />
-    <!-- no translation found for usb_pci_tunnel_control_summary (5979721828896955730) -->
+    <!-- no translation found for usb_pci_tunnel_control_summary (3993635413468540397) -->
     <skip />
-    <!-- no translation found for usb_pci_tunnel_control_disallowed_nonadmin_summary (5117546225327785011) -->
-    <skip />
-    <!-- no translation found for usb_pci_tunnel_control_disallowed_by_enterprise_summary (5735179482503540735) -->
-    <skip />
-    <!-- no translation found for usb_pci_tunnel_control_disallowed_by_apm_summary (2082174070822927730) -->
-    <skip />
+    <string name="usb_pci_tunnel_control_disallowed_nonadmin_summary" msgid="5117546225327785011">"এই সেটিং পরিবর্তন করতে অ্যাডমিন ব্যবহারকারী হতে হবে"</string>
+    <string name="usb_pci_tunnel_control_disallowed_by_enterprise_summary" msgid="5735179482503540735">"আপনার আইটি অ্যাডমিন বন্ধ করে দিয়েছেন"</string>
+    <string name="usb_pci_tunnel_control_disallowed_by_apm_summary" msgid="2082174070822927730">"উন্নত সুরক্ষা মোড বন্ধ করেছে"</string>
     <string name="usb_pref" msgid="8521832005703261700">"USB"</string>
     <string name="usb_preference" msgid="5084550082591493765">"USB সংক্রান্ত পছন্দ"</string>
     <string name="usb_control_title" msgid="1946791559052157693">"USB যে ডিভাইস দ্বারা নিয়ন্ত্রিত"</string>
@@ -5100,7 +5125,7 @@
     <string name="accounts_and_backup_summary" msgid="4126659439608747174">"ডেটার ব্যাক-আপ নিন এবং অন্য ডিভাইস থেকে ডেটা কপি করুন"</string>
     <string name="accounts_and_backup_manage_accounts_title" msgid="1034959782380418930">"অ্যাকাউন্ট ম্যানেজ করুন"</string>
     <string name="accounts_and_backup_backup_category_title" msgid="807568201052547222">"ডেটার ব্যাক-আপ নিন বা তা কপি করুন"</string>
-    <string name="credman_confirmation_message_new_ui" msgid="6126274509951156460">"&lt;b&gt;সবকটি পরিষেবা বন্ধ করবেন?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; আপনি সাইন-ইন করার সময় পাসওয়ার্ড, \'পাসকী\' ও অন্যান্য তথ্য উপলভ্য হবে না"</string>
+    <string name="credman_confirmation_message_new_ui" msgid="6126274509951156460">"&lt;b&gt;সবকটি পরিষেবা বন্ধ করবেন?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; আপনার সাইন-ইন করার সময় পাসওয়ার্ড, \'পাসকী\' ও অন্যান্য তথ্য উপলভ্য হবে না"</string>
     <string name="credman_autofill_confirmation_message_new_ui" msgid="6222139222478822267">"&lt;b&gt;আপনার পছন্দের পরিষেবা পাল্টে &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt; বেছে নিতে চান?&lt;/b&gt; &lt;br/&gt; &lt;br/&gt; এখন থেকে নতুন পাসওয়ার্ড, \'পাসকী\' ও অন্যান্য তথ্য এখানে সেভ করা হবে। কী কী অটোফিল করা যেতে পারে তা নির্ধারণ করতে, আপনার স্ক্রিনে দেখানো বিষয় &lt;xliff:g id=app_name example=Provider&gt;%1$s&lt;/xliff:g&gt; ব্যবহার করতে পারে"</string>
     <string name="credman_enable_confirmation_message_title" msgid="1037501792652277829">"%1$s ব্যবহার করবেন?"</string>
     <string name="credman_on_off_switch_content_description" msgid="2930826358220917851">"%1$s চালু/বন্ধ করুন"</string>
@@ -5332,6 +5357,7 @@
     <string name="category_title_satellite_connectivity" msgid="7740500012311192133">"স্যাটেলাইট"</string>
     <string name="title_satellite_setting_connectivity" msgid="488626710934668313">"স্যাটেলাইট কানেক্টিভিটি"</string>
     <string name="description_satellite_setting_connectivity" msgid="7337311015334186655">"স্যাটেলাইট কানেক্টিভিটি"</string>
+    <string name="satellite_setting_main_switch_title" msgid="1808116906972594874">"স্যাটেলাইট কানেক্টিভিটি ব্যবহার করুন"</string>
     <string name="title_have_satellite_constrained_data_plan" msgid="8275865334911177900">"আপনার অ্যাকাউন্টের সাথে কাজ করে এমন অ্যাপের ব্যবহার অন্তর্ভুক্ত আছে"</string>
     <string name="title_have_satellite_unconstrained_data_plan" msgid="5437095773679990375">"আপনার অ্যাকাউন্টের সাথে সব অ্যাপের ডেটা অন্তর্ভুক্ত আছে"</string>
     <string name="category_title_satellite_supported_apps" msgid="8445659428502119518">"আপনার ফোনে যেসব অ্যাপ চলবে"</string>
@@ -5796,10 +5822,8 @@
     <string name="user_aspect_ratio_4_3" msgid="5196232982878982220">"৪:৩"</string>
     <string name="user_aspect_ratio_option_a11y" msgid="1235801996029095219">"<xliff:g id="DENOMINATOR">%2$s</xliff:g>:<xliff:g id="NUMERATOR">%1$s</xliff:g>"</string>
     <string name="app_aspect_ratio_footer" msgid="4029509301182067475">"আপনি অ্যাস্পেক্ট রেশিও পরিবর্তন করলে, অ্যাপ রিস্টার্ট হবে। সেভ না করা পরিবর্তন আপনি হারাতে পারেন। নির্দিষ্ট কোনও অ্যাস্পেক্ট রেশিওতে কিছু অ্যাপ অপ্টিমাইজ করা নাও যেতে পারে।"</string>
-    <!-- no translation found for app_info_experience_category (6283332744508784886) -->
-    <skip />
-    <!-- no translation found for virtual_gamepad_title (4310166725503017564) -->
-    <skip />
+    <string name="app_info_experience_category" msgid="6283332744508784886">"অভিজ্ঞতা"</string>
+    <string name="virtual_gamepad_title" msgid="4310166725503017564">"গেমপ্যাড"</string>
     <string name="accessibility_fingerprint_label" msgid="5017431423168191733">"ফিঙ্গারপ্রিন্ট সেন্সর"</string>
     <string name="flash_notifications_title" msgid="4490438861180492311">"ফ্ল্যাশ নোটিফিকেশন"</string>
     <string name="flash_notifications_about_title" msgid="9004351252928121214">"ফ্ল্যাশ বিজ্ঞপ্তি সম্পর্কে"</string>
@@ -6128,7 +6152,7 @@
     <string name="safety_center_permission_usage_search_terms" msgid="3015527940068111714">"গোপনীয়তা, প্রাইভেসি ড্যাশবোর্ড"</string>
     <string name="safety_center_private_space_search_terms" msgid="6748750858253093118">"প্রাইভেট স্পেস"</string>
     <string name="safety_center_issues_banner_group_expandable_title" msgid="3710448986851994773">"বেশি জরুরি সতর্কতা"</string>
-    <string name="safety_center_issues_banner_group_collapsible_title" msgid="4417325786751907663">"কম জরুরি সতর্কতা"</string>
+    <string name="safety_center_issues_banner_group_collapsible_title" msgid="7634388110493742279">"কম সতর্কতা"</string>
     <string name="safety_center_dismissed_issues_subsection_title" msgid="3097430988082288937">"বাতিল করা সতর্কতা"</string>
     <string name="safety_center_issue_card_dismiss_confirmation_title" msgid="181880492023793974">"এই বিজ্ঞপ্তি বাতিল করবেন?"</string>
     <string name="safety_center_issue_card_dismiss_confirmation_message" msgid="6644443810531446787">"আরও সুরক্ষা যোগ করতে, যেকোনও সময় আপনার নিরাপত্তা ও গোপনীয়তা সেটিংস পর্যালোচনা করুন"</string>
@@ -6155,35 +6179,36 @@
     <string name="satellite_landing_page_label" msgid="534906205317274253">"স্যাটেলাইট ল্যান্ডিং পৃষ্ঠা"</string>
     <string name="try_a_demo" msgid="5053671464025495505">"ডেমো দেখুন"</string>
     <string name="see_how_it_works" msgid="6358887025296144792">"এটি কীভাবে কাজ করে দেখুন"</string>
-    <string name="landing_page_footer_text_lte" msgid="6768795590418158370">"মোবাইল বা ওয়াই-ফাই নেটওয়ার্ক না থাকলে, আপনার ফোন অটোমেটিক স্যাটেলাইটের সাথে কানেক্ট হয়ে যাবে। সবচেয়ে ভালো কানেকশনের জন্য পরিষ্কার আকাশ দেখা যায় বাইরের এমন একটি জায়গায় থাকুন। মোবাইল নেটওয়ার্ক উপলভ্য হলে আপনার ফোনে সেটি আবার কানেক্ট হয়ে যাবে। স্যাটেলাইটের মাধ্যমে কল করার সুবিধা উপলভ্য নেই। জরুরি কল এখনও কানেক্ট হতে পারে।"</string>
+    <string name="landing_page_footer_text_lte" msgid="8788085197575734787">"মোবাইল ও ওয়াই-ফাই সিগন্যাল না পেলে, আপনার ফোন স্যাটেলাইটের সাথে কানেক্ট করার চেষ্টা করবে। মোবাইল বা ওয়াই-ফাই নেটওয়ার্ক উপলভ্য হলে আপনার ফোন আবার কানেক্ট হয়ে যাবে।\n\nগুরুত্বপূর্ণ: স্যাটেলাইটের মাধ্যমে কল করার সুবিধা উপলভ্য নেই। তবে, জরুরি কল এখনও কানেক্ট হতে পারে।"</string>
     <string name="landing_page_footer_text_nbiot" msgid="8646871907270616646">"সবচেয়ে ভালো কানেকশনের জন্য পরিষ্কার আকাশ দেখা যায় বাইরের এমন একটি জায়গায় থাকুন। মোবাইল নেটওয়ার্ক উপলভ্য হলে আপনার ফোনে সেটি আবার কানেক্ট হয়ে যাবে। স্যাটেলাইটের মাধ্যমে কল করার সুবিধা উপলভ্য নেই। জরুরি কল এখনও কানেক্ট হতে পারে।"</string>
     <string name="satellite_more_info_text" msgid="6053516592568119780"><u>"স্যাটেলাইট কানেক্টিভিটি সম্পর্কে আরও তথ্য"</u></string>
     <string name="forward_arrow_content_desc" msgid="5027233524587883868">"স্যাটেলাইট SOS ডেমো খুলুন"</string>
     <string name="satellite_apps_title" msgid="3693252720266491323">"স্যাটেলাইট অ্যাপ"</string>
-    <string name="satellite_emergency_sos" msgid="5598135807261930736">"ইমারজেন্সি SOS"</string>
+    <string name="satellite_phone_summary" msgid="8809730389477550449">"শুধুমাত্র জরুরি কলিং"</string>
     <string name="satellite_tile_prompt_notification_title" msgid="208155187034621285">"স্যাটেলাইট কানেক্টিভিটি উপলভ্য আছে"</string>
     <string name="satellite_tile_prompt_notification_summary" msgid="1108842668552812176">"\'দ্রুত সেটিংস\'-এ স্যাটেলাইট টাইল যোগ করে সহজেই স্যাটেলাইট সংক্রান্ত তথ্য অ্যাক্সেস করুন"</string>
     <string name="add_tile_action" msgid="5271301747196740442">"টাইল যোগ করুন"</string>
     <string name="satellite_tile_prompt_channel_title" msgid="5240494188833271282">"স্যাটেলাইট টাইল সংক্রান্ত প্রম্পট"</string>
     <string name="satellite_icon_text" msgid="1080385642493133372">"SAT"</string>
-    <!-- no translation found for satellite_not_available_warning_title (3448838339621037508) -->
+    <!-- no translation found for satellite_apps_see_all_supported_apps_text (1053383406430986034) -->
     <skip />
-    <!-- no translation found for satellite_network_connected_warning_summary (3252410685526769324) -->
+    <!-- no translation found for satellite_apps_see_less_text (3776624493969066217) -->
     <skip />
-    <!-- no translation found for satellite_unavailable_in_region_warning_summary (6113727472208461087) -->
+    <string name="satellite_not_available_warning_title" msgid="3448838339621037508">"স্যাটেলাইট উপলভ্য নেই"</string>
+    <string name="satellite_network_connected_warning_summary" msgid="3252410685526769324">"আপনি মোবাইল বা ওয়াই-ফাই নেটওয়ার্কে কানেক্ট হয়ে থাকলে স্যাটেলাইট কভারেজ উপলভ্য থাকে না।"</string>
+    <string name="satellite_unavailable_in_region_warning_summary" msgid="6113727472208461087">"এই দেশ অথবা অঞ্চলে স্যাটেলাইট কানেক্টিভিটি উপলভ্য নেই"</string>
+    <string name="satellite_unavailable_generic_warning_summary" msgid="8686231390499556096">"স্যাটেলাইট কানেক্টিভিটি এই মুহূর্তে উপলভ্য নেই। পরে আবার চেষ্টা করুন।"</string>
+    <string name="satellite_plan_warning_summary" msgid="4033700318847986474">"আপনার মোবাইল প্ল্যানে স্যাটেলাইট কভারেজ অন্তর্ভুক্ত নেই। সাহায্যের জন্য পরিষেবা প্রদানকারীর সাথে যোগাযোগ করুন।"</string>
+    <string name="satellite_default_app_warning_summary" msgid="1508886758034910436">"স্যাটেলাইট মেসেজিং ব্যবহার করতে, Google Messages অবশ্যই আপনার ডিফল্ট মেসেজিং অ্যাপ হতে হবে।"</string>
+    <!-- no translation found for satellite_user_restricted_warning_summary (6863113114703813898) -->
     <skip />
-    <!-- no translation found for satellite_unavailable_generic_warning_summary (8686231390499556096) -->
-    <skip />
-    <!-- no translation found for satellite_plan_warning_summary (4033700318847986474) -->
-    <skip />
-    <!-- no translation found for satellite_default_app_warning_summary (1508886758034910436) -->
-    <skip />
-    <!-- no translation found for satellite_carrier_enabled_info_summary (6914881458573108229) -->
-    <skip />
-    <!-- no translation found for satellite_view_coverage_button (4658208635014009964) -->
-    <skip />
-    <!-- no translation found for satellite_change_default_app_button (2473564922032869945) -->
-    <skip />
-    <!-- no translation found for satellite_view_carrier_settings_button (3459000243785835031) -->
-    <skip />
+    <string name="satellite_carrier_enabled_info_summary" msgid="6914881458573108229">"আপনার পরিষেবা প্রদানকারী স্যাটেলাইট কানেক্টিভিটি চালু করেছে। আপনার পরিষেবা প্রদানকারীর স্যাটেলাইট সেটিংস থেকে আরও জানুন।"</string>
+    <string name="satellite_view_coverage_button" msgid="4658208635014009964">"উপলভ্য লোকেশন দেখুন"</string>
+    <string name="satellite_change_default_app_button" msgid="2473564922032869945">"ডিফল্ট অ্যাপ পরিবর্তন করুন"</string>
+    <string name="satellite_view_carrier_settings_button" msgid="3459000243785835031">"পরিষেবা প্রদানকারীর সেটিংস দেখুন"</string>
+    <string name="unknown_location_warning" msgid="2547687229551053971">"আপনার বর্তমান লোকেশনে \'স্যাটেলাইট SOS\' ফিচার উপলভ্য আছে কিনা তা দেখতে, \'সেটিংস\' থেকে লোকেশন চালু করুন"</string>
+    <string name="unknown_location_warning_button" msgid="2223709540054752411">"লোকেশন চালু করুন"</string>
+    <string name="unprovisioned_device_warning" msgid="1275456484320369400">"\'স্যাটেলাইট SOS\' ফিচারের জন্য আপনার ডিভাইস রেজিস্টার করা নেই। রেজিস্ট্রেশন অটোমেটিক সম্পূর্ণ করতে, আপনার ডিভাইসের জন্য ইন্টারনেটের সাথে কানেক্ট আছেন কিনা তা নিশ্চিত করুন"</string>
+    <string name="enable_webapp_minter_title" msgid="1814043991443158736">"ওয়েব অ্যাপ ইনস্টলার পরিষেবা চালু করুন"</string>
+    <string name="enable_webapp_minter_summary" msgid="333269694933213570">"এই পরিষেবা চালু করে ওয়েবসাইট সরাসরি আপনার হোম স্ক্রিনে ইনস্টল করা যায় এবং সেগুলি সাধারণ অ্যাপের মতো ব্যবহার করা যায়।"</string>
 </resources>

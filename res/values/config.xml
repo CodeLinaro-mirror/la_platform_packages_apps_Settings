@@ -350,6 +350,9 @@
     <!-- Whether to support enrollment during setup wizard flow -->
     <bool name="config_suw_support_face_enroll">true</bool>
 
+    <!-- Whether to show a timeout dialog on the face ernoll intro screen -->
+    <bool name="config_show_face_enroll_intro_timeout_dialog">false</bool>
+
     <!-- App intent -->
     <string name="config_account_intent_uri" translatable="false"></string>
 
@@ -381,6 +384,12 @@
 
     <!-- Whether swipe security option is hidden or not -->
     <bool name="config_hide_swipe_security_option">false</bool>
+
+    <!-- Whether to disable keyboard settings in demo mode -->
+    <bool name="config_disable_keyboard_settings_in_demo_mode">false</bool>
+
+    <!-- Whether to hide modes setting in demo mode -->
+    <bool name="config_hide_modes_setting_in_demo_mode">false</bool>
 
     <!-- Whether to hide dream setting in demo mode -->
     <bool name="config_hide_dream_setting_in_demo_mode">false</bool>
@@ -493,7 +502,7 @@
     <bool name="config_show_show_secrets_touch">true</bool>
 
     <!-- Whether to show the "Show secrets (physical)" toggle in Privacy Settings. -->
-    <bool name="config_show_show_secrets_physical">true</bool>
+    <bool name="config_show_show_secrets_physical">false</bool>
 
     <!-- Whether trust_agent_click_intent should be shown or not. -->
     <bool name="config_show_trust_agent_click_intent">true</bool>
@@ -972,8 +981,6 @@
     <string name="config_safety_center_updates_subpage_id" translatable="false"></string>
     <!-- Safety Center subpage ID for the lock screen subpage. -->
     <string name="config_safety_center_lock_screen_subpage_id" translatable="false">AndroidLockScreenSources</string>
-    <!-- Safety Center subpage ID for the network_security subpage. -->
-    <string name="config_safety_center_network_security_subpage_id" translatable="false">AndroidCellularNetworkSecuritySources</string>
     <!-- Safety Center subpage ID for the updates subpage. -->
     <string name="config_safety_center_privacy_controls_subpage_id" translatable="false">AndroidPrivacySources</string>
 
@@ -1055,4 +1062,10 @@
 
     <!-- Whether to show detailed fingerprint find sensor instructions during fingerprint enrollment. -->
     <bool name="config_show_detailed_fingerprint_find_sensor_instructions">false</bool>
+
+    <!-- Whether to show the footer buttons on the password confirmation screen -->
+    <bool name="config_show_footer_buttons_on_password_confirmation_screen">false</bool>
+
+    <!-- When true, launches the feedback reporter in a new task. -->
+    <bool name="config_launch_feedback_reporter_in_new_task">false</bool>
 </resources>

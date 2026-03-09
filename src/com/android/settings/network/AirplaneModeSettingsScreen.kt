@@ -36,6 +36,7 @@ import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.preferenceHierarchy
 import com.android.settingslib.preference.PreferenceBindingPlaceholder
 import kotlinx.coroutines.CoroutineScope
+import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_MOBILE_DATA
 
 /** Preference for the Airplane Mode two-target toggle in the Network & Internet screen. */
 @ProvidePreferenceScreen(AirplaneModeSettingsScreen.KEY)
@@ -45,6 +46,8 @@ open class AirplaneModeSettingsScreen(context: Context) :
     PrimarySwitchPreferenceBinding,
     // Placeholder not needed once NetworkDashboardScreen provides the complete preferenceHierarchy.
     PreferenceBindingPlaceholder {
+    override fun tags(context: Context) = arrayOf(APP_FUNCTION_MOBILE_DATA)
+
 
     private val storage = createDataStore(context)
     private var airplaneModeObserver: KeyedObserver<String?>? = null
@@ -52,7 +55,7 @@ open class AirplaneModeSettingsScreen(context: Context) :
     override val key: String
         get() = KEY
 
-    //TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
+    // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.airplane_mode_settings_purpose
 
@@ -105,7 +108,7 @@ open class AirplaneModeSettingsScreen(context: Context) :
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
             +AirplaneModeDetailsPreference()
-            +AirplaneModeSyncPreference()
+            +AirplaneModeSyncPreference(context)
             +AirplaneModeSettingsFooter()
         }
 

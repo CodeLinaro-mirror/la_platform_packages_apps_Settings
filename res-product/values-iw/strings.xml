@@ -632,7 +632,7 @@
     <string name="daltonizer_feature_summary" product="default" msgid="3940653889277283702">"כוונון של תצוגת הצבעים בטלפון"</string>
     <string name="daltonizer_feature_summary" product="tablet" msgid="4006596881671077623">"כוונון של תצוגת הצבעים בטאבלט"</string>
     <string name="daltonizer_feature_summary" product="desktop" msgid="7614721768727080567">"אפשר לבחור איך הצבעים ייראו במכשיר"</string>
-    <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"רמקולים של טלפון"</string>
+    <string name="spatial_audio_speaker" product="default" msgid="7148176677982615792">"הרמקולים של הטלפון"</string>
     <string name="spatial_audio_speaker" product="tablet" msgid="5452617980485166854">"רמקולים של טאבלט"</string>
     <string name="spatial_audio_speaker" product="device" msgid="6204289590128303795">"רמקולים של מכשיר"</string>
     <string name="spatial_audio_speaker" product="desktop" msgid="6204289590128303795">"רמקולים של מכשיר"</string>
@@ -710,4 +710,10 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"סינון תוכן בוטה בחלק מהאפליקציות והדפדפנים במכשיר הזה. תוכן בוטה עדיין יכול להופיע באפליקציות, במכשירים או בדפדפנים אחרים."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"אפשר לבחור מה יוצג במסך כשהטאבלט בעגינה. כששומר המסך מופעל, המכשיר מנצל יותר אנרגיה."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"אפשר לבחור מה יוצג במסך כשהמכשיר בעגינה. כששומר המסך מופעל, המכשיר מנצל יותר אנרגיה."</string>
+    <!-- no translation found for display_settings (3387606354749476666) -->
+    <skip />
+    <!-- no translation found for sound_settings (1962377912191328861) -->
+    <skip />
+    <!-- no translation found for sound_settings (9077346630096747379) -->
+    <skip />
 </resources>

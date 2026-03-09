@@ -562,7 +562,7 @@
     <string name="ambient_display_pickup_title" product="tablet" msgid="1166999144900082897">"들어서 태블릿 확인"</string>
     <string name="ambient_display_pickup_title" product="device" msgid="2091669267677915975">"들어서 기기 확인"</string>
     <string name="ambient_display_pickup_title" product="desktop" msgid="2091669267677915975">"들어서 기기 확인"</string>
-    <string name="ambient_display_pickup_summary" product="default" msgid="135853288202686097">"시간, 알림, 기타 정보를 확인하려면 휴대전화를 들어 올리세요."</string>
+    <string name="ambient_display_pickup_summary" product="default" msgid="135853288202686097">"휴대전화를 들어 올려 시간, 알림, 기타 정보를 확인하세요."</string>
     <string name="ambient_display_pickup_summary" product="tablet" msgid="1638055271563107384">"시간, 알림, 기타 정보를 확인하려면 태블릿을 들어 올리세요."</string>
     <string name="ambient_display_pickup_summary" product="device" msgid="964509644539692482">"시간, 알림, 기타 정보를 확인하려면 기기를 들어 올리세요."</string>
     <string name="ambient_display_pickup_summary" product="desktop" msgid="964509644539692482">"시간, 알림, 기타 정보를 확인하려면 기기를 들어 올리세요."</string>
@@ -710,4 +710,10 @@
     <string name="supervision_web_content_filters_top_intro" product="desktop" msgid="9032662719049305184">"이 기기에서 일부 앱과 브라우저의 선정적인 콘텐츠를 필터링합니다. 다른 앱, 기기 또는 브라우저에는 계속해서 선정적인 콘텐츠가 표시될 수 있습니다."</string>
     <string name="dream_setup_description" product="default" msgid="8438386366154615008">"태블릿이 도킹되었을 때 화면에 표시할 항목을 선택하세요. 화면 보호기를 사용하면 기기에서 더 많은 에너지를 사용할 수 있습니다."</string>
     <string name="dream_setup_description" product="desktop" msgid="5397812906934631491">"기기가 도킹되었을 때 화면에 표시할 항목을 선택하세요. 화면 보호기를 사용하면 기기에서 더 많은 에너지를 사용할 수 있습니다."</string>
+    <!-- no translation found for display_settings (3387606354749476666) -->
+    <skip />
+    <!-- no translation found for sound_settings (1962377912191328861) -->
+    <skip />
+    <!-- no translation found for sound_settings (9077346630096747379) -->
+    <skip />
 </resources>

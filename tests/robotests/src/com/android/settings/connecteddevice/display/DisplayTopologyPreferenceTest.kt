@@ -25,7 +25,6 @@ import android.hardware.display.DisplayTopology.POSITION_LEFT
 import android.hardware.display.DisplayTopology.POSITION_RIGHT
 import android.hardware.display.DisplayTopology.POSITION_TOP
 import android.provider.Settings
-import android.util.DisplayMetrics
 import android.util.Size
 import android.view.Display.DEFAULT_DISPLAY
 import android.view.Display.Mode
@@ -55,7 +54,7 @@ class DisplayTopologyPreferenceTest {
     val context = ApplicationProvider.getApplicationContext<Context>()
     val featureFlags = FakeFeatureFlagsImpl()
     val injector = TestInjector(context, featureFlags)
-    val preference = DisplayTopologyPreference(injector)
+    val preference = DisplayTopologyPreference(context, injector)
     val rootView = View.inflate(context, preference.layoutResource, /* root= */ null)
     val holder = PreferenceViewHolder.createInstanceForTests(rootView)
 
@@ -84,8 +83,6 @@ class DisplayTopologyPreferenceTest {
 
         /** A log of events related to wallpaper revealing. */
         val revealLog = mutableListOf<String>()
-
-        override val densityDpi = DisplayMetrics.DENSITY_DEFAULT
 
         override fun getLogicalSize(displayId: Int): Size? {
             return displaysSize[displayId]
@@ -167,14 +164,16 @@ class DisplayTopologyPreferenceTest {
 
     /** Returns the bounds of the non-highlighting part of the block relative to the parent. */
     private fun virtualBounds(block: DisplayBlock): RectF {
-        val d = block.highlightPx.toFloat() + block.arrowSizePx.toFloat()
-        val x = block.x + d
-        val y = block.y + d
-        // Using layoutParams as a proxy for the actual width and height appears to be standard
-        // practice in Robolectric tests, as they do not actually process layout requests.
-        val w = block.layoutParams.width - 2 * d
-        val h = block.layoutParams.height - 2 * d
-        return RectF(x, y, x + w, y + h)
+        val wallpaper = block.findViewById<View>(R.id.display_block_wallpaper)
+        val params = wallpaper.layoutParams as ViewGroup.MarginLayoutParams
+
+        // The wallpaper's visual position is determined by the block's position plus the
+        // wallpaper's margins
+        val left = block.x + params.leftMargin
+        val top = block.y + params.topMargin
+        val width = params.width.toFloat()
+        val height = params.height.toFloat()
+        return RectF(left, top, left + width, top + height)
     }
 
     private fun getPaneChildren(): List<DisplayBlock> =
@@ -380,13 +379,15 @@ class DisplayTopologyPreferenceTest {
 
         val externalMonitorBlock = paneChildren.find { it.logicalDisplayId == DISPLAY_ID_2 }
         assertThat(externalMonitorBlock).isNotNull()
-        assertThat(externalMonitorBlock!!.surfaceSize).isEqualTo(DISPLAY_SIZE_1)
+        assertThat(externalMonitorBlock!!.surfaceRenderer.surfaceSize).isEqualTo(DISPLAY_SIZE_1)
 
         val blockBounds = virtualBounds(externalMonitorBlock)
         val expectedScaleX = blockBounds.width() / DISPLAY_SIZE_1.width.toFloat()
         val expectedScaleY = blockBounds.height() / DISPLAY_SIZE_1.height.toFloat()
         val expectedLetterboxScale = min(expectedScaleX, expectedScaleY)
-        assertThat(externalMonitorBlock.surfaceScale).isWithin(0.01f).of(expectedLetterboxScale)
+        assertThat(externalMonitorBlock.surfaceRenderer.surfaceScale)
+            .isWithin(0.01f)
+            .of(expectedLetterboxScale)
         // Assert scaled surface size fits within the block size
         assertThat(expectedLetterboxScale * DISPLAY_SIZE_1.width.toFloat() <= blockBounds.width())
             .isTrue()
