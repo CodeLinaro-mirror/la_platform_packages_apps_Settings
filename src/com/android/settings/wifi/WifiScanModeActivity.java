@@ -88,6 +88,10 @@ public class WifiScanModeActivity extends FragmentActivity {
         if (isGuestUser(getApplicationContext())) {
             Log.e(TAG, "Guest user is not allowed to configure Wi-Fi Scan Mode!");
             EventLog.writeEvent(0x534e4554, "235601169", -1 /* UID */, "User is a guest");
+        }
+
+        if (!isWifiScanModeConfigAllowed(getApplicationContext())) {
+            Log.e(TAG, "This user is not allowed to configure Wi-Fi Scan Mode!");
             finish();
             return;
         }
@@ -188,5 +192,11 @@ public class WifiScanModeActivity extends FragmentActivity {
         final UserManager userManager = context.getSystemService(UserManager.class);
         if (userManager == null) return false;
         return userManager.isGuestUser();
+    }
+
+    private static boolean isWifiScanModeConfigAllowed(Context context) {
+        final UserManager userManager = context.getSystemService(UserManager.class);
+        if (userManager == null) return true;
+        return !userManager.hasUserRestriction(UserManager.DISALLOW_CONFIG_LOCATION);
     }
 }
