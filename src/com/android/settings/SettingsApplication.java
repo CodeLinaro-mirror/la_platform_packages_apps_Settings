@@ -18,6 +18,7 @@ package com.android.settings;
 
 import android.app.Application;
 import android.content.Context;
+import android.content.pm.PackageItemInfo;
 import android.database.ContentObserver;
 import android.net.Uri;
 import android.provider.Settings;
@@ -61,6 +62,8 @@ public class SettingsApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        // Force all loadLabel() calls to sanitize package labels
+        PackageItemInfo.forceSafeLabels();
         BackupRestoreStorageManager.getInstance(this)
                 .add(
                         new BatterySettingsStorage(this),
