@@ -26,6 +26,7 @@ import com.android.settings.core.PreferenceScreenMixin
 import com.android.settings.utils.makeLaunchIntent
 import com.android.settings.wifi.WifiPickerTrackerHelper
 import com.android.settings.wifi.utils.wifiManager
+import com.android.settingslib.metadata.METADATA_IN_UI
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
@@ -71,10 +72,12 @@ open class SavedAccessPointsWifiScreen :
     override fun hasCompleteHierarchy() = false
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
-        preferenceHierarchy(context) {}
+        preferenceHierarchy(context) { +SavedAccessPointsWifiScreenPreference(this@SavedAccessPointsWifiScreen) }
 
     override fun getLaunchIntent(context: Context, metadata: PreferenceMetadata?) =
         makeLaunchIntent(context, SavedAccessPointsSettingsActivity::class.java, metadata?.key)
+
+    override val availabilityDescription = "There must be at least one saved network or subscription."
 
     override fun isAvailable(context: Context): Boolean {
         val wifiManager = context.wifiManager ?: return false
@@ -160,6 +163,26 @@ open class SavedAccessPointsWifiScreen :
                 R.string.wifi_saved_all_access_points_summary,
             )
         }
+
+    class SavedAccessPointsWifiScreenPreference(
+        private val screenMetadata : SavedAccessPointsWifiScreen
+    ) : PreferenceMetadata, PreferenceSummaryProvider, PreferenceAvailabilityProvider {
+        override val key : String
+            get() = "saved_networks_preference"
+
+        override val purpose : Int
+            get() = screenMetadata.purpose
+
+        override fun tags(context: Context) = arrayOf(METADATA_IN_UI)
+
+        override fun isEnabled(context: Context) : Boolean = screenMetadata.isEnabled(context)
+
+        override fun getSummary(context: Context) : CharSequence? = screenMetadata.getSummary(context)
+
+        override val availabilityDescription = screenMetadata.availabilityDescription
+
+        override fun isAvailable(context: Context) : Boolean = screenMetadata.isAvailable(context)
+    }
 
     companion object {
         const val KEY = "saved_networks"

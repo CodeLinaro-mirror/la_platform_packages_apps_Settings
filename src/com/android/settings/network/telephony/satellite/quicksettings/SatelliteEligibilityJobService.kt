@@ -34,6 +34,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancel
+import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
 
 private const val TAG = "SatelliteEligibilityJobService"
@@ -51,6 +52,7 @@ open class SatelliteEligibilityJobService : JobService() {
 
     companion object {
         private const val TIMEOUT_MS = 10 * 60 * 1000L // 10 minutes
+        private const val OOS_DEBOUNCE_MS = 3 * 60 * 1000L // 3 minutes
 
         @VisibleForTesting internal var satelliteTilePromptUtils = SatelliteTilePromptUtils()
 
@@ -65,20 +67,26 @@ open class SatelliteEligibilityJobService : JobService() {
         fun schedule(context: Context, forceImmediate: Boolean = false) {
             // Guard against scheduling if the feature is disabled (or in test harness)
             if (!SatelliteTileStateReceiver.isSatelliteTileFeatureEnabled(context)) {
-                Log.d(TAG, "Feature disabled. Skipping job scheduling.")
+                Log.i(TAG, "Feature disabled. Skipping job scheduling.")
+                return
+            }
+
+            // Guard against scheduling if the tile component has been disabled (e.g., by runtime modem check)
+            if (!SatelliteTileStateReceiver.isTileServiceEnabled(context)) {
+                Log.i(TAG, "SatelliteTileService component is disabled. Skipping job scheduling.")
                 return
             }
 
             val subId = SubscriptionManager.getDefaultDataSubscriptionId()
             if (subId == SubscriptionManager.INVALID_SUBSCRIPTION_ID) {
-                Log.d(TAG, "Invalid subscription ID, skipping job scheduling.")
+                Log.i(TAG, "Invalid subscription ID, skipping job scheduling.")
                 return
             }
 
             // We need to check if all prompts have already been shown.
             // If so, we don't need to do anything.
             if (satelliteTilePromptUtils.areAllPromptsShown(context)) {
-                Log.d(TAG, "All prompts shown, skipping job scheduling.")
+                Log.i(TAG, "All prompts shown, skipping job scheduling.")
                 return
             }
 
@@ -114,7 +122,7 @@ open class SatelliteEligibilityJobService : JobService() {
 
             val result = jobScheduler.schedule(builder.build())
             if (result == JobScheduler.RESULT_SUCCESS) {
-                Log.d(TAG, "Successfully scheduled SatelliteEligibilityJobService for subId=$subId")
+                logd { "Successfully scheduled SatelliteEligibilityJobService for subId=$subId" }
             } else {
                 Log.e(TAG, "Failed to schedule SatelliteEligibilityJobService")
             }
@@ -127,14 +135,19 @@ open class SatelliteEligibilityJobService : JobService() {
 
     override fun onStartJob(params: JobParameters): Boolean {
         if (UserHandle.myUserId() != UserHandle.USER_SYSTEM) {
-            Log.d(TAG, "Not running on system user, ignoring.")
+            Log.i(TAG, "Not running on system user, ignoring.")
             return false
         }
-        Log.d(TAG, "onStartJob: ${params.jobId}")
+        logd { "onStartJob: ${params.jobId}" }
 
         // Guard against executing if the feature is disabled (kills legacy jobs)
         if (!SatelliteTileStateReceiver.isSatelliteTileFeatureEnabled(this)) {
-            Log.d(TAG, "Feature disabled. Stopping job.")
+            Log.i(TAG, "Feature disabled. Stopping job.")
+            return false // Job is done, do not reschedule
+        }
+
+        if (!SatelliteTileStateReceiver.isTileServiceEnabled(this)) {
+            Log.i(TAG, "SatelliteTileService component is disabled. Stopping job.")
             return false // Job is done, do not reschedule
         }
 
@@ -159,7 +172,7 @@ open class SatelliteEligibilityJobService : JobService() {
 
         val serviceState = telephonyManager?.serviceState
         val state = serviceState?.state
-        Log.d(TAG, "Current ServiceState: $state")
+        logd { "Current ServiceState: $state" }
 
         if (state == ServiceState.STATE_IN_SERVICE) {
             val isNtn = serviceState?.isUsingNonTerrestrialNetwork() == true
@@ -185,9 +198,11 @@ open class SatelliteEligibilityJobService : JobService() {
             // Monitor satellite status
             SatelliteStateRepository.getInstance(this@SatelliteEligibilityJobService)
                 .satelliteStatus
-                .collect { status ->
+                .collectLatest { status ->
                     if (status == SatelliteStatus.AVAILABLE || status == SatelliteStatus.ACTIVE) {
-                        Log.i(TAG, "Satellite Status: $status. Showing prompt.")
+                        Log.i(TAG, "Satellite Status: $status. Waiting for 3-minute debounce.")
+                        kotlinx.coroutines.delay(OOS_DEBOUNCE_MS)
+                        Log.i(TAG, "Satellite Status sustained at $status. Showing prompt.")
                         showPromptAndFinish(params)
                     }
                 }
@@ -200,7 +215,7 @@ open class SatelliteEligibilityJobService : JobService() {
     }
 
     override fun onStopJob(params: JobParameters): Boolean {
-        Log.d(TAG, "onStopJob")
+        logd { "onStopJob" }
         cleanup()
         return true
     }
@@ -213,30 +228,36 @@ open class SatelliteEligibilityJobService : JobService() {
                     if (serviceState.state == ServiceState.STATE_IN_SERVICE) {
                         val isNtn = serviceState.isUsingNonTerrestrialNetwork()
                         if (!isNtn) {
-                            Log.d(TAG, "Cellular service restored (Terrestrial), rescheduling job.")
+                            Log.i(TAG, "Cellular service restored (Terrestrial), rescheduling job.")
                             cleanup()
                             schedule(this@SatelliteEligibilityJobService)
                             jobFinished(params, false)
                         } else {
-                            Log.d(
-                                TAG,
-                                "Device is IN_SERVICE (Satellite), ignoring service restoration.",
-                            )
+                            logd {
+                                "Device is IN_SERVICE (Satellite), ignoring service restoration."
+                            }
                         }
                     }
                 }
             }
 
         telephonyManager?.registerTelephonyCallback(mainExecutor, telephonyCallback!!)
-        Log.d(TAG, "Registered telephony callback.")
+        logd { "Registered telephony callback." }
     }
 
     private fun showPromptAndFinish(params: JobParameters) {
+        if (!SatelliteTileStateReceiver.isTileServiceEnabled(this)) {
+            Log.w(TAG, "SatelliteTileService component is disabled. Aborting prompt.")
+            cleanup()
+            jobFinished(params, false)
+            return
+        }
+
         if (satelliteTilePromptUtils.shouldShowSatelliteTilePrompt(this)) {
             satelliteTilePromptUtils.showSatelliteTileAvailableNotification(this)
             satelliteTilePromptUtils.recordPromptShown(this)
         } else {
-            Log.d(TAG, "Should not show prompt yet, interval has not passed.")
+            Log.i(TAG, "Should not show prompt yet, interval has not passed.")
         }
         cleanup()
         // Schedule the job again in the case that the user doesn't interact with the
@@ -253,5 +274,11 @@ open class SatelliteEligibilityJobService : JobService() {
             telephonyManager?.unregisterTelephonyCallback(telephonyCallback!!)
             telephonyCallback = null
         }
+    }
+}
+
+private inline fun logd(message: () -> String) {
+    if (Log.isLoggable(TAG, Log.DEBUG)) {
+        Log.d(TAG, message())
     }
 }

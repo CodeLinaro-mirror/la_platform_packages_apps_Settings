@@ -25,6 +25,7 @@ import android.os.UserManager
 import android.provider.Settings.ACTION_MANAGE_CROSS_PROFILE_ACCESS
 import androidx.core.net.toUri
 import com.android.settings.R
+import com.android.settings.applications.InstalledPackageName
 import com.android.settings.applications.getApplicationInfo
 import com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesDetails
 import com.android.settings.applications.specialaccess.interactacrossprofiles.InteractAcrossProfilesSettings
@@ -124,6 +125,8 @@ private constructor(
 
     override fun isFlagEnabled(context: Context) = Flags.deeplinkApps25q4()
 
+    override val availabilityDescription = "The app must be enabled."
+
     override fun isAvailable(context: Context) = appInfo != null
 
     override fun extras(context: Context): Bundle? =
@@ -148,7 +151,7 @@ private constructor(
 
         @JvmStatic
         override val parametersSchema = KeyParametersSchema {
-            parameter(KEY_APP_PACKAGE_NAME, "The package name of the app", required = true)
+            parameter(KEY_APP_PACKAGE_NAME, "The package name of the app", required = true, type = InstalledPackageName)
         }
 
         @JvmStatic
@@ -198,6 +201,8 @@ private class InteractAcrossProfilesMainSwitch(private val storage: KeyValueStor
         get() = R.string.interact_across_profiles_title
 
     override fun storage(context: Context) = storage
+
+    override val supportsWrite = false
 
     companion object {
         const val KEY = "device_state_interact_across_profiles_settings_switch"

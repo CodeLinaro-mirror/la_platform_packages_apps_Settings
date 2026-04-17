@@ -19,9 +19,9 @@ import static android.hardware.display.DisplayManager.HDR_PREFERENCE_HDR_ALLOWED
 import static android.view.Display.DEFAULT_DISPLAY;
 
 import static com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY;
-import static com.android.settings.flags.Flags.FLAG_DISPLAY_TOPOLOGY_PANE_IN_DISPLAY_LIST;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.ArgumentMatchers.anyBoolean;
 import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.doAnswer;
@@ -40,6 +40,7 @@ import android.app.admin.PolicyEnforcementInfo;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.res.Resources;
+import android.hardware.display.DisplayManager;
 import android.hardware.display.DisplayTopology;
 import android.os.RemoteException;
 import android.os.SystemProperties;
@@ -51,7 +52,6 @@ import androidx.preference.PreferenceScreen;
 
 import com.android.settings.SettingsActivity;
 import com.android.settings.connecteddevice.display.ExternalDisplaySettingsConfiguration.DisplayListener;
-import com.android.settings.flags.FakeFeatureFlagsImpl;
 import com.android.wm.shell.shared.desktopmode.FakeDesktopState;
 
 import org.junit.Before;
@@ -66,12 +66,8 @@ public class ExternalDisplayTestBase {
     static final int EXTERNAL_DISPLAY_ID = 1;
     static final int OVERLAY_DISPLAY_ID = 2;
 
-    @Mock
-    ConnectedDisplayInjector mMockedInjector;
-    @Mock
-    Resources mResources;
-    FakeFeatureFlagsImpl mFlags = new FakeFeatureFlagsImpl();
-    DesktopExperienceFlags mInjectedFlags = new DesktopExperienceFlags(mFlags);
+    @Mock ConnectedDisplayInjector mMockedInjector;
+    @Mock Resources mResources;
     Context mContext;
     DisplayListener mListener;
     TestHandler mHandler;
@@ -79,17 +75,12 @@ public class ExternalDisplayTestBase {
     PreferenceScreen mPreferenceScreen;
     List<DisplayDevice> mDisplays;
     DisplayTopology mDisplayTopology;
-    @Mock
-    ActivityManager mActivityManager;
-    @Mock
-    ActivityTaskManager mActivityTaskManager;
-    @Mock
-    DevicePolicyManager mDevicePolicyManager;
+    @Mock ActivityManager mActivityManager;
+    @Mock ActivityTaskManager mActivityTaskManager;
+    @Mock DevicePolicyManager mDevicePolicyManager;
     FakeDesktopState mFakeDesktopState = new FakeDesktopState();
 
-    /**
-     * Setup.
-     */
+    /** Setup. */
     @Before
     public void setUp() throws RemoteException {
         MockitoAnnotations.initMocks(this);
@@ -98,24 +89,26 @@ public class ExternalDisplayTestBase {
         doReturn(mResources).when(mContext).getResources();
         mPreferenceManager = new PreferenceManager(mContext);
         mPreferenceScreen = mPreferenceManager.createPreferenceScreen(mContext);
-        mFlags.setFlag(FLAG_DISPLAY_TOPOLOGY_PANE_IN_DISPLAY_LIST, false);
-        updateDisplaysAndTopology(List.of(createExternalDisplay(DisplayIsEnabled.YES),
-                createOverlayDisplay(DisplayIsEnabled.YES)));
-        doReturn(mInjectedFlags).when(mMockedInjector).getFlags();
+        updateDisplaysAndTopology(
+                List.of(
+                        createExternalDisplay(DisplayIsEnabled.YES),
+                        createOverlayDisplay(DisplayIsEnabled.YES)));
         doReturn(mFakeDesktopState).when(mMockedInjector).getDesktopState();
-        doReturn(HDR_PREFERENCE_HDR_ALLOWED)
-                .when(mMockedInjector)
-                .getUserHdrPreference(anyInt());
+        doReturn(HDR_PREFERENCE_HDR_ALLOWED).when(mMockedInjector).getUserHdrPreference(anyInt());
         SystemProperties.set(ConnectedDisplayInjector.SYSPROP_ENABLE_HDR_MODE_SPLITTING, "true");
         mHandler = new TestHandler(mContext.getMainThreadHandler());
         doReturn(mHandler).when(mMockedInjector).getHandler();
-        doReturn("").when(mMockedInjector).getSystemProperty(
-                VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY);
+        doReturn("")
+                .when(mMockedInjector)
+                .getSystemProperty(VIRTUAL_DISPLAY_PACKAGE_NAME_SYSTEM_PROPERTY);
         doReturn(true).when(mMockedInjector).isProjectedModeEnabled();
-        doAnswer((arg) -> {
-            mListener = arg.getArgument(0);
-            return null;
-        }).when(mMockedInjector).registerDisplayListener(any());
+        doAnswer(
+                        (arg) -> {
+                            mListener = arg.getArgument(0);
+                            return null;
+                        })
+                .when(mMockedInjector)
+                .registerDisplayListener(any(DisplayManager.DisplayListener.class), anyBoolean());
         doReturn(mContext).when(mMockedInjector).getContext();
 
         setupMockDpm();
@@ -142,17 +135,37 @@ public class ExternalDisplayTestBase {
     }
 
     DisplayDevice createExternalDisplay(DisplayIsEnabled isEnabled) {
-        var supportedModes = List.of(new Mode(0, 1920, 1080, 60, 60, new float[0], new int[0]),
-                new Mode(1, 800, 600, 60, 60, new float[0], new int[0]),
-                new Mode(2, 320, 240, 70, 70, new float[0], new int[0]),
-                new Mode(3, 640, 480, 60, 60, new float[0], new int[0]),
-                new Mode(4, 640, 480, 50, 60, new float[0], new int[0]),
-                new Mode(5, 2048, 1024, 60, 60, new float[0], new int[0]),
-                new Mode(6, 720, 480, 60, 60, new float[0], new int[0]),
-                new Mode(7, 1, -1, Mode.FLAG_ANISOTROPY_CORRECTION, 760, 600, 60, 60, new float[0],
-                        new int[0]),
-                new Mode(8, 3, -1, Mode.FLAG_ANISOTROPY_CORRECTION, 720, 480, 60, 60, new float[0],
-                        new int[0]));
+        var supportedModes =
+                List.of(
+                        new Mode(0, 1920, 1080, 60, 60, new float[0], new int[0]),
+                        new Mode(1, 800, 600, 60, 60, new float[0], new int[0]),
+                        new Mode(2, 320, 240, 70, 70, new float[0], new int[0]),
+                        new Mode(3, 640, 480, 60, 60, new float[0], new int[0]),
+                        new Mode(4, 640, 480, 50, 60, new float[0], new int[0]),
+                        new Mode(5, 2048, 1024, 60, 60, new float[0], new int[0]),
+                        new Mode(6, 720, 480, 60, 60, new float[0], new int[0]),
+                        new Mode(
+                                7,
+                                1,
+                                -1,
+                                Mode.FLAG_ANISOTROPY_CORRECTION,
+                                760,
+                                600,
+                                60,
+                                60,
+                                new float[0],
+                                new int[0]),
+                        new Mode(
+                                8,
+                                3,
+                                -1,
+                                Mode.FLAG_ANISOTROPY_CORRECTION,
+                                720,
+                                480,
+                                60,
+                                60,
+                                new float[0],
+                                new int[0]));
         return new DisplayDevice(
                 EXTERNAL_DISPLAY_ID,
                 "local:0987654321",
@@ -212,8 +225,12 @@ public class ExternalDisplayTestBase {
     private void updateDisplayTopology() {
         mDisplayTopology = new DisplayTopology();
         mDisplays.forEach(
-                display -> mDisplayTopology.addDisplay(display.getId(), /* logicalWidth= */
-                        123, /* logicalHeight= */ 456, /* logicalDensity= */ 789));
+                display ->
+                        mDisplayTopology.addDisplay(
+                                display.getId(),
+                                /* logicalWidth= */ 123,
+                                /* logicalHeight= */ 456,
+                                /* logicalDensity= */ 789));
         doReturn(mDisplayTopology).when(mMockedInjector).getDisplayTopology();
     }
 
@@ -236,6 +253,5 @@ public class ExternalDisplayTestBase {
                         eq(DevicePolicyIdentifiers.LOCK_TASK_POLICY), anyInt());
         doReturn("").when(mockPolicyResourcesManager).getString(any(), any());
         doReturn(mockPolicyResourcesManager).when(mDevicePolicyManager).getResources();
-
     }
 }

@@ -18,6 +18,7 @@ package com.android.settings.connecteddevice.display
 
 import android.content.Context
 import android.hardware.display.DisplayManager
+import android.hardware.display.DisplayTopology
 import android.view.Display.DEFAULT_DISPLAY
 import androidx.core.content.getSystemService
 import androidx.test.core.app.ApplicationProvider
@@ -30,10 +31,12 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
+import org.mockito.Mockito
 import org.mockito.MockitoAnnotations
 import org.mockito.Spy
+import org.mockito.kotlin.any
 import org.mockito.kotlin.doReturn
-import org.mockito.kotlin.never
+import org.mockito.kotlin.doThrow
 import org.mockito.kotlin.verify
 import org.mockito.kotlin.whenever
 
@@ -83,21 +86,6 @@ class ConnectedDisplayInjectorTest {
     }
 
     @Test
-    fun getDisplayConnectionPreference_whenDisplayManagerIsNull_returnsDefaultPreference() {
-        val injectorWithNullContext = ConnectedDisplayInjector(null)
-        val uniqueId = "any_id"
-
-        val result = injectorWithNullContext.getDisplayConnectionPreference(uniqueId)
-
-        verify(mockDisplayManager, never()).getExternalDisplayConnectionPreference(uniqueId)
-        assertEquals(
-            "Should return default 'ASK' preference when DisplayManager is not available",
-            DisplayManager.EXTERNAL_DISPLAY_CONNECTION_PREFERENCE_ASK,
-            result,
-        )
-    }
-
-    @Test
     fun updateDisplayConnectionPreference_withValidId_callsDisplayManager() {
         val uniqueId = "test_display_id_2"
         val newPreference = 2
@@ -105,18 +93,6 @@ class ConnectedDisplayInjectorTest {
         injector.updateDisplayConnectionPreference(uniqueId, newPreference)
 
         verify(mockDisplayManager).setExternalDisplayConnectionPreference(uniqueId, newPreference)
-    }
-
-    @Test
-    fun updateDisplayConnectionPreference_whenDisplayManagerIsNull_doesNotCrash() {
-        val injectorWithNullContext = ConnectedDisplayInjector(null)
-        val uniqueId = "any_id"
-        val newPreference = 1
-
-        injectorWithNullContext.updateDisplayConnectionPreference(uniqueId, newPreference)
-
-        verify(mockDisplayManager, never())
-            .setExternalDisplayConnectionPreference(uniqueId, newPreference)
     }
 
     @Test
@@ -151,5 +127,22 @@ class ConnectedDisplayInjectorTest {
             }
 
         assertFalse(injectorWithNullDesktopState.isProjectedModeEnabled())
+    }
+
+    @Test
+    fun displayTopology_set_catchesIllegalArgumentException() {
+        // Arrange: Create a mock DisplayTopology and configure the DisplayManager to throw an
+        // IllegalArgumentException when the setter is called.
+        val mockTopology = Mockito.mock(DisplayTopology::class.java)
+        doThrow(IllegalArgumentException("Test Exception"))
+            .whenever(mockDisplayManager)
+            .displayTopology = any()
+
+        // Act: Set the displayTopology on the injector.
+        // The test will fail if an exception is thrown.
+        injector.displayTopology = mockTopology
+
+        // Assert: No crash occurred, which means the exception was caught.
+        // Verification of the setter call is implicit in the setup.
     }
 }

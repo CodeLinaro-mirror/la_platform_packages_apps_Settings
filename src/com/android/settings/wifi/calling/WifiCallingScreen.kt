@@ -75,6 +75,9 @@ private constructor(
     override val key: String
         get() = KEY
 
+    override val keyParametersSchema: KeyParametersSchema
+        get() = parametersSchema
+
     // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.wifi_calling_purpose
@@ -89,6 +92,8 @@ private constructor(
         get() = R.string.menu_key_network
 
     override fun getMetricsCategory() = SettingsEnums.WIFI_CALLING_FOR_SUB
+
+    override val availabilityDescription = "The subscription ID must be valid."
 
     override fun isAvailable(context: Context) = isValidSubscriptionId(subId)
 
@@ -106,7 +111,7 @@ private constructor(
 
         @JvmStatic
         override val parametersSchema = KeyParametersSchema {
-            parameter(EXTRA_SUB_ID, "The subscription ID. If it's not provided, the default system subscription will be used.", required = false)
+            parameter(EXTRA_SUB_ID, "The subscription ID. If it's not provided, the default system subscription will be used.", required=false, type=SubscriptionId(includeInactive = false))
         }
 
         @JvmStatic

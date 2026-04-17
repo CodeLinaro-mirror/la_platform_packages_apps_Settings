@@ -29,6 +29,7 @@ import androidx.fragment.app.Fragment
 import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.Utils
+import com.android.settings.accessibility.a11yactivity.AccessibilityShortcut
 import com.android.settings.accessibility.AccessibilitySettings
 import com.android.settings.accessibility.LaunchAccessibilityActivityPreferenceFragment
 import com.android.settings.accessibility.a11yactivity.ui.A11yActivityFooterPreference.Companion.FOOTER_KEY
@@ -42,6 +43,7 @@ import com.android.settings.overlay.FeatureFactory.Companion.featureFactory
 import com.android.settings.utils.highlightPreference
 import com.android.settingslib.metadata.CatalystFlagProviderFactory
 import com.android.settingslib.metadata.KeyParametersSchema
+import com.android.settingslib.metadata.METADATA_IN_UI
 import com.android.settingslib.metadata.ParameterizedPreferenceScreenArgumentsFactory
 import com.android.settingslib.metadata.PreferenceCategory
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -50,6 +52,8 @@ import com.android.settingslib.metadata.PreferenceTitleProvider
 import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.ValidatedKeyParameters
 import com.android.settingslib.metadata.preferenceHierarchy
+import com.android.settingslib.metadata.preferencesapi.types.AnyString
+import com.android.settingslib.metadata.preferencesapi.types.FiniteOptionsType
 import com.android.settingslib.preference.PreferenceBinding
 import com.android.settingslib.widget.TwoTargetPreference
 import kotlinx.coroutines.CoroutineScope
@@ -103,6 +107,9 @@ private constructor(
     override val key: String
         get() = KEY
 
+    override val keyParametersSchema: KeyParametersSchema
+        get() = parametersSchema
+
     // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.a11y_activity_detail_screen_purpose
@@ -151,6 +158,7 @@ private constructor(
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
+            +A11yActivityScreenPreference(this@A11yActivityScreen)
             val shortcutInfo = accessibilityShortcutInfo
             if (shortcutInfo != null) {
                 +IntroPreference(shortcutInfo)
@@ -196,6 +204,27 @@ private constructor(
             }
         }
 
+    class A11yActivityScreenPreference(
+        private val screenMetadata : A11yActivityScreen
+    ) : PreferenceMetadata, PreferenceSummaryProvider, PreferenceTitleProvider {
+
+        override val key : String
+            get() = "a11y_activity_detail_screen_preference"
+
+        override val purpose : Int
+            get() = screenMetadata.purpose
+
+        override fun tags(context: Context) = arrayOf(METADATA_IN_UI)
+
+        override val indexable = false
+
+        override fun isEnabled(context: Context) : Boolean = screenMetadata.isEnabled(context)
+
+        override fun getTitle(context: Context) : CharSequence? = screenMetadata.getTitle(context)
+
+        override fun getSummary(context: Context) : CharSequence? = screenMetadata.getSummary(context)
+    }
+
     companion object : ParameterizedPreferenceScreenArgumentsFactory {
         const val KEY = "a11y_activity_detail_screen"
 
@@ -203,8 +232,9 @@ private constructor(
         override val parametersSchema = KeyParametersSchema {
             parameter(
                 AccessibilitySettings.EXTRA_COMPONENT_NAME,
-                "The flattened string representation of the ComponentName of the Activity that implements an accessibility feature",
+                "The accessibility component to be configured",
                 required = true,
+                type = AccessibilityShortcut,
             )
         }
 
@@ -223,6 +253,10 @@ private constructor(
         @OptIn(ExperimentalCoroutinesApi::class)
         @JvmStatic
         fun parameters(context: Context): Flow<Bundle> {
+            // This has been left unchanged to aoid risk to the Settings UI
+            // for 26Q2. Ideally this would depend on the
+            // AccessibilityComponent via reading the type in the schema. We
+            // can change that when we remove the non-keyParameters parameters.
             return flow {
                 AccessibilityRepositoryProvider.get(context)
                     .accessibilityShortcutInfos

@@ -39,6 +39,7 @@ import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
+import com.android.settingslib.metadata.UI_ONLY_PREFERENCE
 import com.android.settingslib.preference.PreferenceBinding
 
 class AddDevicePreference(context: Context) :
@@ -80,6 +81,8 @@ class AddDevicePreference(context: Context) :
 
     override fun isEnabled(context: Context) = super<PreferenceRestrictionMixin>.isEnabled(context)
 
+    override fun tags(context: Context) = arrayOf(UI_ONLY_PREFERENCE)
+
     override fun intent(context: Context): Intent =
         SubSettingLauncher(context)
             .setDestination(HearingDevicePairingFragment::class.java.name)
@@ -116,6 +119,8 @@ class AddDevicePreference(context: Context) :
             ""
         }
     }
+
+    override val availabilityDescription = UI_ONLY_PREFERENCE
 
     override fun isAvailable(context: Context): Boolean =
         context.packageManager.hasSystemFeature(PackageManager.FEATURE_BLUETOOTH)

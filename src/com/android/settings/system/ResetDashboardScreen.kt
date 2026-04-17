@@ -23,7 +23,6 @@ import androidx.fragment.app.Fragment
 import com.android.settings.R
 import com.android.settings.Settings.ResetDashboardActivity
 import com.android.settings.core.PreferenceScreenMixin
-import com.android.settings.flags.Flags
 import com.android.settings.restriction.UserRestrictions
 import com.android.settings.utils.makeLaunchIntent
 import com.android.settingslib.RestrictedPreference
@@ -47,7 +46,7 @@ open class ResetDashboardScreen :
     override val key: String
         get() = KEY
 
-    //TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
+    // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.reset_dashboard_purpose
 
@@ -62,11 +61,11 @@ open class ResetDashboardScreen :
 
     override fun getMetricsCategory() = SettingsEnums.RESET_DASHBOARD
 
-    override fun isFlagEnabled(context: Context) = Flags.deeplinkSystem25q4()
-
     override fun hasCompleteHierarchy() = false
 
     override fun fragmentClass(): Class<out Fragment>? = ResetDashboardFragment::class.java
+
+    override val availabilityDescription = "The device must support the reset dashboard."
 
     override fun isAvailable(context: Context) =
         context.resources.getBoolean(R.bool.config_show_reset_dashboard)
@@ -84,9 +83,7 @@ open class ResetDashboardScreen :
         val restrictedPreference: RestrictedPreference =
             context.findPreference(FACTORY_RESET_KEY) ?: return
         factoryResetRestrictionObserver = KeyedObserver { _, _ ->
-            restrictedPreference.checkRestrictionAndSetDisabled(
-                UserManager.DISALLOW_FACTORY_RESET
-            )
+            restrictedPreference.checkRestrictionAndSetDisabled(UserManager.DISALLOW_FACTORY_RESET)
             context.notifyPreferenceChange(FACTORY_RESET_KEY)
         }
         val userRestrictions = UserRestrictions.get(context)

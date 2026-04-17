@@ -29,19 +29,77 @@ import com.android.settings.accessibility.AccessibilitySetupWizardUtils
 import com.google.android.setupcompat.template.FooterBarMixin
 import com.google.android.setupdesign.GlifLayout
 import com.google.android.setupdesign.items.RecyclerItemAdapter
+import kotlinx.coroutines.flow.MutableStateFlow
 
 /** Edit Shortcut for Setup Wizard. */
 class EditShortcutSetupWizardFragment : BaseSetupWizardFragment() {
 
     private lateinit var screenTitle: CharSequence
+    private lateinit var shortcutTargets: Set<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         screenTitle = arguments?.getCharSequence(ARG_SCREEN_TITLE) ?: ""
+        shortcutTargets = arguments?.getStringArray(ARG_KEY_SHORTCUT_TARGETS)?.toSet() ?: emptySet()
     }
 
     override fun createControllers(adapter: RecyclerItemAdapter): Map<Int, BaseItemController> =
-        emptyMap()
+        buildMap {
+            val context = requireContext()
+            findItem(adapter, R.id.edit_keyboard_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_keyboard_shortcut_in_suw,
+                    EditKeyboardShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            findItem(adapter, R.id.edit_quick_settings_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_quick_settings_shortcut_in_suw,
+                    EditQuickSettingsShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            findItem(adapter, R.id.edit_floating_button_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_floating_button_shortcut_in_suw,
+                    EditFloatingButtonShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            findItem(adapter, R.id.edit_nav_button_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_nav_button_shortcut_in_suw,
+                    EditNavButtonShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            findItem(adapter, R.id.edit_volume_keys_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_volume_keys_shortcut_in_suw,
+                    EditVolumeKeysShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            findItem(adapter, R.id.edit_top_row_key_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_top_row_key_shortcut_in_suw,
+                    EditTopRowKeyShortcutController.create(context, it, shortcutTargets),
+                )
+            }
+            val expandableStateFlow = MutableStateFlow(false)
+            findItem(adapter, R.id.edit_advanced_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_advanced_shortcut_in_suw,
+                    EditAdvancedItemController.create(context, it, shortcutTargets) {
+                        expandableStateFlow
+                    },
+                )
+            }
+            findItem(adapter, R.id.edit_triple_tap_shortcut_in_suw)?.let {
+                put(
+                    R.id.edit_triple_tap_shortcut_in_suw,
+                    EditTripleTapShortcutController.create(context, it, shortcutTargets) {
+                        expandableStateFlow
+                    },
+                )
+            }
+        }
 
     override val fragmentLayoutResId: Int = R.layout.edit_shortcut_suw_screen
 

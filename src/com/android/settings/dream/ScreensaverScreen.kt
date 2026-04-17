@@ -36,6 +36,7 @@ import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObserver
 import com.android.settingslib.datastore.SettingsSecureStore
 import com.android.settingslib.dream.DreamBackend
+import com.android.settingslib.metadata.METADATA_IN_UI
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceChangeReason
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -110,7 +111,7 @@ open class ScreensaverScreen(private val context: Context) :
         makeLaunchIntent(context, DreamSettingsActivity::class.java, metadata?.key)
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
-        preferenceHierarchy(context) {}
+        preferenceHierarchy(context) { +ScreensaverScreenPreference(this@ScreensaverScreen) }
 
     override fun onFirstObserverAdded() {
         // update summary when any of the screen saver settings has changed
@@ -140,6 +141,9 @@ open class ScreensaverScreen(private val context: Context) :
 
     override val keywords: Int
         get() = R.string.keywords_screensaver
+
+    override val availabilityDescription =
+        "The device must not be in demo mode (unless dreams are enabled in demo mode), dreams must be supported on the device, and either the user must be the 'dock' user or dreams must be supported on all users for this device."
 
     override fun isAvailable(context: Context) = Utils.areDreamsAvailableToCurrentUser(context)
 
@@ -184,6 +188,28 @@ open class ScreensaverScreen(private val context: Context) :
         fun dreamOn(context: Context, activeDreamName: CharSequence): CharSequence
 
         fun dreamOffBedtime(context: Context): CharSequence
+    }
+
+    class ScreensaverScreenPreference(
+        private val screenMetadata : ScreensaverScreen
+    ) : PreferenceMetadata, PreferenceSummaryProvider, PreferenceAvailabilityProvider {
+        override val key : String
+            get() = "screensaver_preference"
+
+        override val purpose : Int
+            get() = screenMetadata.purpose
+
+        override fun tags(context: Context) = arrayOf(METADATA_IN_UI)
+
+        override val indexable = false
+
+        override fun isEnabled(context: Context) : Boolean = screenMetadata.isEnabled(context)
+
+        override fun getSummary(context: Context) : CharSequence? = screenMetadata.getSummary(context)
+
+        override val availabilityDescription = screenMetadata.availabilityDescription
+
+        override fun isAvailable(context: Context) : Boolean = screenMetadata.isAvailable(context)
     }
 
     companion object {

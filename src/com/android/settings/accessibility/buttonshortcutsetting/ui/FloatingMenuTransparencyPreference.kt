@@ -21,6 +21,7 @@ import android.provider.Settings
 import androidx.preference.Preference
 import com.android.settings.R
 import com.android.settings.accessibility.AccessibilityUtil
+import com.android.settings.accessibility.Flags
 import com.android.settings.accessibility.buttonshortcutsetting.data.FloatingMenuTransparencyDataStore
 import com.android.settings.accessibility.buttonshortcutsetting.data.FloatingMenuTransparencyDataStore.Companion.MAX_TRANSPARENCY_PROGRESS
 import com.android.settings.accessibility.buttonshortcutsetting.data.FloatingMenuTransparencyDataStore.Companion.MIN_TRANSPARENCY_PROGRESS
@@ -35,6 +36,7 @@ import com.android.settingslib.metadata.IntRangeValuePreference
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
+import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.widget.SliderPreference
 import com.android.settingslib.widget.SliderPreferenceBinding
 import java.text.NumberFormat
@@ -85,7 +87,14 @@ class FloatingMenuTransparencyPreference(context: Context) :
 
     override fun getMaxValue(context: Context): Int = MAX_TRANSPARENCY_PROGRESS
 
+    override fun getUnitOfMeasurement() = "%"
+
     override fun storage(context: Context): KeyValueStore = dataStore
+
+    override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
+        ReadWritePermit.ALLOW
+
+    override val supportsWrite = true
 
     override fun onCreate(context: PreferenceLifecycleContext) {
         super.onCreate(context)
@@ -118,6 +127,10 @@ class FloatingMenuTransparencyPreference(context: Context) :
     }
 
     private fun formatStateDescription(context: Context, sliderValue: Int): CharSequence {
+        if (!isEnabled(context) && Flags.floatingMenuTransparencySliderAnnouncesDisabled()) {
+            return context.getString(com.android.settingslib.R.string.disabled)
+        }
+
         val transparency = sliderValue / PRECISION
         if (percentFormat == null) {
             percentFormat =

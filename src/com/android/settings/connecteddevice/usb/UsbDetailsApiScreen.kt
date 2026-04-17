@@ -25,6 +25,7 @@ import com.android.settings.R
 import com.android.settings.flags.Flags
 import com.android.settings.overlay.FeatureFactory
 import com.android.settingslib.metadata.ProvidePreferenceScreen
+import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen
 import com.android.settingslib.metadata.preferencesapi.category.Category
 import com.android.settingslib.metadata.preferencesapi.preconditions.Allowed
@@ -46,11 +47,15 @@ class UsbDetailsApiScreen :
     init {
         flag { Flags.catalystMigration26q2() }
 
+        // TODO(b/480956777): add api for "Connected devices" preference.
+
         preference(
             key = PREFERENCE_KEY_CONVERT_VIDEOS_TO_AVC,
             purpose = R.string.usb_transcode_files_purpose,
             type = AnyBoolean,
         ) {
+            sensitivityLevel(SensitivityLevel.NO_SENSITIVITY)
+
             preconditions(R.string.usb_transcode_files_preconditions) {
                 val currentFunctions = usbDetailsRepository.getCurrentFunction()
                 val isMtpEnabled = (currentFunctions and UsbManager.FUNCTION_MTP) != 0L
@@ -72,6 +77,8 @@ class UsbDetailsApiScreen :
             purpose = R.string.usb_charge_connected_device,
             type = AnyBoolean,
         ) {
+            sensitivityLevel(SensitivityLevel.NO_SENSITIVITY)
+
             preconditions(R.string.usb_charge_connected_device_preconditions) {
                 if (
                     usbDetailsRepository.powerRole != POWER_ROLE_NONE &&

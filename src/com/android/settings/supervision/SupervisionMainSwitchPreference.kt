@@ -94,8 +94,10 @@ class SupervisionMainSwitchPreference(
     override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
         ReadWritePermit.DISALLOW
 
+    override val supportsWrite = false
+
     override val sensitivityLevel: Int
-        get() = SensitivityLevel.HIGH_SENSITIVITY
+        get() = SensitivityLevel.DEEP_LINK_ONLY
 
     override fun onCreate(context: PreferenceLifecycleContext) {
         lifeCycleContext = context

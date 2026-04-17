@@ -25,6 +25,8 @@ import com.android.settingslib.metadata.PreferenceHierarchyGenerator
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
+import com.android.settingslib.metadata.SensitivityLevel
+import com.android.settingslib.metadata.UI_ONLY_PREFERENCE
 import com.android.settingslib.preference.PreferenceBinding
 import com.android.settingslib.utils.applications.PackageObservable
 import com.android.settingslib.widget.ZeroStatePreference
@@ -57,6 +59,10 @@ abstract class AppListScreen :
 
         override val purpose: Int
             get() = R.string.no_app_purpose
+
+        override val sensitivityLevel = SensitivityLevel.DO_NOT_EXPOSE
+
+        override fun tags(context: Context) = arrayOf(UI_ONLY_PREFERENCE)
 
         override val title
             get() = R.string.no_applications

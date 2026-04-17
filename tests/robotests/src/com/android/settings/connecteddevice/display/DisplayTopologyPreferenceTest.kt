@@ -24,6 +24,7 @@ import android.hardware.display.DisplayTopology.POSITION_BOTTOM
 import android.hardware.display.DisplayTopology.POSITION_LEFT
 import android.hardware.display.DisplayTopology.POSITION_RIGHT
 import android.hardware.display.DisplayTopology.POSITION_TOP
+import android.os.Looper
 import android.provider.Settings
 import android.util.Size
 import android.view.Display.DEFAULT_DISPLAY
@@ -39,8 +40,6 @@ import androidx.preference.PreferenceViewHolder
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.core.view.MotionEventBuilder
 import com.android.settings.R
-import com.android.settings.flags.FakeFeatureFlagsImpl
-import com.android.settings.flags.Flags.FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING
 import com.google.common.truth.Truth.assertThat
 import java.util.function.Consumer
 import kotlin.math.abs
@@ -48,12 +47,12 @@ import kotlin.math.min
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.Shadows.shadowOf
 
 @RunWith(RobolectricTestRunner::class)
 class DisplayTopologyPreferenceTest {
     val context = ApplicationProvider.getApplicationContext<Context>()
-    val featureFlags = FakeFeatureFlagsImpl()
-    val injector = TestInjector(context, featureFlags)
+    val injector = TestInjector(context)
     val preference = DisplayTopologyPreference(context, injector)
     val rootView = View.inflate(context, preference.layoutResource, /* root= */ null)
     val holder = PreferenceViewHolder.createInstanceForTests(rootView)
@@ -61,12 +60,9 @@ class DisplayTopologyPreferenceTest {
     init {
         preference.onBindViewHolder(holder)
         preference.controller.topologyHint.disableAnimation()
-
-        featureFlags.setFlag(FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING, false)
     }
 
-    class TestInjector(context: Context, featureFlags: FakeFeatureFlagsImpl) :
-        ConnectedDisplayInjector(context) {
+    class TestInjector(context: Context) : ConnectedDisplayInjector(context) {
         var displaysSize = mutableMapOf<Int, Size>()
         var topology: DisplayTopology? = null
 
@@ -78,8 +74,6 @@ class DisplayTopologyPreferenceTest {
             set(value) {
                 topology = value
             }
-
-        override val flags = DesktopExperienceFlags(featureFlags)
 
         /** A log of events related to wallpaper revealing. */
         val revealLog = mutableListOf<String>()
@@ -121,7 +115,10 @@ class DisplayTopologyPreferenceTest {
             topologyListener = null
         }
 
-        override fun registerDisplayListener(listener: DisplayManager.DisplayListener) {
+        override fun registerDisplayListener(
+            listener: DisplayManager.DisplayListener,
+            includeRefreshRateEvents: Boolean,
+        ) {
             if (displayListener != null) {
                 throw IllegalStateException("already have a listener registered: $displayListener")
             }
@@ -235,6 +232,7 @@ class DisplayTopologyPreferenceTest {
 
         preference.onAttached()
         preference.controller.refreshPane()
+        shadowOf(Looper.getMainLooper()).idle()
     }
 
     /**
@@ -697,8 +695,9 @@ class DisplayTopologyPreferenceTest {
     @Test
     fun updatedTopologyCancelsDragIfNonTrivialChange() {
         val (leftBlock, _) = setupPaneWithTwoDisplays(POSITION_LEFT, /* childOffset= */ 42f)
-
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(137.76f)
+        // Expected Y: 133.76 = 42 (offset) * 1.28 (scale: 640 * 0.6 / 300) + 80 (top inset: 32
+        // margin + 48 hint)
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(133.76f)
 
         leftBlock.dispatchEvent(
             MotionEventBuilder.newBuilder()
@@ -712,15 +711,15 @@ class DisplayTopologyPreferenceTest {
                 .setPointer(0f, 30f)
                 .build()
         )
-        // Dragged by 30px: 137.76 + 30 = 167.76.
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(167.76f)
+        // Dragged by 30px: 133.76 + 30 = 163.76.
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(163.76f)
 
         // Offset is only different by 0.5 dp, so the drag will not cancel.
         setupTwoDisplays(POSITION_LEFT, /* childOffset= */ 41.5f)
         injector.topologyListener!!.accept(injector.topology!!)
 
         // Position maintained despite small topology update.
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(167.76f)
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(163.76f)
         // Move block farther downward.
         leftBlock.dispatchEvent(
             MotionEventBuilder.newBuilder()
@@ -728,13 +727,14 @@ class DisplayTopologyPreferenceTest {
                 .setPointer(0f, 50f)
                 .build()
         )
-        // 167.76 + 20 = 187.76.
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(187.76f)
+        // 163.76 + 20 = 183.76.
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(183.76f)
 
         setupTwoDisplays(POSITION_LEFT, /* childOffset= */ 20f)
         injector.topologyListener!!.accept(injector.topology!!)
 
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(109.60f)
+        // New Position: 20 * 1.28 + 80 = 25.6 + 80 = 105.6.
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(105.60f)
         // Another move in the opposite direction should not move the left block.
         leftBlock.dispatchEvent(
             MotionEventBuilder.newBuilder()
@@ -742,30 +742,11 @@ class DisplayTopologyPreferenceTest {
                 .setPointer(0f, -20f)
                 .build()
         )
-        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(109.60f)
+        assertThat(leftBlock.positionInPane.y).isWithin(0.05f).of(105.60f)
     }
 
     @Test
-    fun highlightDuringDrag() {
-        val (leftBlock, _) = setupPaneWithTwoDisplays(POSITION_LEFT, /* childOffset= */ 42f)
-
-        assertSelected(leftBlock, false)
-        leftBlock.dispatchEvent(
-            MotionEventBuilder.newBuilder()
-                .setAction(MotionEvent.ACTION_DOWN)
-                .setPointer(0f, 0f)
-                .build()
-        )
-        assertSelected(leftBlock, true)
-        leftBlock.dispatchEvent(
-            MotionEventBuilder.newBuilder().setAction(MotionEvent.ACTION_UP).build()
-        )
-        assertSelected(leftBlock, false)
-    }
-
-    @Test
-    fun showTabbedConnectedDisplaySettingFlagOn_keepHighlightAfterDrag() {
-        featureFlags.setFlag(FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING, true)
+    fun keepHighlightAfterDrag() {
         val (leftBlock, _) = setupPaneWithTwoDisplays(POSITION_LEFT, /* childOffset= */ 42f)
 
         assertSelected(leftBlock, false)
@@ -784,7 +765,7 @@ class DisplayTopologyPreferenceTest {
 
     @Test
     fun accidentalDrag_LittleAndBriefEnoughToBeAccidental() {
-        val (leftBlock, _) = setupPaneWithTwoDisplays(POSITION_LEFT, childOffset = 42f)
+        val (leftBlock, rightBlock) = setupPaneWithTwoDisplays(POSITION_LEFT, childOffset = 42f)
         val startTime = 424242L
         val startX = leftBlock.x
         val startY = leftBlock.y
@@ -806,6 +787,16 @@ class DisplayTopologyPreferenceTest {
             endTimeMs = startTime + preference.controller.accidentalDragTimeLimitMs - 10,
             xDiff = 0f,
             yDiff = preference.controller.accidentalDragDistancePx - 1f,
+        )
+        // Accidental drag triggers leftBlock to be highlighted, showing arrows on vertical
+        // direction, (x, y) will be offset
+        assertSelected(leftBlock, true)
+        // Tap on rightBlock to hide arrows so that leftBlock x, y is not impacted for validation
+        rightBlock.dispatchEvent(
+            MotionEventBuilder.newBuilder().setAction(MotionEvent.ACTION_DOWN).build()
+        )
+        rightBlock.dispatchEvent(
+            MotionEventBuilder.newBuilder().setAction(MotionEvent.ACTION_UP).build()
         )
         assertThat(leftBlock.y).isEqualTo(startY)
         assertThat(preference.controller.timesRefreshedBlocks).isEqualTo(0)
@@ -1001,7 +992,6 @@ class DisplayTopologyPreferenceTest {
 
     @Test
     fun tapInteraction_showsArrowsOnSecondTap() {
-        featureFlags.setFlag(FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING, true)
         val (leftBlock, rightBlock) = setupPaneWithTwoDisplays()
 
         // Initially no arrows are visible
@@ -1048,7 +1038,6 @@ class DisplayTopologyPreferenceTest {
 
     @Test
     fun tapInteraction_tapArrowUp_movesBlockUp() {
-        featureFlags.setFlag(FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING, true)
         val (leftBlock, _) = setupPaneWithTwoDisplays()
         val originalY = leftBlock.y
 
@@ -1080,7 +1069,6 @@ class DisplayTopologyPreferenceTest {
 
     @Test
     fun paneClick_hidesArrows() {
-        featureFlags.setFlag(FLAG_SHOW_TABBED_CONNECTED_DISPLAY_SETTING, true)
         val (leftBlock, _) = setupPaneWithTwoDisplays()
 
         // Tap twice to show arrows

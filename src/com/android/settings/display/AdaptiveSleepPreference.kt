@@ -36,6 +36,7 @@ import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyValueStoreDelegate
 import com.android.settingslib.datastore.SettingsSecureStore
 import com.android.settingslib.metadata.BooleanValuePreference
+import com.android.settingslib.metadata.MUSTPASS
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
@@ -75,13 +76,16 @@ class AdaptiveSleepPreference :
     override val preferenceActionMetrics: Int
         get() = ACTION_SCREEN_ATTENTION_CHANGED
 
-    override fun tags(context: Context) = arrayOf(KEY_SCREEN_ATTENTION)
+    override fun tags(context: Context) = arrayOf(KEY_SCREEN_ATTENTION, MUSTPASS)
 
     override fun isEnabled(context: Context) =
         super<PreferenceRestrictionMixin>.isEnabled(context) && context.canBeEnabled()
 
     override val restrictionKeys: Array<String>
         get() = arrayOf(UserManager.DISALLOW_CONFIG_SCREEN_TIMEOUT)
+
+    override val availabilityDescription =
+        "The device must support adaptive sleep."
 
     override fun isAvailable(context: Context) = context.isAdaptiveSleepSupported()
 
@@ -103,8 +107,9 @@ class AdaptiveSleepPreference :
         callingUid: Int,
     ) = ReadWritePermit.ALLOW
 
+    override val supportsWrite = true
     override val sensitivityLevel
-        get() = SensitivityLevel.NO_SENSITIVITY
+        get() = SensitivityLevel.DEEP_LINK_ONLY
 
     @Suppress("UNCHECKED_CAST")
     private class Storage(

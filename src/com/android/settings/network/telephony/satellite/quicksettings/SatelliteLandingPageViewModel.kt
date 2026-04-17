@@ -31,6 +31,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
+import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
@@ -72,16 +73,6 @@ class SatelliteLandingPageViewModel(
         satelliteStateRepository.satelliteStatus
 
     /**
-     * Whether the "Try a demo" button should be enabled.
-     *
-     * The button is disabled if satellite connectivity is [SatelliteStatus.ACTIVE].
-     */
-    val isTryADemoButtonEnabled: StateFlow<Boolean> =
-        satelliteStatus
-            .map { it != SatelliteStatus.ACTIVE }
-            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), true)
-
-    /**
      * Whether the satellite apps should be enabled (clickable and fully opaque).
      *
      * Apps are enabled if satellite connectivity is either [SatelliteStatus.ACTIVE] or
@@ -94,7 +85,21 @@ class SatelliteLandingPageViewModel(
 
     private val _bannerState = MutableStateFlow(SatelliteBannerState())
     /** The state of the satellite warning banners. */
-    val bannerState: StateFlow<SatelliteBannerState> = _bannerState
+    val bannerState: StateFlow<SatelliteBannerState> = _bannerState.asStateFlow()
+
+    private val _isBannerLoaded = MutableStateFlow(false)
+
+    /**
+     * Whether the "Try a demo" button should be enabled.
+     *
+     * The button is disabled if satellite connectivity is [SatelliteStatus.ACTIVE], if the device
+     * is currently in an unsupported region, or if network status is still loading.
+     */
+    val isTryADemoButtonEnabled: StateFlow<Boolean> =
+        combine(satelliteStatus, bannerState, _isBannerLoaded) { status, banner, isLoaded ->
+                isLoaded && status != SatelliteStatus.ACTIVE && banner.isSatelliteAvailableInRegion
+            }
+            .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), false)
 
     init {
         viewModelScope.launch {
@@ -113,10 +118,11 @@ class SatelliteLandingPageViewModel(
     }
 
     private suspend fun refreshInternal(subId: Int) {
+        _isBannerLoaded.value = false
         // Fetch support status on a background thread to avoid blocking the UI.
         val isLteSupported =
             withContext(backgroundDispatcher) {
-                SatelliteUtils.isLteBasedNtnSupportedByDevice(context)
+                SatelliteUtils.isLteBasedNtnSupported(context, subId)
             }
         _isLteBasedNtnSupported.value = isLteSupported
 
@@ -126,7 +132,12 @@ class SatelliteLandingPageViewModel(
             }
         _isCarrierRoamingNtnSupported.value = isCarrierSupported
 
-        loadSatelliteAppItems(isLteSupported, isCarrierSupported)
+        val dataSupportMode =
+            withContext(backgroundDispatcher) {
+                satelliteStateRepository.getSatelliteDataSupportMode(subId)
+            }
+
+        loadSatelliteAppItems(isLteSupported, isCarrierSupported, dataSupportMode)
 
         updateBannerState(subId)
     }
@@ -196,6 +207,7 @@ class SatelliteLandingPageViewModel(
                 isUserRestricted = isUserRestricted,
             )
         Log.i(TAG, "Banner state: ${_bannerState.value}")
+        _isBannerLoaded.value = true
     }
 
     /**
@@ -213,12 +225,18 @@ class SatelliteLandingPageViewModel(
     private fun loadSatelliteAppItems(
         isLteBasedNtnSupported: Boolean,
         isCarrierRoamingNtnSupported: Boolean,
+        dataSupportMode: Int,
     ) {
         val items = mutableListOf<SatelliteAppItem>()
 
+        val isRestrictedMode =
+            isLteBasedNtnSupported &&
+                dataSupportMode == SatelliteManager.SATELLITE_DATA_SUPPORT_RESTRICTED
+
         // Phone app
+        val phonePackage = context.getString(R.string.config_satellite_phone_app_package)
         createSatelliteAppItem(
-                packageName = SatelliteAppsRepository.PACKAGE_NAME_PHONE,
+                packageName = phonePackage,
                 intent = appsRepository.getDialerIntent(),
                 appSummary = context.getString(R.string.satellite_phone_summary),
             )
@@ -227,7 +245,7 @@ class SatelliteLandingPageViewModel(
         // Configurable apps based on NTN support
         val appPackages =
             if (isLteBasedNtnSupported) {
-                appsRepository.getAppsPackagesForLteLandingPage()
+                appsRepository.getAppsPackagesForLteLandingPage(isRestrictedMode)
             } else {
                 appsRepository.getAppsPackagesForNbNtnLandingPage()
             }

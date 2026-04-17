@@ -36,12 +36,14 @@ import com.android.settings.restriction.PreferenceRestrictionMixin
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyValueStoreDelegate
 import com.android.settingslib.datastore.SettingsGlobalStore
+import com.android.settingslib.metadata.HERO_SET
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.metadata.SwitchPreference
+import com.android.settingslib.metadata.UI_ONLY_PREFERENCE
 import com.android.settingslib.widget.MainSwitchPreferenceBinding
 
 // LINT.IfChange
@@ -59,7 +61,9 @@ open class AirplaneModePreference :
     override val icon: Int
         @DrawableRes get() = R.drawable.ic_airplanemode_active
 
-    override fun tags(context: Context) = arrayOf(KEY_AIRPLANE_MODE)
+    override fun tags(context: Context) = arrayOf(KEY_AIRPLANE_MODE, HERO_SET)
+
+    override val availabilityDescription = "The device must support configuring airplane mode."
 
     override fun isAvailable(context: Context) = context.isAirplaneModeEligible()
 
@@ -82,7 +86,7 @@ open class AirplaneModePreference :
         }
 
     override val sensitivityLevel
-        get() = SensitivityLevel.HIGH_SENSITIVITY
+        get() = SensitivityLevel.MUST_PROVIDE_UNDO
 
     override val preferenceActionMetrics: Int
         get() = ACTION_AIRPLANE_TOGGLE
@@ -175,14 +179,22 @@ open class AirplaneModePreference :
 
 /** Preference for the Airplane Mode toggle in the Network & Internet screen. */
 class AirplaneModeTogglePreference : AirplaneModePreference() {
+
+    override val availabilityDescription = "The device must support configuring airplane mode and must not have a paired watch."
+
     override fun isAvailable(context: Context) =
         context.isAirplaneModeEligible() && !context.hasPairedWatchForAirplaneModeSync()
 }
 
 /** Preference for the Airplane Mode toggle in the Airplane Mode Settings screen. */
 class AirplaneModeDetailsPreference : AirplaneModePreference(), MainSwitchPreferenceBinding {
+
+    override val availabilityDescription = "The device must support configuring airplane mode and must not have a paired watch."
+
     override fun isAvailable(context: Context) =
         context.isAirplaneModeEligible() && context.hasPairedWatchForAirplaneModeSync()
+
+    override fun tags(context: Context) = arrayOf(UI_ONLY_PREFERENCE)
 
     // Since the AirplaneModeSettingsScreen is indexed and already points to this main switch, we
     // don't want this to also be indexed causing 2 results for Settings search.

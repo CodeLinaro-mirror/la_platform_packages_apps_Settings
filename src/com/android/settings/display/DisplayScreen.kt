@@ -39,6 +39,7 @@ import com.android.settingslib.widget.SettingsThemeHelper.isExpressiveTheme
 import kotlinx.coroutines.CoroutineScope
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_UNCATEGORIZED
 
+// LINT.IfChange
 @ProvidePreferenceScreen(DisplayScreen.KEY)
 open class DisplayScreen :
     PreferenceScreenMixin, PreferenceAvailabilityProvider, PreferenceIconProvider {
@@ -47,7 +48,6 @@ open class DisplayScreen :
     override val key: String
         get() = KEY
 
-    // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.display_settings_screen_purpose
 
@@ -115,6 +115,9 @@ open class DisplayScreen :
     override fun getLaunchIntent(context: Context, metadata: PreferenceMetadata?) =
         makeLaunchIntent(context, DisplaySettingsActivity::class.java, metadata?.key)
 
+    override val availabilityDescription =
+        "The device must support showing the top level display preference."
+
     override fun isAvailable(context: Context) =
         context.resources.getBoolean(R.bool.config_show_top_level_display)
 
@@ -122,3 +125,4 @@ open class DisplayScreen :
         const val KEY = "display_settings_screen"
     }
 }
+// LINT.ThenChange(com.android.settings.DisplaySettings.java, DisplayApiScreen.kt)

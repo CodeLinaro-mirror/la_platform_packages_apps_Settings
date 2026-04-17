@@ -29,6 +29,7 @@ import com.android.settings.flags.Flags
 import com.android.settingslib.datastore.Permissions.Companion.allOf
 import com.android.settingslib.datastore.Permissions.Companion.anyOf
 import com.android.settingslib.metadata.ProvidePreferenceScreen
+import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen
 import com.android.settingslib.metadata.preferencesapi.category.Category
 import com.android.settingslib.metadata.preferencesapi.preconditions.Allowed
@@ -38,6 +39,8 @@ import com.android.settingslib.metadata.preferencesapi.types.AnyBoolean
 import com.android.settingslib.metadata.preferencesapi.types.GeneratedParameterType
 import com.android.settingslib.metadata.preferencesapi.types.GeneratedValue
 import java.util.Collections.emptyList
+import com.android.settingslib.metadata.preferencesapi.safe
+import com.android.settingslib.metadata.preferencesapi.unsafe
 
 // LINT.IfChange
 @ProvidePreferenceScreen(UserDetailsSettingsScreenApi.KEY, parameterized = true)
@@ -50,6 +53,7 @@ class UserDetailsSettingsScreenApi :
     ) {
     init {
         flag { Flags.catalystMigration26q2() }
+        sensitivityLevel(SensitivityLevel.DO_NOT_EXPOSE)
         parameters {
             parameter(
                 name = PARAM_TARGET_USER_ID,
@@ -63,8 +67,8 @@ class UserDetailsSettingsScreenApi :
                             ?.filter { it.isUiSwitchableHumanUser() }
                             ?.map { userInfo ->
                                 GeneratedValue(
-                                    value = Integer.toString(userInfo.id),
-                                    description = userInfo.name ?: "",
+                                    value = Integer.toString(userInfo.id).safe(),
+                                    description = userInfo.name?.unsafe() ?: "".safe(),
                                 )
                             } ?: emptyList() // Added elvis operator to return emptyList() if null
                     },
@@ -99,12 +103,12 @@ class UserDetailsSettingsScreenApi :
             purpose = R.string.user_details_settings_enable_calling_purpose,
             type = AnyBoolean,
         ) {
+            sensitivityLevel(SensitivityLevel.DO_NOT_EXPOSE)
             preconditions(R.string.user_details_enable_calling_precondition) {
                 val userManager = context.getSystemService(UserManager::class.java)
                 val paramUserId = Integer.parseInt(parameters[PARAM_TARGET_USER_ID])
                 val paramUserInfo = userManager.getUserInfo(paramUserId)
-                // TODO(b/474008291) : Remove HSUM since it is no longer a blocker for telephony
-                if (!Utils.isVoiceCapable(context) || UserManager.isHeadlessSystemUserMode()) {
+                if (!Utils.isVoiceCapable(context)) {
                     HardwareUnsupported(R.string.user_details_enable_calling_unsupported)
                 } else if (!userManager.isAdminUser()) {
                     Custom(R.string.user_details_setting_unavailable_user_not_admin)
@@ -153,6 +157,7 @@ class UserDetailsSettingsScreenApi :
             purpose = R.string.user_details_settings_grant_admin_purpose,
             type = AnyBoolean,
         ) {
+            sensitivityLevel(SensitivityLevel.DO_NOT_EXPOSE)
             preconditions(R.string.user_details_grant_admin_precondition) {
                 val userManager = context.getSystemService(UserManager::class.java)
                 val paramUserId = Integer.parseInt(parameters[PARAM_TARGET_USER_ID])

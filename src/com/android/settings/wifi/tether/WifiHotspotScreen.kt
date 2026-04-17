@@ -60,9 +60,9 @@ import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.metadata.preferenceHierarchy
+import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_MOBILE_DATA
 import com.android.settingslib.wifi.WifiUtils.Companion.getWifiTetherSummaryForConnectedDevices
 import kotlinx.coroutines.CoroutineScope
-import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_MOBILE_DATA
 
 // LINT.IfChange
 @ProvidePreferenceScreen(WifiHotspotScreen.KEY)
@@ -76,14 +76,13 @@ open class WifiHotspotScreen(context: Context) :
     PreferenceRestrictionMixin {
     override fun tags(context: Context) = arrayOf(APP_FUNCTION_MOBILE_DATA, KEY_WIFI_HOTSPOT)
 
-
     private val wifiHotspotStore =
         WifiHotspotStore(context, DataSaverMainSwitchPreference.createDataStore(context))
 
     override val key: String
         get() = KEY
 
-    //TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
+    // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.wifi_tether_purpose
 
@@ -115,12 +114,12 @@ open class WifiHotspotScreen(context: Context) :
     override val preferenceActionMetrics: Int
         get() = ACTION_WIFI_HOTSPOT
 
-
+    override val availabilityDescription = "The device must support wifi hotspot."
 
     override fun isAvailable(context: Context) =
         canShowWifiHotspot(context) &&
-                TetherUtil.isTetherAvailable(context) &&
-                !Utils.isMonkeyRunning()
+            TetherUtil.isTetherAvailable(context) &&
+            !Utils.isMonkeyRunning()
 
     override fun getSummary(context: Context): CharSequence? =
         when (context.wifiApState) {
@@ -149,7 +148,7 @@ open class WifiHotspotScreen(context: Context) :
 
     override fun isEnabled(context: Context) =
         wifiHotspotStore.dataSaverStore.getBoolean(DATA_SAVER_KEY) != true &&
-                super<PreferenceRestrictionMixin>.isEnabled(context)
+            super<PreferenceRestrictionMixin>.isEnabled(context)
 
     override val restrictionKeys
         get() = arrayOf(UserManager.DISALLOW_WIFI_TETHERING)
@@ -166,8 +165,10 @@ open class WifiHotspotScreen(context: Context) :
     override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
         ReadWritePermit.ALLOW
 
+    override val supportsWrite = true
+
     override val sensitivityLevel
-        get() = SensitivityLevel.HIGH_SENSITIVITY
+        get() = SensitivityLevel.MUST_PROVIDE_UNDO
 
     override fun storage(context: Context): KeyValueStore = wifiHotspotStore
 
@@ -193,7 +194,7 @@ open class WifiHotspotScreen(context: Context) :
             val wifiApState = context.wifiApState
             val value =
                 wifiApState == WifiManager.WIFI_AP_STATE_ENABLING ||
-                        wifiApState == WifiManager.WIFI_AP_STATE_ENABLED
+                    wifiApState == WifiManager.WIFI_AP_STATE_ENABLED
             return value as T?
         }
 

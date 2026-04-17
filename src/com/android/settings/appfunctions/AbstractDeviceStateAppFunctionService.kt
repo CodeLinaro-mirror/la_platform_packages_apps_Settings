@@ -17,9 +17,16 @@
 package com.android.settings.appfunctions
 
 import android.app.KeyguardManager
+import android.app.appfunctions.AppFunctionException
 import android.app.appfunctions.AppFunctionException.ERROR_DENIED
+import android.app.appfunctions.AppFunctionException.ERROR_FUNCTION_NOT_FOUND
+import android.app.appfunctions.AppFunctionException.ERROR_SYSTEM_ERROR
+import android.app.appfunctions.AppFunctionService
+import android.app.appfunctions.ExecuteAppFunctionRequest
+import android.app.appfunctions.ExecuteAppFunctionResponse
 import android.app.appsearch.GenericDocument
 import android.content.Context
+import android.content.pm.SigningInfo
 import android.content.res.Configuration
 import android.os.CancellationSignal
 import android.os.OutcomeReceiver
@@ -27,11 +34,6 @@ import android.os.SystemClock
 import android.os.Trace
 import android.util.Log
 import androidx.annotation.Keep
-import com.android.extensions.appfunctions.AppFunctionException
-import com.android.extensions.appfunctions.AppFunctionException.ERROR_FUNCTION_NOT_FOUND
-import com.android.extensions.appfunctions.AppFunctionService
-import com.android.extensions.appfunctions.ExecuteAppFunctionRequest
-import com.android.extensions.appfunctions.ExecuteAppFunctionResponse
 import com.android.settings.appfunctions.executors.AndroidApiStateMetadataProviderExecutor
 import com.android.settings.appfunctions.executors.AndroidApiStateProviderExecutor
 import com.android.settings.appfunctions.executors.AndroidApiStateSetterExecutor
@@ -50,7 +52,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.NonCancellable
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
 
 /**
  * An abstract [AppFunctionService] that provides device state information.
@@ -103,7 +104,10 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
     }
 
     open val deviceStateSetterExecutors: List<DeviceStateExecutor> by lazy {
-        listOf(CatalystStateSetterExecutor(), AndroidApiStateSetterExecutor(applicationContext))
+        listOf(
+            CatalystStateSetterExecutor(applicationContext),
+            AndroidApiStateSetterExecutor(applicationContext),
+        )
     }
     val deviceStateSetterAggregator by lazy {
         DeviceStateSetterAggregator(deviceStateSetterExecutors)
@@ -128,13 +132,13 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
 
     override fun onCreate() {
         super.onCreate()
-        SettingsPreferenceServiceClientManager.initialize(applicationContext)
         englishContext = createEnglishContext()
     }
 
     final override fun onExecuteFunction(
         request: ExecuteAppFunctionRequest,
         callingPackage: String,
+        callingPackageSigningInfo: SigningInfo,
         cancellationSignal: CancellationSignal,
         callback: OutcomeReceiver<ExecuteAppFunctionResponse, AppFunctionException>,
     ) {
@@ -175,10 +179,6 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
         }
 
         backgroundScope.launch(NonCancellable) {
-            withContext(Dispatchers.IO) {
-                SettingsPreferenceServiceClientManager.awaitInitialized()
-            }
-
             Trace.beginSection("DeviceStateAppFunction ${request.functionIdentifier}")
             Log.d(TAG, "device state app function ${request.functionIdentifier} called.")
             if (!aggregators.containsKey(appFunctionType)) {
@@ -195,26 +195,42 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
                     )
                 )
             }
-            val startMs = SystemClock.elapsedRealtime()
-            val responseData =
-                aggregators[appFunctionType]!!.aggregate(
-                    appFunctionType,
-                    request.parameters,
-                    applicationContext.getLocale().toString(),
+            try {
+                val startMs = SystemClock.elapsedRealtime()
+
+                val responseData =
+                    aggregators[appFunctionType]!!.aggregate(
+                        appFunctionType,
+                        request.parameters,
+                        applicationContext.getLocale().toString(),
+                    )
+                val response = buildResponse(responseData)
+                callback.onResult(response)
+
+                val executeDurationMs = SystemClock.elapsedRealtime() - startMs
+                Log.d(TAG, "app function ${request.functionIdentifier} fulfilled.")
+
+                metricsLogger.logAppFunction(
+                    appFunctionType.toMetricsId(),
+                    callingPackage,
+                    executeDurationMs,
+                    applicationContext,
                 )
-            val response = buildResponse(responseData)
-            callback.onResult(response)
+            } catch (e: Exception) {
+                // TODO(b/491141423): granular exceptions handle
+                callback.onError(
+                    AppFunctionException(ERROR_SYSTEM_ERROR, e.message ?: UNKNOWN_ERROR_MESSAGE)
+                )
 
-            val executeDurationMs = SystemClock.elapsedRealtime() - startMs
-            Log.d(TAG, "app function ${request.functionIdentifier} fulfilled.")
-            Trace.endSection()
-
-            metricsLogger.logAppFunction(
-                appFunctionType.toMetricsId(),
-                callingPackage,
-                executeDurationMs,
-                applicationContext,
-            )
+                metricsLogger.logAppFunctionError(
+                    callingPackage,
+                    ERROR_SYSTEM_ERROR,
+                    applicationContext,
+                    appFunctionType.toMetricsId(),
+                )
+            } finally {
+                Trace.endSection()
+            }
         }
     }
 
@@ -249,5 +265,7 @@ abstract class AbstractDeviceStateAppFunctionService : AppFunctionService() {
 
     companion object {
         private const val TAG = "AbstractDeviceStateAppFunctionService"
+
+        private const val UNKNOWN_ERROR_MESSAGE = "Unknown error"
     }
 }

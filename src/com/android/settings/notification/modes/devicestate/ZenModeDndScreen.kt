@@ -24,6 +24,7 @@ import com.android.settings.R
 import com.android.settings.Settings.ModeSettingsActivity
 import com.android.settings.contract.TAG_DEVICE_STATE_SCREEN
 import com.android.settings.core.PreferenceScreenMixin
+import com.android.settingslib.metadata.METADATA_IN_UI
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
@@ -54,6 +55,8 @@ open class ZenModeDndScreen :
 
     override fun isFlagEnabled(context: Context) = false
 
+    override val availabilityDescription = "The DND mode must be available."
+
     override fun isAvailable(context: Context) = context.hasDndMode()
 
     override fun getTitle(context: Context): CharSequence? = context.getDndMode()?.name
@@ -67,9 +70,34 @@ open class ZenModeDndScreen :
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
+            +ZenModeDndScreenPreference(this@ZenModeDndScreen)
             +ZenModeButtonPreference(context.getDndMode()!!)
             +ZenModeDndDisplayScreen.KEY
         }
+
+    class ZenModeDndScreenPreference(
+        private val screenMetadata : ZenModeDndScreen
+    ) : PreferenceMetadata, PreferenceSummaryProvider, PreferenceAvailabilityProvider, PreferenceTitleProvider {
+        override val key : String
+            get() = "device_state_dnd_mode_screen_preference"
+
+        override val purpose : Int
+            get() = screenMetadata.purpose
+
+        override fun tags(context: Context) = arrayOf(METADATA_IN_UI)
+
+        override val indexable = false
+
+        override fun isEnabled(context: Context) : Boolean = screenMetadata.isEnabled(context)
+
+        override fun getSummary(context: Context) : CharSequence? = screenMetadata.getSummary(context)
+
+        override val availabilityDescription = screenMetadata.availabilityDescription
+
+        override fun isAvailable(context: Context) : Boolean = screenMetadata.isAvailable(context)
+
+        override fun getTitle(context: Context): CharSequence? = screenMetadata.getTitle(context)
+    }
 
     companion object {
         const val KEY = "device_state_dnd_mode_screen" // only for device state.

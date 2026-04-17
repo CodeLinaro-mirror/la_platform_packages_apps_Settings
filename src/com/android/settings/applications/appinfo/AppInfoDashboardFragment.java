@@ -63,6 +63,7 @@ import com.android.settings.applications.specialaccess.interactacrossprofiles.In
 import com.android.settings.applications.specialaccess.pictureinpicture.PictureInPictureDetailPreferenceController;
 import com.android.settings.core.SubSettingLauncher;
 import com.android.settings.dashboard.DashboardFragment;
+import com.android.settings.utils.HsuUtils;
 import com.android.settingslib.RestrictedLockUtilsInternal;
 import com.android.settingslib.applications.AppUtils;
 import com.android.settingslib.applications.ApplicationsState;
@@ -83,6 +84,7 @@ import java.util.List;
  * For non-system applications, there is no option to clear data. Instead there is an option to
  * uninstall the application.
  */
+// Lint.IfChange
 public class AppInfoDashboardFragment extends DashboardFragment
         implements ApplicationsState.Callbacks,
         ButtonActionDialogFragment.AppButtonsDialogListener {
@@ -700,12 +702,18 @@ public class AppInfoDashboardFragment extends DashboardFragment
         Bundle args = new Bundle();
         args.putString(ARG_PACKAGE_NAME, app.packageName);
         args.putInt(ARG_PACKAGE_UID, app.uid);
-        new SubSettingLauncher(context)
+        SubSettingLauncher launcher = new SubSettingLauncher(context)
                 .setDestination(destination.getName())
                 .setArguments(args)
-                .setUserHandle(UserHandle.getUserHandleForUid(app.uid))
-                .setSourceMetricsCategory(sourceMetricsCategory)
-                .launch();
+                .setSourceMetricsCategory(sourceMetricsCategory);
+
+        // For HSU apps, we must launch the activity in the current user's context (e.g. user 10)
+        // because the System User (User 0) is headless and cannot display UI.
+        // The fragment will handle data fetching for the target user (User 0) based on the UID.
+        if (!android.multiuser.Flags.hsuAppManagement() || !HsuUtils.isHsuApp(context, app)) {
+            launcher.setUserHandle(UserHandle.getUserHandleForUid(app.uid));
+        }
+        launcher.launch();
     }
 
     private void onPackageRemoved() {
@@ -883,3 +891,4 @@ public class AppInfoDashboardFragment extends DashboardFragment
     };
 
 }
+// Lint.ThenChange(AppInfoScreenApiFirst.kt, HibernationSwitchPreferenceController.java)

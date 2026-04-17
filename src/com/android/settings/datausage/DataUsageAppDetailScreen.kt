@@ -23,6 +23,7 @@ import android.os.Bundle
 import androidx.core.net.toUri
 import androidx.fragment.app.Fragment
 import com.android.settings.R
+import com.android.settings.applications.InstalledPackageName
 import com.android.settings.applications.getApplicationInfo
 import com.android.settings.contract.TAG_DEVICE_STATE_PREFERENCE
 import com.android.settings.contract.TAG_DEVICE_STATE_SCREEN
@@ -91,6 +92,9 @@ private constructor(
     override val key: String
         get() = KEY
 
+    override val keyParametersSchema: KeyParametersSchema
+        get() = parametersSchema
+
     //TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int
         get() = R.string.app_data_usage_screen_purpose
@@ -111,6 +115,9 @@ private constructor(
         appInfo?.loadLabel(context.packageManager)
 
     override fun isFlagEnabled(context: Context) = Flags.deeplinkApps25q4()
+
+    override val availabilityDescription =
+        "The app must be enabled."
 
     override fun isAvailable(context: Context) = appInfo != null
 
@@ -169,7 +176,7 @@ private constructor(
 
         @JvmStatic
         override val parametersSchema = KeyParametersSchema {
-            parameter(KEY_APP_PACKAGE_NAME, "The package name of the app", required = true)
+            parameter(KEY_APP_PACKAGE_NAME, "The package name of the app", required = true, type = InstalledPackageName)
         }
 
         @JvmStatic

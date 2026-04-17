@@ -16,11 +16,9 @@
 
 package com.android.settings.security;
 
-import android.app.settings.SettingsEnums;
 import android.content.Context;
 
 import com.android.settings.R;
-import com.android.settings.dashboard.DashboardFragment;
 
 /**
  * Fragment for SIM PIN management features (starting with automatic SIM PIN management, manual
@@ -28,28 +26,19 @@ import com.android.settings.dashboard.DashboardFragment;
  *
  * This is the container fragment for showing the automatically-generated SIM PIN.
  */
-public class ControlAutoSimPinManagementFragment extends DashboardFragment {
-    private static final String TAG = ControlAutoSimPinManagementFragment.class.getSimpleName();
-
+public class ControlAutoSimPinManagementFragment extends BaseSimPinFragment {
     @Override
     public void onAttach(Context context) {
         super.onAttach(context);
 
         use(ShowAutoManagedSimPinController.class).setFragment(this);
+        use(ManualSimProtectionModePreferenceController.class).setFragment(this);
+        use(AutomaticSimProtectionModePreferenceController.class).setFragment(this);
+        use(ChangeSimPinPreferenceController.class).setFragment(this);
     }
 
     @Override
     protected int getPreferenceScreenResId() {
         return R.xml.sim_protection_settings;
-    }
-
-    @Override
-    protected String getLogTag() {
-        return TAG;
-    }
-
-    @Override
-    public int getMetricsCategory() {
-        return SettingsEnums.AUTOMATIC_SIM_PIN_MANAGEMENT;
     }
 }

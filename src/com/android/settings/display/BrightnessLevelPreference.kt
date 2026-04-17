@@ -45,6 +45,7 @@ import com.android.settingslib.display.BrightnessUtils.GAMMA_SPACE_MAX
 import com.android.settingslib.display.BrightnessUtils.GAMMA_SPACE_MIN
 import com.android.settingslib.display.BrightnessUtils.convertLinearToGammaFloat
 import com.android.settingslib.metadata.IntRangeValuePreference
+import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceChangeReason
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
@@ -63,7 +64,8 @@ class BrightnessLevelPreference :
     PreferenceRestrictionMixin,
     PreferenceActionMetricsProvider,
     PreferenceSummaryProvider,
-    Preference.OnPreferenceClickListener {
+    Preference.OnPreferenceClickListener,
+    PreferenceAvailabilityProvider {
 
     override val key: String
         get() = KEY
@@ -127,6 +129,7 @@ class BrightnessLevelPreference :
     override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
         ReadWritePermit.DISALLOW
 
+    override val supportsWrite = false
     override val sensitivityLevel
         get() = SensitivityLevel.NO_SENSITIVITY
 
@@ -135,6 +138,8 @@ class BrightnessLevelPreference :
     override fun getMinValue(context: Context) = 0
 
     override fun getMaxValue(context: Context) = 100
+
+    override fun getUnitOfMeasurement() = "%"
 
     private class BrightnessStorage(private val context: Context) :
         AbstractKeyedDataObservable<String>(),
@@ -198,6 +203,11 @@ class BrightnessLevelPreference :
         }
         return true
     }
+
+    override val availabilityDescription =
+        "The default display must be internal."
+
+    override fun isAvailable(context: Context) = context.isBrightnessLevelSettingsAvailable
 
     companion object {
         const val KEY = "brightness"

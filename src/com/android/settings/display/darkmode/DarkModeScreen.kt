@@ -40,6 +40,8 @@ import com.android.settingslib.datastore.HandlerExecutor
 import com.android.settingslib.datastore.KeyValueStore
 import com.android.settingslib.datastore.KeyedObserver
 import com.android.settingslib.metadata.BooleanValuePreference
+import com.android.settingslib.metadata.MUSTPASS_SET
+import com.android.settingslib.metadata.MUSTPASS_SET
 import com.android.settingslib.metadata.PreferenceCategory
 import com.android.settingslib.metadata.PreferenceIndexableProvider
 import com.android.settingslib.metadata.PreferenceLifecycleContext
@@ -49,12 +51,13 @@ import com.android.settingslib.metadata.PreferenceSummaryProvider
 import com.android.settingslib.metadata.ProvidePreferenceScreen
 import com.android.settingslib.metadata.ReadWritePermit
 import com.android.settingslib.metadata.SensitivityLevel
+import com.android.settingslib.metadata.UI_ONLY_PREFERENCE
 import com.android.settingslib.metadata.preferenceHierarchy
-import kotlinx.coroutines.CoroutineScope
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_UNCATEGORIZED
+import kotlinx.coroutines.CoroutineScope
 
 // LINT.IfChange
-abstract class BaseDarkModeScreen(context: Context) :
+abstract class BaseDarkModeScreen(context: Context, val isUiOnly: Boolean) :
     PreferenceScreenMixin,
     PrimarySwitchPreferenceBinding,
     PreferenceActionMetricsProvider,
@@ -92,6 +95,7 @@ abstract class BaseDarkModeScreen(context: Context) :
     override fun getWritePermit(context: Context, callingPid: Int, callingUid: Int) =
         ReadWritePermit.ALLOW
 
+    override val supportsWrite = true
     override val sensitivityLevel
         get() = SensitivityLevel.NO_SENSITIVITY
 
@@ -105,7 +109,7 @@ abstract class BaseDarkModeScreen(context: Context) :
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
             +DarkModeTopIntroPreference()
-            +DarkModeMainSwitchPreference(darkModeStorage)
+            +DarkModeMainSwitchPreference(darkModeStorage, isUiOnly)
             +TwilightLocationPreference()
             if (android.view.accessibility.Flags.forceInvertColor()) {
                 +PreferenceCategory(
@@ -115,8 +119,8 @@ abstract class BaseDarkModeScreen(context: Context) :
                 ) +=
                     {
                         val modeStorage = DarkThemeModeStorage(context)
-                        +StandardDarkModeSelectorPreference(modeStorage)
-                        +ExpandedDarkModeSelectorPreference(modeStorage)
+                        +StandardDarkModeSelectorPreference(modeStorage, isUiOnly)
+                        +ExpandedDarkModeSelectorPreference(modeStorage, isUiOnly)
                     }
             }
             +PreferenceCategory(
@@ -126,9 +130,9 @@ abstract class BaseDarkModeScreen(context: Context) :
             ) +=
                 {
                     val uiModeManager = context.getSystemService(UiModeManager::class.java)
-                    +DarkModeSchedulePreference(context)
-                    +StartTimePreference(uiModeManager)
-                    +EndTimePreference(uiModeManager)
+                    +DarkModeSchedulePreference(context, isUiOnly)
+                    +StartTimePreference(uiModeManager, isUiOnly)
+                    +EndTimePreference(uiModeManager, isUiOnly)
                 }
             +DarkModePendingLocationFooterPreference()
             +DarkModeExpandedFooterPreference()
@@ -194,8 +198,8 @@ abstract class BaseDarkModeScreen(context: Context) :
 // LINT.ThenChange(../DarkUIPreferenceController.java)
 
 @ProvidePreferenceScreen(DarkModeScreen.KEY)
-open class DarkModeScreen(context: Context) : BaseDarkModeScreen(context) {
-    override fun tags(context: Context) = arrayOf(APP_FUNCTION_UNCATEGORIZED)
+open class DarkModeScreen(context: Context) : BaseDarkModeScreen(context, false) {
+    override fun tags(context: Context) = arrayOf(APP_FUNCTION_UNCATEGORIZED, MUSTPASS_SET)
 
     override val key
         get() = KEY
@@ -210,9 +214,11 @@ open class DarkModeScreen(context: Context) : BaseDarkModeScreen(context) {
 }
 
 @ProvidePreferenceScreen(DarkModeScreenOnAccessibility.KEY)
-open class DarkModeScreenOnAccessibility(context: Context) : BaseDarkModeScreen(context) {
+open class DarkModeScreenOnAccessibility(context: Context) : BaseDarkModeScreen(context, true) {
     override val key
         get() = KEY
+
+    override fun tags(context: Context) = arrayOf(UI_ONLY_PREFERENCE)
 
     // TODO(b/462618020) Catalyst-purpose: replace default purpose with 2 line description
     override val purpose: Int

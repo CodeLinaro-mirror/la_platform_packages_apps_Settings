@@ -58,8 +58,8 @@ constructor(
     private val satelliteManager: SatelliteManager?,
     private val connectivityManager: ConnectivityManager?,
     private val scope: CoroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Default),
-    private val isLteNtnSupportedChecker: (Context) -> Boolean = {
-        SatelliteUtils.isLteBasedNtnSupportedByDevice(it)
+    private val isLteNtnSupportedChecker: (Context, Int) -> Boolean = { ctx, subId ->
+        SatelliteUtils.isLteBasedNtnSupported(ctx, subId)
     },
 ) {
 
@@ -154,17 +154,24 @@ constructor(
     open val satelliteDisallowedReasons: StateFlow<IntArray> =
         callbackFlow {
                 val callback = SatelliteDisallowedReasonsCallback { reasons ->
-                    Log.d(TAG, "onSatelliteDisallowedReasonsChanged: $reasons")
+                    logd { "onSatelliteDisallowedReasonsChanged: $reasons" }
                     trySend(reasons)
                 }
 
-                satelliteManager?.registerForSatelliteDisallowedReasonsChanged(
-                    callbackExecutor,
-                    callback,
-                )
+                try {
+                    satelliteManager?.registerForSatelliteDisallowedReasonsChanged(
+                        callbackExecutor,
+                        callback,
+                    )
+                } catch (e: IllegalStateException) {
+                    Log.w(TAG, "Failed to register for satellite disallowed reasons: ${e.message}")
+                }
+
                 awaitClose {
-                    runCatching {
+                    try {
                         satelliteManager?.unregisterForSatelliteDisallowedReasonsChanged(callback)
+                    } catch (e: IllegalStateException) {
+                        Log.w(TAG, "Failed to unregister for satellite disallowed reasons", e)
                     }
                 }
             }
@@ -286,6 +293,7 @@ constructor(
                         isOemAllowed = disallowedReasons.isEmpty(),
                         isTerrestrialConnected = isTerrestrial,
                         isCarrierSupported = isCarrierSupported,
+                        subId = subId,
                     )
 
                 when {
@@ -295,6 +303,24 @@ constructor(
                 }
             }
             .stateIn(scope, SharingStarted.WhileSubscribed(), SatelliteStatus.NOT_AVAILABLE)
+
+    /**
+     * Returns the satellite data support mode for the carrier.
+     *
+     * Includes restricted, constrained, and unrestricted modes.
+     *
+     * @param subId The subscription ID.
+     * @return The [SatelliteManager.SatelliteDataSupportMode].
+     */
+    open fun getSatelliteDataSupportMode(subId: Int): Int {
+        return try {
+            satelliteManager?.getSatelliteDataSupportMode(subId)
+                ?: SatelliteManager.SATELLITE_DATA_SUPPORT_UNKNOWN
+        } catch (e: Exception) {
+            Log.e(TAG, "Error getting satellite data support mode", e)
+            SatelliteManager.SATELLITE_DATA_SUPPORT_UNKNOWN
+        }
+    }
 
     /**
      * Returns the attach restriction reasons for the carrier.
@@ -321,12 +347,13 @@ constructor(
         isOemAllowed: Boolean,
         isTerrestrialConnected: Boolean,
         isCarrierSupported: Boolean,
+        subId: Int,
     ): Boolean {
         if (isTerrestrialConnected) return false
 
         // Rule: LTE-NTN devices never show "Available".
         // This state is strictly for NB-IoT (Carrier Roaming/Pixel Skylo).
-        if (isLteNtnSupportedChecker(context)) return false
+        if (isLteNtnSupportedChecker(context, subId)) return false
 
         return if (isCarrierSupported) {
             isCarrierEligible
@@ -393,7 +420,14 @@ constructor(
                 state == SatelliteManager.SATELLITE_MODEM_STATE_DATAGRAM_TRANSFERRING ||
                 state == SatelliteManager.SATELLITE_MODEM_STATE_DATAGRAM_RETRYING ||
                 state == SatelliteManager.SATELLITE_MODEM_STATE_LISTENING ||
-                state == SatelliteManager.SATELLITE_MODEM_STATE_ENABLING_SATELLITE
+                state == SatelliteManager.SATELLITE_MODEM_STATE_ENABLING_SATELLITE ||
+                state == SatelliteManager.SATELLITE_MODEM_STATE_NOT_CONNECTED
+        }
+    }
+
+    private inline fun logd(message: () -> String) {
+        if (Log.isLoggable(TAG, Log.DEBUG)) {
+            Log.d(TAG, message())
         }
     }
 }

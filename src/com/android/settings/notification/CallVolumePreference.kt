@@ -37,6 +37,7 @@ import com.android.settingslib.datastore.NoOpKeyedObservable
 import com.android.settingslib.datastore.Permissions
 import com.android.settingslib.datastore.and
 import com.android.settingslib.metadata.IntRangeValuePreference
+import com.android.settingslib.metadata.MUSTPASS
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceIconProvider
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -67,9 +68,11 @@ class CallVolumePreference(private val audioHelper: AudioHelper) :
     override val preferenceActionMetrics: Int
         get() = ACTION_CALL_VOLUME
 
-    override fun tags(context: Context) = arrayOf(KEY_CALL_VOLUME)
+    override fun tags(context: Context) = arrayOf(KEY_CALL_VOLUME, MUSTPASS)
 
     override fun getIcon(context: Context) = R.drawable.ic_local_phone_24_lib
+
+    override val availabilityDescription = "The device must support configuring call volume in Settings and not be a single volume device."
 
     override fun isAvailable(context: Context) =
         context.resources.getBoolean(R.bool.config_show_call_volume) && !audioHelper.isSingleVolume
@@ -107,6 +110,8 @@ class CallVolumePreference(private val audioHelper: AudioHelper) :
 
     override fun getWritePermit(context: Context, value: Int?, callingPid: Int, callingUid: Int) =
         ReadWritePermit.ALLOW
+
+    override val supportsWrite = true
 
     override val sensitivityLevel
         get() = SensitivityLevel.NO_SENSITIVITY

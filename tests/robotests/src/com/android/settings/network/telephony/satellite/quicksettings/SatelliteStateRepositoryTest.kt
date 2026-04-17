@@ -47,6 +47,7 @@ import org.mockito.ArgumentMatchers.any
 import org.mockito.Mock
 import org.mockito.Mockito.atLeastOnce
 import org.mockito.Mockito.doReturn
+import org.mockito.Mockito.doThrow
 import org.mockito.Mockito.mock
 import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
@@ -95,7 +96,7 @@ class SatelliteStateRepositoryTest {
             satelliteManager,
             connectivityManager,
             scope,
-            isLteNtnSupportedChecker = { isLteNtnSupported },
+            isLteNtnSupportedChecker = { _, _ -> isLteNtnSupported },
         )
     }
 
@@ -315,6 +316,70 @@ class SatelliteStateRepositoryTest {
             advanceUntilIdle()
 
             assertThat(values.last()).isEqualTo(SatelliteStatus.AVAILABLE)
+        }
+
+    @Test
+    fun satelliteDisallowedReasons_phoneProcessNotReady_doesNotCrash() =
+        testScope.runTest {
+            doThrow(IllegalStateException("Telephony service is null"))
+                .`when`(satelliteManager)
+                .registerForSatelliteDisallowedReasonsChanged(any(), any())
+
+            repository = createRepository(backgroundScope)
+
+            // Act: Collect the flow
+            // We expect this NOT to throw an exception.
+            try {
+                repository.satelliteDisallowedReasons.launchIn(backgroundScope)
+                advanceUntilIdle()
+            } catch (e: Exception) {
+                org.junit.Assert.fail(
+                    "Repository crashed when phone process was down: ${e.message}"
+                )
+            }
+        }
+
+    @Test
+    fun getSatelliteDataSupportMode_returnsCorrectMode() =
+        testScope.runTest {
+            val subId = 1
+            doReturn(SatelliteManager.SATELLITE_DATA_SUPPORT_RESTRICTED)
+                .`when`(satelliteManager)
+                .getSatelliteDataSupportMode(subId)
+
+            repository = createRepository(backgroundScope)
+
+            val mode = repository.getSatelliteDataSupportMode(subId)
+            assertThat(mode).isEqualTo(SatelliteManager.SATELLITE_DATA_SUPPORT_RESTRICTED)
+        }
+
+    @Test
+    fun getSatelliteDataSupportMode_exception_returnsUnknown() =
+        testScope.runTest {
+            val subId = 1
+            doThrow(IllegalStateException("Modem exception"))
+                .`when`(satelliteManager)
+                .getSatelliteDataSupportMode(subId)
+
+            repository = createRepository(backgroundScope)
+
+            val mode = repository.getSatelliteDataSupportMode(subId)
+            assertThat(mode).isEqualTo(SatelliteManager.SATELLITE_DATA_SUPPORT_UNKNOWN)
+        }
+
+    @Test
+     fun satelliteStatus_whenOemSatelliteNotConnected_returnsActive() =
+         testScope.runTest {
+             repository = createRepository(backgroundScope)
+             val values = mutableListOf<SatelliteStatus>()
+             repository.satelliteStatus.onEach { values.add(it) }.launchIn(backgroundScope)
+             advanceUntilIdle()
+
+             val callback = captureSatelliteModemStateCallback()
+             callback.onSatelliteModemStateChanged(SatelliteManager.SATELLITE_MODEM_STATE_NOT_CONNECTED)
+             advanceUntilIdle()
+
+             assertThat(values.last()).isEqualTo(SatelliteStatus.ACTIVE)
         }
 
     // Helpers to capture callbacks and trigger updates

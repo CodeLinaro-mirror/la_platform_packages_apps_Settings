@@ -83,26 +83,14 @@ class KeyboardShortcutPreference(context: Context, targets: Set<String>) :
             return
         }
 
-        val imageResId =
-            when {
-                targetsContainsColorInversion(context) ->
-                    R.drawable.accessibility_shortcut_type_keyboard_colorinversion
-                targetsContainsMagnification() ->
-                    R.drawable.accessibility_shortcut_type_keyboard_magnification
-                targetsContainsScreenReader(context) ->
-                    R.drawable.accessibility_shortcut_type_keyboard_screenreader
-                com.android.hardware.input.Flags.enableSelectToSpeakKeyGestures() &&
-                    targetsContainsSelectToSpeak(context) ->
-                    R.drawable.accessibility_shortcut_type_keyboard_selecttospeak
-                targetsContainsVoiceAccess(context) ->
-                    R.drawable.accessibility_shortcut_type_keyboard_voiceaccess
-                else -> 0
-            }
-
+        val imageResId = getIconResId(context)
         if (imageResId != 0) {
             preference.setIntroImageResId(imageResId)
         }
     }
+
+    override val availabilityDescription =
+        "There must be a keyboard connected. There must be exactly one target configured for this shortcut. The device must support Key gesture shortcut settings. The target must be Magnification, Voice Access, TalkBack, Color Inversion, or Select to Speak. "
 
     override fun isAvailable(context: Context): Boolean {
         if (
@@ -119,7 +107,7 @@ class KeyboardShortcutPreference(context: Context, targets: Set<String>) :
             targetsContainsVoiceAccess(context) ||
             targetsContainsScreenReader(context) ||
             (com.android.hardware.input.Flags.enableColorInversionKeyGestures() &&
-                targetsContainsColorInversion(context)) ||
+                targetsContainsColorInversion()) ||
             (com.android.hardware.input.Flags.enableSelectToSpeakKeyGestures() &&
                 targetsContainsSelectToSpeak(context))
     }
@@ -145,7 +133,24 @@ class KeyboardShortcutPreference(context: Context, targets: Set<String>) :
         }
     }
 
-    private fun targetsContainsColorInversion(context: Context): Boolean {
+    fun getIconResId(context: Context): Int =
+        when {
+            targets.size > 1 -> 0
+            targetsContainsColorInversion() ->
+                R.drawable.accessibility_shortcut_type_keyboard_colorinversion
+            targetsContainsMagnification() ->
+                R.drawable.accessibility_shortcut_type_keyboard_magnification
+            targetsContainsScreenReader(context) ->
+                R.drawable.accessibility_shortcut_type_keyboard_screenreader
+            com.android.hardware.input.Flags.enableSelectToSpeakKeyGestures() &&
+                targetsContainsSelectToSpeak(context) ->
+                R.drawable.accessibility_shortcut_type_keyboard_selecttospeak
+            targetsContainsVoiceAccess(context) ->
+                R.drawable.accessibility_shortcut_type_keyboard_voiceaccess
+            else -> 0
+        }
+
+    private fun targetsContainsColorInversion(): Boolean {
         return targets.contains(COLOR_INVERSION_COMPONENT_NAME.flattenToString())
     }
 

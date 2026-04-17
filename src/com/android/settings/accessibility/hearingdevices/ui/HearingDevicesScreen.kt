@@ -48,6 +48,7 @@ import com.android.settingslib.bluetooth.HearingAidInfo.DeviceSide.SIDE_RIGHT
 import com.android.settingslib.bluetooth.LocalBluetoothManager
 import com.android.settingslib.bluetooth.LocalBluetoothProfileManager
 import com.android.settingslib.flags.Flags as SettingsLibFlags
+import com.android.settingslib.metadata.METADATA_IN_UI
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
 import com.android.settingslib.metadata.PreferenceCategory
 import com.android.settingslib.metadata.PreferenceLifecycleContext
@@ -55,9 +56,11 @@ import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
 import com.android.settingslib.metadata.ProvidePreferenceScreen
+import com.android.settingslib.metadata.SensitivityLevel
+import com.android.settingslib.metadata.UI_ONLY_PREFERENCE
 import com.android.settingslib.metadata.preferenceHierarchy
-import kotlinx.coroutines.CoroutineScope
 import com.android.settingslib.metadata.preferencesapi.PreferencesApiScreen.Companion.APP_FUNCTION_UNCATEGORIZED
+import kotlinx.coroutines.CoroutineScope
 
 @ProvidePreferenceScreen(HearingDevicesScreen.KEY)
 open class HearingDevicesScreen(context: Context) :
@@ -163,6 +166,7 @@ open class HearingDevicesScreen(context: Context) :
 
     override fun getPreferenceHierarchy(context: Context, coroutineScope: CoroutineScope) =
         preferenceHierarchy(context) {
+            +HearingDevicesScreenPreference(this@HearingDevicesScreen)
             +HearingDevicesTopIntroPreference(context)
             +AvailableHearingDevicePreferenceCategory(context, metricsCategory)
             if (com.android.settings.flags.Flags.catalystMigration26q2()) {
@@ -196,7 +200,6 @@ open class HearingDevicesScreen(context: Context) :
                 }
             }
             +HearingDeviceOptionsPreferenceCategory() += {
-                +AudioRoutingPreference()
                 +HearingDeviceShortcutPreference(context, metricsCategory)
                 +HearingAidCompatibilitySwitchPreference(context)
             }
@@ -204,13 +207,15 @@ open class HearingDevicesScreen(context: Context) :
             +HearingDevicesFeedbackButtonPreference { FeedbackManager(context, metricsCategory) }
         }
 
+    override val availabilityDescription =
+        "The device must support hearing devices (Hearing Aid or HAP Client Bluetooth Profile)."
+
     override fun isAvailable(context: Context): Boolean = hearingAidHelper.isHearingAidSupported
 
     override fun getSummary(context: Context): CharSequence? {
-        val connectedDevice: CachedBluetoothDevice? = hearingAidHelper.connectedHearingAidDevice
-        if (connectedDevice == null) {
-            return context.getText(R.string.accessibility_hearingaid_not_connected_summary)
-        }
+        val connectedDevice: CachedBluetoothDevice =
+            hearingAidHelper.connectedHearingAidDevice
+                ?: return context.getText(R.string.accessibility_hearingaid_not_connected_summary)
 
         val name: CharSequence? = connectedDevice.getName()
         if (hearingAidHelper.connectedHearingAidDeviceList.size > 1) {
@@ -267,10 +272,14 @@ open class HearingDevicesScreen(context: Context) :
     }
 
     class HearingDeviceRoutingPreferenceCategory(
-        key: String = "hearing_routing_category",
+        key: String = "hearing_device_routing_category",
         purpose: Int = R.string.hearing_device_audio_routing_purpose,
         title: Int = R.string.accessibility_hearing_device_routing_title,
     ) : PreferenceCategory(key, purpose, title), PreferenceAvailabilityProvider {
+        override fun tags(context: Context) = arrayOf(UI_ONLY_PREFERENCE)
+
+        override val availabilityDescription = UI_ONLY_PREFERENCE
+
         override fun isAvailable(context: Context): Boolean =
             SettingsLibFlags.hearingDevicesGranularOutputRouting()
     }
@@ -290,7 +299,31 @@ open class HearingDevicesScreen(context: Context) :
             componentName = ACCESSIBILITY_HEARING_AIDS_COMPONENT_NAME,
             featureName = R.string.accessibility_hearingaid_title,
             metricsCategory = metricsCategory,
-        )
+        ) {
+        override val sensitivityLevel = SensitivityLevel.DEEP_LINK_ONLY
+    }
+
+    class HearingDevicesScreenPreference(private val screenMetadata: HearingDevicesScreen) :
+        PreferenceMetadata, PreferenceSummaryProvider, PreferenceAvailabilityProvider {
+        override val key: String
+            get() = "hearing_devices_preference"
+
+        override val purpose: Int
+            get() = screenMetadata.purpose
+
+        override fun tags(context: Context) = arrayOf(METADATA_IN_UI)
+
+        override val indexable = false
+
+        override fun isEnabled(context: Context): Boolean = screenMetadata.isEnabled(context)
+
+        override fun getSummary(context: Context): CharSequence? =
+            screenMetadata.getSummary(context)
+
+        override val availabilityDescription = screenMetadata.availabilityDescription
+
+        override fun isAvailable(context: Context): Boolean = screenMetadata.isAvailable(context)
+    }
 
     companion object {
         const val KEY = "hearing_devices"

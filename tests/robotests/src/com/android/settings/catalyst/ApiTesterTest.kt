@@ -48,10 +48,12 @@ import com.android.settingslib.metadata.preferencesapi.types.GeneratedType
 import com.android.settingslib.metadata.preferencesapi.types.GeneratedValue
 import com.google.common.truth.Truth
 import kotlin.test.assertFailsWith
+import kotlinx.coroutines.runBlocking
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Shadows.shadowOf
+import com.android.settingslib.metadata.preferencesapi.safe
 
 @RunWith(AndroidJUnit4::class)
 class ApiTesterTest {
@@ -67,11 +69,7 @@ class ApiTesterTest {
             flag { Flags.catalystMigration26q2() }
             tags("a", "b")
 
-            preference(
-                key = "preference_with_tags",
-                purpose = 0,
-                type = AnyString,
-            ) {
+            preference(key = "preference_with_tags", purpose = 0, type = AnyString) {
                 tags("a", "b", "c")
                 get { execute { "Hello" } }
             }
@@ -197,8 +195,8 @@ class ApiTesterTest {
                 type =
                     GeneratedType<String>(R.string.generated_type_description) {
                         listOf(
-                            GeneratedValue<String>("value1", "first"),
-                            GeneratedValue<String>("value2", "second"),
+                            GeneratedValue<String>("value1".safe(), "first".safe()),
+                            GeneratedValue<String>("value2".safe(), "second".safe()),
                         )
                     },
             ) {
@@ -213,8 +211,8 @@ class ApiTesterTest {
                 type =
                     GeneratedType<String>(R.string.generated_type_description) {
                         listOf(
-                            GeneratedValue<String>("value1", "first"),
-                            GeneratedValue<String>("value2", "second"),
+                            GeneratedValue<String>("value1".safe(), "first".safe()),
+                            GeneratedValue<String>("value2".safe(), "second".safe()),
                         )
                     },
             ) {
@@ -275,8 +273,8 @@ class ApiTesterTest {
                     type =
                         GeneratedParameterType(R.string.parameter_type_description) {
                             listOf(
-                                GeneratedValue("parameter1", "first parameter description"),
-                                GeneratedValue("parameter2", "second parameter description"),
+                                GeneratedValue("parameter1".safe(), "first parameter description".safe()),
+                                GeneratedValue("parameter2".safe(), "second parameter description".safe()),
                             )
                         },
                 )
@@ -284,7 +282,7 @@ class ApiTesterTest {
                     extras.putString("pkg", parameters["package"])
                 }
             }
-            preference<String>(
+            preference(
                 key = "preference_with_parameter_precondition",
                 purpose = 0,
                 type = AnyString,
@@ -296,7 +294,7 @@ class ApiTesterTest {
                 }
                 get { execute { "hello" } }
             }
-            preference<String>(
+            preference(
                 key = "preference_of_parameterized_screen",
                 purpose = 0,
                 type = AnyString,
@@ -318,7 +316,7 @@ class ApiTesterTest {
                 }
             }
 
-            preference<String>(
+            preference(
                 key = "preference_of_parameterized_screen_with_missing_permission",
                 purpose = 0,
                 type = AnyString,
@@ -333,7 +331,7 @@ class ApiTesterTest {
                 }
             }
 
-            preference<String>(
+            preference(
                 key = "get_preference_of_parameterized_screen",
                 purpose = 0,
                 type = AnyString,
@@ -366,8 +364,8 @@ class ApiTesterTest {
                     type =
                         GeneratedParameterType(R.string.parameter_type_description) {
                             listOf(
-                                GeneratedValue("parameter1", "first parameter description"),
-                                GeneratedValue("parameter2", "second parameter description"),
+                                GeneratedValue("parameter1".safe(), "first parameter description".safe()),
+                                GeneratedValue("parameter2".safe(), "second parameter description".safe()),
                             )
                         },
                 )
@@ -392,11 +390,7 @@ class ApiTesterTest {
         init {
             flag { Flags.catalystMigration26q2() }
             tags(PreferencesApiScreen.APP_FUNCTION_STORAGE)
-            preference(
-                key = "preference_with_device_state_tag",
-                purpose = 0,
-                type = AnyString,
-            ) {
+            preference(key = "preference_with_device_state_tag", purpose = 0, type = AnyString) {
                 tags(PreferencesApiScreen.APP_FUNCTION_BATTERY)
                 get { execute { "Hello" } }
             }
@@ -548,9 +542,35 @@ class ApiTesterTest {
     }
 
     @Test
+    fun launchIntent_onFailingPreconditionParameterizedScreen_throwsException() {
+        // Initialize screen with parameters that cause the screen precondition to fail.
+        testerFailingPreconditionsParameterized.initializeScreenParameters(
+            Parameters("package" to "parameter2")
+        )
+
+        // Verify that getLaunchIntent throws an exception due to the failed precondition.
+        assertFailsWith<HardwareUnsupportedException> {
+            testerFailingPreconditionsParameterized.getLaunchIntent()
+        }
+    }
+
+    @Test
+    fun launchIntent_onPassedPreconditionParameterizedScreen_isCorrect() {
+        // Initialize screen with parameters that allow the screen precondition to pass.
+        testerFailingPreconditionsParameterized.initializeScreenParameters(
+            Parameters("package" to "parameter1")
+        )
+
+        // Verify that getLaunchIntent returns a non-null intent.
+        Truth.assertThat(testerFailingPreconditionsParameterized.getLaunchIntent()).isNotNull()
+    }
+
+    @Test
     fun getPreferenceOptions_generatedType_areCorrect() {
-        Truth.assertThat(tester.getPreferenceOptions<String>("preference_with_generated_type"))
-            .containsExactly(("value1" to "first"), ("value2" to "second"))
+        runBlocking {
+            Truth.assertThat(tester.getPreferenceOptions<String>("preference_with_generated_type"))
+                .containsExactly(("value1" to "first"), ("value2" to "second"))
+        }
     }
 
     @Test
@@ -561,8 +581,12 @@ class ApiTesterTest {
 
     @Test
     fun getPreferenceOptions_onInfiniteType_throwsException() {
-        assertFailsWith<Exception> {
-            tester.getPreferenceOptions<String>("preference_which_has_value_hello_and_no_setter")
+        runBlocking {
+            assertFailsWith<Exception> {
+                tester.getPreferenceOptions<String>(
+                    "preference_which_has_value_hello_and_no_setter"
+                )
+            }
         }
     }
 
@@ -857,30 +881,18 @@ class ApiTesterTest {
     @Test
     fun getScreenTags_returnsScreenTags() {
         Truth.assertThat(tester.getScreenTags())
-            .containsExactly(
-                "a",
-                "b",
-                "api-first",
-                PreferencesApiScreen.APP_FUNCTION_UNCATEGORIZED,
-            )
+            .containsExactly("a", "b", "api-first", PreferencesApiScreen.APP_FUNCTION_UNCATEGORIZED)
     }
 
     @Test
     fun getPreferenceTags_forPreferenceWithTags_returnsPreferenceTags() {
         Truth.assertThat(tester.getPreferenceTags("preference_with_tags"))
-            .containsExactly(
-                "a",
-                "b",
-                "c",
-                "api-first",
-            )
+            .containsExactly("a", "b", "c", "api-first")
     }
 
     @Test
     fun getPreferenceTags_forPreferenceWithoutTags_returnsApiFirst() {
-        Truth.assertThat(
-                tester.getPreferenceTags("preference_which_has_value_hello_and_no_setter")
-            )
+        Truth.assertThat(tester.getPreferenceTags("preference_which_has_value_hello_and_no_setter"))
             .containsExactly("api-first")
     }
 
@@ -893,9 +905,7 @@ class ApiTesterTest {
     @Test
     fun getPreferenceTags_withDeviceStateTag_doesNotAddUncategorizedTag() {
         Truth.assertThat(
-                testerScreenWithDeviceStateTag.getPreferenceTags(
-                    "preference_with_device_state_tag"
-                )
+                testerScreenWithDeviceStateTag.getPreferenceTags("preference_with_device_state_tag")
             )
             .containsExactly(PreferencesApiScreen.APP_FUNCTION_BATTERY, "api-first")
     }

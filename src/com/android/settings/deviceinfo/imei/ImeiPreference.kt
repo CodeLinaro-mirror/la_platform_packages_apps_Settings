@@ -31,15 +31,19 @@ import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
 import com.android.settingslib.metadata.PreferenceSummaryProvider
 import com.android.settingslib.metadata.PreferenceTitleProvider
+import com.android.settingslib.metadata.SensitivityLevel
 import com.android.settingslib.preference.PreferenceBinding
 import com.android.settingslib.preference.PreferenceBindingPlaceholder
+
+/** IMEI data class to store IMEI and slot ID. */
+data class ImeiData(val imei: String, val slotId: Int)
 
 /** Preference to show IMEI information for single and multi modem devices. */
 class ImeiPreference(
     context: Context,
     private val index: Int,
     private val activeModemCount: Int,
-    private val imeiList: List<String> = listOf<String>(),
+    private val imeiList: List<ImeiData> = listOf(),
 ) :
     PreferenceMetadata,
     PreferenceBinding,
@@ -57,6 +61,9 @@ class ImeiPreference(
     override val purpose: Int
         get() = R.string.imei_info_purpose
 
+    override val availabilityDescription =
+        "The user must be admin user and the device must be mobile data capable or voice capable."
+
     override fun isAvailable(context: Context): Boolean =
         context.isAdminUser == true &&
             (Utils.isMobileDataCapable(context) || Utils.isVoiceCapable(context))
@@ -73,7 +80,8 @@ class ImeiPreference(
     override fun onCreate(context: PreferenceLifecycleContext) {
         context.requirePreference<Preference>(key).onPreferenceClickListener =
             Preference.OnPreferenceClickListener {
-                ImeiInfoDialogFragment.show(context.childFragmentManager, index, formattedTitle)
+                val slotId = if (index < imeiList.size) imeiList[index].slotId else index
+                ImeiInfoDialogFragment.show(context.childFragmentManager, slotId, formattedTitle)
                 return@OnPreferenceClickListener true
             }
     }
@@ -89,10 +97,13 @@ class ImeiPreference(
         return when {
             imeiList.isEmpty() || index >= imeiList.size -> String()
             else -> {
-                PhoneNumberUtil.expandByTts(imeiList[index])
+                PhoneNumberUtil.expandByTts(imeiList[index].imei)
             }
         }
     }
+
+    override val sensitivityLevel
+        get() = SensitivityLevel.DO_NOT_EXPOSE
 
     companion object {
         const val TAG = "ImeiPreference"
@@ -107,7 +118,7 @@ class ImeiPreference(
  * b/434700998, using the lower IMEI as the primary IMEI. IMEI 1 = primary IMEI i.e. lower IMEI IMEI
  * 2 = non-primary IMEI
  */
-val Context.getImeiList: List<String>
+val Context.getImeiList: List<ImeiData>
     get() = buildList {
         telephonyManager?.let {
             var primaryImei = String()
@@ -116,24 +127,23 @@ val Context.getImeiList: List<String>
             } catch (exception: Exception) {
                 Log.e(ImeiPreference.TAG, "PrimaryImei not available.", exception)
             }
-            var imeiListFromSlot: List<String> = buildList {
-                for (slotIndex in 0..activeModemCount - 1) {
-                    try {
-                        val slotImei = it.getImei(slotIndex)
-                        add(slotImei ?: String())
-                    } catch (exception: Exception) {
-                        Log.e(ImeiPreference.TAG, "Slot[$slotIndex] imei not available.", exception)
-                    }
+            var imeiListFromSlot: MutableList<ImeiData> = mutableListOf()
+            for (slotIndex in 0 until activeModemCount) {
+                try {
+                    val slotImei = it.getImei(slotIndex)
+                    imeiListFromSlot.add(ImeiData(slotImei ?: String(), slotIndex))
+                } catch (exception: Exception) {
+                    Log.e(ImeiPreference.TAG, "Slot[$slotIndex] imei not available.", exception)
                 }
             }
 
-            imeiListFromSlot.sorted()
+            imeiListFromSlot.sortBy { it.imei }
             if (primaryImei.isNotEmpty() && imeiListFromSlot.size >= 2) {
-                // imeiListFromSlot remove primaryImei
-                imeiListFromSlot =
-                    imeiListFromSlot.toMutableList().apply { remove(primaryImei) }.toList()
-                // imeiList add primaryImei
-                add(primaryImei)
+                val primaryImeiData = imeiListFromSlot.find { it.imei == primaryImei }
+                if (primaryImeiData != null) {
+                    imeiListFromSlot.remove(primaryImeiData)
+                    add(primaryImeiData)
+                }
             }
             addAll(imeiListFromSlot)
         }

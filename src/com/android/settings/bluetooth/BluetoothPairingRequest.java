@@ -26,6 +26,8 @@ import android.os.UserHandle;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.android.settings.flags.Flags;
+import com.android.settingslib.bluetooth.BluetoothUtils;
 import com.android.settingslib.bluetooth.LocalBluetoothManager;
 
 /**
@@ -50,16 +52,26 @@ public final class BluetoothPairingRequest extends BroadcastReceiver {
             PowerManager powerManager = context.getSystemService(PowerManager.class);
             int pairingVariant = intent.getIntExtra(BluetoothDevice.EXTRA_PAIRING_VARIANT,
                     BluetoothDevice.ERROR);
+            int pairingContext = intent.getIntExtra(BluetoothDevice.EXTRA_PAIRING_CONTEXT,
+                    BluetoothDevice.ERROR);
             boolean shouldShowDialog = LocalBluetoothPreferences.shouldShowDialogInForeground(
                     context, device);
 
             Log.d(TAG,
                 "Receive ACTION_PAIRING_REQUEST pairingVariant=" + pairingVariant
+                    + " pairingContext=" + pairingContext
                     + " canBondWithoutDialog=" + device.canBondWithoutDialog()
                     + " isOngoingPairByCsip="
                     + mBluetoothManager.getCachedDeviceManager().isOngoingPairByCsip(device)
                     + " isLateBonding="
                     + mBluetoothManager.getCachedDeviceManager().isLateBonding(device));
+
+            if (Flags.enableBondingLossUiFix()
+                    && pairingContext == BluetoothDevice.PAIRING_CONTEXT_REPAIRING
+                    && BluetoothUtils.isExclusivelyManagedBluetoothDevice(context, device)) {
+                Log.d(TAG, "Skip handling repairing for exclusively-managed device.");
+                return;
+            }
 
             /* Skips consent pairing dialog if the device was recently associated with CDM
              * or if the device is a member of the coordinated set and is not bonding late.
