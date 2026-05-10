@@ -25,7 +25,10 @@ import com.android.settings.deviceinfo.PhoneNumberUtil
 import com.android.settings.wifi.utils.activeModemCount
 import com.android.settings.wifi.utils.isAdminUser
 import com.android.settings.wifi.utils.telephonyManager
+import com.android.settingslib.datastore.KeyValueStore
+import com.android.settingslib.metadata.PersistentPreference
 import com.android.settingslib.metadata.PreferenceAvailabilityProvider
+import com.android.settingslib.metadata.preferencesapi.preconditions.PreconditionStability
 import com.android.settingslib.metadata.PreferenceLifecycleContext
 import com.android.settingslib.metadata.PreferenceLifecycleProvider
 import com.android.settingslib.metadata.PreferenceMetadata
@@ -45,6 +48,7 @@ class ImeiPreference(
     private val activeModemCount: Int,
     private val imeiList: List<ImeiData> = listOf(),
 ) :
+    PersistentPreference<String>,
     PreferenceMetadata,
     PreferenceBinding,
     PreferenceBindingPlaceholder,
@@ -64,11 +68,19 @@ class ImeiPreference(
     override val availabilityDescription =
         "The user must be admin user and the device must be mobile data capable or voice capable."
 
+    override fun getAvailabilityStability() = PreconditionStability.UNSTABLE
+
     override fun isAvailable(context: Context): Boolean =
         context.isAdminUser == true &&
             (Utils.isMobileDataCapable(context) || Utils.isVoiceCapable(context))
 
     override fun getTitle(context: Context): CharSequence? = formattedTitle
+
+    override val supportsWrite = false
+
+    override val valueType = String::class.javaObjectType
+
+    override fun storage(context: Context): KeyValueStore = createSummaryStorage(context, key)
 
     override fun getSummary(context: Context): CharSequence? = getFormattedSummary()
 
