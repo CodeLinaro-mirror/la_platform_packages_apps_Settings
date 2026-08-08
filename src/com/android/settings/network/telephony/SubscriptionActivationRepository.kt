@@ -14,6 +14,12 @@
  * limitations under the License.
  */
 
+/*
+ * Changes from Qualcomm Technologies, Inc. are provided under the following license:
+ * Copyright (c) Qualcomm Technologies, Inc. and/or its subsidiaries.
+ * SPDX-License-Identifier: BSD-3-Clause-Clear
+ */
+
 package com.android.settings.network.telephony
 
 import android.content.Context
@@ -31,6 +37,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.withContext
+import android.content.pm.PackageManager
 
 class SubscriptionActivationRepository(
     private val context: Context,
@@ -80,7 +87,15 @@ class SubscriptionActivationRepository(
     }
 
     private suspend fun isEmergencyCallbackMode(subId: Int) = withContext(Dispatchers.Default) {
-        context.telephonyManager(subId).emergencyCallbackMode
+        if (!context.packageManager.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_CALLING)) {
+            return@withContext false
+        }
+        try {
+            context.telephonyManager(subId).emergencyCallbackMode
+        } catch (e: UnsupportedOperationException) {
+            // Device does not support FEATURE_TELEPHONY_CALLING
+            false
+        }
     }
 
     private companion object {
