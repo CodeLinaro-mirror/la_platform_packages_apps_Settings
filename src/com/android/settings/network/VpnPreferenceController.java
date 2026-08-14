@@ -91,6 +91,10 @@ public class VpnPreferenceController extends AbstractPreferenceController
 
     @Override
     public boolean isAvailable() {
+        if (mContext.getSystemService(VpnManager.class) == null) {
+            Log.i(TAG, "Not Vpn Service");
+            return false;
+        }
         return !RestrictedLockUtilsInternal.hasBaseUserRestriction(mContext,
                 UserManager.DISALLOW_CONFIG_VPN, UserHandle.myUserId());
     }
