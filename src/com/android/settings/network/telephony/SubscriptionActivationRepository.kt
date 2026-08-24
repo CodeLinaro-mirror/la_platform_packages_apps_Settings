@@ -20,7 +20,6 @@
  * SPDX-License-Identifier: BSD-3-Clause-Clear
  */
 
-
 package com.android.settings.network.telephony
 
 import android.content.Context
@@ -39,7 +38,6 @@ import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.combine
 import kotlinx.coroutines.withContext
 import android.content.pm.PackageManager
-
 
 class SubscriptionActivationRepository(
     private val context: Context,
