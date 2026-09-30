@@ -186,7 +186,8 @@ public class BADeviceVolumeController extends
         }
         boolean showSlider = enableSlider();
         BluetoothDevice device = mCachedDevice.getDevice();
-        int audioState = mHeadsetProfile.getAudioState(device);
+        int audioState = mHeadsetProfile != null
+                ? mHeadsetProfile.getAudioState(device) : BluetoothHeadset.STATE_AUDIO_DISCONNECTED;
         boolean inCall = (audioState == BluetoothHeadset.STATE_AUDIO_CONNECTING ||
                           audioState == BluetoothHeadset.STATE_AUDIO_CONNECTED);
         Log.d(TAG,"VCP refresh showSlider: " + showSlider + " inCall: " + inCall);
